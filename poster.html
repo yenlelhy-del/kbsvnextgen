@@ -32,7 +32,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 60px 75px;
+            padding: 55px 70px;
             border: 1px solid #cbd5e1;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
         }
@@ -52,20 +52,22 @@
             height: 28px;
         }
 
-        /* Header (KBSV Logo Only) */
+        /* Header (Centered KBSV Logo Without Border) */
         .header {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             position: relative;
             z-index: 2;
-            padding-bottom: 20px;
+            padding-bottom: 18px;
             border-bottom: 2px solid #f1f5f9;
         }
         .logo-img {
-            height: 58px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
+            height: 64px;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            background: transparent;
         }
 
         /* Hero Section */
@@ -75,8 +77,8 @@
             align-items: center;
             position: relative;
             z-index: 2;
-            margin-top: 15px;
-            gap: 30px;
+            margin-top: 10px;
+            gap: 20px;
         }
         .hero-left {
             flex: 1;
@@ -88,21 +90,21 @@
             background: #fff8f0;
             border: 1px solid #ffcca3;
             color: #d96200;
-            padding: 10px 20px;
+            padding: 10px 18px;
             border-radius: 10px;
-            font-size: 15px;
+            font-size: 14.5px;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
         .main-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 80px;
+            font-size: 78px;
             font-weight: 800;
             line-height: 0.98;
             letter-spacing: -2px;
-            margin-bottom: 22px;
+            margin-bottom: 18px;
             text-transform: uppercase;
             color: #0f172a;
         }
@@ -115,23 +117,23 @@
         }
 
         .program-description {
-            font-size: 18px;
+            font-size: 17.5px;
             line-height: 1.55;
             color: #334155;
             font-weight: 500;
             background: #f8fafc;
             border-left: 4px solid #FF8A00;
-            padding: 18px 22px;
+            padding: 16px 20px;
             border-radius: 0 12px 12px 0;
             border-top: 1px solid #f1f5f9;
             border-right: 1px solid #f1f5f9;
             border-bottom: 1px solid #f1f5f9;
         }
 
-        /* Mascot Display */
+        /* Mascot Display (Enlarged) */
         .mascot-container {
-            width: 320px;
-            height: 320px;
+            width: 410px;
+            height: 410px;
             position: relative;
             display: flex;
             align-items: center;
@@ -140,26 +142,26 @@
         }
         .mascot-bg-circle {
             position: absolute;
-            width: 290px;
-            height: 290px;
+            width: 375px;
+            height: 375px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 138, 0, 0.12) 0%, rgba(255, 107, 0, 0.05) 70%);
+            background: radial-gradient(circle, rgba(255, 138, 0, 0.14) 0%, rgba(255, 107, 0, 0.05) 70%);
             border: 2px dashed #cbd5e1;
         }
         .mascot-img {
-            width: 300px;
-            height: 300px;
+            width: 395px;
+            height: 395px;
             object-fit: contain;
             position: relative;
             z-index: 3;
-            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.12));
         }
 
         /* 4 KSP Feature Cards */
         .ksp-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 18px;
             position: relative;
             z-index: 2;
         }
@@ -167,9 +169,9 @@
             background: #ffffff;
             border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 22px 26px;
+            padding: 20px 24px;
             display: flex;
-            gap: 18px;
+            gap: 16px;
             align-items: flex-start;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
         }
@@ -186,13 +188,13 @@
             border: 1px solid #ffe3cc;
         }
         .ksp-info h4 {
-            font-size: 18px;
+            font-size: 17.5px;
             font-weight: 700;
             color: #0f172a;
             margin-bottom: 4px;
         }
         .ksp-info p {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #64748b;
             line-height: 1.45;
         }
@@ -202,12 +204,12 @@
             background: linear-gradient(135deg, #fff8f0 0%, #fffbf5 100%);
             border: 1.5px solid #ffd6b3;
             border-radius: 18px;
-            padding: 24px 36px;
+            padding: 22px 34px;
             position: relative;
             z-index: 2;
         }
         .audience-box h5 {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #d96200;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -218,7 +220,7 @@
             gap: 8px;
         }
         .audience-box p {
-            font-size: 18px;
+            font-size: 17.5px;
             font-weight: 700;
             color: #0f172a;
         }
@@ -231,10 +233,10 @@
             position: relative;
             z-index: 2;
             border-top: 2px solid #f1f5f9;
-            padding-top: 20px;
+            padding-top: 18px;
         }
         .venue-info {
-            font-size: 14px;
+            font-size: 13.5px;
             color: #475569;
             line-height: 1.6;
         }
@@ -282,7 +284,7 @@
 
     <div class="poster-container">
 
-        <!-- Header: KBSV Logo Only -->
+        <!-- Header: Centered KBSV Logo Without Border -->
         <div class="header">
             <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
         </div>
@@ -302,7 +304,7 @@
                     Chương trình đào tạo thực chiến <strong>42 ngày</strong> giúp <strong>cá nhân đam mê Sale</strong> hoặc <strong>yêu thích làm việc trong các lĩnh vực Kinh tế – Tài chính</strong> thành Financial KOC chuyên nghiệp, sẵn sàng cho sự nghiệp tư vấn môi giới đầu tư chứng khoán.
                 </div>
             </div>
-            <!-- Official Mascot Image -->
+            <!-- Official Mascot Image (Enlarged) -->
             <div class="mascot-container">
                 <div class="mascot-bg-circle"></div>
                 <img src="assets/mascot/flexi-excited.png" alt="Stonks Cat Mascot" class="mascot-img">
