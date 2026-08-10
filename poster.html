@@ -2,10 +2,10 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>KBSV NEXT GEN – Event Poster 1200x1200</title>
+    <title>KBSV NEXT GEN – Event Poster 1200x1200px (Official GitHub Assets)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -18,330 +18,369 @@
             color: #ffffff;
         }
 
-        /* 1200x1200 Square Canvas */
-        .poster {
+        /* Exact 1200x1200px Square Poster Frame */
+        .poster-container {
             width: 1200px;
             height: 1200px;
-            background: radial-gradient(circle at 80% 20%, #152c4a 0%, #0d1b2a 45%, #050b14 100%);
+            background: #0d1b2a;
+            background-image: 
+                radial-gradient(circle at 85% 15%, rgba(255, 199, 0, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 15% 85%, rgba(0, 230, 118, 0.12) 0%, transparent 45%),
+                linear-gradient(180deg, #0d1b2a 0%, #050b14 100%);
             position: relative;
             overflow: hidden;
-            border-radius: 0px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.8);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 70px 80px;
+            padding: 60px 70px;
+            border: 1px solid rgba(255, 199, 0, 0.2);
         }
 
-        /* Glow Accents */
-        .glow-gold {
+        /* Decorative Grid Background Pattern */
+        .grid-overlay {
             position: absolute;
-            top: -100px;
-            left: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255, 199, 0, 0.15) 0%, rgba(0,0,0,0) 70%);
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
             pointer-events: none;
-        }
-        .glow-green {
-            position: absolute;
-            bottom: -150px;
-            right: -100px;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0, 230, 118, 0.18) 0%, rgba(0,0,0,0) 70%);
-            pointer-events: none;
+            z-index: 1;
         }
 
         /* Header */
-        .poster-header {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: relative;
             z-index: 2;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .brand-logo {
+        .logo-wrap {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 20px;
         }
-        .kb-symbol {
-            width: 56px;
-            height: 56px;
-            background: #FFC700;
-            color: #0d1b2a;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 800;
-            font-size: 24px;
+        .logo-img {
+            height: 54px;
+            border-radius: 10px;
+            background: #ffffff;
+            padding: 6px 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
-        .brand-text h3 {
-            font-size: 24px;
+        .org-info h3 {
+            font-size: 20px;
             font-weight: 800;
-            letter-spacing: 0.5px;
             color: #ffffff;
+            letter-spacing: 0.5px;
         }
-        .brand-text p {
-            font-size: 14px;
+        .org-info p {
+            font-size: 13px;
             color: #FFC700;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .badge-season {
+        .tag-season {
             background: rgba(0, 230, 118, 0.15);
             border: 1px solid #00E676;
             color: #00E676;
-            padding: 10px 24px;
+            padding: 10px 22px;
             border-radius: 30px;
-            font-weight: 700;
-            font-size: 15px;
+            font-weight: 800;
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Main Hero Content */
-        .poster-hero {
+        /* Main Content Layout (Text Left + Mascot Right) */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: relative;
             z-index: 2;
-            margin-top: 10px;
+            margin-top: 15px;
+            gap: 30px;
         }
-        .sub-tag {
-            font-size: 20px;
-            font-weight: 700;
-            color: #00E676;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
+        .hero-left {
+            flex: 1;
+        }
+        .campaign-slogan {
             display: inline-block;
+            background: rgba(255, 199, 0, 0.15);
+            border: 1px solid rgba(255, 199, 0, 0.4);
+            color: #FFC700;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
         }
         .main-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 92px;
+            font-size: 78px;
             font-weight: 800;
-            line-height: 0.95;
+            line-height: 1.0;
             letter-spacing: -2px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
         .text-gold {
             color: #FFC700;
-            text-shadow: 0 0 30px rgba(255, 199, 0, 0.3);
+            text-shadow: 0 0 25px rgba(255, 199, 0, 0.35);
         }
         .text-green {
             color: #00E676;
-            text-shadow: 0 0 30px rgba(0, 230, 118, 0.3);
+            text-shadow: 0 0 25px rgba(0, 230, 118, 0.35);
         }
-        .slogan-desc {
-            font-size: 22px;
+        .program-description {
+            font-size: 18px;
             line-height: 1.5;
-            color: #d1d5db;
-            max-width: 900px;
+            color: #e5e7eb;
             font-weight: 500;
-        }
-        .slogan-desc strong {
-            color: #ffffff;
-            font-weight: 700;
+            background: rgba(13, 27, 42, 0.7);
+            border-left: 4px solid #00E676;
+            padding: 14px 20px;
+            border-radius: 0 12px 12px 0;
         }
 
-        /* Grid Feature Cards */
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
+        /* Mascot Display Frame (Official GitHub Image) */
+        .mascot-container {
+            width: 320px;
+            height: 320px;
             position: relative;
-            z-index: 2;
-        }
-        .feature-card {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 24px 30px;
-            border-radius: 20px;
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .card-icon {
-            width: 48px;
-            height: 48px;
-            background: rgba(255, 199, 0, 0.15);
-            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
             flex-shrink: 0;
         }
-        .card-info h4 {
-            font-size: 20px;
+        .mascot-bg-circle {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 230, 118, 0.25) 0%, rgba(255, 199, 0, 0.1) 70%);
+            border: 2px dashed rgba(0, 230, 118, 0.5);
+            animation: rotateCircle 30s linear infinite;
+        }
+        .mascot-img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            position: relative;
+            z-index: 3;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+        }
+
+        /* 4 Key Selling Points Grid */
+        .ksp-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .ksp-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 20px 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+        }
+        .ksp-badge {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 199, 0, 0.15);
+            border: 1px solid rgba(255, 199, 0, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+        .ksp-info h4 {
+            font-size: 18px;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
-        .card-info p {
-            font-size: 15px;
+        .ksp-info p {
+            font-size: 14px;
             color: #9ca3af;
             line-height: 1.4;
         }
 
-        /* Audience & Prize Banner */
-        .bottom-banner {
+        /* Target Audience & Total Budget Highlight Box */
+        .highlight-banner {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(135deg, rgba(255, 199, 0, 0.1) 0%, rgba(0, 230, 118, 0.1) 100%);
-            border: 1px solid rgba(255, 199, 0, 0.3);
-            border-radius: 24px;
-            padding: 30px 40px;
+            background: linear-gradient(135deg, rgba(255, 199, 0, 0.12) 0%, rgba(0, 230, 118, 0.12) 100%);
+            border: 1px solid rgba(255, 199, 0, 0.35);
+            border-radius: 20px;
+            padding: 24px 36px;
             position: relative;
             z-index: 2;
         }
-        .audience-info h5 {
-            font-size: 15px;
+        .audience-box h5 {
+            font-size: 14px;
             color: #FFC700;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 6px;
+            font-weight: 800;
         }
-        .audience-info p {
-            font-size: 18px;
+        .audience-box p {
+            font-size: 17px;
             font-weight: 700;
             color: #ffffff;
         }
-        .prize-info {
+        .budget-box {
             text-align: right;
         }
-        .prize-info h5 {
-            font-size: 15px;
+        .budget-box h5 {
+            font-size: 14px;
             color: #00E676;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
+            font-weight: 800;
         }
-        .prize-amount {
+        .budget-value {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 36px;
+            font-size: 34px;
             font-weight: 800;
             color: #FFC700;
             text-shadow: 0 0 20px rgba(255, 199, 0, 0.4);
         }
 
-        /* Footer CTA & Contact */
-        .poster-footer {
+        /* Footer Info */
+        .footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: relative;
             z-index: 2;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 24px;
+            padding-top: 20px;
         }
-        .contact-info {
-            font-size: 15px;
+        .venue-info {
+            font-size: 14px;
             color: #9ca3af;
+            line-height: 1.5;
         }
-        .contact-info strong {
+        .venue-info strong {
             color: #ffffff;
         }
-        .apply-btn {
+        .cta-btn {
             background: linear-gradient(135deg, #FFC700 0%, #F5A623 100%);
             color: #0d1b2a;
-            padding: 16px 36px;
-            border-radius: 14px;
+            padding: 14px 32px;
+            border-radius: 12px;
             font-weight: 800;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 10px 25px rgba(255, 199, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(255, 199, 0, 0.3);
         }
     </style>
 </head>
 <body>
 
-    <div class="poster">
-        <div class="glow-gold"></div>
-        <div class="glow-green"></div>
+    <div class="poster-container">
+        <div class="grid-overlay"></div>
 
-        <!-- Header -->
-        <div class="poster-header">
-            <div class="brand-logo">
-                <div class="kb-symbol">KB</div>
-                <div class="brand-text">
-                    <h3>KB SECURITIES VIETNAM</h3>
-                    <p>Sở Giao Dịch 3 (HO3)</p>
+        <!-- Header: Official KBSV Logo & Season Badge -->
+        <div class="header">
+            <div class="logo-wrap">
+                <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
+                <div class="org-info">
+                    <h3>SỞ GIAO DỊCH 3 (HO3)</h3>
+                    <p>KB Securities Vietnam – Member of KB Financial Group</p>
                 </div>
             </div>
-            <div class="badge-season">🔥 Tuyển Dụng Season 1</div>
+            <div class="tag-season">🔥 Tuyển Dụng Season 1</div>
         </div>
 
-        <!-- Hero Content -->
-        <div class="poster-hero">
-            <span class="sub-tag">⚡ Chương trình đào tạo thực chiến 42 ngày</span>
-            <h1 class="main-title">
-                KBSV <span class="text-gold">NEXT GEN</span><br>
-                <span class="text-green">FINANCIAL KOC</span>
-            </h1>
-            <p class="slogan-desc">
-                Chương trình đào tạo thực chiến 42 ngày giúp <strong>cá nhân đam mê Sale</strong> hoặc <strong>yêu thích lĩnh vực Kinh tế – Tài chính</strong> thành <strong>Financial KOC chuyên nghiệp</strong>, sẵn sàng cho sự nghiệp tư vấn môi giới đầu tư chứng khoán!
-            </p>
+        <!-- Hero Section: Title, Description & Official Mascot -->
+        <div class="hero-section">
+            <div class="hero-left">
+                <div class="campaign-slogan">Đừng chỉ làm Môi giới truyền thống – Hãy trở thành Financial KOC Thế hệ mới!</div>
+                <h1 class="main-title">
+                    KBSV <span class="text-gold">NEXT GEN</span><br>
+                    <span class="text-green">FINANCIAL KOC</span>
+                </h1>
+                <div class="program-description">
+                    Chương trình đào tạo thực chiến <strong>42 ngày</strong> giúp <strong>cá nhân đam mê Sale</strong> hoặc <strong>yêu thích làm việc trong các lĩnh vực Kinh tế – Tài chính</strong> thành Financial KOC chuyên nghiệp, sẵn sàng cho sự nghiệp tư vấn môi giới đầu tư chứng khoán.
+                </div>
+            </div>
+            <!-- Official GitHub Mascot Image -->
+            <div class="mascot-container">
+                <div class="mascot-bg-circle"></div>
+                <img src="assets/mascot/flexi-excited.png" alt="Stonks Cat Mascot" class="mascot-img">
+            </div>
         </div>
 
-        <!-- 4 Key Highlights -->
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="card-icon">🎓</div>
-                <div class="card-info">
+        <!-- 4 Key Selling Points (KSPs) -->
+        <div class="ksp-grid">
+            <div class="ksp-card">
+                <div class="ksp-badge">🎓</div>
+                <div class="ksp-info">
                     <h4>Đào Tạo Thực Chiến 42 Ngày</h4>
-                    <p>Bộ kỹ năng FA/TA, lập Deal Strategy & Script tư vấn môi giới theo từng chu kỳ thị trường.</p>
+                    <p>Micro-learning 2 tuần rèn luyện FA/TA, lập Deal Strategy & Script tư vấn môi giới thực chiến.</p>
                 </div>
             </div>
-            <div class="feature-card">
-                <div class="card-icon">🚀</div>
-                <div class="card-info">
+            <div class="ksp-card">
+                <div class="ksp-badge">🚀</div>
+                <div class="ksp-info">
                     <h4>Content Lab & Livestream</h4>
-                    <p>Học thuật toán TikTok, làm chủ Content Lab và thực hành Livestream tư vấn 90 phút/ngày.</p>
+                    <p>Làm chủ thuật toán TikTok, phòng lab sản xuất video và thực hành Livestream tư vấn 90 phút/ngày.</p>
                 </div>
             </div>
-            <div class="feature-card">
-                <div class="card-icon">👥</div>
-                <div class="card-info">
+            <div class="ksp-card">
+                <div class="ksp-badge">💰</div>
+                <div class="ksp-info">
+                    <h4>Thu Nhập & Thưởng Đột Phá</h4>
+                    <p>Tổng Quỹ giải thưởng 20.000.000 VNĐ + Cơ chế thưởng tài khoản Active lên tới 200.000 VNĐ/TK.</p>
+                </div>
+            </div>
+            <div class="ksp-card">
+                <div class="ksp-badge">🤝</div>
+                <div class="ksp-info">
                     <h4>Mentor 1:1 Chuẩn Quốc Tế</h4>
-                    <p>Được dẫn dắt trực tiếp bởi dàn Mentor & Giám đốc Chi nhánh có trên 8-10 năm kinh nghiệm.</p>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">⏰</div>
-                <div class="card-info">
-                    <h4>Cam Kết Tham Gia Lộ Trình</h4>
-                    <p>Cam kết tham gia đầy đủ trong suốt hành trình; ứng viên sinh viên có lộ trình thiết kế riêng.</p>
+                    <p>Dẫn dắt 1-on-1 bởi các Mentor & Giám đốc Chi nhánh KBSV. Cam kết lộ trình riêng cho Sinh viên & Sale.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Audience & Prize Banner -->
-        <div class="bottom-banner">
-            <div class="audience-info">
-                <h5>🎯 Đối Tượng Tuyển Dụng</h5>
+        <!-- Highlight Banner: Target Audience & Total Budget -->
+        <div class="highlight-banner">
+            <div class="audience-box">
+                <h5>🎯 Đối Tượng Tuyển Dụng Trọng Tâm</h5>
                 <p>Sale 1-2 năm kinh nghiệm • Sinh viên mới ra trường • Sinh viên năm 3-4</p>
             </div>
-            <div class="prize-info">
-                <h5>💰 Quỹ Giải Thưởng & Thưởng Active</h5>
-                <div class="prize-amount">20.000.000 VNĐ</div>
+            <div class="budget-box">
+                <h5>💰 Tổng Ngân Sách Dự Án</h5>
+                <div class="budget-value">20.000.000 VNĐ</div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="poster-footer">
-            <div class="contact-info">
-                📍 <strong>Địa điểm:</strong> Sở Giao dịch 3 (HO3) – Tầng 16 & 17 Capital Place, 29 Liễu Giai, Hà Nội<br>
-                📞 <strong>Hotline:</strong> 056 3959999 | 🌐 <strong>Website:</strong> nextgen.finpeace.cloud
+        <!-- Footer: Address & Hotline -->
+        <div class="footer">
+            <div class="venue-info">
+                📍 <strong>Địa điểm:</strong> Sở Giao dịch 3 (HO3) – Tầng 16 & 17, Tháp 02 Tòa nhà Capital Place, 29 Liễu Giai, Hà Nội<br>
+                📞 <strong>Hotline:</strong> 056 3959999 | ✉️ <strong>Email:</strong> yenlh@kbsec.com.vn | 🌐 <strong>Website:</strong> nextgen.finpeace.cloud
             </div>
-            <div class="apply-btn">👉 Đăng Ký Ứng Tuyển</div>
+            <div class="cta-btn">👉 Đăng Ký Ngay</div>
         </div>
     </div>
 
