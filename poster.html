@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>KBSV NEXT GEN – Event Poster 1200x1200px (Clean White & Vector Icons)</title>
+    <title>KBSV NEXT GEN – Event Poster 1200x1200px</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
@@ -18,21 +18,21 @@
             color: #0f172a;
         }
 
-        /* 1200x1200px Clean White Poster Canvas */
+        /* 1200x1200px Clean White Poster Frame */
         .poster-container {
             width: 1200px;
             height: 1200px;
             background: #ffffff;
             background-image: 
-                radial-gradient(circle at 90% 10%, rgba(217, 119, 6, 0.06) 0%, transparent 40%),
-                radial-gradient(circle at 10% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 90% 10%, rgba(217, 119, 6, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 10% 90%, rgba(234, 88, 12, 0.05) 0%, transparent 45%),
                 linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
             position: relative;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 60px 70px;
+            padding: 60px 75px;
             border: 1px solid #cbd5e1;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
         }
@@ -52,52 +52,20 @@
             height: 28px;
         }
 
-        /* Header */
+        /* Header (KBSV Logo Only) */
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             position: relative;
             z-index: 2;
             padding-bottom: 20px;
             border-bottom: 2px solid #f1f5f9;
         }
-        .logo-wrap {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
         .logo-img {
-            height: 52px;
+            height: 58px;
             border-radius: 8px;
             border: 1px solid #e2e8f0;
-        }
-        .org-info h3 {
-            font-size: 20px;
-            font-weight: 800;
-            color: #0f172a;
-            letter-spacing: 0.5px;
-        }
-        .org-info p {
-            font-size: 13px;
-            color: #d97706;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .tag-season {
-            background: #ecfdf5;
-            border: 1px solid #10b981;
-            color: #047857;
-            padding: 10px 22px;
-            border-radius: 30px;
-            font-weight: 800;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
         /* Hero Section */
@@ -120,38 +88,36 @@
             background: #fffbeb;
             border: 1px solid #fde68a;
             color: #b45309;
-            padding: 8px 18px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
         .main-title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 76px;
+            font-size: 80px;
             font-weight: 800;
-            line-height: 1.0;
+            line-height: 0.98;
             letter-spacing: -2px;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             text-transform: uppercase;
             color: #0f172a;
         }
-        .text-gold {
-            color: #d97706;
+        .text-orange {
+            color: #ea580c;
         }
-        .text-green {
-            color: #059669;
-        }
+
         .program-description {
             font-size: 18px;
             line-height: 1.55;
             color: #334155;
             font-weight: 500;
             background: #f8fafc;
-            border-left: 4px solid #10b981;
-            padding: 16px 20px;
+            border-left: 4px solid #ea580c;
+            padding: 18px 22px;
             border-radius: 0 12px 12px 0;
             border-top: 1px solid #f1f5f9;
             border-right: 1px solid #f1f5f9;
@@ -160,8 +126,8 @@
 
         /* Mascot Display */
         .mascot-container {
-            width: 310px;
-            height: 310px;
+            width: 320px;
+            height: 320px;
             position: relative;
             display: flex;
             align-items: center;
@@ -170,15 +136,15 @@
         }
         .mascot-bg-circle {
             position: absolute;
-            width: 280px;
-            height: 280px;
+            width: 290px;
+            height: 290px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, rgba(217, 119, 6, 0.08) 70%);
+            background: radial-gradient(circle, rgba(234, 88, 12, 0.1) 0%, rgba(217, 119, 6, 0.05) 70%);
             border: 2px dashed #cbd5e1;
         }
         .mascot-img {
-            width: 290px;
-            height: 290px;
+            width: 300px;
+            height: 300px;
             object-fit: contain;
             position: relative;
             z-index: 3;
@@ -197,30 +163,23 @@
             background: #ffffff;
             border: 1px solid #e2e8f0;
             border-radius: 16px;
-            padding: 20px 24px;
+            padding: 22px 26px;
             display: flex;
-            gap: 16px;
+            gap: 18px;
             align-items: flex-start;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
         }
         .ksp-icon-box {
-            width: 46px;
-            height: 46px;
+            width: 48px;
+            height: 48px;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-        }
-        .box-gold {
-            background: #fffbeb;
-            color: #d97706;
-            border: 1px solid #fde68a;
-        }
-        .box-green {
-            background: #ecfdf5;
-            color: #059669;
-            border: 1px solid #a7f3d0;
+            background: #fff7ed;
+            color: #ea580c;
+            border: 1px solid #ffedd5;
         }
         .ksp-info h4 {
             font-size: 18px;
@@ -231,57 +190,33 @@
         .ksp-info p {
             font-size: 14px;
             color: #64748b;
-            line-height: 1.4;
+            line-height: 1.45;
         }
 
-        /* Target Audience & Budget Banner */
+        /* Target Audience Full-width Banner */
         .highlight-banner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(135deg, #fffbeb 0%, #ecfdf5 100%);
-            border: 1.5px solid #fcd34d;
-            border-radius: 20px;
+            background: linear-gradient(135deg, #fff7ed 0%, #fffbeb 100%);
+            border: 1.5px solid #fed7aa;
+            border-radius: 18px;
             padding: 24px 36px;
             position: relative;
             z-index: 2;
         }
         .audience-box h5 {
-            font-size: 13px;
-            color: #b45309;
+            font-size: 14px;
+            color: #c2410c;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 6px;
             font-weight: 800;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
         }
         .audience-box p {
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 700;
             color: #0f172a;
-        }
-        .budget-box {
-            text-align: right;
-        }
-        .budget-box h5 {
-            font-size: 13px;
-            color: #047857;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 6px;
-        }
-        .budget-value {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 34px;
-            font-weight: 800;
-            color: #d97706;
         }
 
         /* Footer */
@@ -297,7 +232,7 @@
         .venue-info {
             font-size: 14px;
             color: #475569;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .venue-info strong {
             color: #0f172a;
@@ -306,18 +241,18 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            margin-right: 12px;
+            margin-right: 16px;
         }
         .cta-btn {
-            background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
             color: #ffffff;
-            padding: 14px 32px;
+            padding: 16px 36px;
             border-radius: 12px;
             font-weight: 800;
             font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            box-shadow: 0 8px 20px rgba(217, 119, 6, 0.25);
+            box-shadow: 0 8px 20px rgba(234, 88, 12, 0.25);
             display: flex;
             align-items: center;
             gap: 8px;
@@ -326,7 +261,7 @@
 </head>
 <body>
 
-    <!-- SVG Vector Symbols Definition (Same as Main Website) -->
+    <!-- SVG Vector Symbols Definition -->
     <svg style="display: none;">
         <symbol id="icon-lightning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
         <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></symbol>
@@ -334,30 +269,17 @@
         <symbol id="icon-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></symbol>
         <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
         <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
-        <symbol id="icon-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
         <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
         <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
         <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-        <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
         <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
-        <symbol id="icon-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
     </svg>
 
     <div class="poster-container">
 
-        <!-- Header -->
+        <!-- Header: KBSV Logo Only -->
         <div class="header">
-            <div class="logo-wrap">
-                <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
-                <div class="org-info">
-                    <h3>SỞ GIAO DỊCH 3 (HO3)</h3>
-                    <p>KB Securities Vietnam – Member of KB Financial Group</p>
-                </div>
-            </div>
-            <div class="tag-season">
-                <svg class="icon"><use href="#icon-fire"/></svg>
-                Tuyển Dụng Season 1
-            </div>
+            <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
         </div>
 
         <!-- Hero Section -->
@@ -365,11 +287,11 @@
             <div class="hero-left">
                 <div class="campaign-slogan">
                     <svg class="icon"><use href="#icon-lightning"/></svg>
-                    Đừng chỉ làm Môi giới truyền thống – Hãy trở thành Financial KOC Thế hệ mới!
+                    TRỞ THÀNH FINANCIAL KOC & NHÀ TƯ VẤN TÀI CHÍNH THẾ HỆ MỚI
                 </div>
                 <h1 class="main-title">
-                    KBSV <span class="text-gold">NEXT GEN</span><br>
-                    <span class="text-green">FINANCIAL KOC</span>
+                    KBSV NEXT GEN<br>
+                    <span class="text-orange">FINANCIAL KOC</span>
                 </h1>
                 <div class="program-description">
                     Chương trình đào tạo thực chiến <strong>42 ngày</strong> giúp <strong>cá nhân đam mê Sale</strong> hoặc <strong>yêu thích làm việc trong các lĩnh vực Kinh tế – Tài chính</strong> thành Financial KOC chuyên nghiệp, sẵn sàng cho sự nghiệp tư vấn môi giới đầu tư chứng khoán.
@@ -382,10 +304,10 @@
             </div>
         </div>
 
-        <!-- 4 Key Feature Cards with Vector Icons -->
+        <!-- 4 Key Feature Cards -->
         <div class="ksp-grid">
             <div class="ksp-card">
-                <div class="ksp-icon-box box-gold">
+                <div class="ksp-icon-box">
                     <svg class="icon icon-lg"><use href="#icon-book"/></svg>
                 </div>
                 <div class="ksp-info">
@@ -394,7 +316,7 @@
                 </div>
             </div>
             <div class="ksp-card">
-                <div class="ksp-icon-box box-green">
+                <div class="ksp-icon-box">
                     <svg class="icon icon-lg"><use href="#icon-video"/></svg>
                 </div>
                 <div class="ksp-info">
@@ -403,7 +325,7 @@
                 </div>
             </div>
             <div class="ksp-card">
-                <div class="ksp-icon-box box-gold">
+                <div class="ksp-icon-box">
                     <svg class="icon icon-lg"><use href="#icon-wallet"/></svg>
                 </div>
                 <div class="ksp-info">
@@ -412,7 +334,7 @@
                 </div>
             </div>
             <div class="ksp-card">
-                <div class="ksp-icon-box box-green">
+                <div class="ksp-icon-box">
                     <svg class="icon icon-lg"><use href="#icon-users"/></svg>
                 </div>
                 <div class="ksp-info">
@@ -422,7 +344,7 @@
             </div>
         </div>
 
-        <!-- Target Audience & Budget Banner -->
+        <!-- Target Audience Banner -->
         <div class="highlight-banner">
             <div class="audience-box">
                 <h5>
@@ -430,13 +352,6 @@
                     Đối Tượng Tuyển Dụng Trọng Tâm
                 </h5>
                 <p>Sale 1-2 năm kinh nghiệm • Sinh viên mới ra trường • Sinh viên năm 3-4</p>
-            </div>
-            <div class="budget-box">
-                <h5>
-                    <svg class="icon"><use href="#icon-trophy"/></svg>
-                    Tổng Ngân Sách Dự Án
-                </h5>
-                <div class="budget-value">20.000.000 VNĐ</div>
             </div>
         </div>
 
@@ -450,10 +365,6 @@
                 <span class="contact-item">
                     <svg class="icon"><use href="#icon-phone"/></svg>
                     <strong>Hotline:</strong> 056 3959999
-                </span>
-                <span class="contact-item">
-                    <svg class="icon"><use href="#icon-mail"/></svg>
-                    <strong>Email:</strong> yenlh@kbsec.com.vn
                 </span>
                 <span class="contact-item">
                     <svg class="icon"><use href="#icon-globe"/></svg>
