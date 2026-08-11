@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ── Countdown Timer ── */
 function initCountdown() {
-    // Deadline: Aug 10, 2026 23:59:59
-    const deadline = new Date('2026-08-10T23:59:59+07:00').getTime();
+    // Deadline: Aug 31, 2026 23:59:59
+    const deadline = new Date('2026-08-31T23:59:59+07:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
