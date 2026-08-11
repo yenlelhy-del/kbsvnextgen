@@ -52,7 +52,7 @@
             height: 30px;
         }
 
-        /* Header (Centered KBSV Logo Without Border) */
+        /* Header (Co-branded KBSV x FinPeace Logos) */
         .header {
             display: flex;
             justify-content: center;
@@ -62,12 +62,28 @@
             padding-bottom: 16px;
             border-bottom: 2px solid #f1f5f9;
         }
+        .cobrand-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
         .logo-img {
-            height: 68px;
+            height: 64px;
             border-radius: 0;
             border: none;
             box-shadow: none;
             background: transparent;
+            object-fit: contain;
+        }
+        .logo-finpeace {
+            height: 44px;
+        }
+        .logo-divider {
+            width: 2px;
+            height: 36px;
+            background-color: #cbd5e1;
+            border-radius: 2px;
         }
 
         /* Hero Section */
@@ -326,9 +342,13 @@
 
     <div class="poster-container">
 
-        <!-- Header: Centered KBSV Logo Without Border -->
+        <!-- Header: Co-branded KBSV x FinPeace Logos -->
         <div class="header">
-            <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
+            <div class="cobrand-container">
+                <img src="assets/images/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-img">
+                <span class="logo-divider"></span>
+                <img src="assets/images/finpeace-logo.png" alt="FinPeace Logo" class="logo-img logo-finpeace">
+            </div>
         </div>
 
         <!-- Hero Section -->
