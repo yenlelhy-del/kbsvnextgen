@@ -400,11 +400,28 @@ ul {
 .nav-logo {
     display: flex;
     align-items: center;
+    gap: 14px;
 }
 
 .logo-img {
-    height: 36px;
+    height: 38px;
     width: auto;
+    object-fit: contain;
+}
+
+.nav-logo .logo-finpeace {
+    height: 30px;
+}
+
+.nav-logo .logo-kbsv {
+    height: 38px;
+}
+
+.nav-logo .logo-divider {
+    width: 1.5px;
+    height: 24px;
+    background-color: #cbd5e1;
+    border-radius: 1px;
 }
 
 .nav-menu {
