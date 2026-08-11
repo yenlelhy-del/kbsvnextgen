@@ -1774,11 +1774,12 @@ ul {
 
 .kbsv-stat-number {
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 800;
     color: var(--kb-yellow-dark);
-    line-height: 1;
+    line-height: 1.1;
     margin-bottom: 6px;
+    white-space: nowrap;
 }
 
 .kbsv-stat-label {
