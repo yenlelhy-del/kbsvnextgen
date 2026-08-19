@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBSV NextGen 2026 — Bộ Câu Hỏi Phỏng Vấn Sàng Lọc Ứng Viên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 14mm 13mm 13mm 13mm; }
+        :root {
+            --kb-yellow: #F5A623; --kb-yellow-dark: #E09000; --kb-brown: #8B7355;
+            --green: #34C759; --blue: #007AFF; --red: #FF3B30; --orange: #FF9500;
+            --text-1: #1A1A1A; --text-2: #5A5A5A; --text-3: #8A8A8A;
+            --border: #d5cfc5; --border-lt: #e8e4dc; --bg-row: #faf9f6;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); font-size: 8.8pt; color: var(--text-1); line-height: 1.45; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        h1,h2,h3,h4 { font-family: var(--font-display); }
+
+        /* ── Doc Header ── */
+        .doc-header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2.5px solid var(--kb-yellow); }
+        .doc-brand-text { font-family: var(--font-display); font-weight: 700; font-size: 11pt; color: var(--text-1); }
+        .doc-brand-sub { font-size: 7pt; color: var(--kb-brown); font-weight: 500; }
+        .doc-meta { text-align: right; font-size: 7pt; color: var(--text-3); }
+        .doc-meta strong { color: var(--kb-brown); }
+
+        .doc-title { font-size: 14pt; font-weight: 700; color: var(--text-1); margin-bottom: 2px; }
+        .doc-subtitle { font-size: 8pt; color: var(--text-2); margin-bottom: 10px; font-weight: 500; }
+
+        /* ── Section ── */
+        .section { margin-bottom: 10px; }
+        .section-title { font-size: 8.5pt; font-weight: 700; color: var(--text-1); padding: 4px 8px; background: #f5f3ee; border-left: 3px solid var(--kb-yellow); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+
+        /* ── ASK Badge ── */
+        .ask-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 7pt; font-weight: 700; letter-spacing: 0.5px; margin-right: 6px; color: #fff; }
+        .ask-a { background: #E85D3A; }
+        .ask-s { background: #2E86DE; }
+        .ask-k { background: #10AC84; }
+
+        /* ── Time Badge ── */
+        .time-badge { display: inline-block; font-size: 7pt; font-weight: 600; color: var(--kb-brown); background: rgba(245,166,35,0.12); padding: 2px 7px; border-radius: 3px; float: right; }
+
+        /* ── Question Block ── */
+        .q-block { margin-bottom: 8px; padding: 7px 9px; border: 1px solid var(--border-lt); border-radius: 6px; background: #fefefe; page-break-inside: avoid; }
+        .q-header { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+        .q-num { font-family: var(--font-display); font-weight: 700; font-size: 9pt; color: var(--kb-yellow-dark); min-width: 22px; }
+        .q-criterion { font-size: 7.5pt; font-weight: 600; color: var(--text-3); }
+        .q-main { font-size: 9.5pt; font-weight: 600; color: var(--text-1); margin-bottom: 3px; line-height: 1.4; }
+        .q-scenario { font-size: 8.5pt; color: var(--text-2); font-style: italic; margin-bottom: 4px; padding-left: 10px; border-left: 2px solid var(--border-lt); line-height: 1.4; }
+        .q-probes { margin-left: 12px; }
+        .q-probes li { font-size: 8pt; color: var(--text-2); margin-bottom: 1px; list-style: "→ "; padding-left: 2px; }
+        .q-signals { display: flex; gap: 12px; margin-top: 4px; font-size: 7.5pt; }
+        .signal-good, .signal-bad { padding: 3px 7px; border-radius: 4px; }
+        .signal-good { background: rgba(52,199,89,0.08); color: #1B7A34; }
+        .signal-bad { background: rgba(255,59,48,0.06); color: #C0251C; }
+        .signal-label { font-weight: 700; }
+
+        /* ── Agenda Table ── */
+        .agenda-table { width: 100%; border-collapse: collapse; margin-bottom: 8px; font-size: 8pt; }
+        .agenda-table th { background: #f0ede6; font-weight: 700; padding: 4px 8px; border: 1px solid var(--border); text-align: left; font-size: 7.5pt; text-transform: uppercase; letter-spacing: 0.3px; }
+        .agenda-table td { padding: 4px 8px; border: 1px solid var(--border); }
+        .agenda-table .time-col { width: 14%; font-weight: 600; text-align: center; color: var(--kb-yellow-dark); }
+
+        /* ── Tips Box ── */
+        .tips-box { background: rgba(245,166,35,0.06); border: 1px solid rgba(245,166,35,0.2); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px; }
+        .tips-box strong { color: var(--kb-yellow-dark); font-size: 8pt; }
+        .tips-box ul { margin-left: 14px; font-size: 8pt; color: var(--text-2); }
+        .tips-box li { margin-bottom: 1px; }
+
+        /* ── Footer ── */
+        .doc-footer { margin-top: 10px; padding-top: 6px; border-top: 1px solid var(--border-lt); font-size: 6.5pt; color: var(--text-3); text-align: center; }
+
+        .page-break { page-break-before: always; }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     TRANG 1: TỔNG QUAN & PHẦN A – ATTITUDE
+     ═══════════════════════════════════════════════ -->
+
+<div class="doc-header">
+    <div>
+        <div class="doc-brand-text">KBSV NextGen 2026</div>
+        <div class="doc-brand-sub">FinPeace × KB Securities Vietnam</div>
+    </div>
+    <div class="doc-meta">
+        <strong>Mẫu: PV-SV-02</strong><br>
+        Bộ Câu Hỏi Sàng Lọc Ứng Viên<br>
+        Ban Tuyển dụng HO3
+    </div>
+</div>
+
+<h1 class="doc-title">Bộ Câu Hỏi Phỏng Vấn Sàng Lọc Ứng Viên</h1>
+<p class="doc-subtitle">Khung ASK (Attitude – Skills – Knowledge) · 30 phút/buổi · Situation-based & Scenario-based · Sàng lọc ứng viên tiềm năng đào tạo</p>
+
+<!-- AGENDA -->
+<div class="section">
+    <div class="section-title">Lịch Trình Phỏng Vấn 30 Phút</div>
+    <table class="agenda-table">
+        <thead><tr><th class="time-col">Thời Gian</th><th>Nội Dung</th><th>Khung ASK</th><th>Tiêu Chí</th></tr></thead>
+        <tbody>
+            <tr><td class="time-col">0'–2'</td><td>Chào hỏi, giới thiệu chương trình, tạo không khí thoải mái</td><td>—</td><td>—</td></tr>
+            <tr><td class="time-col">2'–12'</td><td><strong>Phần A – ATTITUDE</strong> (Thái độ & Tư duy)</td><td><span class="ask-badge ask-a">A</span> Attitude</td><td>#1, #3, #6</td></tr>
+            <tr><td class="time-col">12'–22'</td><td><strong>Phần S – SKILLS</strong> (Kỹ năng thực chiến)</td><td><span class="ask-badge ask-s">S</span> Skills</td><td>#2, #4, #7, #8</td></tr>
+            <tr><td class="time-col">22'–27'</td><td><strong>Phần K – KNOWLEDGE</strong> (Kiến thức nền tảng)</td><td><span class="ask-badge ask-k">K</span> Knowledge</td><td>#5</td></tr>
+            <tr><td class="time-col">27'–30'</td><td>Ứng viên hỏi ngược + Kết thúc</td><td>—</td><td>Bonus</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- TIPS -->
+<div class="tips-box">
+    <strong>💡 Nguyên tắc phỏng vấn:</strong>
+    <ul>
+        <li><strong>Tỷ lệ vàng 80/20:</strong> Để ứng viên nói 80% thời gian. Người PV chỉ dẫn dắt 20%.</li>
+        <li><strong>STAR Method:</strong> Yêu cầu ứng viên kể theo: Situation → Task → Action → Result.</li>
+        <li><strong>Ưu tiên Attitude:</strong> SV chưa có kinh nghiệm → Thái độ & Growth Mindset quan trọng hơn kiến thức.</li>
+        <li><strong>"Red flag" loại nhanh:</strong> Thụ động, trả lời 1-2 từ, không đặt câu hỏi ngược, thiếu cam kết thời gian.</li>
+    </ul>
+</div>
+
+<!-- ═══════════════════════════════════════
+     PHẦN A – ATTITUDE (10 phút · 50%)
+     ═══════════════════════════════════════ -->
+<div class="section">
+    <div class="section-title"><span class="ask-badge ask-a">A</span> PHẦN A — ATTITUDE · Thái Độ & Tư Duy <span class="time-badge">⏱ 10 phút · 50 điểm</span></div>
+
+    <!-- Q1 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q1</span><span class="q-criterion">TC#1 · Năng Lượng & Sự Tò Mò (20%)</span></div>
+        <div class="q-main">"Kể cho anh/chị nghe: điều gì khiến bạn hào hứng nhất khi apply vào KBSV NextGen?"</div>
+        <ul class="q-probes">
+            <li>Probe: "Bạn biết đến chương trình qua đâu? Tại sao không chọn thực tập ở nơi khác?"</li>
+            <li>Probe: "Nếu phải giải thích cho bạn bè vì sao nghề môi giới chứng khoán thú vị — bạn sẽ nói gì?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Mắt sáng, trả lời dài, tự nghiên cứu trước, đặt câu hỏi ngược</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Em cũng không biết lắm", trả lời ngắn 1 dòng, không hỏi gì</span>
+        </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q2</span><span class="q-criterion">TC#3 · Growth Mindset (20%) — Scenario-based</span></div>
+        <div class="q-scenario">"Tưởng tượng bạn vào NextGen được 1 tuần. Mentor giao cho bạn phân tích 1 mã cổ phiếu mà bạn chưa từng nghe. Deadline là chiều mai. Bạn sẽ làm gì cụ thể?"</div>
+        <ul class="q-probes">
+            <li>Probe: "Bạn sẽ hỏi ai? Tra ở đâu? Nếu phân tích sai thì sao?"</li>
+            <li>Probe: "Kể 1 lần bạn thất bại ở trường/CLB. Bạn xử lý ra sao và học được gì?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Có kế hoạch cụ thể, chủ động hỏi mentor, chấp nhận sai + sửa nhanh</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Em chờ mentor hướng dẫn", đổ lỗi cho hoàn cảnh, sợ sai không dám làm</span>
+        </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q3</span><span class="q-criterion">TC#6 · Trung Thực & Cam Kết (10%) — Situation-based</span></div>
+        <div class="q-scenario">"Bạn đang tư vấn cho 1 người quen mua cổ phiếu. Bạn biết mã đó rủi ro cao nhưng nếu họ mua, bạn đạt KPI tuần. Bạn sẽ làm gì?"</div>
+        <ul class="q-probes">
+            <li>Probe: "Bạn nghĩ ranh giới giữa 'bán hàng giỏi' và 'lừa khách hàng' là gì?"</li>
+            <li>Probe: "42 ngày chương trình yêu cầu cam kết toàn thời gian. Lịch học trường bạn có xung đột không?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Từ chối tư vấn mã rủi ro, đặt uy tín trên KPI, đã check lịch học trước</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Miễn là đạt KPI thì OK", chưa biết lịch học có trùng không</span>
+        </div>
+    </div>
+
+    <!-- Q4 BACKUP -->
+    <div class="q-block" style="border-style: dashed; background: #fdfcfa;">
+        <div class="q-header"><span class="q-num">Q4</span><span class="q-criterion">TC#1+3 · Dự phòng — Nếu còn thời gian</span></div>
+        <div class="q-main">"Nếu được chọn lại ngành học, bạn có chọn lại ngành hiện tại không? Tại sao?"</div>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Tự nhận thức rõ, có lý do chọn nghề tư vấn tài chính, nhìn xa</span>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE BREAK -->
+<div class="page-break"></div>
+
+<!-- ═══════════════════════════════════════
+     TRANG 2: PHẦN S – SKILLS
+     ═══════════════════════════════════════ -->
+
+<div class="doc-header">
+    <div><div class="doc-brand-text">KBSV NextGen 2026</div><div class="doc-brand-sub">Bộ Câu Hỏi Phỏng Vấn · Trang 2/3</div></div>
+    <div class="doc-meta"><strong>Mẫu: PV-SV-02</strong></div>
+</div>
+
+<div class="section">
+    <div class="section-title"><span class="ask-badge ask-s">S</span> PHẦN S — SKILLS · Kỹ Năng Thực Chiến <span class="time-badge">⏱ 10 phút · 40 điểm</span></div>
+
+    <!-- Q5 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q5</span><span class="q-criterion">TC#2 · Giao Tiếp & Trình Bày (15%) — Live Test</span></div>
+        <div class="q-main">"Bạn có 60 giây. Hãy 'bán' cho anh/chị một thứ bất kỳ trên bàn — cái bút, chai nước, cuốn sổ."</div>
+        <ul class="q-probes">
+            <li>Quan sát: Cách mở đầu, ngôn ngữ cơ thể, ánh mắt, cấu trúc lập luận, sự sáng tạo</li>
+            <li>Probe: "Nếu phải thuyết trình trước 100 người về 1 chủ đề bạn giỏi, bạn chọn gì?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Tự tin, dám thử, có "hook" mở đầu, giao tiếp bằng mắt tốt</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> Từ chối không dám thử, run không nói được, nhìn xuống suốt</span>
+        </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q6</span><span class="q-criterion">TC#4 · Ngoại Khóa & Dẫn Dắt (10%) — Behavioral</span></div>
+        <div class="q-main">"Kể về 1 lần bạn dẫn dắt hoặc tổ chức điều gì đó — ở CLB, nhóm học, hay bất kỳ đâu."</div>
+        <ul class="q-probes">
+            <li>STAR: "Tình huống là gì? Vai trò của bạn? Bạn làm gì cụ thể? Kết quả ra sao?"</li>
+            <li>Probe: "Trong nhóm đó, bạn thích làm người lãnh đạo hay người thực thi?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Kể chi tiết có số liệu, vai trò rõ ràng, rút kinh nghiệm sau đó</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Em chưa tham gia gì", kể chung chung không có vai trò cá nhân</span>
+        </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q7</span><span class="q-criterion">TC#7 · Quản Lý Thời Gian (5%) — Scenario-based</span></div>
+        <div class="q-scenario">"Ở NextGen, sáng bạn có Morning Briefing 8h30, chiều Content Lab, tối Livestream 90 phút. Đồng thời bạn có bài thi cuối kỳ tuần sau. Bạn sẽ sắp xếp thế nào?"</div>
+        <ul class="q-probes">
+            <li>Probe: "Bạn có sẵn sàng thức khuya hoặc dậy sớm hơn trong 6 tuần không?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Có kế hoạch chia slot, biết ưu tiên, đã kiểm tra lịch thi</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> Chưa nghĩ đến, "chắc em xin nghỉ mấy hôm"</span>
+        </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q8</span><span class="q-criterion">TC#8 · Digital & Content (10%) — Scenario-based</span></div>
+        <div class="q-main">"Nếu ngay bây giờ phải quay 1 video TikTok 30 giây giới thiệu KBSV NextGen — bạn sẽ nói gì và quay kiểu gì?"</div>
+        <ul class="q-probes">
+            <li>Probe: "Bạn có kênh MXH cá nhân không? Bao nhiêu followers? Nội dung thường đăng gì?"</li>
+            <li>Probe: "Bạn thấy Financial KOC nào hay nhất? Họ làm gì khiến bạn thích?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Mô tả cụ thể (hook, script, angle), có kênh cá nhân, biết thuật toán MXH</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Em không dùng TikTok", không biết Financial KOC là gì</span>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE BREAK -->
+<div class="page-break"></div>
+
+<!-- ═══════════════════════════════════════
+     TRANG 3: PHẦN K + WRAP-UP + SCORING
+     ═══════════════════════════════════════ -->
+
+<div class="doc-header">
+    <div><div class="doc-brand-text">KBSV NextGen 2026</div><div class="doc-brand-sub">Bộ Câu Hỏi Phỏng Vấn · Trang 3/3</div></div>
+    <div class="doc-meta"><strong>Mẫu: PV-SV-02</strong></div>
+</div>
+
+<div class="section">
+    <div class="section-title"><span class="ask-badge ask-k">K</span> PHẦN K — KNOWLEDGE · Kiến Thức Nền Tảng <span class="time-badge">⏱ 5 phút · 10 điểm</span></div>
+
+    <!-- Q9 -->
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q9</span><span class="q-criterion">TC#5 · Hiểu Biết Tài Chính Cơ Bản (10%) — Quick Fire</span></div>
+        <div class="q-main">Hỏi nhanh 3 câu (chọn 3 trong 6 — tuỳ level ứng viên):</div>
+        <ul class="q-probes" style="margin-top: 4px;">
+            <li><strong>Dễ:</strong> "VN-Index hôm nay đang ở khoảng bao nhiêu điểm? Tăng hay giảm tuần qua?"</li>
+            <li><strong>Dễ:</strong> "Cổ phiếu, trái phiếu, và gửi tiết kiệm — khác nhau cơ bản ở chỗ nào?"</li>
+            <li><strong>Trung bình:</strong> "Nếu có 100 triệu, bạn sẽ phân bổ ra sao? Tại sao?"</li>
+            <li><strong>Trung bình:</strong> "Bạn đang follow kênh tài chính nào? Điều hay nhất bạn học được gần đây?"</li>
+            <li><strong>Khó:</strong> "PE ratio (P/E) là gì? Mã nào bạn đang quan tâm và P/E bao nhiêu?"</li>
+            <li><strong>Khó:</strong> "FED tăng lãi suất thì ảnh hưởng gì đến thị trường chứng khoán VN?"</li>
+        </ul>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Trả lời được 2/3 câu, có follow kênh tài chính, biết VN-Index</span>
+            <span class="signal-bad"><span class="signal-label">✗ Chấp nhận:</span> SV chưa biết gì — OK nếu Attitude cao. Sẽ được đào tạo 42 ngày</span>
+        </div>
+    </div>
+</div>
+
+<!-- WRAP-UP -->
+<div class="section">
+    <div class="section-title">🎯 Wrap-up · Câu Hỏi Ngược & Kết Thúc <span class="time-badge">⏱ 3 phút</span></div>
+
+    <div class="q-block">
+        <div class="q-header"><span class="q-num">Q10</span><span class="q-criterion">Bonus — Đánh giá sự tò mò & chủ động</span></div>
+        <div class="q-main">"Bạn có câu hỏi gì cho anh/chị về KBSV NextGen hoặc nghề tư vấn chứng khoán không?"</div>
+        <div class="q-signals">
+            <span class="signal-good"><span class="signal-label">✓ Tín hiệu tốt:</span> Hỏi 2+ câu chất lượng (văn hoá team, thu nhập thật broker, cơ hội sau 42 ngày)</span>
+            <span class="signal-bad"><span class="signal-label">✗ Red flag:</span> "Dạ em không có gì" — Thiếu sự tò mò nghiêm trọng</span>
+        </div>
+    </div>
+</div>
+
+<!-- QUICK SCORING GUIDE -->
+<div class="section">
+    <div class="section-title">📋 Bảng Quy Đổi Sao Nhanh (Ghi vào Phiếu NTD-SV-01)</div>
+    <table class="agenda-table">
+        <thead><tr><th class="time-col">Sao</th><th>Mô Tả Mức Độ</th><th>Ý Nghĩa</th></tr></thead>
+        <tbody>
+            <tr><td class="time-col" style="color: var(--red);">1 ★</td><td>Không đạt yêu cầu tối thiểu</td><td>Không có dấu hiệu phù hợp tiêu chí</td></tr>
+            <tr><td class="time-col" style="color: var(--orange);">2 ★</td><td>Dưới trung bình</td><td>Có nhận thức nhưng rất yếu, cần nhiều hỗ trợ</td></tr>
+            <tr><td class="time-col" style="color: var(--kb-yellow-dark);">3 ★</td><td>Trung bình — Chấp nhận được</td><td>Đạt mức cơ bản, có thể đào tạo thêm</td></tr>
+            <tr><td class="time-col" style="color: var(--blue);">4 ★</td><td>Tốt — Vượt kỳ vọng</td><td>Thể hiện rõ năng lực, tự tin, có ví dụ cụ thể</td></tr>
+            <tr><td class="time-col" style="color: var(--green);">5 ★</td><td>Xuất sắc — WOW factor</td><td>Ấn tượng mạnh, vượt trội so với các UV cùng nhóm</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- DECISION MATRIX -->
+<div class="section">
+    <div class="section-title">⚡ Ma Trận Quyết Định Nhanh</div>
+    <div class="tips-box">
+        <ul>
+            <li><strong style="color: #1B7A34;">TUYỂN NGAY (≥ 80đ):</strong> Attitude cao (Q1-Q3 đều 4-5★) + Skills tốt + có năng lượng. Đây là "diamond in the rough".</li>
+            <li><strong style="color: #B8650A;">CÂN NHẮC (60-79đ):</strong> Attitude OK nhưng Skills/Knowledge yếu → Có thể đào tạo. PV thêm vòng 2 hoặc cho thử 1 tuần.</li>
+            <li><strong style="color: #C0251C;">LOẠI (< 60đ):</strong> Thụ động, thiếu năng lượng, không cam kết thời gian, hoặc thiếu trung thực → Không phù hợp dù kiến thức tốt.</li>
+            <li><strong style="color: #C0251C;">LOẠI NHANH (Red flag):</strong> Trả lời toàn "dạ em không biết", không hỏi ngược, đến muộn không xin lỗi, nói xấu trường/thầy cũ.</li>
+        </ul>
+    </div>
+    <div class="tips-box" style="background: rgba(52,199,89,0.05); border-color: rgba(52,199,89,0.2);">
+        <strong style="color: #1B7A34;">🌟 Công thức chọn người của KBSV NextGen:</strong>
+        <ul>
+            <li><strong>Attitude 50% > Skills 40% > Knowledge 10%</strong> — Kiến thức đào tạo được, thái độ thì không.</li>
+            <li>1 bạn SV năng lượng cao + chưa biết gì về CK = <strong>tốt hơn</strong> 1 bạn kiến thức giỏi nhưng thụ động.</li>
+            <li>Câu hỏi vàng: <em>"Mình có muốn làm việc cùng bạn này 42 ngày không?"</em> → Nếu Có → Tuyển.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="doc-footer">
+    © 2026 KBSV NextGen · FinPeace × KB Securities Vietnam · Bộ Câu Hỏi PV Ứng Viên — Mẫu PV-SV-02 v1.0 · Sở Giao Dịch 3 (HO3) · Tài liệu Nội bộ — Không phổ biến
+</div>
+
+</body>
+</html>

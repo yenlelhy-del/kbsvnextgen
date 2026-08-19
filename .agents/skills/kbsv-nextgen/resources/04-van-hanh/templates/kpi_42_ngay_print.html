@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>KBSV NextGen 2026 — Bộ KPI 42 Ngày</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 13mm 14mm 11mm 14mm; }
+        :root {
+            --y: #F5A623; --yd: #E09000; --yl: rgba(245,166,35,0.06);
+            --br: #8B7355; --g: #34C759; --gl: rgba(52,199,89,0.06);
+            --b: #2E86DE; --bl: rgba(46,134,222,0.06);
+            --r: #FF3B30; --rl: rgba(255,59,48,0.06);
+            --o: #FF9500;
+            --t1: #1A1A1A; --t2: #555; --t3: #999;
+            --bdr: #d5cfc5; --bdr-lt: #ece8e0; --bg: #faf9f6;
+            --fb: 'Inter', -apple-system, sans-serif;
+            --fd: 'Space Grotesk', 'Inter', sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--fb); font-size: 8.5pt; color: var(--t1); line-height: 1.45; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+        /* Header */
+        .hdr { display: flex; align-items: center; justify-content: space-between; padding-bottom: 8px; border-bottom: 2.5px solid var(--y); margin-bottom: 10px; }
+        .hdr-logos { display: flex; align-items: center; gap: 8px; }
+        .hdr-logos img { height: 22px; object-fit: contain; }
+        .hdr-div { width: 1px; height: 18px; background: var(--bdr); }
+        .hdr-r { text-align: right; }
+        .hdr-title { font-family: var(--fd); font-weight: 700; font-size: 10pt; }
+        .hdr-sub { font-size: 6.5pt; color: var(--br); font-weight: 500; }
+
+        /* Doc title */
+        .doc-title { font-family: var(--fd); font-size: 14pt; font-weight: 700; color: var(--t1); margin-bottom: 2px; }
+        .doc-sub { font-size: 8pt; color: var(--t2); margin-bottom: 10px; }
+
+        /* Section */
+        .sec { margin-bottom: 8px; }
+        .sec-title { font-family: var(--fd); font-size: 9pt; font-weight: 700; color: var(--t1); padding: 4px 8px; background: var(--bg); border-left: 3px solid var(--y); margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+        .sec-title .badge { margin-left: auto; }
+        .sub-title { font-family: var(--fd); font-size: 8.5pt; font-weight: 700; color: var(--br); margin: 6px 0 4px; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 6px; font-size: 7.8pt; }
+        th { background: #f0ede6; font-weight: 700; padding: 3.5px 6px; border: 1px solid var(--bdr); text-align: left; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.3px; }
+        td { padding: 3.5px 6px; border: 1px solid var(--bdr); vertical-align: top; }
+        .tc { text-align: center; }
+        .num { font-family: var(--fd); font-weight: 600; color: var(--yd); }
+        .row-alt { background: var(--bg); }
+
+        /* Badges */
+        .badge { display: inline-block; padding: 1.5px 7px; border-radius: 4px; font-size: 6.5pt; font-weight: 700; letter-spacing: 0.3px; }
+        .badge-phase { background: var(--yl); color: var(--yd); }
+        .badge-daily { background: var(--bl); color: #1a5fb4; }
+        .badge-weekly { background: var(--gl); color: #1b7a34; }
+        .badge-sd { background: var(--rl); color: #c0251c; }
+
+        /* Callout */
+        .callout { padding: 6px 10px; border-radius: 6px; margin-bottom: 6px; font-size: 7.5pt; }
+        .callout-warn { background: var(--rl); color: #8b1a13; border-left: 3px solid var(--r); }
+        .callout-info { background: var(--yl); color: #8b5e00; border-left: 3px solid var(--y); }
+        .callout-ok { background: var(--gl); color: #1b7a34; border-left: 3px solid var(--g); }
+        .callout strong { font-weight: 700; }
+
+        /* Score box */
+        .score-box { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: var(--fd); font-weight: 700; font-size: 8pt; }
+        .score-total { background: var(--yl); color: var(--yd); }
+
+        /* Footer */
+        .ftr { display: flex; align-items: center; justify-content: space-between; padding-top: 5px; border-top: 1px solid var(--bdr-lt); margin-top: 4px; }
+        .ftr-l { display: flex; align-items: center; gap: 6px; }
+        .ftr-l img { height: 14px; opacity: 0.4; }
+        .ftr-t { font-size: 6pt; color: var(--t3); }
+        .ftr-r { font-family: var(--fd); font-size: 7pt; font-weight: 600; color: var(--br); }
+
+        .page-break { page-break-before: always; }
+
+        /* Overview grid */
+        .overview-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+        .ov-card { border: 1px solid var(--bdr-lt); border-radius: 8px; padding: 8px 10px; text-align: center; }
+        .ov-phase { font-family: var(--fd); font-weight: 700; font-size: 9pt; margin-bottom: 2px; }
+        .ov-time { font-size: 7pt; color: var(--t3); margin-bottom: 3px; }
+        .ov-pct { font-family: var(--fd); font-weight: 700; font-size: 16pt; color: var(--yd); }
+        .ov-label { font-size: 7pt; color: var(--t2); }
+
+        /* Formula */
+        .formula { background: #f8f6f1; border: 1px solid var(--bdr-lt); border-radius: 6px; padding: 6px 12px; font-family: var(--fd); font-size: 8pt; text-align: center; margin-bottom: 6px; color: var(--t1); }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════ TRANG 1 ═══════════ -->
+<div class="hdr">
+    <div class="hdr-logos">
+        <img src="../assets/finpeace-logo.png" alt="FinPeace">
+        <div class="hdr-div"></div>
+        <img src="../assets/kbsv-logo.jpeg" alt="KBSV">
+    </div>
+    <div class="hdr-r">
+        <div class="hdr-title">KBSV NextGen 2026</div>
+        <div class="hdr-sub">Sở Giao Dịch 3 (HO3) · KB Securities Vietnam</div>
+    </div>
+</div>
+
+<div class="doc-title">Bộ KPI Theo Dõi Hiệu Suất 42 Ngày</div>
+<div class="doc-sub">Dành cho Leader & Mentor · Theo dõi hiệu suất thành viên qua 3 giai đoạn đào tạo & thực chiến</div>
+
+<!-- OVERVIEW -->
+<div class="overview-grid">
+    <div class="ov-card" style="background: var(--yl);">
+        <div class="ov-phase">Phase 1</div>
+        <div class="ov-time">Tuần 1–2 · D1–D10</div>
+        <div class="ov-pct">20%</div>
+        <div class="ov-label">Đào tạo Nền tảng</div>
+    </div>
+    <div class="ov-card" style="background: var(--bl);">
+        <div class="ov-phase">Phase 2</div>
+        <div class="ov-time">Tuần 3–6 · D11–D42</div>
+        <div class="ov-pct">70%</div>
+        <div class="ov-label">Thực chiến Rising Stars</div>
+    </div>
+    <div class="ov-card" style="background: var(--gl);">
+        <div class="ov-phase">Phase 3</div>
+        <div class="ov-time">D42</div>
+        <div class="ov-pct">10%</div>
+        <div class="ov-label">Đánh giá Tổng kết</div>
+    </div>
+</div>
+
+<!-- PHASE 1 -->
+<div class="sec">
+    <div class="sec-title"><span class="badge badge-phase">PHASE 1</span> Đào Tạo Nền Tảng — Tuần 1–2 (D1–D10) <span class="score-box score-total">100 điểm</span></div>
+
+    <div class="sub-title">Tuần 1: Hiểu Ngành & Phân Tích Cơ Bản (FA) — 45 điểm</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:22%;">KPI</th><th>Mô tả</th><th style="width:20%;">Chỉ tiêu tối thiểu</th><th style="width:7%;" class="tc">Điểm</th></tr>
+        <tr><td class="num">1.1</td><td><strong>Tham dự đầy đủ</strong></td><td>Có mặt đúng giờ tất cả buổi D1–D5</td><td>5/5 buổi</td><td class="tc"><strong>10</strong></td></tr>
+        <tr class="row-alt"><td class="num">1.2</td><td><strong>FA Combat</strong></td><td>Trình bày luận điểm phân tích ngành + bảo vệ 1 mã CK (D4)</td><td>Nộp đúng hạn + trình bày</td><td class="tc"><strong>15</strong></td></tr>
+        <tr><td class="num">1.3</td><td><strong>Đọc hiểu BCTC</strong></td><td>Tóm tắt BCTC 1 doanh nghiệp niêm yết theo mô hình Canvas</td><td>Bản tóm tắt ≥ 500 từ</td><td class="tc"><strong>10</strong></td></tr>
+        <tr class="row-alt"><td class="num">1.4</td><td><strong>Chọn ngành trọng tâm</strong></td><td>Teamwork chọn 1 ngành phân tích, có logic rõ ràng</td><td>Thuyết trình nhóm D5</td><td class="tc"><strong>5</strong></td></tr>
+        <tr><td class="num">1.5</td><td><strong>Tương tác Group</strong></td><td>Đặt câu hỏi, comment, chia sẻ trong nhóm nội bộ</td><td>≥ 3 tương tác/ngày</td><td class="tc"><strong>5</strong></td></tr>
+    </table>
+
+    <div class="sub-title">Tuần 2: Phân Tích Kỹ Thuật (TA) & Kỹ Năng Sales — 55 điểm</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:22%;">KPI</th><th>Mô tả</th><th style="width:20%;">Chỉ tiêu tối thiểu</th><th style="width:7%;" class="tc">Điểm</th></tr>
+        <tr><td class="num">2.1</td><td><strong>Phân tích TA</strong></td><td>Phân tích 1 mã CK theo trend/sideway, nộp lên nhóm</td><td>Bài có chart + nhận định</td><td class="tc"><strong>15</strong></td></tr>
+        <tr class="row-alt"><td class="num">2.2</td><td><strong>Role-play Sales</strong></td><td>Sắm vai tiếp cận KH (D7), chấm bởi mentor</td><td>≥ 2 kịch bản</td><td class="tc"><strong>10</strong></td></tr>
+        <tr><td class="num">2.3</td><td><strong>Script tư vấn Deal</strong></td><td>Lên script cá nhân trình bày deal cụ thể cho KH (D8)</td><td>Script ≥ 300 từ + trình bày</td><td class="tc"><strong>10</strong></td></tr>
+        <tr class="row-alt"><td class="num">2.4</td><td><strong>Kế hoạch kênh MXH</strong></td><td>Plan xây kênh TikTok/Facebook cá nhân (D9)</td><td>Plan viết + đăng ký profile</td><td class="tc"><strong>10</strong></td></tr>
+        <tr><td class="num">2.5</td><td><strong>Social Profile</strong></td><td>Hoàn thành hình mẫu + social profile chuyên nghiệp (D10)</td><td>Avatar, bio, 1 bài đăng đầu</td><td class="tc"><strong>10</strong></td></tr>
+    </table>
+
+    <div class="callout callout-warn"><strong>Ngưỡng Sudden Death Phase 1:</strong> Tổng < 50/100 điểm = Loại khỏi chương trình</div>
+</div>
+
+<!-- ═══════════ TRANG 2 ═══════════ -->
+<div class="page-break"></div>
+<div class="hdr">
+    <div class="hdr-logos"><img src="../assets/finpeace-logo.png" alt="FinPeace"><div class="hdr-div"></div><img src="../assets/kbsv-logo.jpeg" alt="KBSV"></div>
+    <div class="hdr-r"><div class="hdr-title">Bộ KPI 42 Ngày</div><div class="hdr-sub">Trang 2/4</div></div>
+</div>
+
+<div class="sec">
+    <div class="sec-title"><span class="badge badge-phase">PHASE 2</span> Thực Chiến Rising Stars — Tuần 3–6 (D11–D42) <span class="score-box score-total">70% tổng điểm</span></div>
+
+    <div class="sub-title"><span class="badge badge-daily">DAILY</span> KPI Hàng Ngày — 6 chỉ tiêu</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:18%;">KPI</th><th>Hoạt động</th><th style="width:15%;">Chỉ tiêu/ngày</th><th style="width:12%;">Cách đo</th><th style="width:8%;" class="tc">%</th></tr>
+        <tr><td class="num">D.1</td><td><strong>Morning Briefing</strong></td><td>Tham dự 08:30–09:00</td><td>Có mặt đúng giờ</td><td>Check-in</td><td class="tc"><strong>5%</strong></td></tr>
+        <tr class="row-alt"><td class="num">D.2</td><td><strong>Telesales</strong></td><td>Gọi điện tiếp cận lead 09:00–11:30</td><td>≥ 15 cuộc gọi</td><td>Log CRM</td><td class="tc"><strong>15%</strong></td></tr>
+        <tr><td class="num">D.3</td><td><strong>Chăm sóc Lead MXH</strong></td><td>Nhắn tin follow-up lead từ content</td><td>≥ 10 tin nhắn</td><td>Log CRM</td><td class="tc"><strong>10%</strong></td></tr>
+        <tr class="row-alt"><td class="num">D.4</td><td><strong>Content Lab</strong></td><td>Sản xuất nội dung 13:30–15:30</td><td>≥ 1 content/ngày</td><td>Đăng kênh cá nhân</td><td class="tc"><strong>20%</strong></td></tr>
+        <tr><td class="num">D.5</td><td><strong>Hỗ trợ mở TK</strong></td><td>Hướng dẫn KH mở TK 15:30–17:00</td><td>Ghi nhận CRM</td><td>Log hệ thống</td><td class="tc"><strong>10%</strong></td></tr>
+        <tr class="row-alt"><td class="num">D.6</td><td><strong>CRM Update</strong></td><td>Cập nhật data khách hàng cuối ngày</td><td>100% lead trong ngày</td><td>CRM</td><td class="tc"><strong>5%</strong></td></tr>
+    </table>
+
+    <div class="sub-title"><span class="badge badge-weekly">WEEKLY</span> KPI Hàng Tuần — Chỉ tiêu tăng dần (Growth Curve)</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:22%;">KPI</th><th class="tc" style="width:14%;">Tuần 3</th><th class="tc" style="width:14%;">Tuần 4</th><th class="tc" style="width:14%;">Tuần 5</th><th class="tc" style="width:14%;">Tuần 6</th></tr>
+        <tr><td class="num">W.1</td><td><strong>TK mở mới (Active)</strong></td><td class="tc">≥ 2</td><td class="tc">≥ 3</td><td class="tc">≥ 4</td><td class="tc">≥ 5</td></tr>
+        <tr class="row-alt"><td class="num">W.2</td><td><strong>Livestream 90'</strong></td><td class="tc">≥ 2 buổi</td><td class="tc">≥ 3 buổi</td><td class="tc">≥ 3 buổi</td><td class="tc">≥ 3 buổi</td></tr>
+        <tr><td class="num">W.3</td><td><strong>Video content đăng</strong></td><td class="tc">≥ 3</td><td class="tc">≥ 5</td><td class="tc">≥ 5</td><td class="tc">≥ 7</td></tr>
+        <tr class="row-alt"><td class="num">W.4</td><td><strong>Tổng cuộc gọi</strong></td><td class="tc">≥ 60</td><td class="tc">≥ 75</td><td class="tc">≥ 75</td><td class="tc">≥ 75</td></tr>
+        <tr><td class="num">W.5</td><td><strong>Lead chất lượng</strong></td><td class="tc">≥ 5</td><td class="tc">≥ 8</td><td class="tc">≥ 10</td><td class="tc">≥ 12</td></tr>
+        <tr class="row-alt"><td class="num">W.6</td><td><strong>NAV khách hàng</strong></td><td class="tc">Track</td><td class="tc">Track</td><td class="tc">Track</td><td class="tc">Xếp hạng</td></tr>
+    </table>
+
+    <div class="sub-title">KPI Livestream Chi Tiết</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:22%;">Tiêu chí</th><th>Chỉ tiêu/buổi</th><th style="width:25%;">Cách đo</th></tr>
+        <tr><td class="num">L.1</td><td>Thời lượng</td><td>≥ 90 phút</td><td>Record + timestamp</td></tr>
+        <tr class="row-alt"><td class="num">L.2</td><td>Viewers đồng thời</td><td>≥ 10 trung bình</td><td>Analytics MXH</td></tr>
+        <tr><td class="num">L.3</td><td>Tương tác</td><td>≥ 20 comment</td><td>Đếm comment</td></tr>
+        <tr class="row-alt"><td class="num">L.4</td><td>CTA hiệu quả</td><td>≥ 2 lead/buổi</td><td>Tracking link/form</td></tr>
+        <tr><td class="num">L.5</td><td>Nội dung</td><td>Market update + ≥ 1 mã phân tích</td><td>Review mentor</td></tr>
+    </table>
+
+    <div class="sub-title">KPI Content & Digital</div>
+    <table>
+        <tr><th style="width:5%;">#</th><th style="width:22%;">Tiêu chí</th><th>Chỉ tiêu</th><th style="width:25%;">Cách đo</th></tr>
+        <tr><td class="num">C.1</td><td>Video TikTok/Reels</td><td>≥ 500 views trung bình</td><td>Analytics</td></tr>
+        <tr class="row-alt"><td class="num">C.2</td><td>Post Facebook</td><td>≥ 10 reactions + 3 shares TB</td><td>Analytics</td></tr>
+        <tr><td class="num">C.3</td><td>Trend content</td><td>≥ 1 video viral (≥ 5K views)/tháng</td><td>Analytics</td></tr>
+        <tr class="row-alt"><td class="num">C.4</td><td>Tính nhất quán</td><td>Đăng đều ≥ 5 ngày/tuần</td><td>Calendar tracking</td></tr>
+        <tr><td class="num">C.5</td><td>Chất lượng nội dung</td><td>Không sai thông tin tài chính</td><td>Review mentor</td></tr>
+    </table>
+</div>
+
+<!-- ═══════════ TRANG 3 ═══════════ -->
+<div class="page-break"></div>
+<div class="hdr">
+    <div class="hdr-logos"><img src="../assets/finpeace-logo.png" alt="FinPeace"><div class="hdr-div"></div><img src="../assets/kbsv-logo.jpeg" alt="KBSV"></div>
+    <div class="hdr-r"><div class="hdr-title">Bộ KPI 42 Ngày</div><div class="hdr-sub">Trang 3/4</div></div>
+</div>
+
+<!-- SUDDEN DEATH -->
+<div class="sec">
+    <div class="sec-title"><span class="badge badge-sd">SUDDEN DEATH</span> Quy Tắc Loại Trực Tiếp — Áp dụng từ Tuần 3</div>
+    <div class="callout callout-warn"><strong>Vi phạm bất kỳ điều nào = Loại ngay lập tức, không cảnh báo.</strong></div>
+    <table>
+        <tr><th style="width:6%;">#</th><th style="width:55%;">Vi phạm</th><th>Hậu quả</th></tr>
+        <tr><td class="num">SD.1</td><td>Vắng mặt Morning Briefing ≥ 3 lần/tuần không báo trước</td><td style="color: var(--r); font-weight: 700;">LOẠI</td></tr>
+        <tr class="row-alt"><td class="num">SD.2</td><td>Không nộp bất kỳ content nào trong 3 ngày liên tiếp</td><td style="color: var(--r); font-weight: 700;">LOẠI</td></tr>
+        <tr><td class="num">SD.3</td><td>Tài khoản mở mới = 0 sau 2 tuần thực chiến liên tiếp</td><td style="color: var(--r); font-weight: 700;">LOẠI</td></tr>
+        <tr class="row-alt"><td class="num">SD.4</td><td>Cung cấp thông tin sai cho khách hàng (vi phạm compliance)</td><td style="color: var(--r); font-weight: 700;">LOẠI</td></tr>
+        <tr><td class="num">SD.5</td><td>Không livestream nào trong 1 tuần (không có lý do chính đáng)</td><td style="color: var(--o); font-weight: 600;">Cảnh cáo → Loại nếu tái phạm</td></tr>
+        <tr class="row-alt"><td class="num">SD.6</td><td>Thái độ tiêu cực, gây ảnh hưởng xấu đến team</td><td style="color: var(--r); font-weight: 700;">LOẠI</td></tr>
+    </table>
+</div>
+
+<!-- PHASE 3 -->
+<div class="sec">
+    <div class="sec-title"><span class="badge badge-phase">PHASE 3</span> Đánh Giá Tổng Kết — D42 <span class="score-box score-total">10% tổng điểm</span></div>
+
+    <div class="formula">TỔNG ĐIỂM = Phase 1 × 20% + Phase 2 × 70% + Phase 3 × 10%</div>
+    <div class="formula" style="font-size: 7.5pt; color: var(--t2);">Phase 2 = TK Active (30%) + Content & Livestream (25%) + Telesales (15%)</div>
+
+    <table>
+        <tr><th style="width:6%;">#</th><th style="width:35%;">Tiêu chí</th><th style="width:10%;" class="tc">Trọng số</th><th>Người đánh giá</th></tr>
+        <tr><td class="num">F.1</td><td><strong>Thuyết trình Case Study cá nhân</strong></td><td class="tc">30%</td><td>Panel (Quân, Yến, GĐ Chi nhánh)</td></tr>
+        <tr class="row-alt"><td class="num">F.2</td><td><strong>Số liệu thực tế</strong> (TK, NAV, content reach)</td><td class="tc">40%</td><td>Hệ thống tự động</td></tr>
+        <tr><td class="num">F.3</td><td><strong>Đánh giá 360°</strong> từ mentor + đồng đội</td><td class="tc">20%</td><td>Mentor + Peer review</td></tr>
+        <tr class="row-alt"><td class="num">F.4</td><td><strong>Cam kết & Thái độ</strong> xuyên suốt</td><td class="tc">10%</td><td>Mentor chính</td></tr>
+    </table>
+</div>
+
+<!-- GIẢI THƯỞNG -->
+<div class="sec">
+    <div class="sec-title">Cơ Cấu Giải Thưởng & Leaderboard</div>
+
+    <table>
+        <tr><th style="width:35%;">Giải</th><th style="width:18%;" class="tc">Tiền thưởng</th><th>Tiêu chí</th></tr>
+        <tr style="background: rgba(245,166,35,0.08);"><td><strong>Giải Nhất</strong></td><td class="tc" style="color: var(--yd); font-weight: 800;">5.000.000 VNĐ</td><td>Tổng điểm cao nhất</td></tr>
+        <tr><td><strong>Giải Nhì</strong></td><td class="tc" style="font-weight: 700;">3.000.000 VNĐ</td><td>Tổng điểm nhì</td></tr>
+        <tr class="row-alt"><td><strong>Giải Ba</strong></td><td class="tc" style="font-weight: 700;">1.000.000 VNĐ</td><td>Tổng điểm ba</td></tr>
+        <tr><td><strong>NAV cao nhất</strong></td><td class="tc" style="font-weight: 700;">3.000.000 VNĐ</td><td>TK KH có tổng NAV lớn nhất</td></tr>
+        <tr class="row-alt"><td><strong>Clip xu hướng nhất</strong></td><td class="tc" style="font-weight: 700;">1.000.000 VNĐ</td><td>Video có lượt views cao nhất</td></tr>
+        <tr><td><strong>Livestream chăm chỉ nhất</strong></td><td class="tc" style="font-weight: 700;">1.000.000 VNĐ</td><td>Tổng giờ livestream nhiều nhất</td></tr>
+        <tr class="row-alt"><td><strong>Mở TK nhiều nhất</strong></td><td class="tc" style="font-weight: 700;">1.000.000 VNĐ</td><td>Số TK active nhiều nhất</td></tr>
+    </table>
+
+    <div class="sub-title">Thưởng Active TK (Lũy tiến — Ngoài giải thưởng)</div>
+    <table>
+        <tr><th class="tc" style="width:25%;">Mốc</th><th class="tc" style="width:25%;">Thưởng/TK</th><th>Ví dụ</th></tr>
+        <tr><td class="tc">< 5 TK</td><td class="tc"><strong>50.000đ</strong>/TK</td><td>4 TK = 200.000đ</td></tr>
+        <tr class="row-alt"><td class="tc">5–10 TK</td><td class="tc"><strong>100.000đ</strong>/TK</td><td>8 TK = 800.000đ</td></tr>
+        <tr><td class="tc">10–20 TK</td><td class="tc"><strong>150.000đ</strong>/TK</td><td>15 TK = 2.250.000đ</td></tr>
+        <tr class="row-alt"><td class="tc">20+ TK</td><td class="tc" style="color: var(--g); font-weight: 700;">200.000đ/TK</td><td>25 TK = 5.000.000đ</td></tr>
+    </table>
+</div>
+
+<!-- ═══════════ TRANG 4 ═══════════ -->
+<div class="page-break"></div>
+<div class="hdr">
+    <div class="hdr-logos"><img src="../assets/finpeace-logo.png" alt="FinPeace"><div class="hdr-div"></div><img src="../assets/kbsv-logo.jpeg" alt="KBSV"></div>
+    <div class="hdr-r"><div class="hdr-title">Bộ KPI 42 Ngày</div><div class="hdr-sub">Trang 4/4 · Bảng Tracking</div></div>
+</div>
+
+<!-- TRACKING DAILY -->
+<div class="sec">
+    <div class="sec-title">Bảng Tracking KPI Cá Nhân — Dành cho Leader</div>
+
+    <div class="sub-title">Thông tin Thành viên</div>
+    <table>
+        <tr><td style="width:15%;"><strong>Họ tên:</strong></td><td style="width:35%; border-bottom: 1px solid var(--bdr);"></td><td style="width:12%;"><strong>Nhóm:</strong></td><td style="width:13%; border-bottom: 1px solid var(--bdr);"></td><td style="width:12%;"><strong>Mentor:</strong></td><td style="border-bottom: 1px solid var(--bdr);"></td></tr>
+    </table>
+
+    <div class="sub-title"><span class="badge badge-daily">DAILY</span> Tracker Hàng Ngày (1 tuần mẫu)</div>
+    <table>
+        <tr><th class="tc">Ngày</th><th class="tc">Briefing</th><th class="tc">Calls (/15)</th><th class="tc">Lead MXH (/10)</th><th class="tc">Content</th><th class="tc">Mở TK</th><th class="tc">CRM</th><th class="tc">Điểm</th></tr>
+        <tr><td class="tc">T2</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td></tr>
+        <tr class="row-alt"><td class="tc">T3</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td></tr>
+        <tr><td class="tc">T4</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td></tr>
+        <tr class="row-alt"><td class="tc">T5</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td></tr>
+        <tr><td class="tc">T6</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td><td class="tc">☐</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">____</td></tr>
+        <tr style="background: rgba(245,166,35,0.06);"><td class="tc" style="font-weight:700;">TỔNG</td><td class="tc" style="font-weight:700;">__/5</td><td class="tc" style="font-weight:700;">__/75</td><td class="tc" style="font-weight:700;">__/50</td><td class="tc" style="font-weight:700;">__/5</td><td class="tc" style="font-weight:700;">____</td><td class="tc" style="font-weight:700;">__/5</td><td class="tc" style="font-weight:700;">____</td></tr>
+    </table>
+
+    <div class="sub-title"><span class="badge badge-weekly">WEEKLY</span> Tổng hợp 4 Tuần Thực Chiến</div>
+    <table>
+        <tr><th class="tc">Tuần</th><th class="tc">TK Active</th><th class="tc">Livestream</th><th class="tc">Videos</th><th class="tc">Calls</th><th class="tc">Lead CĐ</th><th class="tc">Điểm tuần</th><th class="tc">Xếp hạng</th></tr>
+        <tr><td class="tc"><strong>W3</strong></td><td class="tc">____/2</td><td class="tc">____/2</td><td class="tc">____/3</td><td class="tc">____/60</td><td class="tc">____/5</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">________</td><td class="tc">#____</td></tr>
+        <tr class="row-alt"><td class="tc"><strong>W4</strong></td><td class="tc">____/3</td><td class="tc">____/3</td><td class="tc">____/5</td><td class="tc">____/75</td><td class="tc">____/8</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">________</td><td class="tc">#____</td></tr>
+        <tr><td class="tc"><strong>W5</strong></td><td class="tc">____/4</td><td class="tc">____/3</td><td class="tc">____/5</td><td class="tc">____/75</td><td class="tc">____/10</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">________</td><td class="tc">#____</td></tr>
+        <tr class="row-alt"><td class="tc"><strong>W6</strong></td><td class="tc">____/5</td><td class="tc">____/3</td><td class="tc">____/7</td><td class="tc">____/75</td><td class="tc">____/12</td><td class="tc" style="border-bottom: 1px dashed var(--bdr);">________</td><td class="tc">#____</td></tr>
+        <tr style="background: rgba(245,166,35,0.06);"><td class="tc" style="font-weight:800;">TỔNG</td><td class="tc" style="font-weight:700;">________</td><td class="tc" style="font-weight:700;">________</td><td class="tc" style="font-weight:700;">________</td><td class="tc" style="font-weight:700;">________</td><td class="tc" style="font-weight:700;">________</td><td class="tc" style="font-weight:800; color: var(--yd);">________</td><td class="tc" style="font-weight:800;">#____</td></tr>
+    </table>
+</div>
+
+<!-- QUYẾT ĐỊNH -->
+<div class="sec">
+    <div class="sec-title">Quyết Định Sau 42 Ngày</div>
+    <table>
+        <tr><th style="width:25%;">Kết quả</th><th style="width:35%;">Điều kiện</th><th>Hành động</th></tr>
+        <tr style="background: var(--gl);"><td style="font-weight:700; color: #1b7a34;">Ký HĐ Broker chính thức</td><td>Top 30% tổng điểm + Không vi phạm SD</td><td>Đề xuất ký hợp đồng</td></tr>
+        <tr style="background: var(--yl);"><td style="font-weight:700; color: var(--yd);">Gia hạn thử việc 1 tháng</td><td>Điểm trung bình + Attitude tốt</td><td>Kèm thêm 1 tháng</td></tr>
+        <tr style="background: var(--rl);"><td style="font-weight:700; color: #c0251c;">Kết thúc chương trình</td><td>Dưới ngưỡng + Thụ động</td><td>Cấp chứng nhận tham gia</td></tr>
+    </table>
+
+    <div style="margin-top: 12px;">
+        <table>
+            <tr><td style="width:15%;"><strong>Nhận xét Leader:</strong></td><td style="border-bottom: 1px solid var(--bdr); height: 50px;" colspan="3"></td></tr>
+        </table>
+        <div style="display: flex; gap: 40px; margin-top: 14px;">
+            <div style="text-align: center; flex: 1;">
+                <div style="border-bottom: 1px solid var(--bdr); height: 30px; margin-bottom: 3px;"></div>
+                <div style="font-size: 7pt; color: var(--t3);">Mentor ký tên</div>
+            </div>
+            <div style="text-align: center; flex: 1;">
+                <div style="border-bottom: 1px solid var(--bdr); height: 30px; margin-bottom: 3px;"></div>
+                <div style="font-size: 7pt; color: var(--t3);">Trưởng nhóm ký tên</div>
+            </div>
+            <div style="text-align: center; flex: 1;">
+                <div style="border-bottom: 1px solid var(--bdr); height: 30px; margin-bottom: 3px;"></div>
+                <div style="font-size: 7pt; color: var(--t3);">Giám đốc HO3 duyệt</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ftr">
+    <div class="ftr-l"><img src="../assets/finpeace-logo.png" alt=""><div style="width:1px;height:10px;background:var(--bdr);"></div><img src="../assets/kbsv-logo.jpeg" alt=""><span class="ftr-t">© 2026 KBSV NextGen · FinPeace × KB Securities Vietnam</span></div>
+    <div class="ftr-r">nextgen.finpeace.cloud</div>
+</div>
+
+</body>
+</html>

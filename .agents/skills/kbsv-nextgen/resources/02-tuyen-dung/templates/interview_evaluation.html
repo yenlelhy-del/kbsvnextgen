@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBSV NextGen 2026 — Phiếu Đánh Giá Ứng Viên Phỏng Vấn</title>
+    <meta name="description" content="Phiếu đánh giá nhân sự phỏng vấn tham gia Chương trình KBSV NextGen 2026 — Bộ khung 8 Tiêu chí Năng lực Cốt lõi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Design Tokens (Matching nextgen.finpeace.cloud) ── */
+        :root {
+            --kb-yellow: #F5A623;
+            --kb-yellow-light: #FFD166;
+            --kb-yellow-dark: #E09000;
+            --kb-brown: #8B7355;
+            --kb-brown-light: #A89279;
+            --kb-gray: #6B6B6B;
+            --kb-dark: #2C2C2C;
+
+            --accent-green: #34C759;
+            --accent-blue: #007AFF;
+            --accent-red: #FF3B30;
+            --accent-orange: #FF9500;
+
+            --bg-primary: #FAFAF7;
+            --bg-secondary: #F5F3EE;
+            --bg-tertiary: #EEEBE4;
+            --bg-card: rgba(255, 255, 255, 0.85);
+            --bg-card-hover: rgba(255, 255, 255, 0.95);
+
+            --text-primary: #1A1A1A;
+            --text-secondary: #5A5A5A;
+            --text-tertiary: #8A8A8A;
+            --text-inverse: #FFFFFF;
+
+            --border-light: rgba(139, 115, 85, 0.12);
+            --border-medium: rgba(139, 115, 85, 0.2);
+
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+            --shadow-yellow: 0 4px 20px rgba(245, 166, 35, 0.3);
+            --shadow-yellow-lg: 0 8px 40px rgba(245, 166, 35, 0.4);
+
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+
+            --container-max: 860px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--font-primary); background: var(--bg-primary);
+            color: var(--text-primary); line-height: 1.6; overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5 { font-family: var(--font-display); }
+        a { text-decoration: none; color: inherit; }
+
+        /* ── SVG Icon System ── */
+        .icon { width: 24px; height: 24px; display: inline-block; vertical-align: middle; flex-shrink: 0; stroke: currentColor; }
+        .icon-sm { width: 18px; height: 18px; display: inline-block; vertical-align: middle; flex-shrink: 0; stroke: currentColor; }
+
+        /* ── Print / PDF ── */
+        @media print {
+            @page { size: A4; margin: 18mm 16mm 16mm 16mm; }
+            html, body { background: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            nav.navbar, .no-print, footer, .result-panel, .action-bar { display: none !important; }
+            .form-container {
+                box-shadow: none !important; border: none !important; backdrop-filter: none !important;
+                max-width: 100% !important; margin: 0 !important; padding: 0 !important;
+                background: #fff !important;
+            }
+            .section-tag { border: 1.5px solid #E09000; }
+            .info-grid, .info-grid.three-col { gap: 10px; }
+            .field-input, select.field-input { border: 1.5px solid #ccc; background: #fafafa !important; min-height: 32px; }
+            .notes-box { border: 1.5px solid #ccc; background: #fafafa !important; min-height: 60px; }
+            /* Star rating: show as text circles instead of interactive */
+            .star-rating { gap: 2px; }
+            .star-rating label { font-size: 22px; color: #ddd; }
+            .star-rating input:checked ~ label { color: #F5A623; }
+            .score-display { font-size: 0.75rem; }
+            /* Criterion rows */
+            .criterion-row { background: #fafafa !important; border: 1px solid #e0e0e0 !important; margin-bottom: 6px; padding: 12px; }
+            .criterion-row:hover { border-color: #e0e0e0 !important; }
+            /* Scoring table */
+            .score-summary-table { font-size: 0.82rem; }
+            .score-summary-table td.col-write { background: #fff9f0 !important; min-height: 28px; }
+            .score-summary-table .row-total td { background: #fff5e0 !important; }
+            .score-summary-table .verdict-row td { background: #f9f9f6 !important; }
+            .verdict-dot { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            /* Signature */
+            .sign-area { page-break-inside: avoid; }
+            .sign-label { margin-bottom: 50px; }
+            /* Page breaks */
+            .criteria-section { page-break-inside: avoid; }
+            .criteria-section-title { page-break-after: avoid; }
+            h1.form-title { font-size: 1.4rem; }
+        }
+
+        /* ── Navbar (Matching nextgen.finpeace.cloud) ── */
+        nav.navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            height: 72px; padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            background: rgba(250, 250, 247, 0.88);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .nav-logo { display: flex; align-items: center; gap: 10px; }
+        .logo-text { font-family: var(--font-display); font-weight: 700; font-size: 15px; color: var(--text-primary); line-height: 1.2; }
+        .logo-sub { font-size: 11px; color: var(--kb-brown); font-weight: 500; }
+
+        .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+        /* ── Buttons (Matching nextgen.finpeace.cloud) ── */
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 24px; border-radius: var(--radius-full);
+            font-family: var(--font-primary); font-weight: 600; font-size: 0.9rem;
+            cursor: pointer; border: none; transition: all var(--transition-base);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--kb-yellow) 0%, var(--kb-yellow-dark) 100%);
+            color: var(--text-primary); box-shadow: var(--shadow-yellow);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-yellow-lg); }
+        .btn-outline {
+            background: transparent; border: 2px solid var(--kb-brown-light);
+            color: var(--text-secondary); font-weight: 600;
+        }
+        .btn-outline:hover { border-color: var(--kb-yellow); color: var(--kb-yellow-dark); background: rgba(245,166,35,0.06); }
+
+        /* ── Section Tag (Matching nextgen.finpeace.cloud section-tag) ── */
+        .section-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(245, 166, 35, 0.1); border: 1px solid rgba(245, 166, 35, 0.25);
+            border-radius: var(--radius-full); padding: 6px 16px;
+            font-size: 0.8rem; font-weight: 700; color: var(--kb-yellow-dark);
+            letter-spacing: 0.3px; margin-bottom: 16px;
+        }
+
+        /* ── Form Container ── */
+        .form-container {
+            max-width: var(--container-max); margin: 100px auto 3rem; padding: 2.5rem;
+            background: var(--bg-card); border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md); border: 1px solid var(--border-light);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-title {
+            font-size: 1.65rem; font-weight: 700; margin-bottom: 6px; color: var(--text-primary);
+        }
+        .form-subtitle { font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 2rem; }
+
+        /* ── Info Grid ── */
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-light); }
+        .info-grid.three-col { grid-template-columns: 1fr 1fr 1fr; }
+
+        .field-group { display: flex; flex-direction: column; gap: 6px; }
+        .field-label {
+            font-size: 0.78rem; font-weight: 700; color: var(--kb-brown);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .field-input {
+            padding: 11px 14px; border-radius: var(--radius-md);
+            border: 1.5px solid var(--border-medium); font-size: 0.9rem; font-weight: 500;
+            color: var(--text-primary); background: var(--bg-secondary);
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast); outline: none;
+            font-family: var(--font-primary);
+        }
+        .field-input:focus { border-color: var(--kb-yellow); box-shadow: 0 0 0 3px rgba(245,166,35,0.15); }
+        .field-input::placeholder { color: var(--text-tertiary); }
+
+        select.field-input {
+            appearance: none; cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7355' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+        }
+
+        /* ── Criteria Section ── */
+        .criteria-section { margin-bottom: 2rem; }
+        .criteria-section-title {
+            font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+            color: var(--text-primary); margin-bottom: 16px;
+            padding-bottom: 10px; border-bottom: 2px solid var(--border-light);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .criteria-section-title .icon-sm { color: var(--kb-yellow-dark); }
+
+        .criterion-row {
+            display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: start;
+            padding: 16px; margin-bottom: 8px; background: var(--bg-secondary);
+            border-radius: var(--radius-lg); border: 1.5px solid transparent;
+            transition: all var(--transition-fast);
+        }
+        .criterion-row:hover { border-color: var(--border-medium); background: var(--bg-card-hover); }
+
+        .criterion-name { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+        .criterion-desc { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.55; }
+        .criterion-weight {
+            font-size: 0.75rem; font-weight: 700; color: var(--kb-yellow-dark);
+            margin-top: 6px; display: inline-flex; align-items: center; gap: 4px;
+            background: rgba(245,166,35,0.1); padding: 3px 10px; border-radius: var(--radius-full);
+        }
+
+        /* ── Star Rating ── */
+        .star-rating { display: flex; gap: 3px; flex-direction: row-reverse; justify-content: flex-end; }
+        .star-rating input { display: none; }
+        .star-rating label {
+            font-size: 28px; color: var(--bg-tertiary); cursor: pointer;
+            transition: color 0.15s, transform 0.15s; line-height: 1;
+        }
+        .star-rating label:hover,
+        .star-rating label:hover ~ label,
+        .star-rating input:checked ~ label { color: var(--kb-yellow); }
+        .star-rating label:hover { transform: scale(1.15); }
+
+        .score-display { font-size: 0.8rem; font-weight: 700; color: var(--kb-brown); text-align: right; margin-top: 4px; min-width: 80px; }
+
+        /* ── Notes ── */
+        .notes-box {
+            width: 100%; min-height: 80px; padding: 12px 14px; border-radius: var(--radius-md);
+            border: 1.5px solid var(--border-medium); font-size: 0.88rem; font-weight: 500;
+            color: var(--text-primary); background: var(--bg-secondary); resize: vertical;
+            outline: none; font-family: var(--font-primary);
+            transition: border-color var(--transition-fast);
+        }
+        .notes-box:focus { border-color: var(--kb-yellow); }
+
+        /* ── Result Panel ── */
+        .result-panel {
+            background: linear-gradient(135deg, rgba(245,166,35,0.05), rgba(52,199,89,0.05));
+            border: 2px solid var(--border-medium); border-radius: var(--radius-xl); padding: 2rem;
+            margin-top: 2rem; display: none;
+        }
+        .result-panel.visible { display: block; animation: fadeSlideUp 0.4s ease; }
+
+        @keyframes fadeSlideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+        .result-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; }
+
+        .result-score-big {
+            font-family: var(--font-display); font-size: 3.5rem; font-weight: 700;
+            text-align: center; margin: 1rem 0;
+            background: linear-gradient(135deg, var(--kb-yellow), var(--kb-yellow-dark));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .result-verdict {
+            text-align: center; font-size: 1rem; font-weight: 700; padding: 10px 24px;
+            border-radius: var(--radius-full); display: inline-block;
+        }
+        .verdict-pass { background: rgba(52,199,89,0.12); color: #1B7A34; }
+        .verdict-consider { background: rgba(255,149,0,0.12); color: #B8650A; }
+        .verdict-fail { background: rgba(255,59,48,0.12); color: #C0251C; }
+
+        .score-breakdown { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 1.5rem; }
+        .breakdown-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 14px; background: var(--bg-card); border-radius: var(--radius-md);
+            border: 1px solid var(--border-light); font-size: 0.85rem;
+        }
+        .breakdown-label { font-weight: 600; color: var(--text-primary); }
+        .breakdown-score { font-weight: 700; color: var(--kb-yellow-dark); }
+
+        .bar-track { height: 6px; background: var(--bg-tertiary); border-radius: 4px; flex: 1; margin: 0 10px; }
+        .bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--kb-yellow), var(--kb-yellow-dark)); transition: width 0.6s ease; }
+
+        .radar-container { display: flex; justify-content: center; margin: 1.5rem 0; }
+
+        /* ── Scoring Summary Table (PDF-friendly) ── */
+        .score-summary-table {
+            width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.85rem;
+        }
+        .score-summary-table th {
+            background: var(--bg-tertiary); font-family: var(--font-display); font-weight: 600;
+            color: var(--text-primary); padding: 10px 12px; text-align: left;
+            border: 1.5px solid var(--border-medium); font-size: 0.78rem;
+            text-transform: uppercase; letter-spacing: 0.3px;
+        }
+        .score-summary-table th.col-center { text-align: center; }
+        .score-summary-table td {
+            padding: 9px 12px; border: 1.5px solid var(--border-medium);
+            color: var(--text-primary); vertical-align: middle;
+        }
+        .score-summary-table td.col-center { text-align: center; }
+        .score-summary-table td.col-write {
+            text-align: center; min-width: 60px;
+            background: rgba(245,166,35,0.04);
+        }
+        .score-summary-table .row-total td {
+            background: linear-gradient(135deg, rgba(245,166,35,0.08), rgba(52,199,89,0.06));
+            font-weight: 700; font-family: var(--font-display); font-size: 0.95rem;
+        }
+        .score-summary-table .formula-hint {
+            font-size: 0.72rem; font-weight: 500; color: var(--text-tertiary);
+            font-style: italic; display: block; margin-top: 2px;
+        }
+        .score-summary-table .verdict-row td {
+            padding: 12px; font-size: 0.82rem; background: var(--bg-secondary);
+        }
+        .verdict-guide { display: flex; gap: 16px; flex-wrap: wrap; }
+        .verdict-guide span { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+        .verdict-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+        .verdict-dot.pass { background: var(--accent-green); }
+        .verdict-dot.consider { background: var(--accent-orange); }
+        .verdict-dot.fail { background: var(--accent-red); }
+
+        .sign-area {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;
+            padding-top: 1.5rem; border-top: 1px solid var(--border-light);
+        }
+        .sign-box { text-align: center; }
+        .sign-label { font-size: 0.78rem; font-weight: 700; color: var(--kb-brown); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 60px; }
+        .sign-line { border-top: 1.5px solid var(--border-medium); padding-top: 8px; font-size: 0.82rem; color: var(--text-secondary); font-style: italic; }
+
+        /* ── Action Bar ── */
+        .action-bar {
+            display: flex; gap: 12px; justify-content: center; margin-top: 2rem;
+            padding-top: 2rem; border-top: 1px solid var(--border-light);
+        }
+
+        /* ── Footer ── */
+        footer {
+            border-top: 1px solid var(--border-light); padding: 3rem 24px;
+            text-align: center; font-size: 0.82rem; color: var(--text-tertiary);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .form-container { margin: 84px 12px 2rem; padding: 1.5rem; }
+            .info-grid, .info-grid.three-col { grid-template-columns: 1fr; }
+            .criterion-row { grid-template-columns: 1fr; gap: 12px; }
+            .score-breakdown { grid-template-columns: 1fr; }
+            .action-bar { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SVG Icon Sprite (Korean-style minimal line icons – matching nextgen.finpeace.cloud) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></symbol>
+        <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+        <symbol id="icon-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/></symbol>
+        <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+        <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+        <symbol id="icon-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14h2"/><path d="m8 14-3 3a1 1 0 1 0 3 3l4-4"/><path d="m5 10 3-3"/></symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+        <symbol id="icon-lightning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+        <symbol id="icon-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+        <symbol id="icon-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+        <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+    </svg>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar no-print">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/finpeace-logo-wide-green.png" alt="FinPeace Logo" style="height: 28px; object-fit: contain;" onerror="this.style.display='none'">
+            <span style="width: 1px; height: 24px; background: var(--border-medium); margin: 0 4px;"></span>
+            <img src="assets/images/kbsv-logo.jpeg" alt="KB Securities Logo" style="height: 28px; object-fit: contain; border-radius: 4px;" onerror="this.style.display='none'">
+            <div class="logo-text" style="margin-left: 4px;">
+                KBSV NextGen
+                <div class="logo-sub">Phiếu Đánh Giá Phỏng Vấn</div>
+            </div>
+        </a>
+        <div class="nav-actions">
+            <a href="learning_hub.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.82rem;">Kho Khóa Học</a>
+            <a href="index.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">
+                <svg class="icon-sm"><use href="#icon-rocket"/></svg> Về Trang Chủ
+            </a>
+        </div>
+    </nav>
+
+    <!-- ========== EVALUATION FORM ========== -->
+    <div class="form-container" id="evaluationForm">
+
+        <!-- HEADER -->
+        <div class="section-tag">
+            <svg class="icon-sm"><use href="#icon-clipboard"/></svg>
+            KBSV NextGen 2026 · Phiếu Đánh Giá Phỏng Vấn Ứng Viên
+        </div>
+        <h1 class="form-title">Phiếu Đánh Giá Ứng Viên</h1>
+        <p class="form-subtitle">Dành cho ứng viên NextGen · 8 Tiêu chí năng lực cốt lõi · Thang 5 sao · Tổng 100 điểm · Ban Tuyển dụng HO3</p>
+
+        <!-- I. THÔNG TIN ỨNG VIÊN -->
+        <div class="criteria-section">
+            <div class="criteria-section-title">
+                <svg class="icon-sm"><use href="#icon-users"/></svg>
+                I. Thông Tin Ứng Viên
+            </div>
+            <div class="info-grid">
+                <div class="field-group">
+                    <label class="field-label">Họ và tên ứng viên</label>
+                    <input type="text" class="field-input" id="candidateName" placeholder="Nguyễn Văn A">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Ngày sinh</label>
+                    <input type="date" class="field-input" id="candidateDob">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Trường Đại học</label>
+                    <input type="text" class="field-input" id="candidateSchool" placeholder="Học viện Ngân hàng, NEU, HVTC...">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Ngành học / Chuyên ngành</label>
+                    <input type="text" class="field-input" id="candidateMajor" placeholder="Tài chính – Ngân hàng">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Năm kinh nghiệm</label>
+                    <select class="field-input" id="candidateYear">
+                        <option value="">-- Chọn --</option>
+                        <option value="Năm 3">Năm 3</option>
+                        <option value="Năm 4">Năm 4</option>
+                        <option value="Mới tốt nghiệp (< 1 năm)">Mới tốt nghiệp (< 1 năm)</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label class="field-label">GPA hiện tại (hệ 4.0)</label>
+                    <input type="text" class="field-input" id="candidateGpa" placeholder="VD: 3.2 / 4.0">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Email</label>
+                    <input type="email" class="field-input" id="candidateEmail" placeholder="nguyenvana@email.com">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Số điện thoại</label>
+                    <input type="tel" class="field-input" id="candidatePhone" placeholder="0912 345 678">
+                </div>
+            </div>
+            <div style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-light);">
+                <div class="field-group">
+                    <label class="field-label">CLB / Đội nhóm / Hoạt động ngoại khóa nổi bật</label>
+                    <input type="text" class="field-input" id="candidateClubs" placeholder="CLB Chứng khoán, BTC sự kiện khoa, Đội nhóm kinh doanh SV...">
+                </div>
+            </div>
+        </div>
+
+        <!-- II. THÔNG TIN PHỎNG VẤN -->
+        <div class="criteria-section">
+            <div class="criteria-section-title">
+                <svg class="icon-sm"><use href="#icon-clipboard"/></svg>
+                II. Thông Tin Phiên Phỏng Vấn
+            </div>
+            <div class="info-grid three-col">
+                <div class="field-group">
+                    <label class="field-label">Ngày phỏng vấn</label>
+                    <input type="date" class="field-input" id="interviewDate">
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Vòng phỏng vấn</label>
+                    <select class="field-input" id="interviewRound">
+                        <option value="">-- Chọn vòng --</option>
+                        <option value="Vòng 1: Sơ loại">Vòng 1: Sơ loại</option>
+                        <option value="Vòng 2: Phỏng vấn chuyên sâu">Vòng 2: Phỏng vấn chuyên sâu</option>
+                        <option value="Vòng 3: Final (BGĐ)">Vòng 3: Final (BGĐ)</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label class="field-label">Người đánh giá</label>
+                    <input type="text" class="field-input" id="interviewerName" placeholder="Họ tên người đánh giá">
+                </div>
+            </div>
+        </div>
+
+        <!-- III. 8 TIÊU CHÍ -->
+        <div class="criteria-section">
+            <div class="criteria-section-title">
+                <svg class="icon-sm"><use href="#icon-target"/></svg>
+                III. Bộ Khung 8 Tiêu Chí Năng Lực Cốt Lõi
+            </div>
+
+            <!-- Tiêu chí 1: Năng Lượng & Thái Độ (TRỌNG SỐ CAO NHẤT cho SV) -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">1. Năng Lượng, Thái Độ & Sự Tò Mò</div>
+                    <div class="criterion-desc">Có năng lượng cao, mắt sáng khi trò chuyện. Thể hiện sự hào hứng với ngành tài chính – chứng khoán. Tò mò đặt câu hỏi ngược lại người phỏng vấn. Không thụ động chờ hướng dẫn.</div>
+                    <div class="criterion-weight">Trọng số 20% · Tối đa 20 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating" data-criterion="c1">
+                        <input type="radio" id="c1s5" name="c1" value="5"><label for="c1s5">★</label>
+                        <input type="radio" id="c1s4" name="c1" value="4"><label for="c1s4">★</label>
+                        <input type="radio" id="c1s3" name="c1" value="3"><label for="c1s3">★</label>
+                        <input type="radio" id="c1s2" name="c1" value="2"><label for="c1s2">★</label>
+                        <input type="radio" id="c1s1" name="c1" value="1"><label for="c1s1">★</label>
+                    </div>
+                    <div class="score-display" id="c1Score">— / 20</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 2: Giao Tiếp -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">2. Kỹ Năng Giao Tiếp & Trình Bày</div>
+                    <div class="criterion-desc">Nói chuyện rõ ràng, mạch lạc, tự tin trước người lạ. Biết tổ chức ý tưởng khi trả lời câu hỏi. Có tiềm năng thuyết trình trước nhóm hoặc trước camera (KOC).</div>
+                    <div class="criterion-weight">Trọng số 15% · Tối đa 15 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c2s5" name="c2" value="5"><label for="c2s5">★</label><input type="radio" id="c2s4" name="c2" value="4"><label for="c2s4">★</label><input type="radio" id="c2s3" name="c2" value="3"><label for="c2s3">★</label><input type="radio" id="c2s2" name="c2" value="2"><label for="c2s2">★</label><input type="radio" id="c2s1" name="c2" value="1"><label for="c2s1">★</label></div>
+                    <div class="score-display" id="c2Score">— / 15</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 3: Tinh thần học hỏi (TRỌNG SỐ CAO cho SV) -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">3. Tinh Thần Học Hỏi & Growth Mindset</div>
+                    <div class="criterion-desc">Ham học hỏi, chủ động tìm hiểu trước khi được dạy. Biết nhận sai và sửa nhanh. Sẵn sàng cam kết toàn thời gian 42 ngày đào tạo thực chiến. Có mục tiêu nghề nghiệp rõ ràng.</div>
+                    <div class="criterion-weight">Trọng số 20% · Tối đa 20 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c3s5" name="c3" value="5"><label for="c3s5">★</label><input type="radio" id="c3s4" name="c3" value="4"><label for="c3s4">★</label><input type="radio" id="c3s3" name="c3" value="3"><label for="c3s3">★</label><input type="radio" id="c3s2" name="c3" value="2"><label for="c3s2">★</label><input type="radio" id="c3s1" name="c3" value="1"><label for="c3s1">★</label></div>
+                    <div class="score-display" id="c3Score">— / 20</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 4: Hoạt động ngoại khóa & Leadership -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">4. Hoạt Động Ngoại Khóa & Khả Năng Dẫn Dắt</div>
+                    <div class="criterion-desc">Tham gia CLB Chứng khoán / Tài chính / Kinh doanh tại trường. Từng tổ chức sự kiện, dẫn dắt nhóm, hoặc đảm nhiệm vai trò trưởng ban. Có kinh nghiệm làm việc nhóm đa dạng.</div>
+                    <div class="criterion-weight">Trọng số 10% · Tối đa 10 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c4s5" name="c4" value="5"><label for="c4s5">★</label><input type="radio" id="c4s4" name="c4" value="4"><label for="c4s4">★</label><input type="radio" id="c4s3" name="c4" value="3"><label for="c4s3">★</label><input type="radio" id="c4s2" name="c4" value="2"><label for="c4s2">★</label><input type="radio" id="c4s1" name="c4" value="1"><label for="c4s1">★</label></div>
+                    <div class="score-display" id="c4Score">— / 10</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 5: Hiểu biết tài chính cơ bản -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">5. Hiểu Biết Tài Chính & Thị Trường Cơ Bản</div>
+                    <div class="criterion-desc">Biết sơ bộ về cổ phiếu, trái phiếu, quỹ mở. Quan tâm đến tin tức kinh tế vĩ mô VN/thế giới. Không yêu cầu chuyên sâu – đánh giá mức độ quan tâm và nền tảng kiến thức từ trường lớp.</div>
+                    <div class="criterion-weight">Trọng số 10% · Tối đa 10 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c5s5" name="c5" value="5"><label for="c5s5">★</label><input type="radio" id="c5s4" name="c5" value="4"><label for="c5s4">★</label><input type="radio" id="c5s3" name="c5" value="3"><label for="c5s3">★</label><input type="radio" id="c5s2" name="c5" value="2"><label for="c5s2">★</label><input type="radio" id="c5s1" name="c5" value="1"><label for="c5s1">★</label></div>
+                    <div class="score-display" id="c5Score">— / 10</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 6: Trung thực & Trách nhiệm -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">6. Tính Trung Thực, Trách Nhiệm & Cam Kết</div>
+                    <div class="criterion-desc">Trả lời phỏng vấn chân thành, không phóng đại thành tích. Có tinh thần trách nhiệm với công việc được giao. Giữ lời hứa, đúng giờ. Hiểu rằng nghề tư vấn đặt uy tín lên hàng đầu.</div>
+                    <div class="criterion-weight">Trọng số 10% · Tối đa 10 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c6s5" name="c6" value="5"><label for="c6s5">★</label><input type="radio" id="c6s4" name="c6" value="4"><label for="c6s4">★</label><input type="radio" id="c6s3" name="c6" value="3"><label for="c6s3">★</label><input type="radio" id="c6s2" name="c6" value="2"><label for="c6s2">★</label><input type="radio" id="c6s1" name="c6" value="1"><label for="c6s1">★</label></div>
+                    <div class="score-display" id="c6Score">— / 10</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 7: Khả năng sắp xếp thời gian -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">7. Khả Năng Sắp Xếp Thời Gian & Chịu Áp Lực</div>
+                    <div class="criterion-desc">Cân bằng được lịch học trường với lịch thực tập 42 ngày. Sẵn sàng tham gia Morning Briefing, Content Lab, Livestream 90'/ngày. Không bỏ cuộc khi gặp khó khăn ban đầu.</div>
+                    <div class="criterion-weight">Trọng số 5% · Tối đa 5 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c7s5" name="c7" value="5"><label for="c7s5">★</label><input type="radio" id="c7s4" name="c7" value="4"><label for="c7s4">★</label><input type="radio" id="c7s3" name="c7" value="3"><label for="c7s3">★</label><input type="radio" id="c7s2" name="c7" value="2"><label for="c7s2">★</label><input type="radio" id="c7s1" name="c7" value="1"><label for="c7s1">★</label></div>
+                    <div class="score-display" id="c7Score">— / 5</div>
+                </div>
+            </div>
+
+            <!-- Tiêu chí 8: Năng lực digital -->
+            <div class="criterion-row">
+                <div>
+                    <div class="criterion-name">8. Năng Lực Digital & Sáng Tạo Nội Dung</div>
+                    <div class="criterion-desc">Thường xuyên sử dụng MXH (TikTok, Instagram, Facebook). Có sở thích quay video, viết bài hoặc đã từng thử làm content. Điểm cộng lớn nếu đã có kênh cá nhân từ 500+ followers.</div>
+                    <div class="criterion-weight">Trọng số 10% · Tối đa 10 điểm</div>
+                </div>
+                <div>
+                    <div class="star-rating"><input type="radio" id="c8s5" name="c8" value="5"><label for="c8s5">★</label><input type="radio" id="c8s4" name="c8" value="4"><label for="c8s4">★</label><input type="radio" id="c8s3" name="c8" value="3"><label for="c8s3">★</label><input type="radio" id="c8s2" name="c8" value="2"><label for="c8s2">★</label><input type="radio" id="c8s1" name="c8" value="1"><label for="c8s1">★</label></div>
+                    <div class="score-display" id="c8Score">— / 10</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BẢNG TỔNG HỢP ĐIỂM (PDF-friendly) -->
+        <div class="criteria-section">
+            <div class="criteria-section-title">
+                <svg class="icon-sm"><use href="#icon-chart"/></svg>
+                Bảng Tổng Hợp Điểm — Tính Thủ Công
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px;">Công thức: <strong>Điểm quy đổi = (Số sao ÷ 5) × Trọng số</strong>. Ví dụ: 4 sao × 20% = (4÷5)×20 = <strong>16 điểm</strong>.</p>
+            <table class="score-summary-table">
+                <thead>
+                    <tr>
+                        <th style="width: 40%;">Tiêu Chí</th>
+                        <th class="col-center" style="width: 12%;">Sao (1–5)</th>
+                        <th class="col-center" style="width: 14%;">Trọng Số</th>
+                        <th class="col-center" style="width: 16%;">Tối Đa</th>
+                        <th class="col-center" style="width: 18%;">Điểm Quy Đổi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Năng Lượng, Thái Độ & Sự Tò Mò</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">20%</td>
+                        <td class="col-center">20</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>2. Kỹ Năng Giao Tiếp & Trình Bày</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">15%</td>
+                        <td class="col-center">15</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Tinh Thần Học Hỏi & Growth Mindset</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">20%</td>
+                        <td class="col-center">20</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Hoạt Động Ngoại Khóa & Dẫn Dắt</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">10%</td>
+                        <td class="col-center">10</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>5. Hiểu Biết Tài Chính & Thị Trường</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">10%</td>
+                        <td class="col-center">10</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>6. Tính Trung Thực, Trách Nhiệm & Cam Kết</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">10%</td>
+                        <td class="col-center">10</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>7. Sắp Xếp Thời Gian & Chịu Áp Lực</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">5%</td>
+                        <td class="col-center">5</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr>
+                        <td>8. Năng Lực Digital & Sáng Tạo Nội Dung</td>
+                        <td class="col-write"></td>
+                        <td class="col-center">10%</td>
+                        <td class="col-center">10</td>
+                        <td class="col-write"></td>
+                    </tr>
+                    <tr class="row-total">
+                        <td colspan="3" style="text-align: right;">TỔNG ĐIỂM</td>
+                        <td class="col-center">100</td>
+                        <td class="col-write" style="font-size: 1.1rem;">        / 100</td>
+                    </tr>
+                    <tr class="verdict-row">
+                        <td colspan="5">
+                            <strong>Phân loại kết quả:</strong>
+                            <div class="verdict-guide" style="margin-top: 6px;">
+                                <span><span class="verdict-dot pass"></span> ≥ 80 → ĐẠT — Đề xuất tuyển</span>
+                                <span><span class="verdict-dot consider"></span> 60–79 → CÂN NHẮC — PV thêm</span>
+                                <span><span class="verdict-dot fail"></span> < 60 → CHƯA ĐẠT</span>
+                            </div>
+                            <div style="margin-top: 10px;"><strong>Kết luận của người đánh giá:</strong> ☐ ĐẠT &nbsp; ☐ CÂN NHẮC &nbsp; ☐ CHƯA ĐẠT</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- IV. NHẬN XÉT -->
+        <div class="criteria-section">
+            <div class="criteria-section-title">
+                <svg class="icon-sm"><use href="#icon-brain"/></svg>
+                IV. Nhận Xét Tổng Quan
+            </div>
+            <div class="field-group" style="margin-bottom: 16px;">
+                <label class="field-label">Điểm mạnh nổi bật của ứng viên</label>
+                <textarea class="notes-box" id="strengthsNote" placeholder="VD: Rất tự tin khi nói, mắt sáng, năng lượng cao. Là Trưởng ban Truyền thông CLB CK trường..."></textarea>
+            </div>
+            <div class="field-group" style="margin-bottom: 16px;">
+                <label class="field-label">Điểm cần hỗ trợ phát triển thêm</label>
+                <textarea class="notes-box" id="weaknessNote" placeholder="VD: Chưa biết gì về BCTC, hơi nhút nhát trước camera, cần mentor kèm sát giai đoạn đầu..."></textarea>
+            </div>
+            <div class="field-group">
+                <label class="field-label">Ghi chú đặc biệt / Ấn tượng cá nhân</label>
+                <textarea class="notes-box" id="specialNote" placeholder="VD: Bạn SV do Khoa giới thiệu, đã từng đạt giải cuộc thi Case Study, có kênh TikTok 2k followers..."></textarea>
+            </div>
+        </div>
+
+        <!-- KHU VỰC KÝ TÊN (PDF) -->
+        <div class="sign-area">
+            <div class="sign-box">
+                <div class="sign-label">Người đánh giá</div>
+                <div class="sign-line">(Ký & ghi rõ họ tên)</div>
+            </div>
+            <div class="sign-box">
+                <div class="sign-label">Trưởng ban Tuyển dụng</div>
+                <div class="sign-line">(Ký & ghi rõ họ tên)</div>
+            </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="action-bar no-print">
+            <button class="btn btn-primary" style="padding: 14px 32px;" onclick="calculateResult()">
+                <svg class="icon-sm"><use href="#icon-award"/></svg> Tổng Kết Đánh Giá
+            </button>
+            <button class="btn btn-outline" onclick="window.print()">🖨️ In Phiếu</button>
+            <button class="btn btn-outline" onclick="resetForm()">🔄 Làm Lại</button>
+        </div>
+
+        <!-- RESULT PANEL -->
+        <div class="result-panel" id="resultPanel">
+            <div class="result-title">
+                <svg class="icon-sm" style="color: var(--kb-yellow);"><use href="#icon-award"/></svg>
+                Kết Quả Đánh Giá Tổng Hợp
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div>
+                    <div class="result-score-big" id="totalScoreDisplay">0</div>
+                    <div style="text-align: center; font-size: 0.85rem; font-weight: 600; color: var(--text-tertiary);">trên tổng 100 điểm</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="result-verdict" id="verdictBadge">—</div>
+                    <div style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 8px;" id="verdictNote"></div>
+                </div>
+            </div>
+            <div class="radar-container"><canvas id="radarChart" width="400" height="400"></canvas></div>
+            <div class="score-breakdown" id="scoreBreakdown"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 KBSV NextGen · FinPeace · Phiếu Đánh Giá Ứng Viên v2.1 · Sở Giao Dịch 3 (HO3) KB Securities Vietnam</p>
+    </footer>
+
+    <script>
+        const criteriaConfig = [
+            { key: 'c1', name: 'Năng lượng & Thái độ', weight: 20 },
+            { key: 'c2', name: 'Giao tiếp & Trình bày', weight: 15 },
+            { key: 'c3', name: 'Growth Mindset', weight: 20 },
+            { key: 'c4', name: 'Ngoại khóa & Dẫn dắt', weight: 10 },
+            { key: 'c5', name: 'Hiểu biết Tài chính', weight: 10 },
+            { key: 'c6', name: 'Trung thực & Cam kết', weight: 10 },
+            { key: 'c7', name: 'Quản lý Thời gian', weight: 5 },
+            { key: 'c8', name: 'Digital & Content', weight: 10 },
+        ];
+
+        document.querySelectorAll('.star-rating input').forEach(radio => {
+            radio.addEventListener('change', function() {
+                const criterion = this.name;
+                const starVal = parseInt(this.value);
+                const cfg = criteriaConfig.find(c => c.key === criterion);
+                const score = (starVal / 5) * cfg.weight;
+                document.getElementById(`${criterion}Score`).innerText = `${score.toFixed(1)} / ${cfg.weight}`;
+            });
+        });
+
+        function calculateResult() {
+            let totalScore = 0; let allRated = true; const scores = [];
+            criteriaConfig.forEach(cfg => {
+                const selected = document.querySelector(`input[name="${cfg.key}"]:checked`);
+                if (!selected) { allRated = false; scores.push(0); return; }
+                const starVal = parseInt(selected.value);
+                totalScore += (starVal / 5) * cfg.weight;
+                scores.push(starVal);
+            });
+            if (!allRated) { alert('⚠️ Vui lòng chấm điểm đầy đủ tất cả 8 tiêu chí!'); return; }
+
+            const panel = document.getElementById('resultPanel');
+            panel.classList.add('visible');
+            document.getElementById('totalScoreDisplay').innerText = totalScore.toFixed(1);
+
+            const vb = document.getElementById('verdictBadge');
+            const vn = document.getElementById('verdictNote');
+            if (totalScore >= 80) {
+                vb.className = 'result-verdict verdict-pass'; vb.innerText = '✅ ĐẠT — Đề xuất TUYỂN DỤNG';
+                vn.innerText = 'Ứng viên xuất sắc, đủ năng lực tham gia KBSV NextGen 2026.';
+            } else if (totalScore >= 60) {
+                vb.className = 'result-verdict verdict-consider'; vb.innerText = '⚠️ CÂN NHẮC — Cần phỏng vấn thêm';
+                vn.innerText = 'Có tiềm năng nhưng cần đánh giá bổ sung hoặc phỏng vấn vòng tiếp theo.';
+            } else {
+                vb.className = 'result-verdict verdict-fail'; vb.innerText = '❌ CHƯA ĐẠT — Không đề xuất tuyển';
+                vn.innerText = 'Chưa đáp ứng tiêu chuẩn tối thiểu của chương trình.';
+            }
+
+            const bd = document.getElementById('scoreBreakdown'); bd.innerHTML = '';
+            criteriaConfig.forEach((cfg, i) => {
+                const s = (scores[i] / 5) * cfg.weight;
+                bd.innerHTML += `<div class="breakdown-item"><span class="breakdown-label">${cfg.name}</span><div class="bar-track"><div class="bar-fill" style="width:${(scores[i]/5)*100}%"></div></div><span class="breakdown-score">${s.toFixed(1)}/${cfg.weight}</span></div>`;
+            });
+
+            drawRadar(scores);
+            panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function drawRadar(scores) {
+            const canvas = document.getElementById('radarChart');
+            const ctx = canvas.getContext('2d');
+            const W = canvas.width, H = canvas.height, cx = W/2, cy = H/2, R = 150, n = scores.length;
+            ctx.clearRect(0, 0, W, H);
+
+            for (let ring = 1; ring <= 5; ring++) {
+                const r = (ring/5)*R;
+                ctx.beginPath();
+                for (let i = 0; i <= n; i++) {
+                    const a = (Math.PI*2/n)*i - Math.PI/2;
+                    i===0 ? ctx.moveTo(cx+r*Math.cos(a), cy+r*Math.sin(a)) : ctx.lineTo(cx+r*Math.cos(a), cy+r*Math.sin(a));
+                }
+                ctx.strokeStyle = 'rgba(139,115,85,0.1)'; ctx.lineWidth = 1; ctx.stroke();
+            }
+
+            const labels = criteriaConfig.map(c => c.name);
+            ctx.font = '600 11px Inter, sans-serif'; ctx.fillStyle = '#5A5A5A'; ctx.textAlign = 'center';
+            for (let i = 0; i < n; i++) {
+                const a = (Math.PI*2/n)*i - Math.PI/2;
+                ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx+R*Math.cos(a), cy+R*Math.sin(a));
+                ctx.strokeStyle = 'rgba(139,115,85,0.12)'; ctx.stroke();
+                ctx.fillText(labels[i], cx+(R+28)*Math.cos(a), cy+(R+28)*Math.sin(a)+4);
+            }
+
+            ctx.beginPath();
+            for (let i = 0; i <= n; i++) {
+                const idx = i%n, a = (Math.PI*2/n)*idx - Math.PI/2, r = (scores[idx]/5)*R;
+                i===0 ? ctx.moveTo(cx+r*Math.cos(a), cy+r*Math.sin(a)) : ctx.lineTo(cx+r*Math.cos(a), cy+r*Math.sin(a));
+            }
+            ctx.fillStyle = 'rgba(245,166,35,0.18)'; ctx.fill();
+            ctx.strokeStyle = '#F5A623'; ctx.lineWidth = 2.5; ctx.stroke();
+
+            for (let i = 0; i < n; i++) {
+                const a = (Math.PI*2/n)*i - Math.PI/2, r = (scores[i]/5)*R;
+                ctx.beginPath(); ctx.arc(cx+r*Math.cos(a), cy+r*Math.sin(a), 5, 0, Math.PI*2);
+                ctx.fillStyle = '#F5A623'; ctx.fill();
+                ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+            }
+        }
+
+        function resetForm() {
+            if (!confirm('Bạn có chắc muốn xóa toàn bộ đánh giá?')) return;
+            document.querySelectorAll('.star-rating input').forEach(r => r.checked = false);
+            criteriaConfig.forEach(c => document.getElementById(`${c.key}Score`).innerText = `— / ${c.weight}`);
+            document.querySelectorAll('.field-input, .notes-box').forEach(el => el.value = '');
+            document.getElementById('resultPanel').classList.remove('visible');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

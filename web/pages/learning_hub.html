@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBSV NextGen Learning Hub — Kho Khóa Học Ngắn & Nền Tảng EdTech</title>
+    <meta name="description" content="Go Global Learning Hub dành cho KBSV NextGen 2026 – Danh mục 22 Khóa học ngắn tương tác miễn phí về Tích sản IW, Giao dịch chứng khoán, SalesGPT & AI Simulators.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-mint-bg: #F1FBF7;
+            --brand-teal: #12B5A5;
+            --brand-green: #5BB733;
+            --brand-dark: #0E2A30;
+            --brand-gold: #F5A623;
+            --brand-card-bg: #FFFFFF;
+            --brand-border: rgba(18, 181, 165, 0.2);
+            --brand-text-muted: rgba(14, 42, 48, 0.6);
+            --shadow-soft: 0 4px 20px rgba(14, 42, 48, 0.06);
+            --shadow-glow: 0 8px 28px rgba(18, 181, 165, 0.25);
+            --radius-pill: 50px;
+            --radius-card: 20px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--brand-mint-bg); color: var(--brand-dark); line-height: 1.6; }
+        h1, h2, h3, h4, h5, .brand-font { font-family: 'Space Grotesk', sans-serif; }
+
+        /* NAVBAR */
+        nav.npv-navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            height: 68px; padding: 0 2rem;
+            display: flex; align-items: center; justify-content: space-between;
+            background: rgba(241, 251, 247, 0.85);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--brand-border);
+        }
+
+        .npv-nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .npv-brand-title { font-weight: 900; font-size: 14px; color: var(--brand-dark); line-height: 1.1; }
+        .npv-brand-sub { font-size: 11px; color: var(--brand-teal); font-weight: 700; }
+
+        .npv-nav-links { display: flex; gap: 28px; }
+        .npv-nav-link { color: var(--brand-text-muted); text-decoration: none; font-size: 14px; font-weight: 700; transition: color 0.2s; }
+        .npv-nav-link:hover { color: var(--brand-teal); }
+
+        .npv-lang-switcher {
+            display: flex; gap: 2px; background: rgba(18, 181, 165, 0.08);
+            border-radius: 12px; padding: 4px; border: 1px solid var(--brand-border);
+        }
+
+        .npv-lang-btn {
+            padding: 5px 10px; border-radius: 9px; border: none; cursor: pointer;
+            font-size: 12px; font-weight: 800; background: transparent; color: var(--brand-text-muted);
+        }
+        .npv-lang-btn.active {
+            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
+            color: #062030; box-shadow: 0 2px 8px rgba(18, 181, 165, 0.35);
+        }
+
+        .btn-npv-primary {
+            padding: 10px 24px; border-radius: var(--radius-pill);
+            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
+            color: #062030; border: none; cursor: pointer; font-size: 14px; font-weight: 900;
+            box-shadow: 0 4px 16px rgba(18, 181, 165, 0.3); transition: all 0.2s; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .btn-npv-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
+
+        /* HERO DASHBOARD */
+        section.npv-hero {
+            padding: 110px 2rem 50px; max-width: 1280px; margin: 0 auto;
+            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center;
+        }
+
+        .npv-badge-pill {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(18, 181, 165, 0.1); border-radius: var(--radius-pill);
+            padding: 6px 16px; margin-bottom: 18px; border: 1px solid rgba(18, 181, 165, 0.3);
+            font-size: 12px; font-weight: 800; color: var(--brand-teal); letter-spacing: 0.5px;
+        }
+
+        .npv-hero-title {
+            font-size: clamp(36px, 4.5vw, 56px); font-weight: 900;
+            color: var(--brand-dark); line-height: 1.08; margin-bottom: 16px;
+        }
+
+        .npv-hero-sub { font-size: 16px; color: var(--brand-text-muted); font-weight: 600; margin-bottom: 30px; }
+
+        .gamify-panel { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .gamify-card {
+            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
+            border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow-soft);
+            display: flex; align-items: center; gap: 12px;
+        }
+
+        .category-scroll {
+            display: flex; gap: 10px; overflow-x: auto; padding: 1rem 0 1.5rem;
+            max-width: 1280px; margin: 0 auto;
+        }
+
+        .cat-pill-btn {
+            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
+            border-radius: var(--radius-pill); padding: 10px 20px; font-size: 13px; font-weight: 700;
+            color: var(--brand-dark); cursor: pointer; white-space: nowrap; transition: all 0.2s;
+        }
+
+        .cat-pill-btn:hover, .cat-pill-btn.active {
+            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
+            color: #062030; border-color: transparent; box-shadow: 0 4px 12px rgba(18, 181, 165, 0.25);
+        }
+
+        .courses-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem; max-width: 1280px; margin: 0 auto 4rem;
+        }
+
+        .course-card {
+            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
+            border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-soft);
+            display: flex; flex-direction: column; justify-content: space-between;
+            transition: transform 0.25s ease, box-shadow 0.25s;
+        }
+
+        .course-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(14, 42, 48, 0.1); }
+
+        .course-tag {
+            background: rgba(18, 181, 165, 0.12); color: var(--brand-teal);
+            font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 6px;
+            align-self: flex-start; margin-bottom: 12px;
+        }
+
+        .course-title { font-size: 1.15rem; font-weight: 800; color: var(--brand-dark); margin-bottom: 8px; }
+        .course-desc { font-size: 0.88rem; color: var(--brand-text-muted); line-height: 1.6; margin-bottom: 16px; }
+
+        .course-meta {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.8rem; font-weight: 700; color: var(--brand-teal);
+            border-top: 1px solid rgba(18, 181, 165, 0.12); padding-top: 12px; margin-top: auto;
+        }
+
+        /* MINI-COURSE PLAYER MODAL */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(14, 42, 48, 0.75);
+            backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center;
+            z-index: 2000; padding: 1.5rem;
+        }
+
+        .modal-card {
+            background: var(--brand-card-bg); border-radius: 24px; max-width: 900px; width: 100%;
+            max-height: 90vh; overflow-y: auto; padding: 2.25rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            position: relative; animation: popUp 0.3s ease forwards;
+        }
+
+        @keyframes popUp { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+        .modal-close-btn {
+            position: absolute; top: 1.25rem; right: 1.25rem; background: rgba(0,0,0,0.05);
+            border: none; width: 34px; height: 34px; border-radius: 50%; font-weight: 800; cursor: pointer;
+        }
+
+        /* SYLLABUS CHAPTER TABS INSIDE MINI-COURSE MODAL */
+        .syllabus-tabs {
+            display: flex; gap: 8px; overflow-x: auto; border-bottom: 2px solid var(--brand-border);
+            margin: 1.25rem 0; padding-bottom: 8px;
+        }
+
+        .syl-tab-btn {
+            background: transparent; border: none; font-size: 0.85rem; font-weight: 700;
+            color: var(--brand-text-muted); padding: 8px 14px; border-radius: 8px; cursor: pointer; white-space: nowrap;
+        }
+
+        .syl-tab-btn.active {
+            background: rgba(18, 181, 165, 0.12); color: var(--brand-teal);
+        }
+
+        .scenario-choice-btn {
+            background: #F8FAFC; border: 2px solid var(--brand-border);
+            border-radius: 14px; padding: 1rem 1.25rem; text-align: left; font-size: 0.92rem;
+            font-weight: 600; color: var(--brand-dark); cursor: pointer; width: 100%;
+            margin-bottom: 10px; transition: all 0.2s;
+        }
+
+        .scenario-choice-btn:hover { background: rgba(18, 181, 165, 0.08); border-color: var(--brand-teal); }
+    </style>
+</head>
+<body>
+
+    <!-- TOP NAVBAR -->
+    <nav class="npv-navbar">
+        <a href="index.html" class="npv-nav-brand">
+            <span style="font-size: 24px;">🌐</span>
+            <div>
+                <div class="npv-brand-title">Go Global Learning Hub</div>
+                <div class="npv-brand-sub">by KBSV NextGen x FinPeace</div>
+            </div>
+        </a>
+
+        <div class="npv-nav-links">
+            <a href="#courses" class="npv-nav-link">Kho Khóa Học Ngắn (22 Mini-Courses)</a>
+            <a href="#tools" class="npv-nav-link">🧰 Công cụ đánh giá</a>
+            <a href="#wiki" class="npv-nav-link">Cẩm nang FinPeace</a>
+            <a href="index.html" class="npv-nav-link">Về KBSV NextGen</a>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="npv-lang-switcher">
+                <button class="npv-lang-btn active">🇻🇳 VI</button>
+                <button class="npv-lang-btn">🇬🇧 EN</button>
+                <button class="npv-lang-btn">🇨🇳 中</button>
+            </div>
+            <a href="index.html" class="btn-npv-primary">Bắt đầu miễn phí →</a>
+        </div>
+    </nav>
+
+    <!-- HERO GAMIFICATION DASHBOARD -->
+    <section class="npv-hero">
+        <div>
+            <div class="npv-badge-pill">
+                <span>🌱</span>
+                <span>Học · Lãnh đạo · Ra thế giới chứng khoán</span>
+            </div>
+            <h1 class="npv-hero-title">Kho Khóa Học Ngắn<br><span style="color: var(--brand-teal);">Go Global Mini-Courses.</span></h1>
+            <p class="npv-hero-sub">Học 35 phút tương tác · Tốt nghiệp cấp Chứng chỉ Kỹ năng · Tích lũy +200 XP mỗi khóa</p>
+            <a href="#courses" class="btn-npv-primary" style="padding: 14px 36px; font-size: 16px;">Vào học ngay →</a>
+        </div>
+
+        <div>
+            <div class="gamify-panel">
+                <div class="gamify-card">
+                    <span style="font-size: 28px;">🔥</span>
+                    <div>
+                        <div style="font-size: 20px; font-weight: 900; color: #C26A12;" id="userStreakVal">8</div>
+                        <div style="font-size: 11px; color: var(--brand-text-muted); font-weight: 700;">Chuỗi ngày học</div>
+                    </div>
+                </div>
+
+                <div class="gamify-card">
+                    <span style="font-size: 26px;">🪴</span>
+                    <div>
+                        <div style="font-size: 11px; font-weight: 700; color: var(--brand-text-muted); text-transform: uppercase;">Cấp độ</div>
+                        <div style="font-size: 13px; font-weight: 800; color: var(--brand-green);">Mầm Xanh Level 1</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: var(--brand-card-bg); border: 1px solid var(--brand-border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow-soft); margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; margin-bottom: 8px;">
+                    <span style="color: var(--brand-text-muted);">XP hôm nay</span>
+                    <span style="color: var(--brand-teal);" id="xpStatText">450 / 500 XP</span>
+                </div>
+                <div style="background: rgba(14,42,48,0.06); border-radius: 8px; height: 10px; overflow: hidden;">
+                    <div id="xpProgressBar" style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--brand-teal), var(--brand-green)); border-radius: 8px; transition: width 0.5s ease;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTER PILLS (8 TRACKS CATALOG) -->
+    <div style="padding: 0 2rem;">
+        <div class="category-scroll" id="courses">
+            <button class="cat-pill-btn active" onclick="filterCategory('all', this)">Tất cả 22 Khóa Học Ngắn</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track1', this)">1. Tư Duy 3 Vùng Đất</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track2', this)">2. Khóa Học InvestWise (IW)</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track3', this)">3. Giao Dịch & Margin</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track4', this)">4. 6 Bước Tư Vấn Môi Giới</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track5', this)">5. Sóng VTA & TA</button>
+            <button class="cat-pill-btn" onclick="filterCategory('track6', this)">6. SalesGPT & Storytelling</button>
+        </div>
+    </div>
+
+    <!-- MINI-COURSES CATALOG GRID -->
+    <div style="padding: 0 2rem;">
+        <div class="courses-grid" id="coursesGrid">
+
+            <!-- MINI-COURSE 1 -->
+            <div class="course-card" data-cat="track1">
+                <div>
+                    <span class="course-tag">KHÓA HỌC NGẮN #1</span>
+                    <h3 class="course-title">Hoạch Định 3 Vùng Đất Tài Chính FinPeace</h3>
+                    <p class="course-desc">Syllabus 6 Chương: Lý thuyết 3 Vùng đất, Case Study thực tế, Workshop tính toán dòng tiền & Thi cấp chứng chỉ.</p>
+                </div>
+                <div class="course-meta">
+                    <span>🏆 Certified Advisor · +200 XP</span>
+                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(1)">Học Khóa Ngắn #1 →</button>
+                </div>
+            </div>
+
+            <!-- MINI-COURSE 4 -->
+            <div class="course-card" data-cat="track2">
+                <div>
+                    <span class="course-tag" style="background: rgba(245,166,35,0.15); color: #D97706;">KHÓA HỌC NGẮN #4</span>
+                    <h3 class="course-title">Bộ Lọc 4 Tiêu Chí Tuyển Chọn Cổ Phiếu SIP</h3>
+                    <p class="course-desc">Syllabus 6 Chương: Bóc tách FPT/HPG, F-Score, Định giá Graham & DCF, Thi tốt nghiệp cấp chứng chỉ IW.</p>
+                </div>
+                <div class="course-meta">
+                    <span>🏆 Certified IW Screener · +200 XP</span>
+                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(4)">Học Khóa Ngắn #4 →</button>
+                </div>
+            </div>
+
+            <!-- MINI-COURSE 11 -->
+            <div class="course-card" data-cat="track3">
+                <div>
+                    <span class="course-tag" style="background: rgba(244,63,94,0.15); color: #E11D48;">KHÓA HỌC NGẮN #11</span>
+                    <h3 class="course-title">Quản Trị Đòn Bẩy Margin & Call Margin Rtt</h3>
+                    <p class="course-desc">Syllabus 6 Chương: Công thức Rtt, Ngưỡng Call Margin 35%, Workshop tính nộp tiền & Kịch bản ứng phó 14:15.</p>
+                </div>
+                <div class="course-meta">
+                    <span>🏆 Certified Risk Manager · +200 XP</span>
+                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(11)">Học Khóa Ngắn #11 →</button>
+                </div>
+            </div>
+
+            <!-- MINI-COURSE 12 -->
+            <div class="course-card" data-cat="track4">
+                <div>
+                    <span class="course-tag" style="background: rgba(91,183,51,0.15); color: #2D7A0F;">KHÓA HỌC NGẮN #12</span>
+                    <h3 class="course-title">Quy Trình 6 Bước Tư Vấn Môi Giới Chuẩn FinPeace</h3>
+                    <p class="course-desc">Syllabus 6 Chương: Khảo sát DISC, mở tài khoản eKYC, khám 3 Vùng đất, cài mốc Cắt lỗ tự động & Roleplay.</p>
+                </div>
+                <div class="course-meta">
+                    <span>🏆 Certified Master Broker · +200 XP</span>
+                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(12)">Học Khóa Ngắn #12 →</button>
+                </div>
+            </div>
+
+            <!-- MINI-COURSE 18 -->
+            <div class="course-card" data-cat="track6">
+                <div>
+                    <span class="course-tag" style="background: rgba(139,92,246,0.15); color: #6D28D9;">KHÓA HỌC NGẮN #18</span>
+                    <h3 class="course-title">Khung Bán Hàng 8 Giai Đoạn SalesGPT</h3>
+                    <p class="course-desc">Syllabus 6 Chương: Khung BANT, Trình bày Giá trị & Kịch bản Xử lý từ chối phớt lờ thị trường sập bằng VVIA.</p>
+                </div>
+                <div class="course-meta">
+                    <span>🏆 Certified SalesGPT · +200 XP</span>
+                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(18)">Học Khóa Ngắn #18 →</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MINI-COURSE INTERACTIVE PLAYER MODAL -->
+    <div class="modal-overlay" id="miniCourseModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeCourseModal()">✕</button>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.8rem; font-weight: 800; color: var(--brand-teal);" id="mcBadge">KHÓA HỌC NGẮN #1</span>
+                <span style="font-size: 0.8rem; font-weight: 800; color: var(--brand-gold);" id="mcCertBadge">🏆 Certified Financial Peace Advisor</span>
+            </div>
+            <h1 style="font-size: 1.5rem; font-weight: 900; color: var(--brand-dark);" id="mcTitle">Title</h1>
+            <div style="font-size: 0.85rem; color: var(--brand-text-muted); margin-bottom: 12px;" id="mcInstructor">Giảng viên: Senior Advisor FinPeace x KBSV Analyst · Thời lượng: 35 phút · +200 XP</div>
+
+            <!-- SYLLABUS CHAPTER TABS -->
+            <div class="syllabus-tabs">
+                <button class="syl-tab-btn active" onclick="switchSylTab('ch1')">Bài 1: Lý Thuyết</button>
+                <button class="syl-tab-btn" onclick="switchSylTab('ch2')">Bài 2: Case Study</button>
+                <button class="syl-tab-btn" onclick="switchSylTab('ch3')">Bài 3: Workshop Tính Toán</button>
+                <button class="syl-tab-btn" onclick="switchSylTab('ch4')">Bài 4: Scenario Simulator</button>
+                <button class="syl-tab-btn" onclick="switchSylTab('ch5')">Bài 5: Thi Tốt Nghiệp</button>
+                <button class="syl-tab-btn" onclick="switchSylTab('ch6')">Bài 6: AI Roleplay</button>
+            </div>
+
+            <!-- SYLLABUS CHAPTER CONTENT DISPLAY AREA -->
+            <div id="mcChapterContent" style="font-size: 0.95rem; line-height: 1.8; color: #1E293B;"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="border-top: 1px solid var(--brand-border); padding: 3rem 2rem; text-align: center; font-size: 0.85rem; color: var(--brand-text-muted);">
+        <p>© 2026 KBSV NextGen x FinPeace Go Global Learning Hub (Model: Nguyễn Phi Vân). All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentXP = 450;
+
+        function filterCategory(cat, btn) {
+            document.querySelectorAll('.cat-pill-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.course-card').forEach(card => {
+                if (cat === 'all' || card.dataset.cat === cat) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        async function openMiniCourse(courseId) {
+            const fileMap = {
+                1: "curriculum/module_1_3_vung_dat.md",
+                4: "curriculum/module_4_bo_loc_4_tieu_chi.md",
+                11: "curriculum/module_11_quan_tri_margin_rtt.md",
+                12: "curriculum/module_12_quy_trinh_6_buc.md",
+                18: "curriculum/module_18_8_giai_doan_salesgpt.md"
+            };
+
+            const certMap = {
+                1: "🏆 Certified Financial Peace Advisor Level 1",
+                4: "🏆 Certified InvestWise Stock Screener",
+                11: "🏆 Certified Margin Risk Manager",
+                12: "🏆 Certified Master Advisory Broker",
+                18: "🏆 Certified SalesGPT Practitioner"
+            };
+
+            const filePath = fileMap[courseId];
+            if (!filePath) return;
+
+            try {
+                const response = await fetch(filePath);
+                const text = await response.text();
+
+                document.getElementById('mcBadge').innerText = `KHÓA HỌC NGẮN #${courseId}`;
+                document.getElementById('mcCertBadge').innerText = certMap[courseId];
+                document.getElementById('mcTitle').innerText = `Khóa Học Ngắn #${courseId}: Chương Trình Tương Tác`;
+                
+                document.getElementById('mcChapterContent').innerHTML = renderMarkdownToHtml(text);
+                document.getElementById('miniCourseModal').style.display = 'flex';
+            } catch (err) {
+                alert('Đang tải Khóa Học Ngắn #' + courseId + '...');
+            }
+        }
+
+        function closeCourseModal() {
+            document.getElementById('miniCourseModal').style.display = 'none';
+        }
+
+        function switchSylTab(chId) {
+            document.querySelectorAll('.syl-tab-btn').forEach(b => b.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+
+        function renderMarkdownToHtml(md) {
+            return md
+                .replace(/^# (.*$)/gim, '<h1 style="font-size:1.4rem; color:#0E2A30; margin:1rem 0;">$1</h1>')
+                .replace(/^## (.*$)/gim, '<h2 style="font-size:1.15rem; color:#12B5A5; margin:1.25rem 0 0.5rem; border-bottom:1px solid rgba(18,181,165,0.2); padding-bottom:4px;">$1</h2>')
+                .replace(/^### (.*$)/gim, '<h3 style="font-size:1rem; color:#0E2A30; margin:1rem 0 0.5rem;">$1</h3>')
+                .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+                .replace(/\n\n/g, '<br><br>');
+        }
+    </script>
+</body>
+</html>

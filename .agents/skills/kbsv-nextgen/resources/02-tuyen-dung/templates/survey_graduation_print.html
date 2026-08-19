@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo Sát Nhanh — KBSV NextGen 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 14mm 15mm 12mm 15mm; }
+        :root {
+            --yellow: #F5A623; --yellow-dk: #E09000; --yellow-lt: rgba(245,166,35,0.06);
+            --brown: #8B7355; --green: #34C759; --green-lt: rgba(52,199,89,0.06);
+            --t1: #1A1A1A; --t2: #555; --t3: #999;
+            --border: #d5cfc5; --border-lt: #eae6de; --bg: #faf9f6;
+            --fb: 'Inter', -apple-system, sans-serif;
+            --fd: 'Space Grotesk', 'Inter', sans-serif;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--fb); font-size: 9pt; color: var(--t1); line-height: 1.5; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .ico { width: 15px; height: 15px; display: inline-block; vertical-align: middle; flex-shrink: 0; }
+
+        /* ── Header with Logos ── */
+        .header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 2.5px solid var(--yellow); margin-bottom: 14px; }
+        .logo-group { display: flex; align-items: center; gap: 10px; }
+        .logo-group img { height: 28px; object-fit: contain; }
+        .logo-divider { width: 1.5px; height: 24px; background: var(--border); }
+        .header-right { text-align: right; }
+        .header-program { font-family: var(--fd); font-weight: 700; font-size: 10.5pt; color: var(--t1); }
+        .header-sub { font-size: 7pt; color: var(--brown); font-weight: 500; }
+
+        /* ── Hero Banner ── */
+        .hero { display: flex; align-items: center; gap: 14px; padding: 16px 18px; margin-bottom: 14px; background: linear-gradient(135deg, #fffbf2, #fdf6e6); border-radius: 12px; border: 1.5px solid var(--border-lt); position: relative; }
+        .hero::before { content: ''; position: absolute; top: -16px; right: -6px; width: 70px; height: 70px; border-radius: 50%; background: rgba(245,166,35,0.05); }
+        .hero-badge { flex-shrink: 0; width: 46px; height: 46px; background: var(--yellow); border-radius: 11px; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 12px rgba(245,166,35,0.2); }
+        .hero-badge svg { width: 28px; height: 28px; color: #fff; }
+        .hero-text h1 { font-family: var(--fd); font-size: 15pt; font-weight: 700; color: var(--t1); margin-bottom: 3px; }
+        .hero-text p { font-size: 8.5pt; color: var(--t2); line-height: 1.5; }
+        .hl { color: var(--yellow-dk); font-weight: 700; }
+
+        /* ── Section ── */
+        .s-title { font-family: var(--fd); font-size: 8.5pt; font-weight: 700; color: var(--t1); padding: 4px 10px; background: var(--bg); border-left: 3px solid var(--yellow); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+
+        /* ── Info Grid ── */
+        .info-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+        .info-label { font-size: 7.5pt; font-weight: 600; color: var(--brown); text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 3px; }
+        .info-line { border-bottom: 1.2px solid var(--border); height: 22px; }
+
+        /* ── Question ── */
+        .q { margin-bottom: 10px; padding: 8px 12px; border: 1px solid var(--border-lt); border-radius: 8px; }
+        .q-head { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+        .q-num { font-family: var(--fd); font-weight: 700; font-size: 10pt; color: var(--yellow-dk); min-width: 22px; }
+        .q-label { font-size: 9.5pt; font-weight: 600; color: var(--t1); }
+        .q-sub { font-size: 7.5pt; font-weight: 400; color: var(--t3); }
+        .q-opts { display: flex; flex-wrap: wrap; gap: 5px 16px; padding-left: 28px; }
+        .opt { display: flex; align-items: center; gap: 5px; font-size: 8.5pt; color: var(--t2); }
+        .o { width: 12px; height: 12px; border: 1.5px solid var(--border); display: inline-block; flex-shrink: 0; }
+        .o-r { border-radius: 50%; }
+        .o-s { border-radius: 3px; }
+
+        /* ── Key Question ── */
+        .q-key { background: var(--bg); border-color: var(--border); }
+        .q-pitch { font-size: 7.5pt; color: var(--t3); font-style: italic; padding-left: 28px; margin-bottom: 5px; padding-right: 40px; border-left: 2px solid var(--border-lt); margin-left: 28px; }
+
+        /* ── CTA ── */
+        .cta { background: linear-gradient(135deg, var(--yellow-lt), var(--green-lt)); border: 1.5px solid rgba(245,166,35,0.18); border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; }
+        .cta-head { font-size: 9.5pt; font-weight: 600; color: var(--yellow-dk); display: flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+        .cta-note { font-size: 7pt; color: var(--t3); font-style: italic; margin-bottom: 6px; }
+        .cta-grid { display: grid; grid-template-columns: 1fr 1fr 0.8fr; gap: 10px; }
+        .cta-label { font-size: 7.5pt; font-weight: 600; color: var(--brown); display: flex; align-items: center; gap: 3px; margin-bottom: 2px; }
+        .cta-line { border-bottom: 1.5px solid var(--yellow); height: 20px; }
+
+        /* ── Badge ── */
+        .badge { display: inline-flex; align-items: center; gap: 2px; padding: 1px 6px; border-radius: 3px; font-size: 6.5pt; font-weight: 700; letter-spacing: 0.4px; }
+        .badge-hot { background: rgba(255,59,48,0.1); color: #C0251C; }
+        .badge-free { background: var(--green-lt); color: #1B7A34; }
+
+        /* ── Thanks ── */
+        .thanks { text-align: center; padding: 10px 0 4px; }
+        .thanks-main { font-family: var(--fd); font-size: 11pt; font-weight: 700; color: var(--yellow-dk); margin-bottom: 2px; }
+        .thanks-sub { font-size: 8pt; color: var(--t2); }
+
+        /* ── Footer ── */
+        .footer { display: flex; align-items: center; justify-content: space-between; padding-top: 8px; border-top: 1px solid var(--border-lt); margin-top: 4px; }
+        .footer-logos { display: flex; align-items: center; gap: 8px; }
+        .footer-logos img { height: 16px; object-fit: contain; opacity: 0.5; }
+        .footer-text { font-size: 6.5pt; color: var(--t3); }
+        .footer-url { font-family: var(--fd); font-size: 7.5pt; font-weight: 600; color: var(--brown); }
+    </style>
+</head>
+<body>
+
+<!-- SVG Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10l-10-5L2 10l10 5 10-5z"/><path d="M6 12v5c0 0 3 3 6 3s6-3 6-3v-5"/><line x1="22" y1="10" x2="22" y2="16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+</svg>
+
+<!-- ══════════ HEADER WITH REAL LOGOS ══════════ -->
+<div class="header">
+    <div class="logo-group">
+        <img src="../assets/finpeace-logo.png" alt="FinPeace">
+        <div class="logo-divider"></div>
+        <img src="../assets/kbsv-logo.jpeg" alt="KB Securities Vietnam">
+    </div>
+    <div class="header-right">
+        <div class="header-program">KBSV NextGen 2026</div>
+        <div class="header-sub">Sở Giao Dịch 3 (HO3) · KB Securities Vietnam</div>
+    </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<div class="hero">
+    <div class="hero-badge">
+        <svg><use href="#i-cap"/></svg>
+    </div>
+    <div class="hero-text">
+        <h1>Chúc Mừng Tốt Nghiệp!</h1>
+        <p>Dành <span class="hl">30 giây</span> trả lời nhanh giúp anh/chị nhé — để chúng mình hỗ trợ bạn tốt nhất trên hành trình sự nghiệp sắp tới!</p>
+    </div>
+</div>
+
+<!-- ══════════ THÔNG TIN ══════════ -->
+<div class="s-title"><svg class="ico" style="color: var(--yellow-dk);"><use href="#i-user"/></svg> Thông tin bạn</div>
+<div class="info-grid">
+    <div><div class="info-label">Họ tên</div><div class="info-line"></div></div>
+    <div><div class="info-label">Trường</div><div class="info-line"></div></div>
+    <div><div class="info-label">Ngành học</div><div class="info-line"></div></div>
+</div>
+
+<!-- ══════════ CÂU HỎI ══════════ -->
+
+<!-- Q1 -->
+<div class="q">
+    <div class="q-head"><span class="q-num">01</span><svg class="ico" style="color: var(--brown);"><use href="#i-brief"/></svg><span class="q-label">Hiện tại bạn đã có chỗ làm sau tốt nghiệp chưa?</span></div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-r"></span> Đã có offer / đang đi làm</span>
+        <span class="opt"><span class="o o-r"></span> Đang phỏng vấn vài nơi</span>
+        <span class="opt"><span class="o o-r"></span> Chưa có, đang tìm</span>
+        <span class="opt"><span class="o o-r"></span> Chưa biết muốn làm gì</span>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="q">
+    <div class="q-head"><span class="q-num">02</span><svg class="ico" style="color: var(--brown);"><use href="#i-compass"/></svg><span class="q-label">Bạn quan tâm nhất đến lĩnh vực nào?</span> <span class="q-sub">(chọn tối đa 2)</span></div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-s"></span> Ngân hàng</span>
+        <span class="opt"><span class="o o-s"></span> Chứng khoán / Đầu tư</span>
+        <span class="opt"><span class="o o-s"></span> Bảo hiểm</span>
+        <span class="opt"><span class="o o-s"></span> Sales / Kinh doanh</span>
+        <span class="opt"><span class="o o-s"></span> Marketing / Content</span>
+        <span class="opt"><span class="o o-s"></span> Khác: ......................</span>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="q">
+    <div class="q-head"><span class="q-num">03</span><svg class="ico" style="color: var(--brown);"><use href="#i-star"/></svg><span class="q-label">Bạn đã biết đến chương trình KBSV NextGen 2026 chưa?</span></div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-r"></span> Rồi, biết rồi!</span>
+        <span class="opt"><span class="o o-r"></span> Có nghe qua nhưng chưa rõ</span>
+        <span class="opt"><span class="o o-r"></span> Chưa, lần đầu nghe</span>
+    </div>
+</div>
+
+<!-- Q4 — KEY -->
+<div class="q q-key">
+    <div class="q-head"><span class="q-num">04</span><svg class="ico" style="color: var(--yellow-dk);"><use href="#i-zap"/></svg><span class="q-label">Nếu có chương trình <span class="hl">đào tạo 42 ngày miễn phí</span> để trở thành Chuyên viên Tư vấn Chứng khoán — bạn có muốn tham gia?</span></div>
+    <div class="q-pitch">Được đào tạo bài bản · Mentor kèm 1-1 · Cơ hội trở thành nhân viên chính thức KBSV · Giải thưởng lên đến 5 triệu</div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-r"></span> <strong style="color: var(--green);">Muốn tham gia ngay!</strong> <span class="badge badge-hot">HOT</span></span>
+        <span class="opt"><span class="o o-r"></span> Quan tâm, muốn tìm hiểu thêm</span>
+        <span class="opt"><span class="o o-r"></span> Không quan tâm lắm</span>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="q">
+    <div class="q-head"><span class="q-num">05</span><svg class="ico" style="color: var(--brown);"><use href="#i-heart"/></svg><span class="q-label">Điều gì hấp dẫn bạn nhất khi nghĩ đến nghề Tư vấn Chứng khoán?</span> <span class="q-sub">(chọn tối đa 2)</span></div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-s"></span> Thu nhập không giới hạn</span>
+        <span class="opt"><span class="o o-s"></span> Được học đầu tư cho bản thân</span>
+        <span class="opt"><span class="o o-s"></span> Trở thành KOC Tài chính trên MXH</span>
+        <span class="opt"><span class="o o-s"></span> Môi trường trẻ, năng động</span>
+        <span class="opt"><span class="o o-s"></span> Chưa biết nhiều về nghề này</span>
+    </div>
+</div>
+
+<!-- Q6 -->
+<div class="q">
+    <div class="q-head"><span class="q-num">06</span><svg class="ico" style="color: var(--brown);"><use href="#i-clock"/></svg><span class="q-label">Bạn có sẵn sàng cam kết toàn thời gian 6 tuần cho đào tạo + thực chiến?</span></div>
+    <div class="q-opts">
+        <span class="opt"><span class="o o-r"></span> Sẵn sàng 100%</span>
+        <span class="opt"><span class="o o-r"></span> Được, nhưng cần biết lịch cụ thể</span>
+        <span class="opt"><span class="o o-r"></span> Khó, đang có kế hoạch khác</span>
+    </div>
+</div>
+
+<!-- ══════════ CTA ══════════ -->
+<div class="cta">
+    <div class="cta-head"><svg class="ico" style="color: var(--yellow-dk);"><use href="#i-phone"/></svg> Để lại thông tin — chúng mình sẽ liên hệ hỗ trợ bạn! <span class="badge badge-free">FREE</span></div>
+    <div class="cta-note">Không spam · Chỉ gửi thông tin chương trình NextGen 2026 và cơ hội việc làm tại KBSV</div>
+    <div class="cta-grid">
+        <div><div class="cta-label"><svg class="ico" style="width:11px;height:11px;"><use href="#i-phone"/></svg> SĐT / Zalo</div><div class="cta-line"></div></div>
+        <div><div class="cta-label"><svg class="ico" style="width:11px;height:11px;"><use href="#i-mail"/></svg> Email</div><div class="cta-line"></div></div>
+        <div><div class="cta-label"><svg class="ico" style="width:11px;height:11px;"><use href="#i-globe"/></svg> Facebook</div><div class="cta-line"></div></div>
+    </div>
+</div>
+
+<!-- ══════════ THANKS ══════════ -->
+<div class="thanks">
+    <div class="thanks-main">Cảm ơn bạn!</div>
+    <div class="thanks-sub">Chúc bạn tốt nghiệp thành công và khởi đầu sự nghiệp thật rực rỡ!</div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<div class="footer">
+    <div class="footer-logos">
+        <img src="../assets/finpeace-logo.png" alt="FinPeace">
+        <div style="width:1px;height:12px;background:var(--border);"></div>
+        <img src="../assets/kbsv-logo.jpeg" alt="KBSV">
+        <span class="footer-text">© 2026 KBSV NextGen · FinPeace × KB Securities Vietnam</span>
+    </div>
+    <div class="footer-url">nextgen.finpeace.cloud</div>
+</div>
+
+</body>
+</html>

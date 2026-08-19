@@ -1,1 +1,8 @@
 .vercel
+
+# Embedded git repos
+_archive/Sale Support/temp_finpeace_web/
+_archive/temp_finpeace_web/
+
+# macOS
+.DS_Store
