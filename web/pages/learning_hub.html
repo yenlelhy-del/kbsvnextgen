@@ -464,19 +464,6 @@
             opacity: 1;
         }
 
-        .day-card.locked {
-            background: #f1ede6;
-            opacity: 0.55;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
-
-        .day-card.incomplete-past {
-            background: #fff;
-            border-color: var(--border);
-            opacity: 0.6;
-        }
-
         .card-status-svg {
             position: absolute;
             top: 14px;
@@ -487,11 +474,6 @@
 
         .completed-svg {
             color: var(--success-color);
-        }
-
-        .locked-svg {
-            color: var(--kb-brown);
-            opacity: 0.6;
         }
 
         .day-code {
@@ -1868,8 +1850,6 @@
                 card.className = 'day-card';
                 
                 const isCompleted = completedDays[lesson.id] === true;
-                const isActive = lesson.id === currentSimulatedDay;
-                const isLocked = lesson.id > currentSimulatedDay;
                 
                 let statusSvg = '';
                 if (isCompleted) {
@@ -1879,19 +1859,11 @@
                             <polyline points="20 6 9 17 4 12"/>
                         </svg>
                     `;
-                } else if (isActive) {
-                    card.classList.add('active-day');
-                } else if (isLocked) {
-                    card.classList.add('locked');
-                    statusSvg = `
-                        <svg class="card-status-svg locked-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                        </svg>
-                    `;
                 } else {
-                    // Past day but incomplete
-                    card.classList.add('incomplete-past');
+                    // Not completed yet (fully clickable, standard state)
+                    if (lesson.id === currentSimulatedDay) {
+                        card.classList.add('active-day'); // Pulse highlight for recommended current day
+                    }
                 }
                 
                 card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
