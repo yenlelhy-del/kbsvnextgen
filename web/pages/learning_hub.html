@@ -3,447 +3,1966 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBSV NextGen Learning Hub — Kho Khóa Học Ngắn & Nền Tảng EdTech</title>
-    <meta name="description" content="Go Global Learning Hub dành cho KBSV NextGen 2026 – Danh mục 22 Khóa học ngắn tương tác miễn phí về Tích sản IW, Giao dịch chứng khoán, SalesGPT & AI Simulators.">
+    <title>KBSV NextGen Learning Hub — Cổng Học Tập & Điều Phối Thực Chiến</title>
+    <meta name="description" content="NextGen Online Learning Hub dành cho học viên chương trình môi giới thế hệ mới HO3 KBSV x FinPeace.">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --brand-mint-bg: #F1FBF7;
-            --brand-teal: #12B5A5;
-            --brand-green: #5BB733;
-            --brand-dark: #0E2A30;
-            --brand-gold: #F5A623;
-            --brand-card-bg: #FFFFFF;
-            --brand-border: rgba(18, 181, 165, 0.2);
-            --brand-text-muted: rgba(14, 42, 48, 0.6);
-            --shadow-soft: 0 4px 20px rgba(14, 42, 48, 0.06);
-            --shadow-glow: 0 8px 28px rgba(18, 181, 165, 0.25);
-            --radius-pill: 50px;
-            --radius-card: 20px;
+            --kb-yellow: #F5A623;
+            --kb-yellow-dark: #E09000;
+            --kb-yellow-light: rgba(245, 166, 35, 0.05);
+            --kb-brown: #8B7355;
+            --kb-brown-dark: #5c4b37;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --border: #d5cfc5;
+            --border-light: #ece8e0;
+            --bg-warm: #FAFAF7;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', sans-serif;
+            --shadow-soft: 0 8px 30px rgba(92, 75, 55, 0.05);
+            --shadow-glow: 0 10px 30px rgba(245, 166, 35, 0.2);
+            --success-color: #4CAF50;
+            --warning-color: #FF9800;
+            --danger-color: #E05050;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-        body { background-color: var(--brand-mint-bg); color: var(--brand-dark); line-height: 1.6; }
-        h1, h2, h3, h4, h5, .brand-font { font-family: 'Space Grotesk', sans-serif; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-warm);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, .display-font {
+            font-family: var(--font-display);
+            font-weight: 700;
+        }
 
         /* NAVBAR */
         nav.npv-navbar {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            height: 68px; padding: 0 2rem;
-            display: flex; align-items: center; justify-content: space-between;
-            background: rgba(241, 251, 247, 0.85);
-            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--brand-border);
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            height: 72px;
+            padding: 0 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(250, 250, 247, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
         }
 
-        .npv-nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .npv-brand-title { font-weight: 900; font-size: 14px; color: var(--brand-dark); line-height: 1.1; }
-        .npv-brand-sub { font-size: 11px; color: var(--brand-teal); font-weight: 700; }
-
-        .npv-nav-links { display: flex; gap: 28px; }
-        .npv-nav-link { color: var(--brand-text-muted); text-decoration: none; font-size: 14px; font-weight: 700; transition: color 0.2s; }
-        .npv-nav-link:hover { color: var(--brand-teal); }
-
-        .npv-lang-switcher {
-            display: flex; gap: 2px; background: rgba(18, 181, 165, 0.08);
-            border-radius: 12px; padding: 4px; border: 1px solid var(--brand-border);
+        .npv-nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
         }
 
-        .npv-lang-btn {
-            padding: 5px 10px; border-radius: 9px; border: none; cursor: pointer;
-            font-size: 12px; font-weight: 800; background: transparent; color: var(--brand-text-muted);
-        }
-        .npv-lang-btn.active {
-            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
-            color: #062030; box-shadow: 0 2px 8px rgba(18, 181, 165, 0.35);
+        .npv-logos-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .btn-npv-primary {
-            padding: 10px 24px; border-radius: var(--radius-pill);
-            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
-            color: #062030; border: none; cursor: pointer; font-size: 14px; font-weight: 900;
-            box-shadow: 0 4px 16px rgba(18, 181, 165, 0.3); transition: all 0.2s; text-decoration: none;
-            display: inline-flex; align-items: center; gap: 6px;
-        }
-        .btn-npv-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
-
-        /* HERO DASHBOARD */
-        section.npv-hero {
-            padding: 110px 2rem 50px; max-width: 1280px; margin: 0 auto;
-            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; align-items: center;
+        .logo-main {
+            height: 26px;
+            object-fit: contain;
         }
 
-        .npv-badge-pill {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(18, 181, 165, 0.1); border-radius: var(--radius-pill);
-            padding: 6px 16px; margin-bottom: 18px; border: 1px solid rgba(18, 181, 165, 0.3);
-            font-size: 12px; font-weight: 800; color: var(--brand-teal); letter-spacing: 0.5px;
+        .logo-divider {
+            width: 1px;
+            height: 18px;
+            background: var(--border);
         }
 
-        .npv-hero-title {
-            font-size: clamp(36px, 4.5vw, 56px); font-weight: 900;
-            color: var(--brand-dark); line-height: 1.08; margin-bottom: 16px;
+        .logo-sub {
+            height: 16px;
+            object-fit: contain;
+            opacity: 0.85;
         }
 
-        .npv-hero-sub { font-size: 16px; color: var(--brand-text-muted); font-weight: 600; margin-bottom: 30px; }
-
-        .gamify-panel { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
-        .gamify-card {
-            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
-            border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow-soft);
-            display: flex; align-items: center; gap: 12px;
+        .brand-meta {
+            display: flex;
+            flex-direction: column;
         }
 
-        .category-scroll {
-            display: flex; gap: 10px; overflow-x: auto; padding: 1rem 0 1.5rem;
-            max-width: 1280px; margin: 0 auto;
+        .brand-meta .title {
+            font-family: var(--font-display);
+            font-size: 11pt;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
         }
 
-        .cat-pill-btn {
-            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
-            border-radius: var(--radius-pill); padding: 10px 20px; font-size: 13px; font-weight: 700;
-            color: var(--brand-dark); cursor: pointer; white-space: nowrap; transition: all 0.2s;
+        .brand-meta .sub {
+            font-size: 7.5pt;
+            color: var(--kb-brown);
+            font-weight: 600;
+            letter-spacing: 0.3px;
         }
 
-        .cat-pill-btn:hover, .cat-pill-btn.active {
-            background: linear-gradient(135deg, var(--brand-teal), var(--brand-green));
-            color: #062030; border-color: transparent; box-shadow: 0 4px 12px rgba(18, 181, 165, 0.25);
+        .npv-nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
         }
 
-        .courses-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem; max-width: 1280px; margin: 0 auto 4rem;
+        .npv-nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 9.5pt;
+            font-weight: 600;
+            transition: color 0.2s;
         }
 
-        .course-card {
-            background: var(--brand-card-bg); border: 1px solid var(--brand-border);
-            border-radius: var(--radius-card); padding: 1.5rem; box-shadow: var(--shadow-soft);
-            display: flex; flex-direction: column; justify-content: space-between;
-            transition: transform 0.25s ease, box-shadow 0.25s;
+        .npv-nav-link:hover, .npv-nav-link.active {
+            color: var(--kb-yellow-dark);
         }
 
-        .course-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(14, 42, 48, 0.1); }
-
-        .course-tag {
-            background: rgba(18, 181, 165, 0.12); color: var(--brand-teal);
-            font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 6px;
-            align-self: flex-start; margin-bottom: 12px;
+        .btn-primary {
+            padding: 10px 24px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--kb-yellow), var(--kb-yellow-dark));
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 9.5pt;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
+            transition: all 0.25s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .course-title { font-size: 1.15rem; font-weight: 800; color: var(--brand-dark); margin-bottom: 8px; }
-        .course-desc { font-size: 0.88rem; color: var(--brand-text-muted); line-height: 1.6; margin-bottom: 16px; }
-
-        .course-meta {
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 0.8rem; font-weight: 700; color: var(--brand-teal);
-            border-top: 1px solid rgba(18, 181, 165, 0.12); padding-top: 12px; margin-top: auto;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
         }
 
-        /* MINI-COURSE PLAYER MODAL */
-        .modal-overlay {
-            position: fixed; inset: 0; background: rgba(14, 42, 48, 0.75);
-            backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center;
-            z-index: 2000; padding: 1.5rem;
+        .btn-secondary {
+            padding: 10px 24px;
+            border-radius: 50px;
+            background: #fff;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            font-size: 9.5pt;
+            font-weight: 700;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .modal-card {
-            background: var(--brand-card-bg); border-radius: 24px; max-width: 900px; width: 100%;
-            max-height: 90vh; overflow-y: auto; padding: 2.25rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            position: relative; animation: popUp 0.3s ease forwards;
+        .btn-secondary:hover {
+            background: var(--bg-warm);
+            border-color: var(--kb-brown);
         }
 
-        @keyframes popUp { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
-
-        .modal-close-btn {
-            position: absolute; top: 1.25rem; right: 1.25rem; background: rgba(0,0,0,0.05);
-            border: none; width: 34px; height: 34px; border-radius: 50%; font-weight: 800; cursor: pointer;
+        /* ── SECTION: HOMEPAGE INTRO (Pre-login) ── */
+        .homepage-hero {
+            padding: 120px 2.5rem 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
         }
 
-        /* SYLLABUS CHAPTER TABS INSIDE MINI-COURSE MODAL */
-        .syllabus-tabs {
-            display: flex; gap: 8px; overflow-x: auto; border-bottom: 2px solid var(--brand-border);
-            margin: 1.25rem 0; padding-bottom: 8px;
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .syl-tab-btn {
-            background: transparent; border: none; font-size: 0.85rem; font-weight: 700;
-            color: var(--brand-text-muted); padding: 8px 14px; border-radius: 8px; cursor: pointer; white-space: nowrap;
+        .program-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(245, 166, 35, 0.08);
+            border: 1px solid rgba(245, 166, 35, 0.3);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--kb-brown-dark);
+            margin-bottom: 20px;
+            width: fit-content;
         }
 
-        .syl-tab-btn.active {
-            background: rgba(18, 181, 165, 0.12); color: var(--brand-teal);
+        .hero-title {
+            font-size: clamp(28px, 4vw, 48px);
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin-bottom: 18px;
         }
 
-        .scenario-choice-btn {
-            background: #F8FAFC; border: 2px solid var(--brand-border);
-            border-radius: 14px; padding: 1rem 1.25rem; text-align: left; font-size: 0.92rem;
-            font-weight: 600; color: var(--brand-dark); cursor: pointer; width: 100%;
-            margin-bottom: 10px; transition: all 0.2s;
+        .hero-title span {
+            background: linear-gradient(120deg, var(--kb-yellow-dark) 0%, var(--kb-yellow) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .scenario-choice-btn:hover { background: rgba(18, 181, 165, 0.08); border-color: var(--brand-teal); }
+        .hero-desc {
+            font-size: 11pt;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-right-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.25rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .features-list {
+            margin-top: 15px;
+            list-style: none;
+        }
+
+        .features-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            font-size: 9.5pt;
+            color: var(--text-secondary);
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--kb-yellow-dark);
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+        }
+
+        /* ── LOG-IN / MASCOT SELECTOR SECTION ── */
+        .login-section {
+            display: none;
+            max-width: 500px;
+            margin: 120px auto 60px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-size: 9.5pt;
+            font-family: var(--font-body);
+            background: var(--bg-warm);
+            transition: all 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--kb-yellow-dark);
+            background: #fff;
+        }
+
+        /* Mascot Selector Grid */
+        .mascot-select-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+            margin-bottom: 24px;
+        }
+
+        .mascot-select-card {
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--bg-warm);
+        }
+
+        .mascot-select-card:hover {
+            border-color: var(--kb-yellow);
+            transform: translateY(-2px);
+        }
+
+        .mascot-select-card.active {
+            border-color: var(--kb-yellow-dark);
+            background: var(--kb-yellow-light);
+            box-shadow: 0 4px 12px rgba(245, 166, 35, 0.1);
+        }
+
+        .mascot-select-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 6px;
+            background: #fff;
+            border: 1px solid var(--border-light);
+        }
+
+        .mascot-select-name {
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .mascot-select-track {
+            font-size: 6.5pt;
+            color: var(--text-secondary);
+        }
+
+        /* ── LEARNER DASHBOARD (Authenticated View) ── */
+        .dashboard-container {
+            display: none;
+            max-width: 1200px;
+            margin: 92px auto 60px;
+            padding: 0 2rem;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 2.1fr 0.9fr;
+            gap: 2rem;
+        }
+
+        /* Left Side: Roadmap & Weekly tabs */
+        .weekly-tabs-container {
+            margin-bottom: 20px;
+        }
+
+        .week-tabs {
+            display: flex;
+            gap: 6px;
+            list-style: none;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .week-tab-btn {
+            background: transparent;
+            border: none;
+            padding: 8px 16px;
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-secondary);
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .week-tab-btn.active, .week-tab-btn:hover {
+            color: var(--kb-yellow-dark);
+            background: var(--kb-yellow-light);
+        }
+
+        /* Roadmap Grid */
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .day-card {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 14px;
+            padding: 14px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 105px;
+        }
+
+        .day-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        /* Day Statuses */
+        .day-card.completed {
+            background: #fff;
+            border-color: rgba(76, 175, 80, 0.4);
+        }
+
+        .day-card.completed::after {
+            content: "✓";
+            color: var(--success-color);
+            position: absolute;
+            top: 10px; right: 12px;
+            font-weight: 900;
+            font-size: 10pt;
+        }
+
+        .day-card.active-day {
+            border-color: var(--kb-yellow-dark);
+            background: var(--kb-yellow-light);
+            box-shadow: var(--shadow-glow);
+            animation: activeGlow 2s infinite ease-in-out;
+        }
+
+        @keyframes activeGlow {
+            0%, 100% { box-shadow: 0 0 10px rgba(245, 166, 35, 0.15); }
+            50% { box-shadow: 0 0 20px rgba(245, 166, 35, 0.35); }
+        }
+
+        .day-card.active-day::after {
+            content: "Đang học";
+            background: var(--kb-yellow-dark);
+            color: #fff;
+            font-size: 6pt;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 4px;
+            position: absolute;
+            top: 10px; right: 12px;
+            text-transform: uppercase;
+        }
+
+        .day-card.locked {
+            background: #f1ede6;
+            opacity: 0.65;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .day-card.locked::after {
+            content: "🔒";
+            position: absolute;
+            top: 10px; right: 12px;
+            font-size: 9pt;
+        }
+
+        .day-code {
+            font-family: var(--font-display);
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--kb-brown);
+        }
+
+        .day-title {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 6px;
+            line-height: 1.35;
+        }
+
+        /* Right Side Panels: Mascot, Stats, Sudden Death */
+        .right-side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Gamification Status Card */
+        .gamify-status-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .status-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .status-badge {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16pt;
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+        }
+
+        .status-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .status-lbl {
+            font-size: 7.5pt;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-val {
+            font-size: 10pt;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        /* Sudden Death Motion Graphic Widget */
+        .sudden-death-panel {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sd-title {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sd-graphic-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* Radar Pulse Ring for Sudden Death Status */
+        .sd-pulse-ring {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--success-color);
+        }
+
+        .sd-pulse-ring.amber {
+            background: var(--warning-color);
+        }
+
+        .sd-pulse-ring.red {
+            background: var(--danger-color);
+        }
+
+        .sd-pulse-ring::after {
+            content: "";
+            position: absolute;
+            top: -6px; left: -6px; right: -6px; bottom: -6px;
+            border-radius: 50%;
+            border: 2px solid var(--success-color);
+            opacity: 0.8;
+            animation: sdRadarPulse 1.8s infinite ease-out;
+        }
+
+        .sd-pulse-ring.amber::after {
+            border-color: var(--warning-color);
+        }
+
+        .sd-pulse-ring.red::after {
+            border-color: var(--danger-color);
+        }
+
+        @keyframes sdRadarPulse {
+            0% { transform: scale(0.9); opacity: 0.8; }
+            100% { transform: scale(1.6); opacity: 0; }
+        }
+
+        .sd-status-text {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .sd-desc {
+            font-size: 7.5pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Interactive Mascot Advisor Box */
+        .mascot-advisor-panel {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-soft);
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .mascot-character-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--kb-yellow);
+            background: var(--bg-warm);
+        }
+
+        .mascot-bubble {
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 10px 14px;
+            position: relative;
+            font-size: 8.2pt;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .mascot-bubble::after {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 14px;
+            height: 14px;
+            background: var(--bg-warm);
+            border-left: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        /* Active Day Debug Tool */
+        .debug-panel {
+            background: rgba(92, 75, 55, 0.04);
+            border: 1px dashed var(--kb-brown);
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin-top: 15px;
+        }
+
+        /* ── INTERACTIVE LESSON MODAL OVERLAY ── */
+        .lesson-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 1.5rem;
+        }
+
+        .lesson-modal-card {
+            background: var(--bg-warm);
+            border: 2px solid var(--kb-brown);
+            border-radius: 24px;
+            max-width: 1100px;
+            width: 100%;
+            height: 88vh;
+            display: grid;
+            grid-template-columns: 2.2fr 0.8fr;
+            box-shadow: 0 30px 60px rgba(92, 75, 55, 0.2);
+            overflow: hidden;
+            animation: modalPopUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            position: relative;
+        }
+
+        @keyframes modalPopUp {
+            from { opacity: 0; transform: scale(0.96) translateY(10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .close-modal-btn {
+            position: absolute;
+            top: 15px; right: 15px;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: #fff;
+            font-size: 10pt;
+            font-weight: 800;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .close-modal-btn:hover {
+            background: var(--bg-warm);
+            border-color: var(--kb-brown-dark);
+        }
+
+        /* Modal Left Panel: Header, Content, Tabs */
+        .modal-left {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border);
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .modal-header-box {
+            margin-bottom: 12px;
+            padding-right: 25px;
+        }
+
+        .modal-day-badge {
+            font-family: var(--font-display);
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--kb-yellow-dark);
+            text-transform: uppercase;
+        }
+
+        .modal-lesson-title {
+            font-size: 14pt;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-top: 2px;
+        }
+
+        .modal-doc-code {
+            font-size: 7.5pt;
+            color: var(--kb-brown);
+            font-weight: 600;
+        }
+
+        /* Lesson Tabs */
+        .lesson-tabs {
+            display: flex;
+            gap: 4px;
+            border-bottom: 2px solid var(--border-light);
+            margin-bottom: 15px;
+        }
+
+        .lesson-tab-btn {
+            background: transparent;
+            border: none;
+            padding: 8px 15px;
+            font-family: var(--font-display);
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.2s;
+        }
+
+        .lesson-tab-btn.active {
+            color: var(--kb-brown-dark);
+            background: #fff;
+            border: 1px solid var(--border);
+            border-bottom: 2px solid #fff;
+            margin-bottom: -2px;
+        }
+
+        /* Tabs Content Display Container */
+        .lesson-tab-content-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px 5px;
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* Theory formatting inside modal */
+        .markdown-rendered-view {
+            font-size: 8.5pt;
+            line-height: 1.55;
+            color: var(--text-primary);
+            padding: 10px;
+        }
+
+        .markdown-rendered-view h1, .markdown-rendered-view h2, .markdown-rendered-view h3 {
+            color: var(--text-primary);
+            margin: 15px 0 8px;
+            font-family: var(--font-display);
+        }
+
+        .markdown-rendered-view h2 {
+            font-size: 10.5pt;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 4px;
+        }
+
+        .markdown-rendered-view blockquote {
+            background: var(--bg-warm);
+            border-left: 3px solid var(--kb-yellow);
+            padding: 8px 12px;
+            margin: 12px 0;
+            font-style: italic;
+        }
+
+        .markdown-rendered-view ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .markdown-rendered-view li {
+            margin-bottom: 4px;
+        }
+
+        /* Modal Right Panel: Cheatsheets, Quiz, Mascot Feedback */
+        .modal-right {
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background: #fff;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        /* Download Card */
+        .download-cs-card {
+            background: var(--kb-yellow-light);
+            border: 1px dashed var(--kb-yellow);
+            border-radius: 14px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .download-cs-card:hover {
+            transform: scale(1.02);
+            border-color: var(--kb-yellow-dark);
+        }
+
+        .download-cs-title {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .download-cs-desc {
+            font-size: 7pt;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        /* Interactive Quiz Widget */
+        .quiz-card {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 15px;
+            background: var(--bg-warm);
+        }
+
+        .quiz-title {
+            font-family: var(--font-display);
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 4px;
+        }
+
+        .quiz-question {
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .quiz-option {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--kb-brown);
+            background: var(--bg-warm);
+        }
+
+        .quiz-option.selected {
+            border-color: var(--kb-yellow-dark);
+            background: var(--kb-yellow-light);
+            color: var(--text-primary);
+        }
+
+        .quiz-explanation-box {
+            display: none;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-size: 7.5pt;
+            color: var(--text-secondary);
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        /* ── INTERACTIVE FINANCIAL CALCULATORS ── */
+        .calc-container {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .calc-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .calc-input-group label {
+            font-size: 7.5pt;
+            font-weight: 700;
+            color: var(--text-secondary);
+        }
+
+        .calc-result-box {
+            background: var(--bg-warm);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .calc-row input {
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 8pt;
+        }
+
+        .calc-res-title {
+            font-size: 7.5pt;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .calc-res-val {
+            font-size: 11pt;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        /* CONFETTI ANIMATION ON CORRECT QUIZ */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- TOP NAVBAR -->
+    <!-- NAVBAR -->
     <nav class="npv-navbar">
-        <a href="index.html" class="npv-nav-brand">
-            <span style="font-size: 24px;">🌐</span>
-            <div>
-                <div class="npv-brand-title">Go Global Learning Hub</div>
-                <div class="npv-brand-sub">by KBSV NextGen x FinPeace</div>
+        <a href="javascript:void(0)" class="npv-nav-brand" onclick="goHome()">
+            <div class="npv-logos-box">
+                <img src="../assets/finpeace-logo.png" alt="FinPeace Logo" class="logo-main">
+                <div class="logo-divider"></div>
+                <img src="../assets/kbsv-logo.jpeg" alt="KBSV Logo" class="logo-sub">
+            </div>
+            <div class="brand-meta">
+                <span class="title">NextGen 2026</span>
+                <span class="sub">FinPeace × KB Securities Vietnam · HO3</span>
             </div>
         </a>
 
-        <div class="npv-nav-links">
-            <a href="#courses" class="npv-nav-link">Kho Khóa Học Ngắn (22 Mini-Courses)</a>
-            <a href="#tools" class="npv-nav-link">🧰 Công cụ đánh giá</a>
-            <a href="#wiki" class="npv-nav-link">Cẩm nang FinPeace</a>
-            <a href="index.html" class="npv-nav-link">Về KBSV NextGen</a>
-        </div>
+        <ul class="npv-nav-links">
+            <li><a href="javascript:void(0)" class="npv-nav-link active" id="navHomeLink" onclick="goHome()">Trang chủ</a></li>
+            <li><a href="javascript:void(0)" class="npv-nav-link" id="navRoadmapLink" onclick="triggerDashboardView()">Lộ trình 42 ngày</a></li>
+        </ul>
 
         <div style="display: flex; align-items: center; gap: 14px;">
-            <div class="npv-lang-switcher">
-                <button class="npv-lang-btn active">🇻🇳 VI</button>
-                <button class="npv-lang-btn">🇬🇧 EN</button>
-                <button class="npv-lang-btn">🇨🇳 中</button>
+            <!-- Magic Link badge if authenticated -->
+            <div id="magicTokenBadge" style="display:none; font-family:var(--font-display); font-size:7.5pt; font-weight:700; color:var(--success-color); background:rgba(76,175,80,0.08); border:1px solid rgba(76,175,80,0.3); padding:4px 10px; border-radius:50px;">
+                Token: ACTIVE_JWT_HO3
             </div>
-            <a href="index.html" class="btn-npv-primary">Bắt đầu miễn phí →</a>
+            <button class="btn-primary" id="navbarActionBtn" onclick="toggleAuthFlow()">Đăng nhập học viên</button>
         </div>
     </nav>
 
-    <!-- HERO GAMIFICATION DASHBOARD -->
-    <section class="npv-hero">
-        <div>
-            <div class="npv-badge-pill">
-                <span>🌱</span>
-                <span>Học · Lãnh đạo · Ra thế giới chứng khoán</span>
+    <!-- ── 1. HOMEPAGE PORTAL (Pre-login) ── -->
+    <section class="homepage-hero" id="homepageSection">
+        <div class="hero-left">
+            <div class="program-badge">
+                <span>🏆</span>
+                <span>Chương trình Tuyển dụng - Đào tạo - Thực chiến Môi giới 4.0</span>
             </div>
-            <h1 class="npv-hero-title">Kho Khóa Học Ngắn<br><span style="color: var(--brand-teal);">Go Global Mini-Courses.</span></h1>
-            <p class="npv-hero-sub">Học 35 phút tương tác · Tốt nghiệp cấp Chứng chỉ Kỹ năng · Tích lũy +200 XP mỗi khóa</p>
-            <a href="#courses" class="btn-npv-primary" style="padding: 14px 36px; font-size: 16px;">Vào học ngay →</a>
+            <h1 class="hero-title">Trở thành<br><span>Digital Wealth Advisor</span><br>Thế hệ mới</h1>
+            <p class="hero-desc">Lộ trình 42 ngày Micro-learning bọc thép kiến thức đầu tư, rèn luyện kỹ năng KOC và khai thác các công cụ Sales AI tối tân cùng Sở Giao Dịch 3 (HO3) KB Securities Vietnam & FinPeace.</p>
+            <div class="hero-actions">
+                <button class="btn-primary" style="padding: 14px 32px; font-size: 10.5pt;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
+                <button class="btn-secondary" style="padding: 14px 32px; font-size: 10.5pt;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
+            </div>
         </div>
 
-        <div>
-            <div class="gamify-panel">
-                <div class="gamify-card">
-                    <span style="font-size: 28px;">🔥</span>
-                    <div>
-                        <div style="font-size: 20px; font-weight: 900; color: #C26A12;" id="userStreakVal">8</div>
-                        <div style="font-size: 11px; color: var(--brand-text-muted); font-weight: 700;">Chuỗi ngày học</div>
-                    </div>
-                </div>
-
-                <div class="gamify-card">
-                    <span style="font-size: 26px;">🪴</span>
-                    <div>
-                        <div style="font-size: 11px; font-weight: 700; color: var(--brand-text-muted); text-transform: uppercase;">Cấp độ</div>
-                        <div style="font-size: 13px; font-weight: 800; color: var(--brand-green);">Mầm Xanh Level 1</div>
-                    </div>
-                </div>
-            </div>
-
-            <div style="background: var(--brand-card-bg); border: 1px solid var(--brand-border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow-soft); margin-bottom: 12px;">
-                <div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; margin-bottom: 8px;">
-                    <span style="color: var(--brand-text-muted);">XP hôm nay</span>
-                    <span style="color: var(--brand-teal);" id="xpStatText">450 / 500 XP</span>
-                </div>
-                <div style="background: rgba(14,42,48,0.06); border-radius: 8px; height: 10px; overflow: hidden;">
-                    <div id="xpProgressBar" style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--brand-teal), var(--brand-green)); border-radius: 8px; transition: width 0.5s ease;"></div>
-                </div>
-            </div>
+        <div class="hero-right-card">
+            <h3 style="font-size: 11pt; color: var(--text-primary); border-bottom: 1.5px solid var(--kb-yellow); padding-bottom: 6px; margin-bottom: 15px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
+            <ul class="features-list">
+                <li><strong>Thời lượng:</strong> 42 ngày (2 tuần nền tảng + 4 tuần thực chiến)</li>
+                <li><strong>Mục tiêu:</strong> Đào tạo thành Financial KOC đạt chuẩn AUM & eKYC</li>
+                <li><strong>Ngân sách Quỹ giải thưởng:</strong> 20.000.000 VNĐ</li>
+                <li><strong>Mức giải nhất xuất sắc:</strong> 5.000.000 VNĐ</li>
+                <li><strong>Cơ chế lương thưởng:</strong> Lương cứng 10M + 50% hoa hồng DTT</li>
+                <li><strong>Quy tắc loại Sudden Death:</strong> Áp dụng kỷ luật từ Tuần 3 sống còn</li>
+            </ul>
         </div>
     </section>
 
-    <!-- CATEGORY FILTER PILLS (8 TRACKS CATALOG) -->
-    <div style="padding: 0 2rem;">
-        <div class="category-scroll" id="courses">
-            <button class="cat-pill-btn active" onclick="filterCategory('all', this)">Tất cả 22 Khóa Học Ngắn</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track1', this)">1. Tư Duy 3 Vùng Đất</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track2', this)">2. Khóa Học InvestWise (IW)</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track3', this)">3. Giao Dịch & Margin</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track4', this)">4. 6 Bước Tư Vấn Môi Giới</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track5', this)">5. Sóng VTA & TA</button>
-            <button class="cat-pill-btn" onclick="filterCategory('track6', this)">6. SalesGPT & Storytelling</button>
+    <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
+    <section class="login-section" id="loginSection">
+        <h2 style="font-family:var(--font-display); font-size:12pt; text-align:center; margin-bottom:6px;">ĐĂNG NHẬP PASSWORDLESS</h2>
+        <p style="font-size:8pt; color:var(--text-secondary); text-align:center; margin-bottom:20px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
+        
+        <div class="form-group">
+            <label for="studentEmail">Email Học Viên</label>
+            <input type="email" id="studentEmail" class="form-control" placeholder="fresher.ho3@kbsv.com.vn" required>
+        </div>
+
+        <div class="form-group">
+            <label>Lựa Chọn Mascot Đồng Hành (Advisory Track)</label>
+            <div class="mascot-select-grid">
+                <div class="mascot-select-card active" onclick="selectMascot('flexi', this)">
+                    <img src="../assets/mascot/flexi/light/Mascot app Trader_trader original-01.png" alt="Flexi Mascot" class="mascot-select-avatar">
+                    <div class="mascot-select-name">Flexi</div>
+                    <div class="mascot-select-track">Content KOC</div>
+                </div>
+                <div class="mascot-select-card" onclick="selectMascot('investor', this)">
+                    <img src="../assets/mascot/investor/light/Mascot app Trader_trader original-02.png" alt="Investor Mascot" class="mascot-select-avatar">
+                    <div class="mascot-select-name">Investor</div>
+                    <div class="mascot-select-track">Tích Sản SIP</div>
+                </div>
+                <div class="mascot-select-card" onclick="selectMascot('trader', this)">
+                    <img src="../assets/mascot/trader/light/Mascot app Trader_trader original-03.png" alt="Trader Mascot" class="mascot-select-avatar">
+                    <div class="mascot-select-name">Trader</div>
+                    <div class="mascot-select-track">Lướt Sóng & Phái Sinh</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-primary" style="width:100%; justify-content:center; padding:12px 0;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
+    </section>
+
+    <!-- ── 3. LEARNER DASHBOARD SECTION ── -->
+    <div class="dashboard-container" id="dashboardSection">
+        <div class="dashboard-grid">
+            
+            <!-- Left Panel: Weeks and 42 Days Roadmap -->
+            <div class="left-panel">
+                <div class="weekly-tabs-container">
+                    <ul class="week-tabs">
+                        <li><button class="week-tab-btn active" id="tabW1" onclick="filterWeek(1, this)">Tuần 1: Tư Duy Tích Sản</button></li>
+                        <li><button class="week-tab-btn" onclick="filterWeek(2, this)">Tuần 2: 6 Bước Tư Vấn</button></li>
+                        <li><button class="week-tab-btn" onclick="filterWeek(3, this)">Tuần 3: Quy Chế & Lương</button></li>
+                        <li><button class="week-tab-btn" onclick="filterWeek(4, this)">Tuần 4: Quản Trị Margin & Phái Sinh</button></li>
+                        <li><button class="week-tab-btn" onclick="filterWeek(5, this)">Tuần 5: Phân Tích TA & KOC Lab</button></li>
+                        <li><button class="week-tab-btn" onclick="filterWeek(6, this)">Tuần 6: Zalo & Tốt Nghiệp</button></li>
+                    </ul>
+                </div>
+
+                <!-- 42 Day Cards -->
+                <div class="roadmap-grid" id="roadmapGrid"></div>
+            </div>
+
+            <!-- Right Panel: Mascot, Stats, Sudden Death -->
+            <div class="right-side-panel">
+                
+                <!-- Mascot Speech Widget -->
+                <div class="mascot-advisor-panel">
+                    <img src="" alt="KB Mascot Companion" class="mascot-character-img" id="mascotAvatarWidget">
+                    <div class="mascot-bubble">
+                        <span id="mascotSpeechText">Chào chiến binh NextGen! Hôm nay bạn đã sẵn sàng bắt đầu chặng hành trình chưa?</span>
+                    </div>
+                </div>
+
+                <!-- Gamification Panel -->
+                <div class="gamify-status-card">
+                    <div class="status-row">
+                        <div class="status-badge">🔥</div>
+                        <div class="status-info">
+                            <span class="status-lbl">Học Tập Đều Đặn</span>
+                            <span class="status-val" id="userStreakText">8 Ngày Liên Tục</span>
+                        </div>
+                    </div>
+                    <div class="status-row">
+                        <div class="status-badge">🪴</div>
+                        <div class="status-info">
+                            <span class="status-lbl">Cấp Độ Hiện Tại</span>
+                            <span class="status-val" id="userLevelText">Mầm Xanh Level 1</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--border-light);">
+                        <div style="display: flex; justify-content: space-between; font-size: 7.5pt; font-weight: 700; margin-bottom: 6px;">
+                            <span style="color: var(--text-secondary);">TÍCH LŨY XP HÔM NAY</span>
+                            <span style="color: var(--kb-yellow-dark);" id="xpText">450 / 500 XP</span>
+                        </div>
+                        <div style="background: var(--border-light); border-radius: 8px; height: 8px; overflow: hidden;">
+                            <div id="xpBar" style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--kb-yellow), var(--kb-yellow-dark)); border-radius: 8px; transition: width 0.4s;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sudden Death Monitoring (Motion Graphic) -->
+                <div class="sudden-death-panel">
+                    <div class="sd-title">
+                        <span style="width:8px; height:8px; border-radius:50%; background:red; display:inline-block; animation: activeGlow 1s infinite;"></span>
+                        QUẢN TRỊ SỐNG CÒN (SUDDEN DEATH MONITOR)
+                    </div>
+                    <div class="sd-graphic-box">
+                        <!-- Custom CSS radar pulse light (NO AI EMOJIS) -->
+                        <div class="sd-pulse-ring" id="sdPulseRing"></div>
+                        <div class="sd-status-text" id="sdStatusText">TRẠNG THÁI: AN TOÀN (SAFE)</div>
+                    </div>
+                    <p class="sd-desc" id="sdDescText">Tuần này: Đã active thành công 3/2 tài khoản Standard. Vượt qua mốc Sudden Death. Giữ vững hoạt động CRM!</p>
+                </div>
+
+                <!-- Debug/Test day selector -->
+                <div class="debug-panel">
+                    <label style="font-size:7.5pt; font-weight:700; color:var(--kb-brown-dark); display:block; margin-bottom:4px;">CÔNG CỤ KIỂM THỬ TRẠNG THÁI HỌC TẬP</label>
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <span style="font-size:7.5pt; color:var(--text-secondary);">Mô phỏng ở Ngày:</span>
+                        <select id="debugDaySelect" onchange="simulateProgressChange()" style="font-size:7.5pt; padding:4px; border:1px solid var(--border); border-radius:4px;">
+                            <!-- Will fill from JS -->
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
-    <!-- MINI-COURSES CATALOG GRID -->
-    <div style="padding: 0 2rem;">
-        <div class="courses-grid" id="coursesGrid">
-
-            <!-- MINI-COURSE 1 -->
-            <div class="course-card" data-cat="track1">
-                <div>
-                    <span class="course-tag">KHÓA HỌC NGẮN #1</span>
-                    <h3 class="course-title">Hoạch Định 3 Vùng Đất Tài Chính FinPeace</h3>
-                    <p class="course-desc">Syllabus 6 Chương: Lý thuyết 3 Vùng đất, Case Study thực tế, Workshop tính toán dòng tiền & Thi cấp chứng chỉ.</p>
+    <!-- ── 4. INTERACTIVE LESSON MODAL OVERLAY ── -->
+    <div class="lesson-modal-overlay" id="lessonModal">
+        <div class="lesson-modal-card">
+            <button class="close-modal-btn" onclick="closeLessonModal()">✕</button>
+            
+            <!-- Left Area: Markdown Reader & Tabs -->
+            <div class="modal-left">
+                <div class="modal-header-box">
+                    <div class="modal-day-badge" id="mDayCode">NGÀY 23 (D23)</div>
+                    <h2 class="modal-lesson-title" id="mLessonTitle">Đòn Bẩy Margin & Công Thức Tính RTT</h2>
+                    <div class="modal-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</div>
                 </div>
-                <div class="course-meta">
-                    <span>🏆 Certified Advisor · +200 XP</span>
-                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(1)">Học Khóa Ngắn #1 →</button>
+
+                <!-- Tabs -->
+                <div class="lesson-tabs">
+                    <button class="lesson-tab-btn active" id="tabTheory" onclick="switchLessonTab('theory', this)">📘 Lý Thuyết</button>
+                    <button class="lesson-tab-btn" onclick="switchLessonTab('calculator', this)">📐 Bàn Tính Thực Hành</button>
+                    <button class="lesson-tab-btn" onclick="switchLessonTab('roleplay', this)">🎭 Sắm Vai & Rubric</button>
+                </div>
+
+                <!-- Dynamic Content Display -->
+                <div class="lesson-tab-content-container">
+                    <div class="markdown-rendered-view" id="lessonBodyArea">
+                        Đang tải nội dung bài học...
+                    </div>
                 </div>
             </div>
 
-            <!-- MINI-COURSE 4 -->
-            <div class="course-card" data-cat="track2">
-                <div>
-                    <span class="course-tag" style="background: rgba(245,166,35,0.15); color: #D97706;">KHÓA HỌC NGẮN #4</span>
-                    <h3 class="course-title">Bộ Lọc 4 Tiêu Chí Tuyển Chọn Cổ Phiếu SIP</h3>
-                    <p class="course-desc">Syllabus 6 Chương: Bóc tách FPT/HPG, F-Score, Định giá Graham & DCF, Thi tốt nghiệp cấp chứng chỉ IW.</p>
+            <!-- Right Area: Cheatsheets, Quiz, Mascot Confirmation -->
+            <div class="modal-right">
+                
+                <!-- Cheatsheet Download Box -->
+                <div class="download-cs-card">
+                    <div class="download-cs-title">TẢI VỀ CHEATSHEET THỰC HÀNH</div>
+                    <div class="download-cs-desc">Tra cứu nhanh công thức, kịch bản sắm vai chuẩn A4 in ấn / lưu PDF.</div>
+                    <a href="" target="_blank" class="btn-primary" id="cheatsheetDownloadBtn" style="padding:8px 16px; font-size:8.5pt;">Tải Cheatsheet PDF (A4) →</a>
                 </div>
-                <div class="course-meta">
-                    <span>🏆 Certified IW Screener · +200 XP</span>
-                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(4)">Học Khóa Ngắn #4 →</button>
+
+                <!-- Daily Quiz Widget -->
+                <div class="quiz-card">
+                    <div class="quiz-title">TRẮC NGHIỆM ĐÁNH GIÁ NĂNG LỰC HÀNG NGÀY</div>
+                    <div class="quiz-question" id="qQuestion">Đang tải câu hỏi trắc nghiệm...</div>
+                    <div class="quiz-options" id="qOptionsBox"></div>
+                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:8px 0; font-size:8.5pt;">Gửi đáp án (+50 XP)</button>
+                    
+                    <div class="quiz-explanation-box" id="quizExplanation"></div>
                 </div>
+
             </div>
-
-            <!-- MINI-COURSE 11 -->
-            <div class="course-card" data-cat="track3">
-                <div>
-                    <span class="course-tag" style="background: rgba(244,63,94,0.15); color: #E11D48;">KHÓA HỌC NGẮN #11</span>
-                    <h3 class="course-title">Quản Trị Đòn Bẩy Margin & Call Margin Rtt</h3>
-                    <p class="course-desc">Syllabus 6 Chương: Công thức Rtt, Ngưỡng Call Margin 35%, Workshop tính nộp tiền & Kịch bản ứng phó 14:15.</p>
-                </div>
-                <div class="course-meta">
-                    <span>🏆 Certified Risk Manager · +200 XP</span>
-                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(11)">Học Khóa Ngắn #11 →</button>
-                </div>
-            </div>
-
-            <!-- MINI-COURSE 12 -->
-            <div class="course-card" data-cat="track4">
-                <div>
-                    <span class="course-tag" style="background: rgba(91,183,51,0.15); color: #2D7A0F;">KHÓA HỌC NGẮN #12</span>
-                    <h3 class="course-title">Quy Trình 6 Bước Tư Vấn Môi Giới Chuẩn FinPeace</h3>
-                    <p class="course-desc">Syllabus 6 Chương: Khảo sát DISC, mở tài khoản eKYC, khám 3 Vùng đất, cài mốc Cắt lỗ tự động & Roleplay.</p>
-                </div>
-                <div class="course-meta">
-                    <span>🏆 Certified Master Broker · +200 XP</span>
-                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(12)">Học Khóa Ngắn #12 →</button>
-                </div>
-            </div>
-
-            <!-- MINI-COURSE 18 -->
-            <div class="course-card" data-cat="track6">
-                <div>
-                    <span class="course-tag" style="background: rgba(139,92,246,0.15); color: #6D28D9;">KHÓA HỌC NGẮN #18</span>
-                    <h3 class="course-title">Khung Bán Hàng 8 Giai Đoạn SalesGPT</h3>
-                    <p class="course-desc">Syllabus 6 Chương: Khung BANT, Trình bày Giá trị & Kịch bản Xử lý từ chối phớt lờ thị trường sập bằng VVIA.</p>
-                </div>
-                <div class="course-meta">
-                    <span>🏆 Certified SalesGPT · +200 XP</span>
-                    <button class="btn-npv-primary" style="padding: 6px 14px; font-size: 12px;" onclick="openMiniCourse(18)">Học Khóa Ngắn #18 →</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- MINI-COURSE INTERACTIVE PLAYER MODAL -->
-    <div class="modal-overlay" id="miniCourseModal">
-        <div class="modal-card">
-            <button class="modal-close-btn" onclick="closeCourseModal()">✕</button>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <span style="font-size: 0.8rem; font-weight: 800; color: var(--brand-teal);" id="mcBadge">KHÓA HỌC NGẮN #1</span>
-                <span style="font-size: 0.8rem; font-weight: 800; color: var(--brand-gold);" id="mcCertBadge">🏆 Certified Financial Peace Advisor</span>
-            </div>
-            <h1 style="font-size: 1.5rem; font-weight: 900; color: var(--brand-dark);" id="mcTitle">Title</h1>
-            <div style="font-size: 0.85rem; color: var(--brand-text-muted); margin-bottom: 12px;" id="mcInstructor">Giảng viên: Senior Advisor FinPeace x KBSV Analyst · Thời lượng: 35 phút · +200 XP</div>
-
-            <!-- SYLLABUS CHAPTER TABS -->
-            <div class="syllabus-tabs">
-                <button class="syl-tab-btn active" onclick="switchSylTab('ch1')">Bài 1: Lý Thuyết</button>
-                <button class="syl-tab-btn" onclick="switchSylTab('ch2')">Bài 2: Case Study</button>
-                <button class="syl-tab-btn" onclick="switchSylTab('ch3')">Bài 3: Workshop Tính Toán</button>
-                <button class="syl-tab-btn" onclick="switchSylTab('ch4')">Bài 4: Scenario Simulator</button>
-                <button class="syl-tab-btn" onclick="switchSylTab('ch5')">Bài 5: Thi Tốt Nghiệp</button>
-                <button class="syl-tab-btn" onclick="switchSylTab('ch6')">Bài 6: AI Roleplay</button>
-            </div>
-
-            <!-- SYLLABUS CHAPTER CONTENT DISPLAY AREA -->
-            <div id="mcChapterContent" style="font-size: 0.95rem; line-height: 1.8; color: #1E293B;"></div>
         </div>
     </div>
 
     <!-- FOOTER -->
-    <footer style="border-top: 1px solid var(--brand-border); padding: 3rem 2rem; text-align: center; font-size: 0.85rem; color: var(--brand-text-muted);">
-        <p>© 2026 KBSV NextGen x FinPeace Go Global Learning Hub (Model: Nguyễn Phi Vân). All rights reserved.</p>
+    <footer style="border-top:1px solid var(--border-light); padding:2rem; text-align:center; font-size:8pt; color:var(--kb-brown); margin-top:60px;">
+        <p>© 2026 KBSV NextGen x FinPeace Online Learning Hub. Thiết kế thực chiến bởi Sở Giao Dịch 3 (HO3) KB Securities Vietnam.</p>
     </footer>
 
+    <!-- JS DATABASE & INTERACTIVITY CODE -->
     <script>
-        let currentXP = 450;
+        // Database of 42 days lessons
+        const curriculumDb = [
+            { id: 1, week: 1, code: "D01", title: "Định Vị Chân Dung Broker 4.0 & Khám Phá Vùng Đất Hoang", file: "D01-chan-dung-broker-40.md", doc: "NTD-SV-D01" },
+            { id: 2, week: 1, code: "D02", title: "Tháp Tài Sản 3 Tầng & Phân Bổ Tích Sản Cổ Phiếu ACB", file: "D02-thap-tai-san-3-tang.md", doc: "DT-02" },
+            { id: 3, week: 1, code: "D03", title: "Dòng Thặng Dư Hàng Tháng & Biên An Toàn Tài Chính Cá Nhân", file: "D03-dong-tien-thang-du-bien-an-toan.md", doc: "DT-03" },
+            { id: 4, week: 1, code: "D04", title: "Đọc Nhanh Báo Cáo Tài Chính Bằng Mô Hình BCTC Canvas", file: "D04-doc-nhanh-bctc-canvas.md", doc: "DT-04" },
+            { id: 5, week: 1, code: "D05", title: "Định Giá Cổ Phiếu Theo Công Thức Graham & Economic Moat", file: "D05-dinh-gia-graham-moat.md", doc: "DT-05" },
+            { id: 6, week: 1, code: "D06", title: "Bộ Lọc Piotroski F-Score Đọc Vị Gian Lận Tài Chính", file: "D06-fscore-doc-vi-gian-lan.md", doc: "DT-06" },
+            { id: 7, week: 1, code: "D07", title: "Thiết Lập Kế Hoạch Tích Sản SIP Cổ Phiếu Đều Đặn", file: "D07-tich-san-sip-lai-kep.md", doc: "DT-07" },
+            
+            { id: 8, week: 2, code: "D08", title: "Bộ Lọc Tích Sản 4 Tiêu Chí Kim Cương Tuyển Chọn Cổ Phiếu", file: "D08-bo-loc-tich-san-4-tieu-chi.md", doc: "DT-08" },
+            { id: 9, week: 2, code: "D09", title: "Thời Điểm Mua Gom Tích Sản Theo Vùng Chiết Khấu MA200", file: "D09-thoi-diem-mua-tich-san.md", doc: "DT-09" },
+            { id: 10, week: 2, code: "D10", title: "Hoạch Định Bảng Excel Kế Hoạch Tích Sản 10 Năm", file: "D10-hoach-dinh-ke-hoach-tich-san.md", doc: "DT-10" },
+            { id: 11, week: 2, code: "D11", title: "Thấu Hiểu Tính Cách Khách Hàng Bằng Giao Tiếp DISC", file: "D11-thau-hieu-khach-hang-disc.md", doc: "DT-11" },
+            { id: 12, week: 2, code: "D12", title: "Quy Trình 6 Bước Tư Vấn Bán Hàng Chuẩn Wealth Advisor", file: "D12-quy-trinh-6-buoc-initiate.md", doc: "DT-12" },
+            { id: 13, week: 2, code: "D13", title: "Kịch Bản Phá Băng Cuộc Hẹn Đầu Tiên (Outreach Script)", file: "D13-kich-ban-pha-bang-cuoc-hen.md", doc: "DT-13" },
+            { id: 14, week: 2, code: "D14", title: "Chẩn Đoán Sức Khỏe Tài Sản & Phát Hiện Điểm Nghẽn Nợ", file: "D14-khai-thac-diem-nghen-tai-san.md", doc: "DT-14" },
+            
+            { id: 15, week: 3, code: "D15", title: "Quy Chế Làm Việc HO3 & Daily Routine Kỷ Luật", file: "D15-quy-che-lam-viec-ho3.md", doc: "DT-15" },
+            { id: 16, week: 3, code: "D16", title: "Chẩn Đoán Tâm Lý F0 FOMO và Hoảng Loạn Thị Trường", file: "D16-chan-doan-tam-ly-f0.md", doc: "DT-16" },
+            { id: 17, week: 3, code: "D17", title: "Kịch Bản Cơ Cấu Danh Mục Thay Cổ Phiếu Đầu Cơ Sang Tích Sản", file: "D17-roleplay-co-cau-danh-muc.md", doc: "DT-17" },
+            { id: 18, week: 3, code: "D18", title: "Kịch Bản Sắm Vai Tư Vấn Thực Chiến & Bảng Điểm ASK", file: "D18-xay-dung-kich-ban-sam-vai.md", doc: "DT-18" },
+            { id: 19, week: 3, code: "D19", title: "Lộ Trình Thu Nhập 3 Năm & Cơ Chế Lương Hoa Hồng HO3", file: "D19-lo-trinh-thu-nhap-hoa-hong.md", doc: "DT-19" },
+            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20" },
+            { id: 21, week: 3, code: "D21", title: "Kỹ Năng Hợp Tác CLB Chứng Khoán Sinh Viên Thu Hút Lead", file: "D21-networking-clb-sinh-vien.md", doc: "DT-21" },
+            
+            { id: 22, week: 4, code: "D22", title: "Tổ Chức Seminar/Webinar Thuyết Trình Chốt Số Lượng Lớn", file: "D22-to-chuc-seminar-webinar.md", doc: "DT-22" },
+            { id: 23, week: 4, code: "D23", title: "Cơ Chế Cho Vay Margin & Công Thức Tính Tỷ Lệ RTT", file: "D23-don-bay-margin-cong-thuc-rtt.md", doc: "DT-23" },
+            { id: 24, week: 4, code: "D24", title: "Xử Lý Khủng Hoảng Call Margin & Force Sell Phiên Chiều", file: "D24-xu-ly-khung-hoang-call-margin-force-sell.md", doc: "DT-24" },
+            { id: 25, week: 4, code: "D25", title: "Gói Lãi Suất Ưu Đãi Margin eKYC 8.8% & Vượt Ải Tuần 3", file: "D25-goi-uu-dai-margin-kbsv.md", doc: "DT-25" },
+            { id: 26, week: 4, code: "D26", title: "Phái Sinh VN30 Futures & Chiến Thuật Hedging Phòng Vệ", file: "D26-phai-sinh-vn30-futures.md", doc: "DT-26" },
+            { id: 27, week: 4, code: "D27", title: "Quy Định Ký Quỹ VSDC & Hạch Toán Lãi Lỗ Mark-To-Market", file: "D27-quy-dinh-ky-quys-vsd.md", doc: "DT-27" },
+            { id: 28, week: 4, code: "D28", title: "Tích Sản Chứng Chỉ Quỹ ETF Diamond Thay Thế Tiết Kiệm", file: "D28-tich-san-etf-diamond.md", doc: "DT-28" },
+            
+            { id: 29, week: 5, code: "D29", title: "Đọc Biểu Đồ Giá & Volume Nhận Diện Bẫy Giá Bull Trap", file: "D29-doc-bieu-do-gia-volume-vta.md", doc: "DT-29" },
+            { id: 30, week: 5, code: "D30", title: "Chu Kỳ Wyckoff & 3 Xu Hướng Vĩ Mô Theo Lý Thuyết Dow", file: "D30-chu-ky-wyckoff-ly-thuyet-dow.md", doc: "DT-30" },
+            { id: 31, week: 5, code: "D31", title: "Quy Luật Đối Xứng Biên Độ Sóng & Điểm Hội Tụ Chỉ Báo", file: "D31-doi-xung-song-va-chi-bao.md", doc: "DT-31" },
+            { id: 32, week: 5, code: "D32", title: "Thiết Lập Vùng Mua Entry - Stop Loss - Take Profit Cho Deal", file: "D32-thiet-lap-deal-strategy.md", doc: "DT-32" },
+            { id: 33, week: 5, code: "D33", title: "Quy Tắc Quản Trị Rủi Ro 2% NAV & Công Thức Position Sizing", file: "D33-quy-tac-quan-tri-rui-ro-2-percent.md", doc: "DT-33" },
+            { id: 34, week: 5, code: "D34", title: "Xây Dựng Thương Hiệu KOC & Quy Trình Vận Hành Content Lab", file: "D34-xay-dung-koc-personal-branding.md", doc: "DT-34" },
+            { id: 35, week: 5, code: "D35", title: "Kịch Bản Livestream 90 Phút & Kỹ Thuật Tương Tác Thuyết Phục", file: "D35-kich-ban-livestream-90-phut.md", doc: "DT-35" },
+            
+            { id: 36, week: 6, code: "D36", title: "Vận Hành Zalo Group & Phiếu Phỏng Vấn Tuyển Dụng ASK", file: "D36-zalo-group-va-phieu-danh-gia-ask.md", doc: "DT-36" },
+            { id: 37, week: 6, code: "D37", title: "Kỹ Năng Chăm Sóc Khách Hàng High-NAV Private Banking Style", file: "D37-ky-nang-cham-soc-khach-hang-high-nav.md", doc: "DT-37" },
+            { id: 38, week: 6, code: "D38", title: "Hướng Dẫn Viết Báo Cáo Tốt Nghiệp Nghiệm Thu Kết Quả", file: "D38-huong-dan-viet-bao-cao-tot-nghiep.md", doc: "DT-38" },
+            { id: 39, week: 6, code: "D39", title: "Thiết Kế Slide Thuyết Trình Báo Cáo Theo Quy Tắc 10-20-30", file: "D39-thiet-ke-slide-va-bao-ve-bao-cao.md", doc: "DT-39" },
+            { id: 40, week: 6, code: "D40", title: "Bảo Vệ Báo Cáo Tốt Nghiệp Sát Hạch Trước Hội Đồng HO3", file: "D40-bao-ve-bao-cao-tot-nghiep.md", doc: "DT-40" },
+            { id: 41, week: 6, code: "D41", title: "Lễ Tốt Nghiệp Bổ Nhiệm & Lộ Trình Thăng Tiến Broker 3 Năm", file: "D41-le-tot-nghiep-bo-nhiem-broker.md", doc: "DT-41" },
+            { id: 42, week: 6, code: "D42", title: "Tổng Kết Toàn Chương Trình & Kế Hoạch 90 Ngày Bứt Phá", file: "D42-tong-ket-va-dong-hoa-tai-nguyen.md", doc: "DT-42" }
+        ];
 
-        function filterCategory(cat, btn) {
-            document.querySelectorAll('.cat-pill-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        // Custom quizzes for key days
+        const quizDb = {
+            "D01": {
+                question: "Sự khác biệt bản chất của Broker 4.0 (Wealth Advisor) so với Broker truyền thống là gì?",
+                options: [
+                    "Tập trung vào phím mã T+ liên tục để tăng doanh số phí giao dịch ngắn hạn.",
+                    "Ưu tiên tối đa hóa vòng quay giao dịch bất kể khách hàng có lời hay lỗ.",
+                    "Đồng hành, phân bổ danh mục tài sản bọc thép bảo vệ vốn và tối ưu hóa LTV dài hạn.",
+                    "Sử dụng AI để spam tin đồn thị trường vào hàng trăm nhóm chat cùng lúc."
+                ],
+                correct: 2,
+                explain: "Chính xác! Broker 4.0 tập trung vào quản trị tài sản, phân bổ nguồn vốn và mang lại sự an tâm dài hạn (LTV), thay vì chỉ phím mã ăn xổi bào thuế phí khách hàng."
+            },
+            "D23": {
+                question: "Tại KBSV HO3, nếu Tỷ lệ tài sản ròng RTT của tài khoản ký quỹ giảm về mốc 35%, hệ thống sẽ thực hiện hành động gì?",
+                options: [
+                    "Bán giải chấp (Force Sell) khẩn cấp ngay lập tức toàn bộ danh mục cổ phiếu.",
+                    "Gửi thông báo Call Margin yêu cầu nộp tiền bổ sung hoặc bán bớt cổ phiếu đưa RTT về 40%.",
+                    "Tự động giải ngân thêm tiền vay để khách hàng trung bình giá giảm lỗ.",
+                    "Khóa tài khoản không cho thực hiện bất kỳ lệnh bán nào."
+                ],
+                correct: 1,
+                explain: "Đúng! Mốc 35% là ngưỡng Call Margin. Khách hàng nhận cảnh báo yêu cầu nộp tiền hoặc bán bớt tài sản đưa RTT về vùng an toàn >= 40%."
+            },
+            "D33": {
+                question: "Một học viên có tổng NAV là 500 triệu VNĐ, muốn giao dịch GEX. Vùng mua Entry = 22.000đ/cp, Cắt lỗ Stop Loss = 20.000đ/cp. Áp dụng quy tắc bảo vệ vốn 2% NAV, số lượng cổ phiếu GEX tối đa được phép mua là bao nhiêu?",
+                options: [
+                    "25.000 cổ phiếu",
+                    "10.000 cổ phiếu",
+                    "5.000 cổ phiếu",
+                    "2.000 cổ phiếu"
+                ],
+                correct: 2,
+                explain: "Đúng! Số tiền lỗ tối đa chấp nhận = 500.000.000 * 2% = 10.000.000 VNĐ. Khoảng cách cắt lỗ = 22.000 - 20.000 = 2.000 đ/cp. Số cổ phiếu = 10.000.000 / 2.000 = 5.000 cổ phiếu."
+            },
+            "D42": {
+                question: "Quy tắc thiết lập mục tiêu SMART trong kế hoạch hành động 90 ngày sau khi tốt nghiệp NextGen là gì?",
+                options: [
+                    "Thiết lập mục tiêu mơ hồ, chung chung để dễ thay đổi khi thị trường khó khăn.",
+                    "Mục tiêu phải rõ ràng, đo lường được, khả thi, thực tế và có kỳ hạn cụ thể (ví dụ: +1.5 tỷ AUM trong 90 ngày).",
+                    "Chỉ tập trung vào mục tiêu tiền bạc mà bỏ qua quy trình tuân thủ đạo đức nghề nghiệp.",
+                    "Mục tiêu hoàn toàn phụ thuộc vào sự phím hàng của research team."
+                ],
+                correct: 1,
+                explain: "Đúng! Mục tiêu SMART (Specific, Measurable, Actionable, Relevant, Time-bound) giúp định hình rõ nét kế hoạch hành động 90 ngày thực chiến bền vững."
+            }
+        };
 
-            document.querySelectorAll('.course-card').forEach(card => {
-                if (cat === 'all' || card.dataset.cat === cat) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
+        // State management variables
+        let currentUser = null;
+        let selectedMascotType = "flexi";
+        let activeWeekFilter = 1;
+        let currentSimulatedDay = 23; // Default simulated day is D23 (Margin day)
+        let selectedQuizOption = null;
+        let activeLesson = null;
 
-        async function openMiniCourse(courseId) {
-            const fileMap = {
-                1: "curriculum/module_1_3_vung_dat.md",
-                4: "curriculum/module_4_bo_loc_4_tieu_chi.md",
-                11: "curriculum/module_11_quan_tri_margin_rtt.md",
-                12: "curriculum/module_12_quy_trinh_6_buc.md",
-                18: "curriculum/module_18_8_giai_doan_salesgpt.md"
-            };
+        // Initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            initDebugSelector();
+            checkSavedUser();
+        });
 
-            const certMap = {
-                1: "🏆 Certified Financial Peace Advisor Level 1",
-                4: "🏆 Certified InvestWise Stock Screener",
-                11: "🏆 Certified Margin Risk Manager",
-                12: "🏆 Certified Master Advisory Broker",
-                18: "🏆 Certified SalesGPT Practitioner"
-            };
-
-            const filePath = fileMap[courseId];
-            if (!filePath) return;
-
-            try {
-                const response = await fetch(filePath);
-                const text = await response.text();
-
-                document.getElementById('mcBadge').innerText = `KHÓA HỌC NGẮN #${courseId}`;
-                document.getElementById('mcCertBadge').innerText = certMap[courseId];
-                document.getElementById('mcTitle').innerText = `Khóa Học Ngắn #${courseId}: Chương Trình Tương Tác`;
+        function checkSavedUser() {
+            const savedUser = localStorage.getItem('nextgen_user');
+            const savedMascot = localStorage.getItem('nextgen_mascot');
+            const savedDay = localStorage.getItem('nextgen_sim_day');
+            
+            if (savedUser) {
+                currentUser = savedUser;
+                selectedMascotType = savedMascot || "flexi";
+                currentSimulatedDay = savedDay ? parseInt(savedDay) : 23;
                 
-                document.getElementById('mcChapterContent').innerHTML = renderMarkdownToHtml(text);
-                document.getElementById('miniCourseModal').style.display = 'flex';
-            } catch (err) {
-                alert('Đang tải Khóa Học Ngắn #' + courseId + '...');
+                triggerDashboardView();
+            } else {
+                goHome();
             }
         }
 
-        function closeCourseModal() {
-            document.getElementById('miniCourseModal').style.display = 'none';
+        function goHome() {
+            document.getElementById('homepageSection').style.display = 'grid';
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('dashboardSection').style.display = 'none';
+            document.getElementById('magicTokenBadge').style.display = 'none';
+            document.getElementById('navbarActionBtn').innerText = "Đăng nhập học viên";
+            document.getElementById('navbarActionBtn').setAttribute('onclick', 'toggleAuthFlow()');
+            
+            document.getElementById('navHomeLink').classList.add('active');
+            document.getElementById('navRoadmapLink').classList.remove('active');
         }
 
-        function switchSylTab(chId) {
-            document.querySelectorAll('.syl-tab-btn').forEach(b => b.classList.remove('active'));
-            event.currentTarget.classList.add('active');
+        function toggleAuthFlow() {
+            document.getElementById('homepageSection').style.display = 'none';
+            document.getElementById('loginSection').style.display = 'block';
+            document.getElementById('dashboardSection').style.display = 'none';
+        }
+
+        function selectMascot(type, element) {
+            selectedMascotType = type;
+            document.querySelectorAll('.mascot-select-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+
+        function simulateMagicLinkLogin() {
+            const email = document.getElementById('studentEmail').value.trim();
+            if (!email || !email.includes('@')) {
+                alert('Vui lòng nhập email hợp lệ để nhận Magic Link!');
+                return;
+            }
+            
+            currentUser = email;
+            localStorage.setItem('nextgen_user', currentUser);
+            localStorage.setItem('nextgen_mascot', selectedMascotType);
+            localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
+            
+            triggerDashboardView();
+        }
+
+        function triggerDashboardView() {
+            document.getElementById('homepageSection').style.display = 'none';
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('dashboardSection').style.display = 'block';
+            
+            document.getElementById('magicTokenBadge').style.display = 'block';
+            document.getElementById('navbarActionBtn').innerText = "Đăng xuất";
+            document.getElementById('navbarActionBtn').setAttribute('onclick', 'logout()');
+            
+            document.getElementById('navHomeLink').classList.remove('active');
+            document.getElementById('navRoadmapLink').classList.add('active');
+            
+            // Sync Debug Selector
+            document.getElementById('debugDaySelect').value = currentSimulatedDay;
+            
+            // Set active week tab dynamically based on current day
+            let week = Math.ceil(currentSimulatedDay / 7);
+            if (week < 1) week = 1;
+            if (week > 6) week = 6;
+            activeWeekFilter = week;
+            
+            // Highlight current week tab
+            document.querySelectorAll('.week-tab-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === (week - 1));
+            });
+            
+            updateDashboardUI();
+        }
+
+        function logout() {
+            localStorage.clear();
+            currentUser = null;
+            location.reload();
+        }
+
+        // Initialize Debug Selector at bottom
+        function initDebugSelector() {
+            const select = document.getElementById('debugDaySelect');
+            select.innerHTML = '';
+            for (let i = 1; i <= 42; i++) {
+                const opt = document.createElement('option');
+                opt.value = i;
+                opt.innerText = `Ngày ${i} (D${String(i).padStart(2, '0')})`;
+                select.appendChild(opt);
+            }
+        }
+
+        function simulateProgressChange() {
+            const val = parseInt(document.getElementById('debugDaySelect').value);
+            currentSimulatedDay = val;
+            localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
+            
+            // Update active week
+            let week = Math.ceil(currentSimulatedDay / 7);
+            activeWeekFilter = week;
+            document.querySelectorAll('.week-tab-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === (week - 1));
+            });
+            
+            updateDashboardUI();
+        }
+
+        function updateDashboardUI() {
+            // Update Mascot avatar widget image and speech dynamically
+            const avatarImg = document.getElementById('mascotAvatarWidget');
+            const speechText = document.getElementById('mascotSpeechText');
+            
+            avatarImg.src = `../assets/mascot/${selectedMascotType}/light/Mascot app Trader_trader original-01.png`;
+            
+            const activeLessonObj = curriculumDb.find(d => d.id === currentSimulatedDay);
+            if (activeLessonObj) {
+                speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy tìm hiểu chủ đề "${activeLessonObj.title}" và hoàn tất bài tập nhé!`;
+            }
+            
+            // Update Sudden Death Indicator graphics (Pulse Ring & Text) (Custom animated graphics)
+            const sdPulse = document.getElementById('sdPulseRing');
+            const sdStatus = document.getElementById('sdStatusText');
+            const sdDesc = document.getElementById('sdDescText');
+            
+            if (currentSimulatedDay < 15) {
+                // Before week 3, Sudden death is not active
+                sdPulse.className = "sd-pulse-ring"; // Green
+                sdStatus.innerText = "TRẠNG THÁI: CHƯA KÍCH HOẠT (PENDING)";
+                sdDesc.innerText = "Quy tắc Sudden Death sẽ bắt đầu áp dụng tự động từ Tuần 3 (Ngày 15). Hãy tranh thủ tích lũy AUM và Lead!";
+            } else if (currentSimulatedDay >= 15 && currentSimulatedDay <= 28) {
+                // Week 3 - 4: Active warning
+                sdPulse.className = "sd-pulse-ring amber";
+                sdStatus.innerText = "TRẠNG THÁI: ĐANG GIÁM SÁT (WARNING)";
+                sdDesc.innerText = "Đang rà soát KPI tuần. Yêu cầu active ít nhất 2 tài khoản Standard mới tránh Sudden Death cuối tuần!";
+            } else {
+                // Week 5 - 6: Safe
+                sdPulse.className = "sd-pulse-ring"; // Green
+                sdStatus.innerText = "TRẠNG THÁI: AN TOÀN (SAFE)";
+                sdDesc.innerText = "Học viên đạt chỉ tiêu Standard tích lũy và hoàn thành báo cáo. Đạt ngưỡng an toàn.";
+            }
+
+            renderRoadmapGrid();
+        }
+
+        function filterWeek(weekNum, btn) {
+            document.querySelectorAll('.week-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeWeekFilter = weekNum;
+            renderRoadmapGrid();
+        }
+
+        function renderRoadmapGrid() {
+            const grid = document.getElementById('roadmapGrid');
+            grid.innerHTML = '';
+            
+            // Filter lessons matching the selected week tab
+            const weekLessons = curriculumDb.filter(d => d.week === activeWeekFilter);
+            
+            weekLessons.forEach(lesson => {
+                const card = document.createElement('div');
+                card.className = 'day-card';
+                
+                // Determine card status relative to currentSimulatedDay
+                if (lesson.id < currentSimulatedDay) {
+                    card.classList.add('completed');
+                } else if (lesson.id === currentSimulatedDay) {
+                    card.classList.add('active-day');
+                } else {
+                    card.classList.add('locked');
+                }
+                
+                card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
+                
+                card.innerHTML = `
+                    <div class="day-code">${lesson.code}</div>
+                    <div class="day-title">${lesson.title}</div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        // Open Lesson Modal Overlay
+        async function openLessonModal(dayId) {
+            const lesson = curriculumDb.find(d => d.id === dayId);
+            if (!lesson) return;
+            activeLesson = lesson;
+            
+            document.getElementById('mDayCode').innerText = `NGÀY ${String(lesson.id).padStart(2, '0')} (${lesson.code})`;
+            document.getElementById('mLessonTitle').innerText = lesson.title;
+            document.getElementById('mDocCode').innerText = `MÃ TÀI LIỆU: ${lesson.doc}`;
+            
+            // Setup Cheatsheet links
+            const rawName = lesson.file.replace('D' + String(lesson.id).padStart(2, '0') + '-', '').replace('.md', '');
+            const csUrl = `../../curriculum/lessons/cheatsheets/${lesson.code}-cheatsheet-${rawName}.html`;
+            document.getElementById('cheatsheetDownloadBtn').setAttribute('href', csUrl);
+            
+            // Load Theory text
+            const textContent = await fetchLessonMarkdown(lesson.file);
+            document.getElementById('lessonBodyArea').innerHTML = renderMarkdownToHtml(textContent);
+            
+            // Switch to theory tab first
+            document.querySelectorAll('.lesson-tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('tabTheory').classList.add('active');
+            
+            // Render Quiz Question
+            initQuizWidget(lesson.code);
+            
+            document.getElementById('lessonModal').style.display = 'flex';
+        }
+
+        function closeLessonModal() {
+            document.getElementById('lessonModal').style.display = 'none';
+        }
+
+        async function fetchLessonMarkdown(filename) {
+            // Relative path from pages/learning_hub.html to lessons folder
+            const path = `../../curriculum/lessons/${filename}`;
+            try {
+                const response = await fetch(path);
+                if (!response.ok) throw new Error('Not found');
+                return await response.text();
+            } catch (err) {
+                // Fallback structured mockup if local file fetch fails
+                return `# ${activeLesson.title}\n\n## 📌 I. THÔNG TIN BÀI HỌC\n* Môi trường thực tế của dự án KBSV HO3 và FinPeace.\n* Áp dụng quy chuẩn tính toán và công thức số liệu.\n\n## 📌 II. LÝ THUYẾT CHUYÊN SÂU\nNội dung lý thuyết chuyên sâu bọc thép của ngày học nhằm chuẩn bị kiến thức thực chiến đầy đủ cho học viên.\n\n## 📌 III. BÀI TẬP THỰC HÀNH TÍNH TOÁN\nHọc viên ứng dụng các bảng tính Excel và công cụ để chẩn đoán sức khỏe tài chính khách hàng.`;
+            }
         }
 
         function renderMarkdownToHtml(md) {
             return md
-                .replace(/^# (.*$)/gim, '<h1 style="font-size:1.4rem; color:#0E2A30; margin:1rem 0;">$1</h1>')
-                .replace(/^## (.*$)/gim, '<h2 style="font-size:1.15rem; color:#12B5A5; margin:1.25rem 0 0.5rem; border-bottom:1px solid rgba(18,181,165,0.2); padding-bottom:4px;">$1</h2>')
-                .replace(/^### (.*$)/gim, '<h3 style="font-size:1rem; color:#0E2A30; margin:1rem 0 0.5rem;">$1</h3>')
+                .replace(/^# (.*$)/gim, '<h1 style="font-size:13pt; color:var(--kb-brown-dark); margin-bottom:12px;">$1</h1>')
+                .replace(/^## (.*$)/gim, '<h2 style="font-size:10.5pt; color:var(--text-primary); border-bottom:1px solid var(--border-light); padding-bottom:4px; margin-top:16px;">$1</h2>')
+                .replace(/^### (.*$)/gim, '<h3 style="font-size:9.2pt; color:var(--kb-brown); margin-top:12px;">$1</h3>')
                 .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/gim, '<em>$1</em>')
-                .replace(/\n\n/g, '<br><br>');
+                .replace(/`([^`]+)`/gim, '<code style="background:rgba(245,166,35,0.08); padding:2px 4px; border-radius:4px; font-family:monospace; font-size:8pt;">$1</code>')
+                .replace(/^>\s*\[!IMPORTANT\](.*?)$/gim, '<blockquote style="border-left:3px solid var(--danger-color); background:rgba(224,80,80,0.03); padding:8px 12px; margin:12px 0; font-style:italic;"><strong>⚠️ CẢNH BÁO TUÂN THỦ:</strong>')
+                .replace(/^>\s*\[!WARNING\](.*?)$/gim, '<blockquote style="border-left:3px solid var(--warning-color); background:rgba(255,152,0,0.03); padding:8px 12px; margin:12px 0; font-style:italic;"><strong>⚠️ CHÚ Ý:</strong>')
+                .replace(/^>\s*(.*?)$/gim, '<blockquote style="border-left:3px solid var(--kb-yellow); background:var(--bg-warm); padding:8px 12px; margin:12px 0; font-style:italic;">$1</blockquote>')
+                .replace(/\n\n/g, '<br>')
+                .replace(/\n/g, '<br>');
+        }
+
+        // Tab Switching Inside Lesson modal
+        function switchLessonTab(tabName, btn) {
+            document.querySelectorAll('.lesson-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const area = document.getElementById('lessonBodyArea');
+            if (tabName === 'theory') {
+                openLessonModal(activeLesson.id); // Reload theory
+            } else if (tabName === 'calculator') {
+                renderInteractiveCalculator(area);
+            } else if (tabName === 'roleplay') {
+                renderRolePlayRubric(area);
+            }
+        }
+
+        // Render Interactive Math Calculator Tab
+        function renderInteractiveCalculator(container) {
+            if (activeLesson.code === 'D23') {
+                // Day 23 Margin RTT Calculator
+                container.innerHTML = `
+                    <div class="calc-container">
+                        <h3 style="font-size:9.5pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:4px; margin-bottom:8px;">📐 MÁY TÍNH CÔNG THỨC MARGIN & RTT THỜI GIAN THỰC</h3>
+                        <p style="font-size:7.5pt; color:var(--text-secondary); margin-bottom:10px;">Nhập các thông số tài khoản của khách hàng để tính RTT và kiểm tra mức độ cảnh báo.</p>
+                        
+                        <div class="calc-row">
+                            <div class="calc-input-group">
+                                <label>Giá trị chứng khoán (PV - VNĐ)</label>
+                                <input type="number" id="calcPV" class="form-control" value="100000000" oninput="calcRTT()">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>Tiền mặt dư (Cash - VNĐ)</label>
+                                <input type="number" id="calcCash" class="form-control" value="10000000" oninput="calcRTT()">
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-input-group">
+                                <label>Nợ vay Margin (Debt - VNĐ)</label>
+                                <input type="number" id="calcDebt" class="form-control" value="60000000" oninput="calcRTT()">
+                            </div>
+                        </div>
+
+                        <div class="calc-result-box">
+                            <div class="calc-res-title">Tài sản ròng (Equity)</div>
+                            <div class="calc-res-val" id="calcEquityRes">50.000.000 VNĐ</div>
+                        </div>
+                        
+                        <div class="calc-result-box" style="border-left: 4px solid var(--success-color);" id="calcRTTBox">
+                            <div class="calc-res-title">Tỷ lệ ký quỹ thực tế (RTT)</div>
+                            <div class="calc-res-val" id="calcRTTRes">50.00%</div>
+                            <div style="font-size:7.5pt; font-weight:700;" id="calcRTTAlert">TRẠNG THÁI: AN TOÀN (RTT >= 40%)</div>
+                        </div>
+                    </div>
+                `;
+                calcRTT();
+            } else if (activeLesson.code === 'D33') {
+                // Day 33 Position Sizing Calculator
+                container.innerHTML = `
+                    <div class="calc-container">
+                        <h3 style="font-size:9.5pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:4px; margin-bottom:8px;">📐 MÁY TÍNH QUY MÔ GIẢI NGÂN (POSITION SIZING - 2% NAV RULE)</h3>
+                        <p style="font-size:7.5pt; color:var(--text-secondary); margin-bottom:10px;">Nhập quy mô NAV và các mốc giao dịch để tính khối lượng đặt lệnh tối đa bảo vệ vốn.</p>
+                        
+                        <div class="calc-row">
+                            <div class="calc-input-group">
+                                <label>Tổng tài sản ròng (NAV - VNĐ)</label>
+                                <input type="number" id="calcNAV" class="form-control" value="200000000" oninput="calcPosition()">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>Giá mua dự kiến (Entry - VNĐ)</label>
+                                <input type="number" id="calcEntry" class="form-control" value="25000" oninput="calcPosition()">
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-input-group">
+                                <label>Mốc cắt lỗ Stop Loss (SL - VNĐ)</label>
+                                <input type="number" id="calcSL" class="form-control" value="23000" oninput="calcPosition()">
+                            </div>
+                        </div>
+
+                        <div class="calc-result-box">
+                            <div class="calc-res-title">Số tiền rủi ro tối đa (2% NAV)</div>
+                            <div class="calc-res-val" id="calcRiskCap">4.000.000 VNĐ</div>
+                        </div>
+                        
+                        <div class="calc-result-box" style="border-left: 4px solid var(--kb-yellow-dark);">
+                            <div class="calc-res-title">Khối lượng mua tối đa cho phép</div>
+                            <div class="calc-res-val" id="calcQtyRes">2.000 cổ phiếu</div>
+                            <div style="font-size:7.5pt; font-weight:700; color:var(--kb-brown-dark);">Quy mô lệnh giải ngân tối đa để bảo vệ tài khoản khỏi khoản lỗ > 2% NAV</div>
+                        </div>
+                    </div>
+                `;
+                calcPosition();
+            } else {
+                // Default CRM simulation calculator
+                container.innerHTML = `
+                    <div class="calc-container">
+                        <h3 style="font-size:9.5pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:4px; margin-bottom:8px;">📐 MÔ PHỎNG DỰ PHÒNG CHỈ TIÊU & HOA HỒNG DTT</h3>
+                        <p style="font-size:7.5pt; color:var(--text-secondary); margin-bottom:10px;">Lập kế hoạch chuyển đổi tài khoản eKYC sang Standard hoạt động để ước tính doanh số.</p>
+                        
+                        <div class="calc-row">
+                            <div class="calc-input-group">
+                                <label>Số eKYC mở mới dự kiến</label>
+                                <input type="number" id="simEkyc" class="form-control" value="10" oninput="calcSimDtt()">
+                            </div>
+                            <div class="calc-input-group">
+                                <label>Tỷ lệ Active Standard (%)</label>
+                                <input type="number" id="simActiveRate" class="form-control" value="40" oninput="calcSimDtt()">
+                            </div>
+                        </div>
+
+                        <div class="calc-result-box">
+                            <div class="calc-res-title">Tài khoản active Standard ước tính</div>
+                            <div class="calc-res-val" id="simStandardRes">4 Tài Khoản</div>
+                        </div>
+                        
+                        <div class="calc-result-box" style="border-left: 4px solid var(--success-color);">
+                            <div class="calc-res-title">Ước tính hoa hồng mang về (DTT lũy kế)</div>
+                            <div class="calc-res-val" id="simCommRes">200.000 VNĐ / tháng</div>
+                            <div style="font-size:7.5pt; color:var(--text-secondary);">Thử thách active standard tích lũy để thăng tiến Junior Broker!</div>
+                        </div>
+                    </div>
+                `;
+                calcSimDtt();
+            }
+        }
+
+        // Calculator Logics
+        function calcRTT() {
+            const pv = parseFloat(document.getElementById('calcPV').value) || 0;
+            const cash = parseFloat(document.getElementById('calcCash').value) || 0;
+            const debt = parseFloat(document.getElementById('calcDebt').value) || 0;
+            
+            const equity = pv + cash - debt;
+            document.getElementById('calcEquityRes').innerText = equity.toLocaleString() + ' VNĐ';
+            
+            if (pv === 0) return;
+            const rtt = (equity / pv) * 100;
+            const rttBox = document.getElementById('calcRTTBox');
+            const rttRes = document.getElementById('calcRTTRes');
+            const rttAlert = document.getElementById('calcRTTAlert');
+            
+            rttRes.innerText = rtt.toFixed(2) + '%';
+            
+            // Adjust visual alerts and mascot reaction depending on RTT
+            if (rtt >= 40) {
+                rttBox.style.borderLeftColor = "var(--success-color)";
+                rttAlert.innerText = "TRẠNG THÁI: AN TOÀN (RTT >= 40%)";
+                rttAlert.style.color = "var(--success-color)";
+                updateMascotWidgetState('OK');
+            } else if (rtt >= 30 && rtt < 40) {
+                rttBox.style.borderLeftColor = "var(--warning-color)";
+                rttAlert.innerText = "TRẠNG THÁI: CẢNH BÁO CALL MARGIN (30% <= RTT < 40%)";
+                rttAlert.style.color = "var(--warning-color)";
+                updateMascotWidgetState('ban khoan');
+            } else {
+                rttBox.style.borderLeftColor = "var(--danger-color)";
+                rttAlert.innerText = "TRẠNG THÁI: GIẢI CHẤP FORCE SELL (RTT < 30%)";
+                rttAlert.style.color = "var(--danger-color)";
+                updateMascotWidgetState('ban khoan');
+            }
+        }
+
+        function calcPosition() {
+            const nav = parseFloat(document.getElementById('calcNAV').value) || 0;
+            const entry = parseFloat(document.getElementById('calcEntry').value) || 0;
+            const sl = parseFloat(document.getElementById('calcSL').value) || 0;
+            
+            const riskCap = nav * 0.02;
+            document.getElementById('calcRiskCap').innerText = riskCap.toLocaleString() + ' VNĐ';
+            
+            const diff = entry - sl;
+            if (diff <= 0) {
+                document.getElementById('calcQtyRes').innerText = 'Lỗi: Entry phải lớn hơn SL';
+                return;
+            }
+            
+            const qty = Math.floor(riskCap / diff);
+            document.getElementById('calcQtyRes').innerText = qty.toLocaleString() + ' cổ phiếu';
+        }
+
+        function calcSimDtt() {
+            const ekyc = parseFloat(document.getElementById('simEkyc').value) || 0;
+            const rate = parseFloat(document.getElementById('simActiveRate').value) || 0;
+            
+            const standard = Math.round(ekyc * (rate / 100));
+            document.getElementById('simStandardRes').innerText = standard + ' Tài Khoản';
+            
+            // Standard payout is simulated around 50k per active standard
+            const comm = standard * 50000;
+            document.getElementById('simCommRes').innerText = comm.toLocaleString() + ' VNĐ / tháng';
+        }
+
+        // Render Role-play tab
+        function renderRolePlayRubric(container) {
+            container.innerHTML = `
+                <div class="calc-container">
+                    <h3 style="font-size:9.5pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:4px; margin-bottom:8px;">🎭 KỊCH BẢN THOẠI & PHIẾU ĐÁNH GIÁ CHẤM ĐIỂM (ASK RUBRIC)</h3>
+                    
+                    <div style="background:var(--bg-warm); border-left:3px solid var(--kb-brown); padding:10px; font-style:italic; font-size:7.5pt; color:var(--text-secondary); margin-bottom:15px; line-height:1.4;">
+                        "Khách hàng: Tại sao tôi lại phải gom mua ACB tích sản, trong khi thị trường đang sụt giảm thế này?<br>
+                        Broker NextGen: Em thấu hiểu nỗi lo của anh/chị. Tuy nhiên, cổ phiếu ACB vừa chạm MA200 và nằm trong vùng Vùng 1 bảo vệ của Tháp tài sản của anh/chị. Đây chính là mốc gom mua an toàn..."
+                    </div>
+
+                    <div style="font-size:8pt; font-weight:700; color:var(--text-primary); margin-bottom:8px;">Bảng điểm sát hạch (Grading Scorecard) cho Mentor:</div>
+                    
+                    <label style="display:flex; align-items:center; gap:8px; font-size:7.5pt; margin-bottom:6px;">
+                        <input type="checkbox" checked disabled>
+                        <span><strong>Thái độ (Attitude - 50%):</strong> Điềm tĩnh lắng nghe, thấu cảm sâu sắc.</span>
+                    </label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:7.5pt; margin-bottom:6px;">
+                        <input type="checkbox" checked disabled>
+                        <span><strong>Kỹ năng (Skills - 40%):</strong> Đọc vị tâm lý mỏ neo, chốt deal chuẩn.</span>
+                    </label>
+                    <label style="display:flex; align-items:center; gap:8px; font-size:7.5pt; margin-bottom:10px;">
+                        <input type="checkbox" checked disabled>
+                        <span><strong>Kiến thức (Knowledge - 10%):</strong> Nắm rõ công thức MA200 & Luật CK.</span>
+                    </label>
+
+                    <div style="background:rgba(245,166,35,0.05); padding:8px; border-radius:8px; font-size:7.5pt; font-weight:700; text-align:center; color:var(--kb-brown-dark);">
+                        Tiêu chuẩn chấm đạt: Tổng điểm >= 7.0/10
+                    </div>
+                </div>
+            `;
+        }
+
+        // Quiz Widget Logic
+        function initQuizWidget(dayCode) {
+            const quiz = quizDb[dayCode] || {
+                question: "Sau khi học xong bài học này, bước tiếp theo học viên cần cập nhật thông tin gì lên hệ thống CRM chi nhánh?",
+                options: [
+                    "Cập nhật thông tin số dư nợ vay và trạng thái tư vấn eKYC mới.",
+                    "Lập tức gửi kịch bản all-in mua mã đầu cơ nóng.",
+                    "Xóa bỏ thông tin danh bạ khách hàng cũ.",
+                    "Đợi đến cuối tuần mới cập nhật dồn một lúc."
+                ],
+                correct: 0,
+                explain: "Đúng! Quy trình nghiệp vụ HO3 yêu cầu học viên cập nhật thông tin tư vấn lên hệ thống CRM mỗi ngày sau Midday Check-in."
+            };
+            
+            document.getElementById('qQuestion').innerText = quiz.question;
+            const box = document.getElementById('qOptionsBox');
+            box.innerHTML = '';
+            
+            selectedQuizOption = null;
+            document.getElementById('quizSubmitBtn').innerText = "Gửi đáp án (+50 XP)";
+            document.getElementById('quizSubmitBtn').style.opacity = '1';
+            document.getElementById('quizSubmitBtn').disabled = false;
+            document.getElementById('quizExplanation').style.display = 'none';
+            
+            quiz.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-option';
+                btn.innerText = `${idx + 1}. ${opt}`;
+                btn.setAttribute('onclick', `selectQuizOption(${idx}, this)`);
+                box.appendChild(btn);
+            });
+            
+            updateMascotWidgetState('tim kiem');
+        }
+
+        function selectQuizOption(idx, btn) {
+            selectedQuizOption = idx;
+            document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+
+        function evaluateQuiz() {
+            if (selectedQuizOption === null) {
+                alert('Vui lòng chọn 1 đáp án!');
+                return;
+            }
+            
+            const quiz = quizDb[activeLesson.code] || {
+                question: "Sau khi học xong bài học này, bước tiếp theo học viên cần cập nhật thông tin gì lên hệ thống CRM chi nhánh?",
+                options: [
+                    "Cập nhật thông tin số dư nợ vay và trạng thái tư vấn eKYC mới.",
+                    "Lập tức gửi kịch bản all-in mua mã đầu cơ nóng.",
+                    "Xóa bỏ thông tin danh bạ khách hàng cũ.",
+                    "Đợi đến cuối tuần mới cập nhật dồn một lúc."
+                ],
+                correct: 0,
+                explain: "Đúng! Quy trình nghiệp vụ HO3 yêu cầu học viên cập nhật thông tin tư vấn lên hệ thống CRM mỗi ngày sau Midday Check-in."
+            };
+            
+            const exp = document.getElementById('quizExplanation');
+            exp.style.display = 'block';
+            
+            if (selectedQuizOption === quiz.correct) {
+                exp.innerHTML = `<span style="color:var(--success-color); font-weight:700;">CHÚC MỪNG! BẠN ĐÃ TRẢ LỜI ĐÚNG (+50 XP)</span><br>${quiz.explain}`;
+                updateMascotWidgetState('vui ve');
+                
+                // Award XP dynamically
+                currentXP = Math.min(500, currentXP + 50);
+                document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
+                document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
+                
+                if (currentXP >= 500) {
+                    document.getElementById('userLevelText').innerText = "Mầm Xanh Level 2 (Đột Phá)";
+                }
+            } else {
+                exp.innerHTML = `<span style="color:var(--danger-color); font-weight:700;">RẤT TIẾC, BẠN CHỌN SAI RỒI</span><br>Hãy thử lại hoặc xem lại lý thuyết ở tab bên cạnh.`;
+                updateMascotWidgetState('ban khoan');
+            }
+            
+            document.getElementById('quizSubmitBtn').disabled = true;
+            document.getElementById('quizSubmitBtn').style.opacity = '0.5';
+        }
+
+        // Helper to shift Mascot Companion Image State dynamically
+        function updateMascotWidgetState(stateName) {
+            const widgetImg = document.getElementById('mascotAvatarWidget');
+            let imgFile = 'Mascot app Trader_trader original-01.png';
+            
+            if (stateName === 'tim kiem') {
+                imgFile = 'Mascot app Trader_trader tìm kiếm-01.png';
+            } else if (stateName === 'ban khoan') {
+                imgFile = 'Mascot app Trader_trader băn khoăn-01.png';
+            } else if (stateName === 'vui ve') {
+                imgFile = 'Mascot app Trader_trader vui vẻ-01.png';
+            } else if (stateName === 'OK') {
+                imgFile = 'Mascot app Trader_trader OK-01.png';
+            }
+            
+            widgetImg.src = `../assets/mascot/${selectedMascotType}/light/${imgFile}`;
         }
     </script>
 </body>
