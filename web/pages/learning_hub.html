@@ -395,12 +395,12 @@
             overflow-x: auto;
             padding-bottom: 8px;
             border-bottom: 2px solid var(--border-light);
-            scrollbar-width: none; /* Hide default Firefox scrollbar */
-            -ms-overflow-style: none; /* Hide Edge/IE scrollbar */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
 
         .week-tabs::-webkit-scrollbar {
-            display: none; /* Hide default Chrome/Safari scrollbar */
+            display: none;
         }
 
         .week-tab-btn {
@@ -441,7 +441,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            min-height: 210px; /* Taller card to fit points neatly with larger font sizes */
+            min-height: 210px;
             box-shadow: 0 2px 10px rgba(92, 75, 55, 0.02);
         }
 
@@ -453,6 +453,7 @@
         .day-card.completed {
             background: #fff;
             border-color: rgba(76, 175, 80, 0.4);
+            opacity: 1; /* Bright when completed */
         }
 
         .day-card.active-day {
@@ -460,13 +461,20 @@
             background: var(--kb-yellow-light);
             box-shadow: var(--shadow-glow);
             animation: activeGlow 2s infinite ease-in-out;
+            opacity: 1; /* Bright active day */
         }
 
         .day-card.locked {
             background: #f1ede6;
-            opacity: 0.65;
+            opacity: 0.55;
             cursor: not-allowed;
             pointer-events: none;
+        }
+
+        .day-card.incomplete-past {
+            background: #fff;
+            border-color: var(--border);
+            opacity: 0.6; /* Dimmed if not completed yet */
         }
 
         .card-status-svg {
@@ -501,7 +509,7 @@
             line-height: 1.35;
         }
 
-        /* 3 Bullet Points - Increased to 12px for standard PC/iPad legibility */
+        /* 3 Bullet Points */
         .day-bullets {
             margin-top: 10px;
             padding-left: 0;
@@ -681,7 +689,7 @@
             line-height: 1.45;
         }
 
-        /* Mascot Advisor Widget - Correcting text squishing */
+        /* Mascot Advisor Widget */
         .mascot-advisor-panel {
             background: #fff;
             border: 1px solid var(--border);
@@ -704,7 +712,6 @@
             flex-shrink: 0;
         }
 
-        /* Mascot Speech Bubble text size upgraded to 13px for standard reading size */
         .mascot-bubble {
             background: var(--bg-warm);
             border: 1px solid var(--border-light);
@@ -834,6 +841,51 @@
             font-weight: 600;
         }
 
+        /* Checklist tracker row style */
+        .modal-checklist-row {
+            display: flex;
+            gap: 20px;
+            background: rgba(139, 115, 85, 0.05);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 10px 16px;
+            margin-bottom: 18px;
+            align-items: center;
+        }
+
+        .checklist-item {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .checklist-item.done {
+            color: var(--success-color);
+        }
+
+        .chk-icon-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chk-svg {
+            width: 16px;
+            height: 16px;
+            color: var(--kb-brown);
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+
+        .chk-svg.checked {
+            color: var(--success-color);
+            opacity: 1;
+        }
+
         /* Lesson Tabs */
         .lesson-tabs {
             display: flex;
@@ -883,7 +935,7 @@
             margin-bottom: 10px;
         }
 
-        /* Theory formatting inside modal - Upgraded to 14px standard reading size */
+        /* Theory formatting inside modal */
         .markdown-rendered-view {
             font-size: 14px;
             line-height: 1.6;
@@ -1387,6 +1439,19 @@
                     <div class="modal-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</div>
                 </div>
 
+                <!-- Checklist tracker row -->
+                <div class="modal-checklist-row">
+                    <div class="checklist-item" id="chkTheory">
+                        <span class="chk-icon-container"></span> Lý Thuyết
+                    </div>
+                    <div class="checklist-item" id="chkCalc">
+                        <span class="chk-icon-container"></span> Bàn Tính Thực Hành
+                    </div>
+                    <div class="checklist-item" id="chkRoleplay">
+                        <span class="chk-icon-container"></span> Sắm Vai & Rubric
+                    </div>
+                </div>
+
                 <!-- Tabs -->
                 <div class="lesson-tabs">
                     <button class="lesson-tab-btn active" id="tabTheory" onclick="switchLessonTab('theory', this)">
@@ -1564,6 +1629,12 @@
         let selectedQuizOption = null;
         let activeLesson = null;
         let currentXP = 450;
+        let completedDays = {}; // Stores { dayId: boolean }
+
+        // Checklist completion states inside modal
+        let viewedTheory = false;
+        let viewedCalculator = false;
+        let viewedRoleplay = false;
 
         window.addEventListener('DOMContentLoaded', () => {
             initDebugSelector();
@@ -1597,11 +1668,23 @@
             const savedUser = localStorage.getItem('nextgen_user');
             const savedMascot = localStorage.getItem('nextgen_mascot');
             const savedDay = localStorage.getItem('nextgen_sim_day');
+            const savedCompleted = localStorage.getItem('nextgen_completed_days');
             
             if (savedUser) {
                 currentUser = savedUser;
                 selectedMascotType = savedMascot || "flexi";
                 currentSimulatedDay = savedDay ? parseInt(savedDay) : 23;
+                
+                if (savedCompleted) {
+                    completedDays = JSON.parse(savedCompleted);
+                } else {
+                    completedDays = {};
+                    // Pre-fill days < simulatedDay by default so simulator starts reasonably
+                    for (let i = 1; i < currentSimulatedDay; i++) {
+                        completedDays[i] = true;
+                    }
+                    localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+                }
                 
                 document.querySelectorAll('.mascot-select-card').forEach(card => {
                     card.classList.remove('active');
@@ -1651,6 +1734,13 @@
             currentUser = email;
             localStorage.setItem('nextgen_user', currentUser);
             localStorage.setItem('nextgen_mascot', selectedMascotType);
+            
+            // Re-initialize for new login based on simulatedDay
+            completedDays = {};
+            for (let i = 1; i < currentSimulatedDay; i++) {
+                completedDays[i] = true;
+            }
+            localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
             localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
             
             triggerDashboardView();
@@ -1704,6 +1794,13 @@
             currentSimulatedDay = val;
             localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
             
+            // Reset completion state dynamically based on the new simulated Day
+            completedDays = {};
+            for (let i = 1; i < currentSimulatedDay; i++) {
+                completedDays[i] = true;
+            }
+            localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+            
             let week = Math.ceil(currentSimulatedDay / 7);
             activeWeekFilter = week;
             document.querySelectorAll('.week-tab-btn').forEach((btn, idx) => {
@@ -1722,7 +1819,7 @@
             
             const activeLessonObj = curriculumDb.find(d => d.id === currentSimulatedDay);
             if (activeLessonObj) {
-                speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy tìm hiểu chủ đề "${activeLessonObj.title}" và hoàn tất bài tập nhé!`;
+                speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy hoàn tất cả 3 phần: Đọc lý thuyết, Thực hành tính toán, và Kịch bản sắm vai để kích hoạt tích xanh hoàn thành nhé!`;
             }
             
             const sdPulse = document.getElementById('sdPulseRing');
@@ -1763,17 +1860,21 @@
                 const card = document.createElement('div');
                 card.className = 'day-card';
                 
-                if (lesson.id < currentSimulatedDay) {
+                const isCompleted = completedDays[lesson.id] === true;
+                const isActive = lesson.id === currentSimulatedDay;
+                const isLocked = lesson.id > currentSimulatedDay;
+                
+                let statusSvg = '';
+                if (isCompleted) {
                     card.classList.add('completed');
                     statusSvg = `
                         <svg class="card-status-svg completed-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"/>
                         </svg>
                     `;
-                } else if (lesson.id === currentSimulatedDay) {
+                } else if (isActive) {
                     card.classList.add('active-day');
-                    statusSvg = '';
-                } else {
+                } else if (isLocked) {
                     card.classList.add('locked');
                     statusSvg = `
                         <svg class="card-status-svg locked-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1781,6 +1882,9 @@
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                         </svg>
                     `;
+                } else {
+                    // Past day but incomplete (dimmed/opaque without checkmark)
+                    card.classList.add('incomplete-past');
                 }
                 
                 card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
@@ -1826,6 +1930,18 @@
             document.querySelectorAll('.lesson-tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('tabTheory').classList.add('active');
             
+            // Checklist tracking initialization
+            if (completedDays[lesson.id]) {
+                viewedTheory = true;
+                viewedCalculator = true;
+                viewedRoleplay = true;
+            } else {
+                viewedTheory = true; // Default tab viewed on open
+                viewedCalculator = false;
+                viewedRoleplay = false;
+            }
+            updateChecklistUI();
+            
             initQuizWidget(lesson.code);
             
             document.getElementById('lessonModal').style.display = 'flex';
@@ -1833,6 +1949,56 @@
 
         function closeLessonModal() {
             document.getElementById('lessonModal').style.display = 'none';
+        }
+
+        function updateChecklistUI() {
+            const getCheckSvg = (done) => done ? `
+                <svg class="chk-svg checked" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+            ` : `
+                <svg class="chk-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                </svg>
+            `;
+            
+            const chkTheory = document.getElementById('chkTheory');
+            const chkCalc = document.getElementById('chkCalc');
+            const chkRoleplay = document.getElementById('chkRoleplay');
+            
+            chkTheory.classList.toggle('done', viewedTheory);
+            chkTheory.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedTheory);
+            
+            chkCalc.classList.toggle('done', viewedCalculator);
+            chkCalc.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedCalculator);
+            
+            chkRoleplay.classList.toggle('done', viewedRoleplay);
+            chkRoleplay.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedRoleplay);
+        }
+
+        function checkCompletionStatus() {
+            if (viewedTheory && viewedCalculator && viewedRoleplay) {
+                if (!completedDays[activeLesson.id]) {
+                    completedDays[activeLesson.id] = true;
+                    localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+                    
+                    // Re-render roadmap immediately to reflect bright background + green checkmark
+                    renderRoadmapGrid();
+                    
+                    // Award Completion XP
+                    currentXP = Math.min(500, currentXP + 100);
+                    document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
+                    document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
+                    
+                    if (currentXP >= 500) {
+                        document.getElementById('userLevelText').innerText = "Mầm Xanh Level 2 (Đột Phá)";
+                    }
+                    
+                    // Mascot feedback
+                    document.getElementById('mascotSpeechText').innerText = `Chúc mừng bạn! Bạn đã hoàn thành trọn vẹn cả 3 phần: Lý thuyết, Thực hành tính toán và Sắm vai của bài ${activeLesson.code}. Nhận ngay +100 XP!`;
+                    updateMascotWidgetState('vui ve');
+                }
+            }
         }
 
         async function fetchLessonMarkdown(filename) {
@@ -1851,7 +2017,6 @@
                 .replace(/^# (.*$)/gim, '<h1 style="font-size:14pt; color:var(--kb-brown-dark); margin-bottom:12px;">$1</h1>')
                 .replace(/^## (.*$)/gim, '<h2 style="font-size:11.5pt; color:var(--text-primary); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-top:18px;">$1</h2>')
                 .replace(/^### (.*$)/gim, '<h3 style="font-size:10pt; color:var(--kb-brown); margin-top:14px;">$1</h3>')
-                .replace(/\*\frac{.*?}{.*?}/gim, '<strong>$1</strong>')
                 .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/gim, '<em>$1</em>')
                 .replace(/`([^`]+)`/gim, '<code style="background:rgba(245,166,35,0.08); padding:2px 5px; border-radius:4px; font-family:monospace; font-size:9pt;">$1</code>')
@@ -1866,14 +2031,21 @@
             document.querySelectorAll('.lesson-tab-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            const area = document.getElementById('lessonBodyArea');
             if (tabName === 'theory') {
+                viewedTheory = true;
                 openLessonModal(activeLesson.id);
             } else if (tabName === 'calculator') {
+                viewedCalculator = true;
+                const area = document.getElementById('lessonBodyArea');
                 renderInteractiveCalculator(area);
             } else if (tabName === 'roleplay') {
+                viewedRoleplay = true;
+                const area = document.getElementById('lessonBodyArea');
                 renderRolePlayRubric(area);
             }
+            
+            updateChecklistUI();
+            checkCompletionStatus();
         }
 
         function renderInteractiveCalculator(container) {
