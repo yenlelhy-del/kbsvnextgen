@@ -453,7 +453,7 @@
         .day-card.completed {
             background: #fff;
             border-color: rgba(76, 175, 80, 0.4);
-            opacity: 1; /* Bright when completed */
+            opacity: 1;
         }
 
         .day-card.active-day {
@@ -461,7 +461,7 @@
             background: var(--kb-yellow-light);
             box-shadow: var(--shadow-glow);
             animation: activeGlow 2s infinite ease-in-out;
-            opacity: 1; /* Bright active day */
+            opacity: 1;
         }
 
         .day-card.locked {
@@ -474,7 +474,7 @@
         .day-card.incomplete-past {
             background: #fff;
             border-color: var(--border);
-            opacity: 0.6; /* Dimmed if not completed yet */
+            opacity: 0.6;
         }
 
         .card-status-svg {
@@ -1369,7 +1369,7 @@
                         </div>
                         <div class="status-info">
                             <span class="status-lbl">Học Tập Đều Đặn</span>
-                            <span class="status-val" id="userStreakText">8 Ngày Liên Tục</span>
+                            <span class="status-val" id="userStreakText">0 Ngày Liên Tục</span>
                         </div>
                     </div>
                     <div class="status-row">
@@ -1389,10 +1389,10 @@
                     <div style="margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--border-light);">
                         <div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; margin-bottom: 6px;">
                             <span style="color: var(--text-secondary);">TÍCH LŨY XP HÔM NAY</span>
-                            <span style="color: var(--kb-yellow-dark);" id="xpText">450 / 500 XP</span>
+                            <span style="color: var(--kb-yellow-dark);" id="xpText">0 / 500 XP</span>
                         </div>
                         <div style="background: var(--border-light); border-radius: 8px; height: 8px; overflow: hidden;">
-                            <div id="xpBar" style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--kb-yellow), var(--kb-yellow-dark)); border-radius: 8px; transition: width 0.4s;"></div>
+                            <div id="xpBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--kb-yellow), var(--kb-yellow-dark)); border-radius: 8px; transition: width 0.4s;"></div>
                         </div>
                     </div>
                 </div>
@@ -1625,10 +1625,10 @@
         let currentUser = null;
         let selectedMascotType = "flexi";
         let activeWeekFilter = 1;
-        let currentSimulatedDay = 23;
+        let currentSimulatedDay = 1; // Default starting day is Day 1
         let selectedQuizOption = null;
         let activeLesson = null;
-        let currentXP = 450;
+        let currentXP = 0; // Default starting XP is 0
         let completedDays = {}; // Stores { dayId: boolean }
 
         // Checklist completion states inside modal
@@ -1669,17 +1669,18 @@
             const savedMascot = localStorage.getItem('nextgen_mascot');
             const savedDay = localStorage.getItem('nextgen_sim_day');
             const savedCompleted = localStorage.getItem('nextgen_completed_days');
+            const savedXp = localStorage.getItem('nextgen_xp');
             
             if (savedUser) {
                 currentUser = savedUser;
                 selectedMascotType = savedMascot || "flexi";
-                currentSimulatedDay = savedDay ? parseInt(savedDay) : 23;
+                currentSimulatedDay = savedDay ? parseInt(savedDay) : 1;
+                currentXP = savedXp ? parseInt(savedXp) : 0;
                 
                 if (savedCompleted) {
                     completedDays = JSON.parse(savedCompleted);
                 } else {
                     completedDays = {};
-                    // Pre-fill days < simulatedDay by default so simulator starts reasonably
                     for (let i = 1; i < currentSimulatedDay; i++) {
                         completedDays[i] = true;
                     }
@@ -1735,13 +1736,14 @@
             localStorage.setItem('nextgen_user', currentUser);
             localStorage.setItem('nextgen_mascot', selectedMascotType);
             
-            // Re-initialize for new login based on simulatedDay
+            // A new user entering the system always starts from Day 1 with 0 XP
+            currentSimulatedDay = 1;
+            currentXP = 0;
             completedDays = {};
-            for (let i = 1; i < currentSimulatedDay; i++) {
-                completedDays[i] = true;
-            }
-            localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+            
             localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
+            localStorage.setItem('nextgen_xp', currentXP);
+            localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
             
             triggerDashboardView();
         }
@@ -1794,7 +1796,7 @@
             currentSimulatedDay = val;
             localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
             
-            // Reset completion state dynamically based on the new simulated Day
+            // Re-initialize completion status based on the newly selected simulation day
             completedDays = {};
             for (let i = 1; i < currentSimulatedDay; i++) {
                 completedDays[i] = true;
@@ -1821,6 +1823,11 @@
             if (activeLessonObj) {
                 speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy hoàn tất cả 3 phần: Đọc lý thuyết, Thực hành tính toán, và Kịch bản sắm vai để kích hoạt tích xanh hoàn thành nhé!`;
             }
+            
+            // Update XP UI dynamically
+            document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
+            document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
+            document.getElementById('userStreakText').innerText = `${currentSimulatedDay - 1} Ngày Liên Tục`;
             
             const sdPulse = document.getElementById('sdPulseRing');
             const sdStatus = document.getElementById('sdStatusText');
@@ -1883,7 +1890,7 @@
                         </svg>
                     `;
                 } else {
-                    // Past day but incomplete (dimmed/opaque without checkmark)
+                    // Past day but incomplete
                     card.classList.add('incomplete-past');
                 }
                 
@@ -1936,7 +1943,7 @@
                 viewedCalculator = true;
                 viewedRoleplay = true;
             } else {
-                viewedTheory = true; // Default tab viewed on open
+                viewedTheory = true;
                 viewedCalculator = false;
                 viewedRoleplay = false;
             }
@@ -1982,11 +1989,13 @@
                     completedDays[activeLesson.id] = true;
                     localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
                     
-                    // Re-render roadmap immediately to reflect bright background + green checkmark
+                    // Update UI immediately
                     renderRoadmapGrid();
                     
                     // Award Completion XP
                     currentXP = Math.min(500, currentXP + 100);
+                    localStorage.setItem('nextgen_xp', currentXP);
+                    
                     document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
                     document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
                     
@@ -2315,6 +2324,8 @@
                 updateMascotWidgetState('vui ve');
                 
                 currentXP = Math.min(500, currentXP + 50);
+                localStorage.setItem('nextgen_xp', currentXP);
+                
                 document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
                 document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
                 
