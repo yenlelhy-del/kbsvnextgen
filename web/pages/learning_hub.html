@@ -390,7 +390,7 @@
 
         .week-tabs {
             display: flex;
-            gap: 6px;
+            gap: 10px;
             list-style: none;
             overflow-x: auto;
             padding-bottom: 8px;
@@ -406,20 +406,42 @@
         .week-tab-btn {
             background: transparent;
             border: none;
-            padding: 8px 16px;
+            padding: 10px 16px;
             font-family: var(--font-display);
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
             white-space: nowrap;
-            border-radius: 8px;
+            border-radius: 12px;
             transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-start;
+            min-width: 180px;
+            border: 1px solid transparent;
         }
 
         .week-tab-btn.active, .week-tab-btn:hover {
             color: var(--kb-yellow-dark);
             background: var(--kb-yellow-light);
+            border-color: var(--border-light);
+        }
+
+        .tab-mini-progress-bg {
+            width: 100%;
+            height: 5px;
+            background: var(--border-light);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .tab-mini-progress-bar {
+            height: 100%;
+            background: var(--success-color);
+            border-radius: 10px;
+            transition: width 0.3s ease;
         }
 
         /* Roadmap Grid */
@@ -451,7 +473,7 @@
         }
 
         .day-card.completed {
-            background: #fff;
+            background: rgba(76, 175, 80, 0.06); /* Distinct soft brand green */
             border-color: rgba(76, 175, 80, 0.4);
             opacity: 1;
         }
@@ -462,6 +484,11 @@
             box-shadow: var(--shadow-glow);
             animation: activeGlow 2s infinite ease-in-out;
             opacity: 1;
+        }
+
+        .day-card.completed.active-day {
+            border-color: var(--kb-yellow-dark);
+            background: rgba(76, 175, 80, 0.06); /* Keep completed green background with yellow active border */
         }
 
         .card-status-svg {
@@ -1318,14 +1345,14 @@
             <!-- Left Panel: Weeks and 42 Days Roadmap -->
             <div class="left-panel">
                 <div class="weekly-tabs-container">
-                    <ul class="week-tabs">
-                        <li><button class="week-tab-btn active" id="tabW1" onclick="filterWeek(1, this)">Tuần 1: Tư Duy Tích Sản</button></li>
-                        <li><button class="week-tab-btn" onclick="filterWeek(2, this)">Tuần 2: 6 Bước Tư Vấn</button></li>
-                        <li><button class="week-tab-btn" onclick="filterWeek(3, this)">Tuần 3: Quy Chế & Lương</button></li>
-                        <li><button class="week-tab-btn" onclick="filterWeek(4, this)">Tuần 4: Quản Trị Margin & Phái Sinh</button></li>
-                        <li><button class="week-tab-btn" onclick="filterWeek(5, this)">Tuần 5: Phân Tích TA & KOC Lab</button></li>
-                        <li><button class="week-tab-btn" onclick="filterWeek(6, this)">Tuần 6: Zalo & Tốt Nghiệp</button></li>
+                    <ul class="week-tabs" id="weekTabsContainer">
+                        <!-- Loaded dynamically via JS -->
                     </ul>
+                </div>
+
+                <!-- Active Week Progress Card -->
+                <div id="weekProgressHeader" style="background:#fff; border:1px solid var(--border-light); border-radius:16px; padding:16px; margin-bottom:15px; box-shadow: var(--shadow-soft);">
+                    <!-- Dynamic rendering -->
                 </div>
 
                 <!-- 42 Day Cards -->
@@ -1529,7 +1556,7 @@
             { id: 17, week: 3, code: "D17", title: "Kịch Bản Cơ Cấu Danh Mục Thay Cổ Phiếu Đầu Cơ Sang Tích Sản", file: "D17-roleplay-co-cau-danh-muc.md", doc: "DT-17", points: ["Xử lý danh mục kẹt cổ phiếu đầu cơ", "Kịch bản thuyết phục chuyển sang ACB SIP", "Các mốc chiết khấu thuyết phục chuyển đổi"] },
             { id: 18, week: 3, code: "D18", title: "Kịch Bản Sắm Vai Tư Vấn Thực Chiến & Bảng Điểm ASK", file: "D18-xay-dung-kich-ban-sam-vai.md", doc: "DT-18", points: ["Thiết kế kịch bản sắm vai (Role-play)", "Khung đánh giá năng lực ASK của HO3", "Thang đo thái độ 50% quyết định kết quả"] },
             { id: 19, week: 3, code: "D19", title: "Lộ Trình Thu Nhập 3 Năm & Cơ Chế Lương Hoa Hồng HO3", file: "D19-lo-trinh-thu-nhap-hoa-hong.md", doc: "DT-19", points: ["Cơ chế hoa hồng 50% phí DTT", "Lộ trình thăng tiến Broker 3 năm", "Đặc quyền lương cứng 10M cho NextGen"] },
-            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20", points: ["Nắm rõ Luật Chứng khoán 2019", "Quy định cấm ủy thác đầu tư, cam kết lãi", "Đạo đức nghề nghiệp bảo mật thông tin"] },
+            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20", points: ["Nắm rõ Luật Chứng khoán 2019", "Quy định cấm ủy thác đầu tư, cam kết lãi", "Đạo đức nghề nghiệp bảo mật thông tin"] },
             { id: 21, week: 3, code: "D21", title: "Kỹ Năng Hợp Tác CLB Chứng Khoán Sinh Viên Thu Hút Lead", file: "D21-networking-clb-sinh-vien.md", doc: "DT-21", points: ["Tiếp cận CLB Chứng khoán sinh viên", "Xây dựng phễu khách hàng trẻ năng động", "Kỹ thuật thuyết trình seminar đại học"] },
             
             { id: 22, week: 4, code: "D22", title: "Tổ Chức Seminar/Webinar Thuyết Trình Chốt Số Lượng Lớn", file: "D22-to-chuc-seminar-webinar.md", doc: "DT-22", points: ["Quy trình tổ chức hội thảo chốt khách", "Thiết kế kịch bản seminar 60 phút", "Kỹ thuật gom mở tài khoản eKYC hàng loạt"] },
@@ -1555,6 +1582,16 @@
             { id: 40, week: 6, code: "D40", title: "Bảo Vệ Báo Cáo Tốt Nghiệp Sát Hạch Trước Hội Đồng HO3", file: "D40-bao-ve-bao-cao-tot-nghiep.md", doc: "DT-40", points: ["Thuyết trình báo cáo trước Hội đồng sát hạch", "Kỹ năng trả lời phản biện của Mentor", "Đánh giá mức độ ASK cuối kỳ hoàn thành"] },
             { id: 41, week: 6, code: "D41", title: "Lễ Tốt Nghiệp Bổ Nhiệm & Lộ Trình Thăng Tiến Broker 3 Năm", file: "D41-le-tot-nghiep-bo-nhiem-broker.md", doc: "DT-41", points: ["Bổ nhiệm chính thức làm Junior Broker", "Vạch ra lộ trình thăng tiến Broker 3 năm", "Ký kết giao ước phát triển chi nhánh HO3"] },
             { id: 42, week: 6, code: "D42", title: "Tổng Kết Toàn Chương Trình & Kế Hoạch 90 Ngày Bứt Phá", file: "D42-tong-ket-va-dong-hoa-tai-nguyen.md", doc: "DT-42", points: ["Đồng hóa toàn bộ tài nguyên NextGen", "Kế hoạch hành động 90 ngày bứt phá đầu tiên", "Duy trì kỷ luật làm việc mỗi ngày"] }
+        ];
+
+        // Weekly topics details names
+        const weekNames = [
+            "Tuần 1: Tư Duy Tích Sản",
+            "Tuần 2: 6 Bước Tư Vấn",
+            "Tuần 3: Quy Chế & Lương",
+            "Tuần 4: Quản Trị Margin & Phái Sinh",
+            "Tuần 5: Phân Tích TA & KOC Lab",
+            "Tuần 6: Zalo & Tốt Nghiệp"
         ];
 
         // Custom quizzes database
@@ -1751,10 +1788,6 @@
             if (week > 6) week = 6;
             activeWeekFilter = week;
             
-            document.querySelectorAll('.week-tab-btn').forEach((btn, idx) => {
-                btn.classList.toggle('active', idx === (week - 1));
-            });
-            
             updateDashboardUI();
         }
 
@@ -1789,9 +1822,6 @@
             
             let week = Math.ceil(currentSimulatedDay / 7);
             activeWeekFilter = week;
-            document.querySelectorAll('.week-tab-btn').forEach((btn, idx) => {
-                btn.classList.toggle('active', idx === (week - 1));
-            });
             
             updateDashboardUI();
         }
@@ -1831,14 +1861,64 @@
                 sdDesc.innerText = "Học viên đạt chỉ tiêu Standard tích lũy và hoàn thành báo cáo. Đạt ngưỡng an toàn.";
             }
 
+            renderWeekTabs();
+            renderWeekProgressHeader();
             renderRoadmapGrid();
         }
 
-        function filterWeek(weekNum, btn) {
-            document.querySelectorAll('.week-tab-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        function filterWeek(weekNum) {
             activeWeekFilter = weekNum;
+            renderWeekTabs();
+            renderWeekProgressHeader();
             renderRoadmapGrid();
+        }
+
+        function renderWeekTabs() {
+            const container = document.getElementById('weekTabsContainer');
+            container.innerHTML = '';
+            
+            for (let w = 1; w <= 6; w++) {
+                const weekLessons = curriculumDb.filter(d => d.week === w);
+                const completedCount = weekLessons.filter(l => completedDays[l.id]).length;
+                const totalCount = weekLessons.length;
+                const pct = (completedCount / totalCount) * 100;
+                
+                const li = document.createElement('li');
+                const isActive = w === activeWeekFilter;
+                
+                li.innerHTML = `
+                    <button class="week-tab-btn ${isActive ? 'active' : ''}" onclick="filterWeek(${w})">
+                        <div style="display:flex; justify-content:space-between; width:100%; gap:15px; align-items:center;">
+                            <span>${weekNames[w-1]}</span>
+                            <span style="font-size:11px; font-weight:700; color:${completedCount === totalCount ? 'var(--success-color)' : 'var(--text-secondary)'};">
+                                ${completedCount}/${totalCount}
+                            </span>
+                        </div>
+                        <div class="tab-mini-progress-bg">
+                            <div class="tab-mini-progress-bar" style="width: ${pct}%"></div>
+                        </div>
+                    </button>
+                `;
+                container.appendChild(li);
+            }
+        }
+
+        function renderWeekProgressHeader() {
+            const header = document.getElementById('weekProgressHeader');
+            const weekLessons = curriculumDb.filter(d => d.week === activeWeekFilter);
+            const completedCount = weekLessons.filter(l => completedDays[l.id]).length;
+            const totalCount = weekLessons.length;
+            const pct = (completedCount / totalCount) * 100;
+            
+            header.innerHTML = `
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <h3 style="font-size:14.5px; color:var(--text-primary); font-family:var(--font-display);">${weekNames[activeWeekFilter - 1]}</h3>
+                    <span style="font-size:12.5px; font-weight:700; color:var(--success-color);">${completedCount} / ${totalCount} Bài Học Hoàn Thành (${Math.round(pct)}%)</span>
+                </div>
+                <div style="background:var(--border-light); height:8px; border-radius:4px; overflow:hidden; position:relative;">
+                    <div style="width:${pct}%; height:100%; background:var(--success-color); border-radius:4px; transition:width 0.4s ease;"></div>
+                </div>
+            `;
         }
 
         function renderRoadmapGrid() {
@@ -1861,11 +1941,10 @@
                             <polyline points="20 6 9 17 4 12"/>
                         </svg>
                     `;
-                } else {
-                    // Not completed yet (fully clickable, standard state)
-                    if (lesson.id === currentSimulatedDay) {
-                        card.classList.add('active-day'); // Pulse highlight for recommended current day
-                    }
+                }
+                
+                if (lesson.id === currentSimulatedDay) {
+                    card.classList.add('active-day'); // Pulse highlight for recommended current day
                 }
                 
                 card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
@@ -1964,6 +2043,8 @@
                     localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
                     
                     // Update UI immediately
+                    renderWeekTabs();
+                    renderWeekProgressHeader();
                     renderRoadmapGrid();
                     
                     // Award Completion XP
