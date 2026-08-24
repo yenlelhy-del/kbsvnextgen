@@ -105,14 +105,14 @@
 
         .brand-meta .title {
             font-family: var(--font-display);
-            font-size: 11pt;
+            font-size: 15px;
             font-weight: 800;
             color: var(--text-primary);
             line-height: 1;
         }
 
         .brand-meta .sub {
-            font-size: 8pt;
+            font-size: 11px;
             color: var(--kb-brown);
             font-weight: 600;
             letter-spacing: 0.3px;
@@ -127,7 +127,7 @@
         .npv-nav-link {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 10pt;
+            font-size: 14px;
             font-weight: 600;
             transition: color 0.2s;
         }
@@ -143,7 +143,7 @@
             color: #fff;
             border: none;
             cursor: pointer;
-            font-size: 10pt;
+            font-size: 13.5px;
             font-weight: 700;
             box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
             transition: all 0.25s ease;
@@ -165,7 +165,7 @@
             color: var(--text-primary);
             border: 1px solid var(--border);
             cursor: pointer;
-            font-size: 10pt;
+            font-size: 13.5px;
             font-weight: 700;
             transition: all 0.2s;
             text-decoration: none;
@@ -179,7 +179,7 @@
             border-color: var(--kb-brown);
         }
 
-        /* ── HOMEPAGE HERO (Pre-login) ── */
+        /* ── HOMEPAGE HERO ── */
         .homepage-hero {
             padding: 130px 2rem 60px;
             max-width: 1200px;
@@ -204,7 +204,7 @@
             border: 1px solid rgba(245, 166, 35, 0.3);
             padding: 6px 16px;
             border-radius: 50px;
-            font-size: 8.5pt;
+            font-size: 12px;
             font-weight: 700;
             color: var(--kb-brown-dark);
             margin-bottom: 20px;
@@ -212,8 +212,8 @@
         }
 
         .badge-icon-svg {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             color: var(--kb-yellow-dark);
         }
 
@@ -231,7 +231,7 @@
         }
 
         .hero-desc {
-            font-size: 11.5pt;
+            font-size: 15.5px;
             color: var(--text-secondary);
             margin-bottom: 30px;
         }
@@ -258,7 +258,7 @@
             position: relative;
             padding-left: 22px;
             margin-bottom: 14px;
-            font-size: 10pt;
+            font-size: 14px;
             color: var(--text-secondary);
         }
 
@@ -289,7 +289,7 @@
 
         .form-group label {
             display: block;
-            font-size: 10pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 6px;
@@ -300,7 +300,7 @@
             padding: 12px 16px;
             border: 1px solid var(--border);
             border-radius: 10px;
-            font-size: 10pt;
+            font-size: 14px;
             font-family: var(--font-body);
             background: var(--bg-warm);
             transition: all 0.2s;
@@ -353,13 +353,13 @@
         }
 
         .mascot-select-name {
-            font-size: 9.5pt;
+            font-size: 13px;
             font-weight: 700;
             color: var(--text-primary);
         }
 
         .mascot-select-track {
-            font-size: 7.5pt;
+            font-size: 11px;
             color: var(--text-secondary);
         }
 
@@ -380,7 +380,6 @@
             align-items: start;
         }
 
-        /* Left Side: Weekly Tabs & 42 Day Cards */
         .left-panel {
             min-width: 0;
         }
@@ -396,6 +395,12 @@
             overflow-x: auto;
             padding-bottom: 8px;
             border-bottom: 2px solid var(--border-light);
+            scrollbar-width: none; /* Hide default Firefox scrollbar */
+            -ms-overflow-style: none; /* Hide Edge/IE scrollbar */
+        }
+
+        .week-tabs::-webkit-scrollbar {
+            display: none; /* Hide default Chrome/Safari scrollbar */
         }
 
         .week-tab-btn {
@@ -403,7 +408,7 @@
             border: none;
             padding: 8px 16px;
             font-family: var(--font-display);
-            font-size: 9.5pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
@@ -436,7 +441,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            min-height: 195px;
+            min-height: 210px; /* Taller card to fit points neatly with larger font sizes */
             box-shadow: 0 2px 10px rgba(92, 75, 55, 0.02);
         }
 
@@ -464,7 +469,6 @@
             pointer-events: none;
         }
 
-        /* SVG icons inside card absolute position */
         .card-status-svg {
             position: absolute;
             top: 14px;
@@ -484,20 +488,20 @@
 
         .day-code {
             font-family: var(--font-display);
-            font-size: 9.5pt;
+            font-size: 13px;
             font-weight: 700;
             color: var(--kb-brown);
         }
 
         .day-title {
-            font-size: 9.5pt;
+            font-size: 14.5px;
             font-weight: 700;
             color: var(--text-primary);
             margin-top: 6px;
             line-height: 1.35;
         }
 
-        /* 3 Bullet Points styled cleanly inside the day card */
+        /* 3 Bullet Points - Increased to 12px for standard PC/iPad legibility */
         .day-bullets {
             margin-top: 10px;
             padding-left: 0;
@@ -507,12 +511,12 @@
         }
 
         .day-bullets li {
-            font-size: 8pt;
+            font-size: 12px;
             color: var(--text-secondary);
             margin-bottom: 4px;
             position: relative;
             padding-left: 12px;
-            line-height: 1.3;
+            line-height: 1.35;
         }
 
         .day-bullets li::before {
@@ -563,7 +567,7 @@
             height: 24px;
         }
 
-        /* Custom Motion Graphics for Streaks and Levels */
+        /* CSS Motion Graphics animations */
         @keyframes firePulse {
             0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(245, 80, 35, 0.4)); color: #FF9800; fill: #FF9800; }
             50% { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(245, 80, 35, 0.8)); color: #FF5722; fill: #FF5722; }
@@ -586,14 +590,14 @@
         }
 
         .status-lbl {
-            font-size: 8pt;
+            font-size: 11px;
             color: var(--text-secondary);
             font-weight: 600;
             text-transform: uppercase;
         }
 
         .status-val {
-            font-size: 10.5pt;
+            font-size: 14px;
             font-weight: 800;
             color: var(--text-primary);
         }
@@ -609,7 +613,7 @@
 
         .sd-title {
             font-family: var(--font-display);
-            font-size: 9.5pt;
+            font-size: 13px;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 12px;
@@ -625,7 +629,6 @@
             margin-bottom: 8px;
         }
 
-        /* Radar Pulse Ring */
         .sd-pulse-ring {
             position: relative;
             width: 32px;
@@ -667,18 +670,18 @@
         }
 
         .sd-status-text {
-            font-size: 9pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
         }
 
         .sd-desc {
-            font-size: 8.5pt;
+            font-size: 12.5px;
             color: var(--text-secondary);
-            line-height: 1.4;
+            line-height: 1.45;
         }
 
-        /* Mascot Advisor Widget */
+        /* Mascot Advisor Widget - Correcting text squishing */
         .mascot-advisor-panel {
             background: #fff;
             border: 1px solid var(--border);
@@ -701,13 +704,14 @@
             flex-shrink: 0;
         }
 
+        /* Mascot Speech Bubble text size upgraded to 13px for standard reading size */
         .mascot-bubble {
             background: var(--bg-warm);
             border: 1px solid var(--border-light);
             border-radius: 12px;
             padding: 10px 14px;
             position: relative;
-            font-size: 8.8pt;
+            font-size: 13px;
             font-weight: 600;
             color: var(--text-secondary);
             line-height: 1.45;
@@ -811,21 +815,21 @@
 
         .modal-day-badge {
             font-family: var(--font-display);
-            font-size: 8.5pt;
+            font-size: 12px;
             font-weight: 700;
             color: var(--kb-yellow-dark);
             text-transform: uppercase;
         }
 
         .modal-lesson-title {
-            font-size: 14pt;
+            font-size: 20px;
             color: var(--text-primary);
-            line-height: 1.25;
+            line-height: 1.3;
             margin-top: 2px;
         }
 
         .modal-doc-code {
-            font-size: 7.5pt;
+            font-size: 11.5px;
             color: var(--kb-brown);
             font-weight: 600;
         }
@@ -843,7 +847,7 @@
             border: none;
             padding: 8px 15px;
             font-family: var(--font-display);
-            font-size: 8.5pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
@@ -872,29 +876,29 @@
         .lesson-tab-content-container {
             flex-grow: 1;
             overflow-y: auto;
-            padding: 10px 5px;
+            padding: 10px 15px;
             background: #fff;
             border: 1px solid var(--border-light);
             border-radius: 12px;
             margin-bottom: 10px;
         }
 
-        /* Theory formatting inside modal */
+        /* Theory formatting inside modal - Upgraded to 14px standard reading size */
         .markdown-rendered-view {
-            font-size: 9.5pt;
-            line-height: 1.55;
+            font-size: 14px;
+            line-height: 1.6;
             color: var(--text-primary);
-            padding: 10px;
+            padding: 10px 0;
         }
 
         .markdown-rendered-view h1, .markdown-rendered-view h2, .markdown-rendered-view h3 {
             color: var(--text-primary);
-            margin: 15px 0 8px;
+            margin: 18px 0 10px;
             font-family: var(--font-display);
         }
 
         .markdown-rendered-view h2 {
-            font-size: 11pt;
+            font-size: 16px;
             border-bottom: 1px solid var(--border-light);
             padding-bottom: 4px;
         }
@@ -945,14 +949,14 @@
 
         .download-cs-title {
             font-family: var(--font-display);
-            font-size: 9pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 4px;
         }
 
         .download-cs-desc {
-            font-size: 7.5pt;
+            font-size: 12px;
             color: var(--text-secondary);
             margin-bottom: 12px;
         }
@@ -967,7 +971,7 @@
 
         .quiz-title {
             font-family: var(--font-display);
-            font-size: 8.5pt;
+            font-size: 12px;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 8px;
@@ -976,7 +980,7 @@
         }
 
         .quiz-question {
-            font-size: 8.5pt;
+            font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 10px;
@@ -994,7 +998,7 @@
             border: 1px solid var(--border-light);
             border-radius: 8px;
             padding: 8px 12px;
-            font-size: 8pt;
+            font-size: 13px;
             font-weight: 600;
             color: var(--text-secondary);
             cursor: pointer;
@@ -1020,7 +1024,7 @@
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 8px 10px;
-            font-size: 7.5pt;
+            font-size: 12px;
             color: var(--text-secondary);
             margin-top: 10px;
             line-height: 1.4;
@@ -1047,7 +1051,7 @@
         }
 
         .calc-input-group label {
-            font-size: 8pt;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--text-secondary);
         }
@@ -1067,18 +1071,18 @@
             padding: 10px;
             border: 1px solid var(--border);
             border-radius: 8px;
-            font-size: 8.5pt;
+            font-size: 13px;
         }
 
         .calc-res-title {
-            font-size: 8pt;
+            font-size: 11px;
             color: var(--text-secondary);
             font-weight: 600;
             text-transform: uppercase;
         }
 
         .calc-res-val {
-            font-size: 11.5pt;
+            font-size: 16px;
             font-weight: 800;
             color: var(--text-primary);
         }
@@ -1126,10 +1130,10 @@
                 height: 16px;
             }
             .brand-meta .title {
-                font-size: 10pt;
+                font-size: 13px;
             }
             .brand-meta .sub {
-                font-size: 7.5pt;
+                font-size: 10px;
             }
             .npv-nav-links {
                 display: none;
@@ -1190,7 +1194,7 @@
         </ul>
 
         <div style="display: flex; align-items: center; gap: 14px;">
-            <div id="magicTokenBadge" style="display:none; font-family:var(--font-display); font-size:8.5pt; font-weight:700; color:var(--success-color); background:rgba(76,175,80,0.08); border:1px solid rgba(76,175,80,0.3); padding:4px 12px; border-radius:50px;">
+            <div id="magicTokenBadge" style="display:none; font-family:var(--font-display); font-size:12px; font-weight:700; color:var(--success-color); background:rgba(76,175,80,0.08); border:1px solid rgba(76,175,80,0.3); padding:4px 12px; border-radius:50px;">
                 Token: ACTIVE_JWT_HO3
             </div>
             <button class="btn-primary" id="navbarActionBtn" onclick="toggleAuthFlow()">Đăng nhập</button>
@@ -1213,13 +1217,13 @@
             <h1 class="hero-title">Trở thành<br><span>Digital Wealth Advisor</span><br>Thế hệ mới</h1>
             <p class="hero-desc">Lộ trình 42 ngày Micro-learning bọc thép kiến thức đầu tư, rèn luyện kỹ năng KOC và khai thác các công cụ Sales AI tối tân cùng Sở Giao Dịch 3 (HO3) KB Securities Vietnam & FinPeace.</p>
             <div class="hero-actions">
-                <button class="btn-primary" style="padding: 12px 32px; font-size: 10.5pt;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
-                <button class="btn-secondary" style="padding: 12px 32px; font-size: 10.5pt;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
+                <button class="btn-primary" style="padding: 12px 32px; font-size: 14px;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
+                <button class="btn-secondary" style="padding: 12px 32px; font-size: 14px;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
             </div>
         </div>
 
         <div class="hero-right-card">
-            <h3 style="font-size: 11pt; color: var(--text-primary); border-bottom: 2px solid var(--kb-yellow); padding-bottom: 8px; margin-bottom: 18px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
+            <h3 style="font-size: 15px; color: var(--text-primary); border-bottom: 2px solid var(--kb-yellow); padding-bottom: 8px; margin-bottom: 18px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
             <ul class="features-list">
                 <li><strong>Thời lượng:</strong> 42 ngày (2 tuần nền tảng + 4 tuần thực chiến)</li>
                 <li><strong>Mục tiêu:</strong> Đào tạo thành Financial KOC đạt chuẩn AUM & eKYC</li>
@@ -1233,8 +1237,8 @@
 
     <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
     <section class="login-section" id="loginSection">
-        <h2 style="font-family:var(--font-display); font-size:13pt; text-align:center; margin-bottom:6px;">ĐĂNG NHẬP</h2>
-        <p style="font-size:9pt; color:var(--text-secondary); text-align:center; margin-bottom:20px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
+        <h2 style="font-family:var(--font-display); font-size:17px; text-align:center; margin-bottom:6px;">ĐĂNG NHẬP</h2>
+        <p style="font-size:13px; color:var(--text-secondary); text-align:center; margin-bottom:20px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
         
         <div class="form-group">
             <label for="studentEmail">Email Học Viên</label>
@@ -1268,7 +1272,7 @@
             </div>
         </div>
 
-        <button class="btn-primary" style="width:100%; justify-content:center; padding:12px 0; font-size:10.5pt;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
+        <button class="btn-primary" style="width:100%; justify-content:center; padding:12px 0; font-size:14px;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
     </section>
 
     <!-- ── 3. LEARNER DASHBOARD SECTION ── -->
@@ -1303,7 +1307,7 @@
                     </div>
                 </div>
 
-                <!-- Gamification Panel - Replaced Emojis with Custom SVGs with CSS Motion graphics -->
+                <!-- Gamification Panel -->
                 <div class="gamify-status-card">
                     <div class="status-row">
                         <div class="status-badge">
@@ -1331,7 +1335,7 @@
                     </div>
                     
                     <div style="margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--border-light);">
-                        <div style="display: flex; justify-content: space-between; font-size: 8pt; font-weight: 700; margin-bottom: 6px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; margin-bottom: 6px;">
                             <span style="color: var(--text-secondary);">TÍCH LŨY XP HÔM NAY</span>
                             <span style="color: var(--kb-yellow-dark);" id="xpText">450 / 500 XP</span>
                         </div>
@@ -1356,10 +1360,10 @@
 
                 <!-- Debug/Test day selector -->
                 <div class="debug-panel">
-                    <label style="font-size:8pt; font-weight:700; color:var(--kb-brown-dark); display:block; margin-bottom:6px;">CÔNG CỤ KIỂM THỬ TRẠNG THÁI HỌC TẬP</label>
+                    <label style="font-size:12px; font-weight:700; color:var(--kb-brown-dark); display:block; margin-bottom:6px;">CÔNG CỤ KIỂM THỬ TRẠNG THÁI HỌC TẬP</label>
                     <div style="display:flex; gap:10px; align-items:center;">
-                        <span style="font-size:8pt; color:var(--text-secondary);">Mô phỏng ở Ngày:</span>
-                        <select id="debugDaySelect" onchange="simulateProgressChange()" style="font-size:8pt; padding:6px; border:1px solid var(--border); border-radius:6px;">
+                        <span style="font-size:12px; color:var(--text-secondary);">Mô phỏng ở Ngày:</span>
+                        <select id="debugDaySelect" onchange="simulateProgressChange()" style="font-size:12px; padding:6px; border:1px solid var(--border); border-radius:6px;">
                             <!-- Will fill from JS -->
                         </select>
                     </div>
@@ -1383,7 +1387,7 @@
                     <div class="modal-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</div>
                 </div>
 
-                <!-- Tabs (Replaced emoji text with custom inline SVGs) -->
+                <!-- Tabs -->
                 <div class="lesson-tabs">
                     <button class="lesson-tab-btn active" id="tabTheory" onclick="switchLessonTab('theory', this)">
                         <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1429,7 +1433,7 @@
                 <div class="download-cs-card">
                     <div class="download-cs-title">TẢI VỀ CHEATSHEET THỰC HÀNH</div>
                     <div class="download-cs-desc">Tra cứu nhanh công thức, kịch bản sắm vai chuẩn A4 in ấn / lưu PDF.</div>
-                    <a href="" target="_blank" class="btn-primary" id="cheatsheetDownloadBtn" style="padding:10px 20px; font-size:9.5pt; justify-content:center;">Tải Cheatsheet PDF (A4) →</a>
+                    <a href="" target="_blank" class="btn-primary" id="cheatsheetDownloadBtn" style="padding:10px 20px; font-size:13px; justify-content:center;">Tải Cheatsheet PDF (A4) →</a>
                 </div>
 
                 <!-- Daily Quiz Widget -->
@@ -1437,7 +1441,7 @@
                     <div class="quiz-title">TRẮC NGHIỆM ĐÁNH GIÁ NĂNG LỰC HÀNG NGÀY</div>
                     <div class="quiz-question" id="qQuestion">Đang tải câu hỏi trắc nghiệm...</div>
                     <div class="quiz-options" id="qOptionsBox"></div>
-                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:10px 0; font-size:9pt;">Gửi đáp án (+50 XP)</button>
+                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:10px 0; font-size:13px;">Gửi đáp án (+50 XP)</button>
                     
                     <div class="quiz-explanation-box" id="quizExplanation"></div>
                 </div>
@@ -1447,7 +1451,7 @@
     </div>
 
     <!-- FOOTER -->
-    <footer style="border-top:1px solid var(--border-light); padding:2rem; text-align:center; font-size:8.5pt; color:var(--kb-brown); margin-top:60px;">
+    <footer style="border-top:1px solid var(--border-light); padding:2rem; text-align:center; font-size:12px; color:var(--kb-brown); margin-top:60px;">
         <p>© 2026 KBSV NextGen x FinPeace Online Learning Hub. Thiết kế thực chiến bởi Sở Giao Dịch 3 (HO3) KB Securities Vietnam.</p>
     </footer>
 
@@ -1759,7 +1763,6 @@
                 const card = document.createElement('div');
                 card.className = 'day-card';
                 
-                let statusSvg = '';
                 if (lesson.id < currentSimulatedDay) {
                     card.classList.add('completed');
                     statusSvg = `
@@ -1769,6 +1772,7 @@
                     `;
                 } else if (lesson.id === currentSimulatedDay) {
                     card.classList.add('active-day');
+                    statusSvg = '';
                 } else {
                     card.classList.add('locked');
                     statusSvg = `
@@ -1847,6 +1851,7 @@
                 .replace(/^# (.*$)/gim, '<h1 style="font-size:14pt; color:var(--kb-brown-dark); margin-bottom:12px;">$1</h1>')
                 .replace(/^## (.*$)/gim, '<h2 style="font-size:11.5pt; color:var(--text-primary); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-top:18px;">$1</h2>')
                 .replace(/^### (.*$)/gim, '<h3 style="font-size:10pt; color:var(--kb-brown); margin-top:14px;">$1</h3>')
+                .replace(/\*\frac{.*?}{.*?}/gim, '<strong>$1</strong>')
                 .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/gim, '<em>$1</em>')
                 .replace(/`([^`]+)`/gim, '<code style="background:rgba(245,166,35,0.08); padding:2px 5px; border-radius:4px; font-family:monospace; font-size:9pt;">$1</code>')
