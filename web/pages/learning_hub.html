@@ -389,37 +389,30 @@
         }
 
         .week-tabs {
-            display: flex;
-            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
             list-style: none;
-            overflow-x: auto;
             padding-bottom: 8px;
             border-bottom: 2px solid var(--border-light);
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-
-        .week-tabs::-webkit-scrollbar {
-            display: none;
         }
 
         .week-tab-btn {
             background: transparent;
             border: none;
-            padding: 10px 16px;
+            padding: 8px 12px;
             font-family: var(--font-display);
-            font-size: 13.5px;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
-            white-space: nowrap;
             border-radius: 12px;
             transition: all 0.2s;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 4px;
             align-items: flex-start;
-            min-width: 180px;
+            width: 100%;
             border: 1px solid transparent;
         }
 
@@ -758,96 +751,96 @@
             padding: 10px 14px;
         }
 
-        /* ── INTERACTIVE LESSON MODAL OVERLAY ── */
+        /* ── INTERACTIVE LESSON FULL-SCREEN OVERLAY ── */
         .lesson-modal-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(26, 26, 26, 0.6);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            z-index: 2000;
-            padding: 1.5rem;
-        }
-
-        .lesson-modal-card {
             background: var(--bg-warm);
-            border: 2px solid var(--kb-brown);
-            border-radius: 24px;
-            max-width: 1100px;
-            width: 100%;
-            height: 88vh;
-            display: grid;
-            grid-template-columns: 2.2fr 0.8fr;
-            box-shadow: 0 30px 60px rgba(92, 75, 55, 0.2);
-            overflow: hidden;
-            animation: modalPopUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            position: relative;
+            display: none;
+            flex-direction: column;
+            z-index: 2000;
+            padding: 0;
         }
 
-        @keyframes modalPopUp {
-            from { opacity: 0; transform: scale(0.96) translateY(10px); }
-            to { opacity: 1; transform: scale(1) translateY(0); }
-        }
-
-        .close-modal-btn {
-            position: absolute;
-            top: 15px; right: 15px;
-            width: 32px; height: 32px;
-            border-radius: 50%;
-            border: 1px solid var(--border);
+        .full-screen-header {
+            height: 64px;
             background: #fff;
-            font-size: 10pt;
-            font-weight: 800;
-            cursor: pointer;
-            z-index: 10;
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            flex-shrink: 0;
+        }
+
+        .back-to-roadmap-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             transition: all 0.2s;
         }
 
-        .close-modal-btn:hover {
+        .back-to-roadmap-btn:hover {
             background: var(--bg-warm);
             border-color: var(--kb-brown-dark);
         }
 
+        .full-screen-title-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .full-screen-badge {
+            font-family: var(--font-display);
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--kb-yellow-dark);
+        }
+
+        .full-screen-title {
+            font-family: var(--font-display);
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .full-screen-doc-code {
+            font-size: 12px;
+            color: var(--kb-brown);
+            font-weight: 600;
+        }
+
+        .lesson-modal-card {
+            background: var(--bg-warm);
+            border: none;
+            border-radius: 0;
+            width: 100vw;
+            height: calc(100vh - 64px);
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            box-shadow: none;
+            overflow: hidden;
+            position: relative;
+        }
+
         /* Modal Left Panel: Header, Content, Tabs */
         .modal-left {
-            padding: 2rem;
+            padding: 2rem 3rem;
             display: flex;
             flex-direction: column;
             border-right: 1px solid var(--border);
             height: 100%;
             overflow: hidden;
-        }
-
-        .modal-header-box {
-            margin-bottom: 12px;
-            padding-right: 25px;
-        }
-
-        .modal-day-badge {
-            font-family: var(--font-display);
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--kb-yellow-dark);
-            text-transform: uppercase;
-        }
-
-        .modal-lesson-title {
-            font-size: 20px;
-            color: var(--text-primary);
-            line-height: 1.3;
-            margin-top: 2px;
-        }
-
-        .modal-doc-code {
-            font-size: 11.5px;
-            color: var(--kb-brown);
-            font-weight: 600;
+            background: #fff;
         }
 
         /* Checklist tracker row style */
@@ -937,51 +930,85 @@
         .lesson-tab-content-container {
             flex-grow: 1;
             overflow-y: auto;
-            padding: 10px 15px;
+            padding: 1.5rem 2rem;
             background: #fff;
             border: 1px solid var(--border-light);
-            border-radius: 12px;
+            border-radius: 16px;
             margin-bottom: 10px;
+            box-shadow: 0 4px 20px rgba(92, 75, 55, 0.02);
         }
 
-        /* Theory formatting inside modal */
-        .markdown-rendered-view {
-            font-size: 14px;
-            line-height: 1.6;
-            color: var(--text-primary);
-            padding: 10px 0;
-        }
-
-        .markdown-rendered-view h1, .markdown-rendered-view h2, .markdown-rendered-view h3 {
-            color: var(--text-primary);
-            margin: 18px 0 10px;
+        /* Clean article styling */
+        .article-h1 {
             font-family: var(--font-display);
+            font-size: 28px;
+            color: var(--kb-brown-dark);
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            font-weight: 800;
         }
 
-        .markdown-rendered-view h2 {
+        .article-h2 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            color: var(--text-primary);
+            border-left: 4px solid var(--kb-yellow);
+            padding-left: 12px;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .article-h3 {
+            font-family: var(--font-display);
             font-size: 16px;
-            border-left: 3px solid var(--kb-yellow);
-            padding-left: 8px;
-            margin-top: 18px;
-            margin-bottom: 10px;
-        }
-
-        .markdown-rendered-view blockquote {
-            background: var(--bg-warm);
-            border-left: 3px solid var(--kb-yellow);
-            padding: 8px 12px;
-            margin: 12px 0;
-            font-style: italic;
-        }
-
-        .markdown-rendered-view ul {
-            list-style: disc;
-            padding-left: 20px;
+            color: var(--kb-brown-dark);
+            margin-top: 24px;
             margin-bottom: 12px;
+            font-weight: 700;
         }
 
-        .markdown-rendered-view li {
-            margin-bottom: 4px;
+        .article-p {
+            font-size: 15.5px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-blockquote {
+            background: var(--bg-warm);
+            border-left: 4px solid var(--kb-yellow);
+            padding: 14px 20px;
+            margin: 24px 0;
+            font-style: italic;
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            border-radius: 4px;
+        }
+
+        .article-ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .article-ul li {
+            font-size: 15.5px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .article-code {
+            background: rgba(245, 166, 35, 0.08);
+            color: var(--kb-brown-dark);
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: 600;
         }
 
         /* Modal Right Panel: Cheatsheets, Quiz, Mascot Feedback */
@@ -990,7 +1017,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            background: #fff;
+            background: var(--bg-warm);
             height: 100%;
             overflow-y: auto;
         }
@@ -1029,7 +1056,7 @@
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 15px;
-            background: var(--bg-warm);
+            background: #fff;
         }
 
         .quiz-title {
@@ -1161,8 +1188,8 @@
             }
             .lesson-modal-card {
                 grid-template-columns: 1fr;
-                height: 92vh;
-                overflow-y: auto;
+                height: auto;
+                overflow: visible;
             }
             .modal-left {
                 border-right: none;
@@ -1175,9 +1202,6 @@
                 height: auto;
                 overflow: visible;
                 padding: 1.5rem;
-            }
-            .lesson-tab-content-container {
-                max-height: 400px;
             }
         }
 
@@ -1231,6 +1255,19 @@
             }
             .roadmap-grid {
                 grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+            .week-tabs {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile (2 rows total) */
+                gap: 6px;
+            }
+            .full-screen-header {
+                padding: 0 1rem;
+            }
+            .full-screen-title {
+                font-size: 14px;
+            }
+            .full-screen-doc-code {
+                display: none;
             }
         }
     </style>
@@ -1437,19 +1474,30 @@
         </div>
     </div>
 
-    <!-- ── 4. INTERACTIVE LESSON MODAL OVERLAY ── -->
+    <!-- ── 4. INTERACTIVE LESSON FULL-SCREEN OVERLAY ── -->
     <div class="lesson-modal-overlay" id="lessonModal">
+        <!-- Top navigation and header -->
+        <div class="full-screen-header">
+            <button class="back-to-roadmap-btn" onclick="closeLessonModal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px; display:inline-block; vertical-align:middle;">
+                    <line x1="19" y1="12" x2="5" y2="12"/>
+                    <polyline points="12 19 5 12 12 5"/>
+                </svg>
+                Quay lại Lộ trình
+            </button>
+            <div class="full-screen-title-box">
+                <span class="full-screen-badge" id="mDayCode">NGÀY 23 (D23)</span>
+                <span style="color:var(--border-light); font-weight:300;">|</span>
+                <span class="full-screen-title" id="mLessonTitle">Đòn Bẩy Margin & Công Thức Tính RTT</span>
+                <span style="color:var(--border-light); font-weight:300;">|</span>
+                <span class="full-screen-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</span>
+            </div>
+            <div style="width: 150px;"></div> <!-- Spacer alignment -->
+        </div>
+
         <div class="lesson-modal-card">
-            <button class="close-modal-btn" onclick="closeLessonModal()">✕</button>
-            
             <!-- Left Area: Markdown Reader & Tabs -->
             <div class="modal-left">
-                <div class="modal-header-box">
-                    <div class="modal-day-badge" id="mDayCode">NGÀY 23 (D23)</div>
-                    <h2 class="modal-lesson-title" id="mLessonTitle">Đòn Bẩy Margin & Công Thức Tính RTT</h2>
-                    <div class="modal-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</div>
-                </div>
-
                 <!-- Checklist tracker row -->
                 <div class="modal-checklist-row">
                     <div class="checklist-item" id="chkTheory">
@@ -1494,7 +1542,7 @@
                     </button>
                 </div>
 
-                <!-- Dynamic Content Display -->
+                <!-- Dynamic Content Display (Clean Article layout) -->
                 <div class="lesson-tab-content-container">
                     <div class="markdown-rendered-view" id="lessonBodyArea">
                         Đang tải nội dung bài học...
@@ -1584,14 +1632,14 @@
             { id: 42, week: 6, code: "D42", title: "Tổng Kết Toàn Chương Trình & Kế Hoạch 90 Ngày Bứt Phá", file: "D42-tong-ket-va-dong-hoa-tai-nguyen.md", doc: "DT-42", points: ["Đồng hóa toàn bộ tài nguyên NextGen", "Kế hoạch hành động 90 ngày bứt phá đầu tiên", "Duy trì kỷ luật làm việc mỗi ngày"] }
         ];
 
-        // Weekly topics details names
-        const weekNames = [
-            "Tuần 1: Tư Duy Tích Sản",
-            "Tuần 2: 6 Bước Tư Vấn",
-            "Tuần 3: Quy Chế & Lương",
-            "Tuần 4: Quản Trị Margin & Phái Sinh",
-            "Tuần 5: Phân Tích TA & KOC Lab",
-            "Tuần 6: Zalo & Tốt Nghiệp"
+        // Weekly topics display names (Short subtitles for compact tab buttons)
+        const weekTitlesOnly = [
+            "Tư Duy Tích Sản",
+            "6 Bước Tư Vấn",
+            "Quy Chế & Lương",
+            "Margin & Phái Sinh",
+            "TA & KOC Lab",
+            "Zalo & Tốt Nghiệp"
         ];
 
         // Custom quizzes database
@@ -1791,6 +1839,14 @@
             updateDashboardUI();
         }
 
+        // Filter week action
+        function filterWeek(weekNum) {
+            activeWeekFilter = weekNum;
+            renderWeekTabs();
+            renderWeekProgressHeader();
+            renderRoadmapGrid();
+        }
+
         function logout() {
             localStorage.clear();
             currentUser = null;
@@ -1866,13 +1922,7 @@
             renderRoadmapGrid();
         }
 
-        function filterWeek(weekNum) {
-            activeWeekFilter = weekNum;
-            renderWeekTabs();
-            renderWeekProgressHeader();
-            renderRoadmapGrid();
-        }
-
+        // Render the dynamic 6 week tabs with a compact grid design
         function renderWeekTabs() {
             const container = document.getElementById('weekTabsContainer');
             container.innerHTML = '';
@@ -1884,17 +1934,21 @@
                 const pct = (completedCount / totalCount) * 100;
                 
                 const li = document.createElement('li');
+                li.style.width = "100%";
                 const isActive = w === activeWeekFilter;
                 
                 li.innerHTML = `
-                    <button class="week-tab-btn ${isActive ? 'active' : ''}" onclick="filterWeek(${w})">
-                        <div style="display:flex; justify-content:space-between; width:100%; gap:15px; align-items:center;">
-                            <span>${weekNames[w-1]}</span>
-                            <span style="font-size:11px; font-weight:700; color:${completedCount === totalCount ? 'var(--success-color)' : 'var(--text-secondary)'};">
+                    <button class="week-tab-btn ${isActive ? 'active' : ''}" onclick="filterWeek(${w})" style="width: 100%;">
+                        <div style="display:flex; justify-content:space-between; width:100%; align-items:center; font-size:11.5px;">
+                            <span style="font-weight: 800; color: var(--text-primary);">Tuần ${w}</span>
+                            <span style="font-weight:700; color:${completedCount === totalCount ? 'var(--success-color)' : 'var(--text-secondary)'};">
                                 ${completedCount}/${totalCount}
                             </span>
                         </div>
-                        <div class="tab-mini-progress-bg">
+                        <div style="font-size:11px; font-weight:600; color:var(--text-secondary); text-align:left; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; width:100%;">
+                            ${weekTitlesOnly[w-1]}
+                        </div>
+                        <div class="tab-mini-progress-bg" style="margin-top:2px;">
                             <div class="tab-mini-progress-bar" style="width: ${pct}%"></div>
                         </div>
                     </button>
@@ -2080,18 +2134,98 @@
             // Strip any remaining Unicode emojis from the markdown rendering source text
             md = md.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2700}-\u{27BF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]/gu, '');
             
-            return md
-                .replace(/^# (.*$)/gim, '<h1 style="font-size:14pt; color:var(--kb-brown-dark); margin-bottom:12px;">$1</h1>')
-                .replace(/^## (.*$)/gim, '<h2 style="font-size:11.5pt; color:var(--text-primary); border-left:3px solid var(--kb-yellow); padding-left:8px; margin-top:18px; margin-bottom:10px;">$1</h2>')
-                .replace(/^### (.*$)/gim, '<h3 style="font-size:10pt; color:var(--kb-brown); margin-top:14px;">$1</h3>')
-                .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
-                .replace(/\*(.*?)\*/gim, '<em>$1</em>')
-                .replace(/`([^`]+)`/gim, '<code style="background:rgba(245,166,35,0.08); padding:2px 5px; border-radius:4px; font-family:monospace; font-size:9pt;">$1</code>')
-                .replace(/^>\s*\[!IMPORTANT\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--danger-color); background:rgba(224,80,80,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>CẢNH BÁO TUÂN THỦ:</strong>')
-                .replace(/^>\s*\[!WARNING\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--warning-color); background:rgba(255,152,0,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>CHÚ Ý:</strong>')
-                .replace(/^>\s*(.*?)$/gim, '<blockquote style="border-left:4px solid var(--kb-yellow); background:var(--bg-warm); padding:10px 15px; margin:15px 0; font-style:italic;">$1</blockquote>')
-                .replace(/\n\n/g, '<br>')
-                .replace(/\n/g, '<br>');
+            // Normalize line endings and split into paragraphs/blocks
+            const lines = md.split(/\r?\n/);
+            let html = '';
+            let inList = false;
+            let inQuote = false;
+            
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+                
+                // Skip empty lines, but close open tags if needed
+                if (line === '') {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    continue;
+                }
+                
+                // Handle Headings
+                if (line.startsWith('# ')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    html += `<h1 class="article-h1">${line.substring(2)}</h1>`;
+                    continue;
+                }
+                if (line.startsWith('## ')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    html += `<h2 class="article-h2">${line.substring(3)}</h2>`;
+                    continue;
+                }
+                if (line.startsWith('### ')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    html += `<h3 class="article-h3">${line.substring(4)}</h3>`;
+                    continue;
+                }
+                
+                // Handle blockquotes
+                if (line.startsWith('>')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    let quoteContent = line.substring(1).trim();
+                    
+                    // Handle specific admonition blocks
+                    if (quoteContent.startsWith('[!IMPORTANT]')) {
+                        quoteContent = '<strong>CẢNH BÁO TUÂN THỦ:</strong> ' + quoteContent.replace('[!IMPORTANT]', '').trim();
+                    } else if (quoteContent.startsWith('[!WARNING]')) {
+                        quoteContent = '<strong>CHÚ Ý:</strong> ' + quoteContent.replace('[!WARNING]', '').trim();
+                    }
+                    
+                    if (!inQuote) {
+                        html += `<blockquote class="article-blockquote">${quoteContent}`;
+                        inQuote = true;
+                    } else {
+                        html += `<br>${quoteContent}`;
+                    }
+                    continue;
+                } else {
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                }
+                
+                // Handle list items
+                if (line.startsWith('* ') || line.startsWith('- ')) {
+                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    if (!inList) {
+                        html += '<ul class="article-ul">';
+                        inList = true;
+                    }
+                    let itemText = line.substring(2).trim();
+                    itemText = applyInlineFormatting(itemText);
+                    html += `<li>${itemText}</li>`;
+                    continue;
+                }
+                
+                // Standard paragraph
+                if (inList) { html += '</ul>'; inList = false; }
+                if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                
+                let paragraphText = applyInlineFormatting(line);
+                html += `<p class="article-p">${paragraphText}</p>`;
+            }
+            
+            // Close any remaining open tags
+            if (inList) html += '</ul>';
+            if (inQuote) html += '</blockquote>';
+            
+            return html;
+        }
+
+        function applyInlineFormatting(text) {
+            return text
+                .replace(/\*\/(.*?)\*\//g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/`([^`]+)`/g, '<code class="article-code">$1</code>');
         }
 
         function switchLessonTab(tabName, btn) {
