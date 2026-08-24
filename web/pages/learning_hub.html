@@ -43,7 +43,7 @@
             background-color: var(--bg-warm);
             color: var(--text-primary);
             line-height: 1.6;
-            font-size: 16px;
+            font-size: 15px;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -57,8 +57,8 @@
             position: fixed;
             top: 0; left: 0; right: 0;
             z-index: 1000;
-            height: 80px;
-            padding: 0 2.5rem;
+            height: 76px;
+            padding: 0 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -71,29 +71,29 @@
         .npv-nav-brand {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
             text-decoration: none;
         }
 
         .npv-logos-box {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .logo-main {
-            height: 32px;
+            height: 28px;
             object-fit: contain;
         }
 
         .logo-divider {
             width: 1px;
-            height: 22px;
+            height: 20px;
             background: var(--border);
         }
 
         .logo-sub {
-            height: 20px;
+            height: 18px;
             object-fit: contain;
             opacity: 0.85;
         }
@@ -105,14 +105,14 @@
 
         .brand-meta .title {
             font-family: var(--font-display);
-            font-size: 13pt;
+            font-size: 11pt;
             font-weight: 800;
             color: var(--text-primary);
             line-height: 1;
         }
 
         .brand-meta .sub {
-            font-size: 8.5pt;
+            font-size: 8pt;
             color: var(--kb-brown);
             font-weight: 600;
             letter-spacing: 0.3px;
@@ -120,14 +120,14 @@
 
         .npv-nav-links {
             display: flex;
-            gap: 36px;
+            gap: 30px;
             list-style: none;
         }
 
         .npv-nav-link {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 11pt;
+            font-size: 10pt;
             font-weight: 600;
             transition: color 0.2s;
         }
@@ -137,13 +137,13 @@
         }
 
         .btn-primary {
-            padding: 12px 28px;
+            padding: 10px 24px;
             border-radius: 50px;
             background: linear-gradient(135deg, var(--kb-yellow), var(--kb-yellow-dark));
             color: #fff;
             border: none;
             cursor: pointer;
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: 700;
             box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
             transition: all 0.25s ease;
@@ -159,13 +159,13 @@
         }
 
         .btn-secondary {
-            padding: 12px 28px;
+            padding: 10px 24px;
             border-radius: 50px;
             background: #fff;
             color: var(--text-primary);
             border: 1px solid var(--border);
             cursor: pointer;
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: 700;
             transition: all 0.2s;
             text-decoration: none;
@@ -179,14 +179,14 @@
             border-color: var(--kb-brown);
         }
 
-        /* ── SECTION: HOMEPAGE INTRO (Pre-login) ── */
+        /* ── HOMEPAGE HERO (Pre-login) ── */
         .homepage-hero {
-            padding: 140px 2.5rem 80px;
+            padding: 130px 2rem 60px;
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 4rem;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 3rem;
             align-items: center;
         }
 
@@ -202,20 +202,20 @@
             gap: 8px;
             background: rgba(245, 166, 35, 0.08);
             border: 1px solid rgba(245, 166, 35, 0.3);
-            padding: 8px 18px;
+            padding: 6px 16px;
             border-radius: 50px;
-            font-size: 9pt;
+            font-size: 8.5pt;
             font-weight: 700;
             color: var(--kb-brown-dark);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             width: fit-content;
         }
 
         .hero-title {
-            font-size: clamp(32px, 5vw, 54px);
+            font-size: clamp(30px, 4.5vw, 48px);
             line-height: 1.15;
             color: var(--text-primary);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .hero-title span {
@@ -225,9 +225,9 @@
         }
 
         .hero-desc {
-            font-size: 12.5pt;
+            font-size: 11.5pt;
             color: var(--text-secondary);
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
 
         .hero-actions {
@@ -238,21 +238,21 @@
         .hero-right-card {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 2.5rem;
+            border-radius: 20px;
+            padding: 2.25rem;
             box-shadow: var(--shadow-soft);
         }
 
         .features-list {
-            margin-top: 20px;
+            margin-top: 15px;
             list-style: none;
         }
 
         .features-list li {
             position: relative;
-            padding-left: 24px;
-            margin-bottom: 16px;
-            font-size: 11pt;
+            padding-left: 22px;
+            margin-bottom: 14px;
+            font-size: 10pt;
             color: var(--text-secondary);
         }
 
@@ -264,37 +264,37 @@
             font-weight: 900;
         }
 
-        /* ── LOG-IN / MASCOT SELECTOR SECTION ── */
+        /* ── LOGIN / MASCOT SELECTOR ── */
         .login-section {
             display: none;
-            max-width: 580px;
-            margin: 140px auto 80px;
+            max-width: 560px;
+            margin: 130px auto 60px;
             background: #fff;
             border: 1px solid var(--border);
             border-radius: 24px;
-            padding: 3rem;
+            padding: 2.5rem;
             box-shadow: var(--shadow-soft);
             animation: fadeIn 0.4s ease forwards;
         }
 
         .form-group {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
             display: block;
-            font-size: 10.5pt;
+            font-size: 10pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .form-control {
             width: 100%;
-            padding: 14px 18px;
+            padding: 12px 16px;
             border: 1px solid var(--border);
-            border-radius: 12px;
-            font-size: 11pt;
+            border-radius: 10px;
+            font-size: 10pt;
             font-family: var(--font-body);
             background: var(--bg-warm);
             transition: all 0.2s;
@@ -310,15 +310,15 @@
         .mascot-select-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 15px;
-            margin-bottom: 28px;
+            gap: 12px;
+            margin-top: 12px;
+            margin-bottom: 24px;
         }
 
         .mascot-select-card {
             border: 1px solid var(--border-light);
-            border-radius: 16px;
-            padding: 15px 10px;
+            border-radius: 14px;
+            padding: 12px 8px;
             text-align: center;
             cursor: pointer;
             transition: all 0.2s;
@@ -333,70 +333,76 @@
         .mascot-select-card.active {
             border-color: var(--kb-yellow-dark);
             background: var(--kb-yellow-light);
-            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.15);
+            box-shadow: 0 4px 12px rgba(245, 166, 35, 0.12);
         }
 
         .mascot-select-avatar {
-            width: 72px;
-            height: 72px;
+            width: 64px;
+            height: 64px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             background: #fff;
             border: 1px solid var(--border-light);
         }
 
         .mascot-select-name {
-            font-size: 10pt;
+            font-size: 9.5pt;
             font-weight: 700;
             color: var(--text-primary);
         }
 
         .mascot-select-track {
-            font-size: 8pt;
+            font-size: 7.5pt;
             color: var(--text-secondary);
         }
 
-        /* ── LEARNER DASHBOARD (Authenticated View) ── */
+        /* ── LEARNER DASHBOARD (Grid fix to avoid overlapping) ── */
         .dashboard-container {
             display: none;
-            max-width: 1200px;
-            margin: 110px auto 80px;
-            padding: 0 2rem;
+            max-width: 1360px;
+            margin: 100px auto 60px;
+            padding: 0 1.5rem;
             animation: fadeIn 0.4s ease forwards;
+            width: 100%;
         }
 
         .dashboard-grid {
             display: grid;
-            grid-template-columns: 1.95fr 1.05fr;
-            gap: 2.5rem;
+            grid-template-columns: 1fr 340px; /* Left takes space, right is strictly 340px */
+            gap: 2rem;
+            align-items: start;
         }
 
-        /* Left Side: Roadmap & Weekly tabs */
+        /* Left Side: Weekly Tabs & 42 Day Cards */
+        .left-panel {
+            min-width: 0; /* Important to prevent flex/grid blow-out */
+        }
+
         .weekly-tabs-container {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .week-tabs {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             list-style: none;
             overflow-x: auto;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             border-bottom: 2px solid var(--border-light);
         }
 
         .week-tab-btn {
             background: transparent;
             border: none;
-            padding: 10px 20px;
+            padding: 8px 16px;
             font-family: var(--font-display);
-            font-size: 10.5pt;
+            font-size: 9.5pt;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
             white-space: nowrap;
-            border-radius: 10px;
+            border-radius: 8px;
             transition: all 0.2s;
         }
 
@@ -405,26 +411,27 @@
             background: var(--kb-yellow-light);
         }
 
-        /* Roadmap Grid */
+        /* Roadmap Grid - Cards fit in screen */
         .roadmap-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         .day-card {
             background: #fff;
             border: 1px solid var(--border-light);
             border-radius: 16px;
-            padding: 18px;
+            padding: 16px;
             cursor: pointer;
             transition: all 0.25s ease;
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            min-height: 120px;
+            justify-content: flex-start;
+            min-height: 195px; /* Taller card to prevent overflow */
+            box-shadow: 0 2px 10px rgba(92, 75, 55, 0.02);
         }
 
         .day-card:hover {
@@ -432,7 +439,7 @@
             box-shadow: var(--shadow-soft);
         }
 
-        /* Day Statuses */
+        /* Day Card Statuses */
         .day-card.completed {
             background: #fff;
             border-color: rgba(76, 175, 80, 0.4);
@@ -442,9 +449,9 @@
             content: "✓";
             color: var(--success-color);
             position: absolute;
-            top: 14px; right: 18px;
+            top: 14px; right: 16px;
             font-weight: 900;
-            font-size: 11pt;
+            font-size: 10pt;
         }
 
         .day-card.active-day {
@@ -454,21 +461,16 @@
             animation: activeGlow 2s infinite ease-in-out;
         }
 
-        @keyframes activeGlow {
-            0%, 100% { box-shadow: 0 0 10px rgba(245, 166, 35, 0.15); }
-            50% { box-shadow: 0 0 20px rgba(245, 166, 35, 0.35); }
-        }
-
         .day-card.active-day::after {
             content: "Đang học";
             background: var(--kb-yellow-dark);
             color: #fff;
-            font-size: 6.5pt;
+            font-size: 6pt;
             font-weight: 800;
-            padding: 3px 8px;
-            border-radius: 6px;
+            padding: 2px 6px;
+            border-radius: 4px;
             position: absolute;
-            top: 14px; right: 18px;
+            top: 14px; right: 16px;
             text-transform: uppercase;
         }
 
@@ -482,56 +484,83 @@
         .day-card.locked::after {
             content: "🔒";
             position: absolute;
-            top: 14px; right: 18px;
-            font-size: 10pt;
+            top: 14px; right: 16px;
+            font-size: 9pt;
         }
 
         .day-code {
             font-family: var(--font-display);
-            font-size: 10pt;
+            font-size: 9.5pt;
             font-weight: 700;
             color: var(--kb-brown);
         }
 
         .day-title {
-            font-size: 10pt;
+            font-size: 9.5pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-top: 8px;
-            line-height: 1.4;
+            margin-top: 6px;
+            line-height: 1.35;
         }
 
-        /* Right Side Panels: Mascot, Stats, Sudden Death */
+        /* 3 Bullet Points styled cleanly inside the day card */
+        .day-bullets {
+            margin-top: 10px;
+            padding-left: 0;
+            list-style: none;
+            border-top: 1px solid var(--border-light);
+            padding-top: 8px;
+        }
+
+        .day-bullets li {
+            font-size: 8pt;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 12px;
+            line-height: 1.3;
+        }
+
+        .day-bullets li::before {
+            content: "•";
+            color: var(--kb-yellow-dark);
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+        }
+
+        /* Right Side Panel styling */
         .right-side-panel {
             display: flex;
             flex-direction: column;
-            gap: 1.75rem;
+            gap: 1.5rem;
+            width: 340px;
         }
 
         /* Gamification Status Card */
         .gamify-status-card {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 1.75rem;
+            border-radius: 18px;
+            padding: 1.5rem;
             box-shadow: var(--shadow-soft);
         }
 
         .status-row {
             display: flex;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 16px;
+            gap: 12px;
+            margin-bottom: 12px;
         }
 
         .status-badge {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18pt;
+            font-size: 16pt;
             background: var(--bg-warm);
             border: 1px solid var(--border-light);
         }
@@ -542,54 +571,53 @@
         }
 
         .status-lbl {
-            font-size: 8.5pt;
+            font-size: 8pt;
             color: var(--text-secondary);
             font-weight: 600;
             text-transform: uppercase;
         }
 
         .status-val {
-            font-size: 11.5pt;
+            font-size: 10.5pt;
             font-weight: 800;
             color: var(--text-primary);
         }
 
-        /* Sudden Death Motion Graphic Widget */
+        /* Sudden Death Panel */
         .sudden-death-panel {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 1.75rem;
+            border-radius: 18px;
+            padding: 1.5rem;
             box-shadow: var(--shadow-soft);
-            position: relative;
-            overflow: hidden;
         }
 
         .sd-title {
             font-family: var(--font-display);
-            font-size: 10pt;
+            font-size: 9.5pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .sd-graphic-box {
             display: flex;
             align-items: center;
-            gap: 18px;
-            margin-bottom: 10px;
+            gap: 15px;
+            margin-bottom: 8px;
         }
 
-        /* Radar Pulse Ring for Sudden Death Status */
+        /* Radar Pulse Ring */
         .sd-pulse-ring {
             position: relative;
-            width: 36px;
-            height: 36px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             background: var(--success-color);
+            flex-shrink: 0;
         }
 
         .sd-pulse-ring.amber {
@@ -624,49 +652,54 @@
         }
 
         .sd-status-text {
-            font-size: 10pt;
+            font-size: 9pt;
             font-weight: 700;
             color: var(--text-primary);
         }
 
         .sd-desc {
-            font-size: 9pt;
+            font-size: 8.5pt;
             color: var(--text-secondary);
-            line-height: 1.45;
+            line-height: 1.4;
         }
 
-        /* Interactive Mascot Advisor Box */
+        /* Mascot Advisor Widget - Correcting text squishing */
         .mascot-advisor-panel {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 1.75rem;
+            border-radius: 18px;
+            padding: 1.5rem;
             box-shadow: var(--shadow-soft);
-            display: grid;
-            grid-template-columns: 90px 1fr;
-            gap: 18px;
+            display: flex;
+            flex-direction: row; /* Horizontal alignment */
             align-items: center;
+            gap: 15px;
         }
 
         .mascot-character-img {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             object-fit: cover;
             border-radius: 50%;
-            border: 2.5px solid var(--kb-yellow);
+            border: 2px solid var(--kb-yellow);
             background: var(--bg-warm);
+            flex-shrink: 0; /* Prevent the mascot image from shrinking */
         }
 
         .mascot-bubble {
             background: var(--bg-warm);
             border: 1px solid var(--border-light);
-            border-radius: 14px;
-            padding: 12px 16px;
+            border-radius: 12px;
+            padding: 10px 14px;
             position: relative;
-            font-size: 9.5pt;
+            font-size: 8.8pt;
             font-weight: 600;
             color: var(--text-secondary);
             line-height: 1.45;
+            flex-grow: 1; /* Stretch bubble */
+            min-width: 170px; /* Avoid collapsing horizontally */
+            word-break: normal; /* Standard word breaking */
+            white-space: normal;
         }
 
         .mascot-bubble::after {
@@ -675,8 +708,8 @@
             left: -8px;
             top: 50%;
             transform: translateY(-50%) rotate(45deg);
-            width: 16px;
-            height: 16px;
+            width: 12px;
+            height: 12px;
             background: var(--bg-warm);
             border-left: 1px solid var(--border-light);
             border-bottom: 1px solid var(--border-light);
@@ -686,9 +719,8 @@
         .debug-panel {
             background: rgba(92, 75, 55, 0.04);
             border: 1px dashed var(--kb-brown);
-            border-radius: 14px;
-            padding: 12px 16px;
-            margin-top: 15px;
+            border-radius: 12px;
+            padding: 10px 14px;
         }
 
         /* ── INTERACTIVE LESSON MODAL OVERLAY ── */
@@ -709,11 +741,11 @@
             background: var(--bg-warm);
             border: 2px solid var(--kb-brown);
             border-radius: 24px;
-            max-width: 1150px;
+            max-width: 1100px;
             width: 100%;
             height: 88vh;
             display: grid;
-            grid-template-columns: 2.15fr 0.85fr;
+            grid-template-columns: 2.2fr 0.8fr;
             box-shadow: 0 30px 60px rgba(92, 75, 55, 0.2);
             overflow: hidden;
             animation: modalPopUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -727,12 +759,12 @@
 
         .close-modal-btn {
             position: absolute;
-            top: 16px; right: 16px;
-            width: 36px; height: 36px;
+            top: 15px; right: 15px;
+            width: 32px; height: 32px;
             border-radius: 50%;
             border: 1px solid var(--border);
             background: #fff;
-            font-size: 11pt;
+            font-size: 10pt;
             font-weight: 800;
             cursor: pointer;
             z-index: 10;
@@ -749,7 +781,7 @@
 
         /* Modal Left Panel: Header, Content, Tabs */
         .modal-left {
-            padding: 2.5rem;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             border-right: 1px solid var(--border);
@@ -758,27 +790,27 @@
         }
 
         .modal-header-box {
-            margin-bottom: 16px;
-            padding-right: 30px;
+            margin-bottom: 12px;
+            padding-right: 25px;
         }
 
         .modal-day-badge {
             font-family: var(--font-display);
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             font-weight: 700;
             color: var(--kb-yellow-dark);
             text-transform: uppercase;
         }
 
         .modal-lesson-title {
-            font-size: 16pt;
+            font-size: 14pt;
             color: var(--text-primary);
-            line-height: 1.3;
-            margin-top: 4px;
+            line-height: 1.25;
+            margin-top: 2px;
         }
 
         .modal-doc-code {
-            font-size: 8.5pt;
+            font-size: 7.5pt;
             color: var(--kb-brown);
             font-weight: 600;
         }
@@ -786,17 +818,17 @@
         /* Lesson Tabs */
         .lesson-tabs {
             display: flex;
-            gap: 6px;
+            gap: 4px;
             border-bottom: 2px solid var(--border-light);
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
         .lesson-tab-btn {
             background: transparent;
             border: none;
-            padding: 10px 18px;
+            padding: 8px 15px;
             font-family: var(--font-display);
-            font-size: 10pt;
+            font-size: 8.5pt;
             font-weight: 700;
             color: var(--text-secondary);
             cursor: pointer;
@@ -816,56 +848,57 @@
         .lesson-tab-content-container {
             flex-grow: 1;
             overflow-y: auto;
-            padding: 15px;
+            padding: 10px 5px;
             background: #fff;
             border: 1px solid var(--border-light);
-            border-radius: 14px;
-            margin-bottom: 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
         }
 
         /* Theory formatting inside modal */
         .markdown-rendered-view {
-            font-size: 10.5pt;
-            line-height: 1.6;
+            font-size: 9.5pt;
+            line-height: 1.55;
             color: var(--text-primary);
+            padding: 10px;
         }
 
         .markdown-rendered-view h1, .markdown-rendered-view h2, .markdown-rendered-view h3 {
             color: var(--text-primary);
-            margin: 20px 0 10px;
+            margin: 15px 0 8px;
             font-family: var(--font-display);
         }
 
         .markdown-rendered-view h2 {
-            font-size: 12.5pt;
+            font-size: 11pt;
             border-bottom: 1px solid var(--border-light);
-            padding-bottom: 6px;
+            padding-bottom: 4px;
         }
 
         .markdown-rendered-view blockquote {
             background: var(--bg-warm);
-            border-left: 4px solid var(--kb-yellow);
-            padding: 10px 15px;
-            margin: 15px 0;
+            border-left: 3px solid var(--kb-yellow);
+            padding: 8px 12px;
+            margin: 12px 0;
             font-style: italic;
         }
 
         .markdown-rendered-view ul {
             list-style: disc;
-            padding-left: 24px;
-            margin-bottom: 15px;
+            padding-left: 20px;
+            margin-bottom: 12px;
         }
 
         .markdown-rendered-view li {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         /* Modal Right Panel: Cheatsheets, Quiz, Mascot Feedback */
         .modal-right {
-            padding: 2.5rem 1.75rem;
+            padding: 2rem 1.5rem;
             display: flex;
             flex-direction: column;
-            gap: 1.75rem;
+            gap: 1.5rem;
             background: #fff;
             height: 100%;
             overflow-y: auto;
@@ -875,8 +908,8 @@
         .download-cs-card {
             background: var(--kb-yellow-light);
             border: 1px dashed var(--kb-yellow);
-            border-radius: 16px;
-            padding: 18px;
+            border-radius: 14px;
+            padding: 15px;
             text-align: center;
             transition: all 0.2s;
         }
@@ -888,63 +921,62 @@
 
         .download-cs-title {
             font-family: var(--font-display);
-            font-size: 10.5pt;
+            font-size: 9pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .download-cs-desc {
-            font-size: 8.5pt;
+            font-size: 7.5pt;
             color: var(--text-secondary);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         /* Interactive Quiz Widget */
         .quiz-card {
             border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 18px;
+            border-radius: 16px;
+            padding: 15px;
             background: var(--bg-warm);
         }
 
         .quiz-title {
             font-family: var(--font-display);
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             border-bottom: 1px solid var(--border-light);
-            padding-bottom: 6px;
+            padding-bottom: 4px;
         }
 
         .quiz-question {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 14px;
-            line-height: 1.45;
+            margin-bottom: 10px;
         }
 
         .quiz-options {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
 
         .quiz-option {
             background: #fff;
             border: 1px solid var(--border-light);
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 9pt;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 8pt;
             font-weight: 600;
             color: var(--text-secondary);
             cursor: pointer;
             text-align: left;
             transition: all 0.2s;
-            line-height: 1.4;
+            line-height: 1.35;
         }
 
         .quiz-option:hover {
@@ -962,36 +994,36 @@
             display: none;
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 8.5pt;
+            border-radius: 8px;
+            padding: 8px 10px;
+            font-size: 7.5pt;
             color: var(--text-secondary);
-            margin-top: 12px;
-            line-height: 1.45;
+            margin-top: 10px;
+            line-height: 1.4;
         }
 
-        /* ── INTERACTIVE FINANCIAL CALCULATORS ── */
+        /* calculators */
         .calc-container {
-            padding: 10px;
+            padding: 12px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
 
         .calc-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 12px;
         }
 
         .calc-input-group {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 4px;
         }
 
         .calc-input-group label {
-            font-size: 9pt;
+            font-size: 8pt;
             font-weight: 700;
             color: var(--text-secondary);
         }
@@ -999,47 +1031,42 @@
         .calc-result-box {
             background: var(--bg-warm);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px;
+            border-radius: 10px;
+            padding: 10px;
             margin-top: 10px;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 4px;
         }
 
         .calc-row input {
-            padding: 12px;
+            padding: 10px;
             border: 1px solid var(--border);
-            border-radius: 10px;
-            font-size: 9.5pt;
+            border-radius: 8px;
+            font-size: 8.5pt;
         }
 
         .calc-res-title {
-            font-size: 8.5pt;
+            font-size: 8pt;
             color: var(--text-secondary);
             font-weight: 600;
             text-transform: uppercase;
         }
 
         .calc-res-val {
-            font-size: 13pt;
+            font-size: 11.5pt;
             font-weight: 800;
             color: var(--text-primary);
         }
 
-        /* RESPONSIVE SCALING & MEDIA QUERIES */
+        /* RESPONSIVE SCALING */
         @media (max-width: 1024px) {
-            body {
-                font-size: 15px;
-            }
-            .homepage-hero {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                padding-top: 110px;
-            }
             .dashboard-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* Switch to single column on tablet/mobile */
                 gap: 2rem;
+            }
+            .right-side-panel {
+                width: 100%; /* Take full width on smaller screens */
             }
             .lesson-modal-card {
                 grid-template-columns: 1fr;
@@ -1075,16 +1102,17 @@
                 height: 16px;
             }
             .brand-meta .title {
-                font-size: 10.5pt;
+                font-size: 10pt;
             }
             .brand-meta .sub {
                 font-size: 7.5pt;
             }
             .npv-nav-links {
-                display: none; /* Hide in small mobile devices to save space */
+                display: none;
             }
             .homepage-hero {
                 padding: 100px 1.5rem 40px;
+                grid-template-columns: 1fr;
             }
             .login-section {
                 padding: 2rem 1.5rem;
@@ -1106,16 +1134,12 @@
                 height: 48px;
                 margin-bottom: 0;
             }
-            .mascot-select-info {
-                display: flex;
-                flex-direction: column;
-            }
             .day-card {
-                min-height: 100px;
+                min-height: 180px;
                 padding: 12px;
             }
             .roadmap-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             }
         }
     </style>
@@ -1142,7 +1166,6 @@
         </ul>
 
         <div style="display: flex; align-items: center; gap: 14px;">
-            <!-- Magic Link badge if authenticated -->
             <div id="magicTokenBadge" style="display:none; font-family:var(--font-display); font-size:8.5pt; font-weight:700; color:var(--success-color); background:rgba(76,175,80,0.08); border:1px solid rgba(76,175,80,0.3); padding:4px 12px; border-radius:50px;">
                 Token: ACTIVE_JWT_HO3
             </div>
@@ -1160,13 +1183,13 @@
             <h1 class="hero-title">Trở thành<br><span>Digital Wealth Advisor</span><br>Thế hệ mới</h1>
             <p class="hero-desc">Lộ trình 42 ngày Micro-learning bọc thép kiến thức đầu tư, rèn luyện kỹ năng KOC và khai thác các công cụ Sales AI tối tân cùng Sở Giao Dịch 3 (HO3) KB Securities Vietnam & FinPeace.</p>
             <div class="hero-actions">
-                <button class="btn-primary" style="padding: 14px 36px; font-size: 11pt;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
-                <button class="btn-secondary" style="padding: 14px 36px; font-size: 11pt;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
+                <button class="btn-primary" style="padding: 12px 32px; font-size: 10.5pt;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
+                <button class="btn-secondary" style="padding: 12px 32px; font-size: 10.5pt;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
             </div>
         </div>
 
         <div class="hero-right-card">
-            <h3 style="font-size: 12pt; color: var(--text-primary); border-bottom: 2px solid var(--kb-yellow); padding-bottom: 8px; margin-bottom: 18px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
+            <h3 style="font-size: 11pt; color: var(--text-primary); border-bottom: 2px solid var(--kb-yellow); padding-bottom: 8px; margin-bottom: 18px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
             <ul class="features-list">
                 <li><strong>Thời lượng:</strong> 42 ngày (2 tuần nền tảng + 4 tuần thực chiến)</li>
                 <li><strong>Mục tiêu:</strong> Đào tạo thành Financial KOC đạt chuẩn AUM & eKYC</li>
@@ -1180,8 +1203,8 @@
 
     <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
     <section class="login-section" id="loginSection">
-        <h2 style="font-family:var(--font-display); font-size:14pt; text-align:center; margin-bottom:8px;">ĐĂNG NHẬP</h2>
-        <p style="font-size:9.5pt; color:var(--text-secondary); text-align:center; margin-bottom:24px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
+        <h2 style="font-family:var(--font-display); font-size:13pt; text-align:center; margin-bottom:6px;">ĐĂNG NHẬP</h2>
+        <p style="font-size:9pt; color:var(--text-secondary); text-align:center; margin-bottom:20px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
         
         <div class="form-group">
             <label for="studentEmail">Email Học Viên</label>
@@ -1215,7 +1238,7 @@
             </div>
         </div>
 
-        <button class="btn-primary" style="width:100%; justify-content:center; padding:14px 0; font-size:11pt;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
+        <button class="btn-primary" style="width:100%; justify-content:center; padding:12px 0; font-size:10.5pt;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
     </section>
 
     <!-- ── 3. LEARNER DASHBOARD SECTION ── -->
@@ -1242,7 +1265,7 @@
             <!-- Right Panel: Mascot, Stats, Sudden Death -->
             <div class="right-side-panel">
                 
-                <!-- Mascot Speech Widget -->
+                <!-- Mascot Speech Widget - Stacked and Flex-aligned to prevent narrow text -->
                 <div class="mascot-advisor-panel">
                     <img src="" alt="KB Mascot Companion" class="mascot-character-img" id="mascotAvatarWidget">
                     <div class="mascot-bubble">
@@ -1268,7 +1291,7 @@
                     </div>
                     
                     <div style="margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--border-light);">
-                        <div style="display: flex; justify-content: space-between; font-size: 8.5pt; font-weight: 700; margin-bottom: 6px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 8pt; font-weight: 700; margin-bottom: 6px;">
                             <span style="color: var(--text-secondary);">TÍCH LŨY XP HÔM NAY</span>
                             <span style="color: var(--kb-yellow-dark);" id="xpText">450 / 500 XP</span>
                         </div>
@@ -1278,14 +1301,13 @@
                     </div>
                 </div>
 
-                <!-- Sudden Death Monitoring (Motion Graphic) -->
+                <!-- Sudden Death Monitoring -->
                 <div class="sudden-death-panel">
                     <div class="sd-title">
                         <span style="width:10px; height:10px; border-radius:50%; background:red; display:inline-block; animation: activeGlow 1s infinite;"></span>
                         QUẢN TRỊ SỐNG CÒN (SUDDEN DEATH MONITOR)
                     </div>
                     <div class="sd-graphic-box">
-                        <!-- Custom CSS radar pulse light -->
                         <div class="sd-pulse-ring" id="sdPulseRing"></div>
                         <div class="sd-status-text" id="sdStatusText">TRẠNG THÁI: AN TOÀN (SAFE)</div>
                     </div>
@@ -1294,10 +1316,10 @@
 
                 <!-- Debug/Test day selector -->
                 <div class="debug-panel">
-                    <label style="font-size:8.5pt; font-weight:700; color:var(--kb-brown-dark); display:block; margin-bottom:6px;">CÔNG CỤ KIỂM THỬ TRẠNG THÁI HỌC TẬP</label>
+                    <label style="font-size:8pt; font-weight:700; color:var(--kb-brown-dark); display:block; margin-bottom:6px;">CÔNG CỤ KIỂM THỬ TRẠNG THÁI HỌC TẬP</label>
                     <div style="display:flex; gap:10px; align-items:center;">
-                        <span style="font-size:8.5pt; color:var(--text-secondary);">Mô phỏng ở Ngày:</span>
-                        <select id="debugDaySelect" onchange="simulateProgressChange()" style="font-size:8.5pt; padding:6px; border:1px solid var(--border); border-radius:6px;">
+                        <span style="font-size:8pt; color:var(--text-secondary);">Mô phỏng ở Ngày:</span>
+                        <select id="debugDaySelect" onchange="simulateProgressChange()" style="font-size:8pt; padding:6px; border:1px solid var(--border); border-radius:6px;">
                             <!-- Will fill from JS -->
                         </select>
                     </div>
@@ -1351,7 +1373,7 @@
                     <div class="quiz-title">TRẮC NGHIỆM ĐÁNH GIÁ NĂNG LỰC HÀNG NGÀY</div>
                     <div class="quiz-question" id="qQuestion">Đang tải câu hỏi trắc nghiệm...</div>
                     <div class="quiz-options" id="qOptionsBox"></div>
-                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:10px 0; font-size:9.5pt;">Gửi đáp án (+50 XP)</button>
+                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:10px 0; font-size:9pt;">Gửi đáp án (+50 XP)</button>
                     
                     <div class="quiz-explanation-box" id="quizExplanation"></div>
                 </div>
@@ -1361,61 +1383,61 @@
     </div>
 
     <!-- FOOTER -->
-    <footer style="border-top:1px solid var(--border-light); padding:2.5rem; text-align:center; font-size:9pt; color:var(--kb-brown); margin-top:80px;">
+    <footer style="border-top:1px solid var(--border-light); padding:2rem; text-align:center; font-size:8.5pt; color:var(--kb-brown); margin-top:60px;">
         <p>© 2026 KBSV NextGen x FinPeace Online Learning Hub. Thiết kế thực chiến bởi Sở Giao Dịch 3 (HO3) KB Securities Vietnam.</p>
     </footer>
 
     <!-- JS DATABASE & INTERACTIVITY CODE -->
     <script>
-        // Database of 42 days lessons
+        // Database of 42 days lessons with exact 3 bullet points summaries
         const curriculumDb = [
-            { id: 1, week: 1, code: "D01", title: "Định Vị Chân Dung Broker 4.0 & Khám Phá Vùng Đất Hoang", file: "D01-chan-dung-broker-40.md", doc: "NTD-SV-D01" },
-            { id: 2, week: 1, code: "D02", title: "Tháp Tài Sản 3 Tầng & Phân Bổ Tích Sản Cổ Phiếu ACB", file: "D02-thap-tai-san-3-tang.md", doc: "DT-02" },
-            { id: 3, week: 1, code: "D03", title: "Dòng Thặng Dư Hàng Tháng & Biên An Toàn Tài Chính Cá Nhân", file: "D03-dong-tien-thang-du-bien-an-toan.md", doc: "DT-03" },
-            { id: 4, week: 1, code: "D04", title: "Đọc Nhanh Báo Cáo Tài Chính Bằng Mô Hình BCTC Canvas", file: "D04-doc-nhanh-bctc-canvas.md", doc: "DT-04" },
-            { id: 5, week: 1, code: "D05", title: "Định Giá Cổ Phiếu Theo Công Thức Graham & Economic Moat", file: "D05-dinh-gia-graham-moat.md", doc: "DT-05" },
-            { id: 6, week: 1, code: "D06", title: "Bộ Lọc Piotroski F-Score Đọc Vị Gian Lận Tài Chính", file: "D06-fscore-doc-vi-gian-lan.md", doc: "DT-06" },
-            { id: 7, week: 1, code: "D07", title: "Thiết Lập Kế Hoạch Tích Sản SIP Cổ Phiếu Đều Đặn", file: "D07-tich-san-sip-lai-kep.md", doc: "DT-07" },
+            { id: 1, week: 1, code: "D01", title: "Định Vị Chân Dung Broker 4.0 & Khám Phá Vùng Đất Hoang", file: "D01-chan-dung-broker-40.md", doc: "NTD-SV-D01", points: ["Định hình tư duy Wealth Advisor 4.0", "Khám phá vùng đất hoang dã tài chính", "Phân tích 3 trụ cột thái độ ASK"] },
+            { id: 2, week: 1, code: "D02", title: "Tháp Tài Sản 3 Tầng & Phân Bổ Tích Sản Cổ Phiếu ACB", file: "D02-thap-tai-san-3-tang.md", doc: "DT-02", points: ["Thiết lập Tháp tài sản 3 tầng", "Lựa chọn phân bổ ACB làm ACB SIP", "Quản trị danh mục phòng vệ"] },
+            { id: 3, week: 1, code: "D03", title: "Dòng Thặng Dư Hàng Tháng & Biên An Toàn Tài Chính Cá Nhân", file: "D03-dong-tien-thang-du-bien-an-toan.md", doc: "DT-03", points: ["Tối ưu hóa dòng tiền thặng dư", "Xác định biên an toàn tài chính", "Quy tắc trích lập quỹ dự phòng"] },
+            { id: 4, week: 1, code: "D04", title: "Đọc Nhanh Báo Cáo Tài Chính Bằng Mô Hình BCTC Canvas", file: "D04-doc-nhanh-bctc-canvas.md", doc: "DT-04", points: ["Ứng dụng mô hình BCTC Canvas", "Lọc các chỉ số tài chính trọng yếu", "Phát hiện dấu hiệu rủi ro kế toán"] },
+            { id: 5, week: 1, code: "D05", title: "Định Giá Cổ Phiếu Theo Công Thức Graham & Economic Moat", file: "D05-dinh-gia-graham-moat.md", doc: "DT-05", points: ["Công thức định giá trị thực Graham", "Đánh giá lợi thế cạnh tranh Moat", "Biên an toàn định giá (Margin of Safety)"] },
+            { id: 6, week: 1, code: "D06", title: "Bộ Lọc Piotroski F-Score Đọc Vị Gian Lận Tài Chính", file: "D06-fscore-doc-vi-gian-lan.md", doc: "DT-06", points: ["9 tiêu chí Piotroski đánh giá sức khỏe", "Phát hiện gian lận qua F-Score", "Lọc doanh nghiệp tăng trưởng bền"] },
+            { id: 7, week: 1, code: "D07", title: "Thiết Lập Kế Hoạch Tích Sản SIP Cổ Phiếu Đều Đặn", file: "D07-tich-san-sip-lai-kep.md", doc: "DT-07", points: ["Chiến lược đầu tư tích sản định kỳ SIP", "Khám phá sức mạnh kỳ diệu của lãi kép", "Quy tắc kỷ luật mua gom ACB/FPT"] },
             
-            { id: 8, week: 2, code: "D08", title: "Bộ Lọc Tích Sản 4 Tiêu Chí Kim Cương Tuyển Chọn Cổ Phiếu", file: "D08-bo-loc-tich-san-4-tieu-chi.md", doc: "DT-08" },
-            { id: 9, week: 2, code: "D09", title: "Thời Điểm Mua Gom Tích Sản Theo Vùng Chiết Khấu MA200", file: "D09-thoi-diem-mua-tich-san.md", doc: "DT-09" },
-            { id: 10, week: 2, code: "D10", title: "Hoạch Định Bảng Excel Kế Hoạch Tích Sản 10 Năm", file: "D10-hoach-dinh-ke-hoach-tich-san.md", doc: "DT-10" },
-            { id: 11, week: 2, code: "D11", title: "Thấu Hiểu Tính Cách Khách Hàng Bằng Giao Tiếp DISC", file: "D11-thau-hieu-khach-hang-disc.md", doc: "DT-11" },
-            { id: 12, week: 2, code: "D12", title: "Quy Trình 6 Bước Tư Vấn Bán Hàng Chuẩn Wealth Advisor", file: "D12-quy-trinh-6-buoc-initiate.md", doc: "DT-12" },
-            { id: 13, week: 2, code: "D13", title: "Kịch Bản Phá Băng Cuộc Hẹn Đầu Tiên (Outreach Script)", file: "D13-kich-ban-pha-bang-cuoc-hen.md", doc: "DT-13" },
-            { id: 14, week: 2, code: "D14", title: "Chẩn Đoán Sức Khỏe Tài Sản & Phát Hiện Điểm Nghẽn Nợ", file: "D14-khai-thac-diem-nghen-tai-san.md", doc: "DT-14" },
+            { id: 8, week: 2, code: "D08", title: "Bộ Lọc Tích Sản 4 Tiêu Chí Kim Cương Tuyển Chọn Cổ Phiếu", file: "D08-bo-loc-tich-san-4-tieu-chi.md", doc: "DT-08", points: ["Lọc cổ phiếu theo 4 tiêu chí kim cương", "Đánh giá chất lượng của ban điều hành", "Định vị vị thế tài chính doanh nghiệp"] },
+            { id: 9, week: 2, code: "D09", title: "Thời Điểm Mua Gom Tích Sản Theo Vùng Chiết Khấu MA200", file: "D09-thoi-diem-mua-tich-san.md", doc: "DT-09", points: ["Xác định vùng gom mua MA200", "Chiến thuật chia vốn giải ngân từng phần", "Tránh bẫy FOMO khi giá tăng quá mua"] },
+            { id: 10, week: 2, code: "D10", title: "Hoạch Định Bảng Excel Kế Hoạch Tích Sản 10 Năm", file: "D10-hoach-dinh-ke-hoach-tich-san.md", doc: "DT-10", points: ["Lập bảng kế hoạch Excel tích sản", "Dự phóng giá trị tài sản ròng 10 năm", "Xác định mục tiêu tự do tài chính"] },
+            { id: 11, week: 2, code: "D11", title: "Thấu Hiểu Tính Cách Khách Hàng Bằng Giao Tiếp DISC", file: "D11-thau-hieu-khach-hang-disc.md", doc: "DT-11", points: ["Phân loại 4 nhóm tính cách DISC", "Kỹ thuật giao tiếp thích ứng từng đối tượng", "Thấu hiểu nhu cầu thầm kín khách hàng"] },
+            { id: 12, week: 2, code: "D12", title: "Quy Trình 6 Bước Tư Vấn Bán Hàng Chuẩn Wealth Advisor", file: "D12-quy-trinh-6-buoc-initiate.md", doc: "DT-12", points: ["Nắm bắt quy trình bán hàng 6 bước", "Tư thế đón nhận và khơi gợi nhu cầu", "Kỹ thuật chốt deal và chăm sóc sau bán"] },
+            { id: 13, week: 2, code: "D13", title: "Kịch Bản Phá Băng Cuộc Hẹn Đầu Tiên (Outreach Script)", file: "D13-kich-ban-pha-bang-cuoc-hen.md", doc: "DT-13", points: ["Kịch bản thoại phá băng cuộc hẹn đầu", "Mẫu tin nhắn Outreach tiếp cận khéo léo", "Xử lý từ chối gặp mặt ban đầu"] },
+            { id: 14, week: 2, code: "D14", title: "Chẩn Đoán Sức Khỏe Tài Sản & Phát Hiện Điểm Nghẽn Nợ", file: "D14-khai-thac-diem-nghen-tai-san.md", doc: "DT-14", points: ["Công cụ chẩn đoán sức khỏe nợ vay", "Khơi mở điểm nghẽn tài sản ròng", "Đề xuất tái cấu trúc nợ sang tích sản"] },
             
-            { id: 15, week: 3, code: "D15", title: "Quy Chế Làm Việc HO3 & Daily Routine Kỷ Luật", file: "D15-quy-che-lam-viec-ho3.md", doc: "DT-15" },
-            { id: 16, week: 3, code: "D16", title: "Chẩn Đoán Tâm Lý F0 FOMO và Hoảng Loạn Thị Trường", file: "D16-chan-doan-tam-ly-f0.md", doc: "DT-16" },
-            { id: 17, week: 3, code: "D17", title: "Kịch Bản Cơ Cấu Danh Mục Thay Cổ Phiếu Đầu Cơ Sang Tích Sản", file: "D17-roleplay-co-cau-danh-muc.md", doc: "DT-17" },
-            { id: 18, week: 3, code: "D18", title: "Kịch Bản Sắm Vai Tư Vấn Thực Chiến & Bảng Điểm ASK", file: "D18-xay-dung-kich-ban-sam-vai.md", doc: "DT-18" },
-            { id: 19, week: 3, code: "D19", title: "Lộ Trình Thu Nhập 3 Năm & Cơ Chế Lương Hoa Hồng HO3", file: "D19-lo-trinh-thu-nhap-hoa-hong.md", doc: "DT-19" },
-            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20" },
-            { id: 21, week: 3, code: "D21", title: "Kỹ Năng Hợp Tác CLB Chứng Khoán Sinh Viên Thu Hút Lead", file: "D21-networking-clb-sinh-vien.md", doc: "DT-21" },
+            { id: 15, week: 3, code: "D15", title: "Quy Chế Làm Việc HO3 & Daily Routine Kỷ Luật", file: "D15-quy-che-lam-viec-ho3.md", doc: "DT-15", points: ["Bắt buộc tham gia Morning Briefing 8h30", "Chỉ tiêu cập nhật CRM HO3 hằng ngày", "Kế hoạch Livestream & Content Lab"] },
+            { id: 16, week: 3, code: "D16", title: "Chẩn Đoán Tâm Lý F0 FOMO và Hoảng Loạn Thị Trường", file: "D16-chan-doan-tam-ly-f0.md", doc: "DT-16", points: ["Phân tích tâm lý học hành vi F0", "Chẩn đoán hội chứng FOMO & hoảng loạn", "Liệu pháp tâm lý ổn định tâm lý khách"] },
+            { id: 17, week: 3, code: "D17", title: "Kịch Bản Cơ Cấu Danh Mục Thay Cổ Phiếu Đầu Cơ Sang Tích Sản", file: "D17-roleplay-co-cau-danh-muc.md", doc: "DT-17", points: ["Xử lý danh mục kẹt cổ phiếu đầu cơ", "Kịch bản thuyết phục chuyển sang ACB SIP", "Các mốc chiết khấu thuyết phục chuyển đổi"] },
+            { id: 18, week: 3, code: "D18", title: "Kịch Bản Sắm Vai Tư Vấn Thực Chiến & Bảng Điểm ASK", file: "D18-xay-dung-kich-ban-sam-vai.md", doc: "DT-18", points: ["Thiết kế kịch bản sắm vai (Role-play)", "Khung đánh giá năng lực ASK của HO3", "Thang đo thái độ 50% quyết định kết quả"] },
+            { id: 19, week: 3, code: "D19", title: "Lộ Trình Thu Nhập 3 Năm & Cơ Chế Lương Hoa Hồng HO3", file: "D19-lo-trinh-thu-nhap-hoa-hong.md", doc: "DT-19", points: ["Cơ chế hoa hồng 50% phí DTT", "Lộ trình thăng tiến Broker 3 năm", "Đặc quyền lương cứng 10M cho NextGen"] },
+            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20", points: ["Nắm rõ Luật Chứng khoán 2019", "Quy định cấm ủy thác đầu tư, cam kết lãi", "Đạo đức nghề nghiệp bảo mật thông tin"] },
+            { id: 21, week: 3, code: "D21", title: "Kỹ Năng Hợp Tác CLB Chứng Khoán Sinh Viên Thu Hút Lead", file: "D21-networking-clb-sinh-vien.md", doc: "DT-21", points: ["Tiếp cận CLB Chứng khoán sinh viên", "Xây dựng phễu khách hàng trẻ năng động", "Kỹ thuật thuyết trình seminar đại học"] },
             
-            { id: 22, week: 4, code: "D22", title: "Tổ Chức Seminar/Webinar Thuyết Trình Chốt Số Lượng Lớn", file: "D22-to-chuc-seminar-webinar.md", doc: "DT-22" },
-            { id: 23, week: 4, code: "D23", title: "Cơ Chế Cho Vay Margin & Công Thức Tính Tỷ Lệ RTT", file: "D23-don-bay-margin-cong-thuc-rtt.md", doc: "DT-23" },
-            { id: 24, week: 4, code: "D24", title: "Xử Lý Khủng Hoảng Call Margin & Force Sell Phiên Chiều", file: "D24-xu-ly-khung-hoang-call-margin-force-sell.md", doc: "DT-24" },
-            { id: 25, week: 4, code: "D25", title: "Gói Lãi Suất Ưu Đãi Margin eKYC 8.8% & Vượt Ải Tuần 3", file: "D25-goi-uu-dai-margin-kbsv.md", doc: "DT-25" },
-            { id: 26, week: 4, code: "D26", title: "Phái Sinh VN30 Futures & Chiến Thuật Hedging Phòng Vệ", file: "D26-phai-sinh-vn30-futures.md", doc: "DT-26" },
-            { id: 27, week: 4, code: "D27", title: "Quy Định Ký Quỹ VSDC & Hạch Toán Lãi Lỗ Mark-To-Market", file: "D27-quy-dinh-ky-quys-vsd.md", doc: "DT-27" },
-            { id: 28, week: 4, code: "D28", title: "Tích Sản Chứng Chỉ Quỹ ETF Diamond Thay Thế Tiết Kiệm", file: "D28-tich-san-etf-diamond.md", doc: "DT-28" },
+            { id: 22, week: 4, code: "D22", title: "Tổ Chức Seminar/Webinar Thuyết Trình Chốt Số Lượng Lớn", file: "D22-to-chuc-seminar-webinar.md", doc: "DT-22", points: ["Quy trình tổ chức hội thảo chốt khách", "Thiết kế kịch bản seminar 60 phút", "Kỹ thuật gom mở tài khoản eKYC hàng loạt"] },
+            { id: 23, week: 4, code: "D23", title: "Cơ Chế Cho Vay Margin & Công Thức Tính Tỷ Lệ RTT", file: "D23-don-bay-margin-cong-thuc-rtt.md", doc: "DT-23", points: ["Cơ chế đòn bẩy tài chính Margin", "Công thức tính tỷ lệ tài sản ròng RTT", "Mốc quản trị rủi ro RTT 40% và 30%"] },
+            { id: 24, week: 4, code: "D24", title: "Xử Lý Khủng Hoảng Call Margin & Force Sell Phiên Chiều", file: "D24-xu-ly-khung-hoang-call-margin-force-sell.md", doc: "DT-24", points: ["Xử lý tài khoản dưới ngưỡng Call Margin", "Kỹ năng gọi điện xoa dịu tâm lý khách", "Quy trình hạch toán Force Sell phiên chiều"] },
+            { id: 25, week: 4, code: "D25", title: "Gói Lãi Suất Ưu Đãi Margin eKYC 8.8% & Vượt Ải Tuần 3", file: "D25-goi-uu-dai-margin-kbsv.md", doc: "DT-25", points: ["Tư vấn gói vay Margin eKYC 8.8%", "Công cụ chốt khách dựa trên tối ưu phí", "Đánh giá KPI vượt qua Sudden Death"] },
+            { id: 26, week: 4, code: "D26", title: "Phái Sinh VN30 Futures & Chiến Thuật Hedging Phòng Vệ", file: "D26-phai-sinh-vn30-futures.md", doc: "DT-26", points: ["Cơ chế giao dịch phái sinh VN30", "Chiến thuật Hedging bảo vệ danh mục cơ sở", "Hợp đồng tương lai vị thế Long/Short"] },
+            { id: 27, week: 4, code: "D27", title: "Quy Định Ký Quỹ VSDC & Hạch Toán Lãi Lỗ Mark-To-Market", file: "D27-quy-dinh-ky-quys-vsd.md", doc: "DT-27", points: ["Quy chế ký quỹ tại Trung tâm VSDC", "Phương pháp tính toán lãi lỗ Mark-To-Market", "Thanh toán bù trừ và xử lý ký quỹ bổ sung"] },
+            { id: 28, week: 4, code: "D28", title: "Tích Sản Chứng Chỉ Quỹ ETF Diamond Thay Thế Tiết Kiệm", file: "D28-tich-san-etf-diamond.md", doc: "DT-28", points: ["Tích sản ETF Diamond đa dạng hóa rủi ro", "So sánh lợi suất ETF và gửi tiết kiệm", "Đồng hành lâu dài cùng giỏ cổ phiếu kim cương"] },
             
-            { id: 29, week: 5, code: "D29", title: "Đọc Biểu Đồ Giá & Volume Nhận Diện Bẫy Giá Bull Trap", file: "D29-doc-bieu-do-gia-volume-vta.md", doc: "DT-29" },
-            { id: 30, week: 5, code: "D30", title: "Chu Kỳ Wyckoff & 3 Xu Hướng Vĩ Mô Theo Lý Thuyết Dow", file: "D30-chu-ky-wyckoff-ly-thuyet-dow.md", doc: "DT-30" },
-            { id: 31, week: 5, code: "D31", title: "Quy Luật Đối Xứng Biên Độ Sóng & Điểm Hội Tụ Chỉ Báo", file: "D31-doi-xung-song-va-chi-bao.md", doc: "DT-31" },
-            { id: 32, week: 5, code: "D32", title: "Thiết Lập Vùng Mua Entry - Stop Loss - Take Profit Cho Deal", file: "D32-thiet-lap-deal-strategy.md", doc: "DT-32" },
-            { id: 33, week: 5, code: "D33", title: "Quy Tắc Quản Trị Rủi Ro 2% NAV & Công Thức Position Sizing", file: "D33-quy-tac-quan-tri-rui-ro-2-percent.md", doc: "DT-33" },
-            { id: 34, week: 5, code: "D34", title: "Xây Dựng Thương Hiệu KOC & Quy Trình Vận Hành Content Lab", file: "D34-xay-dung-koc-personal-branding.md", doc: "DT-34" },
-            { id: 35, week: 5, code: "D35", title: "Kịch Bản Livestream 90 Phút & Kỹ Thuật Tương Tác Thuyết Phục", file: "D35-kich-ban-livestream-90-phut.md", doc: "DT-35" },
+            { id: 29, week: 5, code: "D29", title: "Đọc Biểu Đồ Giá & Volume Nhận Diện Bẫy Giá Bull Trap", file: "D29-doc-bieu-do-gia-volume-vta.md", doc: "DT-29", points: ["Nhận diện mối quan hệ Volume và Giá", "Phát hiện dấu hiệu bẫy giá Bull Trap", "Ứng dụng kháng cự/hỗ trợ kỹ thuật"] },
+            { id: 30, week: 5, code: "D30", title: "Chu Kỳ Wyckoff & 3 Xu Hướng Vĩ Mô Theo Lý Thuyết Dow", file: "D30-chu-ky-wyckoff-ly-thuyet-dow.md", doc: "DT-30", points: ["4 giai đoạn chu kỳ Wyckoff", "3 xu hướng lớn của Lý thuyết Dow", "Xác định chân sóng tích lũy dài hạn"] },
+            { id: 31, week: 5, code: "D31", title: "Quy Luật Đối Xứng Biên Độ Sóng & Điểm Hội Tụ Chỉ Báo", file: "D31-doi-xung-song-va-chi-bao.md", doc: "DT-31", points: ["Quy luật đối xứng biên độ sóng kỹ thuật", "Điểm hội tụ chỉ báo MA, RSI, MACD", "Bộ lọc xác nhận điểm đảo chiều tin cậy"] },
+            { id: 32, week: 5, code: "D32", title: "Thiết Lập Vùng Mua Entry - Stop Loss - Take Profit Cho Deal", file: "D32-thiet-lap-deal-strategy.md", doc: "DT-32", points: ["Xác định điểm vào lệnh Entry an toàn", "Thiết lập mốc cắt lỗ Stop Loss nghiêm ngặt", "Tỷ lệ rủi ro/lợi nhuận tối thiểu 1:2"] },
+            { id: 33, week: 5, code: "D33", title: "Quy Tắc Quản Trị Rủi Ro 2% NAV & Công Thức Position Sizing", file: "D33-quy-tac-quan-tri-rui-ro-2-percent.md", doc: "DT-33", points: ["Quy tắc giới hạn lỗ tối đa 2% NAV/deal", "Công thức tính khối lượng mua Position Sizing", "Kỷ luật quản trị vốn bảo vệ tài khoản"] },
+            { id: 34, week: 5, code: "D34", title: "Xây Dựng Thương Hiệu KOC & Quy Trình Vận Hành Content Lab", file: "D34-xay-dung-koc-personal-branding.md", doc: "DT-34", points: ["Định hình phong cách KOC chứng khoán", "Quy trình vận hành sản xuất Content Lab", "Công thức làm video ngắn lên xu hướng"] },
+            { id: 35, week: 5, code: "D35", title: "Kịch Bản Livestream 90 Phút & Kỹ Thuật Tương Tác Thuyết Phục", file: "D35-kich-ban-livestream-90-phut.md", doc: "DT-35", points: ["Kịch bản livestream chứng khoán 90 phút", "Kỹ thuật giữ chân tương tác người xem", "Kêu gọi hành động mở tài khoản eKYC"] },
             
-            { id: 36, week: 6, code: "D36", title: "Vận Hành Zalo Group & Phiếu Phỏng Vấn Tuyển Dụng ASK", file: "D36-zalo-group-va-phieu-danh-gia-ask.md", doc: "DT-36" },
-            { id: 37, week: 6, code: "D37", title: "Kỹ Năng Chăm Sóc Khách Hàng High-NAV Private Banking Style", file: "D37-ky-nang-cham-soc-khach-hang-high-nav.md", doc: "DT-37" },
-            { id: 38, week: 6, code: "D38", title: "Hướng Dẫn Viết Báo Cáo Tốt Nghiệp Nghiệm Thu Kết Quả", file: "D38-huong-dan-viet-bao-cao-tot-nghiep.md", doc: "DT-38" },
-            { id: 39, week: 6, code: "D39", title: "Thiết Kế Slide Thuyết Trình Báo Cáo Theo Quy Tắc 10-20-30", file: "D39-thiet-ke-slide-va-bao-ve-bao-cao.md", doc: "DT-39" },
-            { id: 40, week: 6, code: "D40", title: "Bảo Vệ Báo Cáo Tốt Nghiệp Sát Hạch Trước Hội Đồng HO3", file: "D40-bao-ve-bao-cao-tot-nghiep.md", doc: "DT-40" },
-            { id: 41, week: 6, code: "D41", title: "Lễ Tốt Nghiệp Bổ Nhiệm & Lộ Trình Thăng Tiến Broker 3 Năm", file: "D41-le-tot-nghiep-bo-nhiem-broker.md", doc: "DT-41" },
-            { id: 42, week: 6, code: "D42", title: "Tổng Kết Toàn Chương Trình & Kế Hoạch 90 Ngày Bứt Phá", file: "D42-tong-ket-va-dong-hoa-tai-nguyen.md", doc: "DT-42" }
+            { id: 36, week: 6, code: "D36", title: "Vận Hành Zalo Group & Phiếu Phỏng Vấn Tuyển Dụng ASK", file: "D36-zalo-group-va-phieu-danh-gia-ask.md", doc: "DT-36", points: ["Quy trình xây dựng phễu Zalo Group", "Hệ thống hóa phiếu phỏng vấn tuyển dụng ASK", "Sử dụng ASK rà soát thái độ của ứng viên"] },
+            { id: 37, week: 6, code: "D37", title: "Kỹ Năng Chăm Sóc Khách Hàng High-NAV Private Banking Style", file: "D37-ky-nang-cham-soc-khach-hang-high-nav.md", doc: "DT-37", points: ["Đặc trưng tâm lý khách hàng High-NAV", "Chăm sóc theo phong cách Private Banking", "Xây dựng mối quan hệ tư vấn tin cậy"] },
+            { id: 38, week: 6, code: "D38", title: "Hướng Dẫn Viết Báo Cáo Tốt Nghiệp Nghiệm Thu Kết Quả", file: "D38-huong-dan-viet-bao-cao-tot-nghiep.md", doc: "DT-38", points: ["Cấu trúc báo cáo tốt nghiệp NextGen", "Nghiệm thu chỉ tiêu AUM & eKYC thực chiến", "Rút ra bài học thực hành từ 42 ngày"] },
+            { id: 39, week: 6, code: "D39", title: "Thiết Kế Slide Thuyết Trình Báo Cáo Theo Quy Tắc 10-20-30", file: "D39-thiet-ke-slide-va-bao-ve-bao-cao.md", doc: "DT-39", points: ["Nguyên lý thiết kế slide 10-20-30 Guy Kawasaki", "Tối ưu hóa biểu đồ số liệu thực chiến", "Kỹ thuật kể chuyện trình bày báo cáo (Storytelling)"] },
+            { id: 40, week: 6, code: "D40", title: "Bảo Vệ Báo Cáo Tốt Nghiệp Sát Hạch Trước Hội Đồng HO3", file: "D40-bao-ve-bao-cao-tot-nghiep.md", doc: "DT-40", points: ["Thuyết trình báo cáo trước Hội đồng sát hạch", "Kỹ năng trả lời phản biện của Mentor", "Đánh giá mức độ ASK cuối kỳ hoàn thành"] },
+            { id: 41, week: 6, code: "D41", title: "Lễ Tốt Nghiệp Bổ Nhiệm & Lộ Trình Thăng Tiến Broker 3 Năm", file: "D41-le-tot-nghiep-bo-nhiem-broker.md", doc: "DT-41", points: ["Bổ nhiệm chính thức làm Junior Broker", "Vạch ra lộ trình thăng tiến Broker 3 năm", "Ký kết giao ước phát triển chi nhánh HO3"] },
+            { id: 42, week: 6, code: "D42", title: "Tổng Kết Toàn Chương Trình & Kế Hoạch 90 Ngày Bứt Phá", file: "D42-tong-ket-va-dong-hoa-tai-nguyen.md", doc: "DT-42", points: ["Đồng hóa toàn bộ tài nguyên NextGen", "Kế hoạch hành động 90 ngày bứt phá đầu tiên", "Duy trì kỷ luật làm việc mỗi ngày"] }
         ];
 
         // Custom quizzes database
@@ -1513,7 +1535,6 @@
                 selectedMascotType = savedMascot || "flexi";
                 currentSimulatedDay = savedDay ? parseInt(savedDay) : 23;
                 
-                // Set active select active state on selector cards
                 document.querySelectorAll('.mascot-select-card').forEach(card => {
                     card.classList.remove('active');
                 });
@@ -1628,7 +1649,6 @@
             const avatarImg = document.getElementById('mascotAvatarWidget');
             const speechText = document.getElementById('mascotSpeechText');
             
-            // Set dynamic filename based on type
             const fn = getMascotFilename(selectedMascotType, 'original');
             avatarImg.src = `../assets/mascot/${selectedMascotType}/light/${fn}`;
             
@@ -1685,9 +1705,22 @@
                 
                 card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
                 
+                // Formulate 3 bullet points list dynamically
+                let bulletHtml = '';
+                if (lesson.points && lesson.points.length > 0) {
+                    bulletHtml = `<ul class="day-bullets">`;
+                    lesson.points.forEach(pt => {
+                        bulletHtml += `<li>${pt}</li>`;
+                    });
+                    bulletHtml += `</ul>`;
+                }
+
                 card.innerHTML = `
-                    <div class="day-code">${lesson.code}</div>
-                    <div class="day-title">${lesson.title}</div>
+                    <div>
+                        <div class="day-code">${lesson.code}</div>
+                        <div class="day-title">${lesson.title}</div>
+                    </div>
+                    ${bulletHtml}
                 `;
                 
                 grid.appendChild(card);
