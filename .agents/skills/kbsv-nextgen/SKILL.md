@@ -21,7 +21,7 @@ Tài liệu hướng dẫn và kho kiến thức toàn diện cho Chương trìn
 
 ## 📂 Hệ Thống Tài Liệu
 
-### `references/` — Tài liệu gốc (5 file)
+### `references/` — Tài liệu gốc (9 file)
 | # | File | Nội dung |
 |---|------|----------|
 | 01 | [bod-pitching-proposal.md](references/01-bod-pitching-proposal.md) | Tờ trình Phê duyệt Đề án Chi tiết trình BOD |
@@ -29,14 +29,18 @@ Tài liệu hướng dẫn và kho kiến thức toàn diện cho Chương trìn
 | 03 | [recruitment-campaign-content.md](references/03-recruitment-campaign-content.md) | Bộ Nội dung Truyền thông Campaign Recruitment |
 | 04 | [training-schedule-and-rules.md](references/04-training-schedule-and-rules.md) | Lịch trình 6 Tuần & Quy chế Vận hành |
 | 05 | [brand-guidelines-song-tren-san.md](references/05-brand-guidelines-song-tren-san.md) | Brand Guidelines Fanpage "Sống trên Sàn" |
+| 06 | [06-finpeace-knowledge-base-analysis.md](references/06-finpeace-knowledge-base-analysis.md) | Phân tích Kho tri thức FinPeace & Bộ công cụ công nghệ |
+| 07 | [07-product-service-strategy.md](references/07-product-service-strategy.md) | Định vị Sản phẩm & Chiến lược Phễu chuyển đổi KOC |
+| 08 | [08-broker-professional-skills.md](references/08-broker-professional-skills.md) | Phân tích Chuyên môn Kỹ năng Tư vấn Môi giới |
+| 09 | [09-soft-skills-for-financial-sales.md](references/09-soft-skills-for-financial-sales.md) | Phân tích Kỹ năng mềm của Môi giới Tài chính 4.0 |
 
 ### `resources/` — Tài liệu sản xuất (5 folder)
 | Folder | Nội dung | Files |
 |--------|----------|-------|
 | `01-chien-luoc/` | Đề án BOD, Hợp tác ĐH, Project Master | 3 |
 | `02-tuyen-dung/` | **2 PDF phỏng vấn** + HTML source + content | 6 |
-| `03-dao-tao/` | 5 module curriculum (1500+ từ/module) | 5 |
-| `04-van-hanh/` | Lịch trình 42 ngày & Quy chế | 1 |
+| `03-dao-tao/` | Syllabus tổng (DT-00) + 14 Module (DT-01 đến DT-14) + Thư mục bài học 42 ngày (lessons/) + 42 Cheatsheets | 99 |
+| `04-van-hanh/` | Lịch trình 42 ngày & Quy chế + Lộ trình 42 khóa học nhỏ (DT-42) | 5 |
 | `05-thuong-hieu/` | Brand Guidelines "Sống trên Sàn" | 1 |
 
 ---

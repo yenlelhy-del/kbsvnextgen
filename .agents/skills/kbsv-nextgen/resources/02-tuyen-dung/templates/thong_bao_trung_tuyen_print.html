@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thư Thông Báo Trúng Tuyển — KBSV NextGen 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { 
+            size: A4; 
+            margin: 18mm 20mm 16mm 20mm; 
+        }
+        :root {
+            --kb-yellow: #F5A623;
+            --kb-yellow-dark: #E09000;
+            --kb-yellow-light: rgba(245, 166, 35, 0.05);
+            --kb-brown: #8B7355;
+            --kb-brown-dark: #5c4b37;
+            --text-primary: #1A1A1A;
+            --text-secondary: #555555;
+            --text-tertiary: #999999;
+            --border: #d5cfc5;
+            --border-light: #ece8e0;
+            --bg-warm: #faf9f6;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+        }
+        
+        *, *::before, *::after { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: var(--font-body); 
+            font-size: 10pt; 
+            color: var(--text-primary); 
+            line-height: 1.6; 
+            background: #fff; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        
+        /* Header */
+        .hdr { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding-bottom: 12px; 
+            border-bottom: 2.5px solid var(--kb-yellow); 
+            margin-bottom: 22px; 
+        }
+        .hdr-logos { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+        .hdr-logos img { 
+            height: 28px; 
+            object-fit: contain; 
+        }
+        .hdr-div { 
+            width: 1px; 
+            height: 24px; 
+            background: var(--border); 
+        }
+        .hdr-r { 
+            text-align: right; 
+        }
+        .hdr-title { 
+            font-family: var(--font-display); 
+            font-weight: 700; 
+            font-size: 10.5pt; 
+            color: var(--text-primary);
+        }
+        .hdr-sub { 
+            font-size: 7.5pt; 
+            color: var(--kb-brown); 
+            font-weight: 500; 
+        }
+        
+        /* Document Title */
+        .doc-header { 
+            text-align: center; 
+            margin-bottom: 24px; 
+        }
+        .doc-type { 
+            font-size: 8pt; 
+            color: var(--kb-brown); 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            font-weight: 600; 
+            margin-bottom: 4px; 
+        }
+        .doc-title { 
+            font-family: var(--font-display); 
+            font-size: 17pt; 
+            font-weight: 700; 
+            color: var(--text-primary); 
+            margin-bottom: 4px; 
+            letter-spacing: -0.2px;
+        }
+        .doc-sub { 
+            font-size: 9pt; 
+            color: var(--text-secondary); 
+            font-weight: 500;
+        }
+
+        /* Candidate Meta Block */
+        .meta-card {
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 12px 18px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .meta-item {
+            flex: 1;
+            min-width: 200px;
+        }
+        .meta-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--kb-brown);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .meta-value {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Letter Body */
+        .letter-content {
+            margin-bottom: 20px;
+        }
+        .salutation {
+            font-size: 11pt;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        p strong {
+            color: var(--kb-brown-dark);
+        }
+
+        /* Program Highlights Card */
+        .highlight-box {
+            background: var(--kb-yellow-light);
+            border-left: 3.5px solid var(--kb-yellow);
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+            margin: 18px 0;
+        }
+        .highlight-box-title {
+            font-family: var(--font-display);
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--kb-yellow-dark);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .highlight-item {
+            font-size: 9pt;
+            display: flex;
+            flex-direction: column;
+        }
+        .highlight-label {
+            font-weight: 600;
+            color: var(--kb-brown);
+        }
+        .highlight-value {
+            color: var(--text-primary);
+        }
+
+        /* Next Steps */
+        .steps-box {
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+        }
+        .steps-box-title {
+            font-family: var(--font-display);
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 4px;
+        }
+        .step-list {
+            list-style: none;
+        }
+        .step-list-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 9pt;
+        }
+        .step-list-item::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            color: var(--kb-yellow-dark);
+        }
+
+        /* Signatures */
+        .sig-section {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .sig-block {
+            flex: 1;
+            text-align: center;
+        }
+        .sig-title {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        .sig-name {
+            font-size: 8.5pt;
+            color: var(--text-tertiary);
+            font-style: italic;
+            margin-bottom: 48px;
+        }
+        .sig-line {
+            border-bottom: 1.2px solid var(--border);
+            margin-bottom: 4px;
+        }
+        .sig-label {
+            font-size: 8pt;
+            color: var(--text-tertiary);
+        }
+
+        /* Footer */
+        .ftr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            border-top: 1px solid var(--border-light);
+            margin-top: 22px;
+        }
+        .ftr-l {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ftr-l img {
+            height: 14px;
+            opacity: 0.4;
+        }
+        .ftr-t {
+            font-size: 6.5pt;
+            color: var(--text-tertiary);
+        }
+        .ftr-r {
+            font-family: var(--font-display);
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: var(--kb-brown);
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr">
+    <div class="hdr-logos">
+        <img src="../assets/finpeace-logo.png" alt="FinPeace">
+        <div class="hdr-div"></div>
+        <img src="../assets/kbsv-logo.jpeg" alt="KBSV">
+    </div>
+    <div class="hdr-r">
+        <div class="hdr-title">SỞ GIAO DỊCH 3 (HO3)</div>
+        <div class="hdr-sub">Công ty CP Chứng khoán KB Việt Nam (KBSV)</div>
+    </div>
+</div>
+
+<!-- DOCUMENT TITLE -->
+<div class="doc-header">
+    <div class="doc-type">Mẫu: NTD-SV-04</div>
+    <div class="doc-title">Thư Thông Báo Trúng Tuyển</div>
+    <div class="doc-sub">Chương trình Đào tạo & Thực chiến Môi giới Thế hệ mới · KBSV NextGen 2026</div>
+</div>
+
+<!-- CANDIDATE META CARD -->
+<div class="meta-card">
+    <div class="meta-item">
+        <div class="meta-label">Họ và tên ứng viên</div>
+        <div class="meta-value">{{candidate_name}}</div>
+    </div>
+    <div class="meta-item">
+        <div class="meta-label">Mã số ứng viên</div>
+        <div class="meta-value">{{candidate_id}}</div>
+    </div>
+    <div class="meta-item">
+        <div class="meta-label">Email đăng ký</div>
+        <div class="meta-value">{{candidate_email}}</div>
+    </div>
+</div>
+
+<!-- LETTER BODY -->
+<div class="letter-content">
+    <div class="salutation">Chúc mừng {{candidate_name}}!</div>
+    
+    <p>Vượt qua hàng trăm hồ sơ ứng tuyển và những vòng phỏng vấn đầy thử thách theo <strong>khung đánh giá ASK</strong> (nơi Thái độ & Tư duy phát triển của bạn được hội đồng chấm điểm xuất sắc), Ban Tổ chức chương trình xin chính thức chúc mừng bạn đã trúng tuyển vào chương trình **KBSV NextGen 2026**.</p>
+    
+    <p>Chương trình là hành trình <strong>42 ngày thực chiến</strong> do <strong>Sở Giao dịch 3 (HO3) - KB Securities Vietnam</strong> phối hợp cùng <strong>FinPeace</strong> tổ chức, nhằm mục tiêu đào tạo, chuyển dịch thế hệ trẻ đam mê Sales & Tài chính trở thành những **Financial KOC & Digital Wealth Advisor** chuyên nghiệp, sẵn sàng gia nhập mạng lưới môi giới và tư vấn đầu tư thời kỳ mới.</p>
+
+    <!-- HIGHLIGHTS -->
+    <div class="highlight-box">
+        <div class="highlight-box-title">Thông tin tổng quan hành trình 42 ngày</div>
+        <div class="highlight-grid">
+            <div class="highlight-item">
+                <span class="highlight-label">Mô hình thực chiến:</span>
+                <span class="highlight-value">2 tuần đào tạo tập trung + 4 tuần thực chiến on-the-job</span>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-label">Daily Routine:</span>
+                <span class="highlight-value">Morning Briefing → Content Lab → Livestream 90 phút</span>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-label">Quy tắc loại trừ:</span>
+                <span class="highlight-value">Cơ chế Sudden Death (Loại trực tiếp) áp dụng từ Tuần 3</span>
+            </div>
+            <div class="highlight-item">
+                <span class="highlight-label">Giải thưởng & Cơ chế:</span>
+                <span class="highlight-value">Quỹ 20 triệu VNĐ (Giải Nhất 5M) + Thưởng Active TK (50k-200k)</span>
+            </div>
+            <div class="highlight-item" style="grid-column: span 2; margin-top: 4px;">
+                <span class="highlight-label">Trainer & Mentor đồng hành:</span>
+                <span class="highlight-value">Anh Quân, Chị Yến, Anh Tuấn Anh, Anh Quang, Anh Vinh + Research team</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEXT STEPS -->
+    <div class="steps-box">
+        <div class="steps-box-title">Các hành động cần hoàn thành</div>
+        <ul class="step-list">
+            <li class="step-list-item"><strong>Xác nhận tham gia:</strong> Phản hồi xác nhận qua email/form đăng ký trước <strong>{{deadline_confirm}}</strong> để BTC tiến hành cấp tài khoản học tập.</li>
+            <li class="step-list-item"><strong>Tham gia buổi Kick-off khởi động:</strong> Có mặt lúc <strong>{{kickoff_time}}</strong> tại Văn phòng Sở Giao dịch 3 (HO3) hoặc link trực tuyến: <strong>{{zoom_link}}</strong>.</li>
+            <li class="step-list-item"><strong>Tham gia group trao đổi nội bộ học viên:</strong> Quét QR Code hoặc nhấn vào liên kết được gửi kèm để cập nhật lịch trình hàng ngày.</li>
+        </ul>
+    </div>
+    
+    <p>Chúng tôi tin tưởng rằng với tinh thần chủ động, sự nhiệt huyết và tinh thần không ngại thử thách, bạn sẽ có 42 ngày đột phá để kiến tạo nền móng vững chắc cho sự nghiệp tài chính của mình.</p>
+    
+    <p>Chào mừng bạn gia nhập KBSV NextGen 2026. Hãy cùng chúng tôi sẵn sàng cho hành trình "Sống trên Sàn"!</p>
+</div>
+
+<!-- SIGNATURES -->
+<div class="sig-section">
+    <div class="sig-block">
+        <div class="sig-title">ĐẠI DIỆN DỰ ÁN FINPEACE</div>
+        <div class="sig-name"></div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Ký & ghi rõ họ tên</div>
+    </div>
+    <div class="sig-block">
+        <div class="sig-title">GIÁM ĐỐC SỞ GIAO DỊCH 3 (HO3)</div>
+        <div class="sig-name"></div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Ký & ghi rõ họ tên</div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="ftr">
+    <div class="ftr-l">
+        <img src="../assets/finpeace-logo.png" alt="">
+        <div style="width:1px; height:12px; background:var(--border);"></div>
+        <img src="../assets/kbsv-logo.jpeg" alt="">
+        <span class="ftr-t">© 2026 KBSV NextGen · FinPeace × KB Securities Vietnam · Mẫu NTD-SV-04</span>
+    </div>
+    <div class="ftr-r">nextgen.finpeace.cloud</div>
+</div>
+
+</body>
+</html>

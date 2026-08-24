@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lộ Trình 42 Ngày Thực Tập & Đào Tạo Thực Chiến — KBSV NextGen 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { 
+            size: A4; 
+            margin: 15mm 15mm 15mm 15mm; 
+        }
+        :root {
+            --kb-yellow: #F5A623;
+            --kb-yellow-dark: #E09000;
+            --kb-yellow-light: rgba(245, 166, 35, 0.04);
+            --kb-brown: #8B7355;
+            --kb-brown-dark: #5c4b37;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --text-tertiary: #777777;
+            --border: #d5cfc5;
+            --border-light: #ece8e0;
+            --bg-warm: #FAFAF7;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', sans-serif;
+            --warning-border: #E05050;
+            --warning-bg: rgba(224, 80, 80, 0.03);
+        }
+        
+        *, *::before, *::after { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: var(--font-body); 
+            font-size: 8.5pt; 
+            color: var(--text-primary); 
+            line-height: 1.5; 
+            background: #fff; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        
+        /* Header */
+        .hdr { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--kb-yellow); 
+            margin-bottom: 15px; 
+        }
+        .hdr-logos { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+        .hdr-logos img { 
+            height: 24px; 
+            object-fit: contain; 
+        }
+        .hdr-div { 
+            width: 1px; 
+            height: 20px; 
+            background: var(--border); 
+        }
+        .hdr-r { 
+            text-align: right; 
+        }
+        .hdr-title { 
+            font-family: var(--font-display); 
+            font-weight: 700; 
+            font-size: 9.5pt; 
+            color: var(--text-primary);
+        }
+        .hdr-sub { 
+            font-size: 7pt; 
+            color: var(--kb-brown); 
+            font-weight: 500; 
+        }
+        
+        /* Document Title */
+        .doc-header { 
+            text-align: center; 
+            margin-bottom: 18px; 
+        }
+        .doc-title { 
+            font-family: var(--font-display); 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--text-primary); 
+            margin-bottom: 2px; 
+        }
+        .doc-sub { 
+            font-size: 8.5pt; 
+            color: var(--text-secondary); 
+            font-weight: 500;
+        }
+
+        /* Program Overview Block */
+        .overview-card {
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1.2fr;
+            gap: 15px;
+        }
+        .overview-col {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .overview-label {
+            font-size: 7pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--kb-brown);
+            font-weight: 600;
+        }
+        .overview-value {
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .overview-value span {
+            font-weight: 400;
+            color: var(--text-secondary);
+            font-size: 7.5pt;
+        }
+
+        /* Section/Weekly Banner */
+        .week-banner {
+            background: var(--kb-brown-dark);
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-family: var(--font-display);
+            font-size: 9.5pt;
+            font-weight: 700;
+            margin: 18px 0 10px 0;
+            letter-spacing: 0.2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .week-title {
+            display: flex;
+            align-items: center;
+        }
+        .week-target {
+            font-size: 7.5pt;
+            font-weight: 500;
+            color: #ece8e0;
+        }
+
+        /* Grid for Days */
+        .days-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        /* Day Card */
+        .day-card {
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 10px 12px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+            position: relative;
+        }
+        .day-card.gate-card {
+            border-left: 3.5px solid var(--warning-border);
+            background: var(--warning-bg);
+        }
+        .day-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1.2px solid var(--border-light);
+            padding-bottom: 4px;
+            margin-bottom: 6px;
+        }
+        .day-title {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .day-badge {
+            background: var(--kb-yellow);
+            color: #fff;
+            font-size: 6.5pt;
+            font-weight: 700;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        .day-card.gate-card .day-badge {
+            background: var(--warning-border);
+        }
+        .module-ref {
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: var(--kb-brown);
+            display: flex;
+            align-items: center;
+        }
+
+        /* Day Content Layout */
+        .day-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.1fr;
+            gap: 12px;
+        }
+        .col-item {
+            font-size: 7.8pt;
+        }
+        .col-label {
+            font-weight: 700;
+            color: var(--kb-brown-dark);
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        .col-val {
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+        .col-val strong {
+            color: var(--text-primary);
+        }
+
+        /* Special Gates info style */
+        .gate-alert {
+            color: var(--warning-border);
+            font-weight: 700;
+        }
+
+        /* Signatures */
+        .sig-section {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        .sig-block {
+            flex: 1;
+            text-align: center;
+        }
+        .sig-title {
+            font-family: var(--font-display);
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        .sig-name {
+            font-size: 8pt;
+            color: var(--text-tertiary);
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        .sig-line {
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 4px;
+        }
+        .sig-label {
+            font-size: 7.5pt;
+            color: var(--text-tertiary);
+        }
+
+        /* Print Table Wrapper */
+        .print-container {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .print-container td {
+            padding: 0;
+            border: none;
+        }
+        
+        /* Footer */
+        .ftr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            border-top: 1px solid var(--border-light);
+            margin-top: 20px;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        .ftr-l {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ftr-l img {
+            height: 12px;
+            opacity: 0.4;
+        }
+        .ftr-t {
+            font-size: 6pt;
+            color: var(--text-tertiary);
+        }
+        .ftr-r {
+            font-family: var(--font-display);
+            font-size: 7pt;
+            font-weight: 600;
+            color: var(--kb-brown);
+        }
+    </style>
+</head>
+<body>
+
+<table class="print-container">
+  <thead>
+    <tr>
+      <td>
+        <!-- HEADER -->
+        <div class="hdr">
+            <div class="hdr-logos">
+                <img src="../assets/images/finpeace-logo.png" alt="FinPeace">
+                <div class="hdr-div"></div>
+                <img src="../assets/images/kbsv-logo.jpeg" alt="KBSV">
+            </div>
+            <div class="hdr-r">
+                <div class="hdr-title">SỞ GIAO DỊCH 3 (HO3)</div>
+                <div class="hdr-sub">Công ty CP Chứng khoán KB Việt Nam (KBSV)</div>
+            </div>
+        </div>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <!-- DOCUMENT TITLE -->
+        <div class="doc-header">
+    <div class="doc-title">Lộ Trình Đào Tạo & Thực Chiến 42 Ngày</div>
+    <div class="doc-sub">Chương trình Tuyển dụng – Đào tạo – Thực chiến Môi giới Thế hệ mới · KBSV NextGen 2026</div>
+</div>
+
+<!-- PROGRAM OVERVIEW CARD -->
+<div class="overview-card">
+    <div class="overview-col">
+        <div class="overview-label">Quy mô chương trình</div>
+        <div class="overview-value">42 Ngày Thực Chiến <span>(6 Tuần)</span></div>
+        <div class="overview-value">20.000.000 VNĐ <span>Ngân sách total</span></div>
+    </div>
+    <div class="overview-col">
+        <div class="overview-label">Daily Operational Routine</div>
+        <div class="overview-value">08:30 — Morning Briefing</div>
+        <div class="overview-value">13:30 — Content Lab & Live</div>
+    </div>
+    <div class="overview-col">
+        <div class="overview-label">Hội đồng Trainer & Mentor</div>
+        <div class="overview-value">Quân, Yến, Tuấn Anh, Quang, Vinh</div>
+        <div class="overview-value">Research Team KBSV HO3</div>
+    </div>
+</div>
+
+<!-- ==================== TUẦN 1 ==================== -->
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 1: NỀN TẢNG TƯ DUY & PHÂN TÍCH DOANH NGHIỆP (FA)
+    </span>
+    <span class="week-target">Mục tiêu: Bọc thép tư duy tài chính & Bộ lọc tích sản SIP</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 1 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D1</span> Định vị chân dung & Vùng đất hoang</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 1.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Vai trò Cố vấn Tài chính Bình an (Digital Wealth Advisor) thời kỳ mới. Nhận diện nỗi đau, sự hoang mang tài chính của F0 tại <strong>Vùng Đất Hoang</strong>.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Điền phiếu khảo sát thực tế và phân loại 3 nỗi sợ đầu tư lớn nhất của F0 dựa trên danh sách mối quan hệ.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Tham dư Welcome Day đầy đủ. Vượt qua bài kiểm tra trắc nghiệm tâm lý học hành vi (đạt <strong>&ge; 4/5 câu</strong>).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D2</span> Tháp tài sản 3 tầng & Kết cấu móng</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 1.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Mô hình Tháp Tài Sản 3 Tầng của FinPeace (Vùng 1: Bảo vệ, Vùng 2: Tích lũy, Vùng 3: Bứt tốc). Tại sao móng tài sản vững chắc giúp ngủ ngon.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tự vẽ và phân bổ cơ cấu Tháp tài sản cá nhân của bản thân Broker bằng bảng tính Excel tự động.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp file thiết kế Tháp tài sản cá nhân trước 17:00. Đạt phê duyệt từ Mentor nhóm.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D3</span> Dòng tiền thặng dư & Biên an toàn</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 1.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Phương pháp phân bổ dòng tiền thặng dư vào Vùng Bảo vệ và Tích lũy. Nghệ thuật storytelling giải thích Biên an toàn bằng chuyện "Kỹ sư xây cầu".</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Ghi âm video/audio ngắn 2 phút tự kể câu chuyện "Kỹ sư xây cầu" để giải thích Biên an toàn cho F0 dễ hiểu nhất.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Bài nói kể chuyện đạt đánh giá từ Mentor <strong>&ge; 7/10 điểm</strong>. Tương tác nhóm nội bộ đạt chỉ tiêu.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D4</span> Đọc nhanh BCTC & Mô hình Canvas</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 2.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Phương pháp bóc tách nhanh 3 bảng BCTC (Cân đối, Kết quả KD, Dòng tiền) trong 15 phút. 9 ô của Khung mô hình Canvas doanh nghiệp.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Chọn 1 doanh nghiệp niêm yết (HPG/FPT) và lập bảng tóm tắt mô hình kinh doanh Canvas thực tế.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp file phân tích Canvas doanh nghiệp (độ dài <strong>&ge; 500 từ</strong>) đúng hạn trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D5</span> Định giá Graham & Con hào kinh tế</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 2.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Công thức định giá Graham, PE, PB cơ bản. Nhận diện 4 loại "Con hào kinh tế" và sức mạnh định giá (Pricing Power) của doanh nghiệp.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tính toán định giá Graham thực tế cho HPG và FPT để tìm kiếm mức chiết khấu thị giá an toàn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài kiểm tra trắc nghiệm tính toán định giá doanh nghiệp (đạt <strong>&ge; 4/5 câu</strong>).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D6</span> Piotroski F-Score & Combat FA</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 2.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">9 tiêu chí của thang điểm Piotroski F-Score để đánh giá chất lượng tài chính doanh nghiệp Việt Nam và phát hiện gian lận sổ sách.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Chấm điểm F-Score cho mã cổ phiếu tuần trước. Tham gia đấu trường **FA Combat** thuyết trình bảo vệ luận điểm trước Mentor.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Điểm FA Combat do Mentor và Research team chấm đạt <strong>&ge; 70/100 điểm</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D7</span> Tích sản SIP & Lãi suất kép</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 3.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cơ chế tích sản cổ phiếu định kỳ hàng tháng (SIP). Toán học về Lãi suất kép dài hạn. Tại sao mua tích sản trong nhịp điều chỉnh lại có lợi.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tính toán bảng minh họa dòng tiền tích sản 1 triệu/tháng sau 5, 10, và 15 năm với lợi nhuận kỳ vọng 12%/năm.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp bảng Excel tính toán lãi suất kép đúng hạn, không sai công thức.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TUẦN 2 ==================== -->
+
+
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 2: QUY TRÌNH SALES HIỆN ĐẠI & CÔNG CỤ SỐ 4.0
+    </span>
+    <span class="week-target">Mục tiêu: Làm chủ quy trình Sales 6 bước, viết Prompt AI & thiết lập Profile</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 8 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D8</span> Bộ lọc tích sản & Lọc cổ phiếu tốt</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 3.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Bộ lọc 4 tiêu chí cốt lõi chọn cổ phiếu tích sản dài hạn của FinPeace (Sức khỏe tài chính, Lợi nhuận bền vững, Ban lãnh đạo, Định giá).</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Chạy bộ lọc 4 tiêu chí trên danh mục VN30 để lọc ra top 3 cổ phiếu tích sản tối ưu nhất thị trường hiện tại.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Bài test trắc nghiệm bộ lọc tích sản đạt điểm số <strong>&ge; 8/10 câu</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 9 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D9</span> Timing mua tích sản & MA200</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 3.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cách tính toán Giá trị nội tại (IV). Sử dụng đường MA200 trên biểu đồ kỹ thuật làm kim chỉ nam giải ngân gom tích sản tối ưu.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Xác định các vùng mua gom tích sản chiết khấu rẻ của HPG trên biểu đồ kỹ thuật trong 3 năm qua.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài tập thực hành xác định vùng mua tích sản nộp Mentor phê duyệt.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 10 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D10</span> Hoạch định kế hoạch & Tích sản tặng tiền</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 3.4
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy trình lập kế hoạch tích sản theo dòng tiền thặng dư. Thiết kế deal "Tích sản tặng tiền khi hoàn thành 5 kỳ" để tiếp cận eKYC.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Viết bản đề xuất kế hoạch tích sản mẫu cho một khách hàng văn phòng có dòng tiền thặng dư 3 triệu/tháng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài kiểm tra cuối tuần 1. Tổng điểm tuần 1 đạt <strong>&ge; 50/100 điểm</strong> để tránh Sudden Death.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 11 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D11</span> Chân dung khách hàng & Phân loại DISC</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 4.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Bản chất 6 bước thiết lập mối quan hệ (IW Framework). 4 nhóm tính cách tài chính DISC (D, I, S, C) và cách nhận diện qua MXH.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tìm kiếm và phân tích profile cá nhân của 3 khách hàng tiềm năng trên Facebook để dự đoán nhóm tính cách DISC.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Cập nhật hồ sơ phân tích DISC của 3 Lead lên hệ thống CRM tạm thời trước 17:30.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 12 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D12</span> Nghệ thuật phá băng & Nuôi dưỡng tin cậy</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 4.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Kỹ thuật tương tác phi thương mại để phá băng lòng tin. Quy tắc trao tặng giá trị miễn phí trước (file Excel, Ebook) để nuôi dưỡng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn thảo 4 mẫu câu bình luận phá băng khác nhau ứng với 4 nhóm tính cách DISC gửi cho Mentor duyệt.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">4 mẫu câu bình luận đạt yêu cầu thực hành của Mentor, không bị rập khuôn.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 13 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D13</span> Nghệ thuật chốt cuộc hẹn (Booking)</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 4.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Kỹ thuật CTA khéo léo để mời khách hàng tham gia buổi vẽ Tháp tài sản 30 phút qua Zoom hoặc cà phê trực tiếp.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Thực hành sắm vai (Role-play) gọi điện/nhắn tin thuyết phục khách hàng đồng ý booking lịch hẹn tư vấn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Đánh giá điểm thực hành Role-play chốt hẹn của Mentor đạt <strong>&ge; 8/10 điểm</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 14 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D14</span> Viết prompt AI bọc thép (Khung RCTC)</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 5.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Ứng dụng AI SalesGPT nâng cao hiệu suất bán hàng. Cấu trúc Prompt 4 yếu tố bọc thép: RCTC (Role - Context - Task - Constraints).</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn thảo prompt trên ChatGPT/Gemini để sinh kịch bản tư vấn tích sản HPG cho khách hàng bận rộn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp đường link prompt và kịch bản đạt kiểm duyệt của Mentor trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 15 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D15</span> AI cá nhân hóa theo DISC & Xử lý từ chối</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 5.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Tối ưu giọng điệu prompt phù hợp với 4 nhóm tính cách DISC. Kỹ thuật dùng AI soạn kịch bản xử lý từ chối (Objection Handling).</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Dùng AI sinh kịch bản xử lý câu: *"Chứng khoán rủi ro lắm, chị chỉ gửi tiết kiệm thôi"*. Chỉnh sửa 20% cá nhân hóa.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài test thực hành xử lý từ chối bằng AI (đạt <strong>&ge; 80/100 điểm</strong> chấm chéo).</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TUẦN 3 ==================== -->
+
+
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 3: THỰC CHIẾN RISING STARS - KHỞI ĐỘNG PHỄU LEAD & MARGIN
+    </span>
+    <span class="week-target">Mục tiêu: Thực hành Daily Routine, Telesales thực chiến, Quản trị Margin & RTT</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 16 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D16</span> Quản trị CRM & Cấu trúc Telesales Vàng</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 6.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Phân loại Cold/Warm/Hot Lead trên CRM. Cấu trúc cuộc gọi lạnh 4 bước để vượt qua 10 giây đầu chống cúp máy.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Luyện giọng nói, tốc độ nói và ghi âm thử cuộc gọi nháp dài 90 giây theo kịch bản mẫu.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Ghi âm cuộc gọi nháp đạt chất lượng âm thanh và giọng điệu chuẩn chỉnh được duyệt.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 17 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D17</span> Telesales Cold Lead & Xử lý từ chối đầu cuộc</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 6.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Kỹ thuật telesales tiếp cận Cold Lead từ ngày hội việc làm. Cách xử lý khi khách hàng gạt đi phàn nàn "đang bận".</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Gọi điện trực tiếp cho 15 Cold Lead trong danh sách được phân bổ tại văn phòng HO3.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">KPI Daily: Thực hiện <strong>&ge; 15 cuộc gọi telesales</strong> thực tế. Tỷ lệ kết nối thành công &ge; 30%.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 18 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D18</span> Tin nhắn Zalo Follow-Up & Đồng bộ CRM</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 6.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Mẫu tin nhắn Zalo/SMS gửi quà tặng hữu ích sau cuộc gọi để giữ liên hệ. Cách cập nhật ghi chú lên CRM chi nhánh.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Nhắn tin follow-up cho toàn bộ các lead đã liên hệ trong ngày. Đồng bộ 100% dữ liệu lên CRM.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">KPI Daily: Nhắn tin <strong>&ge; 10 lead</strong>. Cập nhật 100% CRM trước 17:30.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 19 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D19</span> Đòn bẩy Margin & Công thức tính RTT</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 7.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Bản chất Margin trong giao dịch cơ sở. Đòn bẩy con dao hai lưỡi. Công thức tính Tỷ lệ tài sản ròng RTT thực tế.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tính toán sức mua và RTT của một tài khoản mẫu khi giá cổ phiếu thế chấp biến động tăng/giảm 15%.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài trắc nghiệm tính toán Margin (đạt <strong>&ge; 4/5 câu</strong>).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 20 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D20</span> Xử lý khủng hoảng Call Margin & Force Sell</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 7.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Các ngưỡng RTT (Safe &ge; 45%, Warn 35-45%, Call 30-35%, Force Sell < 30%). Kỹ thuật tư vấn xử lý nộp tiền/bán hạ.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Giải bài tập tính toán số tiền nộp thêm hoặc số cổ phiếu cần bán chủ động để đưa RTT vi phạm về 40%.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp lời giải bài tập tình huống trước 17:00 đúng công thức toán học.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 21 (Gate) -->
+    <div class="day-card gate-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D21</span> Gói ưu đãi Margin & Vượt ải Sudden Death</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 7.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Gói ưu đãi lãi vay Margin tốt của KBSV (lãi suất eKYC, gói T+3/T+5 - áp dụng theo chương trình cụ thể của công ty từng thời kỳ). Cách dùng gói Margin ưu đãi làm đòn bẩy tăng NAV.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn thảo tin nhắn Zalo chào gói ưu đãi Margin gửi cho 5 khách hàng cũ giao dịch năng động đang chịu phí cao.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--warning-border);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val"><span class="gate-alert">⚠️ CỘT MỐC SUDDEN DEATH TUẦN 3:</span> Số tài khoản mở mới active lũy tiến đạt <strong>&ge; 2 tài khoản</strong>. Vi phạm = loại trực tiếp.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TUẦN 4 ==================== -->
+
+
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 4: THỰC CHIẾN RISING STARS - PHÁI SINH HEDGING & PHÂN TÍCH KỸ THUẬT
+    </span>
+    <span class="week-target">Mục tiêu: Phòng ngừa rủi ro phái sinh, đọc biểu đồ kỹ thuật & xây dựng Deal Strategy</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 22 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D22</span> Phái sinh VN30 Futures & Chiến thuật Hedging</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 8.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cơ chế giao dịch Hợp đồng tương lai VN30 (Long/Short T+0). Sử dụng phái sinh để Hedging bảo vệ danh mục cơ sở trong bão giảm.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tính toán số lượng hợp đồng phái sinh cần Short đối ứng để bảo vệ danh mục cơ sở trị giá 1 tỷ đồng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp file Excel tính toán Hedging phái sinh đúng kết quả thực tế trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 23 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D23</span> Quy định ký quỹ VSD & Quản trị rủi ro phái sinh</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 8.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy định ký quỹ ban đầu 18% của VSD. Phí thuế phái sinh. Cách tư vấn giao dịch phái sinh kỷ luật, tránh cờ bạc gỡ lỗ.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn thảo kịch bản tư vấn cảnh báo rủi ro phái sinh cho một khách hàng cơ sở đang muốn vay nợ Short phái sinh hoảng loạn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Vượt qua bài kiểm tra trắc nghiệm nghiệp vụ phái sinh (đạt <strong>&ge; 8/10 câu</strong>).</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 24 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D24</span> Tích sản ETF Diamond cho người bận rộn</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 8.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Bản chất chứng chỉ quỹ ETF (Diamond, VN30). Thiết kế danh mục kết hợp cổ phiếu vĩ mô Vùng 2 và ETF cho khách hàng bận rộn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Thiết kế danh mục đầu tư mẫu: 60% FPT/HPG + 40% Diamond ETF gửi khách hàng tham khảo.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Bản thiết kế danh mục ETF đạt phê duyệt và ký duyệt từ Mentor trực tiếp.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 25 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D25</span> Đọc biểu đồ bằng Giá & Volume (VTA)</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 9.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Nguyên lý đọc tâm lý dòng tiền qua Giá (Price Action) và Khối lượng (Volume). Xác định ngưỡng hỗ trợ/kháng cự động và tĩnh.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Vẽ và chú thích các ngưỡng hỗ trợ/kháng cự trên biểu đồ thực tế của SSI và HPG.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp ảnh chụp màn hình biểu đồ SSI/HPG đã vẽ chú thích phân tích kỹ thuật trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 26 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D26</span> Chu kỳ Wyckoff & Lý thuyết Dow</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 9.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">4 pha chu kỳ Wyckoff (Tích lũy - Đẩy giá - Phân phối - Đè giá) áp dụng tại Việt Nam. Lý thuyết Dow về cấu trúc xu hướng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tìm kiếm và phân tích biểu đồ của 3 mã cổ phiếu đang nằm ở Pha B (Đẩy giá) và Pha A (Tích lũy) thực tế.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp báo cáo phân tích chu kỳ Wyckoff của 3 cổ phiếu tự chọn đạt chuẩn.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 27 (Gate) -->
+    <div class="day-card gate-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D27</span> Đối xứng sóng & Vượt ải Sudden Death</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 9.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy luật đối xứng sóng về biên độ giá và thời gian. Vai trò của chỉ báo kỹ thuật (MACD, RSI, Stochastic) làm bộ lọc xác nhận phụ.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Dự báo mốc đạt đỉnh/đáy đảo chiều tiếp theo của VNINDEX sử dụng Fibonacci và quy luật đối xứng thời gian.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--warning-border);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val"><span class="gate-alert">⚠️ CỘT MỐC SUDDEN DEATH TUẦN 4:</span> Số tài khoản active lũy tiến đạt <strong>&ge; 5 tài khoản</strong>. Vi phạm = loại trực tiếp.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TUẦN 5 ==================== -->
+
+
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 5: THỰC CHIẾN RISING STARS - THIẾT KẾ DEAL, BRANDING & CONTENT LAB
+    </span>
+    <span class="week-target">Mục tiêu: Quản trị vốn 2% NAV, chuẩn hóa Profile cá nhân, sản xuất Video ngắn</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 28 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D28</span> Hoạch định Deal Strategy & Mốc Entry/SL/TP</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 10.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Khái niệm "Tư vấn theo Deal" để xóa bỏ nỗi sợ giao dịch của F0. Cách xác định chính xác các điểm Entry, Stop Loss và Take Profit.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Lập một bản kế hoạch giao dịch (Trading Plan) hoàn chỉnh cho cổ phiếu ACB gửi Mentor duyệt.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp Trading Plan của cổ phiếu ACB đạt chuẩn kỹ thuật cơ bản.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 29 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D29</span> Quy tắc quản trị rủi ro 2% NAV</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 10.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cơ chế bọc thép tài khoản bằng quy tắc rủi ro 2% NAV. Công thức tính toán Quy mô vị thế mua (Position Sizing) để bảo vệ vốn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tính toán số lượng cổ phiếu DXG tối đa được mua cho tài khoản NAV 200 triệu với mốc cắt lỗ kỹ thuật là 8%.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Hoàn thành bài tập tính toán vị thế mua đạt 100% độ chính xác.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 30 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D30</span> Script chào Deal & Thuyết phục chốt lệnh</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 10.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Nghệ thuật viết tin nhắn và bài đăng giới thiệu Deal giao dịch. Cách điều chỉnh nội dung deal phù hợp với tính cách DISC của khách hàng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn thảo 2 bản script giới thiệu Deal HPG gửi cho khách hàng nhóm D (quyết định nhanh) và nhóm C (cần số liệu).</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">2 bản script chào Deal đạt yêu cầu và được duyệt từ Mentor.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 31 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D31</span> Định vị hình mẫu KOC & Chuẩn hóa Profile</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 11.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">4 hình mẫu Financial KOC thành công. Cách thiết lập Bio/Tagline, ảnh đại diện, ảnh bìa chuyên nghiệp để xây dựng uy tín trên MXH.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Chuẩn hóa toàn bộ thông tin cá nhân trên trang Facebook, LinkedIn và TikTok theo hình mẫu đã chọn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Gửi link trang cá nhân đã chuẩn hóa cho Mentor kiểm duyệt trước 17:30.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 32 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D32</span> Lập kế hoạch lịch nội dung (Content Calendar)</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 11.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Tỷ lệ phân bổ nội dung vàng: 70% Giá trị - 20% Phong cách sống - 10% Bán hàng. Cách lập lịch nội dung hàng tuần.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Lập lịch trình nội dung chi tiết cho trang cá nhân của bạn trong 7 ngày tới.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp Content Calendar 7 ngày đạt phê duyệt của Mentor trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 33 (Gate) -->
+    <div class="day-card gate-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D33</span> Phát ngôn Compliance & Vượt ải Sudden Death</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 11.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Các quy chuẩn pháp lý và tuân thủ nội bộ của KBSV. Cấm cam kết lợi nhuận, cấm tiết lộ tài sản khách hàng, yêu cầu trích nguồn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Rà soát và gỡ bỏ tất cả các bài viết vi phạm hoặc nhạy cảm trên trang cá nhân của bạn.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--warning-border);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val"><span class="gate-alert">⚠️ CỘT MỐC SUDDEN DEATH TUẦN 5:</span> Đạt 100% điểm bài test Compliance. Số tài khoản active lũy tiến đạt <strong>&ge; 9 tài khoản</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 34 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D34</span> Thuật toán video ngắn & Hook 3 giây</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 12.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Thuật toán phân phối video ngắn của TikTok. 5 công thức viết Hook 3 giây đầu tiên để giật tít đánh trúng nỗi đau người xem.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Viết thử 5 câu Hook khác nhau cho video ngắn phân tích cổ phiếu FPT gửi Mentor duyệt.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp 5 câu Hook được Mentor chấm điểm <strong>&ge; 8/10 điểm</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 35 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D35</span> Soạn thảo kịch bản video dọc 60 giây</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 12.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cấu trúc kịch bản video ngắn 2 cột (Visual - Audio). Kỹ thuật pacing chuyển cảnh 3 giây một lần để chống chán mắt.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Viết kịch bản chi tiết cho video ngắn 60 giây giới thiệu Deal tích sản tặng tiền của KBSV.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp kịch bản video ngắn hoàn chỉnh trước 17:00.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== TUẦN 6 ==================== -->
+
+
+<div class="week-banner">
+    <span class="week-title">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        TUẦN 6: THỰC CHIẾN RISING STARS - LIVESTREAM, CỘNG ĐỒNG & CHINH PHỤC CỘT MỐC CUỐI
+    </span>
+    <span class="week-target">Mục tiêu: Dựng Video ngắn, Livestream 90 phút, vận hành nhóm Zalo & tốt nghiệp</span>
+</div>
+
+<div class="days-grid">
+    <!-- Day 36 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D36</span> Quay dựng Video chuẩn Safe Zone trên CapCut</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 12.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy tắc Safe Zone tỷ lệ 9:16 trên di động. Hướng dẫn sử dụng CapCut chèn phụ đề tự động và hiệu ứng infographic động.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Quay và dựng hoàn chỉnh video ngắn theo kịch bản ngày 35. Xuất bản lên TikTok/Reels cá nhân.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp đường link video đã đăng. KPI: Đạt <strong>&ge; 500 views trung bình</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 37 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D37</span> Setup phòng Livestream tiêu chuẩn tại HO3</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 13.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy chuẩn kỹ thuật phòng livestream tài chính (Ánh sáng 3 điểm, mic thu âm, OBS Studio). Kỹ thuật eye-contact trực diện.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Thực hành setup phòng livestream nháp tại văn phòng HO3 cùng nhóm học viên.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Mentor kiểm tra và phê duyệt setup phòng livestream thực tế.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 38 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D38</span> Thiết kế kịch bản Livestream 90 phút</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 13.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cấu trúc 3 phần phiên live 90 phút (Nhận định thị trường 30p - Phân tích Deal 40p - Q&A chốt eKYC 20p). Kỹ thuật giữ chân.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Viết kịch bản chi tiết kèm mốc thời gian và danh sách biểu đồ cần trình chiếu cho phiên live tối nay.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Nộp kịch bản phiên livestream chi tiết trước 16:00.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 39 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D39</span> Livestream thực chiến & Kêu gọi mở tài khoản</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 13.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Kỹ thuật ghim link mở tài khoản, trả lời câu hỏi trực tiếp, xử lý comment tiêu cực phá đám khéo léo trên live.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Thực hiện livestream thật 90 phút trên tài khoản cá nhân (TikTok/Facebook Live).</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">KPI: Thời lượng livestream <strong>&ge; 90 phút/buổi</strong>. Viewer đồng thời trung bình &ge; 10 người.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 40 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D40</span> Thiết lập & Xây dựng room Zalo cộng đồng</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 14.1
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cách đặt tên room, nội quy nhóm, set up bot tự động. Chiến thuật "Lead Magnet" tặng tài liệu có điều kiện eKYC để kéo Lead.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tạo lập room Zalo cộng đồng của riêng bạn. Mời 15 Lead ấm đầu tiên tham gia nhóm.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Room được kích hoạt thành công, có tối thiểu <strong>15 thành viên</strong> hoạt động thực tế.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 41 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D41</span> Vận hành room Zalo & Quản trị khủng hoảng tin đồn</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 14.2
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Quy trình gửi bản tin Morning Briefing và cập nhật giữa phiên. Cách xử lý tin đồn tiêu cực gây hoảng loạn trong room.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Soạn và gửi bản tin Morning Briefing vào room của bạn. Hỗ trợ nhà đầu tư thảo luận trong phiên.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val">Có ít nhất 3 lượt tương tác thảo luận chất lượng từ các thành viên trong ngày.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 42 (Final Gate) -->
+    <div class="day-card gate-card">
+        <div class="day-header">
+            <div class="day-title"><span class="day-badge">D42</span> Báo cáo tốt nghiệp & Chinh phục mốc eKYC</div>
+            <div class="module-ref">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px; color: var(--kb-brown);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Module 14.3
+            </div>
+        </div>
+        <div class="day-body">
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    Lý thuyết
+                </div>
+                <div class="col-val">Cách tổng hợp số liệu kết quả thực chiến (TK active, NAV, views). Kỹ năng làm slide thuyết trình trước hội đồng.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    Thực hành
+                </div>
+                <div class="col-val">Tổng hợp số liệu KPI cá nhân và thuyết trình slide báo cáo tốt nghiệp trước Ban giám đốc HO3.</div>
+            </div>
+            <div class="col-item">
+                <div class="col-label">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--warning-border);"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Test & KPI
+                </div>
+                <div class="col-val"><span class="gate-alert">🏆 CỘT MỐC TUYỂN DỤNG CUỐI CÙNG:</span> Tổng tài khoản active lũy tiến đạt <strong>&ge; 14 tài khoản</strong>. Ký HĐ chính thức tại KBSV HO3.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+        <!-- FOOTER -->
+        <div class="ftr">
+            <div class="ftr-l">
+                <img src="../assets/images/finpeace-logo.png" alt="">
+                <div style="width:1px; height:12px; background:var(--border);"></div>
+                <img src="../assets/images/kbsv-logo.jpeg" alt="">
+                <span class="ftr-t">© 2026 KBSV NextGen · FinPeace × KB Securities Vietnam · Mẫu DT-42</span>
+            </div>
+            <div class="ftr-r">nextgen.finpeace.cloud</div>
+        </div>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>

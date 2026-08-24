@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng Tra Cứu Nhanh Thực Chiến - D17: KỊCH BẢN ROLE-PLAY XỬ LÝ HOẢNG LOẠN & THUYẾT PHỤC CƠ CẤU DANH MỤC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page { 
+            size: A4 portrait; 
+            margin: 12mm 12mm 12mm 12mm; 
+        }
+        :root {
+            --kb-yellow: #F5A623;
+            --kb-brown: #8B7355;
+            --kb-brown-dark: #5c4b37;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --border: #d5cfc5;
+            --bg-warm: #FAFAF7;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', sans-serif;
+            --warning-bg: rgba(224, 80, 80, 0.04);
+            --warning-border: #E05050;
+        }
+        
+        *, *::before, *::after { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: var(--font-body); 
+            font-size: 8.5pt; 
+            color: var(--text-primary); 
+            line-height: 1.45; 
+            background: #fff; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        
+        .container {
+            border: 2px solid var(--kb-brown);
+            padding: 15px;
+            background: var(--bg-warm);
+            min-height: 270mm;
+            position: relative;
+        }
+        
+        /* Header */
+        .hdr { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding-bottom: 8px; 
+            border-bottom: 2px solid var(--kb-yellow); 
+            margin-bottom: 12px; 
+        }
+        .hdr-title-box {
+            display: flex;
+            flex-direction: column;
+        }
+        .hdr-brand {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 7.5pt;
+            color: var(--kb-brown-dark);
+            letter-spacing: 0.5px;
+        }
+        .hdr-logo-txt {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 6.5pt;
+            color: var(--text-secondary);
+        }
+        .hdr-r { 
+            text-align: right; 
+        }
+        .hdr-code { 
+            font-family: var(--font-display); 
+            font-weight: 700; 
+            font-size: 9.5pt; 
+            color: var(--text-primary);
+        }
+        .hdr-sub { 
+            font-size: 6.5pt; 
+            color: var(--kb-brown); 
+            font-weight: 500; 
+        }
+        
+        /* Document Title */
+        .doc-header { 
+            text-align: center; 
+            margin-bottom: 12px; 
+        }
+        .doc-day {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--kb-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        .doc-title { 
+            font-family: var(--font-display); 
+            font-size: 13pt; 
+            font-weight: 700; 
+            color: var(--text-primary); 
+            margin-bottom: 1px; 
+            text-transform: uppercase;
+        }
+        .doc-sub { 
+            font-size: 8pt; 
+            color: var(--text-secondary); 
+            font-style: italic;
+        }
+        
+        /* Layout Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+        
+        .card {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--kb-brown-dark);
+            border-bottom: 1px solid var(--kb-yellow);
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Lists */
+        ul {
+            list-style: none;
+        }
+        li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 6px;
+        }
+        li::before {
+            content: "▪";
+            color: var(--kb-yellow);
+            position: absolute;
+            left: 0;
+            top: 0px;
+            font-size: 7.5pt;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 4px 6px;
+            text-align: left;
+            font-size: 7.5pt;
+        }
+        th {
+            background: var(--bg-warm);
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        /* Quote / Dialogue Box */
+        .dialogue-box {
+            background: var(--bg-warm);
+            border-left: 3px solid var(--kb-brown);
+            padding: 8px 10px;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 5px;
+            line-height: 1.4;
+            font-size: 8pt;
+        }
+        
+        /* Compliance Box */
+        .compliance-box {
+            border: 1px solid var(--warning-border);
+            background: var(--warning-bg);
+            padding: 8px 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        .compliance-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 8.5pt;
+            color: var(--warning-border);
+            margin-bottom: 3px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .compliance-text {
+            font-size: 7.5pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        
+        /* Footer */
+        .ftr {
+            position: absolute;
+            bottom: 12px;
+            left: 15px;
+            right: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 6px;
+            border-top: 1px solid var(--border);
+            font-size: 6.5pt;
+            color: var(--text-tertiary);
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+            }
+            .container {
+                border: 2px solid var(--kb-brown) !important;
+                background: var(--bg-warm) !important;
+                min-height: 270mm !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="hdr">
+            <div class="hdr-title-box">
+                <span class="hdr-brand">KBSV NEXTGEN 2026</span>
+                <span class="hdr-logo-txt">FinPeace × KB Securities Vietnam · HO3</span>
+            </div>
+            <div class="hdr-r">
+                <span class="hdr-code">NTD-SV-D17-CS</span>
+                <div class="hdr-sub">BẢNG TRA CỨU NHANH THỰC CHIẾN</div>
+            </div>
+        </div>
+        
+        <!-- Document Title -->
+        <div class="doc-header">
+            <div class="doc-day">NGÀY 17 (D17)</div>
+            <h1 class="doc-title">KỊCH BẢN ROLE-PLAY XỬ LÝ HOẢNG LOẠN & THUYẾT PHỤC CƠ CẤU DANH MỤC</h1>
+            <div class="doc-sub">Tài liệu học tập tích hợp kỹ năng thực hành hàng ngày dành cho học viên</div>
+        </div>
+        
+        <!-- Layout Grid -->
+        <div class="grid">
+            <!-- Left Column: Objectives and Checklist -->
+            <div class="left-col">
+                <div class="card" style="margin-bottom: 15px;">
+                    <div class="card-title">📌 MỤC TIÊU THỰC CHIẾN (KHUNG ASK)</div>
+                    <ul>
+                        <li><strong>Thái độ (Attitude):</strong>  Thể hiện bản lĩnh điềm tĩnh, tự tin và vững vàng trước các phản ứng gay gắt của khách hàng. Tuyệt đối không có thái độ trốn tránh trách nhiệm khi thị trường sụt giảm. Đặt tính kỷ luật hành vi và sự an toàn tài sản của khách hàng lên hàng đầu.</li>
+                        <li><strong>Kỹ năng (Skills):</strong>  Nhập vai xuất sắc xử lý các tình huống hoảng loạn tột độ của khách hàng F0; thực hiện thành thạo quy trình 5 bước thuyết phục khách hàng cắt lỗ cổ phiếu rác để chuyển sang danh mục tích sản bọc thép; bám sát kịch bản phản biện khoa học.</li>
+                        <li><strong>Kiến thức (Knowledge):</strong>  Nắm vững quy trình và barem chấm điểm kỹ năng sắm vai (Role-play Rubric) của HO3. Hiểu rõ các nguyên lý cô lập rủi ro tài khoản và cách thức chuyển đổi danh mục tái cơ cấu.</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">✅ CHECK-LIST HÀNH ĐỘNG HÀNG NGÀY</div>
+                    <ul>
+                        <li>Lập danh sách khách hàng đang gồng lỗ cổ phiếu rác</li>
+<li>Thực hiện cuộc gọi cơ cấu danh mục tài sản</li>
+<li>Phân tích tại sao cần chuyển từ đầu cơ sang tích sản</li>
+<li>Hướng dẫn đặt lệnh bán hạ rác và gom mua ACB</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Column: Formulas and Dialogues -->
+            <div class="right-col">
+                <div class="card" style="margin-bottom: 15px;">
+                    <div class="card-title">📊 CÔNG THỨC CỐT LÕI & THAM SỐ ĐỘNG</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Chỉ số / Công thức</th>
+                                <th>Tham số / Giá trị</th>
+                                <th>Ý nghĩa / Quy chuẩn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cơ cấu tài sản</strong></td>
+                                <td><code>Bán cổ phiếu đầu cơ yếu kém -> ACB</code></td>
+                                <td>Tập trung vốn vào tài sản bọc thép</td>
+                            </tr>
+<tr>
+                                <td><strong>Cắt lỗ dứt khoát</strong></td>
+                                <td><code>Hiện thực hóa khoản lỗ nhỏ để bảo toàn</code></td>
+                                <td>Tránh việc chôn vốn lâu năm</td>
+                            </tr>
+<tr>
+                                <td><strong>DCA ACB giá rẻ</strong></td>
+                                <td><code>Mua tích lũy ACB bằng tiền bán rác</code></td>
+                                <td>Tối ưu hóa tốc độ hồi phục tài sản</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">💬 KỊCH BẢN THOẠI NHANH / MẪU KHUYẾN NGHỊ</div>
+                    <div class="dialogue-box">
+                        "Giữ cổ phiếu yếu giống như giữ cành củi mục. Chúng ta bán cơ cấu sang ACB để bảo vệ tài sản và đón sóng tăng an toàn."
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Compliance Warnings Box -->
+        <div class="compliance-box">
+            <div class="compliance-title">⚠️ QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)</div>
+            <div class="compliance-text">
+                1.  Broker tuyệt đối không được tự ý đăng nhập vào tài khoản cá nhân của khách hàng bằng mật khẩu của họ để thực hiện lệnh mua/bán cơ cấu danh mục hộ, kể cả khi khách hàng đã đồng ý bằng miệng qua điện thoại. 2.  Mọi lệnh giao dịch cơ cấu phải do...
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="ftr">
+            <span>SỞ GIAO DỊCH 3 (HO3) - KB SECURITIES VIETNAM © 2026</span>
+            <span>TÀI LIỆU LƯU HÀNH NỘI BỘ - PHÙ HỢP TIÊU CHUẨN PDF PRINT-ONLY</span>
+        </div>
+    </div>
+</body>
+</html>
