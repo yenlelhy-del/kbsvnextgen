@@ -211,6 +211,12 @@
             width: fit-content;
         }
 
+        .badge-icon-svg {
+            width: 16px;
+            height: 16px;
+            color: var(--kb-yellow-dark);
+        }
+
         .hero-title {
             font-size: clamp(30px, 4.5vw, 48px);
             line-height: 1.15;
@@ -357,7 +363,7 @@
             color: var(--text-secondary);
         }
 
-        /* ── LEARNER DASHBOARD (Grid fix to avoid overlapping) ── */
+        /* ── LEARNER DASHBOARD ── */
         .dashboard-container {
             display: none;
             max-width: 1360px;
@@ -369,14 +375,14 @@
 
         .dashboard-grid {
             display: grid;
-            grid-template-columns: 1fr 340px; /* Left takes space, right is strictly 340px */
+            grid-template-columns: 1fr 340px;
             gap: 2rem;
             align-items: start;
         }
 
         /* Left Side: Weekly Tabs & 42 Day Cards */
         .left-panel {
-            min-width: 0; /* Important to prevent flex/grid blow-out */
+            min-width: 0;
         }
 
         .weekly-tabs-container {
@@ -411,7 +417,7 @@
             background: var(--kb-yellow-light);
         }
 
-        /* Roadmap Grid - Cards fit in screen */
+        /* Roadmap Grid */
         .roadmap-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -430,7 +436,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            min-height: 195px; /* Taller card to prevent overflow */
+            min-height: 195px;
             box-shadow: 0 2px 10px rgba(92, 75, 55, 0.02);
         }
 
@@ -439,19 +445,9 @@
             box-shadow: var(--shadow-soft);
         }
 
-        /* Day Card Statuses */
         .day-card.completed {
             background: #fff;
             border-color: rgba(76, 175, 80, 0.4);
-        }
-
-        .day-card.completed::after {
-            content: "✓";
-            color: var(--success-color);
-            position: absolute;
-            top: 14px; right: 16px;
-            font-weight: 900;
-            font-size: 10pt;
         }
 
         .day-card.active-day {
@@ -461,19 +457,6 @@
             animation: activeGlow 2s infinite ease-in-out;
         }
 
-        .day-card.active-day::after {
-            content: "Đang học";
-            background: var(--kb-yellow-dark);
-            color: #fff;
-            font-size: 6pt;
-            font-weight: 800;
-            padding: 2px 6px;
-            border-radius: 4px;
-            position: absolute;
-            top: 14px; right: 16px;
-            text-transform: uppercase;
-        }
-
         .day-card.locked {
             background: #f1ede6;
             opacity: 0.65;
@@ -481,11 +464,22 @@
             pointer-events: none;
         }
 
-        .day-card.locked::after {
-            content: "🔒";
+        /* SVG icons inside card absolute position */
+        .card-status-svg {
             position: absolute;
-            top: 14px; right: 16px;
-            font-size: 9pt;
+            top: 14px;
+            right: 16px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .completed-svg {
+            color: var(--success-color);
+        }
+
+        .locked-svg {
+            color: var(--kb-brown);
+            opacity: 0.6;
         }
 
         .day-code {
@@ -560,9 +554,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16pt;
             background: var(--bg-warm);
             border: 1px solid var(--border-light);
+        }
+
+        .icon-svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Custom Motion Graphics for Streaks and Levels */
+        @keyframes firePulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(245, 80, 35, 0.4)); color: #FF9800; fill: #FF9800; }
+            50% { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(245, 80, 35, 0.8)); color: #FF5722; fill: #FF5722; }
+        }
+        .animated-fire {
+            animation: firePulse 2s infinite ease-in-out;
+        }
+
+        @keyframes sproutGrow {
+            0%, 100% { transform: rotate(0deg) scale(1); color: #4CAF50; fill: none; }
+            50% { transform: rotate(4deg) scale(1.08); color: #8BC34A; fill: none; }
+        }
+        .animated-sprout {
+            animation: sproutGrow 3s infinite ease-in-out;
         }
 
         .status-info {
@@ -663,7 +678,7 @@
             line-height: 1.4;
         }
 
-        /* Mascot Advisor Widget - Correcting text squishing */
+        /* Mascot Advisor Widget */
         .mascot-advisor-panel {
             background: #fff;
             border: 1px solid var(--border);
@@ -671,7 +686,7 @@
             padding: 1.5rem;
             box-shadow: var(--shadow-soft);
             display: flex;
-            flex-direction: row; /* Horizontal alignment */
+            flex-direction: row;
             align-items: center;
             gap: 15px;
         }
@@ -683,7 +698,7 @@
             border-radius: 50%;
             border: 2px solid var(--kb-yellow);
             background: var(--bg-warm);
-            flex-shrink: 0; /* Prevent the mascot image from shrinking */
+            flex-shrink: 0;
         }
 
         .mascot-bubble {
@@ -696,9 +711,9 @@
             font-weight: 600;
             color: var(--text-secondary);
             line-height: 1.45;
-            flex-grow: 1; /* Stretch bubble */
-            min-width: 170px; /* Avoid collapsing horizontally */
-            word-break: normal; /* Standard word breaking */
+            flex-grow: 1;
+            min-width: 170px;
+            word-break: normal;
             white-space: normal;
         }
 
@@ -834,6 +849,8 @@
             cursor: pointer;
             border-radius: 8px 8px 0 0;
             transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
         }
 
         .lesson-tab-btn.active {
@@ -842,6 +859,13 @@
             border: 1px solid var(--border);
             border-bottom: 2px solid #fff;
             margin-bottom: -2px;
+        }
+
+        .tab-icon-svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+            color: var(--kb-brown);
         }
 
         /* Tabs Content Display Container */
@@ -1062,11 +1086,11 @@
         /* RESPONSIVE SCALING */
         @media (max-width: 1024px) {
             .dashboard-grid {
-                grid-template-columns: 1fr; /* Switch to single column on tablet/mobile */
+                grid-template-columns: 1fr;
                 gap: 2rem;
             }
             .right-side-panel {
-                width: 100%; /* Take full width on smaller screens */
+                width: 100%;
             }
             .lesson-modal-card {
                 grid-template-columns: 1fr;
@@ -1177,7 +1201,13 @@
     <section class="homepage-hero" id="homepageSection">
         <div class="hero-left">
             <div class="program-badge">
-                <span>🏆</span>
+                <svg class="badge-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                    <path d="M4 22h16"/>
+                    <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/>
+                    <path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z"/>
+                </svg>
                 <span>Chương trình Tuyển dụng - Đào tạo - Thực chiến Môi giới 4.0</span>
             </div>
             <h1 class="hero-title">Trở thành<br><span>Digital Wealth Advisor</span><br>Thế hệ mới</h1>
@@ -1265,7 +1295,7 @@
             <!-- Right Panel: Mascot, Stats, Sudden Death -->
             <div class="right-side-panel">
                 
-                <!-- Mascot Speech Widget - Stacked and Flex-aligned to prevent narrow text -->
+                <!-- Mascot Speech Widget -->
                 <div class="mascot-advisor-panel">
                     <img src="" alt="KB Mascot Companion" class="mascot-character-img" id="mascotAvatarWidget">
                     <div class="mascot-bubble">
@@ -1273,17 +1303,27 @@
                     </div>
                 </div>
 
-                <!-- Gamification Panel -->
+                <!-- Gamification Panel - Replaced Emojis with Custom SVGs with CSS Motion graphics -->
                 <div class="gamify-status-card">
                     <div class="status-row">
-                        <div class="status-badge">🔥</div>
+                        <div class="status-badge">
+                            <svg class="icon-svg animated-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                            </svg>
+                        </div>
                         <div class="status-info">
                             <span class="status-lbl">Học Tập Đều Đặn</span>
                             <span class="status-val" id="userStreakText">8 Ngày Liên Tục</span>
                         </div>
                     </div>
                     <div class="status-row">
-                        <div class="status-badge">🪴</div>
+                        <div class="status-badge">
+                            <svg class="icon-svg animated-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22V12"/>
+                                <path d="M12 12c-4 0-7-3-7-7 0 4 3 7 7 7z"/>
+                                <path d="M12 14c4 0 7-3 7-7 0 4-3 7-7 7z"/>
+                            </svg>
+                        </div>
                         <div class="status-info">
                             <span class="status-lbl">Cấp Độ Hiện Tại</span>
                             <span class="status-val" id="userLevelText">Mầm Xanh Level 1</span>
@@ -1343,11 +1383,35 @@
                     <div class="modal-doc-code" id="mDocCode">MÃ TÀI LIỆU: DT-23</div>
                 </div>
 
-                <!-- Tabs -->
+                <!-- Tabs (Replaced emoji text with custom inline SVGs) -->
                 <div class="lesson-tabs">
-                    <button class="lesson-tab-btn active" id="tabTheory" onclick="switchLessonTab('theory', this)">📘 Lý Thuyết</button>
-                    <button class="lesson-tab-btn" onclick="switchLessonTab('calculator', this)">📐 Bàn Tính Thực Hành</button>
-                    <button class="lesson-tab-btn" onclick="switchLessonTab('roleplay', this)">🎭 Sắm Vai & Rubric</button>
+                    <button class="lesson-tab-btn active" id="tabTheory" onclick="switchLessonTab('theory', this)">
+                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>Lý Thuyết
+                    </button>
+                    <button class="lesson-tab-btn" onclick="switchLessonTab('calculator', this)">
+                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                            <line x1="9" y1="22" x2="9" y2="16"/>
+                            <line x1="8" y1="6" x2="16" y2="6"/>
+                            <line x1="16" y1="22" x2="16" y2="16"/>
+                            <line x1="9" y1="16" x2="16" y2="16"/>
+                            <circle cx="9" cy="10" r="1"/>
+                            <circle cx="15" cy="10" r="1"/>
+                            <circle cx="9" cy="13" r="1"/>
+                            <circle cx="15" cy="13" r="1"/>
+                        </svg>Bàn Tính Thực Hành
+                    </button>
+                    <button class="lesson-tab-btn" onclick="switchLessonTab('roleplay', this)">
+                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>Sắm Vai & Rubric
+                    </button>
                 </div>
 
                 <!-- Dynamic Content Display -->
@@ -1695,17 +1759,28 @@
                 const card = document.createElement('div');
                 card.className = 'day-card';
                 
+                let statusSvg = '';
                 if (lesson.id < currentSimulatedDay) {
                     card.classList.add('completed');
+                    statusSvg = `
+                        <svg class="card-status-svg completed-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    `;
                 } else if (lesson.id === currentSimulatedDay) {
                     card.classList.add('active-day');
                 } else {
                     card.classList.add('locked');
+                    statusSvg = `
+                        <svg class="card-status-svg locked-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    `;
                 }
                 
                 card.setAttribute('onclick', `openLessonModal(${lesson.id})`);
                 
-                // Formulate 3 bullet points list dynamically
                 let bulletHtml = '';
                 if (lesson.points && lesson.points.length > 0) {
                     bulletHtml = `<ul class="day-bullets">`;
@@ -1721,6 +1796,7 @@
                         <div class="day-title">${lesson.title}</div>
                     </div>
                     ${bulletHtml}
+                    ${statusSvg}
                 `;
                 
                 grid.appendChild(card);
