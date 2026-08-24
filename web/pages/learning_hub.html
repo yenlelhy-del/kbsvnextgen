@@ -1642,6 +1642,15 @@
             "Zalo & Tốt Nghiệp"
         ];
 
+        const weekNames = [
+            "Tuần 1: Tư Duy Tích Sản",
+            "Tuần 2: 6 Bước Tư Vấn",
+            "Tuần 3: Quy Chế & Lương",
+            "Tuần 4: Quản Trị Margin & Phái Sinh",
+            "Tuần 5: Phân Tích TA & KOC Lab",
+            "Tuần 6: Zalo & Tốt Nghiệp"
+        ];
+
         // Custom quizzes database
         const quizDb = {
             "D01": {
@@ -2223,7 +2232,7 @@
 
         function applyInlineFormatting(text) {
             return text
-                .replace(/\*\/(.*?)\*\//g, '<strong>$1</strong>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em>$1</em>')
                 .replace(/`([^`]+)`/g, '<code class="article-code">$1</code>');
         }
