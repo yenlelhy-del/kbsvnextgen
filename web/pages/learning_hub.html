@@ -933,8 +933,10 @@
 
         .markdown-rendered-view h2 {
             font-size: 16px;
-            border-bottom: 1px solid var(--border-light);
-            padding-bottom: 4px;
+            border-left: 3px solid var(--kb-yellow);
+            padding-left: 8px;
+            margin-top: 18px;
+            margin-bottom: 10px;
         }
 
         .markdown-rendered-view blockquote {
@@ -1527,7 +1529,7 @@
             { id: 17, week: 3, code: "D17", title: "Kịch Bản Cơ Cấu Danh Mục Thay Cổ Phiếu Đầu Cơ Sang Tích Sản", file: "D17-roleplay-co-cau-danh-muc.md", doc: "DT-17", points: ["Xử lý danh mục kẹt cổ phiếu đầu cơ", "Kịch bản thuyết phục chuyển sang ACB SIP", "Các mốc chiết khấu thuyết phục chuyển đổi"] },
             { id: 18, week: 3, code: "D18", title: "Kịch Bản Sắm Vai Tư Vấn Thực Chiến & Bảng Điểm ASK", file: "D18-xay-dung-kich-ban-sam-vai.md", doc: "DT-18", points: ["Thiết kế kịch bản sắm vai (Role-play)", "Khung đánh giá năng lực ASK của HO3", "Thang đo thái độ 50% quyết định kết quả"] },
             { id: 19, week: 3, code: "D19", title: "Lộ Trình Thu Nhập 3 Năm & Cơ Chế Lương Hoa Hồng HO3", file: "D19-lo-trinh-thu-nhap-hoa-hong.md", doc: "DT-19", points: ["Cơ chế hoa hồng 50% phí DTT", "Lộ trình thăng tiến Broker 3 năm", "Đặc quyền lương cứng 10M cho NextGen"] },
-            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20", points: ["Nắm rõ Luật Chứng khoán 2019", "Quy định cấm ủy thác đầu tư, cam kết lãi", "Đạo đức nghề nghiệp bảo mật thông tin"] },
+            { id: 20, week: 3, code: "D20", title: "Luật Chứng Khoán 2019 & Tuân Thủ Pháp Lý Chuyên Nghiệp", file: "D20-luat-ck-tuan-thu-phap-ly.md", doc: "DT-20", points: ["Nắm rõ Luật Chứng khoán 2019", "Quy định cấm ủy thác đầu tư, cam kết lãi", "Đạo đức nghề nghiệp bảo mật thông tin"] },
             { id: 21, week: 3, code: "D21", title: "Kỹ Năng Hợp Tác CLB Chứng Khoán Sinh Viên Thu Hút Lead", file: "D21-networking-clb-sinh-vien.md", doc: "DT-21", points: ["Tiếp cận CLB Chứng khoán sinh viên", "Xây dựng phễu khách hàng trẻ năng động", "Kỹ thuật thuyết trình seminar đại học"] },
             
             { id: 22, week: 4, code: "D22", title: "Tổ Chức Seminar/Webinar Thuyết Trình Chốt Số Lượng Lớn", file: "D22-to-chuc-seminar-webinar.md", doc: "DT-22", points: ["Quy trình tổ chức hội thảo chốt khách", "Thiết kế kịch bản seminar 60 phút", "Kỹ thuật gom mở tài khoản eKYC hàng loạt"] },
@@ -1989,20 +1991,23 @@
                 if (!response.ok) throw new Error('Not found');
                 return await response.text();
             } catch (err) {
-                return `# ${activeLesson.title}\n\n## 📌 I. THÔNG TIN BÀI HỌC\n* Môi trường thực tế của dự án KBSV HO3 và FinPeace.\n* Áp dụng quy chuẩn tính toán và công thức số liệu.\n\n## 📌 II. LÝ THUYẾT CHUYÊN SÂU\nNội dung lý thuyết chuyên sâu bọc thép của ngày học nhằm chuẩn bị kiến thức thực chiến đầy đủ cho học viên.\n\n## 📌 III. BÀI TẬP THỰC HÀNH TÍNH TOÁN\nHọc viên ứng dụng các bảng tính Excel và công cụ để chẩn đoán sức khỏe tài chính khách hàng.`;
+                return `# ${activeLesson.title}\n\n## I. THÔNG TIN BÀI HỌC\n* Môi trường thực tế của dự án KBSV HO3 và FinPeace.\n* Áp dụng quy chuẩn tính toán và công thức số liệu.\n\n## II. LÝ THUYẾT CHUYÊN SÂU\nNội dung lý thuyết chuyên sâu bọc thép của ngày học nhằm chuẩn bị kiến thức thực chiến đầy đủ cho học viên.\n\n## III. BÀI TẬP THỰC HÀNH TÍNH TOÁN\nHọc viên ứng dụng các bảng tính Excel và công cụ để chẩn đoán sức khỏe tài chính khách hàng.`;
             }
         }
 
         function renderMarkdownToHtml(md) {
+            // Strip any remaining Unicode emojis from the markdown rendering source text
+            md = md.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2700}-\u{27BF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]/gu, '');
+            
             return md
                 .replace(/^# (.*$)/gim, '<h1 style="font-size:14pt; color:var(--kb-brown-dark); margin-bottom:12px;">$1</h1>')
-                .replace(/^## (.*$)/gim, '<h2 style="font-size:11.5pt; color:var(--text-primary); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-top:18px;">$1</h2>')
+                .replace(/^## (.*$)/gim, '<h2 style="font-size:11.5pt; color:var(--text-primary); border-left:3px solid var(--kb-yellow); padding-left:8px; margin-top:18px; margin-bottom:10px;">$1</h2>')
                 .replace(/^### (.*$)/gim, '<h3 style="font-size:10pt; color:var(--kb-brown); margin-top:14px;">$1</h3>')
                 .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/gim, '<em>$1</em>')
                 .replace(/`([^`]+)`/gim, '<code style="background:rgba(245,166,35,0.08); padding:2px 5px; border-radius:4px; font-family:monospace; font-size:9pt;">$1</code>')
-                .replace(/^>\s*\[!IMPORTANT\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--danger-color); background:rgba(224,80,80,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>⚠️ CẢNH BÁO TUÂN THỦ:</strong>')
-                .replace(/^>\s*\[!WARNING\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--warning-color); background:rgba(255,152,0,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>⚠️ CHÚ Ý:</strong>')
+                .replace(/^>\s*\[!IMPORTANT\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--danger-color); background:rgba(224,80,80,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>CẢNH BÁO TUÂN THỦ:</strong>')
+                .replace(/^>\s*\[!WARNING\](.*?)$/gim, '<blockquote style="border-left:4px solid var(--warning-color); background:rgba(255,152,0,0.03); padding:10px 15px; margin:15px 0; font-style:italic;"><strong>CHÚ Ý:</strong>')
                 .replace(/^>\s*(.*?)$/gim, '<blockquote style="border-left:4px solid var(--kb-yellow); background:var(--bg-warm); padding:10px 15px; margin:15px 0; font-style:italic;">$1</blockquote>')
                 .replace(/\n\n/g, '<br>')
                 .replace(/\n/g, '<br>');
@@ -2030,10 +2035,26 @@
         }
 
         function renderInteractiveCalculator(container) {
+            const calcHeaderSvg = `
+                <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px; margin-right:8px; display:inline-block; vertical-align:middle;">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                    <line x1="9" y1="22" x2="9" y2="16"/>
+                    <line x1="8" y1="6" x2="16" y2="6"/>
+                    <line x1="16" y1="22" x2="16" y2="16"/>
+                    <line x1="9" y1="16" x2="16" y2="16"/>
+                    <circle cx="9" cy="10" r="1"/>
+                    <circle cx="15" cy="10" r="1"/>
+                    <circle cx="9" cy="13" r="1"/>
+                    <circle cx="15" cy="13" r="1"/>
+                </svg>
+            `;
+            
             if (activeLesson.code === 'D23') {
                 container.innerHTML = `
                     <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px;">📐 MÁY TÍNH CÔNG THỨC MARGIN & RTT THỜI GIAN THỰC</h3>
+                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
+                            ${calcHeaderSvg} MÁY TÍNH CÔNG THỨC MARGIN & RTT THỜI GIAN THỰC
+                        </h3>
                         <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Nhập các thông số tài khoản của khách hàng để tính RTT và kiểm tra mức độ cảnh báo.</p>
                         
                         <div class="calc-row">
@@ -2069,7 +2090,9 @@
             } else if (activeLesson.code === 'D33') {
                 container.innerHTML = `
                     <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px;">📐 MÁY TÍNH QUY MÔ GIẢI NGÂN (POSITION SIZING - 2% NAV RULE)</h3>
+                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
+                            ${calcHeaderSvg} MÁY TÍNH QUY MÔ GIẢI NGÂN (POSITION SIZING - 2% NAV RULE)
+                        </h3>
                         <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Nhập quy mô NAV và các mốc giao dịch để tính khối lượng đặt lệnh tối đa bảo vệ vốn.</p>
                         
                         <div class="calc-row">
@@ -2105,7 +2128,9 @@
             } else {
                 container.innerHTML = `
                     <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px;">📐 MÔ PHỎNG DỰ PHÒNG CHỈ TIÊU & HOA HỒNG DTT</h3>
+                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
+                            ${calcHeaderSvg} MÔ PHỎNG DỰ PHÒNG CHỈ TIÊU & HOA HỒNG DTT
+                        </h3>
                         <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Lập kế hoạch chuyển đổi tài khoản eKYC sang Standard hoạt động để ước tính doanh số.</p>
                         
                         <div class="calc-row">
@@ -2201,7 +2226,15 @@
         function renderRolePlayRubric(container) {
             container.innerHTML = `
                 <div class="calc-container">
-                    <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px;">🎭 KỊCH BẢN THOẠI & PHIẾU ĐÁNH GIÁ CHẤM ĐIỂM (ASK RUBRIC)</h3>
+                    <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
+                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px; margin-right:8px; display:inline-block; vertical-align:middle;">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        KỊCH BẢN THOẠI & PHIẾU ĐÁNH GIÁ CHẤM ĐIỂM (ASK RUBRIC)
+                    </h3>
                     
                     <div style="background:var(--bg-warm); border-left:3px solid var(--kb-brown); padding:12px; font-style:italic; font-size:9pt; color:var(--text-secondary); margin-bottom:18px; line-height:1.45;">
                         "Khách hàng: Tại sao tôi lại phải gom mua ACB tích sản, trong khi thị trường đang sụt giảm thế này?<br>
