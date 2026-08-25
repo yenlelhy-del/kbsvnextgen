@@ -9,10 +9,10 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Role-play Matrix Design).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Role-play Matrix Design).
 *   **Vị trí trong lộ trình:** Ngày thứ mười tám của Lộ trình (Tuần 3 - Kỹ năng thiết kế kịch bản đào tạo).
 *   **Mục tiêu bài học theo khung ASK:**
-    *   **Attitude (Thái độ):** Đề cao tính hệ thống, khoa học và thực tế khi thiết kế các tình huống giả định. Tôn trọng sự đa dạng trong tính cách và hành vi của các nhóm khách hàng khác nhau. Nhận thức sâu sắc rằng sự chuẩn bị kịch bản chu đáo quyết định $80\%$ thành công của cuộc hội thoại thực tế.
+    *   **Attitude (Thái độ):** Đề cao tính hệ thống, khoa học và thực tế khi thiết kế các tình huống giả định. Tôn trọng sự đa dạng trong tính cách và hành vi của các nhóm khách hàng khác nhau. Nhận thức sâu sắc rằng sự chuẩn bị kịch bản chu đáo quyết định 80% thành công của cuộc hội thoại thực tế.
     *   **Skills (Kỹ năng):** Thiết kế hoàn chỉnh Ma trận Kịch bản Sắm vai (Role-play Matrix) kết hợp giữa nhóm tính cách DISC và các sản phẩm tài chính; xây dựng hệ thống barem đánh giá năng lực học viên theo khung ASK chi tiết; viết kịch bản hội thoại mẫu sắc bén.
     *   **Knowledge (Kiến thức):** Nắm vững nguyên lý thiết kế kịch bản sắm vai dựa trên dữ liệu CRM thực tế. Hiểu rõ cấu trúc 4 phần của một tình huống sắm vai tiêu chuẩn và phương pháp tính toán tỷ trọng phân bổ điểm chấm năng lực.
 
@@ -56,7 +56,7 @@ Phương pháp nhập vai (Role-playing) tạo ra một **phòng thí nghiệm h
 └───────────────────────┴───────────┴───────────┴───────────┴───────────┘
 ```
 
-Mỗi ô giao điểm trong ma trận (ví dụ ô **S1** – Tư vấn tích sản SIP cho khách hàng nhóm S sợ rủi ro) đại diện cho một kịch bản huấn luyện chuyên biệt. Học viên chỉ được phép tốt nghiệp thực tập khi đã vượt qua kỳ thi sắm vai đạt điểm số $\ge 85/100$ ở cả 16 ô giao điểm của ma trận này.
+Mỗi ô giao điểm trong ma trận (ví dụ ô **S1** – Tư vấn tích sản SIP cho khách hàng nhóm S sợ rủi ro) đại diện cho một kịch bản huấn luyện chuyên biệt. Học viên chỉ được phép tốt nghiệp thực tập khi đã vượt qua kỳ thi sắm vai đạt điểm số ≥ 85/100 ở cả 16 ô giao điểm của ma trận này.
 
 ---
 
@@ -116,7 +116,7 @@ Anh Tiến bất ngờ trước sự dứt khoát và phong thái tự tin của
 *   **Nghề nghiệp:** Kế toán hành chính tại trường học cấp 2.
 *   **Nhóm tính cách tài chính:** Nhóm **S** (kiên định, cẩn trọng, từ tốn, ưu tiên an toàn cao nhất).
 *   **Hiện trạng tài chính:** Có thu nhập 15 triệu/tháng, chồng thu nhập 20 triệu/tháng (tổng 35 triệu/tháng). Chi tiêu gia đình nuôi 2 con nhỏ mất 25 triệu/tháng. Dòng thặng dư hàng tháng đạt 10 triệu/tháng. Gia đình đang gửi tiết kiệm ngân hàng 200 triệu đồng làm quỹ dưỡng già.
-*   **Điểm nghẽn tài chính:** Chị Mai gửi toàn bộ 100% tiền nhàn rỗi ở ngân hàng với lãi suất cực thấp $5\%$/năm, chịu chi phí cơ hội rất lớn và tài sản bị bào mòn bởi lạm phát thực tế. Chị rất muốn đầu tư chứng khoán để có lãi tốt hơn nhưng sợ rủi ro mất tiền gốc.
+*   **Điểm nghẽn tài chính:** Chị Mai gửi toàn bộ 100% tiền nhàn rỗi ở ngân hàng với lãi suất cực thấp 5%/năm, chịu chi phí cơ hội rất lớn và tài sản bị bào mòn bởi lạm phát thực tế. Chị rất muốn đầu tư chứng khoán để có lãi tốt hơn nhưng sợ rủi ro mất tiền gốc.
 
 #### 2. Bối cảnh & Mục tiêu cuộc gặp:
 *   **Bối cảnh:** Broker hẹn gặp chị Mai trực tiếp tại quán cà phê gần trường học của chị trong giờ nghỉ trưa.
@@ -141,7 +141,7 @@ Anh Tiến bất ngờ trước sự dứt khoát và phong thái tự tin của
 >
 > **Chị Mai (hơi chần chừ):** *Mua ACB thì có an toàn không em? Cổ phiếu ngân hàng có bị phá sản không?*
 >
-> **Broker:** *Dạ chị Mai, ACB là ngân hàng thương mại cổ phần bán lẻ hàng đầu Việt Nam, được kiểm soát chặt chẽ bởi Ngân hàng Nhà nước, nợ xấu cực kỳ thấp và có lịch sử chia cổ tức bằng tiền mặt đều đặn hơn 10 năm qua. Lịch sử tăng trưởng dài hạn của ACB mang lại tỷ suất sinh lời bình quân $12\% - 15\%$/năm, cao gấp đôi lãi gửi tiết kiệm.*
+> **Broker:** *Dạ chị Mai, ACB là ngân hàng thương mại cổ phần bán lẻ hàng đầu Việt Nam, được kiểm soát chặt chẽ bởi Ngân hàng Nhà nước, nợ xấu cực kỳ thấp và có lịch sử chia cổ tức bằng tiền mặt đều đặn hơn 10 năm qua. Lịch sử tăng trưởng dài hạn của ACB mang lại tỷ suất sinh lời bình quân 12% - 15%/năm, cao gấp đôi lãi gửi tiết kiệm.*
 > *   *Đặc biệt, phương pháp tích sản định kỳ SIP giúp chị trung bình giá mua (DCA) hàng tháng, không sợ biến động ngắn hạn của thị trường. Đây là cách 'gieo hạt' tài chính thông thái mà rất nhiều kế toán như chị đang áp dụng.*
 >
 > **Chị Mai:** *Nghe phân bổ Tháp tài sản giữ nguyên 200 triệu tiết kiệm cũ thì chị thấy yên tâm hơn rồi. Nhưng mở tài khoản có phức tạp không em? Chị ngại làm mấy cái thủ tục ký tá lắm.*
@@ -158,9 +158,9 @@ Anh Tiến bất ngờ trước sự dứt khoát và phong thái tự tin của
 | :--- | :--- | :---: | :---: |
 | **Attitude (Thái độ - 50%)** | - Thể hiện sự thấu cảm sâu sắc, nhã nhặn, tôn trọng nỗi sợ mất tiền của khách hàng nhóm S.<br>- Giữ tông giọng nhẹ nhàng, từ tốn, tạo không khí tin cậy bình an tại buổi gặp.<br>- Tuyệt đối không hối thúc, không to tiếng hay chê bai kênh gửi tiết kiệm ngân hàng. | **50%** | / 50 |
 | **Skills (Kỹ năng - 40%)** | - Áp dụng nhuần nhuyễn công thức Feel-Felt-Found để xử lý từ chối.<br>- Giải thích rõ ràng và thuyết phục bằng mô hình Tháp tài sản phân bổ vốn hợp lý.<br>- Thực hiện CTA mở tài khoản eKYC mượt mà, chủ động hướng dẫn khách quét mã nhận quà Standard. | **40%** | / 40 |
-| **Knowledge (Kiến thức - 10%)** | - Trích dẫn chính xác các thông số của cổ phiếu ACB (lịch sử trả cổ tức, nợ xấu thấp, tỷ suất sinh lời dài hạn $12\% - 15\%$/năm). | **10%** | / 10 |
+| **Knowledge (Kiến thức - 10%)** | - Trích dẫn chính xác các thông số của cổ phiếu ACB (lịch sử trả cổ tức, nợ xấu thấp, tỷ suất sinh lời dài hạn 12% - 15%/năm). | **10%** | / 10 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 
@@ -242,7 +242,7 @@ D. Tranh cãi đúng sai quyết liệt để chứng tỏ mình giỏi hơn kh�
 | **Lập luận sắc bén dựa trên số liệu thực tế** | **30%** | Nói đúng mã cổ phiếu khách giữ (HPG) và chỉ ra điểm nghẽn dòng tiền CAPEX/Margin để khơi gợi sự tò mò của nhà đầu tư nhóm D. | / 30 |
 | **Chốt lịch hẹn lựa chọn kép** | **30%** | Thực hiện CTA kết bạn Zalo bằng câu hỏi lựa chọn kép (tối nay hoặc chiều mai) mượt mà, chuyên nghiệp. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

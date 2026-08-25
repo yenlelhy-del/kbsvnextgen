@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ mười bốn của Lộ trình (Kết thúc Tuần 2, chuẩn bị chuyển giao sang Phase thực chiến).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đề cao tính chính xác, trung thực và khách quan khi phân tích số liệu tài sản của khách hàng. Tuyệt đối tôn trọng quyền riêng tư về số dư tài chính của họ. Nhìn nhận điểm nghẽn tài chính của khách với sự thấu cảm sâu sắc, không chỉ trích, không phán xét.
@@ -55,16 +55,16 @@ Bản đồ phân bổ tài sản là một bảng thống kê toàn bộ các n
 #### Các chỉ số tài chính cá nhân cốt lõi dùng để chẩn đoán:
 
 ##### Tỷ số Nợ trên Tổng tài sản ($D/A$):
-$$D/A = \frac{\text{Tổng nợ vay}}{\text{Tổng tài sản}} \times 100\%$$
-*   *Ngưỡng an toàn:* $< 40\%$. Tỷ số này vượt quá $60\%$ thể hiện cấu trúc tài sản cực kỳ rủi ro, áp lực chi phí tài chính có thể làm đổ vỡ tháp tài sản bất cứ lúc nào.
+$$D/A = \frac{\text{Tổng nợ vay}}{\text{Tổng tài sản}} \times 100%$$
+*   *Ngưỡng an toàn:* < 40%. Tỷ số này vượt quá 60% thể hiện cấu trúc tài sản cực kỳ rủi ro, áp lực chi phí tài chính có thể làm đổ vỡ tháp tài sản bất cứ lúc nào.
 
 ##### Tỷ lệ Thặng dư tích lũy ($SR$):
-$$SR = \frac{\text{Thu nhập} - \text{Chi tiêu}}{\text{Thu nhập}} \times 100\%$$
-*   *Ngưỡng khỏe mạnh:* $\ge 20\%$. Tỷ lệ này dưới $10\%$ chứng tỏ khách hàng đang chi tiêu quá tay hoặc thu nhập quá thấp, không có đủ nguyên liệu để lãi kép vận hành.
+$$SR = \frac{\text{Thu nhập} - \text{Chi tiêu}}{\text{Thu nhập}} \times 100%$$
+*   *Ngưỡng khỏe mạnh:* ≥ 20%. Tỷ lệ này dưới 10% chứng tỏ khách hàng đang chi tiêu quá tay hoặc thu nhập quá thấp, không có đủ nguyên liệu để lãi kép vận hành.
 
 ##### Hệ số Thanh toán nhanh (Liquidity Ratio):
 $$\text{Hệ số thanh toán} = \frac{\text{Tiền mặt + Tiết kiệm ngắn hạn (T1)}}{\text{Nợ vay đến hạn phải trả}}$$
-*   *Ngưỡng an toàn:* $> 1.0\text{ lần}$. Cho biết khách hàng có đủ tiền mặt để thanh toán ngay các khoản nợ khẩn cấp mà không cần phải bán tháo tài sản dài hạn.
+*   *Ngưỡng an toàn:* $> 1.0\text{ lần}. Cho biết khách hàng có đủ tiền mặt để thanh toán ngay các khoản nợ khẩn cấp mà không cần phải bán tháo tài sản dài hạn.
 
 ---
 
@@ -73,7 +73,7 @@ $$\text{Hệ số thanh toán} = \frac{\text{Tiền mặt + Tiết kiệm ngắn
 Qua nghiên cứu thực tế tệp khách hàng tại chi nhánh HO3, có 3 điểm nghẽn tài chính kinh điển mà F0 thường xuyên mắc phải:
 
 #### Điểm nghẽn 1: Lạm dụng nợ tiêu dùng lãi suất cao (Thẻ tín dụng, vay tiêu dùng tín chấp)
-*   *Bản chất:* Khách hàng chi tiêu mua sắm xe cộ, đồ công nghệ vượt quá khả năng chi trả thực tế, chịu lãi phạt thẻ tín dụng lên tới $25\% - 30\%$/năm. Dòng tiền thặng dư hàng tháng bị rút cạn chỉ để trả lãi ngân hàng, không còn tiền tích sản.
+*   *Bản chất:* Khách hàng chi tiêu mua sắm xe cộ, đồ công nghệ vượt quá khả năng chi trả thực tế, chịu lãi phạt thẻ tín dụng lên tới 25% - 30%/năm. Dòng tiền thặng dư hàng tháng bị rút cạn chỉ để trả lãi ngân hàng, không còn tiền tích sản.
 
 #### Điểm nghẽn 2: Tài sản bị kẹt hoàn toàn vào đất nền ngộp không thanh khoản
 *   *Bản chất:* Khách hàng dồn toàn bộ vốn tích lũy, thậm chí vay thêm ngân hàng lớn để ôm các lô đất nền đầu cơ ở tỉnh lẻ với hy vọng tăng giá nhanh. Khi thị trường bất động sản đóng băng, họ không thể bán đất thu hồi tiền mặt (không có thanh khoản) trong khi vẫn phải cày cuốc trả lãi vay ngân hàng hàng tháng. Họ rơi vào trạng thái "giàu trên giấy nhưng nghèo tiền mặt".
@@ -102,12 +102,12 @@ HỆ QUẢ ĐIỂM NGHẼN "NGỘP ĐẤT" CỦA ANH BÌNH:
 Broker NextGen của HO3 sau khi tiếp cận đã áp dụng quy trình **Diagnose** để bóc tách tài sản cho anh Bình:
 
 1.  **Tính toán chỉ số chẩn đoán tài chính:**
-    *   Tỷ số Nợ trên tài sản ($D/A$): $\frac{2.5\text{ tỷ nợ}}{6\text{ tỷ đất}} \approx 41.6\%$ (ngưỡng báo động đối với tài sản không thanh khoản).
-    *   Tỷ lệ thặng dư dòng tiền: Âm nặng do chi phí trả nợ vay chiếm tới $87.5\%$ tổng thu nhập hàng tháng ($35\text{ triệu} / 40\text{ triệu}$).
+    *   Tỷ số Nợ trên tài sản ($D/A$): $\frac{2.5\text{ tỷ nợ}}{6\text{ tỷ đất}} ≈ 41.6%$ (ngưỡng báo động đối với tài sản không thanh khoản).
+    *   Tỷ lệ thặng dư dòng tiền: Âm nặng do chi phí trả nợ vay chiếm tới 87.5% tổng thu nhập hàng tháng ($35\text{ triệu} / 40\text{ triệu}$).
     *   Hệ số thanh toán nhanh: Gần bằng 0 do anh Bình không có sẵn quỹ khẩn cấp tiền mặt dự phòng T1, toàn bộ tiền vừa về tài khoản là bị ngân hàng tự động trích nợ hết.
 2.  **Đưa ra phác đồ chẩn đoán trực quan:** Broker không khuyên anh Bình mua chứng khoán ngay. Anh dùng bảng Excel chỉ rõ nếu anh Bình cố gồng nợ thêm 1 năm nữa, anh sẽ bị nợ quá hạn ngân hàng và bị tịch thu phát mãi tài sản với giá rẻ mạt.
 3.  **Đề xuất giải pháp cơ cấu tài sản quyết liệt:** 
-    *   Bước 1: Chấp nhận bán cắt lỗ **$20\%$** một lô đất nền ở Bình Phước để thu về 800 triệu tiền mặt ngay lập tức.
+    *   Bước 1: Chấp nhận bán cắt lỗ **20%** một lô đất nền ở Bình Phước để thu về 800 triệu tiền mặt ngay lập tức.
     *   Bước 2: Dùng 500 triệu tất toán trước hạn một phần khoản vay ngân hàng để hạ nghĩa vụ trả nợ hàng tháng từ 35 triệu xuống còn 20 triệu.
     *   Bước 3: Dành 100 triệu lập Quỹ bảo vệ T1 gửi tiết kiệm ngân hàng.
     *   Bước 4: Dành 200 triệu còn lại mở tài khoản tích sản cổ phiếu **ACB** và **FPT** tại KBSV để tạo ra dòng thu nhập cổ tức tiền mặt đều đặn phụ giúp trả nợ ngân hàng.
@@ -143,16 +143,16 @@ Nhờ sự quyết liệt và logic số liệu của Broker NextGen, anh Bình 
     *   *Dòng tiền thặng dư thực tế* = Tổng thu nhập (45tr) - Chi phí sinh hoạt (25tr) - Trả nợ vay (17tr) = 3.000.000 VNĐ/tháng.
 
 2.  **Bước 2: Tính toán các chỉ số sức khỏe tài chính:**
-    *   Tỷ số Nợ trên Tài sản ($D/A$) = $\frac{450.000.000}{680.000.000} \times 100\% \approx 66.2\%$.
+    *   Tỷ số Nợ trên Tài sản ($D/A$) = $\frac{450.000.000}{680.000.000} \times 100% ≈ 66.2%$.
         *(Nhận xét: Vượt xa ngưỡng an toàn tiêu chuẩn 40%, tài sản của gia đình chịu áp lực nợ vay cực lớn).*
-    *   Tỷ lệ thặng dư dòng tiền ($SR$) = $\frac{3.000.000\text{ thặng dư}}{45.000.000\text{ thu nhập}} \times 100\% \approx 6.67\%$.
+    *   Tỷ lệ thặng dư dòng tiền ($SR$) = $\frac{3.000.000\text{ thặng dư}}{45.000.000\text{ thu nhập}} \times 100% ≈ 6.67%$.
         *(Nhận xét: Quá thấp so với mức khỏe mạnh 20%, dòng tiền nhàn rỗi gần như bị vắt kiệt để trả nợ).*
-    *   Hệ số thanh toán nhanh = $\frac{\text{Tiền tiết kiệm (100tr)}}{\text{Tổng nợ vay (450tr)}} \approx 0.22\text{ lần}$ (ở mức nguy hiểm dưới 1.0).
+    *   Hệ số thanh toán nhanh = $\frac{\text{Tiền tiết kiệm (100tr)}}{\text{Tổng nợ vay (450tr)}} ≈ 0.22\text{ lần}$ (ở mức nguy hiểm dưới 1.0).
 
 3.  **Bước 3: Chỉ ra các điểm nghẽn tài chính cốt lõi:**
-    *   *Điểm nghẽn 1:* Gánh khoản nợ thẻ tín dụng 50 triệu với lãi phạt cắt cổ $28\%$/năm, làm rò rỉ dòng tiền thặng dư nghiêm trọng.
-    *   *Điểm nghẽn 2:* Tài khoản tự trading ngắn hạn thua lỗ nặng (mất gần $50\%$ vốn) và đang bị chôn chân trong các mã rác không thanh khoản, không tạo ra dòng tiền.
-    *   *Điểm nghẽn 3:* Đòn bẩy nợ mua ô tô tiêu sản quá lớn so với thu nhập, chi phí trả nợ vay chiếm tới $37.7\%$ tổng thu nhập hàng tháng.
+    *   *Điểm nghẽn 1:* Gánh khoản nợ thẻ tín dụng 50 triệu với lãi phạt cắt cổ 28%/năm, làm rò rỉ dòng tiền thặng dư nghiêm trọng.
+    *   *Điểm nghẽn 2:* Tài khoản tự trading ngắn hạn thua lỗ nặng (mất gần 50% vốn) và đang bị chôn chân trong các mã rác không thanh khoản, không tạo ra dòng tiền.
+    *   *Điểm nghẽn 3:* Đòn bẩy nợ mua ô tô tiêu sản quá lớn so với thu nhập, chi phí trả nợ vay chiếm tới 37.7% tổng thu nhập hàng tháng.
 
 4.  **Bước 4: Đề xuất phác đồ cơ cấu tài sản chi tiết:**
     *   **Hành động 1 (Xử lý nợ xấu ngay lập tức):** Khuyên chị Lan rút 50 triệu từ sổ tiết kiệm 100 triệu để **thanh toán dứt điểm hoàn toàn khoản nợ thẻ tín dụng 50 triệu**. Hành động này lập tức cắt giảm lãi phạt 28%/năm và giải phóng thêm 5 triệu/tháng nghĩa vụ trả nợ tối thiểu. Dòng thặng dư hàng tháng tăng từ 3 triệu lên **8 triệu/tháng**.
@@ -203,9 +203,9 @@ D. Ban lãnh đạo doanh nghiệp họ đầu tư đang có dấu hiệu gian l
 ### 💡 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT (ANSWER KEY)
 
 *   **Câu 1: Chọn B.**
-    *   *Giải thích:* Đòn bẩy nợ lớn ($&gt; 60\%$) khiến tháp tài sản rất nhạy cảm với biến động thu nhập và lãi suất vĩ mô. Chỉ cần thu nhập giảm ngắn hạn, khách hàng sẽ lập tức rơi vào nợ xấu nhóm 2, nhóm 3 ngân hàng.
+    *   *Giải thích:* Đòn bẩy nợ lớn (> 60%) khiến tháp tài sản rất nhạy cảm với biến động thu nhập và lãi suất vĩ mô. Chỉ cần thu nhập giảm ngắn hạn, khách hàng sẽ lập tức rơi vào nợ xấu nhóm 2, nhóm 3 ngân hàng.
 *   **Câu 2: Chọn B.**
-    *   *Giải thích:* Trả nợ lãi suất cao là ưu tiên hàng đầu trong quản trị tài chính cá nhân. Không có kênh đầu tư chính thống nào bảo đảm mang lại tỷ suất lợi nhuận $28\%$/năm một cách chắc chắn như việc trả dứt điểm nợ thẻ tín dụng.
+    *   *Giải thích:* Trả nợ lãi suất cao là ưu tiên hàng đầu trong quản trị tài chính cá nhân. Không có kênh đầu tư chính thống nào bảo đảm mang lại tỷ suất lợi nhuận 28%/năm một cách chắc chắn như việc trả dứt điểm nợ thẻ tín dụng.
 *   **Câu 3: Chọn B.**
     *   *Giải thích:* Đây là hiện trạng của hàng vạn nhà đầu tư bất động sản Việt Nam giai đoạn 2022 - 2024. Đất nền không thể bán được (đóng băng thanh khoản) trong khi lãi vay đè nặng khiến họ kiệt quệ tiền mặt hàng ngày.
 *   **Câu 4: Chọn B.**
@@ -235,7 +235,7 @@ D. Ban lãnh đạo doanh nghiệp họ đầu tư đang có dấu hiệu gian l
 *   **Anh Bình (thở dài, giọng chùng xuống):** *Ừ... Đúng là dạo này anh phải xoay sở mệt mỏi lắm. Chị nhà cũng kêu ca suốt, nhưng giờ đất đóng băng bán không ai mua, anh biết làm thế nào.*
 *   **Broker NextGen:** *Dạ em rất chia sẻ với áp lực lớn này của anh Bình. Nhưng nếu chúng ta cứ cố gồng trạng thái âm dòng tiền này thêm 6 tháng nữa, chỉ cần công trình tiếp tục chậm thanh toán, anh sẽ rơi vào nhóm nợ xấu ngân hàng. Lúc đó điểm tín dụng bị khóa, ngân hàng sẽ siết nợ phát mãi đất của anh với giá rẻ mạt để thu hồi vốn. Đây là rủi ro cực kỳ lớn.*
     *   *Là một người quyết đoán trong kinh doanh, em khuyên anh Bình thực hiện một giải pháp cơ cấu tài sản quyết liệt ngay lúc này để giải phóng điểm nghẽn:*
-    *   *Một là: Anh chấp nhận hạ giá $15\% - 20\%$ để bán nhanh một lô đất nền nhỏ ở Bình Phước thu về khoảng 800 triệu tiền mặt ngay lập tức. Trong thị trường đóng băng, người cầm tiền mặt là người làm chủ.*
+    *   *Một là: Anh chấp nhận hạ giá 15% - 20% để bán nhanh một lô đất nền nhỏ ở Bình Phước thu về khoảng 800 triệu tiền mặt ngay lập tức. Trong thị trường đóng băng, người cầm tiền mặt là người làm chủ.*
     *   *Hai là: Dùng 500 triệu tất toán trước một phần khoản vay để hạ nghĩa vụ trả nợ ngân hàng hàng tháng từ 35 triệu xuống còn 20 triệu. Dòng thặng dư của anh sẽ lập tức dương trở lại **+5 triệu/tháng**.*
     *   *Ba là: Dành 100 triệu lập Quỹ bảo vệ T1 gửi tiết kiệm ngân hàng để gia đình hoàn toàn an tâm. 200 triệu còn lại mở tài khoản tích sản cổ phiếu ACB tại KBSV để tạo ra dòng thu nhập thụ động.*
     *   *Anh Bình thấy giải pháp cắt một phần cành cây khô để cứu toàn bộ thân cây tháp tài sản này có giúp anh lấy lại sự thảnh thơi đầu óc để tập trung nhận các dự án công trình mới không anh?*
@@ -250,7 +250,7 @@ D. Ban lãnh đạo doanh nghiệp họ đầu tư đang có dấu hiệu gian l
 | **Thuyết phục cắt lỗ tài sản kém thanh khoản** | **30%** | Thuyết phục thành công khách hàng chấp nhận hạ giá bán bớt đất ngộp để giải phóng dòng tiền (cắt cành khô cứu thân cây) hợp lý. | / 30 |
 | **Bản lĩnh tương tác nhóm D-C** | **30%** | Giữ thái độ tôn trọng uy tín của khách nhưng dứt khoát, logic trong lập luận số liệu, không bị lép vế trước cái tôi lớn của khách. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

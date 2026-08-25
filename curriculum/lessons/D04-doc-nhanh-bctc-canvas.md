@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ tư của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xem BCTC là tấm gương phản chiếu trung thực nhất sức khỏe doanh nghiệp, loại bỏ tư duy lười biếng chỉ đọc tóm tắt tin đồn. Giữ vững thái độ khách quan, hoài nghi khoa học trước các con số lợi nhuận đột biến.
@@ -69,9 +69,9 @@ Con số trên báo cáo tài chính chỉ là kết quả cuối cùng. Để d
 ```
 
 #### Cách liên kết Khung Canvas với các con số trên BCTC:
-*   **Phân khúc khách hàng (1) & Giải pháp giá trị (2) $\rightarrow$ Doanh thu & Biên lợi nhuận gộp:** Nếu doanh nghiệp sở hữu tệp khách hàng trung thành, sản phẩm độc quyền không thể thay thế (Giải pháp giá trị cao), họ sẽ có khả năng nâng giá bán mà không mất khách hàng. Điều này thể hiện trực tiếp qua **Biên lợi nhuận gộp cao** ($> 30\%$) trên BC KQKD.
-*   **Nguồn lực chính (6) & Đối tác (8) $\rightarrow$ Tài sản & Nợ vay trên BCĐKT:** Nhà máy sản xuất khổng lồ chính là "Tài sản cố định". Để xây dựng nhà máy này, doanh nghiệp phải vay nợ ngân hàng (Nợ vay tài chính dài hạn). Nếu nhà máy vận hành đạt công suất cao, nó sẽ tạo ra lượng lớn hàng tồn kho luân chuyển tốt.
-*   **Hoạt động chính (7) & Kênh truyền thông (3) $\rightarrow$ Chi phí bán hàng & Chi phí QLDN:** Chi phí chạy quảng cáo, nuôi đội ngũ sales, duy trì cửa hàng/chi nhánh phản ánh hiệu quả vận hành kênh truyền thông của doanh nghiệp.
+*   **Phân khúc khách hàng (1) & Giải pháp giá trị (2) → Doanh thu & Biên lợi nhuận gộp:** Nếu doanh nghiệp sở hữu tệp khách hàng trung thành, sản phẩm độc quyền không thể thay thế (Giải pháp giá trị cao), họ sẽ có khả năng nâng giá bán mà không mất khách hàng. Điều này thể hiện trực tiếp qua **Biên lợi nhuận gộp cao** (> 30%) trên BC KQKD.
+*   **Nguồn lực chính (6) & Đối tác (8) → Tài sản & Nợ vay trên BCĐKT:** Nhà máy sản xuất khổng lồ chính là "Tài sản cố định". Để xây dựng nhà máy này, doanh nghiệp phải vay nợ ngân hàng (Nợ vay tài chính dài hạn). Nếu nhà máy vận hành đạt công suất cao, nó sẽ tạo ra lượng lớn hàng tồn kho luân chuyển tốt.
+*   **Hoạt động chính (7) & Kênh truyền thông (3) → Chi phí bán hàng & Chi phí QLDN:** Chi phí chạy quảng cáo, nuôi đội ngũ sales, duy trì cửa hàng/chi nhánh phản ánh hiệu quả vận hành kênh truyền thông của doanh nghiệp.
 
 ---
 
@@ -79,9 +79,9 @@ Con số trên báo cáo tài chính chỉ là kết quả cuối cùng. Để d
 
 Một Broker 4.0 phải ghi nhớ nằm lòng nguyên tắc: **BCTC là một hệ thống nhất quán và 3 báo cáo chính liên kết chặt chẽ với nhau thông qua dòng chảy của tiền và tài sản.**
 
-*   **Mối liên kết 1 (BC KQKD $\rightarrow$ BCĐKT):** Lợi nhuận sau thuế kiếm được trong kỳ của doanh nghiệp trên BC KQKD sau khi trừ đi phần chi trả cổ tức cho cổ đông sẽ được chuyển vào mục **Lợi nhuận sau thuế chưa phân phối** thuộc phần Vốn chủ sở hữu trên BCĐKT.
-*   **Mối liên kết 2 (BC KQKD $\rightarrow$ BCLCTT):** Lợi nhuận sau thuế là điểm xuất phát của BCLCTT theo phương pháp gián tiếp. Để tìm ra dòng tiền hoạt động kinh doanh (CFO) thực tế, chúng ta lấy lợi nhuận sau thuế cộng lại các khoản chi phí không bằng tiền (như **Khấu hao tài sản cố định**) và điều chỉnh các khoản tăng/giảm vốn lưu động (khoản phải thu, hàng tồn kho).
-*   **Mối liên kết 3 (BCLCTT $\rightarrow$ BCĐKT):** Con số cuối cùng trên BCLCTT – **Tiền và tương đương tiền cuối kỳ** – phải trùng khớp hoàn toàn với số dư của khoản mục **Tiền và các khoản tương đương tiền** ở phần tài sản ngắn hạn trên BCĐKT tại ngày kết thúc kỳ kế toán.
+*   **Mối liên kết 1 (BC KQKD → BCĐKT):** Lợi nhuận sau thuế kiếm được trong kỳ của doanh nghiệp trên BC KQKD sau khi trừ đi phần chi trả cổ tức cho cổ đông sẽ được chuyển vào mục **Lợi nhuận sau thuế chưa phân phối** thuộc phần Vốn chủ sở hữu trên BCĐKT.
+*   **Mối liên kết 2 (BC KQKD → BCLCTT):** Lợi nhuận sau thuế là điểm xuất phát của BCLCTT theo phương pháp gián tiếp. Để tìm ra dòng tiền hoạt động kinh doanh (CFO) thực tế, chúng ta lấy lợi nhuận sau thuế cộng lại các khoản chi phí không bằng tiền (như **Khấu hao tài sản cố định**) và điều chỉnh các khoản tăng/giảm vốn lưu động (khoản phải thu, hàng tồn kho).
+*   **Mối liên kết 3 (BCLCTT → BCĐKT):** Con số cuối cùng trên BCLCTT – **Tiền và tương đương tiền cuối kỳ** – phải trùng khớp hoàn toàn với số dư của khoản mục **Tiền và các khoản tương đương tiền** ở phần tài sản ngắn hạn trên BCĐKT tại ngày kết thúc kỳ kế toán.
 
 ---
 
@@ -91,7 +91,7 @@ Chị Hạnh (27 tuổi, Nhân viên phân tích nhân sự tại Hà Nội) là
 
 Một học viên NextGen của HO3 đã tiếp cận chị Hạnh và thay vì thuyết phục chị mua cổ phiếu FPT bằng những lời khuyên chung chung, Broker đã gửi cho chị bộ BCTC quý gần nhất của FPT và hướng dẫn chị bóc tách nhanh trong 15 phút:
 
-1.  **Bước 1 (Đọc BC KQKD):** Broker chỉ cho chị Hạnh thấy doanh thu và lợi nhuận của FPT tăng trưởng đều đặn $18% - 20\%$ qua các năm. Đặc biệt, **Biên lợi nhuận gộp** mảng công nghệ của FPT luôn duy trì ổn định ở mức rất cao ($&gt; 38\%$), chứng tỏ FPT có vị thế đàm phán rất tốt với khách hàng quốc tế.
+1.  **Bước 1 (Đọc BC KQKD):** Broker chỉ cho chị Hạnh thấy doanh thu và lợi nhuận của FPT tăng trưởng đều đặn 18% - 20% qua các năm. Đặc biệt, **Biên lợi nhuận gộp** mảng công nghệ của FPT luôn duy trì ổn định ở mức rất cao (> 38%), chứng tỏ FPT có vị thế đàm phán rất tốt với khách hàng quốc tế.
 2.  **Bước 2 (Đọc BCLCTT):** Chỉ ra con số **Dòng tiền hoạt động kinh doanh (CFO)** của FPT luôn dương lớn và tương đương hoặc lớn hơn Lợi nhuận sau thuế. Điều này chứng tỏ lợi nhuận của FPT là lợi nhuận "xịn" – công ty bán dịch vụ phần mềm thu được tiền mặt ngay chứ không bị nợ xấu.
 3.  **Bước 3 (Đọc BCĐKT):** Phân tích cơ cấu tài sản. FPT sở hữu lượng tiền mặt và tiền gửi tiết kiệm ngân hàng lên tới hơn 20.000 tỷ đồng (chiếm tỷ trọng lớn nhất trong cơ cấu tài sản), nợ vay tài chính ròng ở mức rất thấp. Đây là tấm lá chắn bảo vệ FPT cực kỳ vững chắc khi lãi suất nền kinh tế tăng cao.
 4.  **Bước 4 (Áp dụng Khung Canvas 9 ô):** Broker vẽ nhanh cho chị Hạnh thấy mô hình kinh doanh của FPT:
@@ -132,20 +132,20 @@ Sự rõ ràng, logic và minh bạch về mặt số liệu từ bài phân tí
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Tính Biên lợi nhuận gộp:**
-    $$\text{Biên lợi nhuận gộp} = \frac{\text{Doanh thu thuần} - \text{Giá vốn hàng bán}}{\text{Doanh thu thuần}} \times 100\% = \frac{12.000.000.000 - 9.600.000.000}{12.000.000.000} \times 100\% = 20\%$$
+    $$\text{Biên lợi nhuận gộp} = \frac{\text{Doanh thu thuần} - \text{Giá vốn hàng bán}}{\text{Doanh thu thuần}} \times 100% = \frac{12.000.000.000 - 9.600.000.000}{12.000.000.000} \times 100% = 20%$$
 
 2.  **Bước 2: Tính Vòng quay hàng tồn kho và Số ngày tồn kho bình quân (DIO):**
     *   Hàng tồn kho bình quân = $\frac{1.400.000.000 + 1.800.000.000}{2} = 1.600.000.000\text{ VNĐ}$.
     *   Vòng quay hàng tồn kho = $\frac{\text{Giá vốn hàng bán}}{\text{Hàng tồn kho bình quân}} = \frac{9.600.000.000}{1.600.000.000} = 6\text{ vòng/năm}$.
-    *   Số ngày tồn kho bình quân (DIO) = $\frac{365}{\text{Vòng quay hàng tồn kho}} = \frac{365}{6} \approx 60.8\text{ ngày}$.
+    *   Số ngày tồn kho bình quân (DIO) = $\frac{365}{\text{Vòng quay hàng tồn kho}} = \frac{365}{6} ≈ 60.8\text{ ngày}$.
 
 3.  **Bước 3: Tính Vòng quay khoản phải thu và Số ngày thu tiền bình quân (DSO):**
     *   Khoản phải thu bình quân = $\frac{1.200.000.000 + 2.000.000.000}{2} = 1.600.000.000\text{ VNĐ}$.
     *   Vòng quay khoản phải thu = $\frac{\text{Doanh thu thuần}}{\text{Khoản phải thu bình quân}} = \frac{12.000.000.000}{1.600.000.000} = 7.5\text{ vòng/năm}$.
-    *   Số ngày thu tiền bình quân (DSO) = $\frac{365}{\text{Vòng quay khoản phải thu}} = \frac{365}{7.5} \approx 48.7\text{ ngày}$.
+    *   Số ngày thu tiền bình quân (DSO) = $\frac{365}{\text{Vòng quay khoản phải thu}} = \frac{365}{7.5} ≈ 48.7\text{ ngày}$.
 
 4.  **Bước 4: Đánh giá hiệu quả quản trị vốn lưu động:**
-    *   Doanh nghiệp mất trung bình $60.8$ ngày để tiêu thụ hết hàng tồn kho và mất thêm $48.7$ ngày để thu được tiền từ khách hàng sau khi bán hàng. Tổng chu kỳ từ lúc nhập hàng đến lúc thu được tiền mặt là khoảng $109.5$ ngày.
+    *   Doanh nghiệp mất trung bình 60.8 ngày để tiêu thụ hết hàng tồn kho và mất thêm 48.7 ngày để thu được tiền từ khách hàng sau khi bán hàng. Tổng chu kỳ từ lúc nhập hàng đến lúc thu được tiền mặt là khoảng 109.5 ngày.
     *   *Dấu hiệu cảnh báo:* Số dư khoản phải thu cuối kỳ (2 tỷ) tăng mạnh so với đầu kỳ (1.2 tỷ) thể hiện doanh nghiệp đang bị đối tác chiếm dụng vốn nhiều hơn, cần kiểm tra kỹ thuyết minh BCTC để xem có rủi ro nợ xấu khó đòi không.
 
 ---
@@ -156,7 +156,7 @@ Hãy đóng vai Broker NextGen phân tích mô hình kinh doanh của **Ngân h�
 
 *   **Phân khúc khách hàng (1):** Cá nhân có thu nhập trung bình khá trở lên; Doanh nghiệp vừa và nhỏ (SMEs) tại khu vực miền Nam và các đô thị lớn.
 *   **Giải pháp giá trị (2):** Dịch vụ ngân hàng bán lẻ uy tín, thân thiện, bảo mật cao; quy trình duyệt hồ sơ vay nhanh gọn, minh bạch; không tập trung cho vay các dự án bất động sản đầu cơ rủi ro cao.
-*   **Dòng doanh thu (5):** Thu nhập lãi thuần (NII) từ hoạt động cho vay bán lẻ và cho vay SMEs chiếm tỷ trọng $80\%$; Thu nhập từ phí dịch vụ, bancassurance (bán chéo bảo hiểm) chiếm $20\%$.
+*   **Dòng doanh thu (5):** Thu nhập lãi thuần (NII) từ hoạt động cho vay bán lẻ và cho vay SMEs chiếm tỷ trọng 80%; Thu nhập từ phí dịch vụ, bancassurance (bán chéo bảo hiểm) chiếm 20%.
 *   **Nguồn lực chính (6):** Hệ thống quản trị rủi ro nợ xấu cực kỳ nghiêm ngặt (tỷ lệ nợ xấu luôn thuộc nhóm thấp nhất hệ thống ngân hàng Việt Nam); mạng lưới chi nhánh rộng khắp; thương hiệu uy tín lâu năm.
 
 ---
@@ -217,7 +217,7 @@ D. Kiểm tra chữ ký của kiểm toán viên độc lập ở trang cuối c
 ### 🎭 Tình huống: Thuyết phục khách hàng từ bỏ cổ phiếu bất động sản có dòng tiền kinh doanh âm nặng
 *   **Nhân vật:**
     *   **Broker NextGen HO3 (Học viên):** Sử dụng phương pháp bốc tách số liệu BCLCTT để phản biện một cách nhẹ nhàng nhưng kiên quyết, giúp khách hàng nhìn ra rủi ro ẩn sau con số lợi nhuận đột biến.
-    *   **Anh Nam (Khách hàng):** 40 tuổi, nhà đầu tư cá nhân nhóm **D (Dominance)**. Anh đang rất hưng phấn đòi dồn 300 triệu mua cổ phiếu của công ty bất động sản **LDG** vì doanh nghiệp vừa công bố báo cáo kết quả kinh doanh quý với lợi nhuận sau thuế tăng đột biến $300\%$ nhờ ghi nhận doanh thu từ việc chuyển nhượng dự án. Anh lờ đi việc dòng tiền kinh doanh CFO của doanh nghiệp này đang bị âm kỷ lục và hàng tồn kho chiếm $80\%$ tổng tài sản.
+    *   **Anh Nam (Khách hàng):** 40 tuổi, nhà đầu tư cá nhân nhóm **D (Dominance)**. Anh đang rất hưng phấn đòi dồn 300 triệu mua cổ phiếu của công ty bất động sản **LDG** vì doanh nghiệp vừa công bố báo cáo kết quả kinh doanh quý với lợi nhuận sau thuế tăng đột biến 300% nhờ ghi nhận doanh thu từ việc chuyển nhượng dự án. Anh lờ đi việc dòng tiền kinh doanh CFO của doanh nghiệp này đang bị âm kỷ lục và hàng tồn kho chiếm 80% tổng tài sản.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -226,7 +226,7 @@ D. Kiểm tra chữ ký của kiểm toán viên độc lập ở trang cuối c
 *   **Anh Nam:** *Ôi dào, lãi khủng thế thì tiền thiếu gì em ơi. Cứ có lãi là cổ phiếu lên, phân tích dòng tiền làm gì cho mệt đầu. Em cứ đặt lệnh đi.*
 *   **Broker NextGen:** *Dạ anh Nam, anh làm kinh doanh lớn chắc chắn hiểu rất rõ quy luật: "Doanh thu là hư ảo, lợi nhuận là lý thuyết, chỉ có tiền mặt mới là thực tế". Đúng là trên sổ sách kế toán, LDG ghi nhận khoản lãi lớn từ việc bán chuyển nhượng dự án. Nhưng trên Báo cáo lưu chuyển tiền tệ, **Dòng tiền hoạt động kinh doanh (CFO) của LDG lại đang bị âm hơn 400 tỷ đồng**.*
 *   **Anh Nam (hơi ngạc nhiên):** *Sao lãi lớn mà dòng tiền lại âm tận 400 tỷ được em? Kế toán họ làm sai à?*
-*   **Broker NextGen:** *Dạ không phải kế toán làm sai đâu anh. Bản chất là LDG ghi nhận doanh thu bán dự án trên giấy tờ, nhưng đối tác mua họ chưa hề thanh toán tiền mặt cho công ty. Khoản tiền này hiện tại đang nằm ở mục **Các khoản phải thu khách hàng** trên Bảng cân đối kế toán. Đồng thời, lượng hàng tồn kho của doanh nghiệp – tức là các dự án bất động sản chưa giải phóng được mặt bằng – đang bị ứ đọng chiếm tới $80\%$ tổng tài sản.*
+*   **Broker NextGen:** *Dạ không phải kế toán làm sai đâu anh. Bản chất là LDG ghi nhận doanh thu bán dự án trên giấy tờ, nhưng đối tác mua họ chưa hề thanh toán tiền mặt cho công ty. Khoản tiền này hiện tại đang nằm ở mục **Các khoản phải thu khách hàng** trên Bảng cân đối kế toán. Đồng thời, lượng hàng tồn kho của doanh nghiệp – tức là các dự án bất động sản chưa giải phóng được mặt bằng – đang bị ứ đọng chiếm tới 80% tổng tài sản.*
     *   *Điều này nghĩa là doanh nghiệp hoàn toàn không thu được một đồng tiền mặt thật nào từ hoạt động kinh doanh trong quý qua. Để duy trì vận hành và trả lương nhân viên, họ đang phải liên tục đi vay nợ ngân hàng. Nếu ngân hàng siết tín dụng, doanh nghiệp sẽ ngay lập tức đối mặt với nguy cơ mất khả năng thanh toán nợ đến hạn.*
 *   **Anh Nam (suy nghĩ chút, giọng bớt hưng phấn):** *Thế à... Âm dòng tiền nặng thế cơ à. Thế sao trên mạng họ vẫn hô hào mua nhiều thế em?*
 *   **Broker NextGen:** *Dạ, đám đông trên diễn đàn thường chỉ nhìn vào con số lợi nhuận sau thuế giật gân ở dòng cuối cùng của báo cáo kết quả kinh doanh để đầu cơ ngắn hạn. Nhưng với số vốn 300 triệu xương máu của anh Nam, em muốn tư vấn cho anh một phương án đầu tư có "Biên An Toàn" bọc thép hơn.*
@@ -242,7 +242,7 @@ D. Kiểm tra chữ ký của kiểm toán viên độc lập ở trang cuối c
 | **Bản lĩnh thuyết phục và phản biện** | **30%** | Giữ vững lập trường, không bị cuốn theo sự hưng phấn ngắn hạn của khách hàng nhóm D; sử dụng các câu nói trực quan như *"Doanh thu là hư ảo..."*. | / 30 |
 | **Định hướng giải pháp an toàn (Alternative)** | **30%** | Khéo léo định hướng khách hàng chuyển đổi dòng vốn sang các cổ phiếu cơ bản có CFO dương dồi dào, bảo vệ tài sản của khách. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 80/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm.*
 
 ---
 

@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ mười hai của Lộ trình (Tuần 2 - Kỹ năng khám phá nhu cầu khách hàng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập triết lý "Bác sĩ tài chính" – luôn đặt việc chuẩn bệnh, lắng nghe thấu cảm lên trên việc bán hàng. Kiên quyết không phím hàng hay đưa ra khuyến nghị khi chưa thấu hiểu rõ hiện trạng và mục tiêu tài chính của khách. Tôn trọng sự thật khách quan.
@@ -82,16 +82,16 @@ Kỹ thuật SPIN là công cụ đắc lực nhất giúp Broker khai thác nhu
 
 Chị Vy (35 tuổi, Trưởng phòng nhân sự tại một tập đoàn đa quốc gia, nhóm tính cách **S-C** – cẩn trọng, kiên định nhưng thiếu kiến thức tài chính) đang có nỗi lo âu rất lớn về tương lai học tập của hai con nhỏ (8 tuổi và 5 tuổi). Chị muốn chuẩn bị một quỹ giáo dục trị giá 1 tỷ đồng sau 10 năm nữa. 
 
-Tuy nhiên, vì sợ rủi ro mất tiền, chị Vy đem toàn bộ số tiền tiết kiệm 300 triệu hiện có gửi vào ngân hàng với lãi suất kỳ hạn dài chỉ $5.5\%$/năm. Chị Vy luôn cảm thấy bế tắc vì tính toán thấy với mức lãi suất tiết kiệm này, cộng thêm lạm phát thực tế học phí tăng $8\% - 10\%$/năm ở các trường quốc tế, số tiền gửi của chị đang bị mất giá trị mỗi ngày và không thể đủ cho mục tiêu tương lai của con.
+Tuy nhiên, vì sợ rủi ro mất tiền, chị Vy đem toàn bộ số tiền tiết kiệm 300 triệu hiện có gửi vào ngân hàng với lãi suất kỳ hạn dài chỉ 5.5%/năm. Chị Vy luôn cảm thấy bế tắc vì tính toán thấy với mức lãi suất tiết kiệm này, cộng thêm lạm phát thực tế học phí tăng 8% - 10%/năm ở các trường quốc tế, số tiền gửi của chị đang bị mất giá trị mỗi ngày và không thể đủ cho mục tiêu tương lai của con.
 
 Một Broker NextGen của chi nhánh HO3 đã tiếp cận chị Vy và áp dụng chuẩn xác quy trình 6 bước Initiate:
 
 1.  **Bước 1 (Phá băng):** Broker kết nối dựa trên chủ đề nuôi dạy con cái và tạo thiện cảm bằng phong cách nói chuyện lịch sự, từ tốn của nhóm S.
-2.  **Bước 2 & 3 (Đặt câu hỏi SPIN tìm điểm nghẽn):** Broker đặt câu hỏi: *"Chị Vy ơi, với mức lãi suất gửi tiết kiệm $5.5\%$ hiện tại, chị có lo lắng học phí trường quốc tế của bé tăng nhanh hơn tốc độ tăng trưởng của sổ tiết kiệm không ạ?"* (Câu hỏi Problem). Chị Vy thở dài chia sẻ nỗi đau sợ con không được học trường tốt do thiếu hụt tài chính.
+2.  **Bước 2 & 3 (Đặt câu hỏi SPIN tìm điểm nghẽn):** Broker đặt câu hỏi: *"Chị Vy ơi, với mức lãi suất gửi tiết kiệm 5.5% hiện tại, chị có lo lắng học phí trường quốc tế của bé tăng nhanh hơn tốc độ tăng trưởng của sổ tiết kiệm không ạ?"* (Câu hỏi Problem). Chị Vy thở dài chia sẻ nỗi đau sợ con không được học trường tốt do thiếu hụt tài chính.
 3.  **Bước 4 (Khảo sát khẩu vị):** Nhận diện chị Vy thuộc nhóm S-C, yêu cầu sự an tâm tuyệt đối và kiểm chứng số liệu rõ ràng.
 4.  **Bước 5 (Trình bày giải pháp Tháp tài sản):** Broker không khuyên chị rút hết tiền gửi tiết kiệm. Anh vẽ mô hình Tháp tài sản:
     *   Giữ lại 100 triệu làm **Quỹ bảo vệ T1** gửi tiết kiệm ngân hàng để chị hoàn toàn yên tâm.
-    *   Chuyển 200 triệu còn lại sang **Tầng tích lũy T2** để mua tích sản cổ phiếu ACB và FPT thông qua bộ lọc InvestWise (lợi nhuận dài hạn bình quân $12\% - 15\%$/năm).
+    *   Chuyển 200 triệu còn lại sang **Tầng tích lũy T2** để mua tích sản cổ phiếu ACB và FPT thông qua bộ lọc InvestWise (lợi nhuận dài hạn bình quân 12% - 15%/năm).
     *   Broker mở bảng tính Excel dự phóng chi tiết sau 10 năm cho chị Vy xem số tiền thu được từ T2 đạt hơn 750 triệu đồng, kết hợp với T1 sẽ vượt mục tiêu 1 tỷ đồng của chị một cách dễ dàng.
 
 ```
@@ -220,7 +220,7 @@ D. Thuyết phục khách hàng sử dụng tối đa đòn bẩy tài chính Ma
 *   **Chị Minh (cười trừ, giọng hơi ngại):** *Ôi em ơi, làm tự do như chị thì tiền về liên tục nhưng tiêu cũng ác lắm. Chị thích gì là mua nấy, túi hiệu, mỹ phẩm... Tính ra chả tích lũy được đồng nào đâu, có tháng còn phải quẹt tạm thẻ tín dụng tiêu trước trả sau nữa cơ.*
 *   **Broker NextGen:** *Dạ em hiểu ạ. Vậy hiện tại khoản nợ thẻ tín dụng chưa thanh toán hết của chị là khoảng bao nhiêu và lãi suất phạt của ngân hàng đang áp dụng là bao nhiêu phần trăm một năm rồi chị Minh?* (Câu hỏi Problem).
 *   **Chị Minh:** *À... hình như đang nợ khoảng 40 triệu em ạ. Lãi suất thẻ tín dụng thì cao lắm, hình như gần 30%/năm thì phải. Nhưng chị nghĩ cứ kệ nó, tháng sau có thù lao dự án lớn chị đập vào trả sau.*
-*   **Broker NextGen:** *Dạ chị Minh ơi, lãi suất nợ thẻ tín dụng 30%/năm là một trong những khoản 'nợ xấu' bào mòn tài sản nhanh nhất đó chị. Nếu chị dùng 30 triệu nhàn rỗi để lướt sóng chứng khoán ngắn hạn với hy vọng kiếm tiền nhanh trả nợ, trong bối cảnh thị trường biến động, lỡ khoản đầu tư đó bị lỗ tạm thời $15\%$, cộng thêm khoản nợ thẻ tín dụng vẫn gánh lãi 30% hàng ngày, chị có lo lắng áp lực tài chính sẽ đè nặng lên vai chị và làm ảnh hưởng đến sự thảnh thơi của chuyến đi Nhật Bản sắp tới không chị?* (Câu hỏi Implication).
+*   **Broker NextGen:** *Dạ chị Minh ơi, lãi suất nợ thẻ tín dụng 30%/năm là một trong những khoản 'nợ xấu' bào mòn tài sản nhanh nhất đó chị. Nếu chị dùng 30 triệu nhàn rỗi để lướt sóng chứng khoán ngắn hạn với hy vọng kiếm tiền nhanh trả nợ, trong bối cảnh thị trường biến động, lỡ khoản đầu tư đó bị lỗ tạm thời 15%, cộng thêm khoản nợ thẻ tín dụng vẫn gánh lãi 30% hàng ngày, chị có lo lắng áp lực tài chính sẽ đè nặng lên vai chị và làm ảnh hưởng đến sự thảnh thơi của chuyến đi Nhật Bản sắp tới không chị?* (Câu hỏi Implication).
 *   **Chị Minh (giọng trầm xuống, tỏ ra lo lắng):** *Ừ nhỉ... Em nói chị mới giật mình. Nếu đầu tư bị lỗ thì nợ chồng nợ mất. Thế giờ chị phải làm sao em?*
 *   **Broker NextGen:** *Dạ, dưới góc độ bác sĩ tài chính, em khuyên chị áp dụng giải pháp phân bổ vốn 2 bước theo mô hình Tháp tài sản như sau:*
     *   *Bước 1: Chúng ta dùng toàn bộ 30 triệu hiện có kết hợp trích thặng dư tháng này để **thanh toán dứt điểm khoản nợ thẻ tín dụng 40 triệu**. Việc trả nợ lãi suất 30% chính là khoản đầu tư mang lại tỷ suất sinh lời 30% chắc chắn nhất cho chị.*
@@ -237,7 +237,7 @@ D. Thuyết phục khách hàng sử dụng tối đa đòn bẩy tài chính Ma
 | **Thực thi đạo đức nghề nghiệp** | **30%** | Ưu tiên khuyên khách trả nợ xấu lãi cao trước thay vì cố chốt sale ép khách nạp tiền đầu tư chứng khoán lấy doanh số ngắn hạn. | / 30 |
 | **Thiết lập giải pháp Tháp tài sản** | **30%** | Trình bày giải pháp Tháp tài sản rõ ràng, hướng dẫn khách hàng nhóm I thiết lập kỷ luật "khóa dòng tiền" tự động để hạn chế chi tiêu hoang phí. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

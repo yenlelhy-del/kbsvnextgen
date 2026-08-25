@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Psychology Case Analysis).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Psychology Case Analysis).
 *   **Vị trí trong lộ trình:** Ngày thứ mười sáu của Lộ trình (Tuần 3 - Kỹ năng quản trị tâm lý khách hàng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Giữ vững sự bình tĩnh, kiên định và phong thái chuyên nghiệp trước những phản ứng cực đoan (giận dữ, sợ hãi, hưng phấn quá đà) của khách hàng F0. Thể hiện sự bao dung và thấu cảm sâu sắc, không tranh cãi đúng sai với khách hàng. Coi biến động thị trường là bài kiểm tra bản lĩnh Broker.
@@ -55,8 +55,8 @@ Khi thị trường tăng điểm liên tục, tài khoản của mọi người
 
 #### B. Trong Thị Trường Giảm Sâu: Sợ mất mát & Hoảng loạn (Phần khó nhất)
 Đây là giai đoạn khó khăn nhất đối với Broker. Tâm lý học hành vi chỉ ra rằng **"Nỗi đau của việc bị mất 10 triệu đồng lớn gấp 2 lần niềm vui của việc kiếm được 10 triệu đồng" (Loss Aversion - Tâm lý sợ mất mát)**. Khi thị trường sụp đổ, F0 sẽ đi qua 3 giai đoạn tâm lý:
-1.  **Giai đoạn 1 (Neo đỉnh - Anchoring Bias):** Giá cổ phiếu giảm $10\%$ từ đỉnh, F0 không chịu bán vì họ neo tâm lý vào mức giá đỉnh cao nhất đã nhìn thấy trước đó. Họ nghĩ: *"Phải đợi hồi về đỉnh cũ anh mới bán"*.
-2.  **Giai đoạn 2 (Tê liệt hành vi):** Giá tiếp tục giảm $20\% - 30\%$, tài khoản âm nặng. F0 rơi vào trạng thái trốn tránh thực tế: họ khóa app không thèm xem tài khoản, tự huyễn hoặc bản thân: *"Không bán là không lỗ, mình chuyển sang đầu tư dài hạn"*, mặc dù họ đang cầm cổ phiếu đầu cơ rác.
+1.  **Giai đoạn 1 (Neo đỉnh - Anchoring Bias):** Giá cổ phiếu giảm 10% từ đỉnh, F0 không chịu bán vì họ neo tâm lý vào mức giá đỉnh cao nhất đã nhìn thấy trước đó. Họ nghĩ: *"Phải đợi hồi về đỉnh cũ anh mới bán"*.
+2.  **Giai đoạn 2 (Tê liệt hành vi):** Giá tiếp tục giảm 20% - 30%, tài khoản âm nặng. F0 rơi vào trạng thái trốn tránh thực tế: họ khóa app không thèm xem tài khoản, tự huyễn hoặc bản thân: *"Không bán là không lỗ, mình chuyển sang đầu tư dài hạn"*, mặc dù họ đang cầm cổ phiếu đầu cơ rác.
 3.  **Giai đoạn 3 (Hoảng loạn tột độ - Panic Selling):** Thị trường sập thêm một nhịp giải chấp Margin (Force Sell) trên diện rộng, giá cổ phiếu giảm sàn hàng loạt. F0 không thể chịu đựng thêm áp lực tâm lý, họ hoảng loạn gọi điện chửi bới Broker, chửi bới thị trường và quyết định đặt lệnh bán tháo sạch sẽ đúng ngay vùng đáy của chu kỳ điều chỉnh.
 
 ---
@@ -78,14 +78,14 @@ Khi thị trường giảm sâu và khách hàng đang cực kỳ hoảng loạn
 ### 4. Case Study Thực Tế: So Sánh 2 Trường Hợp F0 Điển Hình
 
 #### Case 1 (Thị trường tăng): Chị Thảo (28 tuổi) đòi vay margin mua DIG giá đỉnh
-Vào quý 1/2022, khi cổ phiếu bất động sản DIG tăng nóng chạm mốc $120.000$ VNĐ/cp, chị Thảo (nhóm tính cách **I**) cực kỳ hưng phấn. Chị thấy các room chat đồn thổi DIG sẽ lên $500.000$ VNĐ. Chị gọi điện cho Broker yêu cầu cấp thêm hạn mức Margin đuôi 6 để mua thêm 5.000 cổ DIG.
+Vào quý 1/2022, khi cổ phiếu bất động sản DIG tăng nóng chạm mốc 120.000 VNĐ/cp, chị Thảo (nhóm tính cách **I**) cực kỳ hưng phấn. Chị thấy các room chat đồn thổi DIG sẽ lên 500.000 VNĐ. Chị gọi điện cho Broker yêu cầu cấp thêm hạn mức Margin đuôi 6 để mua thêm 5.000 cổ DIG.
 
-Broker NextGen của HO3 đã can ngăn quyết liệt. Anh mở bảng định giá Graham chỉ ra rằng P/E của DIG lúc đó đã vượt quá 100 lần, dòng tiền kinh doanh CFO âm nặng và giá đã nằm cách đường MA200 tới $80\%$. Chị Thảo ban đầu tức giận, chê Broker nhút nhát và tự ý sang công ty chứng khoán khác mở tài khoản để mua bằng được DIG giá đỉnh. 
+Broker NextGen của HO3 đã can ngăn quyết liệt. Anh mở bảng định giá Graham chỉ ra rằng P/E của DIG lúc đó đã vượt quá 100 lần, dòng tiền kinh doanh CFO âm nặng và giá đã nằm cách đường MA200 tới 80%. Chị Thảo ban đầu tức giận, chê Broker nhút nhát và tự ý sang công ty chứng khoán khác mở tài khoản để mua bằng được DIG giá đỉnh. 
 
-Hệ quả là sau đó DIG sụp đổ rơi về mức giá $15.000$ VNĐ/cp, khiến chị Thảo bị cháy tài khoản hoàn toàn. Đến nay, chị Thảo đã quay lại tìm Broker HO3 và thừa nhận: *"Nếu ngày xưa chị nghe lời em ngăn cản, chị đã không mất sạch tiền mua chung cư như vậy"*.
+Hệ quả là sau đó DIG sụp đổ rơi về mức giá 15.000 VNĐ/cp, khiến chị Thảo bị cháy tài khoản hoàn toàn. Đến nay, chị Thảo đã quay lại tìm Broker HO3 và thừa nhận: *"Nếu ngày xưa chị nghe lời em ngăn cản, chị đã không mất sạch tiền mua chung cư như vậy"*.
 
 #### Case 2 (Thị trường giảm): Anh Hùng (34 tuổi) hoảng loạn đòi bán tháo FPT đúng đáy
-Vào đợt điều chỉnh mạnh tháng 8/2024, chỉ số VN-Index sập gần 50 điểm trong phiên. Cổ phiếu FPT của anh Hùng (nhóm tính cách **S**) đang nắm giữ bị giảm từ giá $98.000$ xuống còn $78.000$ VNĐ/cp (giảm sàn phiên hôm đó). Anh Hùng hoảng loạn tột độ, gọi điện quát tháo Broker: *"FPT cái kiểu gì thế này? Em bảo an toàn lắm mà sao hôm nay sàn? Bán hết cho anh, bán ngay lập tức ở giá sàn thu tiền về gửi ngân hàng, anh không đầu tư gì nữa!"*.
+Vào đợt điều chỉnh mạnh tháng 8/2024, chỉ số VN-Index sập gần 50 điểm trong phiên. Cổ phiếu FPT của anh Hùng (nhóm tính cách **S**) đang nắm giữ bị giảm từ giá 98.000 xuống còn 78.000 VNĐ/cp (giảm sàn phiên hôm đó). Anh Hùng hoảng loạn tột độ, gọi điện quát tháo Broker: *"FPT cái kiểu gì thế này? Em bảo an toàn lắm mà sao hôm nay sàn? Bán hết cho anh, bán ngay lập tức ở giá sàn thu tiền về gửi ngân hàng, anh không đầu tư gì nữa!"*.
 
 ```
 ĐỐI CHIẾU XỬ LÝ KHỦNG HOẢNG TÂM LÝ:
@@ -96,9 +96,9 @@ Vào đợt điều chỉnh mạnh tháng 8/2024, chỉ số VN-Index sập gầ
 Broker NextGen đã áp dụng phác đồ 3 bước:
 *   *Bước 1 (Xoa dịu):* *"Dạ anh Hùng ơi, em hoàn toàn hiểu anh đang rất xót ruột khi thấy FPT bị bán tháo sàn hôm nay. Em xin nhận trách nhiệm đã chưa giải thích kỹ cho anh về các phiên bán tháo kỹ thuật cực đoan của thị trường chung."*
 *   *Bước 2 (Chẩn đoán):* *"FPT đạt điểm F-Score tối đa 9/9, mảng công nghệ xuất khẩu phần mềm vừa công bố lãi tăng trưởng 22% sáng nay. Việc giảm sàn hôm nay hoàn toàn là do các kho bãi đầu cơ bên ngoài bị force sell chéo bán giải chấp FPT để cứu các mã bất động sản rác khác, chứ doanh nghiệp FPT không có gì xấu đi cả."*
-*   *Bước 3 (Hành động):* Thuyết phục anh Hùng giữ nguyên cổ phiếu, không đặt lệnh bán sàn bằng mọi giá ở phiên khớp lệnh ATC. Sáng hôm sau, khi thị trường bớt hoảng loạn, Broker hướng dẫn anh trích 50 triệu tiền mặt nhàn rỗi đang có sẵn để mua gom thêm FPT ở giá rẻ $78.000$ VNĐ/cp.
+*   *Bước 3 (Hành động):* Thuyết phục anh Hùng giữ nguyên cổ phiếu, không đặt lệnh bán sàn bằng mọi giá ở phiên khớp lệnh ATC. Sáng hôm sau, khi thị trường bớt hoảng loạn, Broker hướng dẫn anh trích 50 triệu tiền mặt nhàn rỗi đang có sẵn để mua gom thêm FPT ở giá rẻ 78.000 VNĐ/cp.
 
-Kết quả là chỉ 2 tuần sau đó, FPT phục hồi mạnh mẽ lên lại vùng giá $95.000$ VNĐ/cp. Nhờ sự can ngăn điềm tĩnh của Broker, anh Hùng không những không bị mất vốn ở đáy mà còn tối ưu hóa được giá vốn trung bình danh mục của mình xuống mức cực kỳ tốt.
+Kết quả là chỉ 2 tuần sau đó, FPT phục hồi mạnh mẽ lên lại vùng giá 95.000 VNĐ/cp. Nhờ sự can ngăn điềm tĩnh của Broker, anh Hùng không những không bị mất vốn ở đáy mà còn tối ưu hóa được giá vốn trung bình danh mục của mình xuống mức cực kỳ tốt.
 
 ---
 
@@ -109,7 +109,7 @@ Kết quả là chỉ 2 tuần sau đó, FPT phục hồi mạnh mẽ lên lại
 **Bối cảnh:** Chỉ số VN-Index bất ngờ ghi nhận một phiên sụt giảm kỷ lục 40 điểm do tin đồn tiêu cực vĩ mô. Hàng loạt cổ phiếu bị chất lệnh bán sàn la liệt. Trên CRM, hệ thống báo đỏ 3 tài khoản FPT/ACB tích sản của bạn đang gặp khủng hoảng tâm lý:
 
 1.  **Tài khoản 1 (Chị Hồng - Nhóm I):** Tích sản FPT được 4 tháng. Nhắn tin Zalo liên tục: *"Trời ơi em ơi, FPT sàn rồi kìa, chị run tay quá, mất sạch lãi mấy tháng qua rồi. Có nên bán cắt lỗ ngay bây giờ không em? Chị sợ nó về 0 đồng quá! 😭😭😭"*
-2.  **Tài khoản 2 (Anh Tiến - Nhóm D):** Đang sử dụng đòn bẩy Margin tỉ lệ $1:1$ ở tiểu khoản đuôi 6 để lướt sóng thêm HPG. Tài khoản chạm ngưỡng cảnh báo Call Margin (Tỷ lệ tài sản ròng/Tổng tài sản giảm về $35\%$). Anh Tiến gọi điện ra lệnh: *"Cấp thêm margin cho anh trung bình giá xuống con HPG ngay lập tức, anh không tin nó không hồi lên lại!"*.
+2.  **Tài khoản 2 (Anh Tiến - Nhóm D):** Đang sử dụng đòn bẩy Margin tỉ lệ 1:1 ở tiểu khoản đuôi 6 để lướt sóng thêm HPG. Tài khoản chạm ngưỡng cảnh báo Call Margin (Tỷ lệ tài sản ròng/Tổng tài sản giảm về 35%). Anh Tiến gọi điện ra lệnh: *"Cấp thêm margin cho anh trung bình giá xuống con HPG ngay lập tức, anh không tin nó không hồi lên lại!"*.
 3.  **Tài khoản 3 (Cô Tâm - Nhóm S):** Tích sản ACB được 8 tháng. Cô không nhắn tin, không gọi điện nhưng hệ thống CRM ghi nhận cô liên tục đăng nhập vào app KBSV 15 lần trong vòng 2 tiếng để xem bảng điện.
 
 **Yêu cầu đối với học viên:**
@@ -134,9 +134,9 @@ Kết quả là chỉ 2 tuần sau đó, FPT phục hồi mạnh mẽ lên lại
     >
     > **Anh Tiến:** *"Sao thế em? Anh có tiền nộp thêm, sao không cho anh mua trung bình giá xuống? HPG rẻ quá rồi còn gì!"*
     >
-    > **Broker NextGen:** *"Dạ anh Tiến, HPG thực sự đang ở vùng giá rẻ vĩ mô, nhưng tài khoản đuôi 6 của anh tỷ lệ tài sản ròng đã giảm về mức báo động $35\%$. Nếu anh tiếp tục dùng nợ Margin mua thêm hôm nay, chỉ cần phiên ngày mai HPG điều chỉnh giảm thêm $3\%$, tài khoản của anh sẽ lập tức bị hệ thống tự động bán giải chấp Force Sell bằng mọi giá để thu hồi nợ vay.*
+    > **Broker NextGen:** *"Dạ anh Tiến, HPG thực sự đang ở vùng giá rẻ vĩ mô, nhưng tài khoản đuôi 6 của anh tỷ lệ tài sản ròng đã giảm về mức báo động 35%. Nếu anh tiếp tục dùng nợ Margin mua thêm hôm nay, chỉ cần phiên ngày mai HPG điều chỉnh giảm thêm 3%, tài khoản của anh sẽ lập tức bị hệ thống tự động bán giải chấp Force Sell bằng mọi giá để thu hồi nợ vay.*
     >
-    > *Việc trung bình giá xuống bằng nợ vay Margin trong một thị trường đang đà rơi cực đoan giống như việc anh dùng xăng để dập lửa vậy. Để bảo vệ vốn gốc, phương án duy nhất lúc này là anh nộp thêm 30 triệu tiền mặt vào để đưa tỷ lệ tài sản ròng về mức an toàn $45\%$, giữ nguyên số lượng HPG đang có và tuyệt đối không mua gia tăng thêm bằng Margin. Khi thị trường cân bằng trở lại, em sẽ hỗ trợ anh cơ cấu sức mua sau. Anh đồng ý với phương án quản trị an toàn này của em chứ anh?"*
+    > *Việc trung bình giá xuống bằng nợ vay Margin trong một thị trường đang đà rơi cực đoan giống như việc anh dùng xăng để dập lửa vậy. Để bảo vệ vốn gốc, phương án duy nhất lúc này là anh nộp thêm 30 triệu tiền mặt vào để đưa tỷ lệ tài sản ròng về mức an toàn 45%, giữ nguyên số lượng HPG đang có và tuyệt đối không mua gia tăng thêm bằng Margin. Khi thị trường cân bằng trở lại, em sẽ hỗ trợ anh cơ cấu sức mua sau. Anh đồng ý với phương án quản trị an toàn này của em chứ anh?"*
 
 #### 3. Chẩn đoán và xử lý Tài khoản 3 (Cô Tâm - Nhóm S - Trạng thái lo âu im lặng):
 *   **Chẩn đoán:** Trạng thái lo âu im lặng (Silent Anxiety). Người nhóm S rất sợ xung đột và sợ mất tiền dưỡng già, họ không gọi điện trách móc nhưng âm thầm theo dõi bảng điện liên tục, tâm lý bị tra tấn cực độ. Nếu Broker không chủ động liên hệ trấn an, cô Tâm sẽ tự ý bán tháo sạch cổ phiếu khi không chịu nổi áp lực nữa.
@@ -145,7 +145,7 @@ Kết quả là chỉ 2 tuần sau đó, FPT phục hồi mạnh mẽ lên lại
     >
     > **Cô Tâm (giọng run run, thở phào):** *"Ừ cháu ơi, cô thấy ACB giảm mạnh quá, cô đang lo quá không biết tiền dưỡng già của cô có bị làm sao không, cô cứ mở điện thoại xem suốt từ trưa đến giờ..."*
     >
-    > **Broker NextGen:** *"Dạ cô Tâm ơi, con gọi điện cốt để cô an lòng đây ạ. Cô hoàn toàn yên tâm nhé cô. Trong bản kế hoạch tài sản của cô, con và cô đã thống nhất trích $70\%$ để gửi tiết kiệm ngân hàng làm Quỹ bảo vệ T1 an toàn tuyệt đối rồi đúng không cô. Số tiền cô mua ACB chỉ chiếm $30\%$ thặng dư nhàn rỗi ở tầng T2 thôi ạ.*
+    > **Broker NextGen:** *"Dạ cô Tâm ơi, con gọi điện cốt để cô an lòng đây ạ. Cô hoàn toàn yên tâm nhé cô. Trong bản kế hoạch tài sản của cô, con và cô đã thống nhất trích 70% để gửi tiết kiệm ngân hàng làm Quỹ bảo vệ T1 an toàn tuyệt đối rồi đúng không cô. Số tiền cô mua ACB chỉ chiếm 30% thặng dư nhàn rỗi ở tầng T2 thôi ạ.*
     >
     > *ACB là ngân hàng bán lẻ hàng đầu Việt Nam, nợ xấu cực thấp và trả cổ tức tiền mặt đều đặn hàng năm cho cô. Việc giá cổ phiếu giảm hôm nay là do thị trường chung hoang mang ngắn hạn, hoàn toàn không ảnh hưởng đến tiền cổ tức của cô nhận được sau này đâu ạ. Cô cứ tắt điện thoại đi nghỉ ngơi, chiều tối đi tập dưỡng sinh bình thường cô nhé. Mọi biến động tài khoản con luôn theo dõi sát sao để bảo vệ cho cô rồi ạ."*
 
@@ -206,8 +206,8 @@ D. Vì họ sẽ chuyển sang công ty đối thủ mở tài khoản ngay tron
 
 ### 🎭 Tình huống: Trấn an và xử lý khủng hoảng tâm lý của khách hàng nhóm I-D giận dữ gọi điện quát tháo khi thị trường giảm sàn hàng loạt
 *   **Nhân vật:**
-    *   **Broker NextGen HO3 (Học viên):** Điềm tĩnh, giọng nói ấm áp ổn định, áp dụng chuẩn xác phác đồ 3 bước (xoa dịu $\rightarrow$ phân tách danh mục $\rightarrow$ hướng dẫn hành động), không đôi co đúng sai.
-    *   **Anh Tuấn (Khách hàng):** 38 tuổi, chủ cửa hàng kinh doanh, nhóm tính cách **I-D**. Anh đang tích sản ACB và FPT tại KBSV. Thị trường sập mạnh khiến danh mục tích sản của anh bị âm tạm thời $10\%$ ngay trong phiên. Anh Tuấn gọi điện cho Broker với giọng điệu cực kỳ giận dữ, quát tháo to tiếng: *"Mấy đứa tư vấn kiểu gì thế hả? Bảo tích sản an toàn bình an mà giờ tài khoản của anh bay sạch lãi âm cả vào gốc rồi! Có bán hết đi không hay để nó cháy sạch tài khoản của anh hả?!"*.
+    *   **Broker NextGen HO3 (Học viên):** Điềm tĩnh, giọng nói ấm áp ổn định, áp dụng chuẩn xác phác đồ 3 bước (xoa dịu → phân tách danh mục → hướng dẫn hành động), không đôi co đúng sai.
+    *   **Anh Tuấn (Khách hàng):** 38 tuổi, chủ cửa hàng kinh doanh, nhóm tính cách **I-D**. Anh đang tích sản ACB và FPT tại KBSV. Thị trường sập mạnh khiến danh mục tích sản của anh bị âm tạm thời 10% ngay trong phiên. Anh Tuấn gọi điện cho Broker với giọng điệu cực kỳ giận dữ, quát tháo to tiếng: *"Mấy đứa tư vấn kiểu gì thế hả? Bảo tích sản an toàn bình an mà giờ tài khoản của anh bay sạch lãi âm cả vào gốc rồi! Có bán hết đi không hay để nó cháy sạch tài khoản của anh hả?!"*.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -216,7 +216,7 @@ D. Vì họ sẽ chuyển sang công ty đối thủ mở tài khoản ngay tron
     *   *Em xin nhận trách nhiệm vì đã chưa giải thích cặn kẽ cho anh Tuấn về các phiên điều chỉnh kỹ thuật cực đoan của thị trường chung trước đây, để anh phải lo lắng thế này là lỗi của em.*
 *   **Anh Tuấn (giọng đỡ quát hơn nhưng vẫn bực dọc):** *Biết thế sao còn tư vấn mua? Giờ có bán sạch cắt lỗ thu tiền về gửi ngân hàng không? Anh không tin tưởng chứng khoán nữa!*
 *   **Broker NextGen:** *Dạ anh Tuấn ơi, em hiểu anh đang rất giận dữ và muốn bán sạch để giải tỏa áp lực tâm lý ngay lúc này. Nhưng anh Tuấn hãy cùng em bình tâm nhìn lại danh mục của mình 1 phút để đưa ra quyết định sáng suốt nhất nhé anh.*
-    *   *Trong tài khoản tích sản của anh, chúng ta chỉ nắm giữ duy nhất 2 cổ phiếu là **ACB** và **FPT**. Đây là hai doanh nghiệp đạt điểm sức khỏe tài chính tối đa 9/9 trên bảng điểm Piotroski F-Score. Kết quả kinh doanh quý này của FPT vẫn tăng trưởng trưởng $22\%$, ACB vẫn hoạt động cực kỳ vững mạnh. Doanh nghiệp không hề có gì xấu đi cả.*
+    *   *Trong tài khoản tích sản của anh, chúng ta chỉ nắm giữ duy nhất 2 cổ phiếu là **ACB** và **FPT**. Đây là hai doanh nghiệp đạt điểm sức khỏe tài chính tối đa 9/9 trên bảng điểm Piotroski F-Score. Kết quả kinh doanh quý này của FPT vẫn tăng trưởng trưởng 22%, ACB vẫn hoạt động cực kỳ vững mạnh. Doanh nghiệp không hề có gì xấu đi cả.*
     *   *Việc giảm sàn la liệt hôm nay hoàn toàn là do thị trường chung bị bán giải chấp chéo Margin từ các kho bãi đầu cơ bất động sản rác bên ngoài, đẩy giá của các cổ phiếu tốt như FPT/ACB bị ép giảm kỹ thuật theo mà thôi.*
 *   **Anh Tuấn:** *Thế giờ nó cứ giảm tiếp thì sao? Cứ ngồi nhìn tiền rơi à?*
 *   **Broker NextGen:** *Dạ anh Tuấn, nếu anh đặt lệnh bán sàn ATC bằng mọi giá hôm nay, anh sẽ chính thức hiện thực hóa khoản lỗ 30 triệu đúng ngay vùng đáy hoảng loạn kỹ thuật của thị trường. Chỉ vài ngày nữa khi dòng tiền lớn của các tổ chức quay lại mua đỡ giá rẻ, cổ phiếu phục hồi đi lên, anh sẽ bị mất hàng và chịu thiệt hại thực tế rất lớn.*
@@ -236,7 +236,7 @@ D. Vì họ sẽ chuyển sang công ty đối thủ mở tài khoản ngay tron
 | **Lập luận logic bảo vệ danh mục (FA/TA)** | **30%** | Sử dụng điểm F-Score và giá trị nội tại để chứng minh chất lượng ACB/FPT không đổi; giải thích rõ cơ chế bán giải chấp chéo của thị trường. | / 30 |
 | **Kháng cự lại quyết định sai của khách** | **30%** | Kiên quyết ngăn cản hành động bán tháo đúng đáy của khách; định hướng giải pháp giữ nguyên hoặc DCA giá rẻ dưới MA200 an toàn. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

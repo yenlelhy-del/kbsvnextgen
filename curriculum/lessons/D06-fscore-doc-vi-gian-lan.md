@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ FA Combat Presentation).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → FA Combat Presentation).
 *   **Vị trí trong lộ trình:** Ngày thứ sáu của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập sự hoài nghi lành mạnh (professional skepticism) trước các số liệu kế toán. Luôn đặt câu hỏi phản biện về tính xác thực của lợi nhuận. Coi trọng tính toàn vẹn của báo cáo tài chính và sự an toàn vốn của khách hàng trên hết.
@@ -53,17 +53,17 @@ Trong đầu tư giá trị, việc tìm kiếm những cổ phiếu có chỉ s
 ##### Nhóm A: Hiệu quả sinh lợi (Profitability)
 1.  **ROA dương (ROA > 0):** Doanh nghiệp tạo ra lợi nhuận sau thuế dương trong năm hiện hành. (Đạt = 1 điểm, Không đạt = 0 điểm).
 2.  **CFO dương (CFO > 0):** Dòng tiền từ hoạt động kinh doanh thực tế trong năm phải dương. (Đạt = 1 điểm).
-3.  **ROA cải thiện ($\Delta\text{ROA} > 0$):** Chỉ số ROA năm nay phải lớn hơn ROA năm trước liền kề. Điều này chứng tỏ hiệu quả sử dụng tài sản đang gia tăng. (Đạt = 1 điểm).
-4.  **Chất lượng lợi nhuận ($\text{CFO} > \text{Lợi nhuận ròng}$):** Dòng tiền kinh doanh thực tế phải lớn hơn lợi nhuận sau thuế kế toán. Đây là tiêu chí cực kỳ quan trọng để kiểm chứng doanh nghiệp có bán hàng thu tiền thật hay không. (Đạt = 1 điểm).
+3.  **ROA cải thiện ($\Delta\text{ROA} > 0):** Chỉ số ROA năm nay phải lớn hơn ROA năm trước liền kề. Điều này chứng tỏ hiệu quả sử dụng tài sản đang gia tăng. (Đạt = 1 điểm).
+4.  **Chất lượng lợi nhuận ($\text{CFO} > \text{Lợi nhuận ròng}):** Dòng tiền kinh doanh thực tế phải lớn hơn lợi nhuận sau thuế kế toán. Đây là tiêu chí cực kỳ quan trọng để kiểm chứng doanh nghiệp có bán hàng thu tiền thật hay không. (Đạt = 1 điểm).
 
 ##### Nhóm B: Đòn bẩy tài chính và Nguồn vốn (Leverage & Source of Funds)
-5.  **Tỷ lệ đòn bẩy giảm ($\Delta\text{Leverage} < 0$):** Tỷ lệ Nợ dài hạn/Tổng tài sản trung bình của năm nay phải thấp hơn năm trước. Chứng tỏ doanh nghiệp đang giảm dần sự phụ thuộc vào nợ vay tài chính dài hạn. (Đạt = 1 điểm).
-6.  **Khả năng thanh toán cải thiện ($\Delta\text{Liquidity} > 0$):** Tỷ lệ thanh toán hiện hành (Tài sản ngắn hạn/Nợ ngắn hạn) năm nay phải cao hơn năm trước. Chứng tỏ khả năng thanh toán nợ đến hạn được củng cố. (Đạt = 1 điểm).
+5.  **Tỷ lệ đòn bẩy giảm ($\Delta\text{Leverage} < 0):** Tỷ lệ Nợ dài hạn/Tổng tài sản trung bình của năm nay phải thấp hơn năm trước. Chứng tỏ doanh nghiệp đang giảm dần sự phụ thuộc vào nợ vay tài chính dài hạn. (Đạt = 1 điểm).
+6.  **Khả năng thanh toán cải thiện ($\Delta\text{Liquidity} > 0):** Tỷ lệ thanh toán hiện hành (Tài sản ngắn hạn/Nợ ngắn hạn) năm nay phải cao hơn năm trước. Chứng tỏ khả năng thanh toán nợ đến hạn được củng cố. (Đạt = 1 điểm).
 7.  **Không pha loãng cổ phiếu:** Doanh nghiệp không phát hành thêm cổ phiếu phổ thông mới trong năm. Việc phát hành thêm cổ phiếu thường là dấu hiệu doanh nghiệp bị thiếu hụt tiền mặt hoặc đang pha loãng lợi ích của cổ đông hiện hữu. (Đạt = 1 điểm, Phát hành thêm = 0 điểm).
 
 ##### Nhóm C: Hiệu quả vận hành (Operating Efficiency)
-8.  **Biên lợi nhuận gộp cải thiện ($\Delta\text{Gross Margin} > 0$):** Biên lợi nhuận gộp năm nay phải cao hơn năm trước. Chứng tỏ doanh nghiệp có sức mạnh đàm phán giá hoặc kiểm soát tốt chi phí nguyên liệu đầu vào. (Đạt = 1 điểm).
-9.  **Vòng quay tài sản tăng ($\Delta\text{Asset Turnover} > 0$):** Tỷ số Doanh thu thuần/Tổng tài sản bình quân năm nay phải lớn hơn năm trước. Chứng tỏ doanh nghiệp đang sử dụng tài sản hiệu quả hơn để tạo ra doanh thu. (Đạt = 1 điểm).
+8.  **Biên lợi nhuận gộp cải thiện ($\Delta\text{Gross Margin} > 0):** Biên lợi nhuận gộp năm nay phải cao hơn năm trước. Chứng tỏ doanh nghiệp có sức mạnh đàm phán giá hoặc kiểm soát tốt chi phí nguyên liệu đầu vào. (Đạt = 1 điểm).
+9.  **Vòng quay tài sản tăng ($\Delta\text{Asset Turnover} > 0):** Tỷ số Doanh thu thuần/Tổng tài sản bình quân năm nay phải lớn hơn năm trước. Chứng tỏ doanh nghiệp đang sử dụng tài sản hiệu quả hơn để tạo ra doanh thu. (Đạt = 1 điểm).
 
 #### 💡 Đánh giá điểm F-Score thực tế:
 *   **8 - 9 điểm:** Sức khỏe tài chính xuất sắc. Cổ phiếu cực kỳ an toàn để tích sản.
@@ -94,7 +94,7 @@ Doanh nghiệp niêm yết luôn chịu áp lực phải công bố những con 
 
 Case study của **Công ty Cổ phần Tập đoàn Kỹ nghệ Gỗ Trường Thành (TTF)** năm 2016 là bài học đắt giá nhất về rủi ro bỏ qua việc kiểm chứng chất lượng tài sản trên BCTC của nhà đầu tư Việt Nam.
 
-Trước năm 2016, TTF được ca tụng là doanh nghiệp xuất khẩu đồ gỗ hàng đầu Việt Nam, liên tục công bố doanh thu nghìn tỷ và lợi nhuận tăng trưởng đều đặn. Nhiều quỹ đầu tư lớn và hàng chục nghìn nhà đầu tư cá nhân đã đổ tiền mua cổ phiếu TTF, đẩy giá tăng vọt từ $5.000$ VNĐ lên gần $44.000$ VNĐ/cp.
+Trước năm 2016, TTF được ca tụng là doanh nghiệp xuất khẩu đồ gỗ hàng đầu Việt Nam, liên tục công bố doanh thu nghìn tỷ và lợi nhuận tăng trưởng đều đặn. Nhiều quỹ đầu tư lớn và hàng chục nghìn nhà đầu tư cá nhân đã đổ tiền mua cổ phiếu TTF, đẩy giá tăng vọt từ 5.000 VNĐ lên gần 44.000 VNĐ/cp.
 
 Tuy nhiên, nếu một nhà phân tích áp dụng bộ lọc **Piotroski F-Score** vào BCTC của TTF giai đoạn 2014 - 2015, họ sẽ phát hiện ra các dấu hiệu bất thường nghiêm trọng:
 *   Mặc dù báo cáo lợi nhuận sau thuế dương, nhưng **Dòng tiền hoạt động kinh doanh (CFO) của TTF liên tục bị âm nặng** hàng trăm tỷ đồng do tiền bị chôn chân trong khoản mục Hàng tồn kho phình to bất thường. (Tiêu chí số 4 của F-Score đạt 0 điểm).
@@ -113,7 +113,7 @@ DẤU HIỆU BÁO ĐỘNG ĐỎ TRÊN BCTC CỦA TTF TRƯỚC SỤP ĐỔ:
 
 Vào giữa năm 2016, công ty kiểm toán độc lập đã khui ra sự thật chấn động: TTF đã **gian lận thổi phồng giá trị Hàng tồn kho khống lên tới hơn 980 tỷ đồng** (hàng tồn kho thực tế trong kho biến mất hoặc bị mục nát nhưng vẫn được ghi nhận trên sổ sách với giá trị cao). 
 
-Thông tin này nổ ra khiến cổ phiếu TTF rơi vào chuỗi 30 phiên giảm sàn liên tiếp mất thanh khoản, giảm từ giá $44.000$ VNĐ xuống còn dưới $4.000$ VNĐ/cp. Hàng nghìn nhà đầu tư bị cháy tài khoản hoàn toàn mà không thể bán cắt lỗ. 
+Thông tin này nổ ra khiến cổ phiếu TTF rơi vào chuỗi 30 phiên giảm sàn liên tiếp mất thanh khoản, giảm từ giá 44.000 VNĐ xuống còn dưới 4.000 VNĐ/cp. Hàng nghìn nhà đầu tư bị cháy tài khoản hoàn toàn mà không thể bán cắt lỗ. 
 
 Anh Hùng (42 tuổi, chủ một doanh nghiệp phân phối thiết bị điện tại Hải Phòng, nhóm **D-C** – mạnh mẽ nhưng rất cẩn trọng) là một trong những nhà đầu tư đã mất sạch 1.5 tỷ đồng tích lũy trong vụ sập TTF đó. 
 
@@ -148,31 +148,31 @@ Sau khi được Broker NextGen của HO3 tiếp cận và chia sẻ về công 
 
 1.  **Bước 1: Tính toán các chỉ số tài chính trung gian:**
     *   **ROA (Lợi nhuận sau thuế / Tổng tài sản):**
-        *   $ROA_{2024} = 100 / 1.000 = 10\%$
-        *   $ROA_{2025} = 120 / 1.100 \approx 10.9\%$ (ROA tăng trưởng: Đạt).
+        *   $ROA_{2024} = 100 / 1.000 = 10%$
+        *   $ROA_{2025} = 120 / 1.100 ≈ 10.9%$ (ROA tăng trưởng: Đạt).
     *   **Tỷ lệ đòn bẩy dài hạn (Nợ dài hạn / Tổng tài sản):**
-        *   $Leverage_{2024} = 300 / 1.000 = 30\%$
-        *   $Leverage_{2025} = 280 / 1.100 \approx 25.45\%$ (Tỷ lệ đòn bẩy giảm: Đạt).
+        *   $Leverage_{2024} = 300 / 1.000 = 30%$
+        *   $Leverage_{2025} = 280 / 1.100 ≈ 25.45%$ (Tỷ lệ đòn bẩy giảm: Đạt).
     *   **Tỷ lệ thanh toán hiện hành (Tài sản ngắn hạn / Nợ ngắn hạn):**
         *   $Liquidity_{2024} = 400 / 200 = 2.0\text{ lần}$
-        *   $Liquidity_{2025} = 450 / 210 \approx 2.14\text{ lần}$ (Khả năng thanh toán tăng: Đạt).
+        *   $Liquidity_{2025} = 450 / 210 ≈ 2.14\text{ lần}$ (Khả năng thanh toán tăng: Đạt).
     *   **Biên lợi nhuận gộp ((Doanh thu - Giá vốn) / Doanh thu):**
-        *   $GrossMargin_{2024} = (1.500 - 1.200) / 1.500 = 20\%$
-        *   $GrossMargin_{2025} = (1.800 - 1.400) / 1.800 \approx 22.22\%$ (Biên gộp tăng: Đạt).
+        *   $GrossMargin_{2024} = (1.500 - 1.200) / 1.500 = 20%$
+        *   $GrossMargin_{2025} = (1.800 - 1.400) / 1.800 ≈ 22.22%$ (Biên gộp tăng: Đạt).
     *   **Vòng quay tài sản (Doanh thu / Tổng tài sản cuối kỳ):**
         *   $Turnover_{2024} = 1.500 / 1.000 = 1.5\text{ vòng}$
-        *   $Turnover_{2025} = 1.800 / 1.100 \approx 1.63\text{ vòng}$ (Vòng quay tăng: Đạt).
+        *   $Turnover_{2025} = 1.800 / 1.100 ≈ 1.63\text{ vòng}$ (Vòng quay tăng: Đạt).
 
 2.  **Bước 2: Chấm điểm Piotroski F-Score cho năm 2025:**
-    *   *Tiêu chí 1: ROA > 0?* Lợi nhuận 2025 là 120 tỷ ($&gt; 0$) $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 2: CFO > 0?* CFO 2025 là 80 tỷ ($&gt; 0$) $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 3: ROA tăng?* ROA tăng từ $10\%$ lên $10.9\%$ $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 4: CFO > Lợi nhuận ròng?* CFO là 80 tỷ, Lợi nhuận ròng là 120 tỷ. CFO < Lợi nhuận ròng $\rightarrow$ **0 điểm**. *(Dấu hiệu cảnh báo: lợi nhuận tăng nhưng chưa thu được hết tiền mặt về).*
-    *   *Tiêu chí 5: Đòn bẩy dài hạn giảm?* Giảm từ $30\%$ xuống $25.45\%$ $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 6: Thanh khoản hiện hành tăng?* Tăng từ $2.0$ lên $2.14$ lần $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 7: Không phát hành thêm cổ phiếu?* Số lượng cổ phiếu giữ nguyên 10 triệu CP $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 8: Biên gộp cải thiện?* Tăng từ $20\%$ lên $22.22\%$ $\rightarrow$ **1 điểm**.
-    *   *Tiêu chí 9: Vòng quay tài sản tăng?* Tăng từ $1.5$ lên $1.63$ vòng $\rightarrow$ **1 điểm**.
+    *   *Tiêu chí 1: ROA > 0?* Lợi nhuận 2025 là 120 tỷ (> 0) → **1 điểm**.
+    *   *Tiêu chí 2: CFO > 0?* CFO 2025 là 80 tỷ (> 0) → **1 điểm**.
+    *   *Tiêu chí 3: ROA tăng?* ROA tăng từ 10% lên 10.9% → **1 điểm**.
+    *   *Tiêu chí 4: CFO > Lợi nhuận ròng?* CFO là 80 tỷ, Lợi nhuận ròng là 120 tỷ. CFO < Lợi nhuận ròng → **0 điểm**. *(Dấu hiệu cảnh báo: lợi nhuận tăng nhưng chưa thu được hết tiền mặt về).*
+    *   *Tiêu chí 5: Đòn bẩy dài hạn giảm?* Giảm từ 30% xuống 25.45% → **1 điểm**.
+    *   *Tiêu chí 6: Thanh khoản hiện hành tăng?* Tăng từ 2.0 lên 2.14 lần → **1 điểm**.
+    *   *Tiêu chí 7: Không phát hành thêm cổ phiếu?* Số lượng cổ phiếu giữ nguyên 10 triệu CP → **1 điểm**.
+    *   *Tiêu chí 8: Biên gộp cải thiện?* Tăng từ 20% lên 22.22% → **1 điểm**.
+    *   *Tiêu chí 9: Vòng quay tài sản tăng?* Tăng từ 1.5 lên 1.63 vòng → **1 điểm**.
     *   **Tổng điểm F-Score năm 2025:** **8 / 9 điểm**.
 
 3.  **Bước 3: Kết luận đánh giá:**
@@ -222,7 +222,7 @@ D. Đọc lại toàn bộ báo cáo phân tích của Research KB từ đầu �
 *   **Câu 1: Chọn B.**
     *   *Giải thích:* Tiêu chí CFO > Lợi nhuận sau thuế là chốt chặn quan trọng nhất của F-Score để chống lại các thủ thuật kế toán làm đẹp lợi nhuận. Lợi nhuận kế toán có thể "xào nấu" bằng cách bán hàng cho nợ gối đầu liên tục, nhưng dòng tiền CFO thì không thể làm giả được. CFO dương lớn thể hiện sức khỏe dòng tiền thực chất của doanh nghiệp.
 *   **Câu 2: Chọn C.**
-    *   *Giải thích:* Theo thang điểm Piotroski, điểm số từ $0 - 4$ điểm là mức báo động đỏ về sức khỏe tài chính. Việc đưa các mã này vào danh mục tích sản dài hạn là vi phạm nghiêm trọng nguyên tắc bảo vệ tài sản của Broker 4.0.
+    *   *Giải thích:* Theo thang điểm Piotroski, điểm số từ 0 - 4 điểm là mức báo động đỏ về sức khỏe tài chính. Việc đưa các mã này vào danh mục tích sản dài hạn là vi phạm nghiêm trọng nguyên tắc bảo vệ tài sản của Broker 4.0.
 *   **Câu 3: Chọn B.**
     *   *Giải thích:* Thay vì đưa chi phí hoạt động vào BC KQKD (làm giảm lợi nhuận ngay lập tức), doanh nghiệp chuyển chúng thành tài sản dở dang dài hạn trên BCĐKT. Việc này giúp lợi nhuận kế toán trông có vẻ đẹp đẽ, nhưng chất lượng tài sản của doanh nghiệp bị suy giảm nghiêm trọng vì chứa đầy các "tài sản ảo" không tạo ra dòng tiền.
 *   **Câu 4: Chọn C.**
@@ -237,7 +237,7 @@ D. Đọc lại toàn bộ báo cáo phân tích của Research KB từ đầu �
 ### 🎭 Tình huống: Thuyết phục khách hàng từ bỏ cổ phiếu tăng trưởng nóng có điểm F-Score thấp
 *   **Nhân vật:**
     *   **Broker NextGen HO3 (Học viên):** Sử dụng các lập luận sắc bén về F-Score và rủi ro khoản phải thu tăng vọt để thuyết phục khách hàng hạ nhiệt hưng phấn và bảo vệ dòng vốn.
-    *   **Anh Long (Khách hàng):** 38 tuổi, chủ một chuỗi cửa hàng ăn uống. Nhóm tính cách **I-D** (nhiệt huyết, thích dẫn dắt). Anh đang rất đắc ý khoe vừa tự ý mua đuổi cổ phiếu của công ty xuất khẩu nông sản **AGM** vì doanh thu của họ tăng gấp đôi trong quý vừa qua nhờ giá gạo xuất khẩu tăng. Anh lờ đi việc điểm F-Score của AGM chỉ đạt $3/9$ điểm và các khoản phải thu chiếm tới $70\%$ cơ cấu tài sản ngắn hạn.
+    *   **Anh Long (Khách hàng):** 38 tuổi, chủ một chuỗi cửa hàng ăn uống. Nhóm tính cách **I-D** (nhiệt huyết, thích dẫn dắt). Anh đang rất đắc ý khoe vừa tự ý mua đuổi cổ phiếu của công ty xuất khẩu nông sản **AGM** vì doanh thu của họ tăng gấp đôi trong quý vừa qua nhờ giá gạo xuất khẩu tăng. Anh lờ đi việc điểm F-Score của AGM chỉ đạt 3/9 điểm và các khoản phải thu chiếm tới 70% cơ cấu tài sản ngắn hạn.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -246,7 +246,7 @@ D. Đọc lại toàn bộ báo cáo phân tích của Research KB từ đầu �
 *   **Anh Long (giọng hơi nghi ngờ):** *Điểm số gì em? Doanh thu tăng gấp đôi thế kia thì tài chính phải khoẻ chứ có gì mà cảnh báo?*
 *   **Broker NextGen:** *Dạ anh Long, đúng là doanh thu của AGM tăng gấp đôi, nhưng khi bóc tách 9 tiêu chí sức khỏe tài chính, **AGM chỉ đạt vỏn vẹn 3 trên tổng số 9 điểm**, tức là nằm ở vùng báo động đỏ về rủi ro tài chính.*
 *   **Anh Long:** *Sao thấp thế được? Em giải thích rõ xem nào.*
-*   **Broker NextGen:** *Dạ, điểm bất thường lớn nhất nằm ở **chất lượng lợi nhuận**. Dù doanh thu tăng gấp đôi nhưng Dòng tiền hoạt động kinh doanh (CFO) của AGM quý này lại bị âm hơn 150 tỷ đồng. Lý do là vì tiền bán gạo của họ chưa hề thu được về, mà đang bị các đối tác nước ngoài nợ lại ở mục **Khoản phải thu** trên Bảng cân đối kế toán. Mục khoản phải thu này đã tăng gấp 5 lần so với đầu năm và chiếm tới $70\%$ tài sản ngắn hạn của công ty.*
+*   **Broker NextGen:** *Dạ, điểm bất thường lớn nhất nằm ở **chất lượng lợi nhuận**. Dù doanh thu tăng gấp đôi nhưng Dòng tiền hoạt động kinh doanh (CFO) của AGM quý này lại bị âm hơn 150 tỷ đồng. Lý do là vì tiền bán gạo của họ chưa hề thu được về, mà đang bị các đối tác nước ngoài nợ lại ở mục **Khoản phải thu** trên Bảng cân đối kế toán. Mục khoản phải thu này đã tăng gấp 5 lần so với đầu năm và chiếm tới 70% tài sản ngắn hạn của công ty.*
     *   *Nói một cách dễ hiểu như trong ngành kinh doanh cửa hàng của anh Long, việc này giống như cửa hàng của anh bán được rất nhiều đơn hàng lớn trên giấy tờ, nhưng khách hàng họ ăn xong toàn ký sổ nợ chứ không trả tiền mặt. Trong khi đó, anh vẫn phải bỏ tiền túi ra trả lương nhân viên, thanh toán tiền điện nước và nhập nguyên liệu hàng ngày. Doanh nghiệp AGM hiện tại đang phải gồng nợ vay ngắn hạn ngân hàng để tài trợ cho các khoản nợ của khách hàng.*
 *   **Anh Long (nghĩ ngợi, giọng nghiêm túc hơn):** *À... Hóa ra là bán chịu nhiều quá à. Thế nếu đối tác họ bùng nợ hoặc chậm trả thì công ty này đứt dòng tiền luôn đúng không em?*
 *   **Broker NextGen:** *Dạ đúng thế anh Long ạ. Chỉ cần một đối tác lớn chậm thanh toán, AGM sẽ lập tức rơi vào khủng hoảng thanh khoản nợ ngắn hạn. Lợi nhuận kế toán trên giấy lúc đó sẽ lập tức biến thành các khoản trích lập dự phòng nợ xấu khó đòi khổng lồ và bào mòn sạch vốn chủ sở hữu, giống như vụ sập hàng tồn kho của Gỗ Trường Thành ngày xưa.*
@@ -265,7 +265,7 @@ D. Đọc lại toàn bộ báo cáo phân tích của Research KB từ đầu �
 | **Kỹ năng ẩn dụ trực quan (Metaphor)** | **30%** | Khéo léo liên hệ rủi ro tài chính của doanh nghiệp với ngành nghề kinh doanh thực tế của khách hàng (bán hàng ký sổ nợ) để tạo sự thấu cảm dễ hiểu. | / 30 |
 | **Định hướng bảo vệ dòng vốn (Risk-control)** | **30%** | Thuyết phục khách ngưng mua đuổi rủi ro, thực hiện chốt lời bảo vệ thành quả và tái cơ cấu dòng tiền sang tài sản an toàn chất lượng cao. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

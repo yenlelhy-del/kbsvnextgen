@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Technical Analysis Lab $\rightarrow$ CRM Update $\rightarrow$ Chart Reading Session).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Technical Analysis Lab → CRM Update → Chart Reading Session).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi chín của Lộ trình (Tuần 4 - Phân tích kỹ thuật VTA).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy khách quan, tôn trọng quy luật cung cầu tự nhiên của thị trường. Không phán đoán hay khuyến nghị mua/bán dựa trên cảm xúc cá nhân. Đề cao tính kỷ luật thép trong giao dịch ngắn hạn và kiên định đi theo dấu chân của dòng tiền lớn (Smart Money).
@@ -76,15 +76,15 @@ Nến Nhật không đơn thuần là hình vẽ cơ bản, mỗi cây nến là
 
 ### 5. Câu Chuyện Thực Tế: Broker Hải Giải Cứu Khách Hàng Thoát Bẫy Bull Trap Cổ Phiếu Bất Động Sản X25
 
-Vào tháng 5/2024, cổ phiếu đầu cơ bất động sản **X25** có sóng tăng rất nóng. Mã này tăng trần liên tiếp 4 phiên từ giá $12.000$ VNĐ lên $16.500$ VNĐ/cp. Chị Thảo (32 tuổi, nhóm tính cách **I** - cảm xúc, dễ FOMO), khách hàng của Broker Hải tại HO3, vô cùng sốt ruột khi thấy bạn bè khoe lãi. Chị gọi điện liên tục đòi Hải đặt lệnh vay Margin mua 50.000 cổ phiếu X25 bằng mọi giá ở phiên sáng ngày thứ Năm.
+Vào tháng 5/2024, cổ phiếu đầu cơ bất động sản **X25** có sóng tăng rất nóng. Mã này tăng trần liên tiếp 4 phiên từ giá 12.000 VNĐ lên 16.500 VNĐ/cp. Chị Thảo (32 tuổi, nhóm tính cách **I** - cảm xúc, dễ FOMO), khách hàng của Broker Hải tại HO3, vô cùng sốt ruột khi thấy bạn bè khoe lãi. Chị gọi điện liên tục đòi Hải đặt lệnh vay Margin mua 50.000 cổ phiếu X25 bằng mọi giá ở phiên sáng ngày thứ Năm.
 
 Hải lập tức mở biểu đồ VTA của X25 để phân tích kỹ thuật:
 *   Hải chỉ ra rằng mặc dù giá X25 tăng trần phiên thứ 4 liên tiếp, nhưng **Khối lượng giao dịch (Volume) của 3 phiên gần nhất liên tục sụt giảm nghiêm trọng**, chỉ bằng một nửa so với trung bình 20 phiên.
-*   Đồng thời, nến phiên sáng ngày thứ Năm đang tạo một râu nến trên rất dài (mô hình nến Shooting Star đảo chiều) ngay sát vùng kháng cự đỉnh cũ $17.000$ VNĐ.
+*   Đồng thời, nến phiên sáng ngày thứ Năm đang tạo một râu nến trên rất dài (mô hình nến Shooting Star đảo chiều) ngay sát vùng kháng cự đỉnh cũ 17.000 VNĐ.
 
-Hải giải thích trực quan cho chị Thảo: *"Chị Thảo ơi, X25 đang có sự phân kỳ giảm rất nguy hiểm. Giá tăng nhưng dòng tiền lớn đang rút ra và cạn kiệt lực mua mới. Cây nến Shooting Star phiên sáng nay chứng tỏ lực cung xả hàng giá cao bắt đầu áp đảo. Đây là bẫy Bull Trap điển hình. Nếu chị đu Margin ở vùng này, rủi ro sụt giảm $20\% - 30\%$ là cực kỳ cao"*.
+Hải giải thích trực quan cho chị Thảo: *"Chị Thảo ơi, X25 đang có sự phân kỳ giảm rất nguy hiểm. Giá tăng nhưng dòng tiền lớn đang rút ra và cạn kiệt lực mua mới. Cây nến Shooting Star phiên sáng nay chứng tỏ lực cung xả hàng giá cao bắt đầu áp đảo. Đây là bẫy Bull Trap điển hình. Nếu chị đu Margin ở vùng này, rủi ro sụt giảm 20% - 30% là cực kỳ cao"*.
 
-Chị Thảo nghe phân tích logic của Hải nên kìm lòng tham, đồng ý hủy lệnh mua đuổi. Đúng như Hải dự báo, ngay phiên chiều hôm đó, X25 bị bán tháo ngược trở lại đóng cửa giảm sàn với Volume lớn. Các phiên tiếp theo X25 rơi tự do về giá $11.000$ VNĐ/cp (giảm $33\%$). Nhờ có Hải kéo lại kịp thời dựa trên biểu đồ VTA, chị Thảo đã giữ được an toàn số vốn gốc 600 triệu đồng trong sự thở phào nhẹ nhõm.
+Chị Thảo nghe phân tích logic của Hải nên kìm lòng tham, đồng ý hủy lệnh mua đuổi. Đúng như Hải dự báo, ngay phiên chiều hôm đó, X25 bị bán tháo ngược trở lại đóng cửa giảm sàn với Volume lớn. Các phiên tiếp theo X25 rơi tự do về giá 11.000 VNĐ/cp (giảm 33%). Nhờ có Hải kéo lại kịp thời dựa trên biểu đồ VTA, chị Thảo đã giữ được an toàn số vốn gốc 600 triệu đồng trong sự thở phào nhẹ nhõm.
 
 ---
 
@@ -102,26 +102,26 @@ Chị Thảo nghe phân tích logic của Hải nên kìm lòng tham, đồng ý
 | **Phiên 4** | 34.100 | 34.800 | 34.900 | 34.000 | 15.000.000 cp | 12.000.000 cp |
 | **Phiên 5** | 34.800 | 36.500 | 36.500 | 34.700 | 25.000.000 cp | 12.000.000 cp |
 
-*Biết rằng vùng đáy cũ thiết lập 2 tháng trước của SSI là vùng giá **$33.000$ VNĐ/cp**.*
+*Biết rằng vùng đáy cũ thiết lập 2 tháng trước của SSI là vùng giá **33.000 VNĐ/cp**.*
 
 **Yêu cầu đối với học viên:**
 1.  Nhận diện mô hình nến Nhật và phân tích tâm lý dòng tiền (Price Action + Volume) của **Phiên 2**, **Phiên 3**, và **Phiên 5**.
-2.  Xác định xem vùng giá **$33.000$ VNĐ/cp** đóng vai trò là ngưỡng Hỗ trợ hay Kháng cự của cổ phiếu SSI. Giải thích tại sao.
+2.  Xác định xem vùng giá **33.000 VNĐ/cp** đóng vai trò là ngưỡng Hỗ trợ hay Kháng cự của cổ phiếu SSI. Giải thích tại sao.
 3.  Đề xuất điểm mua tối ưu của cổ phiếu SSI dựa trên diễn biến dòng tiền của Phiên 4 và Phiên 5.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Phân tích chi tiết các phiên giao dịch:**
-    *   **Phiên 2:** Nến đóng cửa đỏ dài sát mức giá thấp nhất phiên ($34.000$ VNĐ). Volume tăng đột biến đạt 18 triệu cổ phiếu (vượt $50\%$ mức trung bình 20 phiên). Điều này thể hiện lực bán tháo chủ động dứt khoát của bên bán, dòng tiền lớn đang rút ra mạnh mẽ.
-    *   **Phiên 3:** Giá trong phiên có lúc giảm sâu về $33.200$ VNĐ (gần ngưỡng hỗ trợ cũ 33.000) nhưng cuối phiên rút chân đóng cửa tăng nhẹ lên $34.100$ VNĐ, tạo nến Pinbar rút chân dưới dài. Volume tăng cực đại đạt 22 triệu cổ phiếu. Đây là tín hiệu **Climax Buying (Dòng tiền lớn gom hàng giá sàn)**. Lực cầu bắt đáy tham gia quyết liệt hấp thụ toàn bộ lực bán tháo hoảng loạn của nhỏ lẻ.
-    *   **Phiên 5:** Nến đóng cửa tăng trần xanh dài Marubozu ($36.500$ VNĐ). Volume tăng vọt lên 25 triệu cổ phiếu (gấp đôi trung bình 20 phiên). Đây là sự xác nhận dòng tiền Smart Money chính thức đánh lên đồng thuận đẩy giá vượt đỉnh ngắn hạn.
+    *   **Phiên 2:** Nến đóng cửa đỏ dài sát mức giá thấp nhất phiên (34.000 VNĐ). Volume tăng đột biến đạt 18 triệu cổ phiếu (vượt 50% mức trung bình 20 phiên). Điều này thể hiện lực bán tháo chủ động dứt khoát của bên bán, dòng tiền lớn đang rút ra mạnh mẽ.
+    *   **Phiên 3:** Giá trong phiên có lúc giảm sâu về 33.200 VNĐ (gần ngưỡng hỗ trợ cũ 33.000) nhưng cuối phiên rút chân đóng cửa tăng nhẹ lên 34.100 VNĐ, tạo nến Pinbar rút chân dưới dài. Volume tăng cực đại đạt 22 triệu cổ phiếu. Đây là tín hiệu **Climax Buying (Dòng tiền lớn gom hàng giá sàn)**. Lực cầu bắt đáy tham gia quyết liệt hấp thụ toàn bộ lực bán tháo hoảng loạn của nhỏ lẻ.
+    *   **Phiên 5:** Nến đóng cửa tăng trần xanh dài Marubozu (36.500 VNĐ). Volume tăng vọt lên 25 triệu cổ phiếu (gấp đôi trung bình 20 phiên). Đây là sự xác nhận dòng tiền Smart Money chính thức đánh lên đồng thuận đẩy giá vượt đỉnh ngắn hạn.
 
 2.  **Bước 2: Xác định vai trò của vùng giá 33.000 VNĐ:**
-    *   Vùng giá $33.000$ VNĐ/cp đóng vai trò là **Ngưỡng Hỗ trợ tĩnh** cực kỳ mạnh của SSI. 
-    *   *Giải thích:* Tại Phiên 3, khi giá tiệm cận vùng $33.200$ VNĐ, lực cầu bắt đáy khổng lồ lập tức kích hoạt (Volume 22 triệu cp) giúp đẩy giá rút chân đóng cửa hồi phục. Điều này chứng tỏ bên mua đang canh giữ vùng giá này rất quyết liệt, ngăn cản đà giảm sâu hơn.
+    *   Vùng giá 33.000 VNĐ/cp đóng vai trò là **Ngưỡng Hỗ trợ tĩnh** cực kỳ mạnh của SSI. 
+    *   *Giải thích:* Tại Phiên 3, khi giá tiệm cận vùng 33.200 VNĐ, lực cầu bắt đáy khổng lồ lập tức kích hoạt (Volume 22 triệu cp) giúp đẩy giá rút chân đóng cửa hồi phục. Điều này chứng tỏ bên mua đang canh giữ vùng giá này rất quyết liệt, ngăn cản đà giảm sâu hơn.
 
 3.  **Bước 3: Đề xuất điểm mua tối ưu:**
-    *   Điểm mua tối ưu nhất chính là phiên bứt phá **Phiên 5** khi giá vượt qua vùng tích lũy cũ $35.000$ VNĐ với sự xác nhận của Volume lớn 25 triệu cổ phiếu. Đây là điểm mua bứt phá xu hướng (Breakout Entry) có xác suất chiến thắng cao nhất dành cho các Deal Trading ngắn hạn.
+    *   Điểm mua tối ưu nhất chính là phiên bứt phá **Phiên 5** khi giá vượt qua vùng tích lũy cũ 35.000 VNĐ với sự xác nhận của Volume lớn 25 triệu cổ phiếu. Đây là điểm mua bứt phá xu hướng (Breakout Entry) có xác suất chiến thắng cao nhất dành cho các Deal Trading ngắn hạn.
 
 ---
 
@@ -176,9 +176,38 @@ D. Khuyên khách hàng tắt bảng điện 1 năm không theo dõi.
 
 ---
 
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Khách hàng gửi chart hỏi "mua được không" — Broker phân tích bằng VTA (Volume-Time Analysis)
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Biết đọc nến Nhật, volume, hỗ trợ-kháng cự. Tư vấn dựa trên data, không đoán mò.
+    *   **Anh Trung (Khách hàng active):** 35 tuổi, gửi screenshot chart FPT qua Zalo hỏi: "Giá FPT vừa giảm mạnh, có nên mua bắt đáy không em?"
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Trung (gửi ảnh chart qua Zalo):** *Em ơi, FPT vừa giảm 5% trong 2 phiên, anh thấy "rẻ" rồi. Mua bắt đáy được không em? Anh gửi chart này em xem hộ.*
+*   **Broker NextGen (phân tích có phương pháp):** *Dạ anh Trung, em xem chart của anh rồi. Giá FPT đúng là giảm 5%, nhưng chưa chắc đây là đáy đâu ạ. Em phân tích VTA cho anh nhé: Phiên hôm qua FPT giảm bằng nến Marubozu đỏ dài — tín hiệu bán mạnh, NHƯNG volume chỉ ở mức trung bình. Nghĩa là lực bán chưa đạt cao trào (Selling Climax). Khi nào em thấy volume tăng đột biến gấp 3 trung bình 20 phiên mà giá đóng cửa có bóng dưới dài — đó mới là dấu hiệu cầu quay lại hấp thụ cung ạ.*
+*   **Anh Trung (chưa hiểu hết):** *Vậy là chưa mua được hả em?*
+*   **Broker NextGen (rõ ràng):** *Dạ chưa có tín hiệu đáy rõ ràng ạ. Vùng hỗ trợ gần nhất theo chart là 120k — đó là đáy cũ tháng 3, trùng với đường MA200 tuần. Nếu FPT giảm về 120k kèm volume tăng vọt và nến có bóng dưới dài — đó là vùng mua tích sản tuyệt vời. Em đề xuất anh đặt cảnh báo giá (price alert) ở 122k, khi nào chạm mình phân tích thêm rồi vào lệnh ạ.*
+*   **Anh Trung (đồng ý):** *Oke em, anh đặt alert 122k. Tới giá anh báo em nhé!*
+*   **Broker NextGen (chốt):** *Dạ vâng! Anh nhớ nguyên tắc: giá và volume là 2 chỉ báo trung thực nhất. Giá giảm mà volume thấp = chưa phải đáy, đợi Selling Climax. Em theo dõi cùng anh ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Phân tích VTA đúng phương pháp (Technical)** | **45%** | Đọc đúng nến Marubozu, volume, xác định vùng hỗ trợ MA200; không đoán mò. | / 45 |
+| **Kỷ luật không FOMO (Discipline)** | **30%** | Từ chối khuyên "mua ngay" khi chưa có tín hiệu; dạy KH kiên nhẫn chờ setup. | / 30 |
+| **Đề xuất hành động cụ thể** | **25%** | Đặt price alert; cam kết theo dõi cùng; nêu điều kiện vào lệnh rõ ràng. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
+
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 
 > [!IMPORTANT]
 > **QUY TẮC CẤM KHẲNG ĐỊNH ĐIỂM ĐẢO CHIỀU:**
-> 1.  Broker NextGen **tuyệt đối không** được phát ngôn khẳng định với khách hàng chắc chắn $100\%$ cổ phiếu sẽ tăng giá tại vùng hỗ trợ kỹ thuật hoặc chắc chắn tạo đáy.
+> 1.  Broker NextGen **tuyệt đối không** được phát ngôn khẳng định với khách hàng chắc chắn 100% cổ phiếu sẽ tăng giá tại vùng hỗ trợ kỹ thuật hoặc chắc chắn tạo đáy.
 > 2.  Mọi nhận định kỹ thuật phải dựa trên xác suất và đi kèm cảnh báo mốc cắt lỗ Stop Loss bảo vệ vốn bắt buộc khi giá đi ngược dự kiến, không khuyến nghị khách hàng gồng lỗ vô kỷ luật khi vi phạm ngưỡng hỗ trợ.

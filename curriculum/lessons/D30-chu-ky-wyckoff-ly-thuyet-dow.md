@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Technical Analysis Lab $\rightarrow$ CRM Update $\rightarrow$ Cycle Analysis Session).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Technical Analysis Lab → CRM Update → Cycle Analysis Session).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi của Lộ trình (Tuần 4 - Phân tích chu kỳ thị trường).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy dài hạn, kiên định và có tính hệ thống. Nhìn nhận thị trường dưới góc nhìn chu kỳ vận động tự nhiên, không bị hoang mang hay dao động tâm lý bởi các biến động nhiễu ngắn hạn của bảng điện. Kiên nhẫn chờ đợi thời cơ gieo hạt chín muồi.
@@ -66,22 +66,22 @@ Richard Wyckoff là huyền thoại giao dịch đã phát minh ra mô hình chu
 ### 3. Cách Phân Bổ Vốn Thông Thái Theo Chu Kỳ Thị Trường
 
 Broker NextGen phải điều chỉnh chiến thuật tư vấn linh hoạt theo từng pha chu kỳ để bảo vệ tài sản khách hàng:
-*   *Trong Pha Tích lũy (Accumulation):* Khuyên khách hàng tập trung **$80\% - 100\%$ dòng thặng dư vào tích sản SIP cổ phiếu cơ bản** (ACB, FPT) ở vùng giá rẻ dưới MA200. Tuyệt đối không dùng Margin.
-*   *Trong Pha Đẩy giá (Markup):* Khuyên khách hàng giữ nguyên danh mục tích sản, có thể trích ra $20\% - 30\%$ để giao dịch ngắn hạn (Trading đuôi 6) theo xu hướng tăng, có thể sử dụng Margin an toàn để gia tăng hiệu suất.
+*   *Trong Pha Tích lũy (Accumulation):* Khuyên khách hàng tập trung **80% - 100% dòng thặng dư vào tích sản SIP cổ phiếu cơ bản** (ACB, FPT) ở vùng giá rẻ dưới MA200. Tuyệt đối không dùng Margin.
+*   *Trong Pha Đẩy giá (Markup):* Khuyên khách hàng giữ nguyên danh mục tích sản, có thể trích ra 20% - 30% để giao dịch ngắn hạn (Trading đuôi 6) theo xu hướng tăng, có thể sử dụng Margin an toàn để gia tăng hiệu suất.
 *   *Trong Pha Phân phối & Đè giá:* Khuyên khách hàng **chốt lời phần Trading ngắn hạn, hạ nợ Margin về không**, đóng vị thế phòng thủ và đứng ngoài thị trường hoặc chuyển sang gửi tiền gửi ngắn hạn chờ đợi chu kỳ tích lũy mới.
 
 ---
 
 ### 4. Câu Chuyện Thực Tế: Broker Quân Giúp Khách Hàng Giữ Lại Khoản Lãi 400 Triệu HPG Nhờ Nhận Diện Pha Phân Phối
 
-Anh Hùng (40 tuổi, kinh doanh bất động sản, nhóm tính cách **D-I**) là khách hàng lớn của Broker Quân (chi nhánh HO3). Vào cuối năm 2021, anh Hùng đang nắm giữ lượng lớn cổ phiếu **HPG** mua từ vùng giá thấp và đang có khoản lãi tạm thời hơn 400 triệu đồng. Anh rất hưng phấn và liên tục nói với Quân: *"Con HPG này quá mạnh em ơi, doanh thu tỷ đô thế này kiểu gì chả lên giá $70.000$ VNĐ. Em xem nâng hạn mức Margin cho anh để anh tất tay mua thêm nhé"*.
+Anh Hùng (40 tuổi, kinh doanh bất động sản, nhóm tính cách **D-I**) là khách hàng lớn của Broker Quân (chi nhánh HO3). Vào cuối năm 2021, anh Hùng đang nắm giữ lượng lớn cổ phiếu **HPG** mua từ vùng giá thấp và đang có khoản lãi tạm thời hơn 400 triệu đồng. Anh rất hưng phấn và liên tục nói với Quân: *"Con HPG này quá mạnh em ơi, doanh thu tỷ đô thế này kiểu gì chả lên giá 70.000 VNĐ. Em xem nâng hạn mức Margin cho anh để anh tất tay mua thêm nhé"*.
 
 Quân mở biểu đồ chu kỳ Wyckoff của HPG ra bóc tách cặn kẽ cho anh Hùng:
-*   Quân chỉ ra rằng HPG đã có một pha Đẩy giá (Markup) tăng hơn $150\%$ kéo dài hơn 1 năm.
-*   Hiện tại, HPG đang dao động biên độ lớn vùng đỉnh $56.000 - 58.000$ VNĐ/cp. Xuất hiện rất nhiều phiên Volume cực lớn (hơn 40 triệu cổ phiếu/phiên) nhưng giá không thể bứt phá vượt qua đỉnh cũ. Đây là dấu hiệu rõ ràng của **Pha Phân phối (Distribution)** khi Smart Money đang sang tay cổ phiếu cho nhỏ lẻ.
+*   Quân chỉ ra rằng HPG đã có một pha Đẩy giá (Markup) tăng hơn 150% kéo dài hơn 1 năm.
+*   Hiện tại, HPG đang dao động biên độ lớn vùng đỉnh 56.000 - 58.000 VNĐ/cp. Xuất hiện rất nhiều phiên Volume cực lớn (hơn 40 triệu cổ phiếu/phiên) nhưng giá không thể bứt phá vượt qua đỉnh cũ. Đây là dấu hiệu rõ ràng của **Pha Phân phối (Distribution)** khi Smart Money đang sang tay cổ phiếu cho nhỏ lẻ.
 
 Quân kiên quyết từ chối yêu cầu nâng hạn mức Margin của anh Hùng và khuyên chân thành: *"Anh Hùng ơi, theo lý thuyết Dow, xu hướng cấp 1 tăng của HPG đang có dấu hiệu kiệt sức tại vùng phân phối Wyckoff này. Dòng tiền lớn đang bán chốt lời chủ động.*
-*   *Thay vì mua thêm Margin, anh nên thực hiện chốt lời toàn bộ phần Margin hiện có và bán hạ $50\%$ danh mục HPG để hiện thực hóa khoản lãi 400 triệu. Phần vốn gốc còn lại, mình chuyển sang tích lũy an toàn Tháp tài sản chờ chu kỳ sau"*.
+*   *Thay vì mua thêm Margin, anh nên thực hiện chốt lời toàn bộ phần Margin hiện có và bán hạ 50% danh mục HPG để hiện thực hóa khoản lãi 400 triệu. Phần vốn gốc còn lại, mình chuyển sang tích lũy an toàn Tháp tài sản chờ chu kỳ sau"*.
 
 ```
 TIẾN TRÌNH TƯ VẤN CỦA QUÂN:
@@ -93,7 +93,7 @@ TIẾN TRÌNH TƯ VẤN CỦA QUÂN:
 [ Tránh cú giảm sâu về 20.000 VNĐ ] <─── (Bảo toàn 400 triệu lãi) ─── [ HPG rơi vào Pha Đè giá ]
 ```
 
-Anh Hùng nghe phân tích có tính hệ thống khoa học của Quân nên đồng ý bán hạ $50\%$ danh mục HPG để thu tiền mặt về. Đúng 1 tháng sau, HPG chính thức bước vào Pha Đè giá (Markdown) rơi tự do về vùng giá $20.000$ VNĐ/cp (giảm $65\%$). Nhờ có sự tư vấn kỷ luật bám sát chu kỳ của Quân, anh Hùng đã bảo vệ nguyên vẹn được quả ngọt 400 triệu tiền lãi và tránh được một cú sụt giảm tài sản kinh hoàng.
+Anh Hùng nghe phân tích có tính hệ thống khoa học của Quân nên đồng ý bán hạ 50% danh mục HPG để thu tiền mặt về. Đúng 1 tháng sau, HPG chính thức bước vào Pha Đè giá (Markdown) rơi tự do về vùng giá 20.000 VNĐ/cp (giảm 65%). Nhờ có sự tư vấn kỷ luật bám sát chu kỳ của Quân, anh Hùng đã bảo vệ nguyên vẹn được quả ngọt 400 triệu tiền lãi và tránh được một cú sụt giảm tài sản kinh hoàng.
 
 ---
 
@@ -102,32 +102,32 @@ Anh Hùng nghe phân tích có tính hệ thống khoa học của Quân nên đ
 ### 📝 Bài Tập: Nhận Diện Xu Hướng Theo Lý Thuyết Dow & Pha Chu Kỳ Wyckoff
 
 **Biểu đồ biến động đỉnh/đáy của cổ phiếu FPT trong 12 tháng qua được ghi nhận như sau:**
-*   **Tháng 1 (Th đáy):** Đáy 1 thiết lập tại giá $90.000$ VNĐ/cp.
-*   **Tháng 3 (Th đỉnh):** Đỉnh 1 thiết lập tại giá $105.000$ VNĐ/cp.
-*   **Tháng 5 (Th đáy):** Đáy 2 thiết lập tại giá $98.000$ VNĐ/cp.
-*   **Tháng 7 (Th đỉnh):** Đỉnh 2 thiết lập tại giá $120.000$ VNĐ/cp.
-*   **Tháng 9 (Th đáy):** Đáy 3 thiết lập tại giá $112.000$ VNĐ/cp.
-*   **Tháng 11 (Th đỉnh):** Đỉnh 3 thiết lập tại giá $135.000$ VNĐ/cp.
-*   **Tháng 12 (Hiện tại):** Giá cổ phiếu đang có nhịp điều chỉnh giảm từ $135.000$ VNĐ về vùng giá **$125.000$ VNĐ/cp** với khối lượng giao dịch Volume rất thấp (bằng $60\%$ trung bình 20 phiên).
+*   **Tháng 1 (Th đáy):** Đáy 1 thiết lập tại giá 90.000 VNĐ/cp.
+*   **Tháng 3 (Th đỉnh):** Đỉnh 1 thiết lập tại giá 105.000 VNĐ/cp.
+*   **Tháng 5 (Th đáy):** Đáy 2 thiết lập tại giá 98.000 VNĐ/cp.
+*   **Tháng 7 (Th đỉnh):** Đỉnh 2 thiết lập tại giá 120.000 VNĐ/cp.
+*   **Tháng 9 (Th đáy):** Đáy 3 thiết lập tại giá 112.000 VNĐ/cp.
+*   **Tháng 11 (Th đỉnh):** Đỉnh 3 thiết lập tại giá 135.000 VNĐ/cp.
+*   **Tháng 12 (Hiện tại):** Giá cổ phiếu đang có nhịp điều chỉnh giảm từ 135.000 VNĐ về vùng giá **125.000 VNĐ/cp** với khối lượng giao dịch Volume rất thấp (bằng 60% trung bình 20 phiên).
 
 **Yêu cầu đối với học viên:**
 1.  Áp dụng Lý thuyết Dow để xác định cấu trúc xu hướng cấp 1 (dài hạn) của cổ phiếu FPT trong 12 tháng qua (Tăng, Giảm, hay Đi ngang). Giải thích dựa trên các mốc đỉnh sau/đáy sau so với đỉnh trước/đáy trước.
-2.  Xác định nhịp điều chỉnh giảm hiện tại từ $135.000$ VNĐ về $125.000$ VNĐ đóng vai trò là xu hướng nào (xu hướng cấp 1 hay xu hướng cấp 2).
-3.  Cổ phiếu FPT đang nằm ở pha nào trong 4 pha chu kỳ Wyckoff? Đề xuất khuyến nghị phân bổ vốn tích sản an toàn cho khách hàng tại mức giá $125.000$ VNĐ hiện tại.
+2.  Xác định nhịp điều chỉnh giảm hiện tại từ 135.000 VNĐ về 125.000 VNĐ đóng vai trò là xu hướng nào (xu hướng cấp 1 hay xu hướng cấp 2).
+3.  Cổ phiếu FPT đang nằm ở pha nào trong 4 pha chu kỳ Wyckoff? Đề xuất khuyến nghị phân bổ vốn tích sản an toàn cho khách hàng tại mức giá 125.000 VNĐ hiện tại.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Xác định xu hướng theo Lý thuyết Dow:**
-    *   *So sánh các mốc đỉnh:* Đỉnh 3 ($135.000$) > Đỉnh 2 ($120.000$) > Đỉnh 1 ($105.000$).
-    *   *So sánh các mốc đáy:* Đáy 3 ($112.000$) > Đáy 2 ($98.000$) > Đáy 1 ($90.000$).
+    *   *So sánh các mốc đỉnh:* Đỉnh 3 (135.000) > Đỉnh 2 (120.000) > Đỉnh 1 (105.000).
+    *   *So sánh các mốc đáy:* Đáy 3 (112.000) > Đáy 2 (98.000) > Đáy 1 (90.000).
     *   *Kết luận:* Vì FPT liên tục tạo ra các Đỉnh sau cao hơn Đỉnh trước và Đáy sau cao hơn Đáy trước, cấu trúc xu hướng cấp 1 (dài hạn) của FPT được xác nhận là **Xu hướng Tăng giá (Uptrend) bền vững**.
 
 2.  **Bước 2: Xác định vai trò của nhịp điều chỉnh hiện tại:**
-    *   Nhịp giảm từ $135.000$ VNĐ về $125.000$ VNĐ đóng vai trò là **Xu hướng cấp 2 (Nhịp điều chỉnh trung hạn)**, di chuyển ngược chiều với xu hướng cấp 1 tăng dài hạn.
+    *   Nhịp giảm từ 135.000 VNĐ về 125.000 VNĐ đóng vai trò là **Xu hướng cấp 2 (Nhịp điều chỉnh trung hạn)**, di chuyển ngược chiều với xu hướng cấp 1 tăng dài hạn.
     *   *Dấu hiệu:* Volume giảm thấp chứng tỏ đây chỉ là nhịp điều chỉnh kỹ thuật do bên mua ngừng đẩy giá ngắn hạn, chứ không có hiện tượng dòng tiền lớn tháo chạy.
 
 3.  **Bước 3: Xác định pha Wyckoff và đề xuất khuyến nghị:**
-    *   FPT đang nằm ở **Pha 2: Đẩy giá (Markup)** của chu kỳ Wyckoff dài hạn. Nhịp điều chỉnh cấp 2 về $125.000$ VNĐ là cơ hội vàng để khách hàng tiếp tục mua tích lũy gia tăng số lượng cổ phiếu tích sản FPT ở mức giá chiết khấu rẻ hơn.
+    *   FPT đang nằm ở **Pha 2: Đẩy giá (Markup)** của chu kỳ Wyckoff dài hạn. Nhịp điều chỉnh cấp 2 về 125.000 VNĐ là cơ hội vàng để khách hàng tiếp tục mua tích lũy gia tăng số lượng cổ phiếu tích sản FPT ở mức giá chiết khấu rẻ hơn.
     *   *Khuyến nghị phân bổ:* Hướng dẫn khách hàng trích dòng thặng dư nhàn rỗi giải ngân gom tích sản ACB/FPT định kỳ SIP bình thường, không hoang mang bán tháo vì xu hướng tăng dài hạn vẫn được bảo toàn tuyệt đối.
 
 ---
@@ -182,6 +182,35 @@ D. Công ty chứng khoán công bố gói ưu đãi lãi suất mới.
     *   *Giải thích:* Đây là nguyên lý cấu trúc xu hướng kinh điển của Dow. Nếu giá phá vỡ đáy cũ tạo đáy sau thấp hơn đáy trước, xu hướng tăng chính thức bị vi phạm và chuyển dịch sang đi ngang hoặc giảm.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Cảnh báo khách hàng đang mua đuổi khi thị trường ở pha phân phối Wyckoff
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu chu kỳ Wyckoff 4 giai đoạn, biết nhận diện pha phân phối.
+    *   **Chị Hương (Khách hàng nhóm I):** 38 tuổi, thấy VN-Index tăng mạnh 3 tháng liên tục, muốn mua thêm 500 triệu cổ phiếu vì sợ bỏ lỡ cơ hội.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Chị Hương (giọng FOMO, hưng phấn):** *Em ơi, thị trường đang lên bốc lửa, ai cũng lãi. Chị muốn nạp thêm 500 triệu mua HPG và SSI đi. Lên thêm 20% nữa là chị lãi to!*
+*   **Broker NextGen (giọng bình tĩnh, cảnh báo nhẹ nhàng):** *Dạ chị Hương, VN-Index tăng 25% trong 3 tháng, volume giao dịch đang giảm dần — đây là tín hiệu rất quan trọng cần chú ý ạ. Theo chu kỳ Wyckoff, khi giá tăng nhưng volume giảm dần, đó là dấu hiệu của pha Phân phối — nghĩa là Smart Money (các tổ chức lớn) đang bán ra cho nhà đầu tư cá nhân nhỏ lẻ đang FOMO mua vào.*
+*   **Chị Hương (hơi lo):** *Vậy là sắp giảm hả em? Nhưng mà bao giờ mới giảm?*
+*   **Broker NextGen (trung thực):** *Em không dám dự đoán chính xác ngày giảm, nhưng dấu hiệu phân phối đã rõ: giá tăng yếu dần, volume co hẹp, RSI tuần đang phân kỳ giảm. Theo lý thuyết Dow, khi đỉnh sau thấp hơn đỉnh trước và đáy sau thấp hơn đáy trước thì xu hướng giảm xác nhận. Em đề xuất: thay vì nạp thêm 500 triệu mua đuổi, chị nâng tỷ trọng tiền mặt lên 30% danh mục. Chờ pha Markdown kết thúc, giá về vùng tích lũy Wyckoff — lúc đó mới giải ngân mạnh ạ.*
+*   **Chị Hương (suy nghĩ):** *Vậy 500 triệu chị để đó chờ cơ hội đúng không?*
+*   **Broker NextGen (dứt khoát):** *Dạ đúng ạ! "Cash is King" khi thị trường ở pha phân phối. 500 triệu chị gửi tiết kiệm ngắn hạn 1 tháng, lấy lãi suất. Khi VN-Index điều chỉnh 15-20% về vùng tích lũy, chúng ta sẽ triển khai mua tích sản mạnh tay. Kiên nhẫn chờ setup là bản lĩnh của nhà đầu tư bình an ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Nhận diện pha Wyckoff (Technical)** | **40%** | Phân tích đúng pha phân phối: giá tăng + volume giảm + RSI phân kỳ; trích lý thuyết Dow. | / 40 |
+| **Kiềm chế FOMO khách hàng (Behavioral)** | **35%** | Không đồng thuận mua đuổi; dùng dữ liệu thuyết phục; đề xuất nâng tỷ trọng tiền mặt. | / 35 |
+| **Đề xuất chiến lược chờ đợi** | **25%** | Cash is King; gửi tiết kiệm ngắn hạn; cam kết giải ngân khi có pha tích lũy. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

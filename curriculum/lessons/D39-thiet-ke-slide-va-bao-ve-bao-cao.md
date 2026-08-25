@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Slide Design Lab $\rightarrow$ Presentation Rehearsal $\rightarrow$ QA Prep).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Slide Design Lab → Presentation Rehearsal → QA Prep).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi chín của Lộ trình (Tuần 6 - Kỹ năng trình bày báo cáo).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy tự tin, đĩnh đạc và tôn trọng Hội đồng giám khảo. Sẵn sàng đón nhận các câu hỏi phản biện hóc búa về chuyên môn với thái độ cầu thị, điềm tĩnh và tôn trọng sự đóng góp ý kiến từ những người đi trước.
@@ -81,10 +81,10 @@ Khi Hội đồng giám khảo đặt các câu hỏi phản biện hóc búa, B
 Trong buổi bảo vệ tốt nghiệp, Lâm (23 tuổi, học viên NextGen HO3) đã thuyết trình trôi chảy bản báo cáo của mình. Tuy nhiên, đến phần chất vấn, Mentor Quân (một người rất khắt khe về quản trị rủi ro) đã đặt một câu hỏi hóc búa: *"Trong phần Case Study, em thiết kế phân bổ 40% NAV của khách hàng High-NAV 2 tỷ đồng vào cổ phiếu ACB. Giả sử sau khi giải ngân, vĩ mô có biến cố lớn khiến ACB giảm sàn liên tiếp 2 phiên và vi phạm mốc cắt lỗ. Em sẽ gọi điện bảo khách hàng cắt lỗ mất 80 triệu đồng thế nào khi họ là người có khẩu vị rủi ro thận trọng?"*.
 
 Nhiều học viên khác trong phòng thi đã tỏ ra bối rối trước câu hỏi này. Lâm vẫn điềm tĩnh, anh cúi đầu cảm ơn Mentor Quân và trả lời dứt khoát:
-*   *"Dạ anh Quân, đây là một tình huống cực kỳ thực tế mà em luôn chuẩn bị phương án bọc thép. Trước khi giải ngân, em đã thiết lập rõ bản **Deal Strategy** bằng văn bản gửi cho khách hàng, trong đó ghi rõ mốc cắt lỗ kỹ thuật ở mức lỗ tối đa $7\%$ giá vốn.*
-*   *Thứ hai, mặc dù ACB chiếm $40\%$ danh mục giải ngân, nhưng khoảng cách cắt lỗ chỉ là $7\%$ của phần phân bổ đó. Do đó, thiệt hại thực tế trên tổng NAV 2 tỷ của khách hàng chỉ là:
-    $$2.000.000.000 \times 40\% \times 7\% = 56.000.000\text{ VNĐ (tương đương 2.8\% tổng NAV)}$$
-*   *Mức lỗ $2.8\%$ tổng NAV này hoàn toàn nằm trong giới hạn kiểm soát rủi ro an toàn của Tháp tài sản tầng 2 mà khách hàng đã đồng ý từ trước. Em sẽ gọi điện cho khách dựa trên đúng cam kết kỷ luật bọc thép này, thực hiện cắt lỗ để bảo vệ $97.2\%$ tài sản còn lại an toàn chờ chu kỳ phục hồi"*.
+*   *"Dạ anh Quân, đây là một tình huống cực kỳ thực tế mà em luôn chuẩn bị phương án bọc thép. Trước khi giải ngân, em đã thiết lập rõ bản **Deal Strategy** bằng văn bản gửi cho khách hàng, trong đó ghi rõ mốc cắt lỗ kỹ thuật ở mức lỗ tối đa 7% giá vốn.*
+*   *Thứ hai, mặc dù ACB chiếm 40% danh mục giải ngân, nhưng khoảng cách cắt lỗ chỉ là 7% của phần phân bổ đó. Do đó, thiệt hại thực tế trên tổng NAV 2 tỷ của khách hàng chỉ là:
+    $$2.000.000.000 \times 40% \times 7% = 56.000.000\text{ VNĐ (tương đương 2.8% tổng NAV)}$$
+*   *Mức lỗ 2.8% tổng NAV này hoàn toàn nằm trong giới hạn kiểm soát rủi ro an toàn của Tháp tài sản tầng 2 mà khách hàng đã đồng ý từ trước. Em sẽ gọi điện cho khách dựa trên đúng cam kết kỷ luật bọc thép này, thực hiện cắt lỗ để bảo vệ 97.2% tài sản còn lại an toàn chờ chu kỳ phục hồi"*.
 
 Mentor Quân đã mỉm cười hài lòng trước câu trả lời định lượng chuẩn xác và bản lĩnh điềm tĩnh của Lâm. Hội đồng đã nhất trí chấm điểm tối đa cho phần phản biện của Lâm và duyệt thông qua báo cáo tốt nghiệp của anh với kết quả xuất sắc.
 
@@ -159,13 +159,42 @@ D. Tựa người vào bục thuyết trình và đọc nguyên văn chữ chạ
 *   **Câu 2: Chọn A.**
     *   *Giải thích:* Đây là nguyên tắc vàng của thuyết trình hiện đại. Nó buộc diễn giả phải cô đọng thông tin tinh túy nhất lên 10 slide, nói lưu loát trong 20 phút và dùng cỡ chữ to rõ 30pt để tránh biến slide thành một trang văn bản đọc hộ.
 *   **Câu 3: Chọn B.**
-    *   *Giải thích:* Thái độ cầu thị (Growth Mindset) là tiêu chí chiếm $50\%$ điểm số phỏng vấn đánh giá. Sự điềm tĩnh lắng nghe và biết ơn câu hỏi phản biện thể hiện bản lĩnh của một Wealth Advisor thực thụ.
+    *   *Giải thích:* Thái độ cầu thị (Growth Mindset) là tiêu chí chiếm 50% điểm số phỏng vấn đánh giá. Sự điềm tĩnh lắng nghe và biết ơn câu hỏi phản biện thể hiện bản lĩnh của một Wealth Advisor thực thụ.
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Case Study thực tế là minh chứng rõ ràng nhất cho thấy học viên đã thực sự hiểu và biết cách ứng dụng triết lý Tháp tài sản của FinPeace và danh mục InvestWise của KBSV vào việc tư vấn tài sản cho người dân.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Ngôn ngữ cơ thể chiếm hơn $50\%$ hiệu quả truyền tải thông điệp thuyết trình. Phong thái đứng thẳng, tự tin, mắt tương tác tốt và giọng nói to rõ giúp xây dựng niềm tin vững chắc đối với người nghe.
+    *   *Giải thích:* Ngôn ngữ cơ thể chiếm hơn 50% hiệu quả truyền tải thông điệp thuyết trình. Phong thái đứng thẳng, tự tin, mắt tương tác tốt và giọng nói to rõ giúp xây dựng niềm tin vững chắc đối với người nghe.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Thử trình bày 3 phút trước Mentor — Mentor chất vấn và feedback kỹ năng thuyết trình
+*   **Nhân vật:**
+    *   **Mentor HO3 (Giám khảo thử):** Đóng vai hội đồng, hỏi chất vấn sắc bén nhưng công bằng.
+    *   **Học viên Minh (Đang diễn tập thuyết trình):** Trình bày slide 3 phút đầu của báo cáo tốt nghiệp, còn run và đọc slide.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Học viên Minh (run, đọc slide):** *Dạ... em xin trình bày báo cáo tốt nghiệp. Slide 1: Mục tiêu. Em đặt mục tiêu mở 20 tài khoản... ừm... em đã hoàn thành 18 tài khoản...*
+*   **Mentor HO3 (ngắt giữa chừng):** *Stop! Minh ơi, con đang ĐỌC SLIDE chứ không phải THUYẾT TRÌNH. Hội đồng họ nhìn slide rồi, con không cần đọc lại. Con phải KỂ CHUYỆN — ví dụ: "Trong 5 tuần thực chiến, có 1 tuần em gần như muốn bỏ cuộc vì 3 ngày liên tục bị khách từ chối. Nhưng nhờ áp dụng kịch bản phá băng D13, em đã quay lại và chốt được 5 tài khoản riêng tuần đó". Kể câu chuyện thật, hội đồng sẽ nhớ con.*
+*   **Học viên Minh (ghi nhận):** *Dạ, vậy em trình bày lại nhé anh?*
+*   **Mentor HO3 (challenge):** *Trình bày lại. Và anh sẽ chất vấn: "18 tài khoản mở nhưng bao nhiêu tài khoản active?" — con trả lời sao?*
+*   **Học viên Minh (tự tin hơn):** *Dạ, 18 tài khoản mở, 12 tài khoản active nạp tiền giao dịch. Tỷ lệ Active Rate 67%. Em phân tích: 6 tài khoản chưa active vì khách hàng đang chờ lương, em đã lên lịch follow-up vào đầu tháng sau.*
+*   **Mentor HO3 (hài lòng):** *Tốt hơn rồi! Nhớ: slide là backdrop, con là diễn giả chính. Giọng nói rõ ràng, nhìn vào mắt hội đồng, không nhìn xuống laptop. Làm lại 3 lần nữa trước buổi bảo vệ thật nhé!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Kỹ năng thuyết trình (Presentation)** | **40%** | Không đọc slide; kể chuyện thật; eye contact; giọng rõ ràng. | / 40 |
+| **Trả lời chất vấn (Q&A)** | **35%** | Trả lời bằng data + phân tích; không bịa số; nhận lỗi nếu chưa tốt. | / 35 |
+| **Tinh thần cải thiện liên tục** | **25%** | Ghi nhận feedback; trình bày lại ngay; cam kết luyện thêm. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

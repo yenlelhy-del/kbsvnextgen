@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Event Planning).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Event Planning).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi hai của Lộ trình (Tuần 3 - Kỹ năng tổ chức sự kiện bán hàng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đề cao tính tôn trọng khán giả, đặt trải nghiệm và giá trị nhận được của người nghe lên hàng đầu. Tự tin, làm chủ sân khấu và thể hiện phong thái đĩnh đạc của một Wealth Advisor thực thụ. Chân thành, cởi mở khi giải đáp các câu hỏi phản biện từ khán giả.
@@ -89,7 +89,7 @@ KẾT QUẢ WEBINAR CỦA ANH TUẤN ANH:
 [ Doanh thu phí giao dịch tăng mạnh ] <── (28 tài khoản active) ── [ 35 người quét eKYC ]
 ```
 
-*Kết quả chuyển đổi:* Có **80 người** tham dự thực tế (Attendance Rate đạt $72\%$). Cuối buổi Q&A, có **35 người** quét mã mở tài khoản eKYC thành công, trong đó có **28 người** thực hiện nạp tiền active Standard ngay trong tối hôm đó để chuẩn bị mua cổ phiếu ACB vào phiên sáng mai. Tổng NAV huy động được từ buổi Webinar đạt hơn **350 triệu đồng**. Đây là minh chứng tuyệt vời cho sức mạnh của mô hình bán hàng Một-Đến-Nhiều.
+*Kết quả chuyển đổi:* Có **80 người** tham dự thực tế (Attendance Rate đạt 72%). Cuối buổi Q&A, có **35 người** quét mã mở tài khoản eKYC thành công, trong đó có **28 người** thực hiện nạp tiền active Standard ngay trong tối hôm đó để chuẩn bị mua cổ phiếu ACB vào phiên sáng mai. Tổng NAV huy động được từ buổi Webinar đạt hơn **350 triệu đồng**. Đây là minh chứng tuyệt vời cho sức mạnh của mô hình bán hàng Một-Đến-Nhiều.
 
 ---
 
@@ -167,9 +167,38 @@ D. (Số lượng sinh viên CTV tuyển dụng được / Số người xem Zoo
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Sự phối hợp nhịp nhàng giữa Diễn giả và Co-host quyết định sự thành bại của Webinar. Diễn giả chỉ tập trung thuyết trình truyền cảm hứng, các vấn đề kỹ thuật và tương tác chat đã có Co-host bọc lót phía sau.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Attendance Rate (Tỷ lệ tham dự thực tế) đo lường hiệu quả của khâu marketing và follow-up nhắc lịch hẹn trước sự kiện. Tỷ lệ này thông thường đạt từ $60\% - 80\%$ là mức xuất sắc cho một sự kiện trực tuyến.
+    *   *Giải thích:* Attendance Rate (Tỷ lệ tham dự thực tế) đo lường hiệu quả của khâu marketing và follow-up nhắc lịch hẹn trước sự kiện. Tỷ lệ này thông thường đạt từ 60% - 80% là mức xuất sắc cho một sự kiện trực tuyến.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: MC dẫn phần Q&A khi khán giả hỏi câu nhạy cảm khuyến nghị mua/bán cổ phiếu cụ thể trong webinar
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (MC Webinar):** Tự tin, nhanh nhạy, am hiểu quy chuẩn compliance khi phát ngôn trước công chúng.
+    *   **Khán giả (Tham dự webinar qua Zoom):** Hỏi trực tiếp: "Anh/chị ơi, giờ mua FPT được không? Giá này hợp lý chưa?" — câu hỏi nhạy cảm buộc MC phải xử lý đúng compliance.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Khán giả (chat Zoom, hào hứng):** *Anh ơi, em đang xem FPT giá 130k, theo phân tích của anh thì bây giờ mua được không ạ? Em muốn mua 500 cổ phiếu luôn.*
+*   **Broker NextGen MC (giọng rõ ràng, điềm tĩnh):** *Cảm ơn bạn câu hỏi rất thực tế! Tuy nhiên, theo quy chuẩn tuân thủ phát ngôn của KBSV, trong buổi webinar công khai thế này, mình không được phép khuyến nghị mua hay bán bất kỳ mã cổ phiếu cụ thể nào ạ. Nhưng mình sẽ chia sẻ PHƯƠNG PHÁP để bạn tự đánh giá nhé!*
+*   **Khán giả (hơi thất vọng):** *Vậy thì biết hỏi ai bây giờ anh?*
+*   **Broker NextGen MC (nhiệt tình, dẫn dắt):** *Bạn yên tâm! Mình hướng dẫn thế này: Bước 1 — bạn áp dụng bộ lọc 4 tiêu chí tích sản mà mình vừa dạy để kiểm tra FPT có đạt cả 4 không. Bước 2 — so sánh giá hiện tại với vùng định giá Graham trong báo cáo mới nhất của Research team KBSV. Nếu bạn muốn được phân tích cá nhân hóa sâu hơn, bạn inbox mình qua Zalo sau webinar, mình sẽ tư vấn 1-1 miễn phí dựa trên tình hình tài chính cụ thể của bạn!*
+*   **Khán giả (hào hứng trở lại):** *Oke anh, em sẽ inbox anh sau. Cảm ơn anh nhiều!*
+*   **Broker NextGen MC (chuyên nghiệp, chốt CTA):** *Tuyệt vời! Các bạn nào muốn được tư vấn 1-1 miễn phí thì để lại SĐT hoặc Zalo trong chat nhé, mình sẽ kết nối sau buổi webinar. Mình tiếp tục câu hỏi tiếp theo ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Tuân thủ Compliance (Legal)** | **45%** | Từ chối khuyến nghị mã cụ thể đúng quy chuẩn; không nói "mua đi" hoặc "bán đi" trước công chúng. | / 45 |
+| **Chuyển hướng sang phương pháp (Redirect)** | **30%** | Dạy phương pháp tự đánh giá thay vì cho cá; dẫn dắt về bộ lọc 4 tiêu chí + định giá Graham. | / 30 |
+| **Chốt Lead 1-1 (Conversion)** | **25%** | Chuyển khán giả webinar thành lead Zalo 1-1 để tư vấn cá nhân hóa. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

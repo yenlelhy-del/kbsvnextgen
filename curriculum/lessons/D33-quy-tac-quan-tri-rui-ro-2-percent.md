@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Risk Management Session).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Risk Management Session).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi ba của Lộ trình (Tuần 5 - Quản trị rủi ro danh mục nâng cao).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đề cao tính kỷ luật sắt đá, cẩn trọng và khoa học trong đầu tư. Tuyệt đối bài trừ tư duy đánh bạc, tất tay (all-in) mạo hiểm. Nhìn nhận quản trị rủi ro là xương sống quyết định sự tồn tại lâu dài và tăng trưởng bền vững của tài sản.
@@ -22,9 +22,9 @@
 
 ### 1. Tại Sao Đa Số Nhà Đầu Tư F0 Bị Cháy Tài Khoản?
 
-Một sự thật khốc liệt trên thị trường chứng khoán: hơn $90\%$ nhà đầu tư cá nhân bị thua lỗ lớn không phải vì họ phân tích doanh nghiệp kém hay chọn sai cổ phiếu, mà chủ yếu là do họ **không biết quản trị quy mô vốn giải ngân (Position Sizing)**. 
+Một sự thật khốc liệt trên thị trường chứng khoán: hơn 90% nhà đầu tư cá nhân bị thua lỗ lớn không phải vì họ phân tích doanh nghiệp kém hay chọn sai cổ phiếu, mà chủ yếu là do họ **không biết quản trị quy mô vốn giải ngân (Position Sizing)**. 
 
-Khi tìm thấy một cổ phiếu được phím hàng, F0 thường có xu hướng dồn toàn bộ $100\%$ số tiền đang có (all-in) và vay thêm Margin tối đa để mua duy nhất mã đó. Chỉ cần thị trường vĩ mô biến động xấu khiến cổ phiếu rơi sàn 3 phiên liên tiếp (giảm $21\%$), tài khoản của họ lập tức bị âm nặng, Call Margin và bốc hơi sạch sẽ phần vốn tích lũy cả đời.
+Khi tìm thấy một cổ phiếu được phím hàng, F0 thường có xu hướng dồn toàn bộ 100% số tiền đang có (all-in) và vay thêm Margin tối đa để mua duy nhất mã đó. Chỉ cần thị trường vĩ mô biến động xấu khiến cổ phiếu rơi sàn 3 phiên liên tiếp (giảm 21%), tài khoản của họ lập tức bị âm nặng, Call Margin và bốc hơi sạch sẽ phần vốn tích lũy cả đời.
 
 Để bảo vệ tài sản khách hàng đi qua mọi giông bão của thị trường, FinPeace × KBSV HO3 áp dụng quy tắc quản trị rủi ro bọc thép: **Quy tắc giới hạn rủi ro 2% NAV**.
 
@@ -35,7 +35,7 @@ Khi tìm thấy một cổ phiếu được phím hàng, F0 thường có xu hư
 **Quy tắc 2% NAV** quy định rằng: *"Trên mỗi Deal giao dịch ngắn hạn độc lập, số tiền lỗ thực tế tối đa mà khách hàng chấp nhận mất nếu vị thế chạm mốc cắt lỗ (Stop Loss) **tuyệt đối không được phép vượt quá 2% tổng tài sản ròng (NAV) hiện tại của toàn bộ tài khoản**"*.
 
 Ý nghĩa của quy tắc này về mặt toán học xác suất:
-*   Nếu tài khoản của khách hàng gặp phải chuỗi **10 deal thua lỗ liên tiếp** (một kịch bản vô cùng tồi tệ trong thực tế), tổng tài sản của họ cũng chỉ bị sụt giảm tối đa khoảng $18\%$ (tính theo lãi kép giảm dần). Họ vẫn còn nguyên hơn $80\%$ vốn gốc để dễ dàng làm lại khi thị trường phục hồi.
+*   Nếu tài khoản của khách hàng gặp phải chuỗi **10 deal thua lỗ liên tiếp** (một kịch bản vô cùng tồi tệ trong thực tế), tổng tài sản của họ cũng chỉ bị sụt giảm tối đa khoảng 18% (tính theo lãi kép giảm dần). Họ vẫn còn nguyên hơn 80% vốn gốc để dễ dàng làm lại khi thị trường phục hồi.
 *   Nó loại bỏ hoàn toàn áp lực tâm lý hoảng loạn. Khách hàng biết trước tổn thất tối đa của mình là rất nhỏ nên tối ngủ cực kỳ ngon giấc, không bị cuốn vào vòng xoáy gỡ lỗ mạo hiểm.
 
 ---
@@ -44,7 +44,7 @@ Khi tìm thấy một cổ phiếu được phím hàng, F0 thường có xu hư
 
 Để thiết lập lệnh mua chuẩn xác, Broker hướng dẫn khách hàng tính số lượng cổ phiếu tối đa được phép mua theo công thức định lượng sau:
 
-$$Q = \frac{\text{Tổng NAV} \times 2\%}{\text{Giá mua (Entry)} - \text{Giá cắt lỗ (Stop Loss)}}$$
+$$Q = \frac{\text{Tổng NAV} \times 2%}{\text{Giá mua (Entry)} - \text{Giá cắt lỗ (Stop Loss)}}$$
 
 *Ví dụ minh họa quy trình tính toán:*
 ```
@@ -61,28 +61,28 @@ BÀI TOÁN POSITION SIZING:
 
 ### 4. Câu Chuyện Thực Tế: Sự Khác Biệt Giữa All-In Cảm Tính Và Quy Tắc Kỷ Luật 2% NAV
 
-Chúng ta cùng phân tích câu chuyện thực tế của anh Nam và anh Bắc tại HO3 vào tháng 10/2024. Cả hai anh đều có quy mô vốn **NAV ban đầu là 500 triệu đồng** và cùng tham gia Deal trading cổ phiếu **DXG** ở mức giá mua Entry là **$20.000$ VNĐ/cp**, mốc cắt lỗ kỹ thuật Stop Loss thiết lập ở **$18.500$ VNĐ/cp** (lỗ $7.5\%$).
+Chúng ta cùng phân tích câu chuyện thực tế của anh Nam và anh Bắc tại HO3 vào tháng 10/2024. Cả hai anh đều có quy mô vốn **NAV ban đầu là 500 triệu đồng** và cùng tham gia Deal trading cổ phiếu **DXG** ở mức giá mua Entry là **20.000 VNĐ/cp**, mốc cắt lỗ kỹ thuật Stop Loss thiết lập ở **18.500 VNĐ/cp** (lỗ 7.5%).
 
 *   **Tài khoản anh Nam (Đầu tư cảm tính, All-in kịch khung):**
-    *   Anh Nam tin tưởng DXG sẽ tăng mạnh nên dùng toàn bộ 500 triệu đồng mua gom $25.000$ cổ phiếu DXG ở giá $20.000$ VNĐ.
+    *   Anh Nam tin tưởng DXG sẽ tăng mạnh nên dùng toàn bộ 500 triệu đồng mua gom 25.000 cổ phiếu DXG ở giá 20.000 VNĐ.
 *   **Tài khoản anh Bắc (Tuân thủ kỷ luật quy tắc 2% NAV):**
     *   Anh Bắc thực hiện tính toán quy mô vị thế theo công thức:
-        $$\text{Số tiền rủi ro tối đa (2\% NAV)} = 500.000.000 \times 2\% = 10.000.000\text{ VNĐ}$$
-        $$\text{Số lượng cổ phiếu mua (Q)} = \frac{10.000.000}{20.000 - 18.500} = \frac{10.000.000}{1.500} \approx 6.600\text{ cổ phiếu}$$
-    *   Anh Bắc chỉ giải ngân mua đúng $6.600$ cổ phiếu DXG (tương đương tổng số tiền giải ngân thực tế là 132 triệu đồng, chiếm $26.4\%$ NAV của tài khoản). Số tiền còn lại anh gửi tiền gửi ngắn hạn an toàn đuôi 1.
+        $$\text{Số tiền rủi ro tối đa (2% NAV)} = 500.000.000 \times 2% = 10.000.000\text{ VNĐ}$$
+        $$\text{Số lượng cổ phiếu mua (Q)} = \frac{10.000.000}{20.000 - 18.500} = \frac{10.000.000}{1.500} ≈ 6.600\text{ cổ phiếu}$$
+    *   Anh Bắc chỉ giải ngân mua đúng 6.600 cổ phiếu DXG (tương đương tổng số tiền giải ngân thực tế là 132 triệu đồng, chiếm 26.4% NAV của tài khoản). Số tiền còn lại anh gửi tiền gửi ngắn hạn an toàn đuôi 1.
 
 #### 📉 Biến cố xảy ra:
-Thị trường biến động xấu, cổ phiếu DXG quay đầu giảm mạnh thủng ngưỡng hỗ trợ kỹ thuật và chạm mốc cắt lỗ **$18.500$ VNĐ/cp**. Cả hai anh đều bắt buộc phải đặt lệnh bán cắt lỗ để bảo vệ vốn.
+Thị trường biến động xấu, cổ phiếu DXG quay đầu giảm mạnh thủng ngưỡng hỗ trợ kỹ thuật và chạm mốc cắt lỗ **18.500 VNĐ/cp**. Cả hai anh đều bắt buộc phải đặt lệnh bán cắt lỗ để bảo vệ vốn.
 
 *   **Hậu quả đối với anh Nam:**
-    *   Anh Nam bán sạch $25.000$ cổ phiếu DXG ở giá $18.500$ VNĐ. 
+    *   Anh Nam bán sạch 25.000 cổ phiếu DXG ở giá 18.500 VNĐ. 
     *   Số tiền lỗ thực tế của anh Nam:
-        $$\text{Tiền lỗ} = 25.000\text{ cp} \times 1.500\text{ VNĐ} = 37.500.000\text{ VNĐ (bốc hơi 7.5\% tổng NAV)}$$
+        $$\text{Tiền lỗ} = 25.000\text{ cp} \times 1.500\text{ VNĐ} = 37.500.000\text{ VNĐ (bốc hơi 7.5% tổng NAV)}$$
     *   Anh Nam vô cùng xót xa, tiếc nuối và rơi vào trạng thái bực dọc, mất niềm tin vào thị trường.
 *   **Hậu quả đối với anh Bắc:**
-    *   Anh Bắc bán sạch $6.600$ cổ phiếu DXG ở giá $18.500$ VNĐ.
+    *   Anh Bắc bán sạch 6.600 cổ phiếu DXG ở giá 18.500 VNĐ.
     *   Số tiền lỗ thực tế của anh Bắc:
-        $$\text{Tiền lỗ} = 6.600\text{ cp} \times 1.500\text{ VNĐ} = 9.900.000\text{ VNĐ (bốc hơi đúng 2\% tổng NAV)}$$
+        $$\text{Tiền lỗ} = 6.600\text{ cp} \times 1.500\text{ VNĐ} = 9.900.000\text{ VNĐ (bốc hơi đúng 2% tổng NAV)}$$
     *   Anh Bắc hoàn toàn điềm tĩnh. Khoản lỗ chưa tới 10 triệu đồng là rất nhỏ so với quy mô tài sản 500 triệu của anh. Đầu óc anh thanh thản, sẵn sàng đón nhận các cơ hội đầu tư tiếp theo một cách thông thái.
 
 *Bài học xương máu:* Việc giới hạn rủi ro 2% NAV là bí quyết cốt lõi giúp nhà đầu tư chuyên nghiệp sống sót qua mọi giai đoạn khó khăn nhất của thị trường để chờ đợi sóng tăng lớn.
@@ -95,32 +95,32 @@ Thị trường biến động xấu, cổ phiếu DXG quay đầu giảm mạnh
 
 **Thông số tài khoản của chị Vy:**
 *   **Tổng tài sản ròng (NAV) hiện tại:** 300.000.000 VNĐ.
-*   **Cổ phiếu muốn mua trading ngắn hạn:** **GEX** ở vùng giá mua Entry = **$22.000$ VNĐ/cp**.
-*   **Mốc cắt lỗ kỹ thuật (Stop Loss) thiết lập tại:** **$20.240$ VNĐ/cp** (tương ứng mức lỗ $8\%$).
+*   **Cổ phiếu muốn mua trading ngắn hạn:** **GEX** ở vùng giá mua Entry = **22.000 VNĐ/cp**.
+*   **Mốc cắt lỗ kỹ thuật (Stop Loss) thiết lập tại:** **20.240 VNĐ/cp** (tương ứng mức lỗ 8%).
 
 **Yêu cầu đối với học viên:**
 1.  Tính số tiền rủi ro tối đa chị Vy chấp nhận mất trên Deal này theo quy tắc 2% NAV của HO3.
 2.  Tính số lượng cổ phiếu GEX tối đa chị Vy được phép đặt lệnh mua (Position Sizing).
 3.  Tính tổng số tiền thực tế giải ngân cho Deal này và tỷ lệ phần trăm phân bổ vốn của Deal trên tổng NAV tài khoản.
-4.  Giả sử GEX tăng mạnh lên mốc chốt lời kỳ vọng Take Profit = **$26.400$ VNĐ/cp** (lợi nhuận $+20\%$). Hãy tính số tiền lãi thực tế chị Vy thu về và tỷ lệ tăng trưởng tổng NAV của tài khoản sau Deal thắng này.
+4.  Giả sử GEX tăng mạnh lên mốc chốt lời kỳ vọng Take Profit = **26.400 VNĐ/cp** (lợi nhuận +20%). Hãy tính số tiền lãi thực tế chị Vy thu về và tỷ lệ tăng trưởng tổng NAV của tài khoản sau Deal thắng này.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Tính số tiền rủi ro chấp nhận mất (Risk Amount):**
-    $$\text{Tiền rủi ro} = 300.000.000 \times 2\% = 6.000.000\text{ VNĐ}$$
+    $$\text{Tiền rủi ro} = 300.000.000 \times 2% = 6.000.000\text{ VNĐ}$$
 
 2.  **Bước 2: Tính số lượng cổ phiếu GEX tối đa được phép mua (Q):**
     *   Chênh lệch giá cắt lỗ trên mỗi cổ phiếu:
         $$\text{Chênh lệch} = 22.000 - 20.240 = 1.760\text{ VNĐ/cp}$$
     *   Số lượng cổ phiếu mua (Q):
-        $$Q = \frac{6.000.000}{1.760} \approx 3.409\text{ cổ phiếu}$$
+        $$Q = \frac{6.000.000}{1.760} ≈ 3.409\text{ cổ phiếu}$$
     *   *Kết luận:* Chị Vy được phép đặt lệnh mua tối đa **3.400 cổ phiếu GEX** (làm tròn số lô chẵn 100 cp gần nhất).
 
 3.  **Bước 3: Tính tổng tiền giải ngân và tỷ lệ phân bổ vốn:**
     *   Tổng tiền giải ngân thực tế:
         $$\text{Tiền giải ngân} = 3.400\text{ cp} \times 22.000\text{ VNĐ} = 74.800.000\text{ VNĐ}$$
     *   Tỷ lệ phân bổ vốn trên NAV tài khoản:
-        $$\text{Tỷ lệ phân bổ} = \frac{74.800.000}{300.000.000} \times 100\% \approx 24.9\%$$
+        $$\text{Tỷ lệ phân bổ} = \frac{74.800.000}{300.000.000} \times 100% ≈ 24.9%$$
 
 4.  **Bước 4: Tính lãi và tỷ lệ tăng trưởng NAV khi chốt lời thành công:**
     *   Mức chênh lệch giá chốt lời trên mỗi cổ phiếu:
@@ -128,8 +128,8 @@ Thị trường biến động xấu, cổ phiếu DXG quay đầu giảm mạnh
     *   Số tiền lãi thực tế thu về:
         $$\text{Tiền lãi thu về} = 3.400\text{ cp} \times 4.400\text{ VNĐ} = 14.960.000\text{ VNĐ}$$
     *   Tỷ lệ tăng trưởng tổng NAV của tài khoản sau Deal thắng:
-        $$\text{Tăng trưởng NAV} = \frac{14.960.000}{300.000.000} \times 100\% \approx 4.99\%$$
-    *   *Kết luận:* Chỉ với mức rủi ro kiểm soát chặt chẽ ở mức $2\%$ NAV ban đầu (nếu cắt lỗ mất 6 triệu), chị Vy đã mang về khoản lợi nhuận thực tế gần 15 triệu đồng, tương ứng giúp tổng NAV tài khoản tăng trưởng thêm **$5\%$** cực kỳ an toàn và thảnh thơi.
+        $$\text{Tăng trưởng NAV} = \frac{14.960.000}{300.000.000} \times 100% ≈ 4.99%$$
+    *   *Kết luận:* Chỉ với mức rủi ro kiểm soát chặt chẽ ở mức 2% NAV ban đầu (nếu cắt lỗ mất 6 triệu), chị Vy đã mang về khoản lợi nhuận thực tế gần 15 triệu đồng, tương ứng giúp tổng NAV tài khoản tăng trưởng thêm **5%** cực kỳ an toàn và thảnh thơi.
 
 ---
 
@@ -172,23 +172,52 @@ D. Khuyên khách hàng đi vay thêm Margin để mua đuổi.
 ### 💡 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT (ANSWER KEY)
 
 *   **Câu 1: Chọn B.**
-    *   *Giải thích:* Không có phương pháp phân tích nào đúng $100\%$. Quy tắc 2% NAV bảo vệ nhà đầu tư khỏi sự sụp đổ khi dính phải các chuỗi sai số ngẫu nhiên của thị trường, giữ lại nguồn lực tài chính để chiến thắng dài hạn.
+    *   *Giải thích:* Không có phương pháp phân tích nào đúng 100%. Quy tắc 2% NAV bảo vệ nhà đầu tư khỏi sự sụp đổ khi dính phải các chuỗi sai số ngẫu nhiên của thị trường, giữ lại nguồn lực tài chính để chiến thắng dài hạn.
 *   **Câu 2: Chọn A.**
     *   *Giải thích:* Hiệu số (Giá mua - Giá cắt lỗ) phản ánh mức rủi ro chấp nhận mất trên mỗi đơn vị cổ phiếu nắm giữ. Đây là thông số bắt buộc để chia số tiền rủi ro tối đa ra quy mô số lượng mua.
 *   **Câu 3: Chọn B.**
     *   *Giải thích:* Tính toán theo công thức:
-        $$\text{Tiền rủi ro 2\% NAV} = 200.000.000 \times 2\% = 4.000.000\text{ VNĐ}$$
+        $$\text{Tiền rủi ro 2% NAV} = 200.000.000 \times 2% = 4.000.000\text{ VNĐ}$$
         $$\text{Số lượng mua (Q)} = \frac{4.000.000}{2.000\text{ VNĐ/cp}} = 2.000\text{ cổ phiếu}$$
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Broker NextGen phải truyền cảm hứng về tư duy đầu tư bình an, thảnh thơi và bền bỉ. Sự hưng phấn muốn giàu nhanh là nguyên nhân chính dẫn đến việc cháy tài khoản của F0. Kỷ luật vốn là chìa khóa duy nhất của tự do tài chính.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Khi rủi ro kỹ thuật của cổ phiếu tăng lên (khoảng SL rộng ra), Position Sizing bắt buộc phải thu hẹp lại tương ứng để giữ nguyên biến số rủi ro tài khoản không đổi ở mức $2\%$. Đây là tư duy quản trị rủi ro năng động chuyên nghiệp.
+    *   *Giải thích:* Khi rủi ro kỹ thuật của cổ phiếu tăng lên (khoảng SL rộng ra), Position Sizing bắt buộc phải thu hẹp lại tương ứng để giữ nguyên biến số rủi ro tài khoản không đổi ở mức 2%. Đây là tư duy quản trị rủi ro năng động chuyên nghiệp.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Thuyết phục khách hàng muốn all-in 50% NAV vào 1 mã duy nhất — Áp dụng quy tắc 2% NAV
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu Position Sizing và quy tắc 2% NAV, biết dùng ví dụ thực tế.
+    *   **Anh Tâm (Khách hàng F0 tự tin thái quá):** 29 tuổi, NAV 500 triệu. Muốn dồn 250 triệu (50% NAV) mua VNM vì "chắc ăn, bluechip mà".
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Tâm (giọng tự tin):** *Em ơi, VNM bluechip vững chắc, anh muốn dồn 250 triệu mua hết. Bluechip thì an toàn, có gì mà sợ!*
+*   **Broker NextGen (giọng nhẹ nhàng, không phản bác):** *Dạ anh Tâm, VNM đúng là bluechip rất tốt. Nhưng em hỏi anh thế này: nếu VNM giảm 15% trong đợt thị trường điều chỉnh — mà điều này từng xảy ra năm 2022 — thì 250 triệu của anh bay mất 37.5 triệu, tức 7.5% tổng NAV. Anh có ngủ ngon được không?*
+*   **Anh Tâm (chùn lại):** *Ừm, mất 37 triệu cũng đau thật...*
+*   **Broker NextGen (trình bày quy tắc):** *Đó là lý do quy tắc 2% NAV tồn tại ạ. Nguyên tắc: mỗi deal chỉ được phép rủi ro tối đa 2% NAV = 10 triệu trên 500 triệu của anh. Với Stop Loss 8% cho VNM, Position Size tối đa = 10 triệu ÷ 8% = 125 triệu. Tức anh chỉ nên mua VNM tối đa 125 triệu — 25% NAV thôi. 125 triệu còn lại chia cho 2-3 mã khác để phân tán rủi ro ạ.*
+*   **Anh Tâm (bị thuyết phục):** *Nghe có lý. Vậy anh mua 125 triệu VNM, còn lại em chọn giúp anh 2 mã nữa nhé!*
+*   **Broker NextGen (chốt):** *Dạ tuyệt vời anh! Em sẽ thiết kế danh mục 3 mã phân tán: VNM (25% NAV) + ACB (15% NAV) + FPT (15% NAV), còn 45% NAV giữ tiền mặt chờ cơ hội. Mỗi mã có Deal Strategy riêng, rủi ro mỗi deal ≤ 2% NAV. Anh ngủ ngon mà vẫn tích sản bình an ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Giải thích quy tắc 2% NAV (Risk Mgmt)** | **40%** | Tính đúng Position Size từ quy tắc 2%; so sánh 50% NAV vs. 25% NAV rủi ro cụ thể. | / 40 |
+| **Thuyết phục bằng kịch bản lỗ (Behavioral)** | **30%** | Dùng ví dụ "nếu giảm 15%" để KH tự nhận ra rủi ro all-in; không phán xét. | / 30 |
+| **Thiết kế danh mục phân tán** | **30%** | Đề xuất 3 mã + tiền mặt; mỗi mã có Deal Strategy; tối ưu R:R. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 
 > [!IMPORTANT]
 > **QUY TẮC CẤM KHUYẾN NGHỊ ALL-IN:**
-> 1.  Broker NextGen **tuyệt đối không** được gửi các khuyến nghị đầu tư hoặc tin nhắn chào deal hối thúc khách hàng sử dụng $100\%$ NAV tài sản để mua duy nhất một mã cổ phiếu.
+> 1.  Broker NextGen **tuyệt đối không** được gửi các khuyến nghị đầu tư hoặc tin nhắn chào deal hối thúc khách hàng sử dụng 100% NAV tài sản để mua duy nhất một mã cổ phiếu.
 > 2.  Mọi bảng khuyến nghị Deal giao dịch gửi cho khách hàng phải đi kèm ô tính toán Position Sizing mẫu theo quy tắc 2% NAV để định hướng hành vi kỷ luật vốn cho nhà đầu tư.

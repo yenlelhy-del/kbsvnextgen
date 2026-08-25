@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Livestream 90' Studio).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Livestream 90' Studio).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi lăm của Lộ trình (Tuần 5 - Kỹ năng tương tác trực tiếp số).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy năng động, tự tin và tràn đầy năng lượng tích cực trước ống kính phát trực tiếp. Thể hiện sự tôn trọng tuyệt đối đối với tất cả khán giả, điềm tĩnh lắng nghe và chân thành giải đáp mọi câu hỏi phản biện một cách khách quan, khoa học.
@@ -170,6 +170,35 @@ D. Laptop cấu hình đồ họa gaming mạnh nhất.
     *   *Giải thích:* Khán giả có thể chấp nhận hình ảnh hơi mờ một chút, nhưng họ tuyệt đối không thể chịu đựng được âm thanh rè, vọng hoặc quá nhỏ trên một buổi chia sẻ kiến thức tài chính dài 90 phút. Đầu tư mic thu âm chất lượng là bắt buộc.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: MC xử lý comment nhạy cảm "anh ơi mua HPG giá này được không?" trên sóng livestream 90 phút
+*   **Nhân vật:**
+    *   **Broker NextGen MC (Học viên):** Đang livestream phiên chiều, nhiệt huyết nhưng phải tuân thủ compliance.
+    *   **Khán giả livestream (Comment trực tiếp):** Hỏi liên tục: "Mua HPG được không?", "FPT bao giờ lên?", "Cho em mã đi anh!"
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Khán giả (comment chat):** *Anh ơi HPG 25k mua được không? Cho em mã ngon đi anh!*
+*   **Broker NextGen MC (giọng sôi nổi, xử lý live):** *Cảm ơn bạn! Câu hỏi HOT nhất phiên chiều nay luôn! Nhưng mình nói thật nhé: theo quy định, mình KHÔNG ĐƯỢC PHÉP khuyến nghị mua/bán mã cụ thể trên livestream công khai đâu. Ai cam kết "mua đi" hoặc "bán đi" trên livestream — đó là vi phạm Luật Chứng khoán đấy bạn ơi!*
+*   **Khán giả (comment tiếp):** *Vậy xem livestream làm gì anh? 😂*
+*   **Broker NextGen MC (xoay chuyển hay):** *Haha, câu hỏi gắt! Xem livestream của mình để học PHƯƠNG PHÁP chứ không phải nghe "tip" nhé! Bây giờ mình demo cho bạn cách áp dụng bộ lọc 4 tiêu chí vào bất kỳ cổ phiếu nào bạn đang quan tâm: Tiêu chí 1 — ROE > 15% liên tục 3 năm. Tiêu chí 2 — Nợ/Vốn < 1.5. Tiêu chí 3 — Dòng tiền kinh doanh dương. Tiêu chí 4 — Giá < 1.5x Giá trị nội tại Graham. Bạn tự check rồi inbox mình trên Zalo để được tư vấn 1-1 cá nhân hóa nhé!*
+*   **Khán giả (hào hứng):** *Hay quá anh! Em inbox anh trên Zalo sau ạ! ❤️*
+*   **Broker NextGen MC (chốt CTA):** *Tuyệt vời! Các bạn muốn được phân tích 1-1 MIỄN PHÍ thì comment "NEXTGEN" + để lại SĐT trong chat box, mình kết nối sau livestream nhé! Mình đi tiếp phần tiếp theo — phân tích dòng tiền khối ngoại tuần này ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Compliance trên sóng live (Legal)** | **40%** | Từ chối khuyến nghị mã cụ thể đúng luật; giải thích cho khán giả hiểu lý do. | / 40 |
+| **Xoay chuyển thành giáo dục (Content)** | **30%** | Dạy phương pháp 4 tiêu chí thay vì cho mã; giữ engagement cao. | / 30 |
+| **Chốt Lead từ Livestream (Conversion)** | **30%** | CTA rõ ràng: comment NEXTGEN + SĐT; dẫn về Zalo 1-1; giữ năng lượng sóng live. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

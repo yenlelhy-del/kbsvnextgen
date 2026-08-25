@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Zalo Group Moderation $\rightarrow$ CTV Interview Session $\rightarrow$ Daily Wrap-up).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Zalo Group Moderation → CTV Interview Session → Daily Wrap-up).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi sáu của Lộ trình (Tuần 6 - Quản lý cộng đồng và Tuyển dụng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy phụng sự tận tâm, kiên nhẫn giải đáp mọi câu hỏi nhỏ nhất của khách hàng F0 trong group với sự thấu cảm cao. Thể hiện sự công tâm, khách quan và chuyên nghiệp khi thực hiện phỏng vấn đánh giá ứng viên CTV theo chuẩn khung năng lực ASK của dự án HO3.
@@ -27,8 +27,8 @@ Trong hành trình trải nghiệm của khách hàng, sau khi mở tài khoản
 *   Tạo cảm giác an tâm khi khách hàng thấy nhiều nhà đầu tư khác trong nhóm cùng chia sẻ hành trình tích sản ACB/FPT bình an hàng tháng.
 
 #### 🎯 Quy tắc 80/20 về nội dung trong Zalo Group:
-*   **$80\%$ Nội dung chia sẻ giá trị:** Bản tin vĩ mô, giải thích thuật ngữ tài chính, bài học quản trị rủi ro 2% NAV, chia sẻ sách hay.
-*   **$20\%$ Nội dung kêu gọi thương mại:** Giới thiệu gói ưu đãi Margin 8.8%, hướng dẫn nộp tiền active Standard, kêu gọi nâng hạn mức tài khoản.
+*   **80% Nội dung chia sẻ giá trị:** Bản tin vĩ mô, giải thích thuật ngữ tài chính, bài học quản trị rủi ro 2% NAV, chia sẻ sách hay.
+*   **20% Nội dung kêu gọi thương mại:** Giới thiệu gói ưu đãi Margin 8.8%, hướng dẫn nộp tiền active Standard, kêu gọi nâng hạn mức tài khoản.
 
 ---
 
@@ -86,7 +86,7 @@ Minh (24 tuổi, Broker NextGen chi nhánh HO3) sau khi ổn định được qu
 
 **Yêu cầu đối với học viên:**
 1.  Tính điểm tổng hợp phỏng vấn cho từng ứng viên theo công thức trọng số chuẩn của HO3:
-    $$\text{Điểm tổng hợp} = (\text{Attitude} \times 50\%) + (\text{Skills} \times 40\%) + (\text{Knowledge} \times 10\%)$$
+    $$\text{Điểm tổng hợp} = (\text{Attitude} \times 50%) + (\text{Skills} \times 40%) + (\text{Knowledge} \times 10%)$$
 2.  Xác định ứng viên nào đạt điểm cao nhất và đưa ra quyết định tuyển dụng chính thức. Viết nhận xét phân tích ưu/nhược điểm từng người để gửi báo cáo cho Mentor trưởng phòng duyệt.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
@@ -153,7 +153,7 @@ D. Quát mắng khách hàng tại sao lại tin lời CTV.
 ### 💡 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT (ANSWER KEY)
 
 *   **Câu 1: Chọn B.**
-    *   *Giải thích:* Khung trọng số bọc thép $50\% - 40\% - 10\%$ phản ánh triết lý cốt lõi của NextGen: đặt Thái độ và Growth Mindset lên trên hết để tuyển chọn ra những hạt giống môi giới thực chất, văn minh.
+    *   *Giải thích:* Khung trọng số bọc thép 50% - 40% - 10% phản ánh triết lý cốt lõi của NextGen: đặt Thái độ và Growth Mindset lên trên hết để tuyển chọn ra những hạt giống môi giới thực chất, văn minh.
 *   **Câu 2: Chọn B.**
     *   *Giải thích:* Group Zalo cộng đồng là nơi xây dựng niềm tin và trao giá trị. Nếu Broker suốt ngày spam tin nhắn hối thúc mở tài khoản nạp tiền, khách hàng sẽ cảm thấy bị phiền nhiễu và lập tức rời nhóm.
 *   **Câu 3: Chọn B.**
@@ -164,6 +164,37 @@ D. Quát mắng khách hàng tại sao lại tin lời CTV.
     *   *Giải thích:* Broker chịu trách nhiệm tối cao về tính tuân thủ pháp lý của tệp khách hàng và mạng lưới CTV dưới quyền quản lý trực tiếp. Mọi hành vi tư vấn sai quy chế, chèo kéo khách hàng đầu cơ trái quy định phải được ngăn chặn lập tức để bảo vệ uy tín của HO3.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Broker phỏng vấn tuyển CTV (Cộng tác viên) và đánh giá theo khung ASK
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Người phỏng vấn):** Đang xây dựng mạng lưới CTV, biết đánh giá ứng viên theo khung ASK.
+    *   **Bạn Trang (Ứng viên CTV):** 23 tuổi, SV năm cuối ĐH Tài chính, muốn làm CTV giới thiệu tài khoản KBSV để kiếm thêm thu nhập.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Broker NextGen (giọng thân thiện, chuyên nghiệp):** *Chào Trang! Cảm ơn bạn đã quan tâm đến vị trí CTV của team mình. Mình hỏi nhanh nhé: điều gì khiến bạn muốn làm CTV giới thiệu tài khoản chứng khoán?*
+*   **Bạn Trang (nhiệt tình):** *Dạ em thấy chứng khoán là ngành tiềm năng, em muốn vừa học vừa kiếm thêm thu nhập. Em có 500 bạn bè Facebook, mỗi tháng em giới thiệu được 5-10 bạn mở tài khoản thì cũng ra tiền.*
+*   **Broker NextGen (đánh giá Attitude):** *Hay lắm! Mình thích thái độ chủ động của bạn. Nhưng mình hỏi thêm: nếu bạn bè bạn mở xong tài khoản rồi bảo "chứng khoán khó quá, tao không chơi nữa" — bạn xử lý thế nào?*
+*   **Bạn Trang (suy nghĩ):** *Hmm, em sẽ... gửi cho họ mấy bài viết về cách đầu tư an toàn? Rồi rủ họ vào group Zalo của em để em chia sẻ kiến thức hàng ngày.*
+*   **Broker NextGen (đánh giá Skill + Knowledge):** *Tốt! Bạn có tư duy nuôi dưỡng khách hàng, không chỉ "giới thiệu rồi bỏ". Vậy bạn có biết tại KBSV, CTV giới thiệu tài khoản sẽ nhận thưởng bao nhiêu không?*
+*   **Bạn Trang (chưa rõ):** *Em chưa biết cụ thể ạ.*
+*   **Broker NextGen (chia sẻ & chốt):** *Mỗi tài khoản eKYC active sẽ có thưởng 50k-200k tùy mức nạp tiền. Nhưng giá trị lớn hơn là bạn sẽ được mình đào tạo kỹ năng tài chính, content marketing, và nếu bạn xuất sắc, mình recommend bạn vào chương trình NextGen chính thức. Bạn sẵn sàng bắt đầu không?*
+*   **Bạn Trang (hào hứng):** *Dạ em sẵn sàng! Em bắt đầu từ hôm nay luôn ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Đánh giá ứng viên theo ASK (Assessment)** | **40%** | Kiểm tra Attitude (chủ động, kiên trì) > Skill (nuôi dưỡng lead) > Knowledge (hiểu sản phẩm). | / 40 |
+| **Trình bày cơ chế CTV rõ ràng (Value Prop)** | **30%** | Thưởng cụ thể; lộ trình phát triển; giá trị đào tạo kèm theo. | / 30 |
+| **Chốt cam kết hành động** | **30%** | Ứng viên nói "sẵn sàng bắt đầu"; có next steps cụ thể. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

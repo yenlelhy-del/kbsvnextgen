@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Cold Calling Session).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Cold Calling Session).
 *   **Vị trí trong lộ trình:** Ngày thứ mười ba của Lộ trình (Tuần 2 - Kỹ năng tiếp cận và đặt lịch hẹn).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Duy trì sự tự tin, kiên trì và thái độ tích cực trước lời từ chối của khách hàng. Coi lời từ chối là điểm khởi đầu của cuộc hội thoại thấu cảm chứ không phải là sự thất bại. Lịch sự, chuyên nghiệp, tôn trọng thời gian riêng tư của khách.
@@ -118,7 +118,7 @@ HÀNH TRÌNH VƯỢT QUA NỖI SỢ GIAO TIẾP CỦA HẢI:
 [Đạt top 3 Active tài khoản tháng của HO3] <─── (Thiết lập 5 lịch hẹn chất lượng/ngày) ── [Khách đồng ý kết bạn]
 ```
 
-Nhờ kiên trì áp dụng phương pháp này, tỷ lệ chốt cuộc hẹn thành công của Hải tăng từ $5\%$ lên $25\%$. Cuối tháng đó, Hải đã thiết lập được hơn 80 cuộc hẹn chất lượng và kích hoạt thành công 12 tài khoản tích sản Standard mới, vươn lên đứng Top 3 Broker có tỷ lệ active tài khoản cao nhất tháng của chi nhánh HO3.
+Nhờ kiên trì áp dụng phương pháp này, tỷ lệ chốt cuộc hẹn thành công của Hải tăng từ 5% lên 25%. Cuối tháng đó, Hải đã thiết lập được hơn 80 cuộc hẹn chất lượng và kích hoạt thành công 12 tài khoản tích sản Standard mới, vươn lên đứng Top 3 Broker có tỷ lệ active tài khoản cao nhất tháng của chi nhánh HO3.
 
 ---
 
@@ -243,7 +243,7 @@ D. Hứa hẹn với khách hàng mở tài khoản chắc chắn sẽ nhận đ
 | **Ứng dụng công thức Feel-Felt-Found** | **30%** | Đồng cảm sâu sắc với áp lực công việc của khách hàng; giải quyết nỗi đau bận rộn bằng giải pháp tích sản tự động thảnh thơi. | / 30 |
 | **Chốt lịch hẹn bằng lựa chọn kép** | **30%** | Đưa ra hai mốc thời gian rõ ràng (tối nay hoặc chiều mai) để điều hướng tâm lý khách hàng chấp nhận cuộc hẹn chat Zalo. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

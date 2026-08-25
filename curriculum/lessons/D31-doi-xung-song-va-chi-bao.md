@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Technical Analysis Lab $\rightarrow$ CRM Update $\rightarrow$ Indicators & Symmetry Analysis).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Technical Analysis Lab → CRM Update → Indicators & Symmetry Analysis).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi mốt của Lộ trình (Tuần 4 - Chỉ báo kỹ thuật nâng cao).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy khoa học, khách quan và không cực đoan. Xem các chỉ báo kỹ thuật (Indicators) là công cụ hỗ trợ thống kê xác suất, tuyệt đối không thần thánh hóa hay tin tưởng mù quáng vào một chỉ báo duy nhất. Luôn tuân thủ nguyên tắc phối hợp đồng bộ và kỷ luật quản trị rủi ro.
@@ -25,7 +25,7 @@
 Trong phân tích kỹ thuật, thị trường có tính chất hình học fractal và thường xuyên lặp lại các hành vi trong quá khứ. **Quy luật đối xứng sóng (Symmetry)** chỉ ra rằng: *"Các bước sóng điều chỉnh hoặc tăng giá tiếp theo trong cùng một xu hướng thường có xu hướng đối xứng về biên độ giảm (giá trị phần trăm hoặc số điểm) và thời gian kéo dài (số phiên giao dịch) tương đương với bước sóng trước đó"*.
 
 Broker sử dụng công cụ **Fibonacci Retracement (Thoái lui)** và **Fibonacci Extension (Mở rộng)** để đo lường độ đối xứng này:
-*   Các mốc thoái lui quan trọng: **$38.2\%$**, **$50\%$**, và **$61.8\%$** là các vùng hỗ trợ vàng nơi sóng điều chỉnh cấp 2 có xác suất đảo chiều cao nhất để tiếp tục xu hướng chính cấp 1 tăng dài hạn.
+*   Các mốc thoái lui quan trọng: **38.2%**, **50%**, và **61.8%** là các vùng hỗ trợ vàng nơi sóng điều chỉnh cấp 2 có xác suất đảo chiều cao nhất để tiếp tục xu hướng chính cấp 1 tăng dài hạn.
 
 ---
 
@@ -69,24 +69,24 @@ Broker sử dụng công cụ **Fibonacci Retracement (Thoái lui)** và **Fibon
 
 Một lỗi phổ biến của Broker F0 là chỉ thấy RSI dưới 30 đã khuyên khách hàng all-in mua bắt đáy. Quy luật bọc thép của HO3 yêu cầu **Sự hội tụ chỉ báo (Confluence)**: Chỉ đặt lệnh giao dịch khi có sự đồng thuận của ít nhất 3 yếu tố kỹ thuật độc lập:
 1.  Giá rơi chạm ngưỡng Hỗ trợ tĩnh (đáy cũ) hoặc Hỗ trợ động (đường MA200).
-2.  Chỉ báo RSI đi vào vùng quá bán ($< 30$) hoặc xuất hiện phân kỳ tăng giá (Bullish Divergence).
+2.  Chỉ báo RSI đi vào vùng quá bán (< 30) hoặc xuất hiện phân kỳ tăng giá (Bullish Divergence).
 3.  Xuất hiện mô hình nến rút chân đảo chiều (Hammer/Pinbar) với Volume bắt đáy lớn.
 
 ---
 
 ### 4. Câu Chuyện Thực Tế: Cách Broker Quân Chốt Lời Deal SSI Đúng Đỉnh Nhờ Phân Kỳ Giảm RSI
 
-Chị Hương (38 tuổi, chủ chuỗi cửa hàng hoa tươi, nhóm tính cách **I-D**) là khách hàng lướt sóng ngắn hạn của Broker Quân (chi nhánh HO3). Vào tháng 6/2024, chị Hương đang nắm giữ 30.000 cổ phiếu **SSI** với mức lãi tạm thời hơn $22\%$. Giá SSI đang tăng rất mạnh hướng về mốc đỉnh lịch sử **$42.000$ VNĐ/cp**. Khắp các diễn đàn chứng khoán đều hô hào SSI sẽ vượt mốc $50.000$ VNĐ. Chị Hương vô cùng hào hứng và định giữ nguyên không bán.
+Chị Hương (38 tuổi, chủ chuỗi cửa hàng hoa tươi, nhóm tính cách **I-D**) là khách hàng lướt sóng ngắn hạn của Broker Quân (chi nhánh HO3). Vào tháng 6/2024, chị Hương đang nắm giữ 30.000 cổ phiếu **SSI** với mức lãi tạm thời hơn 22%. Giá SSI đang tăng rất mạnh hướng về mốc đỉnh lịch sử **42.000 VNĐ/cp**. Khắp các diễn đàn chứng khoán đều hô hào SSI sẽ vượt mốc 50.000 VNĐ. Chị Hương vô cùng hào hứng và định giữ nguyên không bán.
 
 Quân mở biểu đồ phân tích kỹ thuật SSI chỉ ra 3 tín hiệu hội tụ cảnh báo đỉnh:
-*   Đường giá SSI liên tục tạo ra đỉnh sau cao hơn đỉnh trước (đỉnh 1 là $40.000$, đỉnh 2 đạt $42.000$).
-*   Tuy nhiên, chỉ báo **RSI phân kỳ giảm rõ rệt**: đỉnh RSI thứ nhất đạt 78 (quá mua cực đại), nhưng đỉnh RSI thứ hai khi giá lên $42.000$ chỉ đạt 62.
+*   Đường giá SSI liên tục tạo ra đỉnh sau cao hơn đỉnh trước (đỉnh 1 là 40.000, đỉnh 2 đạt 42.000).
+*   Tuy nhiên, chỉ báo **RSI phân kỳ giảm rõ rệt**: đỉnh RSI thứ nhất đạt 78 (quá mua cực đại), nhưng đỉnh RSI thứ hai khi giá lên 42.000 chỉ đạt 62.
 *   Đồng thời, đường MACD vừa xuất hiện giao cắt tử thần (Death Cross) hướng xuống dưới đường tín hiệu.
 
 Quân gọi điện thuyết phục chị Hương: *"Chị Hương ơi, SSI đang xuất hiện sự phân kỳ giảm giá hội tụ giữa RSI và MACD ngay tại vùng kháng cự đỉnh cũ 42.000 VNĐ. Lực mua đẩy giá lên cao thực chất chỉ là nhỏ lẻ FOMO mua đuổi, dòng tiền lớn đang rút ra chủ động.*
-*   *Em khuyến nghị chị đặt lệnh chốt lời chủ động $100\%$ vị thế SSI ở mức giá $41.800$ VNĐ ngay phiên sáng nay để hiện thực hóa khoản lãi $22\%$, rút toàn bộ tiền về bảo toàn tài sản"*.
+*   *Em khuyến nghị chị đặt lệnh chốt lời chủ động 100% vị thế SSI ở mức giá 41.800 VNĐ ngay phiên sáng nay để hiện thực hóa khoản lãi 22%, rút toàn bộ tiền về bảo toàn tài sản"*.
 
-Chị Hương tin tưởng phân tích định lượng của Quân nên đồng ý đặt lệnh bán sạch SSI thu tiền về. Ngay phiên hôm sau, SSI tạo nến Shooting Star và bắt đầu bước vào nhịp sụt giảm sâu kéo dài 1 tháng về vùng giá $32.000$ VNĐ/cp (giảm $23.8\%$). Nhờ sự phân tích chỉ báo sắc bén của Quân, chị Hương đã chốt lời ngay đỉnh SSI trong sự khâm phục tuyệt đối.
+Chị Hương tin tưởng phân tích định lượng của Quân nên đồng ý đặt lệnh bán sạch SSI thu tiền về. Ngay phiên hôm sau, SSI tạo nến Shooting Star và bắt đầu bước vào nhịp sụt giảm sâu kéo dài 1 tháng về vùng giá 32.000 VNĐ/cp (giảm 23.8%). Nhờ sự phân tích chỉ báo sắc bén của Quân, chị Hương đã chốt lời ngay đỉnh SSI trong sự khâm phục tuyệt đối.
 
 ---
 
@@ -95,14 +95,14 @@ Chị Hương tin tưởng phân tích định lượng của Quân nên đồng
 ### 📝 Bài Tập: Tính Toán Mốc Hỗ Trợ Fibonacci & Lập Phương ÁN Mua Gom
 
 **Thông số cổ phiếu HPG:**
-*   HPG hoàn tất pha giảm lớn tại đáy $20.000$ VNĐ/cp.
-*   Sau đó, HPG bước vào pha tăng giá lên đỉnh ngắn hạn tại mức giá $32.000$ VNĐ/cp rồi bắt đầu điều chỉnh giảm (xu hướng cấp 2).
+*   HPG hoàn tất pha giảm lớn tại đáy 20.000 VNĐ/cp.
+*   Sau đó, HPG bước vào pha tăng giá lên đỉnh ngắn hạn tại mức giá 32.000 VNĐ/cp rồi bắt đầu điều chỉnh giảm (xu hướng cấp 2).
 
 **Yêu cầu đối với học viên:**
-1.  Tính toán chính xác 3 mốc giá hỗ trợ Fibonacci thoái lui (Fibonacci Retracement) quan trọng của HPG: mốc **$38.2\%$**, mốc **$50\%$**, và mốc **$61.8\%$**.
+1.  Tính toán chính xác 3 mốc giá hỗ trợ Fibonacci thoái lui (Fibonacci Retracement) quan trọng của HPG: mốc **38.2%**, mốc **50%**, và mốc **61.8%**.
     *   *Công thức tính mốc giá thoái lui:*
         $$\text{Mốc giá} = \text{Đỉnh} - (\text{Đỉnh} - \text{Đáy}) \times \text{Tỷ lệ Fibonacci}$$
-2.  Giả sử trong nhịp giảm này, giá HPG rơi về mức **$24.600$ VNĐ/cp** (sát mốc Fibonacci $61.8\%$) đồng thời chỉ báo RSI đi vào vùng quá bán sâu ở mức **26** và xuất hiện một cây nến Hammer rút chân. Hãy đề xuất phương án giao dịch cụ thể và xác định mốc Stop Loss (cắt lỗ) bảo vệ vốn theo quy tắc kỹ thuật (cắt lỗ dưới đáy cũ $20.000$ VNĐ hoặc dưới nến Hammer).
+2.  Giả sử trong nhịp giảm này, giá HPG rơi về mức **24.600 VNĐ/cp** (sát mốc Fibonacci 61.8%) đồng thời chỉ báo RSI đi vào vùng quá bán sâu ở mức **26** và xuất hiện một cây nến Hammer rút chân. Hãy đề xuất phương án giao dịch cụ thể và xác định mốc Stop Loss (cắt lỗ) bảo vệ vốn theo quy tắc kỹ thuật (cắt lỗ dưới đáy cũ 20.000 VNĐ hoặc dưới nến Hammer).
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
@@ -110,18 +110,18 @@ Chị Hương tin tưởng phân tích định lượng của Quân nên đồng
     *   Khoảng biến động biên độ sóng tăng:
         $$\text{Biên độ} = \text{Đỉnh (32.000)} - \text{Đáy (20.000)} = 12.000\text{ VNĐ}$$
     *   **Mốc Fibonacci 38.2%:**
-        $$\text{Giá 38.2\%} = 32.000 - 12.000 \times 38.2\% = 32.000 - 4.584 = 27.416\text{ VNĐ}$$
+        $$\text{Giá 38.2%} = 32.000 - 12.000 \times 38.2% = 32.000 - 4.584 = 27.416\text{ VNĐ}$$
     *   **Mốc Fibonacci 50%:**
-        $$\text{Giá 50\%} = 32.000 - 12.000 \times 50\% = 32.000 - 6.000 = 26.000\text{ VNĐ}$$
+        $$\text{Giá 50%} = 32.000 - 12.000 \times 50% = 32.000 - 6.000 = 26.000\text{ VNĐ}$$
     *   **Mốc Fibonacci 61.8%:**
-        $$\text{Giá 61.8\%} = 32.000 - 12.000 \times 61.8\% = 32.000 - 7.416 = 24.584\text{ VNĐ}$$
+        $$\text{Giá 61.8%} = 32.000 - 12.000 \times 61.8% = 32.000 - 7.416 = 24.584\text{ VNĐ}$$
 
 2.  **Bước 2: Đề xuất phương án giao dịch:**
-    *   *Bối cảnh:* Giá rơi về $24.600$ VNĐ sát mốc hỗ trợ mạnh Fibonacci $61.8\%$ ($24.584$ VNĐ), đồng thời RSI quá bán sâu ở mức 26 và xuất hiện nến Hammer rút chân. Đây là sự hội tụ (Confluence) hoàn hảo của 3 tín hiệu đảo chiều tăng giá.
+    *   *Bối cảnh:* Giá rơi về 24.600 VNĐ sát mốc hỗ trợ mạnh Fibonacci 61.8% (24.584 VNĐ), đồng thời RSI quá bán sâu ở mức 26 và xuất hiện nến Hammer rút chân. Đây là sự hội tụ (Confluence) hoàn hảo của 3 tín hiệu đảo chiều tăng giá.
     *   *Phương án đặt lệnh:*
-        *   **Vùng mua (Entry Zone):** Mua gom xung quanh vùng giá $24.500 - 24.800$ VNĐ/cp.
-        *   **Mốc cắt lỗ (Stop Loss):** Đặt lệnh cắt lỗ tự động khi giá thủng dưới mức thấp nhất của cây nến Hammer rút chân (ví dụ ở mức $23.500$ VNĐ/cp, tương đương chấp nhận rủi ro lỗ khoảng $5\%$).
-        *   **Mốc chốt lời (Take Profit):** Bán chốt lời khi giá phục hồi lên vùng đỉnh cũ $32.000$ VNĐ/cp (lợi nhuận kỳ vọng đạt $+30\%$).
+        *   **Vùng mua (Entry Zone):** Mua gom xung quanh vùng giá 24.500 - 24.800 VNĐ/cp.
+        *   **Mốc cắt lỗ (Stop Loss):** Đặt lệnh cắt lỗ tự động khi giá thủng dưới mức thấp nhất của cây nến Hammer rút chân (ví dụ ở mức 23.500 VNĐ/cp, tương đương chấp nhận rủi ro lỗ khoảng 5%).
+        *   **Mốc chốt lời (Take Profit):** Bán chốt lời khi giá phục hồi lên vùng đỉnh cũ 32.000 VNĐ/cp (lợi nhuận kỳ vọng đạt +30%).
 
 ---
 
@@ -175,6 +175,36 @@ D. Doanh nghiệp sắp tiến hành chi trả cổ tức bằng tiền mặt.
     *   *Giải thích:* Bollinger Bands co thắt thể hiện biến động giá đang bị nén lại. Tương tự như một lò xo bị nén chặt, khi giải phóng lực nén, giá sẽ bùng nổ biến động rất mạnh theo xu hướng breakout tiếp theo.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Khách hàng hỏi "RSI quá mua sao em vẫn nói hold?" — Giải thích nguyên tắc hội tụ chỉ báo
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu chỉ báo kỹ thuật, biết giải thích sự hội tụ/phân kỳ đơn giản.
+    *   **Anh Minh (Khách hàng biết chút PTKT):** 33 tuổi, tự học RSI và MACD trên YouTube. Đang hold FPT lãi 15%, thấy RSI = 78 nên muốn bán chốt lời.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Minh (giọng tự tin, khoe kiến thức):** *Em ơi, anh tự kiểm tra RSI FPT thấy đang 78 — quá mua rồi! Anh phải bán chốt lời ngay thôi, đúng không em?*
+*   **Broker NextGen (giọng nhẹ nhàng, tôn trọng):** *Dạ anh Minh, anh giỏi quá, tự check RSI luôn! RSI 78 đúng là vào vùng quá mua. Nhưng em cần lưu ý anh 1 điều: RSI quá mua KHÔNG có nghĩa là giá sẽ giảm ngay. Trong xu hướng tăng mạnh, RSI có thể duy trì vùng 70-85 trong nhiều tuần liên tục. Điều quan trọng hơn là kiểm tra SỰ HỘI TỤ hay PHÂN KỲ giữa giá và chỉ báo.*
+*   **Anh Minh (tò mò):** *Hội tụ phân kỳ là gì em?*
+*   **Broker NextGen (giải thích đơn giản):** *Dạ đơn giản thế này: nếu giá FPT tiếp tục tạo đỉnh cao hơn MÀ RSI cũng tạo đỉnh cao hơn — đó là Hội tụ, tín hiệu xu hướng tăng vẫn khỏe, hold tiếp. Nhưng nếu giá tạo đỉnh cao hơn MÀ RSI lại tạo đỉnh thấp hơn — đó là Phân kỳ giảm, cảnh báo đà tăng sắp cạn. Hiện tại FPT: giá tạo đỉnh mới + RSI cũng tạo đỉnh mới + MACD vẫn trên signal + Volume vẫn cao → 4 chỉ báo đều hội tụ tăng. Chưa có lý do bán đâu anh!*
+*   **Anh Minh (ấn tượng):** *Ồ, vậy là RSI quá mua chỉ là 1 góc nhìn thôi, phải xem nhiều chỉ báo kết hợp?*
+*   **Broker NextGen (đúc kết):** *Dạ chính xác anh! Đó là nguyên tắc Indicator Confluence — bán chỉ khi ít nhất 3/4 chỉ báo đồng thuận phân kỳ giảm. Hiện tại FPT vẫn khỏe, anh hold tiếp và đặt trailing stop ở vùng hỗ trợ MA20 để bảo vệ lợi nhuận ạ.*
+*   **Anh Minh (đồng ý):** *Hay quá em! Anh hold tiếp, đặt trailing stop như em nói. Cảm ơn em!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Giải thích Confluence đúng (Technical)** | **45%** | Phân biệt hội tụ vs. phân kỳ; kiểm tra RSI + MACD + Volume + Price action cùng lúc. | / 45 |
+| **Tôn trọng kiến thức KH (Empathy)** | **25%** | Không chê KH sai; khen trước rồi bổ sung kiến thức mới; dạy thêm thay vì phản bác. | / 25 |
+| **Đề xuất hành động bảo vệ lợi nhuận** | **30%** | Trailing stop ở MA20; quy tắc bán khi 3/4 phân kỳ; không bán hoảng. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

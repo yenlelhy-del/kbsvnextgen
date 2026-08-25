@@ -9,12 +9,12 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ High-NAV CRM Audit $\rightarrow$ Graduation Report Drafting).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → High-NAV CRM Audit → Graduation Report Drafting).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi bảy của Lộ trình (Tuần 6 - Chăm sóc khách hàng lớn và Tốt nghiệp).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy cẩn trọng, bảo mật và cực kỳ tinh tế. Thể hiện sự tôn trọng tuyệt đối đối với sự riêng tư và bảo mật thông tin của khách hàng lớn. Luôn khiêm tốn, lắng nghe sâu sắc, tuyệt đối không vồ vập, săn đón thô thiển. Ý thức rõ tầm quan trọng của việc hoàn thành Báo cáo tốt nghiệp thực chiến.
     *   **Skills (Kỹ năng):** Thiết kế danh mục phân bổ tài sản cá nhân hóa (Tailor-made Portfolio) chuẩn Private Banking Style cho khách hàng lớn; viết báo cáo phân tích hiệu suất tài sản định kỳ; soạn thảo hoàn chỉnh Đề cương báo cáo tốt nghiệp NextGen HO3.
-    *   **Knowledge (Kiến thức):** Nắm rõ tâm lý học hành vi và nỗi đau tài chính đặc thù của nhóm khách hàng High-NAV (NAV $\ge$ 1 tỷ đồng). Hiểu sâu cấu trúc và yêu cầu bảo vệ của Báo cáo tốt nghiệp thực chiến.
+    *   **Knowledge (Kiến thức):** Nắm rõ tâm lý học hành vi và nỗi đau tài chính đặc thù của nhóm khách hàng High-NAV (NAV ≥ 1 tỷ đồng). Hiểu sâu cấu trúc và yêu cầu bảo vệ của Báo cáo tốt nghiệp thực chiến.
 
 ---
 
@@ -57,10 +57,10 @@ Broker NextGen áp dụng quy trình 3 bước bọc thép để chinh phục v�
 Hoàn thành **Báo cáo tốt nghiệp thực chiến** là điều kiện bắt buộc cuối cùng để học viên được cấp chứng chỉ tốt nghiệp dự án NextGen 2026 và chính thức ký hợp đồng bổ nhiệm làm Broker chính thức tại Sở Giao Dịch 3 (HO3).
 
 Bản báo cáo tốt nghiệp bắt buộc phải viết chi tiết tối thiểu 3.000 từ bám sát cấu trúc sau:
-1.  **Phần 1: Nhật ký thực chiến 42 ngày:** Tổng hợp quá trình thực thi Daily Routine (Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ Livestream 90 phút). Các bài học kinh nghiệm xử lý khủng hoảng khách hàng.
+1.  **Phần 1: Nhật ký thực chiến 42 ngày:** Tổng hợp quá trình thực thi Daily Routine (Morning Briefing → Content Lab → Livestream 90 phút). Các bài học kinh nghiệm xử lý khủng hoảng khách hàng.
 2.  **Phần 2: Báo cáo hiệu quả phễu chuyển đổi:** Bảng số liệu định lượng chi tiết:
     *   Tổng số lượng tài khoản eKYC mở mới thu được qua các kênh.
-    *   Tổng số lượng tài khoản active Standard (NAV $\ge$ 5 triệu).
+    *   Tổng số lượng tài khoản active Standard (NAV ≥ 5 triệu).
     *   Quy mô NAV huy động lũy kế và tổng Doanh thu thuần (DTT) mang về cho HO3.
 3.  **Phần 3: Bài toán hoạch định tài sản thực tế (Case Study):** Trình bày chi tiết cách Broker thiết lập Tháp tài sản và danh mục phân bổ cho một khách hàng thực tế đã chốt thành công trong quá trình thực tập tại HO3.
 
@@ -73,9 +73,9 @@ Minh (23 tuổi, Broker NextGen HO3) tiếp cận được cô Lan (58 tuổi, c
 Minh đã áp dụng quy trình chăm sóc tinh tế chuẩn HO3 để thuyết phục cô Lan:
 1.  **Lắng nghe thấu cảm:** Minh hẹn gặp cô Lan tại một quán trà yên tĩnh. Suốt buổi gặp, Minh không hề nhắc đến một mã cổ phiếu nào. Anh chỉ lắng nghe cô chia sẻ về nỗi lo lạm phát bào mòn tiền tiết kiệm và mong muốn có dòng tiền đều đặn hàng năm để an dưỡng tuổi già không phiền lụy con cháu.
 2.  **Thiết kế danh mục bọc thép:** Minh thiết kế bản kế hoạch phân bổ tài sản riêng biệt cho cô Lan:
-    *   $50\%$ gửi tiết kiệm và mua trái phiếu chính phủ an toàn lấy dòng tiền đều đặn hàng tháng (Vùng bảo vệ).
-    *   $40\%$ mua gom tích sản cổ phiếu ngân hàng ACB và FPT để hưởng cổ tức tiền mặt bền vững (Vùng tích sản).
-    *   $10\%$ mua chứng chỉ quỹ Diamond ETF FUEVFVND để tăng trưởng (Vùng tăng trưởng).
+    *   50% gửi tiết kiệm và mua trái phiếu chính phủ an toàn lấy dòng tiền đều đặn hàng tháng (Vùng bảo vệ).
+    *   40% mua gom tích sản cổ phiếu ngân hàng ACB và FPT để hưởng cổ tức tiền mặt bền vững (Vùng tích sản).
+    *   10% mua chứng chỉ quỹ Diamond ETF FUEVFVND để tăng trưởng (Vùng tăng trưởng).
 3.  **Thực thi chuyên nghiệp:** Minh gửi cho cô Lan bản báo cáo tài sản định kỳ chỉn chu hàng tháng gửi qua email cá nhân, ghi rõ mức tăng trưởng NAV và lịch chi trả cổ tức thực tế.
 
 ```
@@ -103,9 +103,9 @@ TIẾN TRÌNH CHINH PHỤC KHÁCH HIGH-NAV CỦA MINH:
 
 **Yêu cầu đối với học viên:**
 1.  Lập bảng thiết kế danh mục phân bổ tài sản chi tiết cho chú Hùng theo cấu trúc Tháp tài sản 3 tầng của FinPeace:
-    *   **Vùng 1 (Bảo vệ - Gửi tiết kiệm & Trái phiếu an toàn):** Phân bổ tỷ lệ **$50\%$** tổng vốn (lãi suất suất bình quân đạt **$6\%$/năm**).
-    *   **Vùng 2 (Tích sản - ACB & FPT):** Phân bổ tỷ lệ **$40\%$** tổng vốn (giả định tỷ suất cổ tức tiền mặt đều đặn hàng năm nhận được là **$6.5\%$/năm** trên giá trị vốn đầu tư gốc).
-    *   **Vùng 3 (Tăng trưởng - Diamond ETF FUEVFVND):** Phân bổ tỷ lệ **$10\%$** tổng vốn (tỷ suất tăng trưởng kỳ vọng đạt **$12\%$/năm**, không chi trả cổ tức tiền mặt mà tự động tái đầu tư).
+    *   **Vùng 1 (Bảo vệ - Gửi tiết kiệm & Trái phiếu an toàn):** Phân bổ tỷ lệ **50%** tổng vốn (lãi suất suất bình quân đạt **6%/năm**).
+    *   **Vùng 2 (Tích sản - ACB & FPT):** Phân bổ tỷ lệ **40%** tổng vốn (giả định tỷ suất cổ tức tiền mặt đều đặn hàng năm nhận được là **6.5%/năm** trên giá trị vốn đầu tư gốc).
+    *   **Vùng 3 (Tăng trưởng - Diamond ETF FUEVFVND):** Phân bổ tỷ lệ **10%** tổng vốn (tỷ suất tăng trưởng kỳ vọng đạt **12%/năm**, không chi trả cổ tức tiền mặt mà tự động tái đầu tư).
 2.  Tính toán số tiền giải ngân thực tế cho từng vùng tài sản.
 3.  Tính tổng dòng tiền đều đặn hàng năm (tiền mặt thực tế thu về từ lãi tiết kiệm/trái phiếu và cổ tức ACB/FPT) chú Hùng nhận được. Đánh giá xem có đạt mục tiêu dòng tiền 150 triệu của chú Hùng đề ra ban đầu không.
 
@@ -113,23 +113,23 @@ TIẾN TRÌNH CHINH PHỤC KHÁCH HIGH-NAV CỦA MINH:
 
 1.  **Bước 1: Tính số tiền giải ngân thực tế cho từng vùng tài sản:**
     *   **Vùng 1 (Bảo vệ - 50%):**
-        $$\text{Tiền Vùng 1} = 3.000.000.000 \times 50\% = 1.500.000.000\text{ VNĐ}$$
+        $$\text{Tiền Vùng 1} = 3.000.000.000 \times 50% = 1.500.000.000\text{ VNĐ}$$
     *   **Vùng 2 (Tích sản - 40%):**
-        $$\text{Tiền Vùng 2} = 3.000.000.000 \times 40\% = 1.200.000.000\text{ VNĐ}$$
+        $$\text{Tiền Vùng 2} = 3.000.000.000 \times 40% = 1.200.000.000\text{ VNĐ}$$
     *   **Vùng 3 (Tăng trưởng - 10%):**
-        $$\text{Tiền Vùng 3} = 3.000.000.000 \times 10\% = 300.000.000\text{ VNĐ}$$
+        $$\text{Tiền Vùng 3} = 3.000.000.000 \times 10% = 300.000.000\text{ VNĐ}$$
 
 2.  **Bước 2: Tính dòng tiền mặt thu về hàng năm của chú Hùng:**
-    *   Dòng tiền từ Vùng 1 (Lãi suất bình quân $6\%$/năm):
-        $$\text{Dòng tiền Vùng 1} = 1.500.000.000 \times 6\% = 90.000.000\text{ VNĐ/năm}$$
-    *   Dòng tiền từ Vùng 2 (Tỷ suất cổ tức tiền mặt $6.5\%$/năm):
-        $$\text{Dòng tiền Vùng 2} = 1.200.000.000 \times 6.5\% = 78.000.000\text{ VNĐ/năm}$$
+    *   Dòng tiền từ Vùng 1 (Lãi suất bình quân 6%/năm):
+        $$\text{Dòng tiền Vùng 1} = 1.500.000.000 \times 6% = 90.000.000\text{ VNĐ/năm}$$
+    *   Dòng tiền từ Vùng 2 (Tỷ suất cổ tức tiền mặt 6.5%/năm):
+        $$\text{Dòng tiền Vùng 2} = 1.200.000.000 \times 6.5% = 78.000.000\text{ VNĐ/năm}$$
     *   Tổng dòng tiền mặt thực nhận hàng năm:
         $$\text{Tổng dòng tiền nhận được} = 90.000.000 + 78.000.000 = 168.000.000\text{ VNĐ/năm}$$
 
 3.  **Bước 3: Đánh giá hiệu quả danh mục:**
-    *   Tổng dòng tiền thực nhận hàng năm của chú Hùng đạt **168.000.000 VNĐ**, lớn hơn mốc mục tiêu chi tiêu **150.000.000 VNĐ** đề ra ban đầu ($112\%$).
-    *   Đồng thời, chú Hùng vẫn giữ nguyên được $100\%$ quy mô vốn gốc 3 tỷ đồng, và có thêm khoản thặng dư tăng trưởng dài hạn của phần vốn 300 triệu đồng nằm ở Diamond ETF để chống lại sự bào mòn của lạm phát dài hạn.
+    *   Tổng dòng tiền thực nhận hàng năm của chú Hùng đạt **168.000.000 VNĐ**, lớn hơn mốc mục tiêu chi tiêu **150.000.000 VNĐ** đề ra ban đầu (112%).
+    *   Đồng thời, chú Hùng vẫn giữ nguyên được 100% quy mô vốn gốc 3 tỷ đồng, và có thêm khoản thặng dư tăng trưởng dài hạn của phần vốn 300 triệu đồng nằm ở Diamond ETF để chống lại sự bào mòn của lạm phát dài hạn.
     *   *Kết luận:* Danh mục thiết kế vô cùng hoàn hảo, bọc thép an toàn tuyệt đối và giải quyết trọn vẹn nỗi đau dòng tiền hưu trí cho chú Hùng.
 
 ---
@@ -165,7 +165,7 @@ D. Mời khách hàng tham gia các buổi Webinar vĩ mô chuyên sâu của HO
 ### Câu 5: Phong cách tư vấn "Private Banking Style" được đặc trưng bởi yếu tố nào sau đây?
 A. Chăm sóc khách hàng đại trà bằng tin nhắn spam tự động hàng loạt.
 B. Chăm sóc cá nhân hóa sâu sắc, điềm tĩnh lắng nghe mục tiêu cuộc đời của khách, thiết kế danh mục phân bổ tài sản Tailor-made riêng biệt và báo cáo định kỳ chỉn chu.
-C. Cam kết chắc chắn bao lỗ $100\%$ cho khách hàng lớn.
+C. Cam kết chắc chắn bao lỗ 100% cho khách hàng lớn.
 D. Chỉ phục vụ khách hàng vào ban đêm.
 
 ---
@@ -184,6 +184,35 @@ D. Chỉ phục vụ khách hàng vào ban đêm.
     *   *Giải thích:* Khách hàng lớn cần sự tinh tế, kín đáo và chuyên nghiệp cao nhất. Phong cách Private Banking Style nâng tầm Broker từ một nhân viên môi giới thông thường thành một Wealth Advisor đẳng cấp đồng hành cùng gia đình khách hàng.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Gọi điện báo cáo định kỳ cho khách hàng VIP (NAV 5 tỷ) — Cá nhân hóa tư vấn Private Banking style
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Chuyên nghiệp, chuẩn bị báo cáo cá nhân hóa, am hiểu nhu cầu High-NAV.
+    *   **Cô Lan (Khách hàng VIP, NAV 5 tỷ):** 55 tuổi, chủ doanh nghiệp FDI. Cần báo cáo ngắn gọn, chính xác, không dài dòng. Quý trọng sự tôn trọng và riêng tư.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Broker NextGen (giọng lịch sự, đúng giờ hẹn):** *Dạ cô Lan, em chào cô. Đúng 17h thứ Sáu như cô hẹn, em gọi báo cáo tuần cho cô ạ. Cô có 5 phút nghe em tóm tắt không ạ?*
+*   **Cô Lan (giọng ngắn gọn, quyền lực):** *Nói ngắn gọn đi em. Tuần này danh mục cô thế nào?*
+*   **Broker NextGen (report chuẩn Private Banking):** *Dạ vâng! Tổng NAV cô hiện tại: 5.28 tỷ, tăng 1.2% so với tuần trước. Cổ phiếu: FPT tăng 3%, ACB tăng 1.5%, VNM giảm nhẹ 0.8%. Cổ tức: ACB vừa chốt quyền chia cổ tức 15% bằng cổ phiếu, cô sẽ nhận thêm 1.200 cổ ACB vào tháng sau. Phần ETF Diamond chiếm 30% danh mục — ổn định, không cần điều chỉnh. Em có 1 khuyến nghị: Research KBSV vừa ra báo cáo nâng mục tiêu giá FPT lên 165k từ 145k. Em đề xuất cô giữ nguyên FPT, không chốt lời sớm ạ.*
+*   **Cô Lan (hài lòng):** *Tốt. Còn gì nữa không?*
+*   **Broker NextGen (thêm giá trị):** *Dạ, tuần tới có phiên đáo hạn phái sinh VN30F2506 vào thứ Năm — thường biến động mạnh. Em sẽ theo dõi sát và nhắn tin cô nếu cần điều chỉnh. Ngoài ra, KBSV vừa ra gói ưu đãi phí giao dịch 0.08% cho khách VIP — em đã đăng ký cho cô rồi, có hiệu lực từ thứ Hai tuần sau ạ.*
+*   **Cô Lan (đánh giá cao):** *Em làm tốt lắm. Cứ giữ như thế nhé. Tuần sau báo cáo tiếp.*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Báo cáo cá nhân hóa (Report Quality)** | **40%** | NAV chính xác, % thay đổi, cổ tức, sự kiện sắp tới; ngắn gọn đúng 5 phút. | / 40 |
+| **Phong cách Private Banking (Service Quality)** | **35%** | Gọi đúng giờ hẹn; xưng hô tôn trọng; proactive (đăng ký ưu đãi hộ KH). | / 35 |
+| **Khuyến nghị dựa trên Research KBSV** | **25%** | Trích dẫn báo cáo Research; không tự ý khuyến nghị ngoài nguồn chính thức. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

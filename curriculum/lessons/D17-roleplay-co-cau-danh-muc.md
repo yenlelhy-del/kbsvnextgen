@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Afternoon Role-play Session).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Afternoon Role-play Session).
 *   **Vị trí trong lộ trình:** Ngày thứ mười bảy của Lộ trình (Tuần 3 - Thực hành kỹ năng sắm vai).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Thể hiện bản lĩnh điềm tĩnh, tự tin và vững vàng trước các phản ứng gay gắt của khách hàng. Tuyệt đối không có thái độ trốn tránh trách nhiệm khi thị trường sụt giảm. Đặt tính kỷ luật hành vi và sự an toàn tài sản của khách hàng lên hàng đầu.
@@ -22,7 +22,7 @@
 
 ### 1. Bản Chất Của Kỹ Năng Sắm Vai (Role-play) Thực Chiến Tại HO3
 
-Trên thị trường chứng khoán, khi tài sản của khách hàng bị sụt giảm $15\% - 20\%$ trong các nhịp điều chỉnh mạnh, họ sẽ rơi vào trạng thái khủng hoảng tâm lý cực kỳ nghiêm trọng. Họ không thể suy nghĩ logic bằng Hệ thống 2 mà hoàn toàn bị chi phối bởi Hệ thống 1 cảm xúc (sợ hãi, giận dữ, tuyệt vọng). Họ sẽ gọi điện liên tục cho Broker để trút giận, chất vấn hoặc đòi đặt lệnh bán tháo đúng đáy.
+Trên thị trường chứng khoán, khi tài sản của khách hàng bị sụt giảm 15% - 20% trong các nhịp điều chỉnh mạnh, họ sẽ rơi vào trạng thái khủng hoảng tâm lý cực kỳ nghiêm trọng. Họ không thể suy nghĩ logic bằng Hệ thống 2 mà hoàn toàn bị chi phối bởi Hệ thống 1 cảm xúc (sợ hãi, giận dữ, tuyệt vọng). Họ sẽ gọi điện liên tục cho Broker để trút giận, chất vấn hoặc đòi đặt lệnh bán tháo đúng đáy.
 
 Nếu một Broker chỉ học lý thuyết trên giấy tờ mà chưa từng thực hành sắm vai (role-play) đối mặt trực tiếp với các tình huống xung đột này, họ sẽ lập tức bị "cứng họng", ú ớ hoặc có thái độ đôi co cãi vã với khách hàng, làm đổ vỡ hoàn toàn mối quan hệ hợp tác.
 
@@ -61,23 +61,23 @@ Khi danh mục của khách hàng đang nắm giữ quá nhiều mã cổ phiế
 *   **Bước 1: Xoa dịu và Đồng cảm (Empathy):** Thừa nhận nỗi đau sụt giảm tài sản của khách hàng, hạ thấp tông giọng, lắng nghe chủ động không ngắt lời để họ trút hết sự bực dọc.
 *   **Bước 2: Cô lập danh mục (Isolation):** Giúp khách hàng phân tách rõ ràng danh mục hiện tại thành hai phần riêng biệt: Phần cổ phiếu cơ bản tốt (FPT, ACB) và Phần cổ phiếu đầu cơ rác (LDG, AGM). Khẳng định phần cổ phiếu tốt chắc chắn sẽ phục hồi để khách yên tâm.
 *   **Bước 3: Phân tích so sánh khách quan (Diagnosis):** Mở bảng chấm điểm định lượng InvestWise và Piotroski F-Score. Chỉ ra các số liệu yếu kém thực tế của cổ phiếu rác (nợ vay cao gấp nhiều lần VCSH, dòng tiền CFO âm liên tục) để chứng minh doanh nghiệp này không có khả năng tự phục hồi.
-*   **Bước 4: Phân tích Chi phí cơ hội (Opportunity Cost):** Làm phép tính so sánh: *"Nếu anh chị tiếp tục giữ mã rác này, phải mất 3 - 5 năm nữa may ra mới hòa vốn (với điều kiện công ty không bị phá sản). Nhưng nếu anh chị bán đi thu hồi dòng vốn đó chuyển sang mua tích sản ACB ở giá rẻ hiện tại, sức mạnh của lãi kép và tăng trưởng $15\%$/năm sẽ giúp anh chị bù đắp lại khoản lỗ đó nhanh gấp đôi"*.
-*   **Bước 5: Kêu gọi hành động quyết liệt (Action Call):** Hướng dẫn khách hàng đặt lệnh cơ cấu từng phần (ví dụ bán trước $50\%$ mã rác hôm nay để chuyển ngay sang ACB) để họ làm quen với việc cắt lỗ mà không bị sốc tâm lý.
+*   **Bước 4: Phân tích Chi phí cơ hội (Opportunity Cost):** Làm phép tính so sánh: *"Nếu anh chị tiếp tục giữ mã rác này, phải mất 3 - 5 năm nữa may ra mới hòa vốn (với điều kiện công ty không bị phá sản). Nhưng nếu anh chị bán đi thu hồi dòng vốn đó chuyển sang mua tích sản ACB ở giá rẻ hiện tại, sức mạnh của lãi kép và tăng trưởng 15%/năm sẽ giúp anh chị bù đắp lại khoản lỗ đó nhanh gấp đôi"*.
+*   **Bước 5: Kêu gọi hành động quyết liệt (Action Call):** Hướng dẫn khách hàng đặt lệnh cơ cấu từng phần (ví dụ bán trước 50% mã rác hôm nay để chuyển ngay sang ACB) để họ làm quen với việc cắt lỗ mà không bị sốc tâm lý.
 
 ---
 
 ### 3. Case Study Thực Tế: Broker Hải Thuyết Phục Anh Tiến Cắt Lỗ Cổ Phiếu Rác Bất Động Sản
 
-Vào tháng 10/2024, khi thị trường chứng khoán bước vào nhịp điều chỉnh sâu, tài khoản của anh Tiến (38 tuổi, chủ xưởng gỗ, nhóm tính cách **D-I**) bị âm tạm thời hơn 120 triệu đồng. Nguyên nhân là do anh tự ý dùng 400 triệu mua đuổi cổ phiếu đầu cơ **LDG** ở vùng giá $8.000$ VNĐ/cp do nghe tin đồn sóng đất đai. Đến khi LDG bị đứt xích rơi tự do về giá $3.500$ VNĐ/cp (lỗ $56\%$), anh Tiến vô cùng hoảng sợ và bực bội. Anh liên tục nhắn tin trách móc thị trường và có ý định bán tháo sạch sẽ để rút tiền mặt về két sắt.
+Vào tháng 10/2024, khi thị trường chứng khoán bước vào nhịp điều chỉnh sâu, tài khoản của anh Tiến (38 tuổi, chủ xưởng gỗ, nhóm tính cách **D-I**) bị âm tạm thời hơn 120 triệu đồng. Nguyên nhân là do anh tự ý dùng 400 triệu mua đuổi cổ phiếu đầu cơ **LDG** ở vùng giá 8.000 VNĐ/cp do nghe tin đồn sóng đất đai. Đến khi LDG bị đứt xích rơi tự do về giá 3.500 VNĐ/cp (lỗ 56%), anh Tiến vô cùng hoảng sợ và bực bội. Anh liên tục nhắn tin trách móc thị trường và có ý định bán tháo sạch sẽ để rút tiền mặt về két sắt.
 
 Broker Hải (chi nhánh HO3) sau khi nhận được cảnh báo CRM đã áp dụng xuất sắc quy trình 5 bước cơ cấu danh mục:
 
 1.  **Bước 1 (Xoa dịu):** Hải gọi điện chủ động lắng nghe anh Tiến cằn nhằn suốt 3 phút mà không hề ngắt lời hay giải thích. Anh dùng tông giọng ấm áp, từ tốn để xoa dịu: *"Dạ anh Tiến, em hoàn toàn hiểu được sự khó chịu của anh khi nhìn thấy khoản vốn kinh doanh xưởng gỗ của mình bị hao hụt tạm thời như vậy"*.
 2.  **Bước 2 & 3 (Cô lập & Chẩn đoán):** Hải mở bảng tính điểm InvestWise chỉ ra điểm số của LDG chỉ đạt **5/20 điểm** do dòng tiền CFO âm nặng 4 năm liên tục và ban lãnh đạo đang bị điều tra pháp lý. Hải so sánh trực quan: *"Anh Tiến là chủ xưởng gỗ lớn, anh dư sức biết nếu một đối tác nợ tiền mình dai dẳng và không có năng lực sản xuất thực tế, mình càng cho họ nợ thêm thì càng mất vốn. LDG hiện tại đang ở trạng thái mất hoàn toàn năng lực tài chính như vậy"*.
-3.  **Bước 4 (Chi phí cơ hội):** Hải làm phép tính Excel: *"Nếu anh gồng 180 triệu còn lại ở LDG, với rủi ro hủy niêm yết, anh có thể mất trắng. Nhưng nếu anh chuyển ngay 180 triệu này sang mua tích sản **ACB** ở vùng giá chiết khấu rẻ hiện tại, ACB với tăng trưởng ổn định $15\%$/năm và cổ tức tiền mặt đều đặn sẽ giúp anh thu hồi lại 120 triệu đã mất chỉ sau 3 năm một cách cực kỳ chắc chắn"*.
-4.  **Bước 5 (Hành động quyết liệt):** Thuyết phục anh Tiến đặt lệnh bán trước $50\%$ số lượng LDG ngay trong phiên và chuyển sang mua gom ACB.
+3.  **Bước 4 (Chi phí cơ hội):** Hải làm phép tính Excel: *"Nếu anh gồng 180 triệu còn lại ở LDG, với rủi ro hủy niêm yết, anh có thể mất trắng. Nhưng nếu anh chuyển ngay 180 triệu này sang mua tích sản **ACB** ở vùng giá chiết khấu rẻ hiện tại, ACB với tăng trưởng ổn định 15%/năm và cổ tức tiền mặt đều đặn sẽ giúp anh thu hồi lại 120 triệu đã mất chỉ sau 3 năm một cách cực kỳ chắc chắn"*.
+4.  **Bước 5 (Hành động quyết liệt):** Thuyết phục anh Tiến đặt lệnh bán trước 50% số lượng LDG ngay trong phiên và chuyển sang mua gom ACB.
 
-Nhờ kịch bản thuyết phục sắc bén và sự thấu cảm cao, anh Tiến đã vượt qua cái tôi nhóm D, chấp nhận đặt lệnh cắt bỏ LDG và chuyển đổi sang ACB. Chỉ sau 1 năm, cổ phiếu ACB tăng trưởng tốt cộng với nhận cổ tức tiền mặt đã giúp anh Tiến thu hồi lại hơn $70\%$ khoản lỗ cũ trong sự bình an, thảnh thơi đầu óc để tập trung sản xuất xưởng gỗ.
+Nhờ kịch bản thuyết phục sắc bén và sự thấu cảm cao, anh Tiến đã vượt qua cái tôi nhóm D, chấp nhận đặt lệnh cắt bỏ LDG và chuyển đổi sang ACB. Chỉ sau 1 năm, cổ phiếu ACB tăng trưởng tốt cộng với nhận cổ tức tiền mặt đã giúp anh Tiến thu hồi lại hơn 70% khoản lỗ cũ trong sự bình an, thảnh thơi đầu óc để tập trung sản xuất xưởng gỗ.
 
 ---
 
@@ -89,7 +89,7 @@ Nhờ kịch bản thuyết phục sắc bén và sự thấu cảm cao, anh Ti�
 *   **Họ tên:** Chị Thư, 35 tuổi.
 *   **Nghề nghiệp:** Kinh doanh spa thẩm mỹ.
 *   **Tính cách:** Nhóm **I** (cảm xúc, dễ hoảng loạn, sợ mất mặt).
-*   **Tình huống tài khoản:** Chị Thư đang sử dụng Margin tỉ lệ $1:1$ mua cổ phiếu bất động sản đầu cơ **DXG** ở mức giá $22.000$ VNĐ/cp (tổng giá trị danh mục là 600 triệu đồng, trong đó có 300 triệu tiền vay Margin của KBSV). Giá DXG hiện tại sụt giảm mạnh về $14.000$ VNĐ/cp (giảm $36\%$). Tài khoản của chị Thư bị âm tạm thời 240 triệu đồng (vốn gốc 300 triệu chỉ còn lại 60 triệu tiền mặt thực tế). Hệ thống KBSV HO3 chuẩn bị gửi thông báo **Call Margin** yêu cầu chị Thư phải nộp thêm 100 triệu tiền mặt trong phiên ngày mai hoặc bán bớt cổ phiếu để nâng tỷ lệ an toàn. Chị Thư hoảng loạn, khóc lóc gọi điện đòi gồng lỗ đến cùng vì sợ cắt lỗ sẽ mất hết tiền tiết kiệm dưỡng già.
+*   **Tình huống tài khoản:** Chị Thư đang sử dụng Margin tỉ lệ 1:1 mua cổ phiếu bất động sản đầu cơ **DXG** ở mức giá 22.000 VNĐ/cp (tổng giá trị danh mục là 600 triệu đồng, trong đó có 300 triệu tiền vay Margin của KBSV). Giá DXG hiện tại sụt giảm mạnh về 14.000 VNĐ/cp (giảm 36%). Tài khoản của chị Thư bị âm tạm thời 240 triệu đồng (vốn gốc 300 triệu chỉ còn lại 60 triệu tiền mặt thực tế). Hệ thống KBSV HO3 chuẩn bị gửi thông báo **Call Margin** yêu cầu chị Thư phải nộp thêm 100 triệu tiền mặt trong phiên ngày mai hoặc bán bớt cổ phiếu để nâng tỷ lệ an toàn. Chị Thư hoảng loạn, khóc lóc gọi điện đòi gồng lỗ đến cùng vì sợ cắt lỗ sẽ mất hết tiền tiết kiệm dưỡng già.
 
 **Yêu cầu đối với học viên:**
 1.  Viết kịch bản đoạn thoại role-play chi tiết giữa Broker NextGen và Chị Thư (độ dài tối thiểu 500 từ).
@@ -112,7 +112,7 @@ Nhờ kịch bản thuyết phục sắc bén và sự thấu cảm cao, anh Ti�
 >
 > *   **Bước 2 & 3: Cô lập rủi ro & Chẩn đoán tài sản (Felt):**
 >     *"Dạ chị Thư, em xin giải thích cơ chế rất thực tế để chị nắm rõ ạ. Trước đây, nhiều khách hàng bên spa của chị khi mới đầu tư cũng gặp tình trạng Call Margin tương tự và cố gắng gồng nợ giống hệt chị. Nhưng cơ chế của hệ thống là tự động, nếu ngày mai chị không nộp thêm tiền hoặc bán hạ tỷ trọng, đúng 14h00 hệ thống buộc phải bán giải chấp bắt buộc (Force Sell) cổ phiếu DXG của chị bằng mọi giá để thu hồi nợ vay.*
->     *   *Hiện tại, DXG có tỷ lệ Nợ/VCSH vượt quá $1.5$ lần, dòng tiền kinh doanh âm nặng nên đà giảm rất cực đoan. Nếu chị cố gồng mà DXG giảm thêm $2$ phiên sàn nữa, phần vốn gốc 300 triệu ban đầu của chị có nguy cơ bị bốc hơi sạch sẽ về số không. Việc này giống như spa của chị đang bị cháy một phòng xông hơi, nếu chị không đóng cửa phòng đó lại ngay để chữa cháy, ngọn lửa sẽ thiêu rụi toàn bộ cơ sở spa của chị."*
+>     *   *Hiện tại, DXG có tỷ lệ Nợ/VCSH vượt quá 1.5 lần, dòng tiền kinh doanh âm nặng nên đà giảm rất cực đoan. Nếu chị cố gồng mà DXG giảm thêm 2 phiên sàn nữa, phần vốn gốc 300 triệu ban đầu của chị có nguy cơ bị bốc hơi sạch sẽ về số không. Việc này giống như spa của chị đang bị cháy một phòng xông hơi, nếu chị không đóng cửa phòng đó lại ngay để chữa cháy, ngọn lửa sẽ thiêu rụi toàn bộ cơ sở spa của chị."*
 >
 > **Chị Thư (giọng hoang mang):** *Trời ơi, mất trắng luôn hả em? Thế giờ chị phải làm thế nào? Cắt lỗ thì chị xót tiền lắm, chị mất hơn 200 triệu rồi...*
 >
@@ -121,9 +121,9 @@ Nhờ kịch bản thuyết phục sắc bén và sự thấu cảm cao, anh Ti�
 > *   **Bước 4 & 5: Phân tích chi phí cơ hội & Kêu gọi hành động quyết liệt (Found):**
 >     *"Dạ em rất hiểu chị rất xót khi phải hiện thực hóa khoản lỗ. Nhưng bán cắt lỗ lúc này không phải là mất đi, mà là chúng ta đang **giải cứu số vốn gốc 600.000 VNĐ thực tế còn lại** để xây dựng lại từ đầu trên một nền móng an toàn.*
 >     *   *Em đề xuất phương án xử lý quyết liệt ngay trong phiên sáng nay như sau:*
->     *   *Chị đặt lệnh bán cắt lỗ $50\%$ số lượng cổ phiếu DXG hiện có (tương đương thu về 150 triệu tiền mặt). Số tiền này sẽ được dùng để trả ngay nợ vay Margin của KBSV, đưa tài khoản của chị thoát hoàn toàn khỏi diện Call Margin nguy hiểm.*
->     *   *Từ tháng sau, dòng thặng dư kinh doanh spa của chị, chúng ta tuyệt đối không nộp vào mua trung bình giá xuống DXG nữa. Mà em sẽ hướng dẫn chị cài đặt lệnh tự động tích sản định kỳ SIP vào cổ phiếu **ACB** ở tài khoản thường đuôi 1. ACB là doanh nghiệp bọc thép có tăng trưởng đều đặn $15\%$/năm. Sức mạnh lãi kép của ACB sẽ giúp chị thu hồi lại khoản lỗ của DXG một cách cực kỳ thảnh thơi và an toàn.*
->     *   *Chị đồng ý đặt lệnh bán hạ $50\%$ DXG ngay bây giờ để tối nay chị có thể ngủ ngon giấc và gia đình được bình an không chị Thư?"*
+>     *   *Chị đặt lệnh bán cắt lỗ 50% số lượng cổ phiếu DXG hiện có (tương đương thu về 150 triệu tiền mặt). Số tiền này sẽ được dùng để trả ngay nợ vay Margin của KBSV, đưa tài khoản của chị thoát hoàn toàn khỏi diện Call Margin nguy hiểm.*
+>     *   *Từ tháng sau, dòng thặng dư kinh doanh spa của chị, chúng ta tuyệt đối không nộp vào mua trung bình giá xuống DXG nữa. Mà em sẽ hướng dẫn chị cài đặt lệnh tự động tích sản định kỳ SIP vào cổ phiếu **ACB** ở tài khoản thường đuôi 1. ACB là doanh nghiệp bọc thép có tăng trưởng đều đặn 15%/năm. Sức mạnh lãi kép của ACB sẽ giúp chị thu hồi lại khoản lỗ của DXG một cách cực kỳ thảnh thơi và an toàn.*
+>     *   *Chị đồng ý đặt lệnh bán hạ 50% DXG ngay bây giờ để tối nay chị có thể ngủ ngon giấc và gia đình được bình an không chị Thư?"*
 >
 > **Chị Thư (thở dài, đồng ý):** *Ừ... Nghe em phân tích cháy spa thì chị sợ rồi. Thôi em đặt lệnh bán bớt một nửa DXG cho chị đi, đưa tài khoản về mức an toàn giúp chị. Rồi lập kế hoạch tích sản ACB cho chị từ tháng sau nhé. Cảm ơn em đã tư vấn rõ ràng chứ không chị cứ cuống cả lên.*
 >
@@ -161,7 +161,7 @@ D. Khuyên khách hàng chuyển sang chơi phái sinh để gỡ gạc nhanh ch
 
 ### Câu 5: Khi tài khoản Margin của khách hàng chạm ngưỡng Call Margin nguy hiểm, hành động tư vấn quản trị rủi ro chuẩn mực của Broker NextGen là gì?
 A. Khuyên khách hàng vay mượn thêm nợ ngoài lãi suất cao để nộp vào gồng lỗ.
-B. Tư vấn khách hàng bán hạ tỷ trọng $50\%$ cổ phiếu đầu cơ yếu kém ngay trong phiên để trả nợ Margin, đưa tài khoản về tỷ lệ an toàn ($D/A \approx 45\%$) để bảo vệ phần vốn gốc còn lại.
+B. Tư vấn khách hàng bán hạ tỷ trọng 50% cổ phiếu đầu cơ yếu kém ngay trong phiên để trả nợ Margin, đưa tài khoản về tỷ lệ an toàn ($D/A ≈ 45%$) để bảo vệ phần vốn gốc còn lại.
 C. Khuyên khách hàng tắt bảng điện, kệ hệ thống tự động giải chấp bắt buộc.
 D. Yêu cầu khách hàng chuyển toàn bộ tiền tiết kiệm hưu trí của bố mẹ vào tài khoản.
 
@@ -172,7 +172,7 @@ D. Yêu cầu khách hàng chuyển toàn bộ tiền tiết kiệm hưu trí c�
 *   **Câu 1: Chọn B.**
     *   *Giải thích:* Khi khách hàng hoảng loạn gọi điện quát tháo, Broker không có thời gian để suy nghĩ hay tra cứu tài liệu. Chỉ có phản xạ ngôn ngữ tự động được tôi luyện qua hàng chục giờ thực hành sắm vai mới giúp Broker giữ được sự điềm tĩnh và đưa ra câu trả lời chuẩn xác nhất.
 *   **Câu 2: Chọn B.**
-    *   *Giải thích:* Cô lập danh mục giúp giải tỏa $50\%$ áp lực tâm lý cho khách. Khi họ biết các mã tốt như FPT/ACB chắc chắn an toàn và sẽ phục hồi, họ sẽ bớt hoảng loạn và dễ dàng chấp nhận việc bán cắt lỗ phần cổ phiếu đầu cơ rác còn lại.
+    *   *Giải thích:* Cô lập danh mục giúp giải tỏa 50% áp lực tâm lý cho khách. Khi họ biết các mã tốt như FPT/ACB chắc chắn an toàn và sẽ phục hồi, họ sẽ bớt hoảng loạn và dễ dàng chấp nhận việc bán cắt lỗ phần cổ phiếu đầu cơ rác còn lại.
 *   **Câu 3: Chọn B.**
     *   *Giải thích:* Lời đầu tiên khi khách gọi điện giận dữ phải là lời đồng cảm (Feel-Felt) để hạ nhiệt cảm xúc của họ. Chỉ khi cảm xúc được giải tỏa, họ mới chịu mở lòng lắng nghe phần giải thích giải pháp (Found) ở các bước sau.
 *   **Câu 4: Chọn B.**
@@ -181,6 +181,37 @@ D. Yêu cầu khách hàng chuyển toàn bộ tiền tiết kiệm hưu trí c�
     *   *Giải thích:* Bán hạ tỷ trọng một phần cổ phiếu yếu là giải pháp tối ưu nhất để tự giải cứu tài khoản trước khi bị Force Sell cưỡng bức ở mức giá xấu nhất cuối phiên. Đây là kỹ năng quản trị rủi ro bắt buộc của Broker NextGen.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Thuyết phục khách hàng nhóm S "gồng lỗ" 40% cắt lỗ cổ phiếu đầu cơ rác để cơ cấu sang danh mục tích sản bọc thép
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Điềm tĩnh, kiên nhẫn, sử dụng quy trình 5 bước thuyết phục cơ cấu danh mục.
+    *   **Chị Tuyết (Khách hàng F0 nhóm S):** 45 tuổi, giáo viên. Đang gồng lỗ -40% mã HQC (BĐS nợ cao) từ 6 tháng. Rất sợ bán lỗ vì tâm lý "bán là mất thật". Muốn chờ về bờ. Giọng buồn, thiếu quyết đoán.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Chị Tuyết (giọng buồn bã, chậm rãi):** *Em ơi, con HQC chị mua hồi đầu năm giờ lỗ 40% rồi. Chị biết nó xấu nhưng bán bây giờ thì mất thật mấy chục triệu. Chị cứ giữ chờ nó về bờ rồi bán được không em? Dù chờ thêm năm nữa chị cũng chịu được.*
+*   **Broker NextGen (giọng ấm áp, thấu cảm):** *Dạ chị Tuyết, em hiểu cảm giác xót ruột khi nhìn khoản lỗ -40% này. Chị lo lắng là hoàn toàn chính đáng. Nhưng trước khi quyết định giữ hay bán, cho em 3 phút phân tích cùng chị một bài toán chi phí cơ hội nhé, rồi chị quyết được không ạ?*
+*   **Chị Tuyết (do dự):** *Chi phí cơ hội là gì hả em? Chị không hiểu chuyên môn lắm đâu, em nói đơn giản cho chị nghe.*
+*   **Broker NextGen (giọng rõ ràng, chậm):** *Dạ đơn giản thế này ạ. Con HQC của chị đang lỗ -40%, để nó về bờ thì cần tăng +67%. Theo báo cáo Research KBSV, HQC có nợ vay gấp 4 lần vốn chủ, dòng tiền kinh doanh âm 3 quý liên tiếp — khả năng phục hồi +67% rất thấp. Trong khi đó, nếu chị chuyển số tiền còn lại sang tích sản ACB — ngân hàng đầu ngành, lợi nhuận tăng 20%/năm, cổ tức 15% — thì chỉ trong 2 năm chị đã thu hồi được toàn bộ khoản lỗ, thậm chí có lãi. Nghĩa là giữ HQC mới là "mất tiền thật" vì tiền của chị bị chôn vùi không sinh lời, còn cơ cấu sang ACB mới là hành động "cứu tiền" cho chị.*
+*   **Chị Tuyết (bắt đầu suy nghĩ):** *Nhưng bán HQC bây giờ thì lỗ thật rồi kia kìa em, tiếc lắm...*
+*   **Broker NextGen (kiên nhẫn, dùng ẩn dụ):** *Em hiểu ạ. Nhưng chị nghĩ thế này: nếu chị đang đứng trong một ngôi nhà bị thủng mái, mưa dột tứ bề, mà chị cứ ở lại vì "tiếc công sơn tường đẹp" — thì mỗi ngày mưa dột thêm, tường càng hỏng nặng. Việc dọn sang căn nhà mới vững chắc mới là bảo vệ tài sản. Chị không bán lỗ, chị đang "dời nhà" để bảo vệ tương lai tài chính của gia đình chị đó ạ.*
+*   **Chị Tuyết (giọng nhẹ nhõm hơn):** *Em ví dụ hay quá. Được rồi, em hướng dẫn chị bán bớt 60% HQC rồi chuyển sang ACB như em nói nhé. Phần còn lại chị giữ cho đỡ tiếc, từ từ xử nốt sau.*
+*   **Broker NextGen (chuyên nghiệp):** *Dạ vâng, em sẽ hướng dẫn chị thao tác đặt lệnh trên KB Mobile ngay bây giờ ạ. Bán 60% HQC hôm nay, tiền T+2 về chị chuyển sang ACB. Em sẽ lập kế hoạch tích sản bọc thép cho chị và gửi chị xem qua Zalo tối nay. Chị yên tâm, từ nay tài sản của chị đã có em đồng hành sát sao cùng chị rồi ạ.*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Thái độ & Sự thấu cảm (Empathy)** | **40%** | Giọng nói ấm áp, kiên nhẫn với khách hàng nhóm S sợ thay đổi; không ép buộc, không phán xét; dẫn dắt từ từ. | / 40 |
+| **Kỹ thuật thuyết phục 5 bước (Technical)** | **40%** | Áp dụng đúng: Xoa dịu → Cô lập danh mục → Phân tích so sánh → Chi phí cơ hội → Hành động quyết liệt; sử dụng ẩn dụ dễ hiểu. | / 40 |
+| **Chốt hành động & Follow-up (Action)** | **20%** | Đưa ra phương án cụ thể (bán 60%, mua ACB); hướng dẫn thao tác; cam kết đồng hành sau giao dịch. | / 20 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Graduation Ceremony Setup $\rightarrow$ Presentation & Defense Session $\rightarrow$ Grading & Awarding).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Graduation Ceremony Setup → Presentation & Defense Session → Grading & Awarding).
 *   **Vị trí trong lộ trình:** Ngày thứ bốn mươi của Lộ trình (Tuần 6 - Ngày bảo vệ chính thức).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy tự tin, kiên định và trung thực tuyệt đối. Coi buổi bảo vệ chính thức là ngày hội tôn vinh thành quả lao động thực chiến suốt 40 ngày qua của bản thân, tự hào về sự lột xác và rèn luyện nghiêm túc. Tôn trọng cao nhất các quyết định và đánh giá chuyên môn của Hội đồng.
@@ -69,10 +69,10 @@ Kết quả xếp loại tốt nghiệp chính thức được phê duyệt dự
 
 | Tổng Điểm Số | Xếp Loại Tốt Nghiệp | Quyền Lợi / Chức Danh Được Bổ Nhiệm |
 | :--- | :--- | :--- |
-| **$\ge 90$ điểm** | **Tốt nghiệp Xuất Sắc (Thủ Khoa)** | - Bổ nhiệm thẳng lên vị trí Broker chính thức phòng Môi giới 3 (HO3).<br>- Tặng thưởng nóng 5.000.000 VNĐ tiền mặt.<br>- Vinh danh toàn chi nhánh. |
-| **$80 - 89$ điểm** | **Tốt nghiệp Loại Khá** | - Bổ nhiệm lên vị trí Broker chính thức phòng Môi giới 3 (HO3).<br>- Nhận gói hỗ trợ 3 CTV sinh viên thực tập từ Content Lab. |
-| **$70 - 79$ điểm** | **Tốt nghiệp Loại Đạt** | - Bổ nhiệm lên vị trí Broker chính thức diện thử thách doanh số (3 tháng). |
-| **$< 70$ điểm** | **Không Đạt (Trượt)** | - Không được cấp chứng nhận NextGen.<br>- Chấm dứt hợp đồng thực tập tập sự tại HO3. |
+| **≥ 90 điểm** | **Tốt nghiệp Xuất Sắc (Thủ Khoa)** | - Bổ nhiệm thẳng lên vị trí Broker chính thức phòng Môi giới 3 (HO3).<br>- Tặng thưởng nóng 5.000.000 VNĐ tiền mặt.<br>- Vinh danh toàn chi nhánh. |
+| **80 - 89 điểm** | **Tốt nghiệp Loại Khá** | - Bổ nhiệm lên vị trí Broker chính thức phòng Môi giới 3 (HO3).<br>- Nhận gói hỗ trợ 3 CTV sinh viên thực tập từ Content Lab. |
+| **70 - 79 điểm** | **Tốt nghiệp Loại Đạt** | - Bổ nhiệm lên vị trí Broker chính thức diện thử thách doanh số (3 tháng). |
+| **< 70 điểm** | **Không Đạt (Trượt)** | - Không được cấp chứng nhận NextGen.<br>- Chấm dứt hợp đồng thực tập tập sự tại HO3. |
 
 ---
 
@@ -84,7 +84,7 @@ Nhờ được đào tạo bọc thép qua chuỗi bài học 40 ngày, nhóm h�
 *   Không ai nói dối số liệu. Khi bị hỏi về lý do tại sao một số tài khoản eKYC chưa nạp tiền, các học viên thẳng thắn phân tích điểm nghẽn tâm lý của khách và đưa ra phương án giải cứu chi tiết.
 *   Khi bị phản biện về rủi ro đầu tư, các em điềm tĩnh vẽ mô hình Tháp tài sản 3 tầng lên bảng trắng để giải thích trực quan cho giám khảo.
 
-Kết thúc ngày bảo vệ, **$85\%$ học viên khóa I** đã tốt nghiệp chính thức loại Khá trở lên, trong đó Vy đạt danh hiệu Thủ khoa xuất sắc với điểm số tuyệt đối $98/100$ điểm. Ngày hội tốt nghiệp đã diễn ra trong niềm tự hào, những giọt nước mắt hạnh phúc của cả học viên và các Mentor hướng dẫn tại HO3.
+Kết thúc ngày bảo vệ, **85% học viên khóa I** đã tốt nghiệp chính thức loại Khá trở lên, trong đó Vy đạt danh hiệu Thủ khoa xuất sắc với điểm số tuyệt đối 98/100 điểm. Ngày hội tốt nghiệp đã diễn ra trong niềm tự hào, những giọt nước mắt hạnh phúc của cả học viên và các Mentor hướng dẫn tại HO3.
 
 ---
 
@@ -129,10 +129,10 @@ Kết thúc ngày bảo vệ, **$85\%$ học viên khóa I** đã tốt nghiệp
 
 2.  **Bước 2: Tính tổng điểm tốt nghiệp của Lâm:**
         $$\text{Tổng điểm của Lâm} = 26 + 26 + 24 + 10 = 86\text{ điểm (trên thang điểm 100)}$$
-        (Tương đương đạt **$8.6$ điểm** trên thang điểm 10).
+        (Tương đương đạt **8.6 điểm** trên thang điểm 10).
 
 3.  **Bước 3: Xác định xếp loại và quyền lợi bổ nhiệm:**
-    *   *Xếp loại:* Với tổng điểm đạt **$86$ điểm** (nằm trong khung từ $80 - 89$ điểm), Lâm chính thức xếp loại tốt nghiệp **LOẠI KHÁ**.
+    *   *Xếp loại:* Với tổng điểm đạt **86 điểm** (nằm trong khung từ 80 - 89 điểm), Lâm chính thức xếp loại tốt nghiệp **LOẠI KHÁ**.
     *   *Quyền lợi bổ nhiệm:*
         *   Lâm được chính thức ký hợp đồng lao động bổ nhiệm lên vị trí **Broker chính thức** của phòng Môi giới 3 (HO3).
         *   Lâm được nhận gói hỗ trợ nhân sự phân bổ 3 bạn CTV sinh viên thực tập từ Content Lab để hỗ trợ anh vận hành phễu Zalo Group cộng đồng trong giai đoạn tiếp theo.
@@ -178,7 +178,7 @@ D. Việc học viên khóc lóc cầu xin giám khảo cho qua môn.
 ### 💡 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT (ANSWER KEY)
 
 *   **Câu 1: Chọn B.**
-    *   *Giải thích:* Barem điểm số $30 - 30 - 30 - 10$ phản ánh sự cân bằng toàn diện: đánh giá cả chất lượng nội dung công việc (định lượng), năng lực truyền tải (thuyết trình), phản xạ giải quyết vấn đề (Q&A) và tính kỷ luật (thời gian).
+    *   *Giải thích:* Barem điểm số 30 - 30 - 30 - 10 phản ánh sự cân bằng toàn diện: đánh giá cả chất lượng nội dung công việc (định lượng), năng lực truyền tải (thuyết trình), phản xạ giải quyết vấn đề (Q&A) và tính kỷ luật (thời gian).
 *   **Câu 2: Chọn B.**
     *   *Giải thích:* Phần thưởng cho Thủ khoa xuất sắc tôn vinh xứng đáng những nỗ lực bứt phá giới hạn của học viên NextGen, tạo động lực cạnh tranh lành mạnh và bứt tốc doanh số cho toàn dự án thực chiến (nêu tại AGENTS.md).
 *   **Câu 3: Chọn C.**
@@ -189,6 +189,36 @@ D. Việc học viên khóc lóc cầu xin giám khảo cho qua môn.
     *   *Giải thích:* Phản biện Q&A đo lường bản lĩnh thực tế của Broker khi đối mặt với các câu hỏi chất vấn khó khăn của khách hàng vĩ mô. Câu trả lời định lượng logic và thấu cảm là tiêu chuẩn bắt buộc để ghi điểm tối đa.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Hội đồng chất vấn học viên về KPI thực chiến và bài học rút ra trong buổi bảo vệ báo cáo tốt nghiệp
+*   **Nhân vật:**
+    *   **Giám khảo 1 (Mentor Quân):** Hỏi về KPI số liệu, yêu cầu chứng minh bằng data.
+    *   **Học viên Vy (Bảo vệ báo cáo):** Đã chuẩn bị kỹ, tự tin trình bày nhưng bị chất vấn sắc bén.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Giám khảo Quân (giọng nghiêm, sắc bén):** *Vy, slide 5 con ghi tổng NAV khách hàng do con quản lý là 2.8 tỷ. Con chứng minh cho hội đồng con số này đi. Có bao nhiêu khách? NAV trung bình mỗi khách bao nhiêu?*
+*   **Học viên Vy (tự tin, có data):** *Dạ thưa anh. Em có tổng 15 khách hàng active. NAV trung bình mỗi khách: 187 triệu. Khách lớn nhất: anh Phong NAV 800 triệu, khách nhỏ nhất: bạn Trang SV NAV 20 triệu. Tổng NAV = 2.8 tỷ. Em có screenshot danh sách tài khoản trên hệ thống CRM KBSV để chứng minh ạ.*
+*   **Giám khảo Quân (hỏi tiếp, khó hơn):** *Good. Vậy bài học lớn nhất con rút ra sau 42 ngày là gì? Và nếu cho con làm lại từ đầu, con sẽ thay đổi điều gì?*
+*   **Học viên Vy (suy nghĩ, trả lời thật):** *Dạ bài học lớn nhất: Attitude quan trọng hơn Knowledge. Tuần 3 em từng nản khi bị từ chối liên tục, nhưng nhờ Morning Briefing và sự đồng hành của Mentor, em vượt qua. Nếu làm lại, em sẽ bắt đầu xây dựng content TikTok từ tuần 1 thay vì tuần 4 — vì đó là kênh lead conversion cao nhất của em, chiếm 40% tổng lead.*
+*   **Giám khảo Quân (gật đầu, hỏi thêm):** *Câu trả lời tốt. Cuối cùng: 3 năm tới, con muốn đạt vị trí gì tại HO3?*
+*   **Học viên Vy (quyết tâm):** *Dạ, năm 1 em muốn đạt AUM 10 tỷ và lên Senior Broker. Năm 2 em xây team 3 CTV và đạt AUM 30 tỷ. Năm 3 em target Team Leader với AUM 80 tỷ và đào tạo lứa NextGen tiếp theo ạ!*
+*   **Giám khảo Quân (kết):** *Hội đồng ghi nhận. Cảm ơn Vy.*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Chứng minh KPI bằng data (Evidence)** | **40%** | Nêu số liệu chính xác; có bằng chứng CRM; breakdown chi tiết. | / 40 |
+| **Phản tư bài học thật (Reflection)** | **35%** | Nhận lỗi → phân tích nguyên nhân → đề xuất cải thiện; không nói chung chung. | / 35 |
+| **Tầm nhìn sự nghiệp 3 năm (Vision)** | **25%** | AUM cụ thể mỗi năm; lộ trình thăng tiến rõ ràng; cam kết đào tạo thế hệ sau. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

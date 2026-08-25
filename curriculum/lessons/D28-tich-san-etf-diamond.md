@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ ETF Portfolio Planning).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → ETF Portfolio Planning).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi tám của Lộ trình (Tuần 4 - Đầu tư thụ động và tối ưu hóa danh mục).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy cẩn trọng, khách quan và hướng tới giá trị thực chất. Nhìn nhận chứng chỉ quỹ ETF là phương tiện tích lũy an toàn, thảnh thơi nhất giúp khách hàng tối đa hóa sức mạnh tăng trưởng của nền kinh tế Việt Nam mà không cần sa đà vào hoạt động đầu cơ mạo hiểm.
@@ -57,10 +57,10 @@ Tại Việt Nam, hai quỹ ETF có quy mô lớn nhất và thanh khoản tốt
 
 Đối với nhóm khách hàng bận rộn (kỹ sư IT, bác sĩ, kế toán), họ không có thời gian theo dõi thị trường hay đọc báo cáo tài chính hàng quý. Giải pháp tối ưu nhất là hướng dẫn họ tích sản tự động theo công thức phân bổ Tháp tài sản Vùng 2:
 
-$$\text{Danh mục đầu tư} = 60\% \text{ Cổ phiếu Bluechip tích sản (ACB, FPT)} + 40\% \text{ Chứng chỉ quỹ Diamond ETF (FUEVFVND)}$$
+$$\text{Danh mục đầu tư} = 60% \text{ Cổ phiếu Bluechip tích sản (ACB, FPT)} + 40% \text{ Chứng chỉ quỹ Diamond ETF (FUEVFVND)}$$
 
-*   **$60\%$ Cổ phiếu ACB, FPT:** Mang lại nguồn thu nhập từ cổ tức tiền mặt đều đặn hàng năm và sự tăng trưởng ổn định của hai doanh nghiệp bọc thép hàng đầu.
-*   **$40\%$ Diamond ETF:** Giúp bổ sung sức mạnh tăng trưởng của các cổ phiếu kim cương khác (như MWG, PNJ, REE...) mà khách hàng không cần tốn công quản lý hay giao dịch nhiều mã nhỏ lẻ.
+*   **60% Cổ phiếu ACB, FPT:** Mang lại nguồn thu nhập từ cổ tức tiền mặt đều đặn hàng năm và sự tăng trưởng ổn định của hai doanh nghiệp bọc thép hàng đầu.
+*   **40% Diamond ETF:** Giúp bổ sung sức mạnh tăng trưởng của các cổ phiếu kim cương khác (như MWG, PNJ, REE...) mà khách hàng không cần tốn công quản lý hay giao dịch nhiều mã nhỏ lẻ.
 
 ---
 
@@ -70,7 +70,7 @@ Chị Mai (36 tuổi, kế toán trưởng tại một trường học cấp 3, 
 
 Broker NextGen tại chi nhánh HO3 đã thiết lập giải pháp tích sản bọc thép thảnh thơi dành riêng cho chị Mai:
 1.  **Thiết lập Tháp tài sản:** Chị Mai giữ nguyên 150 triệu tiết kiệm cũ làm quỹ khẩn cấp. Mỗi tháng, chị trích ra đúng **5 triệu đồng** từ thặng dư để tham gia kế hoạch tích sản tự động.
-2.  **Phân bổ danh mục:** $50\%$ mua tích sản cổ phiếu ACB ($2.5$ triệu) + $50\%$ mua tích sản chứng chỉ quỹ Diamond ETF FUEVFVND ($2.5$ triệu).
+2.  **Phân bổ danh mục:** 50% mua tích sản cổ phiếu ACB (2.5 triệu) + 50% mua tích sản chứng chỉ quỹ Diamond ETF FUEVFVND (2.5 triệu).
 3.  **Cài đặt tự động:** Broker hướng dẫn chị Mai cài đặt tính năng định kỳ tích sản tự động trên app KB Mobile vào ngày 5 hàng tháng (ngay sau ngày nhận lương).
 
 ```
@@ -83,7 +83,7 @@ TIẾN TRÌNH TÍCH SẢN THẢNH THƠI CỦA CHỊ MAI:
 [ NAV đạt 152 triệu sau 2 năm (lãi 16.5%/năm) ] <─── (Không cần canh bảng) ──── [ Tích lũy 24 tháng liên tục ]
 ```
 
-*Kết quả sau 2 năm (2024 - 2026):* Chị Mai hoàn toàn không cần nhìn bảng điện một lần nào trong giờ làm việc. Tài khoản của chị tự động khớp mua gom ACB và FUEVFVND đều đặn hàng tháng bất kể thị trường tăng hay giảm. Sức mạnh trung bình giá vốn DCA và đà phục hồi mạnh mẽ của nhóm cổ phiếu Diamond đã mang lại cho chị Mai tỷ suất lợi nhuận bình quân lên tới **$16.5\%$/năm** (vượt xa mức lãi gửi tiết kiệm $5.2\%$/năm). Tổng tài sản tích lũy của chị đạt hơn **152 triệu đồng**, giúp chị hoàn toàn bình an và tự tin tài chính để chuẩn bị cho con vào trường chuyên cấp 3.
+*Kết quả sau 2 năm (2024 - 2026):* Chị Mai hoàn toàn không cần nhìn bảng điện một lần nào trong giờ làm việc. Tài khoản của chị tự động khớp mua gom ACB và FUEVFVND đều đặn hàng tháng bất kể thị trường tăng hay giảm. Sức mạnh trung bình giá vốn DCA và đà phục hồi mạnh mẽ của nhóm cổ phiếu Diamond đã mang lại cho chị Mai tỷ suất lợi nhuận bình quân lên tới **16.5%/năm** (vượt xa mức lãi gửi tiết kiệm 5.2%/năm). Tổng tài sản tích lũy của chị đạt hơn **152 triệu đồng**, giúp chị hoàn toàn bình an và tự tin tài chính để chuẩn bị cho con vào trường chuyên cấp 3.
 
 ---
 
@@ -93,15 +93,15 @@ TIẾN TRÌNH TÍCH SẢN THẢNH THƠI CỦA CHỊ MAI:
 
 **Thông số giả lập:**
 Khách hàng tham gia kế hoạch tích sản định kỳ đều đặn **3.000.000 VNĐ / tháng** vào ngày cuối cùng của mỗi tháng. Thời gian đầu tư liên tục là **5 năm (60 tháng)**.
-*   **Phương án A (Tích sản Diamond ETF):** Tỷ suất lợi nhuận kỳ vọng dài hạn đạt bình quân **$14\%$/năm** (tương đương tỷ suất sinh lời gộp hàng tháng là $r_A = 14\% / 12 \approx 1.167\%$).
-*   **Phương án B (Gửi tiết kiệm ngân hàng):** Lãi suất cố định ổn định là **$5\%$/năm** (tương đương tỷ suất gộp hàng tháng là $r_B = 5\% / 12 \approx 0.417\%$).
+*   **Phương án A (Tích sản Diamond ETF):** Tỷ suất lợi nhuận kỳ vọng dài hạn đạt bình quân **14%/năm** (tương đương tỷ suất sinh lời gộp hàng tháng là $r_A = 14% / 12 ≈ 1.167%$).
+*   **Phương án B (Gửi tiết kiệm ngân hàng):** Lãi suất cố định ổn định là **5%/năm** (tương đương tỷ suất gộp hàng tháng là $r_B = 5% / 12 ≈ 0.417%$).
 
 **Yêu cầu đối với học viên:**
 1.  Tính tổng số tiền vốn gốc tích lũy của khách hàng sau 5 năm (60 tháng).
 2.  Áp dụng công thức giá trị tương lai của dòng tiền đều (Annuity Future Value) để tính tổng giá trị tài sản thu về cuối năm thứ 5 của Phương án A và Phương án B.
     *   *Công thức:*
         $$FV = PMT \times \frac{(1 + r)^n - 1}{r}$$
-        Trong đó: $PMT = 3.000.000$ VNĐ; $n = 60$ kỳ; $r$ là tỷ suất sinh lời gộp hàng tháng.
+        Trong đó: $PMT = 3.000.000$ VNĐ; n = 60 kỳ; $r$ là tỷ suất sinh lời gộp hàng tháng.
 3.  Tính số tiền lãi chênh lệch khách hàng nhận thêm được khi lựa chọn tích sản Diamond ETF thay vì gửi tiết kiệm ngân hàng.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
@@ -110,12 +110,12 @@ Khách hàng tham gia kế hoạch tích sản định kỳ đều đặn **3.00
     $$\text{Vốn gốc} = 3.000.000\text{ VNĐ/tháng} \times 60\text{ tháng} = 180.000.000\text{ VNĐ}$$
 
 2.  **Bước 2: Tính tổng tài sản thu về cuối năm thứ 5:**
-    *   **Phương án A (Tích sản Diamond ETF với $r_A = 1.167\%$):**
+    *   **Phương án A (Tích sản Diamond ETF với $r_A = 1.167%$):**
         $$FV_A = 3.000.000 \times \frac{(1 + 0.01167)^{60} - 1}{0.01167}$$
-        $$FV_A = 3.000.000 \times \frac{2.0056 - 1}{0.01167} \approx 3.000.000 \times 86.17 \approx 258.510.000\text{ VNĐ}$$
-    *   **Phương án B (Gửi tiết kiệm với $r_B = 0.417\%$):**
+        $$FV_A = 3.000.000 \times \frac{2.0056 - 1}{0.01167} ≈ 3.000.000 \times 86.17 ≈ 258.510.000\text{ VNĐ}$$
+    *   **Phương án B (Gửi tiết kiệm với $r_B = 0.417%$):**
         $$FV_B = 3.000.000 \times \frac{(1 + 0.00417)^{60} - 1}{0.00417}$$
-        $$FV_B = 3.000.000 \times \frac{1.2833 - 1}{0.00417} \approx 3.000.000 \times 67.94 \approx 203.820.000\text{ VNĐ}$$
+        $$FV_B = 3.000.000 \times \frac{1.2833 - 1}{0.00417} ≈ 3.000.000 \times 67.94 ≈ 203.820.000\text{ VNĐ}$$
 
 3.  **Bước 3: Tính số tiền lãi chênh lệch chênh lệch:**
     $$\text{Lãi chênh lệch} = FV_A - FV_B = 258.510.000 - 203.820.000 = 54.690.000\text{ VNĐ}$$
@@ -128,7 +128,7 @@ Khách hàng tham gia kế hoạch tích sản định kỳ đều đặn **3.00
 *Hãy chọn đáp án đúng nhất cho các câu hỏi sau và đối chiếu với phần giải thích chi tiết ở dưới.*
 
 ### Câu 1: Ưu điểm lớn nhất của việc đầu tư qua chứng chỉ quỹ ETF so với việc tự mua cổ phiếu riêng lẻ đối với nhà đầu tư F0 bận rộn là gì?
-A. Được công ty chứng khoán bảo lãnh $100\%$ không bao giờ thua lỗ.
+A. Được công ty chứng khoán bảo lãnh 100% không bao giờ thua lỗ.
 B. Đa dạng hóa danh mục lập tức chỉ với 1 lệnh mua, triệt tiêu rủi ro phi hệ thống của từng doanh nghiệp riêng lẻ và không tốn thời gian theo dõi bảng điện.
 C. Có thể giao dịch khống không cần nộp ký quỹ ban đầu.
 D. Được miễn hoàn toàn các khoản thuế thu nhập cá nhân khi bán.
@@ -164,9 +164,9 @@ D. Phí qua đêm của ETF do ngân hàng nhà nước tự động trích nợ
 *   **Câu 1: Chọn B.**
     *   *Giải thích:* ETF giúp loại bỏ rủi ro chọn sai cổ phiếu rác. Rổ Diamond ETF mô phỏng trực tiếp các doanh nghiệp kim cương tốt nhất sàn nên nhà đầu tư F0 hoàn toàn có thể yên tâm tích sản dài hạn mà không cần bận tâm canh bảng điện.
 *   **Câu 2: Chọn B.**
-    *   *Giải thích:* Chỉ số VN Diamond bao gồm các cổ phiếu đáp ứng các tiêu chuẩn khắt khe về vốn hóa, thanh khoản, P/E và đặc biệt là tỷ lệ lấp đầy room ngoại tối thiểu đạt $95\%$. Đây là rổ cổ phiếu chất lượng cao nhất thị trường.
+    *   *Giải thích:* Chỉ số VN Diamond bao gồm các cổ phiếu đáp ứng các tiêu chuẩn khắt khe về vốn hóa, thanh khoản, P/E và đặc biệt là tỷ lệ lấp đầy room ngoại tối thiểu đạt 95%. Đây là rổ cổ phiếu chất lượng cao nhất thị trường.
 *   **Câu 3: Chọn B.**
-    *   *Giải thích:* Công thức phân bổ $60/40$ kết hợp giữa cổ tức tiền mặt đều đặn của ACB/FPT và đà tăng trưởng của các cổ phiếu kim cương khác trong rổ Diamond ETF là danh mục bọc thép, mang lại tỷ suất sinh lời vượt trội và an toàn.
+    *   *Giải thích:* Công thức phân bổ 60/40 kết hợp giữa cổ tức tiền mặt đều đặn của ACB/FPT và đà tăng trưởng của các cổ phiếu kim cương khác trong rổ Diamond ETF là danh mục bọc thép, mang lại tỷ suất sinh lời vượt trội và an toàn.
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Sự tiện lợi của ETF là tính thanh khoản cao và giao dịch đơn giản trực tiếp trên bảng điện HOSE thông qua ứng dụng giao dịch KB Mobile giống như cổ phiếu cơ sở bình thường.
 *   **Câu 5: Chọn B.**
@@ -174,9 +174,38 @@ D. Phí qua đêm của ETF do ngân hàng nhà nước tự động trích nợ
 
 ---
 
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Thuyết phục khách hàng bận rộn (bác sĩ) chọn tích sản ETF Diamond thay vì stock-picking
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu sản phẩm ETF, biết cách customize tư vấn theo nghề nghiệp khách hàng.
+    *   **Bác sĩ Hà (Khách hàng tiềm năng):** 40 tuổi, bác sĩ ngoại khoa. Muốn đầu tư 2 tỷ nhưng quá bận, không có thời gian theo dõi thị trường. Sợ mất tiền.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Bác sĩ Hà (giọng nhanh, bận rộn):** *Em à, chị muốn đầu tư 2 tỷ nhưng chị làm bác sĩ ngoại khoa, ngày nào cũng mổ, không có thời gian nhìn bảng điện đâu. Em có cách gì cho chị đầu tư mà khỏi lo không?*
+*   **Broker NextGen (giọng gọn, phù hợp KH bận):** *Dạ chị Hà, em hiểu chị hoàn toàn. Có một sản phẩm sinh ra đúng cho người như chị: chứng chỉ quỹ ETF Diamond. Nó giống như chị mua một rổ 30 cổ phiếu tốt nhất Việt Nam (VN30) trong một lần click, phí quản lý chỉ 0.5%/năm. Chị không cần chọn cổ phiếu, không cần theo dõi mỗi ngày — quỹ tự cân bằng danh mục cho chị.*
+*   **Bác sĩ Hà (quan tâm):** *Nghe hay đấy. Nhưng lỡ thị trường giảm thì chị có mất hết không?*
+*   **Broker NextGen (giải thích rõ):** *Dạ ETF Diamond đã phân tán rủi ro vào 30 công ty lớn nhất — FPT, Vinhomes, HPG, ACB... Dù 1-2 công ty kém, cả rổ vẫn ổn. Trong 10 năm qua, VN30 Index tăng trung bình 12%/năm kể cả qua Covid-19. Với 2 tỷ, em đề xuất chị chia làm 4 đợt mua cách nhau 1 tháng — gọi là DCA (Dollar Cost Averaging) — để san phẳng rủi ro mua đúng đỉnh. Chị chỉ cần mở app 1 lần/tháng đặt lệnh mua, còn lại cứ tập trung cứu người ạ!*
+*   **Bác sĩ Hà (cười, đồng ý):** *Em nói hay quá! Chị thích kiểu đầu tư "set and forget" thế này. Em làm cho chị kế hoạch DCA cụ thể rồi gửi qua Zalo nhé.*
+*   **Broker NextGen (chốt deal):** *Dạ em gửi chị kế hoạch DCA 4 đợt chi tiết tối nay, kèm so sánh Diamond ETF vs. VN30 ETF để chị chọn. Chị chỉ cần 5 phút mỗi tháng là xong ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Customize tư vấn theo nghề KH (Personalization)** | **35%** | Hiểu đặc thù bận rộn của bác sĩ; điều chỉnh pitch phù hợp; dùng ẩn dụ "set and forget". | / 35 |
+| **Kiến thức sản phẩm ETF (Product)** | **35%** | Giải thích đúng ETF, phí quản lý, DCA, phân tán rủi ro; so sánh Diamond vs. VN30 ETF. | / 35 |
+| **Chốt kế hoạch cụ thể (Action Plan)** | **30%** | Đề xuất DCA 4 đợt; cam kết gửi kế hoạch qua Zalo; tối ưu thời gian cho KH. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
+
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 
 > [!IMPORTANT]
 > **QUY TẮC CẤM CAM KẾT HIỆU QUẢ ETF:**
-> 1.  Broker **tuyệt đối không** được cam kết chắc chắn tỷ suất sinh lời của Diamond ETF trong tương lai sẽ cố định đạt mốc $14\% - 16\%$/năm cho khách hàng.
+> 1.  Broker **tuyệt đối không** được cam kết chắc chắn tỷ suất sinh lời của Diamond ETF trong tương lai sẽ cố định đạt mốc 14% - 16%/năm cho khách hàng.
 > 2.  Mọi bài viết và bảng tính lãi kép minh họa phải ghi rõ dòng ghi chú: *"Hiệu suất sinh lời trong quá khứ chỉ mang tính chất tham khảo, không đảm bảo chắc chắn cho kết quả đầu tư trong tương lai. Đầu tư chứng chỉ quỹ luôn có rủi ro biến động thị giá"*.

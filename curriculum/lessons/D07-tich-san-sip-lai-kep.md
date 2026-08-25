@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ bảy của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tin tưởng tuyệt đối vào sức mạnh tích lũy dài hạn và lãi suất kép. Kiên trì, không sốt ruột trước những biến động ngắn hạn của thị trường. Nhìn nhận đầu tư tích sản như một phong cách sống kỷ luật bền bỉ chứ không phải may rủi cờ bạc.
@@ -23,7 +23,7 @@
 ### 1. Bản Chất Của Đầu Tư Tích Sản Cổ Phiếu Định Kỳ (SIP)
 
 Trong thế giới đầu tư tài chính, có hai phương thức tiếp cận thị trường chính:
-1.  **Đầu tư chủ động (Active Investing / Trading):** Nhà đầu tư liên tục phân tích đồ thị kỹ thuật, tin tức vĩ mô để mua thấp bán cao ngắn hạn. Phương thức này đòi hỏi rất nhiều thời gian, kiến thức chuyên sâu và khả năng kiểm soát cảm lý cực kỳ tốt. Thực tế chứng minh, hơn $90\%$ nhà đầu tư cá nhân giao dịch ngắn hạn đều thua lỗ sau 3-5 năm do chi phí ma sát lớn và bẫy tâm lý.
+1.  **Đầu tư chủ động (Active Investing / Trading):** Nhà đầu tư liên tục phân tích đồ thị kỹ thuật, tin tức vĩ mô để mua thấp bán cao ngắn hạn. Phương thức này đòi hỏi rất nhiều thời gian, kiến thức chuyên sâu và khả năng kiểm soát cảm lý cực kỳ tốt. Thực tế chứng minh, hơn 90% nhà đầu tư cá nhân giao dịch ngắn hạn đều thua lỗ sau 3-5 năm do chi phí ma sát lớn và bẫy tâm lý.
 2.  **Đầu tư tích sản định kỳ (Systematic Investment Plan - SIP):** Đây là phương thức đầu tư thụ động có kỷ luật. Khách hàng trích đều đặn một số tiền cố định từ dòng thu nhập thặng dư hàng tháng vào một ngày cố định (ví dụ ngày 5 hàng tháng sau khi nhận lương) để mua cổ phiếu của các doanh nghiệp chất lượng cao, bất kể giá thị trường ngày hôm đó đang xanh hay đỏ.
 
 ```
@@ -58,18 +58,18 @@ Huyền thoại vật lý Albert Einstein từng gọi Lãi suất kép là **"K
 
 Công thức toán học tính giá trị tương lai của lãi suất kép gộp định kỳ hàng tháng là:
 
-$$FV = PMT \times \frac{\left(1 + r\right)^n - 1}{r}$$
+$$FV = PMT \times \frac{≤ ft(1 + r\right)^n - 1}{r}$
 
 Trong đó:
 *   **$FV$:** Giá trị tương lai của tài sản tích lũy (Future Value).
 *   **$PMT$:** Số tiền đầu tư định kỳ mỗi tháng (Payment).
 *   **$r$:** Lãi suất/Tỷ suất sinh lời bình quân hàng tháng (lấy tỷ suất sinh lời năm chia cho 12).
-*   **$n$:** Tổng số tháng đầu tư (số năm $\times 12$).
+*   **n:** Tổng số tháng đầu tư (số năm $\times 12$).
 
 #### ⚠️ Phân tích 3 biến số quyết định sức mạnh của Lãi suất kép:
 1.  **Số tiền tích lũy hàng tháng ($PMT$):** Phụ thuộc trực tiếp vào **Dòng tiền thặng dư** mà chúng ta đã học ở Ngày 3. Dòng thặng dư càng lớn thì nguyên liệu bơm vào lãi kép càng dồi dào.
-2.  **Tỷ suất sinh lời bình quân ($r$):** Phụ thuộc vào chất lượng của rổ cổ phiếu lựa chọn. Rổ cổ phiếu InvestWise của FinPeace và KBSV đặt mục tiêu tỷ suất sinh lời dài hạn trung bình ổn định từ **$12\% - 15\%$/năm** (vượt trội hoàn toàn so với lãi suất gửi tiết kiệm $5\% - 6\%$/năm của ngân hàng).
-3.  **Thời gian tích lũy ($n$):** Đây là biến số quan trọng nhất vì nó nằm ở số mũ của công thức. Lãi suất kép hoạt động giống như một quả cầu tuyết lăn từ đỉnh núi xuống. Ở những năm đầu tiên, sự tăng trưởng rất chậm và không đáng kể (giai đoạn tích lũy phẳng). Nhưng từ năm thứ 10, thứ 15 trở đi, quả cầu tuyết tài sản đã đủ lớn, mỗi vòng quay của nó sẽ tạo ra sự bùng nổ tài sản khổng lồ.
+2.  **Tỷ suất sinh lời bình quân ($r$):** Phụ thuộc vào chất lượng của rổ cổ phiếu lựa chọn. Rổ cổ phiếu InvestWise của FinPeace và KBSV đặt mục tiêu tỷ suất sinh lời dài hạn trung bình ổn định từ **12% - 15%/năm** (vượt trội hoàn toàn so với lãi suất gửi tiết kiệm 5% - 6%/năm của ngân hàng).
+3.  **Thời gian tích lũy (n):** Đây là biến số quan trọng nhất vì nó nằm ở số mũ của công thức. Lãi suất kép hoạt động giống như một quả cầu tuyết lăn từ đỉnh núi xuống. Ở những năm đầu tiên, sự tăng trưởng rất chậm và không đáng kể (giai đoạn tích lũy phẳng). Nhưng từ năm thứ 10, thứ 15 trở đi, quả cầu tuyết tài sản đã đủ lớn, mỗi vòng quay của nó sẽ tạo ra sự bùng nổ tài sản khổng lồ.
 
 ```
 ĐƯỜNG CONG TĂNG TRƯỞNG CỦA LÃI SUẤT KÉP DÀI HẠN:
@@ -94,17 +94,17 @@ Tài sản (FV)
 
 Giả sử khách hàng năm nay 25 tuổi, đều đặn trích **5.000.000 VNĐ/tháng** để đầu tư liên tục trong vòng **20 năm** (tổng số vốn gốc bỏ ra là $5\text{ triệu} \times 12\text{ tháng} \times 20\text{ năm} = 1.2\text{ tỷ VNĐ}$).
 
-*   **Kịch bản 1: Gửi tiết kiệm ngân hàng** với lãi suất bình quân ổn định **$6\%$/năm** ($r = 0.5\%$/tháng):
-    *   Tổng số tiền thu về sau 20 năm ($n = 240$ tháng):
-        $$FV = 5.000.000 \times \frac{\left(1 + 0.005\right)^{240} - 1}{0.005} \approx 2.310.000.000\text{ VNĐ}$$
-    *   *Hiệu quả:* Khách hàng lãi được khoảng $1.11$ tỷ đồng sau 20 năm.
-*   **Kịch bản 2: Tích sản cổ phiếu cơ bản chất lượng cao tại KBSV (như FPT, ACB)** với tỷ suất sinh lời dài hạn bình quân thận trọng là **$12\%$/năm** ($r = 1\%$/tháng):
-    *   Tổng số tiền thu về sau 20 năm ($n = 240$ tháng):
-        $$FV = 5.000.000 \times \frac{\left(1 + 0.01\right)^{240} - 1}{0.01} \approx 4.946.000.000\text{ VNĐ}$$
-    *   *Hiệu quả:* Khách hàng thu về gần **5 tỷ đồng** (lãi $3.74$ tỷ đồng).
+*   **Kịch bản 1: Gửi tiết kiệm ngân hàng** với lãi suất bình quân ổn định **6%/năm** ($r = 0.5%$/tháng):
+    *   Tổng số tiền thu về sau 20 năm (n = 240 tháng):
+        $$FV = 5.000.000 \times \frac{≤ ft(1 + 0.005\right)^{240} - 1}{0.005} ≈ 2.310.000.000\text{ VNĐ}$
+    *   *Hiệu quả:* Khách hàng lãi được khoảng 1.11 tỷ đồng sau 20 năm.
+*   **Kịch bản 2: Tích sản cổ phiếu cơ bản chất lượng cao tại KBSV (như FPT, ACB)** với tỷ suất sinh lời dài hạn bình quân thận trọng là **12%/năm** ($r = 1%$/tháng):
+    *   Tổng số tiền thu về sau 20 năm (n = 240 tháng):
+        $$FV = 5.000.000 \times \frac{≤ ft(1 + 0.01\right)^{240} - 1}{0.01} ≈ 4.946.000.000\text{ VNĐ}$
+    *   *Hiệu quả:* Khách hàng thu về gần **5 tỷ đồng** (lãi 3.74 tỷ đồng).
 
 #### 💡 Kết luận đối chiếu:
-Chỉ nhờ sự chênh lệch tỷ suất sinh lời $6\%$ mỗi năm ($12\%$ so với $6\%$), số tiền cuối cùng khách hàng nhận được sau 20 năm tăng gấp **2.14 lần** (nhiều hơn gần 2.6 tỷ đồng tiền mặt). Đây chính là phần thưởng xứng đáng cho những nhà đầu tư thông thái dám từ bỏ sự an toàn giả tạo của sổ tiết kiệm để đồng hành cùng các doanh nghiệp hàng đầu quốc gia.
+Chỉ nhờ sự chênh lệch tỷ suất sinh lời 6% mỗi năm (12% so với 6%), số tiền cuối cùng khách hàng nhận được sau 20 năm tăng gấp **2.14 lần** (nhiều hơn gần 2.6 tỷ đồng tiền mặt). Đây chính là phần thưởng xứng đáng cho những nhà đầu tư thông thái dám từ bỏ sự an toàn giả tạo của sổ tiết kiệm để đồng hành cùng các doanh nghiệp hàng đầu quốc gia.
 
 ---
 
@@ -116,7 +116,7 @@ Nhận diện được nỗi đau này của Minh Anh, một Broker NextGen củ
 
 1.  **Thiết lập thói quen khóa dòng tiền:** Broker thuyết phục Minh Anh trích ngay **6.000.000 VNĐ/tháng** (tương đương 20% thu nhập) ngay khi nhận lương ngày mùng 10 hàng tháng để tự động chuyển vào tài khoản tích sản cổ phiếu tại KBSV. Broker giải thích: *"Chị hãy coi 6 triệu này là khoản chi phí trả cho tương lai của chính mình trước khi chi tiêu cho người khác"*.
 2.  **Lựa chọn danh mục bọc thép:** Broker khuyên chị tích sản 2 mã cổ phiếu đầu ngành có kết quả tăng trưởng bền vững là **FPT** và **ACB**.
-3.  **Kháng cự lại biến động thị trường:** Vào tháng 8/2024, khi thị trường chứng khoán có nhịp điều chỉnh giảm mạnh, tài khoản tích sản của Minh Anh bị âm tạm thời $8\%$. Minh Anh hoảng loạn gọi điện định rút tiền bán tháo. Broker đã bình tĩnh mở bảng tính trung bình giá DCA ra giải thích: *"Chị Minh Anh ơi, giá cổ phiếu ACB giảm từ 26.000 xuống 22.000 chính là cơ hội vàng để tháng này với 6 triệu chị mua được nhiều cổ phiếu hơn. Hãy nhớ quả cầu tuyết tài sản của chị cần thời gian lăn dài"*. Minh Anh tin tưởng và tiếp tục kiên trì nộp tiền mua định kỳ.
+3.  **Kháng cự lại biến động thị trường:** Vào tháng 8/2024, khi thị trường chứng khoán có nhịp điều chỉnh giảm mạnh, tài khoản tích sản của Minh Anh bị âm tạm thời 8%. Minh Anh hoảng loạn gọi điện định rút tiền bán tháo. Broker đã bình tĩnh mở bảng tính trung bình giá DCA ra giải thích: *"Chị Minh Anh ơi, giá cổ phiếu ACB giảm từ 26.000 xuống 22.000 chính là cơ hội vàng để tháng này với 6 triệu chị mua được nhiều cổ phiếu hơn. Hãy nhớ quả cầu tuyết tài sản của chị cần thời gian lăn dài"*. Minh Anh tin tưởng và tiếp tục kiên trì nộp tiền mua định kỳ.
 
 ```
 HÀNH TRÌNH TÍCH SẢN CỦA MINH ANH:
@@ -165,19 +165,19 @@ Khách hàng trích cố định **10.000.000 VNĐ/tháng** để mua tích sả
     *   Tổng số lượng cổ phiếu tích lũy = $500 + 625 + 800 + 625 + 500 = 3.050\text{ cổ phiếu}$.
 
 3.  **Bước 3: Tính Giá vốn trung bình của danh mục ($P_{avg}$):**
-    $$P_{avg} = \frac{\text{Tổng số vốn gốc}}{\text{Tổng số lượng cổ phiếu}} = \frac{50.000.000}{3.050} \approx 16.393\text{ VNĐ/cp}$$
-    *Nhận xét:* Nhờ việc mua đều đặn, khi giá cổ phiếu giảm sâu ở Tháng 3, khách hàng đã mua được lượng cổ phiếu lớn nhất (800 cổ phiếu giá rẻ 12.500). Điều này giúp kéo giá vốn trung bình của toàn bộ danh mục xuống mức $16.393$ VNĐ/cp, thấp hơn nhiều so với mức giá xuất phát 20.000 VNĐ/cp.
+    $$P_{avg} = \frac{\text{Tổng số vốn gốc}}{\text{Tổng số lượng cổ phiếu}} = \frac{50.000.000}{3.050} ≈ 16.393\text{ VNĐ/cp}$$
+    *Nhận xét:* Nhờ việc mua đều đặn, khi giá cổ phiếu giảm sâu ở Tháng 3, khách hàng đã mua được lượng cổ phiếu lớn nhất (800 cổ phiếu giá rẻ 12.500). Điều này giúp kéo giá vốn trung bình của toàn bộ danh mục xuống mức 16.393 VNĐ/cp, thấp hơn nhiều so với mức giá xuất phát 20.000 VNĐ/cp.
 
 4.  **Bước 4: Tính Giá trị thị trường và Tỷ suất lợi nhuận ở Tháng 5:**
     *   Giá trị danh mục ở Tháng 5 (khi giá cổ phiếu hồi về lại mức 20.000 VNĐ/cp):
         $$\text{Giá trị danh mục} = 3.050\text{ cổ phiếu} \times 20.000\text{ VNĐ/cp} = 61.000.000\text{ VNĐ}$$
     *   Lợi nhuận ròng = $61.000.000 - 50.000.000 = 11.000.000\text{ VNĐ}$.
     *   Tỷ suất lợi nhuận của khách hàng tích sản SIP:
-        $$\text{Tỷ suất lợi nhuận} = \frac{11.000.000}{50.000.000} \times 100\% = 22\%$$
+        $$\text{Tỷ suất lợi nhuận} = \frac{11.000.000}{50.000.000} \times 100% = 22%$$
 
 5.  **Bước 5: So sánh đối chiếu:**
-    *   Nếu một nhà đầu tư dồn toàn bộ 50 triệu mua hết ngay ở Tháng 1 tại mức giá 20.000 VNĐ/cp: Họ sở hữu $2.500$ cổ phiếu. Đến tháng 5 khi giá cổ phiếu về lại mức 20.000 VNĐ/cp, giá trị danh mục của họ vẫn giữ nguyên ở mức 50 triệu đồng (tỷ suất lợi nhuận $0\%$, chịu áp lực tâm lý gồng lỗ nặng nề trong các tháng 2 và 3).
-    *   *Kết luận:* Phương pháp tích sản DCA giúp nhà đầu tư chiến thắng thị trường đi ngang có biến động hình chữ U một cách thuyết phục với tỷ suất lợi nhuận vượt trội **$22\%$** nhờ mua được lượng lớn cổ phiếu giá rẻ ở vùng đáy chữ U.
+    *   Nếu một nhà đầu tư dồn toàn bộ 50 triệu mua hết ngay ở Tháng 1 tại mức giá 20.000 VNĐ/cp: Họ sở hữu 2.500 cổ phiếu. Đến tháng 5 khi giá cổ phiếu về lại mức 20.000 VNĐ/cp, giá trị danh mục của họ vẫn giữ nguyên ở mức 50 triệu đồng (tỷ suất lợi nhuận 0%, chịu áp lực tâm lý gồng lỗ nặng nề trong các tháng 2 và 3).
+    *   *Kết luận:* Phương pháp tích sản DCA giúp nhà đầu tư chiến thắng thị trường đi ngang có biến động hình chữ U một cách thuyết phục với tỷ suất lợi nhuận vượt trội **22%** nhờ mua được lượng lớn cổ phiếu giá rẻ ở vùng đáy chữ U.
 
 ---
 
@@ -222,7 +222,7 @@ D. Đầu tư cổ phiếu tích sản luôn có rủi ro mất trắng toàn b�
 *   **Câu 1: Chọn B.**
     *   *Giải thích:* Đây là nguyên lý vận hành cốt lõi của DCA. Việc duy trì số tiền mua cố định hàng tháng buộc hệ thống phải mua nhiều cổ phiếu hơn khi giá rẻ và ít đi khi giá đắt, giúp giá vốn trung bình danh mục luôn thấp hơn giá mua trung bình cộng đơn giản của các thời điểm.
 *   **Câu 2: Chọn C.**
-    *   *Giải thích:* Do thời gian ($n$) nằm ở số mũ của công thức tính lãi kép, nên thời gian tích lũy càng dài thì tài sản càng tăng trưởng theo cấp số nhân ở giai đoạn sau. Bắt đầu đầu tư tích sản càng sớm là một lợi thế vô địch về mặt tài chính.
+    *   *Giải thích:* Do thời gian (n) nằm ở số mũ của công thức tính lãi kép, nên thời gian tích lũy càng dài thì tài sản càng tăng trưởng theo cấp số nhân ở giai đoạn sau. Bắt đầu đầu tư tích sản càng sớm là một lợi thế vô địch về mặt tài chính.
 *   **Câu 3: Chọn B.**
     *   *Giải thích:* Broker cần giáo dục khách hàng hiểu rõ quy luật vận hành của lãi kép. Giai đoạn đầu luôn chậm vì quy mô vốn gốc còn nhỏ, nhưng khi quả cầu tuyết tài sản tích lũy đủ lớn, sự bùng nổ sẽ cực kỳ nhanh. Việc chỉ ra bài học thực tế từ rủi ro của đầu cơ ngắn hạn sẽ giúp khách hàng nhóm S/C vững tâm lý đi đường dài.
 *   **Câu 4: Chọn B.**
@@ -248,8 +248,8 @@ D. Đầu tư cổ phiếu tích sản luôn có rủi ro mất trắng toàn b�
 *   **Anh Minh (gãi đầu, giọng hơi ngập ngừng):** *Thì... cũng có lúc lãi con này 20% - 30%, nhưng đợt sập tháng trước lại bị kẹp hàng âm lại. Tính ra thì... chắc đang hòa vốn hoặc lỗ nhẹ chút đỉnh thôi em. Nhưng quan trọng là vui và học hỏi được nhiều.*
 *   **Broker NextGen:** *Dạ đúng thế anh Minh ạ. Trải nghiệm thị trường là một tài sản rất quý giá. Nhưng mục tiêu tối hậu của chúng ta khi đầu tư vẫn là gia tăng tài sản ròng một cách chắc chắn đúng không anh? Giao dịch ngắn hạn T+ ngốn của anh rất nhiều thời gian canh bảng điện, chịu chi phí thuế phí rất lớn và tâm lý luôn căng thẳng.*
     *   *Em không hề khuyên anh Minh từ bỏ sở thích lướt sóng ngắn hạn của mình đâu ạ. Mà em đề xuất chúng ta áp dụng mô hình **Tháp Tài Sản Bình An** để tối ưu hóa nguồn vốn 200 triệu hiện tại của anh:*
-    *   *Anh dành ra 150 triệu (chiếm $75\%$ vốn) để xây dựng phần móng vững chắc bằng cách mua tích sản dài hạn các cổ phiếu Bluechip đầu ngành. Lịch sử chứng minh tích sản các mã này mang lại lợi nhuận bình quân $12\% - 15\%$/năm cực kỳ bền vững nhờ sức mạnh của lãi kép.*
-    *   *50 triệu còn lại (tương đương $25\%$), anh hoàn toàn có thể giữ ở tài khoản đuôi 6 để thoải mái trading ngắn hạn theo sóng VTA để thỏa mãn đam mê và nhạy cảm thị trường.*
+    *   *Anh dành ra 150 triệu (chiếm 75% vốn) để xây dựng phần móng vững chắc bằng cách mua tích sản dài hạn các cổ phiếu Bluechip đầu ngành. Lịch sử chứng minh tích sản các mã này mang lại lợi nhuận bình quân 12% - 15%/năm cực kỳ bền vững nhờ sức mạnh của lãi kép.*
+    *   *50 triệu còn lại (tương đương 25%), anh hoàn toàn có thể giữ ở tài khoản đuôi 6 để thoải mái trading ngắn hạn theo sóng VTA để thỏa mãn đam mê và nhạy cảm thị trường.*
     *   *Chịu áp lực trên 50 triệu chắc chắn sẽ giúp đầu óc anh Minh sáng suốt và đưa ra quyết định chuẩn xác hơn nhiều so với việc gánh rủi ro trên toàn bộ 200 triệu. Chị thấy kế hoạch phân bổ này có giúp anh vừa có sự bứt phá, vừa có lá chắn bảo vệ tài sản chắc chắn không ạ?*
 *   **Anh Minh (gật gù suy nghĩ):** *Ừm, em nói nghe cũng hợp lý. Tổng kết lại cả năm cày cuốc bảng điện mà cuối cùng chả giữ được đồng nào cho tương lai thì cũng phí công thật. Được rồi, thế chia tài khoản ra cho anh. 150 triệu mua tích sản dài hạn HPG với ACB đi, còn 50 triệu anh để dành lướt sóng. Cứ thế mà làm nhé.*
 *   **Broker NextGen:** *Dạ vâng anh Minh. Em cảm ơn anh đã tin tưởng sự tư vấn của em. Em sẽ hỗ trợ anh phân tách tiểu khoản và cài đặt lệnh tự động tích sản định kỳ ngay hôm nay ạ.*
@@ -262,7 +262,7 @@ D. Đầu tư cổ phiếu tích sản luôn có rủi ro mất trắng toàn b�
 | **Thuyết phục phân bổ vốn (Allocation)** | **30%** | Trình bày giải pháp phân bổ tài sản hợp lý (không cấm lướt sóng hoàn toàn mà giới hạn tỷ trọng ở T3, giữ móng vững ở T2), Win-Win. | / 30 |
 | **Thấu thấu cảm nhóm tính cách I** | **30%** | Thể hiện sự tôn trọng sở thích năng động của nhóm I, hướng dẫn họ chuyển dịch sang tích sản như một cách "bảo vệ thành quả". | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

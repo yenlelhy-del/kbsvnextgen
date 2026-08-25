@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Data Aggregation $\rightarrow$ Report Writing Workshop).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Data Aggregation → Report Writing Workshop).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi tám của Lộ trình (Tuần 6 - Hoàn thiện báo cáo khóa học).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy trung thực, minh bạch và tinh thần tự chịu trách nhiệm cao nhất. Tuyệt đối không gian lận, không tô hồng số liệu hay làm giả kết quả kinh doanh. Thể hiện sự nghiêm túc, cầu thị đối với công tác nghiệm thu kết quả đào tạo thực chiến cuối khóa.
@@ -52,7 +52,7 @@ Trong Phần 2 của Báo cáo tốt nghiệp, học viên bắt buộc phải t
 *   **eKYC Rate (Tỷ lệ mở tài khoản):** Đo lường hiệu quả thu hút ban đầu của phễu.
 *   **Active Rate (Tỷ lệ nạp tiền Standard):** Đo lường chất lượng tư vấn và khả năng xóa bỏ rào cản đặt lệnh của Broker.
 *   **AUM (Assets Under Management):** Tổng quy mô tài sản của tệp khách hàng. Phản ánh uy tín và năng lực chăm sóc khách hàng lớn.
-*   **DTT (Doanh thu thuần) HO3:** Số tiền thực nhận của HO3 sau khi đã trừ đi chi phí trả cho Sở giao dịch VSD (tạm tính $0.027\%$ giá trị giao dịch) và phần lương cứng chi trả cho chính Broker. DTT quyết định trực tiếp đến mức hoa hồng $50\%$ thực nhận của Broker.
+*   **DTT (Doanh thu thuần) HO3:** Số tiền thực nhận của HO3 sau khi đã trừ đi chi phí trả cho Sở giao dịch VSD (tạm tính 0.027% giá trị giao dịch) và phần lương cứng chi trả cho chính Broker. DTT quyết định trực tiếp đến mức hoa hồng 50% thực nhận của Broker.
 
 ---
 
@@ -81,7 +81,7 @@ Tại buổi bảo vệ trước Hội đồng giám khảo gồm Mentor trưở
 *   Tổng NAV huy động đạt **850 triệu đồng**.
 *   Vy thẳng thắn phân tích kênh TikTok mang lại số lượng eKYC nhiều nhất nhưng kênh Seminar offline tại HO3 mới là nơi mang lại các khách hàng có NAV lớn chất lượng nhất.
 
-Hội đồng giám khảo đã đánh giá rất cao tính thực tiễn, sự trung thực và tư duy phân tích định lượng sắc bén của Vy. Cô đã nhận được điểm số tối đa **$10/10$** và là học viên đầu tiên được phê duyệt bổ nhiệm lên vị trí Broker chính thức trước thời hạn 2 ngày.
+Hội đồng giám khảo đã đánh giá rất cao tính thực tiễn, sự trung thực và tư duy phân tích định lượng sắc bén của Vy. Cô đã nhận được điểm số tối đa **10/10** và là học viên đầu tiên được phê duyệt bổ nhiệm lên vị trí Broker chính thức trước thời hạn 2 ngày.
 
 ---
 
@@ -92,38 +92,38 @@ Hội đồng giám khảo đã đánh giá rất cao tính thực tiễn, sự 
 **Thông số thực chiến 4 tuần của học viên Lâm:**
 *   **Tổng số Lead tiếp cận qua Webinar:** 800 người.
 *   **Tổng số tài khoản eKYC mở mới thành công:** 96 tài khoản.
-*   **Tổng số tài khoản active Standard (NAV nạp $\ge$ 5 triệu):** 36 tài khoản.
+*   **Tổng số tài khoản active Standard (NAV nạp ≥ 5 triệu):** 36 tài khoản.
 *   **Tổng quy mô NAV huy động lũy kế (AUM):** 500.000.000 VNĐ.
 *   **Doanh số giao dịch mua/bán tích lũy trong tháng (vòng quay danh mục):** 3.000.000.000 VNĐ (quay vòng 6 lần NAV).
 *   **Lương cứng tháng của Lâm:** 10.000.000 VNĐ (Lâm đạt KPI nên hưởng lương chuẩn).
-*   **Phí giao dịch áp dụng cho khách hàng:** **$0.15\%$** giá trị giao dịch.
+*   **Phí giao dịch áp dụng cho khách hàng:** **0.15%** giá trị giao dịch.
 
 **Yêu cầu đối với học viên:**
 1.  Tính tỷ lệ chuyển đổi eKYC Rate và Active Rate của phễu kinh doanh của Lâm.
 2.  Tính tổng doanh thu phí giao dịch thực tế thu được trong tháng.
-3.  Tính số phí phải trả cho Sở giao dịch VSD (tạm tính mức **$0.027\%$** trên tổng doanh số giao dịch).
+3.  Tính số phí phải trả cho Sở giao dịch VSD (tạm tính mức **0.027%** trên tổng doanh số giao dịch).
 4.  Tính Doanh thu thuần (DTT) của HO3 mang về từ tài khoản của Lâm.
     *   *Công thức tính DTT:*
         $$\text{DTT}_{\text{HO3}} = \text{Tổng doanh thu phí} - \text{Phí Sở VSD} - \text{Lương cứng của Broker}$$
-5.  Tính số tiền hoa hồng thực nhận của Lâm trong tháng đó (biết tỷ lệ chia hoa hồng là **$50\%$ DTT**).
+5.  Tính số tiền hoa hồng thực nhận của Lâm trong tháng đó (biết tỷ lệ chia hoa hồng là **50% DTT**).
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Tính các tỷ lệ chuyển đổi của phễu:**
     *   Tỷ lệ eKYC Rate:
-        $$\text{eKYC Rate} = \frac{96}{800} \times 100\% = 12\%$$
+        $$\text{eKYC Rate} = \frac{96}{800} \times 100% = 12%$$
     *   Tỷ lệ Active Rate:
-        $$\text{Active Rate} = \frac{36}{96} \times 100\% = 37.5\%$$
+        $$\text{Active Rate} = \frac{36}{96} \times 100% = 37.5%$$
 
 2.  **Bước 2: Tính tổng doanh thu phí giao dịch thu được:**
-    $$\text{Tổng doanh thu phí} = 3.000.000.000 \times 0.15\% = 4.500.000\text{ VNĐ}$$
+    $$\text{Tổng doanh thu phí} = 3.000.000.000 \times 0.15% = 4.500.000\text{ VNĐ}$$
 
 3.  **Bước 3: Tính số phí trả cho Sở VSD:**
-    $$\text{Phí Sở VSD} = 3.000.000.000 \times 0.027\% = 810.000\text{ VNĐ}$$
+    $$\text{Phí Sở VSD} = 3.000.000.000 \times 0.027% = 810.000\text{ VNĐ}$$
 
 4.  **Bước 4: Tính Doanh thu thuần (DTT) của HO3:**
     $$\text{DTT}_{\text{HO3}} = 4.500.000 - 810.000 - 10.000.000 = -6.310.000\text{ VNĐ}$$
-    *Đánh giá kết quả:* DTT mang về đang bị âm **$-6.310.000$ VNĐ** do tổng doanh thu phí giao dịch phát sinh từ tệp khách hàng chưa đủ lớn để bù đắp chi phí lương cứng 10 triệu của Lâm. 
+    *Đánh giá kết quả:* DTT mang về đang bị âm **-6.310.000 VNĐ** do tổng doanh thu phí giao dịch phát sinh từ tệp khách hàng chưa đủ lớn để bù đắp chi phí lương cứng 10 triệu của Lâm. 
     *Bài học kinh nghiệm cho Lâm:* Cần tiếp tục gia tăng quy mô NAV quản lý (AUM) và hỗ trợ khách hàng quay vòng danh mục trading ngắn hạn đuôi 6 hiệu quả để nâng cao doanh số phí, đưa DTT chuyển sang dương.
 
 5.  **Bước 5: Tính hoa hồng thực nhận của Lâm:**
@@ -178,9 +178,38 @@ D. Vẫn nhận đầy đủ hoa hồng 50% tính trên tổng doanh thu phí g�
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Mở tài khoản eKYC online rất dễ, nhưng để khách hàng nạp tiền active Standard nạp 5 triệu mua ACB đòi hỏi Broker phải trao đủ giá trị niềm tin và giải quyết được nỗi sợ rủi ro cho họ. Active Rate cao chứng tỏ chất lượng tư vấn rất tốt.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Cơ chế lương cứng trượt theo NAV bảo vệ Broker có thu nhập cơ bản tối thiểu khi mới khởi nghiệp. Chỉ khi Broker tạo ra giá trị doanh thu thuần dương cho HO3, họ mới bắt đầu được chia sẻ quả ngọt hoa hồng $50\%$.
+    *   *Giải thích:* Cơ chế lương cứng trượt theo NAV bảo vệ Broker có thu nhập cơ bản tối thiểu khi mới khởi nghiệp. Chỉ khi Broker tạo ra giá trị doanh thu thuần dương cho HO3, họ mới bắt đầu được chia sẻ quả ngọt hoa hồng 50%.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Mentor hướng dẫn học viên trình bày số liệu phễu (Funnel Metrics) trong báo cáo tốt nghiệp
+*   **Nhân vật:**
+    *   **Mentor HO3:** Kinh nghiệm, biết cấu trúc báo cáo tốt nghiệp NextGen chuẩn.
+    *   **Học viên Vy (Đang viết báo cáo):** Đã hoàn thành 5 tuần thực chiến, có data nhưng chưa biết trình bày số liệu phễu sao cho ấn tượng.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Học viên Vy (lo lắng):** *Anh ơi, em có số liệu rồi nhưng không biết trình bày thế nào cho đẹp. Em contact được 200 người, mở được 25 tài khoản, active 15 tài khoản. Viết vào báo cáo thế nào hả anh?*
+*   **Mentor HO3 (hướng dẫn cấu trúc):** *Hay lắm Vy! Data con rất tốt. Nhưng đừng liệt kê số suông. Trình bày theo phễu chuyển đổi thế này: Tầng 1 — Tiếp cận: 200 lead (Zalo + CLB + Livestream). Tầng 2 — Quan tâm: 80 người reply/tương tác (tỷ lệ chuyển đổi 40%). Tầng 3 — eKYC: 25 tài khoản mở mới (tỷ lệ 31.25%). Tầng 4 — Active: 15 tài khoản nạp tiền giao dịch (tỷ lệ 60%). Vẽ hình phễu trong slide, ghi tỷ lệ chuyển đổi ở mỗi tầng. Hội đồng thích nhìn PHỄU hơn là bảng số!*
+*   **Học viên Vy (ghi chú nhanh):** *Dạ, vậy phần phân tích em viết gì ạ?*
+*   **Mentor HO3 (chỉ thêm):** *Sau phễu, con viết phần PHÂN TÍCH: tầng nào tỷ lệ thấp nhất → tầng đó là điểm nghẽn. Ví dụ: từ tiếp cận 200 → quan tâm 80 = 40% — ổn. Nhưng từ quan tâm 80 → eKYC 25 = 31% — hơi thấp. Con phân tích nguyên nhân: vì con chưa có follow-up tốt, hoặc kịch bản chốt eKYC chưa sắc. Rồi đề xuất cải thiện: "Nếu làm lại, em sẽ follow-up bằng video cá nhân hóa thay vì tin nhắn text". Hội đồng sẽ rất ấn tượng!*
+*   **Học viên Vy (hào hứng):** *Dạ em hiểu rồi! Em viết xong gửi anh review trước khi nộp nhé!*
+*   **Mentor HO3 (chốt deadline):** *Nộp bản nháp cho anh trước 20h tối Chủ nhật. Anh review xong gửi lại tối thứ Hai. Con có 2 ngày polish trước buổi bảo vệ thứ Tư!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Hướng dẫn cấu trúc phễu (Content Guidance)** | **40%** | Dạy trình bày data theo phễu 4 tầng; tính tỷ lệ chuyển đổi mỗi tầng; vẽ hình phễu. | / 40 |
+| **Phân tích điểm nghẽn (Analytical Thinking)** | **35%** | Chỉ ra tầng yếu nhất; hỏi nguyên nhân; đề xuất cải thiện cụ thể. | / 35 |
+| **Quy trình review có deadline** | **25%** | Đặt deadline nộp nháp; cam kết review; có buffer time polish. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

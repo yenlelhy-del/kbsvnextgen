@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ chín của Tuần 2 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập tư duy kiên nhẫn tích cực. Coi các nhịp sụt giảm mạnh của thị trường là cơ hội mua sắm giá rẻ thay vì nỗi sợ hãi. Kháng cự lại tâm lý FOMO mua đuổi khi giá vượt quá xa giá trị nội tại.
@@ -50,7 +50,7 @@ Giá cổ phiếu ($/cp)
 ```
 
 #### Quy luật hành vi của giá cổ phiếu xung quanh đường MA200:
-1.  **Vùng Giá Đắt (Overvalued Zone):** Khi thị trường hưng phấn quá đà, giá cổ phiếu tăng vọt và nằm cách quá xa phía trên đường MA200 (ví dụ cao hơn $> 20\% - 30\%$). Đây là vùng rủi ro đảo chiều kỹ thuật rất cao. Broker cần tư vấn khách hàng **tạm dừng việc mua tích lũy thêm** hoặc chỉ duy trì mức mua định kỳ tối thiểu, tuyệt đối không nộp thêm tiền mặt lớn để mua đuổi.
+1.  **Vùng Giá Đắt (Overvalued Zone):** Khi thị trường hưng phấn quá đà, giá cổ phiếu tăng vọt và nằm cách quá xa phía trên đường MA200 (ví dụ cao hơn > 20% - 30%). Đây là vùng rủi ro đảo chiều kỹ thuật rất cao. Broker cần tư vấn khách hàng **tạm dừng việc mua tích lũy thêm** hoặc chỉ duy trì mức mua định kỳ tối thiểu, tuyệt đối không nộp thêm tiền mặt lớn để mua đuổi.
 2.  **Vùng Hỗ Trợ Cứng (Support Zone):** Khi thị trường điều chỉnh bình thường, giá cổ phiếu chạm về đường MA200 rồi bật nảy trở lại. Đây là điểm mua tích sản định kỳ cực kỳ đẹp.
 3.  **Vùng Cơ Hội Vàng (Golden Buy Zone):** Trong các đợt sụt giảm mạnh của thị trường chung (do tin tức xấu vĩ mô, bán giải chấp chéo Margin của các tài khoản đầu cơ rác), giá của các cổ phiếu Bluechip chất lượng cao (như FPT, ACB) có thể bị ép giảm sâu xuống dưới đường MA200. Đối với các nhà đầu cơ kỹ thuật ngắn hạn, việc đứt gãy MA200 là tín hiệu bán tháo cắt lỗ. Nhưng đối với nhà đầu tư tích sản dài hạn, **đây là vùng cơ hội vàng để mua gia tăng mạnh mẽ**, vì Biên An Toàn lúc này đã được mở rộng tối đa so với giá trị nội tại thực tế của doanh nghiệp.
 
@@ -61,24 +61,24 @@ Giá cổ phiếu ($/cp)
 Để giúp khách hàng tối ưu hóa hiệu quả DCA mà vẫn duy trì kỷ luật tích lũy, Broker NextGen hướng dẫn khách hàng áp dụng **Chiến lược giải ngân 2 bước**:
 
 #### Bước 1: Tích sản định kỳ mặc định (SIP Default)
-*   *Vận hành:* Hàng tháng, trích đều đặn $70\%$ dòng tiền thặng dư đầu tư vào ngày cố định bất kể giá cổ phiếu ở vùng nào.
+*   *Vận hành:* Hàng tháng, trích đều đặn 70% dòng tiền thặng dư đầu tư vào ngày cố định bất kể giá cổ phiếu ở vùng nào.
 *   *Ý nghĩa:* Giúp duy trì kỷ luật tích lũy liên tục, không bị lỡ cơ hội nếu thị trường tăng trưởng dài hạn.
 
 #### Bước 2: Mua gia tăng chiến thuật (Tactical Buy)
-*   *Vận hành:* Giữ lại $30\%$ thặng dư hàng tháng dưới dạng tiền mặt hoặc gửi tiết kiệm không kỳ hạn ở tiểu khoản thường.
-*   *Hành động:* Khi thị trường xảy ra hoảng loạn khiến giá cổ phiếu trong rổ tích sản giảm sâu xuống **dưới đường MA200** hoặc **chiết khấu $> 25\%$ so với giá trị nội tại $V^*$**, lập tức giải ngân toàn bộ số tiền mặt dự phòng này để mua gom mạnh cổ phiếu giá rẻ.
+*   *Vận hành:* Giữ lại 30% thặng dư hàng tháng dưới dạng tiền mặt hoặc gửi tiết kiệm không kỳ hạn ở tiểu khoản thường.
+*   *Hành động:* Khi thị trường xảy ra hoảng loạn khiến giá cổ phiếu trong rổ tích sản giảm sâu xuống **dưới đường MA200** hoặc **chiết khấu > 25% so với giá trị nội tại V^*$**, lập tức giải ngân toàn bộ số tiền mặt dự phòng này để mua gom mạnh cổ phiếu giá rẻ.
 
 ---
 
 ### 4. Câu Chuyện Thực Tế: Cách Anh Hùng Gom Mua FPT Dưới Đường MA200
 
-Anh Hùng (30 tuổi, Giám đốc dự án xây dựng tại TP.HCM) là khách hàng thuộc nhóm tính cách **D-S** (quyết đoán nhưng thích số liệu kiểm chứng). Anh có thặng dư tài chính rất tốt, khoảng 20 triệu/tháng và đang có sẵn 200 triệu tiền mặt nhàn rỗi gửi ngân hàng. Anh muốn đầu tư tích sản cổ phiếu **FPT** nhưng ngập ngừng chưa mua vì thấy FPT đang ở vùng giá đỉnh lịch sử $100.000$ VNĐ/cp (đường MA200 lúc đó đang ở mức $82.000$ VNĐ/cp).
+Anh Hùng (30 tuổi, Giám đốc dự án xây dựng tại TP.HCM) là khách hàng thuộc nhóm tính cách **D-S** (quyết đoán nhưng thích số liệu kiểm chứng). Anh có thặng dư tài chính rất tốt, khoảng 20 triệu/tháng và đang có sẵn 200 triệu tiền mặt nhàn rỗi gửi ngân hàng. Anh muốn đầu tư tích sản cổ phiếu **FPT** nhưng ngập ngừng chưa mua vì thấy FPT đang ở vùng giá đỉnh lịch sử 100.000 VNĐ/cp (đường MA200 lúc đó đang ở mức 82.000 VNĐ/cp).
 
 Broker NextGen của chi nhánh HO3 đã tư vấn cho anh Hùng áp dụng chiến lược giải ngân 2 bước:
 
 1.  **Bước 1 (Giải ngân định kỳ):** Hàng tháng, anh Hùng trích 10 triệu mua tích sản FPT định kỳ vào ngày 15 hàng tháng để duy trì vị thế cổ đông.
 2.  **Bước 2 (Chờ đợi cơ hội vàng):** Số tiền 200 triệu tiền mặt có sẵn được gửi tiết kiệm kỳ hạn 1 tháng tại ngân hàng thương mại liên kết của KBSV để làm nguồn vốn chờ giải ngân chiến thuật.
-3.  **Kịch bản thực tế diễn ra:** Vào quý 3/2024, thị trường chứng khoán bất ngờ gặp cú sập mạnh do tỷ giá căng thẳng. Đám đông hoảng loạn bán tháo trên diện rộng, đẩy giá cổ phiếu FPT sụt giảm mạnh từ đỉnh $100.000$ VNĐ/cp xuyên thủng đường MA200 rơi về mức $78.000$ VNĐ/cp (chiết khấu $22\%$ so với đỉnh và thấp hơn MA200 $5\%$). Trên các diễn đàn, các trader kỹ thuật ngắn hạn hoảng sợ hô hào FPT đã bị *"gãy trend dài hạn, sẽ còn sập sâu về 60.000 VNĐ"*.
+3.  **Kịch bản thực tế diễn ra:** Vào quý 3/2024, thị trường chứng khoán bất ngờ gặp cú sập mạnh do tỷ giá căng thẳng. Đám đông hoảng loạn bán tháo trên diện rộng, đẩy giá cổ phiếu FPT sụt giảm mạnh từ đỉnh 100.000 VNĐ/cp xuyên thủng đường MA200 rơi về mức 78.000 VNĐ/cp (chiết khấu 22% so với đỉnh và thấp hơn MA200 5%). Trên các diễn đàn, các trader kỹ thuật ngắn hạn hoảng sợ hô hào FPT đã bị *"gãy trend dài hạn, sẽ còn sập sâu về 60.000 VNĐ"*.
 
 ```
 HÀNH ĐỘNG CHIẾN THUẬT CỦA ANH HÙNG:
@@ -90,11 +90,11 @@ HÀNH ĐỘNG CHIẾN THUẬT CỦA ANH HÙNG:
 [Hiệu suất tăng trưởng vượt trội khi FPT phục hồi về 110k] <─────────── [Sở hữu lượng lớn cổ phiếu giá rẻ]
 ```
 
-Broker NextGen lập tức gọi điện cho anh Hùng, mở đồ thị kỹ thuật chỉ ra rằng FPT đang giao dịch ở vùng giá dưới MA200 – vùng cơ hội vàng chỉ xuất hiện 1-2 lần mỗi năm. Giá trị nội tại định giá của FPT vẫn duy trì vững chắc ở mức $110.000$ VNĐ/cp nhờ mảng xuất khẩu phần mềm tăng trưởng $20\%$. Biên An Toàn hiện tại đã lên tới gần $30\%$.
+Broker NextGen lập tức gọi điện cho anh Hùng, mở đồ thị kỹ thuật chỉ ra rằng FPT đang giao dịch ở vùng giá dưới MA200 – vùng cơ hội vàng chỉ xuất hiện 1-2 lần mỗi năm. Giá trị nội tại định giá của FPT vẫn duy trì vững chắc ở mức 110.000 VNĐ/cp nhờ mảng xuất khẩu phần mềm tăng trưởng 20%. Biên An Toàn hiện tại đã lên tới gần 30%.
 
-Tin tưởng vào số liệu phân tích khoa học, anh Hùng đã quyết định rút toàn bộ 200 triệu tiết kiệm dự phòng để giải ngân mua gom cổ phiếu FPT ở mức giá $78.000$ VNĐ/cp.
+Tin tưởng vào số liệu phân tích khoa học, anh Hùng đã quyết định rút toàn bộ 200 triệu tiết kiệm dự phòng để giải ngân mua gom cổ phiếu FPT ở mức giá 78.000 VNĐ/cp.
 
-**Kết quả:** Chỉ 3 tháng sau đó, khi thị trường ổn định trở lại, giá cổ phiếu FPT nhanh chóng phục hồi vượt lên trên đường MA200 và tiệm cận mốc $110.000$ VNĐ/cp. Khoản giải ngân chiến thuật 200 triệu của anh Hùng đã mang lại mức lợi nhuận tăng trưởng hơn **$41\%$** (lãi hơn 80 triệu đồng), một hiệu suất vượt trội hoàn toàn so với việc gửi tiết kiệm hay mua tích sản thông thường.
+**Kết quả:** Chỉ 3 tháng sau đó, khi thị trường ổn định trở lại, giá cổ phiếu FPT nhanh chóng phục hồi vượt lên trên đường MA200 và tiệm cận mốc 110.000 VNĐ/cp. Khoản giải ngân chiến thuật 200 triệu của anh Hùng đã mang lại mức lợi nhuận tăng trưởng hơn **41%** (lãi hơn 80 triệu đồng), một hiệu suất vượt trội hoàn toàn so với việc gửi tiết kiệm hay mua tích sản thông thường.
 
 ---
 
@@ -106,21 +106,21 @@ Tin tưởng vào số liệu phân tích khoa học, anh Hùng đã quyết đ�
 *   **Giá trị nội tại định giá ($V^*$):** 32.000 VNĐ/cp.
 *   **Đường trung bình động dài hạn MA200 hiện tại:** 24.000 VNĐ/cp.
 *   **Giá thị trường đóng cửa phiên hôm nay ($P_{mkt}$):** 20.000 VNĐ/cp (do thị trường gặp biến cố bán giải chấp chéo toàn hệ thống).
-*   **Thông tin tài chính của Khách hàng Lâm:** Thặng dư dòng tiền hàng tháng là 15.000.000 VNĐ. Có sẵn 100.000.000 VNĐ tiền mặt nhàn rỗi đang để ở tài khoản thanh toán thông thường. Khách hàng yêu cầu Biên An Toàn tối thiểu $25\%$ khi giải ngân chiến thuật.
+*   **Thông tin tài chính của Khách hàng Lâm:** Thặng dư dòng tiền hàng tháng là 15.000.000 VNĐ. Có sẵn 100.000.000 VNĐ tiền mặt nhàn rỗi đang để ở tài khoản thanh toán thông thường. Khách hàng yêu cầu Biên An Toàn tối thiểu 25% khi giải ngân chiến thuật.
 
 **Yêu cầu đối với học viên:**
-1.  Tính tỷ lệ chiết khấu của giá thị trường hiện tại ($20.000$ VNĐ) so với Giá trị nội tại $V^*$ và so với đường MA200.
-2.  Xác định xem mức giá $20.000$ VNĐ có đáp ứng yêu cầu Biên An Toàn tối thiểu $25\%$ của anh Lâm để kích hoạt lệnh mua chiến thuật không?
+1.  Tính tỷ lệ chiết khấu của giá thị trường hiện tại (20.000 VNĐ) so với Giá trị nội tại $V^*$ và so với đường MA200.
+2.  Xác định xem mức giá 20.000 VNĐ có đáp ứng yêu cầu Biên An Toàn tối thiểu 25% của anh Lâm để kích hoạt lệnh mua chiến thuật không?
 3.  Lập bảng kế hoạch giải ngân chi tiết cụ thể cho số vốn 100 triệu có sẵn và dòng thặng dư 15 triệu hàng tháng của anh Lâm ngay trong tuần này.
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Tính các tỷ lệ chiết khấu:**
-    *   *Tỷ lệ chiết khấu so với Giá trị nội tại* = $\frac{32.000 - 20.000}{32.000} \times 100\% = 37.5\%$.
-    *   *Tỷ lệ chiết khấu dưới đường MA200* = $\frac{24.000 - 20.000}{24.000} \times 100\% \approx 16.67\%$.
+    *   *Tỷ lệ chiết khấu so với Giá trị nội tại* = $\frac{32.000 - 20.000}{32.000} \times 100% = 37.5%$.
+    *   *Tỷ lệ chiết khấu dưới đường MA200* = $\frac{24.000 - 20.000}{24.000} \times 100% ≈ 16.67%$.
 
 2.  **Bước 2: Kiểm tra điều kiện Biên An Toàn tối thiểu:**
-    *   Biên An Toàn thực tế là $37.5\%$, lớn hơn yêu cầu tối thiểu $25\%$ của khách hàng. Đồng thời giá đang chiết khấu sâu dưới đường MA200 là $16.67\%$.
+    *   Biên An Toàn thực tế là 37.5%, lớn hơn yêu cầu tối thiểu 25% của khách hàng. Đồng thời giá đang chiết khấu sâu dưới đường MA200 là 16.67%.
     *   *Kết luận:* Mức giá 20.000 VNĐ/cp là **vùng cơ hội vàng cực kỳ an toàn** để kích hoạt lệnh mua giải ngân chiến thuật.
 
 3.  **Bước 3: Thiết lập Bảng Kế hoạch giải ngân chi tiết cho anh Lâm:**
@@ -190,7 +190,7 @@ D. Khuyên khách hàng chuyển sang mua trái phiếu doanh nghiệp không t�
 ### 🎭 Tình huống: Trấn an khách hàng hoảng loạn khi giá cổ phiếu tích sản giảm mạnh đứt gãy đường MA200
 *   **Nhân vật:**
     *   **Broker NextGen HO3 (Học viên):** Điềm tĩnh, sử dụng lập luận khoa học kết hợp so sánh trực quan về Biên An Toàn và cơ chế MA200 để giải tỏa nỗi sợ hãi của khách hàng nhóm S.
-    *   **Chị Lan (Khách hàng):** 36 tuổi, nhân viên văn phòng, nhóm tính cách **S (Steadiness)**. Chị đang tích sản cổ phiếu **FPT** được 6 tháng. Gần đây, thị trường chung sụt giảm mạnh khiến giá FPT bị giảm từ $95.000$ VNĐ xuống $80.000$ VNĐ/cp (xuyên thủng đường MA200 ở mức $83.000$ VNĐ). Chị Lan vô cùng hoảng sợ khi thấy tài khoản tích sản bị âm tạm thời $10\%$, chị gọi điện khóc lóc đòi bán sạch rút tiền gửi tiết kiệm ngân hàng.
+    *   **Chị Lan (Khách hàng):** 36 tuổi, nhân viên văn phòng, nhóm tính cách **S (Steadiness)**. Chị đang tích sản cổ phiếu **FPT** được 6 tháng. Gần đây, thị trường chung sụt giảm mạnh khiến giá FPT bị giảm từ 95.000 VNĐ xuống 80.000 VNĐ/cp (xuyên thủng đường MA200 ở mức 83.000 VNĐ). Chị Lan vô cùng hoảng sợ khi thấy tài khoản tích sản bị âm tạm thời 10%, chị gọi điện khóc lóc đòi bán sạch rút tiền gửi tiết kiệm ngân hàng.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -198,7 +198,7 @@ D. Khuyên khách hàng chuyển sang mua trái phiếu doanh nghiệp không t�
 *   **Broker NextGen (điềm tĩnh, giọng nhẹ nhàng, chậm rãi):** *Dạ chị Lan, em hoàn toàn hiểu được sự lo lắng của chị lúc này ạ. Nhìn thấy số tiền tích lũy của mình bị biến động đỏ trên ứng dụng quả thực là một trải nghiệm rất khó chịu, đặc biệt là với một người cẩn trọng và ưu tiên sự an toàn như chị.*
     *   *Nhưng chị Lan ơi, chị hãy hít thở thật sâu và cùng em nhìn lại cây cầu tài sản FPT của chị một chút nhé. Chị có nhớ giá trị nội tại định giá của FPT mà đội ngũ phân tích Research bên em tính toán dựa trên kết quả kinh doanh thực tế là bao nhiêu không ạ?*
 *   **Chị Lan:** *Thì em bảo định giá thực của nó là 110.000 đồng... Nhưng giờ giá thị trường có 80.000 đồng thôi em ơi!*
-*   **Broker NextGen:** *Dạ đúng thế ạ. Giá trị thực là 110.000 VNĐ vì FPT vẫn đang tăng trưởng đều đặn $20\%$ xuất khẩu phần mềm sang Nhật và Mỹ, két sắt vẫn có hơn 20.000 tỷ gửi ngân hàng. Kết quả kinh doanh không hề có gì thay đổi xấu đi. Việc giá thị trường giảm về 80.000 VNĐ chỉ là do biến động hoảng loạn ngắn hạn của dòng tiền đầu cơ lướt sóng tháo chạy khỏi thị trường.*
+*   **Broker NextGen:** *Dạ đúng thế ạ. Giá trị thực là 110.000 VNĐ vì FPT vẫn đang tăng trưởng đều đặn 20% xuất khẩu phần mềm sang Nhật và Mỹ, két sắt vẫn có hơn 20.000 tỷ gửi ngân hàng. Kết quả kinh doanh không hề có gì thay đổi xấu đi. Việc giá thị trường giảm về 80.000 VNĐ chỉ là do biến động hoảng loạn ngắn hạn của dòng tiền đầu cơ lướt sóng tháo chạy khỏi thị trường.*
     *   *Chị Lan hãy tưởng tượng, FPT giống như một chiếc túi xách hàng hiệu có giá trị thực tế là 11 triệu đồng. Bình thường cửa hàng bán đúng giá 11 triệu. Tự dưng hôm nay, cửa hàng có chương trình giảm giá xả kho đặc biệt, bán chiếc túi đó với giá chỉ có 8 triệu đồng.*
     *   *Là một người mua sắm thông thái, chị sẽ hoảng sợ vứt chiếc túi hiệu đang có đi, hay chị sẽ vui mừng tận dụng cơ hội này để mua thêm với giá rẻ ạ?*
 *   **Chị Lan (giọng dịu lại một chút):** *Thì... thì giá rẻ mua thêm thì thích. Nhưng chị nhìn tài khoản âm chị sợ lắm. Lỡ nó giảm tiếp về 60.000 thì sao em?*
@@ -216,7 +216,7 @@ D. Khuyên khách hàng chuyển sang mua trái phiếu doanh nghiệp không t�
 | **Kỹ năng ẩn dụ trực quan (Metaphor)** | **30%** | Sử dụng ẩn dụ dễ hiểu (mua túi hiệu giảm giá) để khách hàng nhận ra bản chất của việc giá cổ phiếu tốt giảm là cơ hội mua rẻ. | / 30 |
 | **Lập luận kỹ thuật hỗ trợ cứng (MA200)** | **30%** | Giải thích chính xác vai trò hỗ trợ của đường MA200 và dòng tiền của các tổ chức lớn tại vùng quá bán để củng cố niềm tin cho khách. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

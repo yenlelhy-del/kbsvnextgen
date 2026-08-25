@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab Session $\rightarrow$ Video Production $\rightarrow$ Multi-channel Distribution).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab Session → Video Production → Multi-channel Distribution).
 *   **Vị trí trong lộ trình:** Ngày thứ ba mươi tư của Lộ trình (Tuần 5 - Kỹ năng xây dựng thương hiệu cá nhân số).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy cởi mở, nhất quán và phụng sự cộng đồng. Tuyệt đối bài trừ hành vi làm truyền thông bẩn, đăng tin giật gân, câu view ảo thiếu đạo đức nghề nghiệp. Đề cao tính chân thực, tôn trọng bản quyền kiến thức và giữ gìn hình ảnh chuyên nghiệp của định chế tài chính lớn (KBSV HO3).
@@ -81,7 +81,7 @@ Một video ngắn chia sẻ kiến thức tài chính bình an đạt hiệu su
 Vy (22 tuổi, Broker NextGen mới tốt nghiệp ĐH Ngoại thương, nhóm tính cách **I**) gặp rất nhiều khó khăn trong tháng đầu thực chiến vì không có quan hệ xã hội rộng. Áp dụng quy chuẩn xây dựng KOC Personal Branding, Vy quyết định lập kênh TikTok cá nhân với tên thương hiệu: **"Vy Tích Sản - Đầu Tư Bình An"**.
 
 *   **Nhất quán nội dung:** Vy tập trung sản xuất chuỗi video ngắn chia sẻ hành trình thực tế của chính mình: mỗi tháng nhận lương trích đúng 3 triệu đồng nạp app KB Mobile mua tích sản 100 cổ phiếu ACB. Cô chia sẻ chân thực cảm xúc khi tài khoản bị đỏ, cách cô bình an đọc sách đi ngủ nhờ áp dụng Tháp tài sản 3 tầng của FinPeace.
-*   **Hiệu ứng lan tỏa:** Nhờ nội dung chân thực đánh trúng tâm lý sợ rủi ro của giới trẻ văn phòng, video *"Vy đã tích lũy 100 cổ phiếu ACB đầu tiên thế nào?"* của cô bất ngờ lên xu hướng TikTok đạt hơn $150.000$ lượt xem sau 2 tuần.
+*   **Hiệu ứng lan tỏa:** Nhờ nội dung chân thực đánh trúng tâm lý sợ rủi ro của giới trẻ văn phòng, video *"Vy đã tích lũy 100 cổ phiếu ACB đầu tiên thế nào?"* của cô bất ngờ lên xu hướng TikTok đạt hơn 150.000 lượt xem sau 2 tuần.
 *   **Chuyển đổi phễu tự động:** Vy đặt link Bio dẫn về nhóm Zalo cộng đồng tích sản HO3. Tại nhóm Zalo, Vy gửi tặng file Excel quản lý tài chính và hỗ trợ hướng dẫn mọi người tự mở tài khoản eKYC.
 
 ```
@@ -171,6 +171,35 @@ D. Không cần quan tâm đến bản quyền hình ảnh.
     *   *Giải thích:* Uy tín là tài sản lớn nhất của một cố vấn tài chính. Việc trích dẫn nguồn số liệu minh bạch, hình ảnh chỉn chu và tôn trọng bản quyền thể hiện đạo đức nghề nghiệp và nâng tầm thương hiệu cá nhân của Broker.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Mentor review video TikTok 60 giây của học viên — Feedback cải thiện content theo công thức chuyển đổi
+*   **Nhân vật:**
+    *   **Mentor HO3 (Vai trò đánh giá):** Mentor giàu kinh nghiệm content, biết công thức video 60s chuẩn chuyển đổi.
+    *   **Học viên NextGen (Học viên đang thực hành):** Vừa quay xong video TikTok 60s về chủ đề "3 sai lầm khi mở tài khoản chứng khoán" nhưng video còn nhiều lỗi.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Mentor HO3 (giọng động viên):** *Em vừa xem video 60 giây của con về "3 sai lầm khi mở tài khoản chứng khoán". Ý tưởng rất hay! Nhưng có 3 điểm cần fix ngay để video chuyển đổi tốt hơn nhé.*
+*   **Học viên NextGen (chờ đợi feedback):** *Dạ anh chỉ giúp em ạ!*
+*   **Mentor HO3 (feedback cụ thể):** *Thứ nhất: HOOK 3 giây đầu. Con mở bằng "Xin chào mọi người, hôm nay mình sẽ..." — quá chán, người ta lướt ngay. Đổi thành: "90% người mới mở tài khoản chứng khoán MẤT TIỀN vì 3 sai lầm này!" — gây tò mò, giữ người xem. Thứ hai: BODY 50 giây. Con liệt kê 3 sai lầm nhưng không có ví dụ thực tế. Mỗi sai lầm phải kèm 1 case study ngắn: "Anh A mở TK, lao vào mua cổ phiếu theo lời bạn bè, 3 tháng lỗ 50 triệu". Thứ ba: CTA 7 giây cuối. Con kết bằng "Cảm ơn đã xem" — lãng phí! Đổi thành: "Follow mình để nhận công thức tích sản bình an cho Gen Z!" + để lại Zalo link trong bio.*
+*   **Học viên NextGen (ghi chú):** *Dạ em hiểu rồi anh. Vậy em quay lại video luôn chiều nay?*
+*   **Mentor HO3 (chốt):** *Đúng rồi! Quay lại, nhớ: Hook gây sốc 3 giây + Body có case study + CTA chốt Zalo. Con quay xong gửi anh review lần 2 trước khi đăng nhé!*
+*   **Học viên NextGen (tự tin):** *Dạ em quay lại ngay ạ!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Feedback cụ thể theo công thức (Content Quality)** | **40%** | Chỉ ra đúng 3 lỗi: Hook/Body/CTA; đưa ví dụ sửa cụ thể cho từng phần. | / 40 |
+| **Giữ tinh thần học viên (Mentoring)** | **30%** | Khen trước rồi sửa; không chê bai; tạo động lực quay lại. | / 30 |
+| **Quy trình review có hệ thống** | **30%** | Yêu cầu quay lại + review lần 2 trước đăng; có deadline cụ thể. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

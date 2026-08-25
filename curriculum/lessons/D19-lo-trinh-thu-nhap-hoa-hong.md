@@ -9,12 +9,12 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Business Planning).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Business Planning).
 *   **Vị trí trong lộ trình:** Ngày thứ mười chín của Lộ trình (Tuần 3 - Hoạch định sự nghiệp và thu nhập).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập "Tư duy làm chủ" (Entrepreneurial Mindset) – coi bản thân là một đối tác kinh doanh độc lập của chi nhánh HO3 chứ không phải nhân viên làm công ăn lương thụ động. Có khát vọng đột phá thu nhập chính đáng gắn liền với việc mang lại giá trị thực cho khách hàng. Trung thực và bảo mật thông tin tài chính nội bộ.
     *   **Skills (Kỹ năng):** Tính toán chính xác thu nhập cá nhân hàng tháng (Lương cứng + Hoa hồng + Thưởng active) theo đúng công thức phân bổ của HO3; lập kế hoạch phát triển quy mô tài sản quản lý (NAV) cá nhân trong 12 tháng để thăng tiến cấp bậc.
-    *   **Knowledge (Kiến thức):** Nắm vững cơ cấu 5 cấp bậc phát triển nhân sự tại HO3 và chỉ tiêu KPI tương ứng. Hiểu sâu công thức tính Doanh thu thuần (DTT) của HO3 và cơ chế chia sẻ hoa hồng $50\%$ lợi nhuận tại đơn vị kinh doanh.
+    *   **Knowledge (Kiến thức):** Nắm vững cơ cấu 5 cấp bậc phát triển nhân sự tại HO3 và chỉ tiêu KPI tương ứng. Hiểu sâu công thức tính Doanh thu thuần (DTT) của HO3 và cơ chế chia sẻ hoa hồng 50% lợi nhuận tại đơn vị kinh doanh.
 
 ---
 
@@ -26,7 +26,7 @@ Nghề cố vấn tài chính/môi giới chứng khoán là một trong số í
 
 Tại Sở Giao Dịch 3 (HO3) – KBSV, chúng tôi không vận hành theo cơ chế phân cấp quản lý hành chính cứng nhắc. Chúng tôi xây dựng mô hình **Đối tác chia sẻ lợi nhuận (Profit-sharing Partnership)**. Khi tham gia NextGen 2026, mỗi Broker được cấp đầy đủ cơ sở vật chất, hệ thống công nghệ eKYC và rổ cổ phiếu InvestWise của FinPeace để tự vận hành "doanh nghiệp tài chính cá nhân" của riêng mình.
 
-Cơ chế hoa hồng của HO3 được định vị hấp dẫn nhất thị trường khi chia sẻ lên tới **$50\%$ Doanh thu thuần (DTT)** trực tiếp cho Broker tạo ra doanh số. Điều này có nghĩa là khi doanh nghiệp cá nhân của bạn hoạt động hiệu quả, chi nhánh HO3 sẵn sàng chia đôi lợi nhuận cùng bạn.
+Cơ chế hoa hồng của HO3 được định vị hấp dẫn nhất thị trường khi chia sẻ lên tới **50% Doanh thu thuần (DTT)** trực tiếp cho Broker tạo ra doanh số. Điều này có nghĩa là khi doanh nghiệp cá nhân của bạn hoạt động hiệu quả, chi nhánh HO3 sẵn sàng chia đôi lợi nhuận cùng bạn.
 
 ---
 
@@ -42,10 +42,10 @@ Quy chế kinh doanh năm 2026 của HO3 quy định cụ thể lộ trình phá
 #### Cấp 1: Thử việc (Thời gian: 2 tháng)
 *   **Lương cứng:** **6.000.000 VNĐ/tháng**. 
     *   *Cơ chế CTV:* Nếu không chọn nhận lương cứng, nhận **200.000 VNĐ / Active Account** thành công.
-*   **Hoa hồng Sale HO3:** **$50\%$**.
+*   **Hoa hồng Sale HO3:** **50%**.
 *   **KPI bắt buộc:** Tổng số tài khoản Active sau 2 tháng tối thiểu đạt **40 tài khoản**; Tổng NAV quản lý sau 2 tháng tối thiểu đạt **400 triệu đồng**.
-*   **Điều kiện lên chính thức:** Đạt tối thiểu 16 TK active và NAV $\ge 320.000.000$ VNĐ (tương đương $80\%$ KPI chính thức).
-*   **Điều kiện dừng lại (Sudden Death):** Không đạt $70\%$ KPI trong tháng đầu tiên của thực chiến.
+*   **Điều kiện lên chính thức:** Đạt tối thiểu 16 TK active và NAV ≥ 320.000.000 VNĐ (tương đương 80% KPI chính thức).
+*   **Điều kiện dừng lại (Sudden Death):** Không đạt 70% KPI trong tháng đầu tiên của thực chiến.
 
 #### Cấp 2: Junior (Môi giới chính thức cấp 1)
 *   **Lương cứng tiêu chuẩn:** **10.000.000 VNĐ/tháng** (áp dụng khi đạt mốc NAV 10 tỷ).
@@ -54,20 +54,20 @@ Quy chế kinh doanh năm 2026 của HO3 quy định cụ thể lộ trình phá
     *   NAV đạt 9 tỷ: Nhận lương cứng 9 triệu/tháng.
     *   NAV đạt 8 tỷ: Nhận lương cứng 8 triệu/tháng.
     *   NAV đạt 7 tỷ: Nhận lương cứng 7 triệu/tháng.
-    *   NAV $\le 6$ tỷ: Nhận lương cứng tối thiểu 6 triệu/tháng.
-*   **Hoa hồng Sale HO3:** **$50\%$**.
-*   **KPI duy trì:** 20 Active accounts/tháng; Doanh thu thuần (DTT) tại KB đạt 50.000.000 VNĐ/tháng; NAV tăng trưởng theo lộ trình tháng (M3: 1 tỷ $\rightarrow$ M6: 4 tỷ $\rightarrow$ M12: $> 10$ tỷ).
+    *   NAV ≤ 6 tỷ: Nhận lương cứng tối thiểu 6 triệu/tháng.
+*   **Hoa hồng Sale HO3:** **50%**.
+*   **KPI duy trì:** 20 Active accounts/tháng; Doanh thu thuần (DTT) tại KB đạt 50.000.000 VNĐ/tháng; NAV tăng trưởng theo lộ trình tháng (M3: 1 tỷ → M6: 4 tỷ → M12: > 10 tỷ).
 *   **Hạ cấp:** Không đạt NAV tiêu chuẩn trong 3 tháng liên tiếp.
 
 #### Cấp 3: Sales Pro L1 (Chuyên gia tư vấn cấp 1)
-*   **Lương cứng tiêu chuẩn:** **15.000.000 VNĐ/tháng** (Lương cứng trần lên tới **20.000.000 VNĐ/tháng** khi NAV $\ge 20$ tỷ).
-*   **Hoa hồng Sale HO3:** **$50\%$**.
-*   **KPI duy trì:** 20 Active accounts/tháng; Doanh thu thuần (DTT) đạt 150.000.000 VNĐ/tháng; NAV tăng trưởng theo lộ trình tháng (M1: 1 - 2.5 tỷ $\rightarrow$ M6: 12.5 - 20 tỷ $\rightarrow$ M12: 30 - 50 tỷ).
+*   **Lương cứng tiêu chuẩn:** **15.000.000 VNĐ/tháng** (Lương cứng trần lên tới **20.000.000 VNĐ/tháng** khi NAV ≥ 20 tỷ).
+*   **Hoa hồng Sale HO3:** **50%**.
+*   **KPI duy trì:** 20 Active accounts/tháng; Doanh thu thuần (DTT) đạt 150.000.000 VNĐ/tháng; NAV tăng trưởng theo lộ trình tháng (M1: 1 - 2.5 tỷ → M6: 12.5 - 20 tỷ → M12: 30 - 50 tỷ).
 *   **Điều kiện thăng cấp PCC (Manager):** DTT đạt 300.000.000 VNĐ/tháng liên tục và nộp nguyện vọng thăng cấp.
 
 #### Cấp 4 & 5: Sales Pro L2 / Manager / Trưởng PCC (Trưởng phòng Khách hàng cá nhân)
 *   **Lương cứng:** **30.000.000 VNĐ/tháng**.
-*   **Cơ chế thưởng:** **$50\%$ Override** tại đơn vị kinh doanh quản lý (tương đương $0\% - 22\%$ lợi nhuận trước thuế của PCC tại KB).
+*   **Cơ chế thưởng:** **50% Override** tại đơn vị kinh doanh quản lý (tương đương 0% - 22% lợi nhuận trước thuế của PCC tại KB).
 *   **KPI duy trì:** Doanh thu thuần (DTT) đạt 300.000.000 VNĐ/tháng; Quy mô quản lý tối thiểu 6 nhân viên Sales chính thức (quy đổi: 1 Sales Pro = 3 Sales Junior; 3 Sales thử việc = 1 Sales chính thức).
 
 ---
@@ -76,9 +76,9 @@ Quy chế kinh doanh năm 2026 của HO3 quy định cụ thể lộ trình phá
 
 Học viên NextGen cần nắm rõ cơ chế tính toán số liệu doanh thu thực tế để tự theo dõi thu nhập của mình:
 
-$$\text{DTT}_{\text{HO3}} = \text{Doanh thu phí giao dịch} - \text{Phí trả cho Sở Giao dịch VSD (0.027\%)} - \text{Lương cứng của Sale}$$
+$$\text{DTT}_{\text{HO3}} = \text{Doanh thu phí giao dịch} - \text{Phí trả cho Sở Giao dịch VSD (0.027%)} - \text{Lương cứng của Sale}$$
 
-$$\text{Hoa hồng Sale HO3 nhận được} = 50\% \times \text{DTT}_{\text{HO3}}$$
+$$\text{Hoa hồng Sale HO3 nhận được} = 50% \times \text{DTT}_{\text{HO3}}$$
 
 #### 💡 Ví dụ so sánh cơ chế hoa hồng:
 *   *Doanh thu phí giao dịch phát sinh trong tháng:* 120.000.000 VNĐ.
@@ -87,7 +87,7 @@ $$\text{Hoa hồng Sale HO3 nhận được} = 50\% \times \text{DTT}_{\text{HO3
 *   *Doanh thu thuần của HO3:*
     $$\text{DTT}_{\text{HO3}} = 120.000.000 - 20.000.000 - 10.000.000 = 90.000.000\text{ VNĐ}$$
 *   *Hoa hồng thực nhận của Broker:*
-    $$\text{Hoa hồng} = 50\% \times 90.000.000 = 45.000.000\text{ VNĐ}$$
+    $$\text{Hoa hồng} = 50% \times 90.000.000 = 45.000.000\text{ VNĐ}$$
 *   *Tổng thu nhập trong tháng của Broker (chưa thuế):*
     $$\text{Tổng thu nhập} = \text{Lương cứng (10tr)} + \text{Hoa hồng (45tr)} = 55.000.000\text{ VNĐ}$$
 
@@ -99,17 +99,17 @@ Nếu học viên tuân thủ kỷ luật Daily Routine và bám sát lộ trìn
 
 #### Năm thứ 1: Giai đoạn gieo hạt & Tích lũy (Cấp bậc Junior)
 *   **Mục tiêu:** Tập trung mở rộng tệp khách hàng tích sản Standard (mỗi tháng active 20 tài khoản mới, NAV bình quân 10 triệu/tài khoản).
-*   **NAV lũy kế cuối năm:** $> 10$ tỷ đồng.
+*   **NAV lũy kế cuối năm:** > 10 tỷ đồng.
 *   **Thu nhập trung bình:** **15.000.000 VNĐ – 25.000.000 VNĐ/tháng** (bao gồm lương cứng 10 triệu + hoa hồng từ phí giao dịch tích sản).
 
 #### Năm thứ 2: Giai đoạn tăng trưởng & Bứt phá (Cấp bậc Sales Pro L1)
 *   **Mục tiêu:** Chăm sóc tệp khách hàng cũ tích sản đều đặn, khai thác thêm các khách hàng lớn có NAV cao ($100\text{ triệu} - 500\text{ triệu}$), nâng cao doanh số giao dịch ngắn hạn đuôi 6.
-*   **NAV lũy kế cuối năm:** $> 25$ tỷ đồng.
-*   **Thu nhập trung bình:** **35.000.000 VNĐ – 60.000.000 VNĐ/tháng** (lương cứng tăng lên 20 triệu + hoa hồng $50\%$ trên doanh số DTT lớn).
+*   **NAV lũy kế cuối năm:** > 25 tỷ đồng.
+*   **Thu nhập trung bình:** **35.000.000 VNĐ – 60.000.000 VNĐ/tháng** (lương cứng tăng lên 20 triệu + hoa hồng 50% trên doanh số DTT lớn).
 
 #### Năm thứ 3: Giai đoạn nhân bản & Quản trị (Cấp bậc Manager / Trưởng PCC)
 *   **Mục tiêu:** Tuyển dụng, đào tạo và dẫn dắt đội nhóm 6 thực tập sinh/junior NextGen mới; chuyển giao quy trình 6 bước Initiate và Diagnose; quản trị đơn vị kinh doanh độc lập.
-*   **Thu nhập trung bình:** **$> 100.000.000\text{ VNĐ/tháng}$** (bao gồm lương cứng 30 triệu + hoa hồng cá nhân + $50\%$ hoa hồng override quản lý đội nhóm).
+*   **Thu nhập trung bình:** **$> 100.000.000\text{ VNĐ/tháng}** (bao gồm lương cứng 30 triệu + hoa hồng cá nhân + 50% hoa hồng override quản lý đội nhóm).
 
 ---
 
@@ -149,14 +149,14 @@ TIẾN TRÌNH THU NHẬP 3 NĂM CỦA ANH VINH:
 **Yêu cầu đối với học viên:**
 1.  Xác định mức lương cứng thực tế anh Lâm nhận được trong tháng dựa trên mốc NAV quản lý (tra cứu cơ chế lương cứng trượt theo NAV của cấp Junior).
 2.  Tính Doanh thu thuần của HO3 ($\text{DTT}_{\text{HO3}}$) đối với tài khoản của anh Lâm.
-3.  Tính số tiền hoa hồng Sale anh Lâm thực nhận ($50\% \times \text{DTT}_{\text{HO3}}$).
+3.  Tính số tiền hoa hồng Sale anh Lâm thực nhận ($50% \times \text{DTT}_{\text{HO3}}$).
 4.  Tính tổng thu nhập thực tế anh Lâm nhận được trong tháng 8/2026 (trước thuế).
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
 1.  **Bước 1: Xác định mức lương cứng của anh Lâm:**
     *   NAV thực tế của anh Lâm là 9.2 tỷ đồng (nằm trong khoảng từ 9.0 tỷ đến dưới 10.0 tỷ).
-    *   Theo cơ chế lương cứng trượt theo NAV dành cho cấp Junior: NAV 9 tỷ $\rightarrow$ nhận lương cứng **9.000.000 VNĐ**.
+    *   Theo cơ chế lương cứng trượt theo NAV dành cho cấp Junior: NAV 9 tỷ → nhận lương cứng **9.000.000 VNĐ**.
 
 2.  **Bước 2: Tính Doanh thu thuần của HO3 ($\text{DTT}_{\text{HO3}}$):**
     *   Áp dụng công thức tính DTT:
@@ -165,7 +165,7 @@ TIẾN TRÌNH THU NHẬP 3 NĂM CỦA ANH VINH:
         $$\text{DTT}_{\text{HO3}} = 115.000.000 - 15.000.000 - 9.000.000 = 91.000.000\text{ VNĐ}$$
 
 3.  **Bước 3: Tính hoa hồng Sale thực nhận:**
-    $$\text{Hoa hồng} = 50\% \times \text{DTT}_{\text{HO3}} = 50\% \times 91.000.000 = 45.500.000\text{ VNĐ}$$
+    $$\text{Hoa hồng} = 50% \times \text{DTT}_{\text{HO3}} = 50% \times 91.000.000 = 45.500.000\text{ VNĐ}$$
 
 4.  **Bước 4: Tính tổng thu nhập thực tế của anh Lâm trong tháng 8/2026:**
     $$\text{Tổng thu nhập} = \text{Lương cứng} + \text{Hoa hồng} + \text{Thưởng active}$$
@@ -181,7 +181,7 @@ TIẾN TRÌNH THU NHẬP 3 NĂM CỦA ANH VINH:
 
 ### Câu 1: Cơ chế lương cứng của cấp bậc Junior tại chi nhánh HO3 được quy định trượt theo chỉ số nào của Broker khi không đạt KPI tháng?
 A. Số lượng tin nhắn Zalo gửi cho khách hàng.
-B. Quy mô tài sản quản lý thực tế (NAV) lũy kế của tệp khách hàng (NAV 9 tỷ $\rightarrow$ lương cứng 9 triệu, NAV 8 tỷ $\rightarrow$ lương 8 triệu...).
+B. Quy mô tài sản quản lý thực tế (NAV) lũy kế của tệp khách hàng (NAV 9 tỷ → lương cứng 9 triệu, NAV 8 tỷ → lương 8 triệu...).
 C. Tổng số tiền khách hàng nộp vào tài khoản lướt sóng phái sinh.
 D. Số năm thâm niên làm việc tại công ty.
 
@@ -199,7 +199,7 @@ D. 70% DTT.
 
 ### Câu 4: Điều kiện bắt buộc để một thực tập sinh NextGen được xét duyệt thăng cấp lên làm Broker Junior chính thức sau 2 tháng thử việc là gì?
 A. Mở được tối thiểu 100 tài khoản eKYC không có tiền.
-B. Tích lũy tối thiểu 16 tài khoản Active Standard (có NAV $\ge$ 5 triệu) và tổng NAV quản lý đạt từ 320.000.000 VNĐ trở lên.
+B. Tích lũy tối thiểu 16 tài khoản Active Standard (có NAV ≥ 5 triệu) và tổng NAV quản lý đạt từ 320.000.000 VNĐ trở lên.
 C. Tham gia đầy đủ các buổi liên hoan của chi nhánh.
 D. Tự ý đặt lệnh giao dịch hộ trên tài khoản của khách hàng đạt doanh số lớn.
 
@@ -216,13 +216,13 @@ D. Broker sẽ phải tự bỏ tiền túi ra bù lỗ cho tài khoản của k
 *   **Câu 1: Chọn B.**
     *   *Giải thích:* Đây là cơ chế lương cứng trượt theo NAV cực kỳ nhân văn và thực tế của HO3. Nó đảm bảo Broker vẫn có nguồn thu nhập nền tảng tương ứng với quy mô tài sản quản lý của mình kể cả khi gặp tháng thị trường khó khăn không phát sinh nhiều giao dịch.
 *   **Câu 2: Chọn B.**
-    *   *Giải thích:* Công thức tính DTT HO3 phản ánh lợi nhuận thực tế còn lại tại đơn vị kinh doanh sau khi đã trừ đi chi phí vận hành nền tảng (phí trả Sở và lương cứng của Broker), làm cơ sở để thực hiện chia đôi lợi nhuận $50/50$.
+    *   *Giải thích:* Công thức tính DTT HO3 phản ánh lợi nhuận thực tế còn lại tại đơn vị kinh doanh sau khi đã trừ đi chi phí vận hành nền tảng (phí trả Sở và lương cứng của Broker), làm cơ sở để thực hiện chia đôi lợi nhuận 50/50.
 *   **Câu 3: Chọn C.**
-    *   *Giải thích:* Mức hoa hồng $50\%$ DTT là cơ chế đối tác kinh doanh vô cùng cạnh tranh của HO3, giúp tối đa hóa thu nhập thực tế cho Broker có hiệu suất làm việc cao.
+    *   *Giải thích:* Mức hoa hồng 50% DTT là cơ chế đối tác kinh doanh vô cùng cạnh tranh của HO3, giúp tối đa hóa thu nhập thực tế cho Broker có hiệu suất làm việc cao.
 *   **Câu 4: Chọn B.**
-    *   *Giải thích:* Đây là ngưỡng chứng minh năng lực thực tế đạt $80\%$ KPI của cấp chính thức. Học viên đạt cột mốc này sẽ được ký hợp đồng lao động chính thức và nhận mức lương cứng Junior 10 triệu đồng.
+    *   *Giải thích:* Đây là ngưỡng chứng minh năng lực thực tế đạt 80% KPI của cấp chính thức. Học viên đạt cột mốc này sẽ được ký hợp đồng lao động chính thức và nhận mức lương cứng Junior 10 triệu đồng.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Case study thực tế của anh Vinh đã chứng minh tính khả thi của lộ trình thu nhập 3 năm. Sự kết hợp giữa lương cứng cao, hoa hồng cá nhân $50\%$ và hoa hồng override quản lý đội nhóm là đòn bẩy tài chính khổng lồ giúp Broker đạt thu nhập trăm triệu bền vững.
+    *   *Giải thích:* Case study thực tế của anh Vinh đã chứng minh tính khả thi của lộ trình thu nhập 3 năm. Sự kết hợp giữa lương cứng cao, hoa hồng cá nhân 50% và hoa hồng override quản lý đội nhóm là đòn bẩy tài chính khổng lồ giúp Broker đạt thu nhập trăm triệu bền vững.
 
 ---
 
@@ -230,7 +230,7 @@ D. Broker sẽ phải tự bỏ tiền túi ra bù lỗ cho tài khoản của k
 
 ### 🎭 Tình huống: Động viên và vẽ lại bức tranh lộ trình thu nhập 3 năm cho bạn học NextGen đang nản chí định bỏ cuộc
 *   **Nhân vật:**
-    *   **Broker NextGen HO3 (Học viên):** Trực tính, đầy năng lượng tích cực, thấu cảm với áp lực của bạn đồng nghiệp, khéo léo dùng bảng tính Excel lộ trình thu nhập và cơ chế hoa hồng $50\%$ để khôi phục ý chí chiến đấu cho bạn.
+    *   **Broker NextGen HO3 (Học viên):** Trực tính, đầy năng lượng tích cực, thấu cảm với áp lực của bạn đồng nghiệp, khéo léo dùng bảng tính Excel lộ trình thu nhập và cơ chế hoa hồng 50% để khôi phục ý chí chiến đấu cho bạn.
     *   **Lâm (Bạn học cùng khóa NextGen):** 23 tuổi, thực tập sinh phòng Môi giới 1. Lâm đang bị áp lực tâm lý nặng nề ở tuần thứ 3 thực chiến: telesales bị từ chối liên tục, chưa active được tài khoản Standard nào, Lâm lo sợ bị áp dụng Sudden Death loại khỏi dự án nên có ý định nộp đơn xin nghỉ việc để đi làm nhân viên hành chính văn phòng lương 7 triệu/tháng.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
@@ -254,10 +254,10 @@ D. Broker sẽ phải tự bỏ tiền túi ra bù lỗ cho tài khoản của k
 | Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
 | :--- | :---: | :--- | :---: |
 | **Kỹ năng truyền cảm hứng & thấu cảm** | **40%** | Giọng nói đầy năng lượng, tích cực; đồng cảm sâu sắc với áp lực của bạn đồng nghiệp; khích lệ tinh thần đồng đội tốt. | / 40 |
-| **Ứng dụng số liệu cơ chế lương thưởng** | **30%** | Sử dụng chính xác bảng tính Excel lộ trình thu nhập 3 năm và cơ chế chia sẻ $50\%$ DTT để làm đòn bẩy lý trí thuyết phục bạn. | / 30 |
+| **Ứng dụng số liệu cơ chế lương thưởng** | **30%** | Sử dụng chính xác bảng tính Excel lộ trình thu nhập 3 năm và cơ chế chia sẻ 50% DTT để làm đòn bẩy lý trí thuyết phục bạn. | / 30 |
 | **Đề xuất giải pháp hỗ trợ thực tế** | **30%** | Chủ động đề xuất giải pháp cùng luyện tập role-play sắm vai sau giờ làm việc để giúp bạn cải thiện kỹ năng thực tế, win-win. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

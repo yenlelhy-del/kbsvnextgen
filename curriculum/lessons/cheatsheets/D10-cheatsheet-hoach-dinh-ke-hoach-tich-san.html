@@ -6,256 +6,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <style>
-        @page { 
-            size: A4 portrait; 
-            margin: 12mm 12mm 12mm 12mm; 
-        }
-        :root {
-            --kb-yellow: #F5A623;
-            --kb-brown: #8B7355;
-            --kb-brown-dark: #5c4b37;
-            --text-primary: #1A1A1A;
-            --text-secondary: #4A4A4A;
-            --border: #d5cfc5;
-            --bg-warm: #FAFAF7;
-            --font-body: 'Inter', -apple-system, sans-serif;
-            --font-display: 'Space Grotesk', sans-serif;
-            --warning-bg: rgba(224, 80, 80, 0.04);
-            --warning-border: #E05050;
-        }
-        
-        *, *::before, *::after { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-        }
-        
-        body { 
-            font-family: var(--font-body); 
-            font-size: 8.5pt; 
-            color: var(--text-primary); 
-            line-height: 1.45; 
-            background: #fff; 
-            -webkit-print-color-adjust: exact; 
-            print-color-adjust: exact; 
-        }
-        
-        .container {
-            border: 2px solid var(--kb-brown);
-            padding: 15px;
-            background: var(--bg-warm);
-            min-height: 270mm;
-            position: relative;
-        }
-        
-        /* Header */
-        .hdr { 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
-            padding-bottom: 8px; 
-            border-bottom: 2px solid var(--kb-yellow); 
-            margin-bottom: 12px; 
-        }
-        .hdr-title-box {
-            display: flex;
-            flex-direction: column;
-        }
-        .hdr-brand {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 7.5pt;
-            color: var(--kb-brown-dark);
-            letter-spacing: 0.5px;
-        }
-        .hdr-logo-txt {
-            font-family: var(--font-display);
-            font-weight: 500;
-            font-size: 6.5pt;
-            color: var(--text-secondary);
-        }
-        .hdr-r { 
-            text-align: right; 
-        }
-        .hdr-code { 
-            font-family: var(--font-display); 
-            font-weight: 700; 
-            font-size: 9.5pt; 
-            color: var(--text-primary);
-        }
-        .hdr-sub { 
-            font-size: 6.5pt; 
-            color: var(--kb-brown); 
-            font-weight: 500; 
-        }
-        
-        /* Document Title */
-        .doc-header { 
-            text-align: center; 
-            margin-bottom: 12px; 
-        }
-        .doc-day {
-            font-family: var(--font-display);
-            font-size: 9pt;
-            font-weight: 700;
-            color: var(--kb-yellow);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 2px;
-        }
-        .doc-title { 
-            font-family: var(--font-display); 
-            font-size: 13pt; 
-            font-weight: 700; 
-            color: var(--text-primary); 
-            margin-bottom: 1px; 
-            text-transform: uppercase;
-        }
-        .doc-sub { 
-            font-size: 8pt; 
-            color: var(--text-secondary); 
-            font-style: italic;
-        }
-        
-        /* Layout Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 12px;
-        }
-        
-        .card {
-            background: #fff;
-            border: 1px solid var(--border);
-            padding: 10px;
-            border-radius: 4px;
-        }
-        
-        .card-title {
-            font-family: var(--font-display);
-            font-size: 9.5pt;
-            font-weight: 700;
-            color: var(--kb-brown-dark);
-            border-bottom: 1px solid var(--kb-yellow);
-            padding-bottom: 4px;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        /* Lists */
-        ul {
-            list-style: none;
-        }
-        li {
-            position: relative;
-            padding-left: 12px;
-            margin-bottom: 6px;
-        }
-        li::before {
-            content: "▪";
-            color: var(--kb-yellow);
-            position: absolute;
-            left: 0;
-            top: 0px;
-            font-size: 7.5pt;
-        }
-        
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 5px;
-        }
-        th, td {
-            border: 1px solid var(--border);
-            padding: 4px 6px;
-            text-align: left;
-            font-size: 7.5pt;
-        }
-        th {
-            background: var(--bg-warm);
-            font-family: var(--font-display);
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-        
-        /* Quote / Dialogue Box */
-        .dialogue-box {
-            background: var(--bg-warm);
-            border-left: 3px solid var(--kb-brown);
-            padding: 8px 10px;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 5px;
-            line-height: 1.4;
-            font-size: 8pt;
-        }
-        
-        /* Compliance Box */
-        .compliance-box {
-            border: 1px solid var(--warning-border);
-            background: var(--warning-bg);
-            padding: 8px 10px;
-            border-radius: 4px;
-            margin-top: 15px;
-        }
-        .compliance-title {
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 8.5pt;
-            color: var(--warning-border);
-            margin-bottom: 3px;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .compliance-text {
-            font-size: 7.5pt;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-        
-        /* Footer */
-        .ftr {
-            position: absolute;
-            bottom: 12px;
-            left: 15px;
-            right: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 6px;
-            border-top: 1px solid var(--border);
-            font-size: 6.5pt;
-            color: var(--text-tertiary);
-        }
-        
-        @media print {
-            body {
-                background: #fff;
-            }
-            .container {
-                border: 2px solid var(--kb-brown) !important;
-                background: var(--bg-warm) !important;
-                min-height: 270mm !important;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="cheatsheet-style.css"></head>
 <body>
+    <!-- Action Bar (hidden when printing) -->
+    <div class="action-bar">
+        <div class="action-bar-left">
+            <a class="btn-back" href="/web/pages/learning_hub.html" onclick="goBackToHub(); return false;">← Quay lại Learning Hub</a>
+            <span class="action-bar-title">Cheatsheet · </span>
+        </div>
+        <button class="btn-download" onclick="downloadAsPDF()">⬇ Tải PDF (A4)</button>
+    </div>
     <div class="container">
         <!-- Header -->
         <div class="hdr">
-            <div class="hdr-title-box">
-                <span class="hdr-brand">KBSV NEXTGEN 2026</span>
-                <span class="hdr-logo-txt">FinPeace × KB Securities Vietnam · HO3</span>
+            <div class="hdr-left">
+                <img src="finpeace-logo.png" alt="FinPeace" class="hdr-logo-fp">
+                <div class="hdr-sep"></div>
+                <img src="kbsv-logo.png" alt="KB Securities" class="hdr-logo-kbsv">
+                <div class="hdr-title-box">
+                <span class="hdr-brand">NEXTGEN 2026</span>
+                <span class="hdr-logo-txt">Chủ trì: FinPeace · Đối tác: KB Securities Vietnam · HO3</span>
+            </div>
             </div>
             <div class="hdr-r">
                 <span class="hdr-code">NTD-SV-D10-CS</span>
@@ -274,7 +45,7 @@
         <div class="grid">
             <!-- Left Column: Objectives and Checklist -->
             <div class="left-col">
-                <div class="card" style="margin-bottom: 15px;">
+                <div class="card card-objective" style="margin-bottom: 18px;">
                     <div class="card-title">📌 MỤC TIÊU THỰC CHIẾN (KHUNG ASK)</div>
                     <ul>
                         <li><strong>Thái độ (Attitude):</strong>  Xác lập tâm thế phục vụ tận tụy, chân thành của một Wealth Advisor. Coi việc giải quyết khó khăn và rào cản trì hoãn của khách hàng là trách nhiệm hàng đầu. Tôn trọng tuyệt đối tính bảo mật thông tin và tính cá nhân hóa trong lập kế hoạch tài chính.</li>
@@ -296,7 +67,7 @@
             
             <!-- Right Column: Formulas and Dialogues -->
             <div class="right-col">
-                <div class="card" style="margin-bottom: 15px;">
+                <div class="card card-objective" style="margin-bottom: 18px;">
                     <div class="card-title">📊 CÔNG THỨC CỐT LÕI & THAM SỐ ĐỘNG</div>
                     <table>
                         <thead>
@@ -337,7 +108,7 @@
         
         <!-- Compliance Warnings Box -->
         <div class="compliance-box">
-            <div class="compliance-title">⚠️ QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)</div>
+            <div class="compliance-title">⚠️ QUY CHUẨN TUÂN THỦ PHÁT NGÔN — FinPeace × KBSV</div>
             <div class="compliance-text">
                 1.  Tuyệt đối nghiêm cấm Broker tự ý thu thập thông tin cá nhân (ảnh căn cước công dân, mật khẩu OTP) của khách hàng để tự đặt lệnh mở tài khoản hộ khi chưa có sự đồng ý hoặc thực hiện các hành vi gian lận hồ sơ mở tài khoản. 2.  Mọi thông tin về...
             </div>
@@ -345,9 +116,21 @@
         
         <!-- Footer -->
         <div class="ftr">
-            <span>SỞ GIAO DỊCH 3 (HO3) - KB SECURITIES VIETNAM © 2026</span>
-            <span>TÀI LIỆU LƯU HÀNH NỘI BỘ - PHÙ HỢP TIÊU CHUẨN PDF PRINT-ONLY</span>
+            <img src="finpeace-logo.png" alt="FinPeace" class="ftr-logo">
+            <span class="ftr-text">KBSV NextGen 2026 · Tài liệu nội bộ © FinPeace</span>
         </div>
     </div>
+    <script>
+        function goBackToHub() {
+            if (document.referrer && document.referrer.includes('learning_hub')) {
+                window.history.back();
+            } else {
+                window.location.href = '/web/pages/learning_hub.html';
+            }
+        }
+        function downloadAsPDF() {
+            window.print();
+        }
+    </script>
 </body>
 </html>

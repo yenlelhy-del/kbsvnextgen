@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Derivatives & Hedging Strategy).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Derivatives & Hedging Strategy).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi sáu của Lộ trình (Tuần 4 - Nghiệp vụ phái sinh nâng cao).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy phòng thủ bọc thép tài sản (Hedging Mindset). Định vị chứng khoán phái sinh là công cụ quản trị rủi ro, bảo vệ danh mục cơ sở trong bão giảm của thị trường, tuyệt đối không cổ súy khách hàng tham gia đầu cơ cờ bạc T+0 mạo hiểm phá hủy tài khoản.
@@ -27,8 +27,8 @@
 Đặc tính giao dịch của VN30 Futures:
 *   **Giao dịch hai chiều (Long/Short):** Nhà đầu tư có thể kiếm lời cả khi thị trường tăng (mở vị thế Mua - Long) và khi thị trường giảm (mở vị thế Bán khống - Short).
 *   **Giao dịch T+0:** Cho phép mua và bán đóng vị thế ngay trong phiên, không cần chờ cổ phiếu về tài khoản như thị trường cơ sở (T+2).
-*   **Đòn bẩy cao:** Nhà đầu tư chỉ cần ký quỹ một tỷ lệ nhỏ (khoảng $18\% - 22\%$ giá trị hợp đồng) là có thể giao dịch quy mô lớn.
-*   **Hệ số nhân hợp đồng:** Quy định của Sở giao dịch là **$100.000$ VNĐ** cho mỗi điểm chỉ số VN30. Ví dụ, nếu chỉ số VN30 Futures đang ở $1.200$ điểm, giá trị thực tế của 1 hợp đồng tương lai là:
+*   **Đòn bẩy cao:** Nhà đầu tư chỉ cần ký quỹ một tỷ lệ nhỏ (khoảng 18% - 22% giá trị hợp đồng) là có thể giao dịch quy mô lớn.
+*   **Hệ số nhân hợp đồng:** Quy định của Sở giao dịch là **100.000 VNĐ** cho mỗi điểm chỉ số VN30. Ví dụ, nếu chỉ số VN30 Futures đang ở 1.200 điểm, giá trị thực tế của 1 hợp đồng tương lai là:
     $$\text{Giá trị 1 hợp đồng} = 1.200\text{ điểm} \times 100.000\text{ VNĐ} = 120.000.000\text{ VNĐ}$$
 
 ---
@@ -64,27 +64,27 @@ $$N = \frac{V_p \times \beta}{F \times 100.000}$$
 Trong đó:
 *   $N$: Số lượng hợp đồng tương lai VN30 cần bán khống (Short).
 *   $V_p$: Tổng giá trị thị trường của danh mục cổ phiếu cơ sở cần bảo vệ (Portfolio Value).
-*   $\beta$ (Hệ số Beta): Hệ số đo lường mức độ biến động của danh mục cơ sở so với chỉ số VN30. (Ví dụ: danh mục có Beta = 1.2 nghĩa là khi VN30 giảm $10\%$, danh mục cơ sở sẽ giảm $12\%$).
+*   $\beta$ (Hệ số Beta): Hệ số đo lường mức độ biến động của danh mục cơ sở so với chỉ số VN30. (Ví dụ: danh mục có Beta = 1.2 nghĩa là khi VN30 giảm 10%, danh mục cơ sở sẽ giảm 12%).
 *   $F$: Điểm số của chỉ số hợp đồng tương lai VN30 Futures hiện tại.
-*   $100.000$ VNĐ: Hệ số nhân quy định của Sở giao dịch.
+*   100.000 VNĐ: Hệ số nhân quy định của Sở giao dịch.
 
 ---
 
 ### 4. Câu Chuyện Thực Tế: Chị Vân Bảo Vệ Danh Mục 2 Tỷ Đồng Đi Qua Bão Giảm Điểm Năm 2024
 
-Chị Vân (42 tuổi, chủ chuỗi cửa hàng thuốc tây tại TP.HCM, nhóm tính cách **S**) sở hữu danh mục cổ phiếu bọc thép tích sản trị giá **2 tỷ đồng** tại chi nhánh HO3 (bao gồm FPT, ACB, HPG). Vào tháng 8/2024 vĩ mô xuất hiện thông tin tiêu cực, chỉ số VN30 Futures giảm mạnh từ $1.250$ điểm về còn $1.060$ điểm (giảm $15.2\%$). Danh mục cơ sở của chị Vân do có hệ số Beta trung bình là $1.0$ nên cũng sụt giảm tương ứng gần 300 triệu đồng. 
+Chị Vân (42 tuổi, chủ chuỗi cửa hàng thuốc tây tại TP.HCM, nhóm tính cách **S**) sở hữu danh mục cổ phiếu bọc thép tích sản trị giá **2 tỷ đồng** tại chi nhánh HO3 (bao gồm FPT, ACB, HPG). Vào tháng 8/2024 vĩ mô xuất hiện thông tin tiêu cực, chỉ số VN30 Futures giảm mạnh từ 1.250 điểm về còn 1.060 điểm (giảm 15.2%). Danh mục cơ sở của chị Vân do có hệ số Beta trung bình là 1.0 nên cũng sụt giảm tương ứng gần 300 triệu đồng. 
 
 Chị Vân vô cùng hoảng loạn, mất ngủ liên tục và gọi điện đòi Broker đặt lệnh bán tháo sạch sẽ danh mục tích sản để thu hồi tiền mặt gửi tiết kiệm.
 
 Broker tư vấn (chi nhánh HO3) đã áp dụng chiến thuật Hedging bọc thép để giải cứu tâm lý cho chị Vân:
-1.  **Tính toán vị thế:** Diễn giá tính toán số lượng hợp đồng cần Short tại mức VN30 Futures đang ở $1.250$ điểm:
+1.  **Tính toán vị thế:** Diễn giá tính toán số lượng hợp đồng cần Short tại mức VN30 Futures đang ở 1.250 điểm:
     $$N = \frac{2.000.000.000\text{ VNĐ} \times 1.0}{1.250\text{ điểm} \times 100.000\text{ VNĐ}} = 16\text{ hợp đồng tương lai}$$
-2.  **Thực thi:** Hướng dẫn chị Vân nộp khoảng 400 triệu tiền ký quỹ ($20\%$) vào tiểu khoản phái sinh và thực hiện đặt lệnh **Short 16 hợp đồng VN30F1M** ở mức giá $1.250$ điểm.
+2.  **Thực thi:** Hướng dẫn chị Vân nộp khoảng 400 triệu tiền ký quỹ (20%) vào tiểu khoản phái sinh và thực hiện đặt lệnh **Short 16 hợp đồng VN30F1M** ở mức giá 1.250 điểm.
 3.  **Kết quả khi thị trường giảm về đáy 1.060 điểm:**
     *   *Trên tài khoản cơ sở:* Danh mục cổ phiếu của chị Vân bị giảm giá trị tạm thời mất **304.000.000 VNĐ**.
     *   *Trên tài khoản phái sinh:* Vị thế Short 16 hợp đồng mang về khoản lợi nhuận thực tế:
         $$\text{Lợi nhuận phái sinh} = 16\text{ hđ} \times (1.250 - 1.060)\text{ điểm} \times 100.000\text{ VNĐ} = 304.000.000\text{ VNĐ}$$
-    *   *Tổng kết tài sản:* Khoản lãi phái sinh bù trừ chính xác $100\%$ cho khoản lỗ tạm thời của danh mục cơ sở. Tổng NAV tài sản ròng của chị Vân được bảo toàn nguyên vẹn ở mức 2 tỷ đồng.
+    *   *Tổng kết tài sản:* Khoản lãi phái sinh bù trừ chính xác 100% cho khoản lỗ tạm thời của danh mục cơ sở. Tổng NAV tài sản ròng của chị Vân được bảo toàn nguyên vẹn ở mức 2 tỷ đồng.
 
 Nhờ chiến thuật Hedging thông thái này, chị Vân không bị mất một cổ phiếu tốt nào ở vùng giá đáy, tối ngủ cực kỳ ngon giấc. Khi thị trường tạo đáy và phục hồi trở lại vào cuối năm, chị Vân đóng vị thế Short phái sinh và tận hưởng đà tăng trưởng mạnh mẽ của danh mục cổ phiếu cơ sở ban đầu.
 
@@ -96,12 +96,12 @@ Nhờ chiến thuật Hedging thông thái này, chị Vân không bị mất m�
 
 **Thông số danh mục của khách hàng anh Hoàng:**
 *   **Tổng giá trị danh mục cơ sở cần bảo vệ ($V_p$):** 1.500.000.000 VNĐ.
-*   **Hệ số Beta trung bình của danh mục so với VN30:** 1.15 (danh mục biến động mạnh hơn VN30 $15\%$).
+*   **Hệ số Beta trung bình của danh mục so với VN30:** 1.15 (danh mục biến động mạnh hơn VN30 15%).
 *   **Điểm số chỉ số VN30 Futures hiện tại ($F$):** 1.200 điểm.
 
 **Yêu cầu đối với học viên:**
 1.  Tính số lượng hợp đồng tương lai VN30F1M tối thiểu anh Hoàng cần Short để thiết lập vị thế phòng vệ Hedging hoàn hảo.
-2.  Giả sử sau 1 tuần, thị trường sụt giảm mạnh khiến chỉ số VN30 Futures giảm $8\%$ về mức $1.104$ điểm và danh mục cổ phiếu cơ sở của anh Hoàng sụt giảm tương ứng $9.2\%$ ($8\% \times 1.15$). Hãy tính toán:
+2.  Giả sử sau 1 tuần, thị trường sụt giảm mạnh khiến chỉ số VN30 Futures giảm 8% về mức 1.104 điểm và danh mục cổ phiếu cơ sở của anh Hoàng sụt giảm tương ứng 9.2% ($8% \times 1.15$). Hãy tính toán:
     *   Khoản lỗ tạm thời trên tài khoản chứng khoán cơ sở của anh Hoàng.
     *   Khoản lợi nhuận thực tế thu được từ vị thế Short phái sinh (chưa tính phí thuế).
     *   Đánh giá mức độ bù trừ tài sản ròng của tài khoản sau khi thực hiện Hedging.
@@ -115,16 +115,16 @@ Nhờ chiến thuật Hedging thông thái này, chị Vân không bị mất m�
 
 2.  **Bước 2: Tính toán hiệu quả khi thị trường giảm 8%:**
     *   **Khoản lỗ tạm thời trên tài khoản cơ sở:**
-        $$\text{Khoản lỗ cơ sở} = 1.500.000.000 \times (-9.2\%) = -138.000.000\text{ VNĐ}$$
+        $$\text{Khoản lỗ cơ sở} = 1.500.000.000 \times (-9.2%) = -138.000.000\text{ VNĐ}$$
     *   **Khoản lợi nhuận thu được từ vị thế Short 14 hợp đồng phái sinh:**
         $$\text{Mức điểm chênh lệch} = 1.200 - 1.104 = 96\text{ điểm}$$
         $$\text{Lợi nhuận phái sinh} = 14\text{ hđ} \times 96\text{ điểm} \times 100.000\text{ VNĐ} = 134.400.000\text{ VNĐ}$$
 
 3.  **Bước 3: Đánh giá hiệu quả bù trừ tài sản:**
-    *   Khoản lợi nhuận phái sinh (+134.4 triệu) đã bù đắp được **$97.4\%$** khoản lỗ tạm thời của danh mục cơ sở (-138 triệu).
+    *   Khoản lợi nhuận phái sinh (+134.4 triệu) đã bù đắp được **97.4%** khoản lỗ tạm thời của danh mục cơ sở (-138 triệu).
     *   Mức thiệt hại thực tế của tổng NAV sau Hedging chỉ còn lại:
         $$\text{Thiệt hại ròng} = -138.000.000 + 134.400.000 = -3.600.000\text{ VNĐ}$$
-    *   *Kết luận:* Chiến thuật Hedging đã bảo vệ cực kỳ xuất sắc tài sản của anh Hoàng, giảm thiểu mức sụt giảm tài sản từ lỗ 138 triệu xuống chỉ còn lỗ nhẹ 3.6 triệu đồng ($0.24\%$ NAV) trước một cơn bão sụt giảm lớn của thị trường.
+    *   *Kết luận:* Chiến thuật Hedging đã bảo vệ cực kỳ xuất sắc tài sản của anh Hoàng, giảm thiểu mức sụt giảm tài sản từ lỗ 138 triệu xuống chỉ còn lỗ nhẹ 3.6 triệu đồng (0.24% NAV) trước một cơn bão sụt giảm lớn của thị trường.
 
 ---
 
@@ -171,7 +171,7 @@ D. Khách hàng sẽ bị công ty chứng khoán khởi kiện khi tài khoản
 *   **Câu 2: Chọn C.**
     *   *Giải thích:* Beta là hệ số đo lường rủi ro hệ thống của cổ phiếu hoặc danh mục. Nắm chắc hệ số Beta của danh mục giúp Broker tính toán chính xác số lượng hợp đồng phái sinh cần thiết để phòng vệ tối ưu.
 *   **Câu 3: Chọn B.**
-    *   *Giải thích:* Giá trị hợp đồng phái sinh = Điểm số chỉ số x Hệ số nhân quy định ($100.000$ VNĐ). Do đó:
+    *   *Giải thích:* Giá trị hợp đồng phái sinh = Điểm số chỉ số x Hệ số nhân quy định (100.000 VNĐ). Do đó:
         $$\text{Giá trị hợp đồng} = 1.150 \times 100.000 = 115.000.000\text{ VNĐ}$$
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Hedging chỉ áp dụng trong các nhịp giảm của thị trường để bảo vệ vốn. Khi thị trường quay trở lại xu hướng tăng, phải đóng vị thế phòng thủ để danh mục cơ sở phát huy tối đa hiệu suất sinh lời.
@@ -179,6 +179,35 @@ D. Khách hàng sẽ bị công ty chứng khoán khởi kiện khi tài khoản
     *   *Giải thích:* Phái sinh là trò chơi có tổng bằng không (Zero-sum game) biến động cực nhanh với đòn bẩy gấp 5 - 6 lần cơ sở. F0 lướt sóng cảm xúc không kỷ luật cắt lỗ sẽ nhanh chóng bị cháy sạch tài khoản do tác động đòn bẩy.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Cảnh báo rủi ro phái sinh cho khách hàng F0 muốn "chơi Futures kiếm nhanh"
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu hợp đồng tương lai VN30, biết cách giải thích rủi ro đòn bẩy 1:7.
+    *   **Anh Kiên (Khách hàng F0):** 26 tuổi, lập trình viên. Vừa xem video YouTube "kiếm 50 triệu/ngày từ phái sinh", muốn mở tài khoản phái sinh.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Kiên (giọng hào hứng):** *Em ơi, anh vừa xem clip trên YouTube thấy người ta kiếm 50 triệu/ngày từ chơi phái sinh VN30. Anh muốn mở tài khoản phái sinh luôn! Anh có 200 triệu, ký quỹ mấy hợp đồng được em?*
+*   **Broker NextGen (giọng bình tĩnh, không phán xét):** *Dạ anh Kiên, phái sinh VN30 Futures là sản phẩm rất thú vị nhưng cũng rất nguy hiểm nếu chưa hiểu rõ cơ chế. Trước khi mở, cho em giải thích nhanh: với 200 triệu, anh ký quỹ được khoảng 10 hợp đồng, mỗi điểm VN30 = 100.000 đồng. Nghĩa là mỗi hợp đồng, VN30 dao động 10 điểm anh đã lãi/lỗ 1 triệu. 10 hợp đồng = ±10 triệu/ngày. Nhưng anh ơi, đòn bẩy phái sinh khoảng 1:7, tức 200 triệu anh đang điều khiển vị thế 1.4 tỷ. VN30 giảm 3% trong 1 ngày — anh lỗ 42 triệu, bay 21% vốn.*
+*   **Anh Kiên (chùn lại):** *Lỗ nhanh vậy á em? Trên YouTube họ toàn khoe lãi thôi mà?*
+*   **Broker NextGen (nghiêm túc nhẹ nhàng):** *Anh à, trên YouTube người ta chỉ post lệnh thắng, còn 10 lệnh thua thì giấu đi. Theo thống kê, hơn 80% nhà đầu tư cá nhân tham gia phái sinh bị thua lỗ trong năm đầu tiên. Em khuyên anh thế này: nếu anh thật sự muốn tìm hiểu phái sinh, bước 1 là dành 3 tháng paper-trading (giao dịch giả lập) trên demo account trước. Bước 2 là bắt đầu với 1-2 hợp đồng thôi, quản trị rủi ro theo quy tắc 2% NAV mỗi lệnh. Anh đừng nhảy vào 10 hợp đồng ngay ạ.*
+*   **Anh Kiên (tỉnh táo hơn):** *Oke em, nghe em nói anh cũng hết muốn chơi lớn rồi. Vậy anh paper-trading trước rồi hẵng hay nhé.*
+*   **Broker NextGen (khuyến khích):** *Dạ đúng rồi anh! Em sẽ gửi anh tài liệu hướng dẫn giao dịch phái sinh cơ bản + cách dùng demo account trên KB Mobile. Sau 3 tháng paper-trading mình review kết quả cùng nhau rồi quyết định ạ. Chậm mà chắc, an toàn vốn là ưu tiên số 1!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Giải thích cơ chế phái sinh (Technical)** | **40%** | Tính đúng giá trị 1 điểm, đòn bẩy, biên lãi/lỗ cụ thể; không dùng thuật ngữ quá phức tạp. | / 40 |
+| **Cảnh báo rủi ro trung thực (Risk Awareness)** | **35%** | Nêu thống kê 80% thua lỗ; chỉ ra bias YouTube; không hù dọa nhưng trung thực. | / 35 |
+| **Đề xuất lộ trình an toàn** | **25%** | Paper-trading 3 tháng trước; bắt đầu 1-2 HĐ; cam kết hỗ trợ tài liệu. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

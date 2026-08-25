@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Compliance Audit).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Compliance Audit).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi của Lộ trình (Tuần 3 - Nghiệp vụ tuân thủ pháp lý).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đặt tính thượng tôn pháp luật và đạo đức nghề nghiệp lên hàng đầu. Nhận thức rõ ràng rằng sự chuyên nghiệp và minh bạch pháp lý là lá chắn bảo vệ sự nghiệp lâu dài của Broker và tài sản của khách hàng. Tuyệt đối không vì doanh số ngắn hạn mà làm trái quy định pháp luật.
@@ -112,7 +112,7 @@ Chị Lan (40 tuổi, nhóm tính cách **S**) là một khách hàng mới mở
 
 1.  **Chỉ ra các điểm vi phạm pháp luật nếu Broker đồng ý:**
     *   *Vi phạm 1:* Nhận mật khẩu đăng nhập và đặt lệnh hộ trên tài khoản khách hàng (Ủy thác đầu tư cá nhân trái quy định của Luật Chứng khoán và quy chế KBSV).
-    *   *Vi phạm 2:* Cam kết lợi nhuận chắc chắn lãi $15\%$/năm (Vi phạm Điều 12 Luật Chứng khoán về cấm cam kết hiệu quả đầu tư).
+    *   *Vi phạm 2:* Cam kết lợi nhuận chắc chắn lãi 15%/năm (Vi phạm Điều 12 Luật Chứng khoán về cấm cam kết hiệu quả đầu tư).
 
 2.  **Đoạn tin nhắn phản hồi chuẩn mực của Broker NextGen:**
     > *"Dạ chị Lan ơi, em Minh đây ạ. Em rất cảm ơn sự tin tưởng lớn mà chị dành cho em và chi nhánh KBSV HO3. Em hoàn toàn hiểu được chị làm việc ở bệnh viện rất bận rộn và mong muốn có một kênh đầu tư sinh lời an toàn, sleep-well cho gia đình.*
@@ -123,7 +123,7 @@ Chị Lan (40 tuổi, nhóm tính cách **S**) là một khách hàng mới mở
     >
     > *Để giải quyết triệt để hai lo lắng trên của chị một cách hoàn toàn đúng pháp luật và an toàn tuyệt đối:*
     > *   *KBSV có tính năng **Tự động tích sản định kỳ SIP**. Em sẽ hướng dẫn chị thiết lập lệnh tự động một lần duy nhất trên ứng dụng KB Mobile. Hàng tháng, hệ thống sẽ tự động trích tiền mua gom cổ phiếu FPT cho chị đúng ngày mà chị không cần phải tốn thời gian canh bảng điện hay đặt lệnh thủ công.*
-    > *   *Về tiềm năng của FPT: Lịch sử tăng trưởng và điểm số InvestWise của FPT luôn đạt mức xuất sắc trên $18/20$ điểm, mang lại tỷ suất sinh lời bình quân dài hạn vượt trội. Tuy nhiên đầu tư tích sản là câu chuyện gieo hạt đều đặn từ 1 - 3 năm để tối ưu giá vốn.*
+    > *   *Về tiềm năng của FPT: Lịch sử tăng trưởng và điểm số InvestWise của FPT luôn đạt mức xuất sắc trên 18/20 điểm, mang lại tỷ suất sinh lời bình quân dài hạn vượt trội. Tuy nhiên đầu tư tích sản là câu chuyện gieo hạt đều đặn từ 1 - 3 năm để tối ưu giá vốn.*
     >
     > *Em xin phép gửi chị video 1 phút hướng dẫn cài đặt lệnh SIP tự động này để chị tham khảo nhé chị Lan. Em cam kết sẽ luôn đồng hành hỗ trợ phân tích báo cáo định kỳ cho chị một cách minh bạch nhất ạ."*
 
@@ -180,9 +180,39 @@ D. Công ty chứng khoán sẽ đền bù toàn bộ tiền thua lỗ cho khác
 
 ---
 
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Xử lý tình huống khách hàng yêu cầu Broker "cam kết lợi nhuận 15%/năm" — Từ chối đúng luật, giữ quan hệ
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Chuyên nghiệp, am hiểu pháp luật chứng khoán, kiên quyết từ chối nhưng khéo léo.
+    *   **Anh Đức (Khách hàng tiềm năng):** 38 tuổi, chủ doanh nghiệp nhỏ, muốn gửi 500 triệu vào chứng khoán. Yêu cầu Broker phải cam kết lãi ít nhất 15%/năm, nếu không sẽ chuyển sang công ty khác.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Đức (giọng tự tin, ra điều kiện):** *Em à, anh đang có 500 triệu muốn đầu tư chứng khoán. Bên công ty X cam kết cho anh tối thiểu 15%/năm, lỗ thì họ chịu. Em có cam kết được thế không thì anh mở tài khoản KBSV?*
+*   **Broker NextGen (giọng bình tĩnh, chuyên nghiệp):** *Dạ anh Đức, em cảm ơn anh đã tin tưởng trao đổi. Em nói thật với anh: theo Điều 12 Luật Chứng khoán 2019, bất kỳ người hành nghề chứng khoán nào cam kết lợi nhuận hoặc cam kết không lỗ đều đang vi phạm pháp luật, có thể bị phạt từ 100 triệu đến 300 triệu đồng và tước chứng chỉ hành nghề. Anh mà nghe ai cam kết kiểu đó thì anh cần cẩn thận lắm ạ.*
+*   **Anh Đức (hơi bất ngờ):** *Thật á em? Nhưng bên kia họ nói họ có quỹ riêng bù lỗ cho khách mà?*
+*   **Broker NextGen (nghiêm túc nhưng nhẹ nhàng):** *Dạ anh ơi, không có công ty chứng khoán nào được phép lập "quỹ bù lỗ" cho khách hàng cá nhân cả. Đó là dấu hiệu của việc quản lý tài khoản trái phép theo Khoản 4 Điều 12 Luật CK. Nếu xảy ra chuyện, anh sẽ không được pháp luật bảo vệ. Còn ở KBSV, em tư vấn anh theo đúng phương pháp tích sản bình an, phân tích dựa trên báo cáo Research chính thức. Em không cam kết con số, nhưng em cam kết kỷ luật đầu tư và sự minh bạch ạ.*
+*   **Anh Đức (giọng dịu hơn):** *Hmm, vậy nếu anh mở tài khoản KBSV thì anh được gì?*
+*   **Broker NextGen (tự tin, rõ ràng):** *Anh sẽ được em đồng hành xây dựng Tháp tài sản 3 tầng phù hợp với mục tiêu và khẩu vị rủi ro của anh. Tuần nào em cũng có Morning Briefing cập nhật thị trường, báo cáo Research team KBSV. Quan trọng nhất là tiền của anh luôn ở trong tài khoản đứng tên anh, anh kiểm soát 100%, không ai đặt lệnh hộ anh. Đó mới là an toàn thật sự ạ.*
+*   **Anh Đức (bị thuyết phục):** *Được rồi em, nghe em phân tích cũng có lý. Thế em hướng dẫn anh mở tài khoản đi, nhưng từ từ cho anh tìm hiểu thêm đã nhé.*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Kiến thức pháp luật CK (Legal)** | **40%** | Trích dẫn đúng Điều 12 Luật CK 2019 về hành vi bị cấm; giải thích rõ mức phạt; nhận diện dấu hiệu quản lý TK trái phép. | / 40 |
+| **Kỹ năng từ chối khéo léo (Soft Skills)** | **35%** | Từ chối kiên quyết nhưng không mất khách; chuyển hướng từ "cam kết lãi" sang "cam kết kỷ luật & minh bạch". | / 35 |
+| **Chốt eKYC & Follow-up** | **25%** | Dẫn dắt khách hàng từ nghi ngờ → tin tưởng → đồng ý mở tài khoản KBSV. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
+
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 
 > [!IMPORTANT]
 > **QUY TẮC PHÁT NGÔN AN TOÀN TRÊN KHÔNG GIAN MẠNG:**
-> 1.  Học viên NextGen **tuyệt đối không** được đưa ra bất kỳ nhận định, khuyến nghị mua/bán cổ phiếu cụ thể nào trên trang cá nhân mạng xã hội mà sử dụng các từ ngữ khẳng định $100\%$ như: *"Chắc chắn tăng giá"*, *"Cam kết ăn bằng lần"*, *"Bao lỗ cho anh chị em"*.
+> 1.  Học viên NextGen **tuyệt đối không** được đưa ra bất kỳ nhận định, khuyến nghị mua/bán cổ phiếu cụ thể nào trên trang cá nhân mạng xã hội mà sử dụng các từ ngữ khẳng định 100% như: *"Chắc chắn tăng giá"*, *"Cam kết ăn bằng lần"*, *"Bao lỗ cho anh chị em"*.
 > 2.  Mọi bài viết phân tích cơ hội đầu tư phải luôn đi kèm câu tuyên bố miễn trừ trách nhiệm chuẩn mực ở cuối bài: *"Bài viết dựa trên số liệu định lượng khách quan và mang tính chất tham khảo, nhà đầu tư vui lòng tự chịu trách nhiệm đối với quyết định giao dịch của mình"*.

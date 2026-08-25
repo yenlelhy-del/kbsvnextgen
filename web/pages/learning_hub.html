@@ -13,23 +13,50 @@
     
     <style>
         :root {
+            /* KBSV Brand Colors */
             --kb-yellow: #F5A623;
             --kb-yellow-dark: #E09000;
-            --kb-yellow-light: rgba(245, 166, 35, 0.05);
+            --kb-yellow-light: rgba(245, 166, 35, 0.04);
             --kb-brown: #8B7355;
             --kb-brown-dark: #5c4b37;
-            --text-primary: #1A1A1A;
-            --text-secondary: #4A4A4A;
-            --border: #d5cfc5;
-            --border-light: #ece8e0;
             --bg-warm: #FAFAF7;
+            
+            /* Shadcn UI Zinc/Slate Theme Colors adapted to KBSV Brand */
+            --background: #FAFAF7;
+            --foreground: #09090b;
+            --text-primary: #09090b;
+            --text-secondary: #52525b;
+            
+            --card: #ffffff;
+            --card-foreground: #09090b;
+            
+            --muted: #f4f4f5;
+            --muted-foreground: #71717a;
+            
+            --accent: #f4f4f5;
+            --accent-foreground: #18181b;
+            
+            --border: #e4e4e7;
+            --border-light: #f4f4f5;
+            --input: #e4e4e7;
+            
+            /* Feedback states */
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            
+            /* Border radius & Shadow Tokens */
+            --radius: 8px;
+            --radius-lg: 12px;
+            --radius-sm: 6px;
+            
             --font-body: 'Inter', -apple-system, sans-serif;
             --font-display: 'Space Grotesk', sans-serif;
-            --shadow-soft: 0 8px 30px rgba(92, 75, 55, 0.06);
-            --shadow-glow: 0 10px 30px rgba(245, 166, 35, 0.2);
-            --success-color: #4CAF50;
-            --warning-color: #FF9800;
-            --danger-color: #E05050;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            --shadow-glow: 0 0 12px rgba(245, 166, 35, 0.15);
         }
 
         * {
@@ -62,10 +89,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: rgba(250, 250, 247, 0.9);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-light);
+            background: rgba(250, 250, 247, 0.95);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
         }
 
         .npv-nav-brand {
@@ -129,7 +156,7 @@
             text-decoration: none;
             font-size: 14px;
             font-weight: 600;
-            transition: color 0.2s;
+            transition: color 0.15s ease;
         }
 
         .npv-nav-link:hover, .npv-nav-link.active {
@@ -137,46 +164,47 @@
         }
 
         .btn-primary {
-            padding: 10px 24px;
-            border-radius: 50px;
-            background: linear-gradient(135deg, var(--kb-yellow), var(--kb-yellow-dark));
+            padding: 10px 20px;
+            border-radius: var(--radius);
+            background: var(--kb-yellow-dark);
             color: #fff;
             border: none;
             cursor: pointer;
             font-size: 13.5px;
-            font-weight: 700;
-            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.25);
-            transition: all 0.25s ease;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-glow);
+            background: #cc8200;
+            box-shadow: var(--shadow-soft);
         }
 
         .btn-secondary {
-            padding: 10px 24px;
-            border-radius: 50px;
+            padding: 10px 20px;
+            border-radius: var(--radius);
             background: #fff;
             color: var(--text-primary);
             border: 1px solid var(--border);
             cursor: pointer;
             font-size: 13.5px;
-            font-weight: 700;
-            transition: all 0.2s;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
         }
 
         .btn-secondary:hover {
-            background: var(--bg-warm);
-            border-color: var(--kb-brown);
+            background: var(--muted);
+            border-color: var(--border);
         }
 
         /* ── HOMEPAGE HERO ── */
@@ -200,10 +228,10 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(245, 166, 35, 0.08);
+            background: var(--kb-yellow-light);
             border: 1px solid rgba(245, 166, 35, 0.3);
             padding: 6px 16px;
-            border-radius: 50px;
+            border-radius: var(--radius-lg);
             font-size: 12px;
             font-weight: 700;
             color: var(--kb-brown-dark);
@@ -244,7 +272,7 @@
         .hero-right-card {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 20px;
+            border-radius: var(--radius-lg);
             padding: 2.25rem;
             box-shadow: var(--shadow-soft);
         }
@@ -277,9 +305,9 @@
             margin: 130px auto 60px;
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 24px;
+            border-radius: var(--radius-lg);
             padding: 2.5rem;
-            box-shadow: var(--shadow-soft);
+            box-shadow: var(--shadow-md);
             animation: fadeIn 0.4s ease forwards;
         }
 
@@ -297,19 +325,20 @@
 
         .form-control {
             width: 100%;
-            padding: 12px 16px;
+            padding: 10px 14px;
             border: 1px solid var(--border);
-            border-radius: 10px;
+            border-radius: var(--radius);
             font-size: 14px;
             font-family: var(--font-body);
-            background: var(--bg-warm);
-            transition: all 0.2s;
+            background: #ffffff;
+            transition: all 0.15s ease-in-out;
+            color: var(--text-primary);
         }
 
         .form-control:focus {
             outline: none;
             border-color: var(--kb-yellow-dark);
-            background: #fff;
+            box-shadow: 0 0 0 2px rgba(245, 166, 35, 0.15);
         }
 
         /* Mascot Selector Grid */
@@ -322,24 +351,25 @@
         }
 
         .mascot-select-card {
-            border: 1px solid var(--border-light);
-            border-radius: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
             padding: 12px 8px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.2s;
-            background: var(--bg-warm);
+            transition: all 0.15s ease-in-out;
+            background: var(--muted);
         }
 
         .mascot-select-card:hover {
             border-color: var(--kb-yellow);
-            transform: translateY(-2px);
+            background: #ffffff;
+            transform: translateY(-1px);
         }
 
         .mascot-select-card.active {
             border-color: var(--kb-yellow-dark);
             background: var(--kb-yellow-light);
-            box-shadow: 0 4px 12px rgba(245, 166, 35, 0.12);
+            box-shadow: var(--shadow-glow);
         }
 
         .mascot-select-avatar {
@@ -349,7 +379,7 @@
             object-fit: cover;
             margin-bottom: 6px;
             background: #fff;
-            border: 1px solid var(--border-light);
+            border: 1px solid var(--border);
         }
 
         .mascot-select-name {
@@ -393,39 +423,49 @@
             grid-template-columns: repeat(6, 1fr);
             gap: 8px;
             list-style: none;
-            padding-bottom: 8px;
-            border-bottom: 2px solid var(--border-light);
+            padding: 4px;
+            background-color: var(--muted);
+            border-radius: var(--radius-lg);
+            margin-bottom: 24px;
+            border-bottom: none;
         }
 
         .week-tab-btn {
             background: transparent;
             border: none;
-            padding: 8px 12px;
-            font-family: var(--font-display);
+            padding: 10px 14px;
+            font-family: var(--font-body);
             font-size: 12.5px;
-            font-weight: 700;
-            color: var(--text-secondary);
+            font-weight: 500;
+            color: var(--muted-foreground);
             cursor: pointer;
-            border-radius: 12px;
-            transition: all 0.2s;
+            border-radius: calc(var(--radius) - 2px);
+            transition: all 0.15s ease;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 6px;
             align-items: flex-start;
             width: 100%;
             border: 1px solid transparent;
         }
 
-        .week-tab-btn.active, .week-tab-btn:hover {
-            color: var(--kb-yellow-dark);
-            background: var(--kb-yellow-light);
-            border-color: var(--border-light);
+        .week-tab-btn:hover {
+            color: var(--foreground);
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .week-tab-btn.active {
+            color: var(--foreground);
+            background-color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            font-weight: 600;
         }
 
         .tab-mini-progress-bg {
             width: 100%;
             height: 5px;
-            background: var(--border-light);
+            background: var(--border);
             border-radius: 10px;
             overflow: hidden;
         }
@@ -447,27 +487,28 @@
 
         .day-card {
             background: #fff;
-            border: 1px solid var(--border-light);
-            border-radius: 16px;
-            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 18px;
             cursor: pointer;
-            transition: all 0.25s ease;
+            transition: all 0.2s ease-in-out;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             min-height: 210px;
-            box-shadow: 0 2px 10px rgba(92, 75, 55, 0.02);
+            box-shadow: var(--shadow-sm);
         }
 
         .day-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-2px);
             box-shadow: var(--shadow-soft);
+            border-color: var(--kb-brown);
         }
 
         .day-card.completed {
-            background: rgba(76, 175, 80, 0.06); /* Distinct soft brand green */
-            border-color: rgba(76, 175, 80, 0.4);
+            background: rgba(16, 185, 129, 0.04);
+            border-color: rgba(16, 185, 129, 0.3);
             opacity: 1;
         }
 
@@ -481,7 +522,7 @@
 
         .day-card.completed.active-day {
             border-color: var(--kb-yellow-dark);
-            background: rgba(76, 175, 80, 0.06); /* Keep completed green background with yellow active border */
+            background: rgba(16, 185, 129, 0.04);
         }
 
         .card-status-svg {
@@ -549,9 +590,9 @@
         .gamify-status-card {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow-soft);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem;
+            box-shadow: var(--shadow-sm);
         }
 
         .status-row {
@@ -575,6 +616,11 @@
         .icon-svg {
             width: 24px;
             height: 24px;
+        }
+
+        @keyframes activeGlow {
+            0%, 100% { box-shadow: 0 0 5px rgba(245, 166, 35, 0.4); border-color: rgba(245, 166, 35, 0.6); }
+            50% { box-shadow: 0 0 15px rgba(245, 166, 35, 0.8); border-color: rgba(245, 166, 35, 1); }
         }
 
         /* CSS Motion Graphics animations */
@@ -695,9 +741,9 @@
         .mascot-advisor-panel {
             background: #fff;
             border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow-soft);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem;
+            box-shadow: var(--shadow-sm);
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -715,13 +761,13 @@
         }
 
         .mascot-bubble {
-            background: var(--bg-warm);
-            border: 1px solid var(--border-light);
-            border-radius: 12px;
+            background: var(--muted);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
             padding: 10px 14px;
             position: relative;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
             color: var(--text-secondary);
             line-height: 1.45;
             flex-grow: 1;
@@ -733,14 +779,14 @@
         .mascot-bubble::after {
             content: "";
             position: absolute;
-            left: -8px;
+            left: -6px;
             top: 50%;
             transform: translateY(-50%) rotate(45deg);
-            width: 12px;
-            height: 12px;
-            background: var(--bg-warm);
-            border-left: 1px solid var(--border-light);
-            border-bottom: 1px solid var(--border-light);
+            width: 10.5px;
+            height: 10.5px;
+            background: var(--muted);
+            border-left: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
 
         /* Active Day Debug Tool */
@@ -847,26 +893,28 @@
         .modal-checklist-row {
             display: flex;
             gap: 20px;
-            background: rgba(139, 115, 85, 0.05);
-            border: 1px solid var(--border-light);
-            border-radius: 12px;
+            background: var(--muted);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
             padding: 10px 16px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             align-items: center;
         }
 
         .checklist-item {
-            font-size: 12.5px;
-            font-weight: 700;
-            color: var(--text-secondary);
+            font-size: 13px;
+            font-family: var(--font-body);
+            font-weight: 500;
+            color: var(--muted-foreground);
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: all 0.2s;
+            transition: all 0.15s ease;
         }
 
         .checklist-item.done {
             color: var(--success-color);
+            font-weight: 600;
         }
 
         .chk-icon-container {
@@ -878,9 +926,9 @@
         .chk-svg {
             width: 16px;
             height: 16px;
-            color: var(--kb-brown);
+            color: var(--muted-foreground);
             opacity: 0.6;
-            transition: all 0.2s;
+            transition: all 0.15s ease;
         }
 
         .chk-svg.checked {
@@ -888,42 +936,57 @@
             opacity: 1;
         }
 
-        /* Lesson Tabs */
+        /* Lesson Tabs (Shadcn Tabs List style) */
         .lesson-tabs {
             display: flex;
-            gap: 4px;
-            border-bottom: 2px solid var(--border-light);
-            margin-bottom: 15px;
+            width: 100%;
+            background-color: var(--muted);
+            border-radius: var(--radius);
+            padding: 4px;
+            gap: 2px;
+            margin-bottom: 20px;
+            border-bottom: none;
         }
 
         .lesson-tab-btn {
+            flex: 1;
             background: transparent;
             border: none;
-            padding: 8px 15px;
-            font-family: var(--font-display);
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--text-secondary);
+            padding: 8px 12px;
+            font-family: var(--font-body);
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--muted-foreground);
             cursor: pointer;
-            border-radius: 8px 8px 0 0;
-            transition: all 0.2s;
+            border-radius: calc(var(--radius) - 2px);
+            transition: all 0.15s ease-in-out;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
+        }
+
+        .lesson-tab-btn:hover {
+            color: var(--foreground);
+            background-color: rgba(255, 255, 255, 0.4);
         }
 
         .lesson-tab-btn.active {
-            color: var(--kb-brown-dark);
-            background: #fff;
-            border: 1px solid var(--border);
-            border-bottom: 2px solid #fff;
-            margin-bottom: -2px;
+            color: var(--foreground);
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
         }
 
         .tab-icon-svg {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             margin-right: 6px;
-            color: var(--kb-brown);
+            color: var(--muted-foreground);
+            transition: color 0.15s ease;
+        }
+
+        .lesson-tab-btn.active .tab-icon-svg {
+            color: var(--kb-yellow-dark);
         }
 
         /* Tabs Content Display Container */
@@ -938,31 +1001,44 @@
             box-shadow: 0 4px 20px rgba(92, 75, 55, 0.02);
         }
 
-        /* Clean article styling */
+        /* Clean article styling (Shadcn UI style) */
         .article-h1 {
             font-family: var(--font-display);
-            font-size: 28px;
+            font-size: 24px;
             color: var(--kb-brown-dark);
             margin-top: 10px;
-            margin-bottom: 20px;
-            line-height: 1.3;
+            margin-bottom: 24px;
+            line-height: 1.25;
             font-weight: 800;
+            letter-spacing: -0.5px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 12px;
         }
 
         .article-h2 {
             font-family: var(--font-display);
-            font-size: 20px;
+            font-size: 18px;
             color: var(--text-primary);
-            border-left: 4px solid var(--kb-yellow);
-            padding-left: 12px;
             margin-top: 36px;
             margin-bottom: 16px;
             font-weight: 700;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .article-h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 16px;
+            background: var(--kb-yellow);
+            border-radius: 2px;
         }
 
         .article-h3 {
             font-family: var(--font-display);
-            font-size: 16px;
+            font-size: 14.5px;
             color: var(--kb-brown-dark);
             margin-top: 24px;
             margin-bottom: 12px;
@@ -970,45 +1046,100 @@
         }
 
         .article-p {
-            font-size: 15.5px;
-            line-height: 1.8;
+            font-size: 14px;
+            line-height: 1.7;
             color: var(--text-secondary);
-            margin-bottom: 20px;
-            text-align: justify;
+            margin-bottom: 16px;
+            text-align: left;
         }
 
         .article-blockquote {
-            background: var(--bg-warm);
-            border-left: 4px solid var(--kb-yellow);
-            padding: 14px 20px;
-            margin: 24px 0;
-            font-style: italic;
-            font-size: 15px;
-            line-height: 1.7;
+            background: rgba(139, 115, 85, 0.03);
+            border-left: 3px solid var(--kb-brown-light);
+            padding: 12px 18px;
+            margin: 20px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
             color: var(--text-secondary);
-            border-radius: 4px;
+            border-radius: 8px;
         }
 
         .article-ul {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             padding-left: 20px;
+            list-style: none;
         }
 
         .article-ul li {
-            font-size: 15.5px;
-            line-height: 1.7;
+            font-size: 14px;
+            line-height: 1.65;
             color: var(--text-secondary);
             margin-bottom: 8px;
+            position: relative;
+            padding-left: 12px;
+        }
+        .article-ul li::before {
+            content: "•";
+            color: var(--kb-yellow-dark);
+            font-weight: bold;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
         .article-code {
-            background: rgba(245, 166, 35, 0.08);
+            background: rgba(139, 115, 85, 0.05);
             color: var(--kb-brown-dark);
-            padding: 3px 6px;
-            border-radius: 6px;
-            font-family: monospace;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid rgba(139, 115, 85, 0.1);
+        }
+
+        /* Premium Math Formulas styling */
+        .math-equation {
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 16px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--font-display);
             font-size: 14px;
             font-weight: 600;
+            color: var(--kb-brown-dark);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.01);
+            overflow-x: auto;
+        }
+        .math-inline {
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: var(--kb-brown-dark);
+            background: rgba(139, 115, 85, 0.04);
+            padding: 1px 4px;
+            border-radius: 4px;
+        }
+        .math-fraction {
+            display: inline-flex;
+            flex-direction: column;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 4px;
+            margin: 0 4px;
+        }
+        .math-num {
+            border-bottom: 1.5px solid var(--kb-brown-dark);
+            padding-bottom: 1px;
+            font-size: 13px;
+        }
+        .math-den {
+            padding-top: 1px;
+            font-size: 13px;
         }
 
         /* Modal Right Panel: Cheatsheets, Quiz, Mascot Feedback */
@@ -1024,21 +1155,22 @@
 
         /* Download Card */
         .download-cs-card {
-            background: var(--kb-yellow-light);
-            border: 1px dashed var(--kb-yellow);
-            border-radius: 14px;
-            padding: 15px;
+            background: var(--card);
+            border: 1px dashed var(--kb-yellow-dark);
+            border-radius: var(--radius-lg);
+            padding: 18px;
             text-align: center;
-            transition: all 0.2s;
+            transition: all 0.15s ease-in-out;
+            box-shadow: var(--shadow-sm);
         }
 
         .download-cs-card:hover {
-            transform: scale(1.02);
             border-color: var(--kb-yellow-dark);
+            box-shadow: var(--shadow-soft);
         }
 
         .download-cs-title {
-            font-family: var(--font-display);
+            font-family: var(--font-body);
             font-size: 14px;
             font-weight: 700;
             color: var(--text-primary);
@@ -1048,76 +1180,297 @@
         .download-cs-desc {
             font-size: 12px;
             color: var(--text-secondary);
-            margin-bottom: 12px;
         }
 
         /* Interactive Quiz Widget */
         .quiz-card {
             border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 15px;
+            border-radius: var(--radius-lg);
+            padding: 18px;
             background: #fff;
+            box-shadow: var(--shadow-sm);
         }
 
         .quiz-title {
-            font-family: var(--font-display);
-            font-size: 12px;
+            font-family: var(--font-body);
+            font-size: 12.5px;
             font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 8px;
+            color: var(--muted-foreground);
+            margin-bottom: 12px;
             border-bottom: 1px solid var(--border-light);
-            padding-bottom: 4px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .quiz-question {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 10px;
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 14px;
+            line-height: 1.45;
         }
 
         .quiz-options {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 16px;
         }
 
         .quiz-option {
             background: #fff;
-            border: 1px solid var(--border-light);
-            border-radius: 8px;
-            padding: 8px 12px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-secondary);
+            border: 2px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 16px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #334155;
             cursor: pointer;
             text-align: left;
-            transition: all 0.2s;
-            line-height: 1.35;
+            transition: all 0.2s ease;
+            line-height: 1.6;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
         }
 
         .quiz-option:hover {
-            border-color: var(--kb-brown);
-            background: var(--bg-warm);
+            border-color: #F5A623;
+            background: #fffbf0;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(245,166,35,0.12);
         }
 
         .quiz-option.selected {
-            border-color: var(--kb-yellow-dark);
-            background: var(--kb-yellow-light);
-            color: var(--text-primary);
+            border-color: #F5A623 !important;
+            background: #fef9e7 !important;
+            color: #1e293b !important;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(245,166,35,0.15);
         }
 
         .quiz-explanation-box {
             display: none;
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #22c55e;
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #166534;
+            margin-top: 16px;
+            line-height: 1.65;
+        }
+
+        /* Chat Simulator Styles — Chat App Layout */
+        .chat-container {
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            overflow: hidden;
             background: #fff;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 8px 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .chat-header {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            padding: 16px 22px;
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #fff;
+        }
+        .chat-header-avatar {
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            background: var(--kb-yellow);
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 17px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(245,166,35,0.4);
+        }
+        .chat-header-info-title {
+            font-size: 15px; font-weight: 700; color: #fff;
+        }
+        .chat-header-info-status {
+            font-size: 12px; color: #86efac; display: flex; align-items: center; gap: 6px; margin-top: 2px;
+        }
+        .chat-header-info-status .dot {
+            width: 8px; height: 8px; border-radius: 50%; background: #4ade80; display: inline-block;
+            animation: statusPulse 2s infinite;
+        }
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .chat-body {
+            min-height: 380px;
+            max-height: 560px;
+            overflow-y: auto;
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        /* Each message row: avatar + bubble side by side */
+        .chat-msg-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            max-width: 82%;
+            animation: msgSlideIn 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+        .chat-msg-row.client { align-self: flex-start; flex-direction: row; }
+        .chat-msg-row.broker { align-self: flex-end; flex-direction: row-reverse; }
+        @keyframes msgSlideIn {
+            0% { transform: translateY(12px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        /* Avatar circle outside bubble */
+        .chat-avatar {
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 15px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .chat-msg-row.client .chat-avatar {
+            background: #64748b; color: #fff;
+        }
+        .chat-msg-row.broker .chat-avatar {
+            background: var(--kb-yellow); color: #fff;
+        }
+        /* Bubble content wrapper */
+        .chat-bubble-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            min-width: 0;
+        }
+        /* Name + tone label row above bubble */
+        .chat-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 6px;
+        }
+        .chat-msg-row.client .chat-meta-row { justify-content: flex-start; }
+        .chat-msg-row.broker .chat-meta-row { justify-content: flex-end; }
+        .chat-meta-name {
             font-size: 12px;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .chat-msg-row.broker .chat-meta-name { color: #b8860b; }
+        .chat-meta-tone {
+            font-size: 11px;
+            font-style: italic;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+        /* The bubble itself */
+        .chat-bubble {
+            padding: 14px 18px;
+            font-size: 15px;
+            line-height: 1.7;
+            position: relative;
+            word-wrap: break-word;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        .chat-bubble.client {
+            background: #ffffff;
+            color: #1e293b;
+            border-radius: 4px 18px 18px 18px;
+            border: 1px solid #e2e8f0;
+        }
+        .chat-bubble.broker {
+            background: linear-gradient(135deg, #fef3c7 0%, #fef9e7 100%);
+            color: #1e293b;
+            border-radius: 18px 4px 18px 18px;
+            border: 1px solid rgba(245, 166, 35, 0.25);
+        }
+        .chat-bubble strong, .chat-bubble b {
+            color: #0f172a;
+            font-weight: 700;
+        }
+        .chat-controls {
+            padding: 16px 22px;
+            border-top: 1px solid #e2e8f0;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Sliders Styling */
+        .scorecard-slider-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .scorecard-slider-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .slider-desc {
+            font-size: 8.5pt;
             color: var(--text-secondary);
-            margin-top: 10px;
-            line-height: 1.4;
+            line-height: 1.35;
+        }
+        .slider-input-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .slider-control {
+            flex-grow: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--border-light);
+            outline: none;
+            -webkit-appearance: none;
+        }
+        .slider-control::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--kb-yellow-dark);
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .slider-control::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+        .slider-val-badge {
+            min-width: 42px;
+            text-align: center;
+            padding: 3px 8px;
+            background: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: var(--kb-brown-dark);
         }
 
         /* calculators */
@@ -1270,6 +1623,642 @@
                 display: none;
             }
         }
+
+        /* ── LANDING PAGE STYLING (Vibrant & Premium Gen Z Design System) ── */
+        .landing-hero {
+            padding: 130px 2rem 50px;
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .landing-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(245, 166, 35, 0.12) 0%, rgba(245, 166, 35, 0.04) 100%);
+            border: 1px solid rgba(245, 166, 35, 0.4);
+            padding: 7px 18px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--kb-brown-dark);
+            margin-bottom: 22px;
+            width: fit-content;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(245, 166, 35, 0.1);
+        }
+
+        .landing-title {
+            font-size: clamp(34px, 4.8vw, 52px);
+            line-height: 1.14;
+            color: var(--text-primary);
+            margin-bottom: 22px;
+            font-family: var(--font-display);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .landing-title span {
+            background: linear-gradient(120deg, #E09000 0%, #F5A623 50%, #8B7355 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: var(--kb-yellow-dark);
+            display: inline-block;
+        }
+
+        .landing-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            line-height: 1.7;
+        }
+
+        /* Countdown clock - Glassmorphic 3D Box */
+        .countdown-wrapper {
+            margin-bottom: 32px;
+            background: linear-gradient(135deg, #ffffff 0%, #fafaf7 100%);
+            padding: 16px 24px;
+            border-radius: 20px;
+            border: 1.5px solid rgba(245, 166, 35, 0.3);
+            box-shadow: 0 10px 30px rgba(245, 166, 35, 0.12), 0 2px 8px rgba(0,0,0,0.04);
+            width: fit-content;
+            display: inline-block;
+        }
+
+        .countdown-label {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--kb-brown-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .countdown-grid {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .countdown-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border: 1.5px solid rgba(245, 166, 35, 0.25);
+            border-radius: 12px;
+            padding: 10px 16px;
+            min-width: 62px;
+            box-shadow: inset 0 1px 2px rgba(255,255,255,0.9), 0 4px 10px rgba(0,0,0,0.03);
+            transition: all 0.2s ease;
+        }
+
+        .countdown-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--kb-yellow);
+            box-shadow: 0 6px 16px rgba(245, 166, 35, 0.2);
+        }
+
+        .countdown-num {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 800;
+            color: #18181b;
+            line-height: 1;
+        }
+
+        .countdown-lbl {
+            font-size: 10px;
+            color: var(--kb-brown);
+            font-weight: 700;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .countdown-dot {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--kb-yellow-dark);
+            margin-top: -12px;
+            animation: pulseDot 1s infinite alternate;
+        }
+
+        @keyframes pulseDot {
+            0% { opacity: 0.3; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* Stat Bubbles visual container */
+        .landing-visual-panel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 440px;
+            width: 100%;
+            background: radial-gradient(circle at center, rgba(245, 166, 35, 0.15) 0%, rgba(250, 250, 247, 0) 70%);
+            border-radius: 32px;
+        }
+
+        .visual-mascot-center {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            border: 4px solid var(--kb-yellow);
+            background: #ffffff;
+            padding: 10px;
+            box-shadow: 0 0 40px rgba(245, 166, 35, 0.35), 0 12px 30px rgba(0,0,0,0.08);
+            z-index: 2;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            object-fit: cover;
+            animation: floatMascot 4s ease-in-out infinite;
+        }
+
+        @keyframes floatMascot {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1.5deg); }
+        }
+
+        .stat-bubble-3d {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1.5px solid rgba(245, 166, 35, 0.3);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(245, 166, 35, 0.12);
+            padding: 12px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 3;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: default;
+        }
+
+        .stat-bubble-3d:hover {
+            transform: scale(1.08) translateY(-6px) !important;
+            box-shadow: 0 18px 40px rgba(245, 166, 35, 0.25);
+            border-color: var(--kb-yellow);
+            background: #ffffff;
+        }
+
+        .stat-bubble-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: rgba(245, 166, 35, 0.12);
+            border: 1px solid rgba(245, 166, 35, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .stat-bubble-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-bubble-num {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--kb-brown-dark);
+            line-height: 1.2;
+        }
+
+        .stat-bubble-lbl {
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .stat-bubble-3d.b1 { top: 6%; left: -2%; animation: floatSlow 5s ease-in-out infinite; }
+        .stat-bubble-3d.b2 { top: 8%; right: -2%; animation: floatSlow 6s ease-in-out infinite 0.5s; }
+        .stat-bubble-3d.b3 { bottom: 8%; left: 0%; animation: floatSlow 5.5s ease-in-out infinite 1s; }
+        .stat-bubble-3d.b4 { bottom: 10%; right: 0%; animation: floatSlow 4.8s ease-in-out infinite 1.5s; }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Mascot Grid section */
+        .landing-mascots-section {
+            background: linear-gradient(180deg, #ffffff 0%, #fafaf7 100%);
+            border: 1.5px solid rgba(245, 166, 35, 0.2);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            margin: 40px auto 60px;
+            max-width: 1240px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        }
+
+        .landing-mascot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 28px;
+            margin-bottom: 28px;
+        }
+
+        .landing-mascot-card {
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 24px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            background: #ffffff;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .landing-mascot-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--kb-yellow);
+            box-shadow: 0 12px 28px rgba(245, 166, 35, 0.15);
+        }
+
+        .landing-mascot-card.active {
+            border-color: var(--kb-yellow-dark);
+            background: linear-gradient(135deg, rgba(245, 166, 35, 0.08) 0%, rgba(255, 255, 255, 0.9) 100%);
+            box-shadow: 0 12px 30px rgba(245, 166, 35, 0.2);
+        }
+
+        .landing-mascot-badge {
+            display: inline-block;
+            font-size: 10.5px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 50px;
+            background: var(--muted);
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .landing-mascot-card.active .landing-mascot-badge {
+            background: var(--kb-yellow-dark);
+            color: #ffffff;
+        }
+
+        .landing-mascot-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(245, 166, 35, 0.3);
+            background: #fff;
+            margin: 0 auto 14px;
+            transition: transform 0.25s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .landing-mascot-card:hover .landing-mascot-avatar {
+            transform: scale(1.08);
+            border-color: var(--kb-yellow);
+        }
+
+        .landing-mascot-name {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .landing-mascot-track {
+            font-size: 13px;
+            color: var(--kb-brown-dark);
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .landing-mascot-speech-bubble {
+            background: #ffffff;
+            border: 1.5px solid rgba(245, 166, 35, 0.3);
+            border-radius: 20px;
+            padding: 20px 24px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            position: relative;
+            box-shadow: 0 8px 24px rgba(245, 166, 35, 0.08);
+            animation: bubblePop 0.35s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        /* Pillars Section */
+        .landing-pillars-section {
+            max-width: 1240px;
+            margin: 0 auto 60px;
+            padding: 0 2rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .pillar-card {
+            background: #ffffff;
+            border: 1.5px solid var(--border-light);
+            border-radius: 20px;
+            padding: 24px 20px;
+            transition: all 0.25s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--kb-yellow);
+            box-shadow: 0 12px 28px rgba(245, 166, 35, 0.12);
+        }
+
+        .pillar-icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(245, 166, 35, 0.15) 0%, rgba(245, 166, 35, 0.05) 100%);
+            border: 1px solid rgba(245, 166, 35, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .pillar-title {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .pillar-desc {
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* Prizes Banner */
+        .landing-prizes-banner {
+            max-width: 1240px;
+            margin: 0 auto 60px;
+            padding: 2.5rem 3rem;
+            background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+            border-radius: 24px;
+            color: #ffffff;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .prize-title {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--kb-yellow);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .prize-subtitle {
+            font-size: 14px;
+            color: #a1a1aa;
+            line-height: 1.6;
+        }
+
+        .prize-items-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .prize-item-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 18px 14px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s ease;
+        }
+
+        .prize-item-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--kb-yellow);
+        }
+
+        .prize-item-val {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--kb-yellow);
+            margin-bottom: 4px;
+        }
+
+        .prize-item-lbl {
+            font-size: 12px;
+            color: #d4d4d8;
+            font-weight: 600;
+        }
+
+        @keyframes bubblePop {
+            0% { transform: scale(0.97); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ── THEORY MARKDOWN RENDER STYLES ── */
+        .diagram-container {
+            background: #1A1A1A;
+            border: 1px solid #2d2d2d;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            overflow-x: auto;
+        }
+
+        .diagram-pre {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #E2E8F0;
+            white-space: pre;
+            margin: 0;
+        }
+
+        .code-pre {
+            background: #1A1A1A;
+            border-radius: 10px;
+            padding: 14px;
+            overflow-x: auto;
+            margin: 18px 0;
+        }
+        .code-pre code {
+            font-family: monospace;
+            color: #E2E8F0;
+            font-size: 13px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .article-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            margin: 16px 0;
+        }
+
+        .article-table th {
+            background: rgba(139, 115, 85, 0.03);
+            color: var(--kb-brown-dark);
+            padding: 10px 14px;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .article-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .article-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .article-table tr:nth-child(even) td {
+            background-color: rgba(139, 115, 85, 0.01);
+        }
+
+        .article-table tr:hover td {
+            background-color: rgba(245, 166, 35, 0.03);
+            color: var(--text-primary);
+        }
+
+        .callout {
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 20px 0;
+            border-left: 4px solid;
+            box-shadow: 0 2px 8px rgba(92, 75, 55, 0.01);
+        }
+
+        .callout-important {
+            background: rgba(239, 68, 68, 0.02);
+            border-color: #ef4444;
+        }
+        
+        .callout-warning {
+            background: rgba(245, 158, 11, 0.02);
+            border-color: #f59e0b;
+        }
+
+        .callout-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-display);
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .callout-important .callout-header {
+            color: #ef4444;
+        }
+
+        .callout-warning .callout-header {
+            color: #f59e0b;
+        }
+
+        .callout-icon {
+            width: 14px;
+            height: 14px;
+        }
+
+        .callout-content {
+            font-size: 13.5px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .landing-hero {
+                grid-template-columns: 1fr;
+                padding: 100px 1.5rem 30px;
+                gap: 2rem;
+            }
+            .landing-visual-panel {
+                height: 320px;
+            }
+            .stat-bubble-3d {
+                padding: 8px 12px;
+            }
+            .stat-bubble-num {
+                font-size: 14px;
+            }
+            .stat-bubble-3d.b1 { top: 5%; left: 0%; }
+            .stat-bubble-3d.b2 { top: 8%; right: 0%; }
+            .stat-bubble-3d.b3 { bottom: 5%; left: 2%; }
+            .stat-bubble-3d.b4 { bottom: 8%; right: 2%; }
+            .landing-mascot-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .landing-mascot-avatar {
+                width: 80px;
+                height: 80px;
+            }
+            .landing-mascots-section {
+                padding: 2rem 1.2rem;
+                margin: 20px auto 40px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1289,7 +2278,7 @@
         </a>
 
         <ul class="npv-nav-links">
-            <li><a href="javascript:void(0)" class="npv-nav-link active" id="navHomeLink" onclick="goHome()">Trang chủ</a></li>
+            <li><a href="https://nextgen.finpeace.cloud/" class="npv-nav-link active" id="navHomeLink">Trang chủ</a></li>
             <li><a href="javascript:void(0)" class="npv-nav-link" id="navRoadmapLink" onclick="triggerDashboardView()">Lộ trình 42 ngày</a></li>
         </ul>
 
@@ -1301,39 +2290,246 @@
         </div>
     </nav>
 
-    <!-- ── 1. HOMEPAGE PORTAL (Pre-login) ── -->
-    <section class="homepage-hero" id="homepageSection">
-        <div class="hero-left">
-            <div class="program-badge">
-                <svg class="badge-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                    <path d="M4 22h16"/>
-                    <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/>
-                    <path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z"/>
-                </svg>
-                <span>Chương trình Tuyển dụng - Đào tạo - Thực chiến Môi giới 4.0</span>
-            </div>
-            <h1 class="hero-title">Trở thành<br><span>Digital Wealth Advisor</span><br>Thế hệ mới</h1>
-            <p class="hero-desc">Lộ trình 42 ngày Micro-learning bọc thép kiến thức đầu tư, rèn luyện kỹ năng KOC và khai thác các công cụ Sales AI tối tân cùng Sở Giao Dịch 3 (HO3) KB Securities Vietnam & FinPeace.</p>
-            <div class="hero-actions">
-                <button class="btn-primary" style="padding: 12px 32px; font-size: 14px;" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
-                <button class="btn-secondary" style="padding: 12px 32px; font-size: 14px;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster Dự Án</button>
-            </div>
-        </div>
+    <!-- ── 1. HOMEPAGE PORTAL (Pre-login Landing Page) ── -->
+    <div id="homepageSection" style="display: block; width: 100%;">
+        <section class="landing-hero">
+            <div class="hero-left">
+                <div class="landing-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px; height:14px; color:var(--kb-yellow-dark); display:inline-block; vertical-align:middle; margin-right:4px;">
+                        <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    Tuyển dụng Season 1 · HO3 KBSV x FinPeace
+                </div>
+                <h1 class="landing-title">
+                    KBSV <span>NEXTGEN 2026</span><br>Thế hệ Môi giới Không Giới Hạn
+                </h1>
+                <p class="landing-desc">
+                    Chương trình thực tập sinh kết hợp đào tạo chuyên môn và thực chiến <strong>42 ngày</strong> bọc thép kiến thức đầu tư, phát triển kỹ năng <strong>Financial KOC</strong> và làm chủ hệ sinh thái Sales AI cùng Sở Giao Dịch 3 (HO3) KB Securities Vietnam & FinPeace.
+                </p>
+                
+                <!-- Countdown Widget -->
+                <div class="countdown-wrapper">
+                    <div class="countdown-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px; color:var(--kb-yellow-dark);">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Hạn đăng ký hồ sơ còn
+                    </div>
+                    <div class="countdown-grid">
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="landingDays">00</span>
+                            <span class="countdown-lbl">Ngày</span>
+                        </div>
+                        <div class="countdown-dot">:</div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="landingHours">00</span>
+                            <span class="countdown-lbl">Giờ</span>
+                        </div>
+                        <div class="countdown-dot">:</div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="landingMinutes">00</span>
+                            <span class="countdown-lbl">Phút</span>
+                        </div>
+                        <div class="countdown-dot">:</div>
+                        <div class="countdown-box">
+                            <span class="countdown-num" id="landingSeconds">00</span>
+                            <span class="countdown-lbl">Giây</span>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="hero-right-card">
-            <h3 style="font-size: 15px; color: var(--text-primary); border-bottom: 2px solid var(--kb-yellow); padding-bottom: 8px; margin-bottom: 18px;">THÔNG TIN DỰ ÁN CHI TIẾT</h3>
-            <ul class="features-list">
-                <li><strong>Thời lượng:</strong> 42 ngày (2 tuần nền tảng + 4 tuần thực chiến)</li>
-                <li><strong>Mục tiêu:</strong> Đào tạo thành Financial KOC đạt chuẩn AUM & eKYC</li>
-                <li><strong>Ngân sách Quỹ giải thưởng:</strong> 20.000.000 VNĐ</li>
-                <li><strong>Mức giải nhất xuất sắc:</strong> 5.000.000 VNĐ</li>
-                <li><strong>Cơ chế lương thưởng:</strong> Lương cứng 10M + 50% hoa hồng DTT</li>
-                <li><strong>Quy tắc loại Sudden Death:</strong> Áp dụng kỷ luật từ Tuần 3 sống còn</li>
-            </ul>
-        </div>
-    </section>
+                <div class="hero-actions">
+                    <button class="btn-primary" style="padding: 14px 38px; font-size: 15px; font-weight:700; border-radius:12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
+                    <button class="btn-secondary" style="padding: 14px 32px; font-size: 15px; font-weight:600; border-radius:12px;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster & Thể Lệ</button>
+                </div>
+            </div>
+
+            <!-- Visual Panel: Dynamic floating bubbles and Mascot center -->
+            <div class="landing-visual-panel">
+                <div class="stat-bubble-3d b1">
+                    <div class="stat-bubble-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px; color:var(--kb-yellow-dark);">
+                            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-bubble-content">
+                        <span class="stat-bubble-num">42 NGÀY</span>
+                        <span class="stat-bubble-lbl">Thực chiến bài bản</span>
+                    </div>
+                </div>
+                <div class="stat-bubble-3d b2">
+                    <div class="stat-bubble-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px; color:var(--kb-yellow-dark);">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="stat-bubble-content">
+                        <span class="stat-bubble-num">MENTOR 1:1</span>
+                        <span class="stat-bubble-lbl">Research Team HO3</span>
+                    </div>
+                </div>
+                
+                <!-- Animated center mascot showcase -->
+                <img src="../assets/mascot/flexi/light/Mascot app Flexi_flexi original 1.png" alt="Mascot Center" class="visual-mascot-center" id="landingMascotVisual">
+                
+                <div class="stat-bubble-3d b3">
+                    <div class="stat-bubble-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px; color:var(--kb-yellow-dark);">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-bubble-content">
+                        <span class="stat-bubble-num">20 TRIỆU</span>
+                        <span class="stat-bubble-lbl">Quỹ giải thưởng</span>
+                    </div>
+                </div>
+                <div class="stat-bubble-3d b4">
+                    <div class="stat-bubble-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px; color:var(--kb-yellow-dark);">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                        </svg>
+                    </div>
+                    <div class="stat-bubble-content">
+                        <span class="stat-bubble-num">THU NHẬP 18M</span>
+                        <span class="stat-bubble-lbl">khi đạt chuẩn + 50% HH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 Core Pillars Section -->
+        <section class="landing-pillars-section">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <div class="landing-badge" style="margin: 0 auto 12px;">GIÁ TRỊ CỐT LÕI</div>
+                <h2 style="font-family: var(--font-display); font-size: 26px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">TRẢI NGHIỆM ĐÀO TẠO KHÁC BIỆT</h2>
+                <p style="font-size: 14.5px; color: var(--text-secondary);">4 Trụ cột bọc thép giúp bạn biến đam mê tài chính thành sự nghiệp tư vấn chuyên nghiệp.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px; height:24px; color:var(--kb-yellow-dark);">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <div class="pillar-title">14 Ngày Lý Thuyết</div>
+                    <div class="pillar-desc">Bọc thép kiến thức Macro, Phân tích Doanh nghiệp, PTKT Wyckoff, Margin & Luật CK tuân thủ.</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px; height:24px; color:var(--kb-yellow-dark);">
+                            <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                        </svg>
+                    </div>
+                    <div class="pillar-title">28 Ngày Thực Chiến</div>
+                    <div class="pillar-desc">Daily Briefing 8h30, Content Lab video ngắn, Livestream 90 phút & chăm sóc Zalo Group thực tế.</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px; height:24px; color:var(--kb-yellow-dark);">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+                        </svg>
+                    </div>
+                    <div class="pillar-title">Sales AI & SalesGPT</div>
+                    <div class="pillar-desc">Làm chủ công nghệ trợ lý ảo AI, tư vấn cá thể hóa, giải mã Protection Gap & đề xuất danh mục.</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:24px; height:24px; color:var(--kb-yellow-dark);">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <div class="pillar-title">Lộ Trình Thu Nhập</div>
+                    <div class="pillar-desc">Thu nhập 18 triệu/tháng khi đạt chuẩn + 50% Hoa hồng DTT + Thưởng Active TK 50k-200k/TK.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Mascot Showcase Grid -->
+        <section class="landing-mascots-section">
+            <div style="text-align: center; max-width: 750px; margin: 0 auto 24px;">
+                <div class="landing-badge" style="margin: 0 auto 12px;">CỐ VẤN ẢO DÀNH CHO BẠN</div>
+                <h2 style="font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">CHỌN HÌNH MẪU ĐỒNG HÀNH TRỰC TUYẾN</h2>
+                <p style="font-size: 14.5px; color: var(--text-secondary);">Click chọn hình mẫu Mascot bên dưới để kích hoạt lộ trình cố vấn chuyên biệt & tương tác cùng nhân vật.</p>
+            </div>
+            
+            <div class="landing-mascot-grid">
+                <!-- Flexi -->
+                <div class="landing-mascot-card active" id="landingCard_flexi" onclick="clickLandingMascot('flexi')">
+                    <div class="landing-mascot-badge">TRACK 01</div>
+                    <img src="../assets/mascot/flexi/light/Mascot app Flexi_flexi original 1.png" alt="Flexi Mascot" class="landing-mascot-avatar">
+                    <div class="landing-mascot-name">Flexi</div>
+                    <div class="landing-mascot-track">Content KOC Track</div>
+                </div>
+                <!-- Investor -->
+                <div class="landing-mascot-card" id="landingCard_investor" onclick="clickLandingMascot('investor')">
+                    <div class="landing-mascot-badge">TRACK 02</div>
+                    <img src="../assets/mascot/investor/light/Mascot app Investor_investor original-01.png" alt="Investor Mascot" class="landing-mascot-avatar">
+                    <div class="landing-mascot-name">Investor</div>
+                    <div class="landing-mascot-track">Tích Sản SIP Track</div>
+                </div>
+                <!-- Trader -->
+                <div class="landing-mascot-card" id="landingCard_trader" onclick="clickLandingMascot('trader')">
+                    <div class="landing-mascot-badge">TRACK 03</div>
+                    <img src="../assets/mascot/trader/light/Mascot app Trader_trader original-01.png" alt="Trader Mascot" class="landing-mascot-avatar">
+                    <div class="landing-mascot-name">Trader</div>
+                    <div class="landing-mascot-track">Lướt Sóng & Phái Sinh Track</div>
+                </div>
+            </div>
+            
+            <!-- Dynamic speech bubble -->
+            <div class="landing-mascot-speech-bubble">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--kb-yellow-light); border: 1px solid rgba(245, 166, 35, 0.4); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px; height:18px; color:var(--kb-yellow-dark);">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <div style="font-family: var(--font-display); font-weight: 800; font-size: 14px; color: var(--kb-brown-dark); margin-bottom: 2px;">Cố Vấn Ảo NextGen Chat:</div>
+                    <span id="landingMascotSpeechText" style="font-weight: 600; color: var(--text-secondary); font-size: 14.5px;">
+                        Chào bạn! Mình là Flexi, chuyên gia Content KOC. Mình sẽ hướng dẫn bạn cách xây dựng thương hiệu cá nhân, sản xuất chuỗi video ngắn triệu view và thu hút leads tự động thông qua Content Lab!
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prizes Banner Section -->
+        <section class="landing-prizes-banner">
+            <div>
+                <div class="prize-title">QUỸ GIẢI THƯỞNG 20.000.000 VNĐ</div>
+                <div class="prize-subtitle">Tuyên dương & trao thưởng cho các Financial KOC xuất sắc nhất cuộc thi thực chiến NextGen 2026.</div>
+            </div>
+            <div class="prize-items-grid">
+                <div class="prize-item-card">
+                    <div class="prize-item-val">5.000.000đ</div>
+                    <div class="prize-item-lbl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px; color:var(--kb-yellow); display:inline-block; vertical-align:middle; margin-right:4px;">
+                            <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                        Giải Nhất Quán Quân
+                    </div>
+                </div>
+                <div class="prize-item-card">
+                    <div class="prize-item-val">200.000đ</div>
+                    <div class="prize-item-lbl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px; color:var(--kb-yellow); display:inline-block; vertical-align:middle; margin-right:4px;">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                        Active TK NAV > 50M
+                    </div>
+                </div>
+                <div class="prize-item-card">
+                    <div class="prize-item-val">50.000đ</div>
+                    <div class="prize-item-lbl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px; height:14px; color:var(--kb-yellow); display:inline-block; vertical-align:middle; margin-right:4px;">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        Active TK NAV < 50M
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
     <section class="login-section" id="loginSection">
@@ -1501,13 +2697,13 @@
                 <!-- Checklist tracker row -->
                 <div class="modal-checklist-row">
                     <div class="checklist-item" id="chkTheory">
-                        <span class="chk-icon-container"></span> Lý Thuyết
-                    </div>
-                    <div class="checklist-item" id="chkCalc">
-                        <span class="chk-icon-container"></span> Bàn Tính Thực Hành
+                        <span class="chk-icon-container"></span> 1. Đọc Lý Thuyết
                     </div>
                     <div class="checklist-item" id="chkRoleplay">
-                        <span class="chk-icon-container"></span> Sắm Vai & Rubric
+                        <span class="chk-icon-container"></span> 2. Role-play & Script
+                    </div>
+                    <div class="checklist-item" id="chkQuiz">
+                        <span class="chk-icon-container"></span> 3. Bài Test Đạt Chuẩn
                     </div>
                 </div>
 
@@ -1519,26 +2715,19 @@
                             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
                         </svg>Lý Thuyết
                     </button>
-                    <button class="lesson-tab-btn" onclick="switchLessonTab('calculator', this)">
-                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
-                            <line x1="9" y1="22" x2="9" y2="16"/>
-                            <line x1="8" y1="6" x2="16" y2="6"/>
-                            <line x1="16" y1="22" x2="16" y2="16"/>
-                            <line x1="9" y1="16" x2="16" y2="16"/>
-                            <circle cx="9" cy="10" r="1"/>
-                            <circle cx="15" cy="10" r="1"/>
-                            <circle cx="9" cy="13" r="1"/>
-                            <circle cx="15" cy="13" r="1"/>
-                        </svg>Bàn Tính Thực Hành
-                    </button>
                     <button class="lesson-tab-btn" onclick="switchLessonTab('roleplay', this)">
                         <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                             <circle cx="9" cy="7" r="4"/>
                             <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>Sắm Vai & Rubric
+                        </svg>Role-play & Script
+                    </button>
+                    <button class="lesson-tab-btn" onclick="switchLessonTab('quiz', this)">
+                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>Bài Test Đánh Gía
                     </button>
                 </div>
 
@@ -1550,24 +2739,25 @@
                 </div>
             </div>
 
-            <!-- Right Area: Cheatsheets, Quiz, Mascot Confirmation -->
+            <!-- Right Area: Cheatsheets, Mascot Tip -->
             <div class="modal-right">
                 
                 <!-- Cheatsheet Download Box -->
                 <div class="download-cs-card">
                     <div class="download-cs-title">TẢI VỀ CHEATSHEET THỰC HÀNH</div>
-                    <div class="download-cs-desc">Tra cứu nhanh công thức, kịch bản sắm vai chuẩn A4 in ấn / lưu PDF.</div>
-                    <a href="" target="_blank" class="btn-primary" id="cheatsheetDownloadBtn" style="padding:10px 20px; font-size:13px; justify-content:center;">Tải Cheatsheet PDF (A4) →</a>
+                    <div class="download-cs-desc">Tra cứu nhanh công thức, kịch bản Role-play & Script chuẩn A4 in ấn / lưu PDF.</div>
+                    <a href="" target="_blank" class="btn-primary" id="cheatsheetDownloadBtn" style="padding:10px 20px; font-size:13px; justify-content:center; width:100%;">Tải Cheatsheet PDF (A4) →</a>
                 </div>
 
-                <!-- Daily Quiz Widget -->
-                <div class="quiz-card">
-                    <div class="quiz-title">TRẮC NGHIỆM ĐÁNH GIÁ NĂNG LỰC HÀNG NGÀY</div>
-                    <div class="quiz-question" id="qQuestion">Đang tải câu hỏi trắc nghiệm...</div>
-                    <div class="quiz-options" id="qOptionsBox"></div>
-                    <button class="btn-primary" id="quizSubmitBtn" onclick="evaluateQuiz()" style="width:100%; justify-content:center; padding:10px 0; font-size:13px;">Gửi đáp án (+50 XP)</button>
-                    
-                    <div class="quiz-explanation-box" id="quizExplanation"></div>
+                <!-- Daily Tips / Mascot Feedback -->
+                <div style="background:#fff; border:1px solid var(--border-light); border-radius:16px; padding:18px; box-shadow:var(--shadow-soft);">
+                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+                        <img src="" id="modalMascotAvatar" style="width:40px; height:40px; border-radius:50%; border:1.5px solid var(--kb-yellow); object-fit:cover;">
+                        <span style="font-size:12px; font-weight:800; color:var(--text-primary); text-transform:uppercase; letter-spacing:0.3px;">Lời khuyên từ Mentor</span>
+                    </div>
+                    <p style="font-size:12px; color:var(--text-secondary); line-height:1.5;" id="modalMascotSpeech">
+                        Hãy đọc kỹ lý thuyết trước khi chuyển sang Bàn Tính Thực Hành và làm Bài Test Đánh Giá để hoàn thành ngày học nhé!
+                    </p>
                 </div>
 
             </div>
@@ -1708,15 +2898,25 @@
         let activeLesson = null;
         let currentXP = 0; // Default starting XP is 0
         let completedDays = {}; // Stores { dayId: boolean }
+        let activeLessonMarkdownText = ''; // Stores raw lesson markdown for dynamic quiz parsing
 
         // Checklist completion states inside modal
         let viewedTheory = false;
         let viewedCalculator = false;
         let viewedRoleplay = false;
+        let viewedQuiz = false;
+
+        // Interactive landing page mascot speech bubbles
+        const landingMascotSpeeches = {
+            flexi: "Chào bạn! Mình là Flexi, chuyên gia Content KOC. Mình sẽ hướng dẫn bạn cách xây dựng thương hiệu cá nhân, sản xuất chuỗi video ngắn triệu view và thu hút leads tự động thông qua Content Lab!",
+            investor: "Chào bạn! Mình là Investor, đại diện cho trường phái Đầu Tư Tích Sản (SIP). Mình sẽ giúp bạn làm chủ Tháp Tài Sản, thiết lập các kế hoạch tích lũy dài hạn và tư vấn chuyên nghiệp cho tệp khách hàng cá nhân tích sản!",
+            trader: "Chào bạn! Mình là Trader, chuyên gia Lướt Sóng & Phái Sinh. Mình sẽ huấn luyện bạn về các quy tắc quản trị rủi ro nghiêm ngặt (như quy tắc 2% NAV), thiết kế điểm mua Entry/SL/TP chuẩn chỉ và chinh phục thị trường phái sinh!"
+        };
 
         window.addEventListener('DOMContentLoaded', () => {
             initDebugSelector();
             checkSavedUser();
+            startLandingCountdown();
         });
 
         // Naming helper based on mascot type and emotional state
@@ -1740,6 +2940,70 @@
             } else {
                 return `Mascot app Trader_trader ${baseState}-01.png`;
             }
+        }
+
+        // Landing page interactive mascot grid
+        function clickLandingMascot(type) {
+            // Update active card class
+            document.querySelectorAll('.landing-mascot-card').forEach(card => card.classList.remove('active'));
+            document.getElementById(`landingCard_${type}`).classList.add('active');
+            
+            // Update center preview mascot image
+            const centerMascotImg = document.getElementById('landingMascotVisual');
+            if (centerMascotImg) {
+                const fn = getMascotFilename(type, 'original');
+                centerMascotImg.src = `../assets/mascot/${type}/light/${fn}`;
+            }
+            
+            // Update speech bubble text
+            const speechText = document.getElementById('landingMascotSpeechText');
+            if (speechText) {
+                speechText.innerText = landingMascotSpeeches[type];
+            }
+            
+            // Sync choice to login selector card
+            selectedMascotType = type;
+            const mascotSelectCards = document.querySelectorAll('.mascot-select-card');
+            if (mascotSelectCards.length > 0) {
+                mascotSelectCards.forEach(card => card.classList.remove('active'));
+                const cardIndex = type === 'flexi' ? 0 : (type === 'investor' ? 1 : 2);
+                if (mascotSelectCards[cardIndex]) {
+                    mascotSelectCards[cardIndex].classList.add('active');
+                }
+            }
+        }
+
+        // Landing page countdown timer (realtime)
+        function startLandingCountdown() {
+            // Targets 15 days from now dynamically to simulate active recruitment
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 15);
+            
+            function update() {
+                const now = new Date();
+                const diff = targetDate - now;
+                if (diff <= 0) {
+                    clearInterval(interval);
+                    return;
+                }
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                const dEl = document.getElementById('landingDays');
+                const hEl = document.getElementById('landingHours');
+                const mEl = document.getElementById('landingMinutes');
+                const sEl = document.getElementById('landingSeconds');
+                
+                if (dEl) dEl.innerText = String(days).padStart(2, '0');
+                if (hEl) hEl.innerText = String(hours).padStart(2, '0');
+                if (mEl) mEl.innerText = String(minutes).padStart(2, '0');
+                if (sEl) sEl.innerText = String(seconds).padStart(2, '0');
+            }
+            
+            update();
+            const interval = setInterval(update, 1000);
         }
 
         function checkSavedUser() {
@@ -1778,7 +3042,7 @@
         }
 
         function goHome() {
-            document.getElementById('homepageSection').style.display = 'grid';
+            document.getElementById('homepageSection').style.display = 'block';
             document.getElementById('loginSection').style.display = 'none';
             document.getElementById('dashboardSection').style.display = 'none';
             document.getElementById('magicTokenBadge').style.display = 'none';
@@ -1900,7 +3164,7 @@
             
             const activeLessonObj = curriculumDb.find(d => d.id === currentSimulatedDay);
             if (activeLessonObj) {
-                speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy hoàn tất cả 3 phần: Đọc lý thuyết, Thực hành tính toán, và Kịch bản sắm vai để kích hoạt tích xanh hoàn thành nhé!`;
+                speechText.innerText = `Chào bạn! Hôm nay chúng ta đang ở ${activeLessonObj.code}. Hãy hoàn tất cả 3 phần: Lý thuyết, Role-play & Script và Bài Test để kích hoạt tích xanh hoàn thành nhé!`;
             }
             
             // Update XP UI dynamically
@@ -2020,7 +3284,7 @@
                     });
                     bulletHtml += `</ul>`;
                 }
-
+ 
                 card.innerHTML = `
                     <div>
                         <div class="day-code">${lesson.code}</div>
@@ -2048,7 +3312,9 @@
             document.getElementById('cheatsheetDownloadBtn').setAttribute('href', csUrl);
             
             const textContent = await fetchLessonMarkdown(lesson.file);
-            document.getElementById('lessonBodyArea').innerHTML = renderMarkdownToHtml(textContent);
+            activeLessonMarkdownText = textContent;
+            const theoryOnly = getTheoryOnlyMarkdown(textContent);
+            document.getElementById('lessonBodyArea').innerHTML = renderMarkdownToHtml(theoryOnly);
             
             document.querySelectorAll('.lesson-tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('tabTheory').classList.add('active');
@@ -2056,16 +3322,45 @@
             // Checklist tracking initialization
             if (completedDays[lesson.id]) {
                 viewedTheory = true;
-                viewedCalculator = true;
                 viewedRoleplay = true;
+                viewedQuiz = true;
             } else {
                 viewedTheory = true;
-                viewedCalculator = false;
                 viewedRoleplay = false;
+                viewedQuiz = false;
             }
             updateChecklistUI();
             
-            initQuizWidget(lesson.code);
+            // Set right panel advisor advice
+            const modalAvatar = document.getElementById('modalMascotAvatar');
+            const modalSpeech = document.getElementById('modalMascotSpeech');
+            if (modalAvatar && modalSpeech) {
+                const fn = getMascotFilename(selectedMascotType, 'original');
+                modalAvatar.src = `../assets/mascot/${selectedMascotType}/light/${fn}`;
+                
+                let pointsHtml = `<div style="font-weight: 800; color: var(--kb-brown-dark); margin-bottom: 6px; font-size: 8.5pt;">💡 MỤC TIÊU HỌC TẬP HÔM NAY:</div>`;
+                if (lesson.points && lesson.points.length > 0) {
+                    lesson.points.forEach((p) => {
+                        pointsHtml += `
+                            <div style="margin-bottom: 6px; font-size: 8pt; line-height: 1.35; display: flex; gap: 6px; color: var(--text-primary);">
+                                <span style="color: var(--kb-yellow-dark); font-weight: bold;">•</span>
+                                <span>${p}</span>
+                            </div>
+                        `;
+                    });
+                } else {
+                    pointsHtml += `
+                        <div style="margin-bottom: 6px; font-size: 8pt; line-height: 1.35; display: flex; gap: 6px; color: var(--text-primary);">
+                            <span style="color: var(--kb-yellow-dark); font-weight: bold;">•</span>
+                            <span>Hoàn thành lý thuyết và thực hành Role-play & Script.</span>
+                        </div>
+                    `;
+                }
+                pointsHtml += `<div style="margin-top: 10px; font-size: 8pt; color: var(--text-secondary); font-style: italic;">👉 Hãy hoàn thành Bài Đọc, Role-play & Script và Bài Test Đánh Giá ở các tab bên cạnh nhé!</div>`;
+                modalSpeech.innerHTML = pointsHtml;
+            }
+            
+            selectedQuizOption = null;
             
             document.getElementById('lessonModal').style.display = 'flex';
         }
@@ -2088,19 +3383,24 @@
             const chkTheory = document.getElementById('chkTheory');
             const chkCalc = document.getElementById('chkCalc');
             const chkRoleplay = document.getElementById('chkRoleplay');
+            const chkQuiz = document.getElementById('chkQuiz');
             
-            chkTheory.classList.toggle('done', viewedTheory);
-            chkTheory.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedTheory);
-            
-            chkCalc.classList.toggle('done', viewedCalculator);
-            chkCalc.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedCalculator);
-            
-            chkRoleplay.classList.toggle('done', viewedRoleplay);
-            chkRoleplay.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedRoleplay);
+            if (chkTheory) {
+                chkTheory.classList.toggle('done', viewedTheory);
+                chkTheory.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedTheory);
+            }
+            if (chkRoleplay) {
+                chkRoleplay.classList.toggle('done', viewedRoleplay);
+                chkRoleplay.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedRoleplay);
+            }
+            if (chkQuiz) {
+                chkQuiz.classList.toggle('done', viewedQuiz);
+                chkQuiz.querySelector('.chk-icon-container').innerHTML = getCheckSvg(viewedQuiz);
+            }
         }
 
         function checkCompletionStatus() {
-            if (viewedTheory && viewedCalculator && viewedRoleplay) {
+            if (viewedTheory && viewedRoleplay && viewedQuiz) {
                 if (!completedDays[activeLesson.id]) {
                     completedDays[activeLesson.id] = true;
                     localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
@@ -2122,7 +3422,23 @@
                     }
                     
                     // Mascot feedback
-                    document.getElementById('mascotSpeechText').innerText = `Chúc mừng bạn! Bạn đã hoàn thành trọn vẹn cả 3 phần: Lý thuyết, Thực hành tính toán và Sắm vai của bài ${activeLesson.code}. Nhận ngay +100 XP!`;
+                    document.getElementById('mascotSpeechText').innerText = `Chúc mừng bạn! Bạn đã hoàn thành trọn vẹn các phần: Lý thuyết, Role-play & Script và Bài Test của bài ${activeLesson.code}. Nhận ngay +100 XP!`;
+                    
+                    const modalSpeech = document.getElementById('modalMascotSpeech');
+                    if (modalSpeech) {
+                        modalSpeech.innerHTML = `
+                            <div style="font-weight: 800; color: #2e7d32; margin-bottom: 6px; font-size: 9.5pt;">✓ ĐÃ HOÀN THÀNH NGÀY HỌC!</div>
+                            <div style="font-size: 8.5pt; color: var(--text-primary); line-height: 1.4;">
+                                Chúc mừng bạn đã hoàn thành xuất sắc các phần: Lý thuyết, Role-play & Script và Bài Test của bài ${activeLesson.code}. Nhận ngay +100 XP!
+                            </div>
+                        `;
+                    }
+                    const modalAvatar = document.getElementById('modalMascotAvatar');
+                    if (modalAvatar) {
+                        const fn = getMascotFilename(selectedMascotType, 'vui ve');
+                        modalAvatar.src = `../assets/mascot/${selectedMascotType}/light/${fn}`;
+                    }
+                    
                     updateMascotWidgetState('vui ve');
                 }
             }
@@ -2143,98 +3459,281 @@
             // Strip any remaining Unicode emojis from the markdown rendering source text
             md = md.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2700}-\u{27BF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]/gu, '');
             
-            // Normalize line endings and split into paragraphs/blocks
             const lines = md.split(/\r?\n/);
             let html = '';
             let inList = false;
             let inQuote = false;
+            let quoteType = ''; // 'important', 'warning', or 'normal'
+            let quoteLines = [];
+            let inCodeBlock = false;
+            let codeLines = [];
+            let inTable = false;
+            let tableRows = [];
+            let inAnswerKeyHide = false;
             
             for (let i = 0; i < lines.length; i++) {
-                let line = lines[i].trim();
+                let rawLine = lines[i];
+                let line = rawLine.trim();
                 
-                // Skip empty lines, but close open tags if needed
-                if (line === '') {
+                // Standalone Block Equations ($$...)
+                if (line.startsWith('$$')) {
                     if (inList) { html += '</ul>'; inList = false; }
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                    if (inQuote) { html += renderQuoteBlock(quoteType, quoteLines); inQuote = false; quoteLines = []; }
+                    if (inTable) { html += renderHtmlTable(tableRows); inTable = false; tableRows = []; }
+                    let eqContent = line.replace(/^\$\$/, '').replace(/\$\$$/, '').trim();
+                    html += `<div class="math-equation">${applyInlineFormatting(eqContent)}</div>`;
                     continue;
+                }
+                
+                // Hide answer key section dynamically in the reading tab
+                if (line.includes('ĐÁP ÁN & GIẢI THÍCH') || line.includes('ANSWER KEY')) {
+                    inAnswerKeyHide = true;
+                    continue;
+                }
+                if (inAnswerKeyHide) {
+                    if (line.startsWith('## ')) {
+                        inAnswerKeyHide = false; // Next section ends the hidden block
+                    } else {
+                        continue;
+                    }
+                }
+                
+                // Handle code blocks (ASCII diagrams or normal code)
+                if (line.startsWith('```')) {
+                    if (inCodeBlock) {
+                        // End of code block
+                        inCodeBlock = false;
+                        const codeContent = codeLines.join('\n');
+                        // Check if it's an ASCII diagram
+                        const isDiagram = codeContent.includes('+') || codeContent.includes('|') || codeContent.includes('---');
+                        if (isDiagram) {
+                            html += `<div class="diagram-container"><pre class="diagram-pre">${escapeHtml(codeContent)}</pre></div>`;
+                        } else {
+                            html += `<pre class="code-pre"><code>${escapeHtml(codeContent)}</code></pre>`;
+                        }
+                        codeLines = [];
+                    } else {
+                        // Start of code block
+                        if (inList) { html += '</ul>'; inList = false; }
+                        if (inQuote) { html += renderQuoteBlock(quoteType, quoteLines); inQuote = false; quoteLines = []; }
+                        if (inTable) { html += renderHtmlTable(tableRows); inTable = false; tableRows = []; }
+                        inCodeBlock = true;
+                    }
+                    continue;
+                }
+                
+                if (inCodeBlock) {
+                    codeLines.push(rawLine);
+                    continue;
+                }
+                
+                // Handle tables
+                if (line.startsWith('|')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inQuote) { html += renderQuoteBlock(quoteType, quoteLines); inQuote = false; quoteLines = []; }
+                    if (!inTable) {
+                        inTable = true;
+                        tableRows = [];
+                    }
+                    tableRows.push(line);
+                    continue;
+                } else {
+                    if (inTable) {
+                        html += renderHtmlTable(tableRows);
+                        inTable = false;
+                        tableRows = [];
+                    }
+                }
+                
+                // Handle Blockquotes / Callouts
+                if (rawLine.startsWith('>')) {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    if (inTable) { html += renderHtmlTable(tableRows); inTable = false; tableRows = []; }
+                    
+                    let quoteContent = rawLine.substring(1).trim();
+                    
+                    if (!inQuote) {
+                        inQuote = true;
+                        quoteLines = [];
+                        if (quoteContent.startsWith('[!IMPORTANT]')) {
+                            quoteType = 'important';
+                            quoteContent = quoteContent.replace('[!IMPORTANT]', '').trim();
+                        } else if (quoteContent.startsWith('[!WARNING]')) {
+                            quoteType = 'warning';
+                            quoteContent = quoteContent.replace('[!WARNING]', '').trim();
+                        } else {
+                            quoteType = 'normal';
+                        }
+                    }
+                    quoteLines.push(quoteContent);
+                    continue;
+                } else {
+                    if (inQuote) {
+                        html += renderQuoteBlock(quoteType, quoteLines);
+                        inQuote = false;
+                        quoteLines = [];
+                    }
                 }
                 
                 // Handle Headings
                 if (line.startsWith('# ')) {
                     if (inList) { html += '</ul>'; inList = false; }
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
-                    html += `<h1 class="article-h1">${line.substring(2)}</h1>`;
+                    html += `<h1 class="article-h1">${applyInlineFormatting(line.substring(2))}</h1>`;
                     continue;
                 }
                 if (line.startsWith('## ')) {
                     if (inList) { html += '</ul>'; inList = false; }
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
-                    html += `<h2 class="article-h2">${line.substring(3)}</h2>`;
+                    html += `<h2 class="article-h2">${applyInlineFormatting(line.substring(3))}</h2>`;
                     continue;
                 }
                 if (line.startsWith('### ')) {
                     if (inList) { html += '</ul>'; inList = false; }
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
-                    html += `<h3 class="article-h3">${line.substring(4)}</h3>`;
+                    html += `<h3 class="article-h3">${applyInlineFormatting(line.substring(4))}</h3>`;
                     continue;
                 }
                 
-                // Handle blockquotes
-                if (line.startsWith('>')) {
-                    if (inList) { html += '</ul>'; inList = false; }
-                    let quoteContent = line.substring(1).trim();
-                    
-                    // Handle specific admonition blocks
-                    if (quoteContent.startsWith('[!IMPORTANT]')) {
-                        quoteContent = '<strong>CẢNH BÁO TUÂN THỦ:</strong> ' + quoteContent.replace('[!IMPORTANT]', '').trim();
-                    } else if (quoteContent.startsWith('[!WARNING]')) {
-                        quoteContent = '<strong>CHÚ Ý:</strong> ' + quoteContent.replace('[!WARNING]', '').trim();
-                    }
-                    
-                    if (!inQuote) {
-                        html += `<blockquote class="article-blockquote">${quoteContent}`;
-                        inQuote = true;
-                    } else {
-                        html += `<br>${quoteContent}`;
-                    }
-                    continue;
-                } else {
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
-                }
-                
-                // Handle list items
+                // Handle Lists
                 if (line.startsWith('* ') || line.startsWith('- ')) {
-                    if (inQuote) { html += '</blockquote>'; inQuote = false; }
                     if (!inList) {
                         html += '<ul class="article-ul">';
                         inList = true;
                     }
                     let itemText = line.substring(2).trim();
-                    itemText = applyInlineFormatting(itemText);
-                    html += `<li>${itemText}</li>`;
+                    html += `<li>${applyInlineFormatting(itemText)}</li>`;
                     continue;
                 }
                 
-                // Standard paragraph
-                if (inList) { html += '</ul>'; inList = false; }
-                if (inQuote) { html += '</blockquote>'; inQuote = false; }
+                // Empty lines close lists
+                if (line === '') {
+                    if (inList) { html += '</ul>'; inList = false; }
+                    continue;
+                }
                 
-                let paragraphText = applyInlineFormatting(line);
-                html += `<p class="article-p">${paragraphText}</p>`;
+                // Standard paragraphs
+                if (inList) { html += '</ul>'; inList = false; }
+                html += `<p class="article-p">${applyInlineFormatting(line)}</p>`;
             }
             
-            // Close any remaining open tags
+            // Clean up any remaining open blocks
             if (inList) html += '</ul>';
-            if (inQuote) html += '</blockquote>';
+            if (inQuote) html += renderQuoteBlock(quoteType, quoteLines);
+            if (inTable) html += renderHtmlTable(tableRows);
             
             return html;
         }
 
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function renderQuoteBlock(type, lines) {
+            const content = applyInlineFormatting(lines.join('<br>'));
+            if (type === 'important') {
+                return `
+                    <div class="callout callout-important">
+                        <div class="callout-header">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px; height:16px; margin-right:6px; display:inline-block; vertical-align:middle;">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>CẢNH BÁO TUÂN THỦ
+                        </div>
+                        <div class="callout-content">${content}</div>
+                    </div>
+                `;
+            } else if (type === 'warning') {
+                return `
+                    <div class="callout callout-warning">
+                        <div class="callout-header">
+                            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px; height:16px; margin-right:6px; display:inline-block; vertical-align:middle;">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>CHÚ Ý QUAN TRỌNG
+                        </div>
+                        <div class="callout-content">${content}</div>
+                    </div>
+                `;
+            } else {
+                return `<blockquote class="article-blockquote">${content}</blockquote>`;
+            }
+        }
+
+        function renderHtmlTable(rows) {
+            if (rows.length === 0) return '';
+            
+            // Filter out delimiter rows (e.g. |---|---|)
+            const cleanRows = rows.filter(r => !r.match(/^\|?\s*:?-+:?\s*\|/));
+            if (cleanRows.length === 0) return '';
+            
+            let html = '<div class="table-container"><table class="article-table">';
+            
+            // Parse headers from the first row
+            const headers = cleanRows[0].split('|').map(s => s.trim()).filter((s, idx, arr) => idx > 0 && idx < arr.length - 1);
+            html += '<thead><tr>';
+            headers.forEach(h => {
+                html += `<th>${applyInlineFormatting(h)}</th>`;
+            });
+            html += '</tr></thead><tbody>';
+            
+            // Parse data rows
+            for (let r = 1; r < cleanRows.length; r++) {
+                const cells = cleanRows[r].split('|').map(s => s.trim()).filter((s, idx, arr) => idx > 0 && idx < arr.length - 1);
+                html += '<tr>';
+                cells.forEach(c => {
+                    html += `<td>${applyInlineFormatting(c)}</td>`;
+                });
+                html += '</tr>';
+            }
+            
+            html += '</tbody></table></div>';
+            return html;
+        }
+
+        function cleanMathLaTeX(text) {
+            if (!text) return '';
+            
+            // Clean up fractions: \frac{A}{B}
+            text = text.replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '<span class="math-fraction"><span class="math-num">$1</span><span class="math-den">$2</span></span>');
+            
+            // Clean up \text{...}
+            text = text.replace(/\\text\{([^{}]+)\}/g, '$1');
+            
+            // Clean up mathematical symbols
+            text = text.replace(/\\ge/g, '≥')
+                       .replace(/\\le/g, '≤')
+                       .replace(/\\times/g, '×')
+                       .replace(/\\approx/g, '≈')
+                       .replace(/\\pm/g, '±')
+                       .replace(/\\Delta/g, 'Δ')
+                       .replace(/\\sigma/g, 'σ');
+            
+            // Remove backslashes before plain words (e.g. \text, \ge) if any are left
+            text = text.replace(/\\([a-zA-Z]+)/g, '$1');
+            
+            // Wrap in math-inline if it had $...$
+            text = text.replace(/\$([^\$]+)\$/g, '<span class="math-inline">$1</span>');
+            
+            return text;
+        }
+
         function applyInlineFormatting(text) {
+            text = cleanMathLaTeX(text);
             return text
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em>$1</em>')
                 .replace(/`([^`]+)`/g, '<code class="article-code">$1</code>');
+        }
+
+        function getTheoryOnlyMarkdown(md) {
+            if (!md) return '';
+            const regex = /## 📌 V\.|## V\.|ROLE-PLAY SCENARIO/i;
+            const match = md.match(regex);
+            if (match) {
+                return md.substring(0, match.index).trim();
+            }
+            return md;
         }
 
         function switchLessonTab(tabName, btn) {
@@ -2243,331 +3742,744 @@
             
             if (tabName === 'theory') {
                 viewedTheory = true;
-                openLessonModal(activeLesson.id);
-            } else if (tabName === 'calculator') {
-                viewedCalculator = true;
-                const area = document.getElementById('lessonBodyArea');
-                renderInteractiveCalculator(area);
+                fetchLessonMarkdown(activeLesson.file).then(textContent => {
+                    const theoryOnly = getTheoryOnlyMarkdown(textContent);
+                    document.getElementById('lessonBodyArea').innerHTML = renderMarkdownToHtml(theoryOnly);
+                });
             } else if (tabName === 'roleplay') {
                 viewedRoleplay = true;
                 const area = document.getElementById('lessonBodyArea');
                 renderRolePlayRubric(area);
+            } else if (tabName === 'quiz') {
+                const area = document.getElementById('lessonBodyArea');
+                renderInteractiveQuizTab(area);
             }
             
             updateChecklistUI();
             checkCompletionStatus();
         }
 
-        function renderInteractiveCalculator(container) {
-            const calcHeaderSvg = `
-                <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px; margin-right:8px; display:inline-block; vertical-align:middle;">
-                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
-                    <line x1="9" y1="22" x2="9" y2="16"/>
-                    <line x1="8" y1="6" x2="16" y2="6"/>
-                    <line x1="16" y1="22" x2="16" y2="16"/>
-                    <line x1="9" y1="16" x2="16" y2="16"/>
-                    <circle cx="9" cy="10" r="1"/>
-                    <circle cx="15" cy="10" r="1"/>
-                    <circle cx="9" cy="13" r="1"/>
-                    <circle cx="15" cy="13" r="1"/>
-                </svg>
-            `;
-            
-            if (activeLesson.code === 'D23') {
-                container.innerHTML = `
-                    <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
-                            ${calcHeaderSvg} MÁY TÍNH CÔNG THỨC MARGIN & RTT THỜI GIAN THỰC
-                        </h3>
-                        <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Nhập các thông số tài khoản của khách hàng để tính RTT và kiểm tra mức độ cảnh báo.</p>
-                        
-                        <div class="calc-row">
-                            <div class="calc-input-group">
-                                <label>Giá trị chứng khoán (PV - VNĐ)</label>
-                                <input type="number" id="calcPV" class="form-control" value="100000000" oninput="calcRTT()">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>Tiền mặt dư (Cash - VNĐ)</label>
-                                <input type="number" id="calcCash" class="form-control" value="10000000" oninput="calcRTT()">
-                            </div>
-                        </div>
-                        <div class="calc-row">
-                            <div class="calc-input-group">
-                                <label>Nợ vay Margin (Debt - VNĐ)</label>
-                                <input type="number" id="calcDebt" class="form-control" value="60000000" oninput="calcRTT()">
-                            </div>
-                        </div>
 
-                        <div class="calc-result-box">
-                            <div class="calc-res-title">Tài sản ròng (Equity)</div>
-                            <div class="calc-res-val" id="calcEquityRes">50.000.000 VNĐ</div>
-                        </div>
-                        
-                        <div class="calc-result-box" style="border-left: 4px solid var(--success-color);" id="calcRTTBox">
-                            <div class="calc-res-title">Tỷ lệ ký quỹ thực tế (RTT)</div>
-                            <div class="calc-res-val" id="calcRTTRes">50.00%</div>
-                            <div style="font-size:8.5pt; font-weight:700;" id="calcRTTAlert">TRẠNG THÁI: AN TOÀN (RTT >= 40%)</div>
-                        </div>
-                    </div>
-                `;
-                calcRTT();
-            } else if (activeLesson.code === 'D33') {
-                container.innerHTML = `
-                    <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
-                            ${calcHeaderSvg} MÁY TÍNH QUY MÔ GIẢI NGÂN (POSITION SIZING - 2% NAV RULE)
-                        </h3>
-                        <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Nhập quy mô NAV và các mốc giao dịch để tính khối lượng đặt lệnh tối đa bảo vệ vốn.</p>
-                        
-                        <div class="calc-row">
-                            <div class="calc-input-group">
-                                <label>Tổng tài sản ròng (NAV - VNĐ)</label>
-                                <input type="number" id="calcNAV" class="form-control" value="200000000" oninput="calcPosition()">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>Giá mua dự kiến (Entry - VNĐ)</label>
-                                <input type="number" id="calcEntry" class="form-control" value="25000" oninput="calcPosition()">
-                            </div>
-                        </div>
-                        <div class="calc-row">
-                            <div class="calc-input-group">
-                                <label>Mốc cắt lỗ Stop Loss (SL - VNĐ)</label>
-                                <input type="number" id="calcSL" class="form-control" value="23000" oninput="calcPosition()">
-                            </div>
-                        </div>
-
-                        <div class="calc-result-box">
-                            <div class="calc-res-title">Số tiền rủi ro tối đa (2% NAV)</div>
-                            <div class="calc-res-val" id="calcRiskCap">4.000.000 VNĐ</div>
-                        </div>
-                        
-                        <div class="calc-result-box" style="border-left: 4px solid var(--kb-yellow-dark);">
-                            <div class="calc-res-title">Khối lượng mua tối đa cho phép</div>
-                            <div class="calc-res-val" id="calcQtyRes">2.000 cổ phiếu</div>
-                            <div style="font-size:8.5pt; font-weight:700; color:var(--kb-brown-dark);">Quy mô lệnh giải ngân tối đa để bảo vệ tài khoản khỏi khoản lỗ > 2% NAV</div>
-                        </div>
-                    </div>
-                `;
-                calcPosition();
-            } else {
-                container.innerHTML = `
-                    <div class="calc-container">
-                        <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
-                            ${calcHeaderSvg} MÔ PHỎNG DỰ PHÒNG CHỈ TIÊU & HOA HỒNG DTT
-                        </h3>
-                        <p style="font-size:8.5pt; color:var(--text-secondary); margin-bottom:12px;">Lập kế hoạch chuyển đổi tài khoản eKYC sang Standard hoạt động để ước tính doanh số.</p>
-                        
-                        <div class="calc-row">
-                            <div class="calc-input-group">
-                                <label>Số eKYC mở mới dự kiến</label>
-                                <input type="number" id="simEkyc" class="form-control" value="10" oninput="calcSimDtt()">
-                            </div>
-                            <div class="calc-input-group">
-                                <label>Tỷ lệ Active Standard (%)</label>
-                                <input type="number" id="simActiveRate" class="form-control" value="40" oninput="calcSimDtt()">
-                            </div>
-                        </div>
-
-                        <div class="calc-result-box">
-                            <div class="calc-res-title">Tài khoản active Standard ước tính</div>
-                            <div class="calc-res-val" id="simStandardRes">4 Tài Khoản</div>
-                        </div>
-                        
-                        <div class="calc-result-box" style="border-left: 4px solid var(--success-color);">
-                            <div class="calc-res-title">Ước tính hoa hồng mang về (DTT lũy kế)</div>
-                            <div class="calc-res-val" id="simCommRes">200.000 VNĐ / tháng</div>
-                            <div style="font-size:8.5pt; color:var(--text-secondary);">Thử thách active standard tích lũy để thăng tiến Junior Broker!</div>
-                        </div>
-                    </div>
-                `;
-                calcSimDtt();
-            }
-        }
-
-        function calcRTT() {
-            const pv = parseFloat(document.getElementById('calcPV').value) || 0;
-            const cash = parseFloat(document.getElementById('calcCash').value) || 0;
-            const debt = parseFloat(document.getElementById('calcDebt').value) || 0;
-            
-            const equity = pv + cash - debt;
-            document.getElementById('calcEquityRes').innerText = equity.toLocaleString() + ' VNĐ';
-            
-            if (pv === 0) return;
-            const rtt = (equity / pv) * 100;
-            const rttBox = document.getElementById('calcRTTBox');
-            const rttRes = document.getElementById('calcRTTRes');
-            const rttAlert = document.getElementById('calcRTTAlert');
-            
-            rttRes.innerText = rtt.toFixed(2) + '%';
-            
-            if (rtt >= 40) {
-                rttBox.style.borderLeftColor = "var(--success-color)";
-                rttAlert.innerText = "TRẠNG THÁI: AN TOÀN (RTT >= 40%)";
-                rttAlert.style.color = "var(--success-color)";
-                updateMascotWidgetState('OK');
-            } else if (rtt >= 30 && rtt < 40) {
-                rttBox.style.borderLeftColor = "var(--warning-color)";
-                rttAlert.innerText = "TRẠNG THÁI: CẢNH BÁO CALL MARGIN (30% <= RTT < 40%)";
-                rttAlert.style.color = "var(--warning-color)";
-                updateMascotWidgetState('ban khoan');
-            } else {
-                rttBox.style.borderLeftColor = "var(--danger-color)";
-                rttAlert.innerText = "TRẠNG THÁI: GIẢI CHẤP FORCE SELL (RTT < 30%)";
-                rttAlert.style.color = "var(--danger-color)";
-                updateMascotWidgetState('ban khoan');
-            }
-        }
-
-        function calcPosition() {
-            const nav = parseFloat(document.getElementById('calcNAV').value) || 0;
-            const entry = parseFloat(document.getElementById('calcEntry').value) || 0;
-            const sl = parseFloat(document.getElementById('calcSL').value) || 0;
-            
-            const riskCap = nav * 0.02;
-            document.getElementById('calcRiskCap').innerText = riskCap.toLocaleString() + ' VNĐ';
-            
-            const diff = entry - sl;
-            if (diff <= 0) {
-                document.getElementById('calcQtyRes').innerText = 'Lỗi: Entry phải lớn hơn SL';
-                return;
-            }
-            
-            const qty = Math.floor(riskCap / diff);
-            document.getElementById('calcQtyRes').innerText = qty.toLocaleString() + ' cổ phiếu';
-        }
-
-        function calcSimDtt() {
-            const ekyc = parseFloat(document.getElementById('simEkyc').value) || 0;
-            const rate = parseFloat(document.getElementById('simActiveRate').value) || 0;
-            
-            const standard = Math.round(ekyc * (rate / 100));
-            document.getElementById('simStandardRes').innerText = standard + ' Tài Khoản';
-            
-            const comm = standard * 50000;
-            document.getElementById('simCommRes').innerText = comm.toLocaleString() + ' VNĐ / tháng';
-        }
+        let activeRoleplayObject = null;
+        let activeRoleplayLineIdx = 0;
 
         function renderRolePlayRubric(container) {
+            const mdText = activeLessonMarkdownText || '';
+            activeRoleplayObject = parseRoleplayFromMarkdown(mdText);
+            
+            activeRoleplayLineIdx = 0;
+            
             container.innerHTML = `
-                <div class="calc-container">
-                    <h3 style="font-size:10pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:6px; margin-bottom:10px; display:flex; align-items:center;">
-                        <svg class="tab-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px; margin-right:8px; display:inline-block; vertical-align:middle;">
+                <div class="calc-container" style="padding: 10px 0;">
+                    <h3 style="font-size:11.5pt; color:var(--kb-brown-dark); border-bottom:1px solid var(--border-light); padding-bottom:8px; margin-bottom:12px; font-weight:800; font-family:var(--font-display); display:flex; align-items:center; gap:8px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px; color:var(--kb-yellow-dark);">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                             <circle cx="9" cy="7" r="4"/>
                             <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
-                        KỊCH BẢN THOẠI & PHIẾU ĐÁNH GIÁ CHẤM ĐIỂM (ASK RUBRIC)
+                        KỊCH BẢN ĐỐI LUYỆN ROLE-PLAY & SCRIPT
                     </h3>
                     
-                    <div style="background:var(--bg-warm); border-left:3px solid var(--kb-brown); padding:12px; font-style:italic; font-size:9pt; color:var(--text-secondary); margin-bottom:18px; line-height:1.45;">
-                        "Khách hàng: Tại sao tôi lại phải gom mua ACB tích sản, trong khi thị trường đang sụt giảm thế này?<br>
-                        Broker NextGen: Em thấu hiểu nỗi lo của anh/chị. Tuy nhiên, cổ phiếu ACB vừa chạm MA200 và nằm trong vùng Vùng 1 bảo vệ của Tháp tài sản của anh/chị. Đây chính là mốc gom mua an toàn..."
-                    </div>
-
-                    <div style="font-size:9.5pt; font-weight:700; color:var(--text-primary); margin-bottom:10px;">Bảng điểm sát hạch (Grading Scorecard) cho Mentor:</div>
+                    <p style="font-size:9.5pt; color:var(--text-secondary); margin-bottom:16px; line-height:1.5;">
+                        Tình huống: <strong style="color:var(--text-primary);">${activeRoleplayObject.title}</strong>
+                    </p>
                     
-                    <label style="display:flex; align-items:center; gap:10px; font-size:9pt; margin-bottom:8px;">
-                        <input type="checkbox" checked disabled>
-                        <span><strong>Thái độ (Attitude - 50%):</strong> Điềm tĩnh lắng nghe, thấu cảm sâu sắc.</span>
-                    </label>
-                    <label style="display:flex; align-items:center; gap:10px; font-size:9pt; margin-bottom:8px;">
-                        <input type="checkbox" checked disabled>
-                        <span><strong>Kỹ năng (Skills - 40%):</strong> Đọc vị tâm lý mỏ neo, chốt deal chuẩn.</span>
-                    </label>
-                    <label style="display:flex; align-items:center; gap:10px; font-size:9pt; margin-bottom:12px;">
-                        <input type="checkbox" checked disabled>
-                        <span><strong>Kiến thức (Knowledge - 10%):</strong> Nắm rõ công thức MA200 & Luật CK.</span>
-                    </label>
-
-                    <div style="background:rgba(245,166,35,0.05); padding:10px; border-radius:10px; font-size:9pt; font-weight:700; text-align:center; color:var(--kb-brown-dark);">
-                        Tiêu chuẩn chấm đạt: Tổng điểm >= 7.0/10
+                    <!-- Integrated Overview Block -->
+                    <div style="background: rgba(139, 115, 85, 0.04); border: 1px dashed var(--kb-brown-light); border-radius: 12px; padding: 14px 18px; margin-bottom: 20px; font-size: 9pt; line-height: 1.5; color: var(--text-primary);">
+                        <div style="font-weight: 800; color: var(--kb-brown-dark); margin-bottom: 8px; font-size: 9.5pt; display: flex; align-items: center; gap: 6px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px; color: var(--kb-yellow-dark);">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="16" x2="12" y2="12"/>
+                                <line x1="12" y1="8" x2="12.01" y2="8"/>
+                            </svg>
+                            Bối Cảnh & Nhân Vật Role-play
+                        </div>
+                        <div class="article-content" style="color: var(--text-secondary); font-size: 8.5pt;">
+                            ${renderMarkdownToHtml(activeRoleplayObject.overview)}
+                        </div>
+                    </div>
+                    
+                    <!-- Sub-tabs navigation -->
+                    <div style="display: flex; gap: 8px; border-bottom: 1px solid var(--border-light); padding-bottom: 0; margin-bottom: 20px;">
+                        <button id="rpSubTabDialogue" onclick="switchRpSubTab('dialogue')" style="padding: 8px 16px; border: none; background: none; border-bottom: 2px solid var(--kb-yellow-dark); font-weight: 800; font-size: 9.5pt; color: var(--kb-brown-dark); cursor: pointer; transition: all 0.2s;">
+                            Hội Thoại Đối Luyện
+                        </button>
+                        <button id="rpSubTabPrinciples" onclick="switchRpSubTab('principles')" style="padding: 8px 16px; border: none; background: none; border-bottom: 2px solid transparent; font-weight: 600; font-size: 9.5pt; color: var(--text-secondary); cursor: pointer; transition: all 0.2s;">
+                            Nguyên Tắc Ứng Xử
+                        </button>
+                    </div>
+                    
+                    <!-- Sub-tab contents -->
+                    <div id="rpSubTabContentDialogue" style="display: block;">
+                        <div style="border:1px solid #e2e8f0;border-radius:20px;overflow:hidden;background:#fff;display:flex;flex-direction:column;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+                            <div style="background:linear-gradient(135deg,#1e293b,#334155);padding:16px 22px;display:flex;align-items:center;gap:14px;color:#fff;">
+                                <div style="width:42px;height:42px;border-radius:50%;background:#F5A623;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;box-shadow:0 2px 8px rgba(245,166,35,0.4);">💬</div>
+                                <div>
+                                    <div style="font-size:15px;font-weight:700;color:#fff;">Kịch Bản Đối Luyện</div>
+                                    <div style="font-size:12px;color:#86efac;display:flex;align-items:center;gap:6px;margin-top:2px;">
+                                        <span style="width:8px;height:8px;border-radius:50%;background:#4ade80;display:inline-block;"></span>
+                                        Đang kết nối đối luyện
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="roleplayChatBody" style="min-height:380px;max-height:560px;overflow-y:auto;padding:24px 20px;display:flex;flex-direction:column;gap:6px;background:#f1f5f9;scroll-behavior:smooth;">
+                                <div style="text-align:center;margin:auto;padding:30px;color:#94a3b8;font-size:14px;line-height:1.6;" id="chatStartPrompt">
+                                    Bấm nút bên dưới để bắt đầu xem kịch bản đối thoại mẫu<br>giữa <strong style="color:#64748b;">Khách hàng</strong> và <strong style="color:#b8860b;">Broker NextGen</strong>.
+                                </div>
+                            </div>
+                            <div style="padding:16px 22px;border-top:1px solid #e2e8f0;background:#fff;display:flex;justify-content:space-between;align-items:center;">
+                                <span style="font-size:13px;color:#94a3b8;font-weight:600;" id="rpProgressLabel">
+                                    Chưa bắt đầu
+                                </span>
+                                <button class="btn-primary" onclick="revealNextDialogueLine()" id="rpNextBtn" style="padding:10px 22px;font-size:14px;border-radius:10px;justify-content:center;display:flex;align-items:center;gap:6px;">
+                                    Bắt đầu đối thoại →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="rpSubTabContentPrinciples" style="display: none;">
+                        <div style="margin-bottom: 18px; font-size: 9.5pt; color: var(--kb-brown-dark); font-weight: 700; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                            QUY CHUẨN TUÂN THỦ PHÁT NGÔN & NGUYÊN TẮC ỨNG XỬ
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                            ${activeRoleplayObject.principles.map((p, idx) => `
+                                <div style="display: flex; gap: 10px; background: rgba(245,166,35,0.02); border: 1px solid var(--border-light); border-left: 3px solid var(--kb-yellow); border-radius: 8px; padding: 12px; font-size: 9pt; line-height: 1.45; color: var(--text-primary);">
+                                    <div style="font-weight: 800; color: var(--kb-yellow-dark); min-width: 18px;">
+                                        0${idx + 1}
+                                    </div>
+                                    <div style="flex-grow: 1;">
+                                        ${formatMarkdownInline(p)}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        
+                        <button id="saveRubricBtn" class="btn-primary" onclick="saveRubricAssessment()" style="width: 100%; justify-content: center; padding: 12px 0; border-radius: 10px; font-size: 9.5pt; transition: all 0.3s; ${viewedRoleplay ? 'background:#e0e0e0; color:#757575; border-color:#bdbdbd; cursor:default;' : ''}" ${viewedRoleplay ? 'disabled' : ''}>
+                            ${viewedRoleplay ? 'ĐÃ XÁC NHẬN HOÀN THÀNH' : 'Xác nhận đã học kịch bản & ghi nhớ nguyên tắc'}
+                        </button>
+                        <div id="rpSuccessMsg" style="display: ${viewedRoleplay ? 'block' : 'none'}; margin-top: 12px; background: rgba(46, 125, 50, 0.05); border: 1px solid #2e7d32; border-radius: 8px; padding: 12px; font-size: 9pt; color: #2e7d32; text-align: center; font-weight: 600;">
+                            Xác nhận thành công: Bạn đã hoàn thành đối luyện kịch bản và ghi nhớ các nguyên tắc ứng xử.
+                        </div>
                     </div>
                 </div>
             `;
         }
 
-        function initQuizWidget(dayCode) {
-            const quiz = quizDb[dayCode] || {
-                question: "Sau khi học xong bài học này, bước tiếp theo học viên cần cập nhật thông tin gì lên hệ thống CRM chi nhánh?",
-                options: [
-                    "Cập nhật thông tin số dư nợ vay và trạng thái tư vấn eKYC mới.",
-                    "Lập tức gửi kịch bản all-in mua mã đầu cơ nóng.",
-                    "Xóa bỏ thông tin danh bạ khách hàng cũ.",
-                    "Đợi đến cuối tuần mới cập nhật dồn một lúc."
-                ],
-                correct: 0,
-                explain: "Đúng! Quy trình nghiệp vụ HO3 yêu cầu học viên cập nhật thông tin tư vấn lên hệ thống CRM mỗi ngày sau Midday Check-in."
+        function switchRpSubTab(tabName) {
+            const dialogueTab = document.getElementById('rpSubTabDialogue');
+            const principlesTab = document.getElementById('rpSubTabPrinciples');
+            const dialogueContent = document.getElementById('rpSubTabContentDialogue');
+            const principlesContent = document.getElementById('rpSubTabContentPrinciples');
+            
+            if (tabName === 'dialogue') {
+                dialogueTab.style.borderBottom = '2px solid var(--kb-yellow-dark)';
+                dialogueTab.style.fontWeight = '800';
+                dialogueTab.style.color = 'var(--kb-brown-dark)';
+                
+                principlesTab.style.borderBottom = '2px solid transparent';
+                principlesTab.style.fontWeight = '600';
+                principlesTab.style.color = 'var(--text-secondary)';
+                
+                dialogueContent.style.display = 'block';
+                principlesContent.style.display = 'none';
+            } else {
+                principlesTab.style.borderBottom = '2px solid var(--kb-yellow-dark)';
+                principlesTab.style.fontWeight = '800';
+                principlesTab.style.color = 'var(--kb-brown-dark)';
+                
+                dialogueTab.style.borderBottom = '2px solid transparent';
+                dialogueTab.style.fontWeight = '600';
+                dialogueTab.style.color = 'var(--text-secondary)';
+                
+                dialogueContent.style.display = 'none';
+                principlesContent.style.display = 'block';
+            }
+        }
+
+        function revealNextDialogueLine() {
+            const chatBody = document.getElementById('roleplayChatBody');
+            const startPrompt = document.getElementById('chatStartPrompt');
+            if (startPrompt) startPrompt.remove();
+            
+            const nextLine = activeRoleplayObject.script[activeRoleplayLineIdx];
+            if (!nextLine) return;
+            
+            // Extract speaker name and tone
+            let parsedName = nextLine.speaker;
+            let parsedTone = '';
+            const match = nextLine.speaker.match(/^([^(]+)(?:\(([^)]+)\))?/);
+            if (match) {
+                parsedName = match[1].trim();
+                parsedTone = match[2] ? match[2].trim() : '';
+            }
+            
+            const isBroker = nextLine.type === 'broker';
+            const avatarInitial = isBroker ? 'B' : parsedName.charAt(0) || 'K';
+            const displayName = isBroker ? 'Broker NextGen' : parsedName;
+            
+            // Colors
+            const avatarBg = isBroker ? '#F5A623' : '#64748b';
+            const bubbleBg = isBroker ? 'linear-gradient(135deg, #fef3c7, #fef9e7)' : '#ffffff';
+            const bubbleBorder = isBroker ? '1px solid rgba(245,166,35,0.3)' : '1px solid #e2e8f0';
+            const bubbleRadius = isBroker ? '20px 4px 20px 20px' : '4px 20px 20px 20px';
+            const nameColor = isBroker ? '#b8860b' : '#475569';
+            const rowDir = isBroker ? 'row-reverse' : 'row';
+            const rowAlign = isBroker ? 'flex-end' : 'flex-start';
+            const metaJustify = isBroker ? 'flex-end' : 'flex-start';
+            
+            // Create row
+            const row = document.createElement('div');
+            row.style.cssText = `display:flex;align-items:flex-start;gap:12px;max-width:85%;align-self:${rowAlign};flex-direction:${rowDir};animation:msgSlideIn 0.35s ease-out;margin-bottom:8px;`;
+            
+            row.innerHTML = `
+                <div style="width:40px;height:40px;border-radius:50%;background:${avatarBg};color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.15);margin-top:20px;">${avatarInitial}</div>
+                <div style="display:flex;flex-direction:column;gap:4px;flex:1;min-width:0;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:0 4px;justify-content:${metaJustify};">
+                        <span style="font-size:12px;font-weight:700;color:${nameColor};text-transform:uppercase;letter-spacing:0.5px;">${displayName}</span>
+                        ${parsedTone ? `<span style="font-size:11px;font-style:italic;color:#94a3b8;">— ${parsedTone}</span>` : ''}
+                    </div>
+                    <div style="padding:16px 20px;font-size:15px;line-height:1.75;background:${bubbleBg};border:${bubbleBorder};border-radius:${bubbleRadius};box-shadow:0 1px 6px rgba(0,0,0,0.06);color:#1e293b;word-wrap:break-word;">${formatMarkdownInline(nextLine.text)}</div>
+                </div>
+            `;
+            chatBody.appendChild(row);
+            chatBody.scrollTop = chatBody.scrollHeight;
+            
+            activeRoleplayLineIdx++;
+            
+            const progress = document.getElementById('rpProgressLabel');
+            const btn = document.getElementById('rpNextBtn');
+            const totalLines = activeRoleplayObject.script.length;
+            
+            progress.innerText = `Đối thoại: ${activeRoleplayLineIdx} / ${totalLines}`;
+            
+            if (activeRoleplayLineIdx >= totalLines) {
+                btn.innerHTML = 'Xem Nguyên Tắc →';
+                btn.onclick = () => { switchRpSubTab('principles'); };
+                btn.style.animation = 'activeGlow 1.5s infinite';
+            } else {
+                btn.innerText = 'Câu thoại tiếp theo';
+            }
+        }
+
+        function saveRubricAssessment() {
+            viewedRoleplay = true;
+            updateChecklistUI();
+            checkCompletionStatus();
+            
+            // Show inline success message immediately
+            const btn = document.getElementById('saveRubricBtn');
+            const msg = document.getElementById('rpSuccessMsg');
+            if (btn) {
+                btn.style.background = '#e0e0e0';
+                btn.style.color = '#757575';
+                btn.style.borderColor = '#bdbdbd';
+                btn.innerText = 'ĐÃ XÁC NHẬN HOÀN THÀNH';
+                btn.disabled = true;
+                btn.onclick = null;
+            }
+            if (msg) {
+                msg.style.display = 'block';
+            }
+            
+            updateMascotWidgetState('vui ve');
+        }
+
+        function parseRoleplayFromMarkdown(md) {
+            const lines = md.split(/\r?\n/);
+            let roleplay = {
+                title: 'Kịch bản đối luyện Role-play & Script',
+                overview: '',
+                script: [],
+                principles: []
             };
             
-            document.getElementById('qQuestion').innerText = quiz.question;
-            const box = document.getElementById('qOptionsBox');
-            box.innerHTML = '';
+            let inRoleplaySection = false;
+            let inScriptSection = false;
+            let inComplianceSection = false;
             
-            selectedQuizOption = null;
-            document.getElementById('quizSubmitBtn').innerText = "Gửi đáp án (+50 XP)";
-            document.getElementById('quizSubmitBtn').style.opacity = '1';
-            document.getElementById('quizSubmitBtn').disabled = false;
-            document.getElementById('quizExplanation').style.display = 'none';
+            let overviewLines = [];
             
-            quiz.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.className = 'quiz-option';
-                btn.innerText = `${idx + 1}. ${opt}`;
-                btn.setAttribute('onclick', `selectQuizOption(${idx}, this)`);
-                box.appendChild(btn);
+            for (let i = 0; i < lines.length; i++) {
+                let rawLine = lines[i].trim();
+                if (rawLine.startsWith('>')) {
+                    rawLine = rawLine.substring(1).trim();
+                }
+                const line = rawLine;
+                
+                if (line.includes('📌 V. KỊCH BẢN SẮM VAI') || line.includes('📌 V. KỊCH BẢN ĐỐI LUYỆN') || line.includes('ROLE-PLAY SCENARIO')) {
+                    inRoleplaySection = true;
+                    continue;
+                }
+                if (line.includes('📌 VI. QUY CHUẨN') || line.includes('📌 VI. TUÂN THỦ') || line.includes('COMPLIANCE WARNINGS')) {
+                    inRoleplaySection = false;
+                    inComplianceSection = true;
+                    continue;
+                }
+                if (line.startsWith('## ') && !line.includes('📌 V.') && !line.includes('📌 VI.')) {
+                    inRoleplaySection = false;
+                    inComplianceSection = false;
+                }
+                
+                if (inRoleplaySection) {
+                    const titleMatch = line.match(/^###\s*🎭\s*Tình huống:\s*(.+)$/i) || line.match(/^###\s*(.+)$/);
+                    if (titleMatch && roleplay.title === 'Kịch bản đối luyện Role-play & Script') {
+                        roleplay.title = titleMatch[1];
+                        continue;
+                    }
+                    
+                    if (line.includes('Đoạn Đối Thoại Mẫu') || line.includes('Script')) {
+                        inScriptSection = true;
+                        continue;
+                    }
+                    
+                    if (inScriptSection) {
+                        const cleanLine = line.replace(/^\*\s*/, '').trim();
+                        const speakerMatch = cleanLine.match(/^\*\*(.+?)\*\*:\s*(.+)$/) || cleanLine.match(/^\*\*(.+?):\*\*\s*(.+)$/);
+                        
+                        if (speakerMatch) {
+                            let speaker = speakerMatch[1].trim();
+                            if (speaker.endsWith(':')) {
+                                speaker = speaker.slice(0, -1).trim();
+                            }
+                            let text = speakerMatch[2].trim();
+                            if (text.startsWith('*') && text.endsWith('*')) {
+                                text = text.slice(1, -1).trim();
+                            }
+                            
+                            const isBroker = speaker.toLowerCase().includes('broker') || speaker.toLowerCase().includes('học viên');
+                            roleplay.script.push({
+                                speaker: speaker,
+                                text: text,
+                                type: isBroker ? 'broker' : 'client'
+                            });
+                        } else {
+                            if (roleplay.script.length > 0 && line.trim()) {
+                                let contText = line.trim();
+                                contText = contText.replace(/^[\*\-\>\s\+]+/, '').trim();
+                                if (contText.startsWith('*') && contText.endsWith('*')) {
+                                    contText = contText.slice(1, -1).trim();
+                                }
+                                if (contText) {
+                                    roleplay.script[roleplay.script.length - 1].text += '<br><br>• ' + contText;
+                                }
+                            }
+                        }
+                    } else {
+                        if (line && !line.startsWith('###') && !line.startsWith('##') && !line.startsWith('---')) {
+                            overviewLines.push(line);
+                        }
+                    }
+                }
+                
+                if (inComplianceSection) {
+                    const bulletMatch = line.match(/^(\d+\.|\*|-)\s*(.+)$/);
+                    if (bulletMatch) {
+                        let text = bulletMatch[2].trim();
+                        text = text.replace(/^\*\*(.+?)\*\*\s*/, '');
+                        if (text) {
+                            roleplay.principles.push(text);
+                        }
+                    }
+                }
+            }
+            
+            roleplay.overview = overviewLines.join('\n');
+            
+            if (roleplay.script.length === 0) {
+                roleplay.title = "Xử lý khủng hoảng tâm lý cho khách hàng F0 hoảng loạn";
+                roleplay.overview = "*   **Nhân vật:**\n    *   **Broker NextGen HO3 (Học viên):** Điềm tĩnh, thấu cảm, chuyên nghiệp, sử dụng ngôn từ bình an nhưng vững chắc về mặt số liệu.\n    *   **Anh Hùng (Khách hàng F0):** 32 tuổi, kinh doanh tự do. Đang sống ở Vùng Đất Hoang. Vừa tự ý mua đuổi cổ phiếu đầu cơ **CEO** theo lời xúi giục trên một nhóm Facebook ở vùng giá đỉnh. Hiện tại cổ phiếu đã giảm 3 phiên sàn liên tiếp (lỗ -21%), tài khoản đang dùng Margin cao.";
+                roleplay.script = [
+                    { speaker: "Anh Hùng (Khách hàng F0)", text: "Em ơi, thị trường này lừa đảo quá! Con CEO anh vừa mua tuần trước giờ ngày nào mở mắt ra cũng sàn, bay mất mấy chục triệu rồi. Hệ thống KBSV vừa nhắn tin cảnh báo cái gì mà tỷ lệ RTT về 32% rồi giục nộp tiền. Anh điên đầu quá! Hay giờ anh bán sạch hết đi em?", type: "client" },
+                    { speaker: "Broker NextGen", text: "Dạ anh Hùng, em hoàn toàn hiểu được cảm giác lo lắng và căng thẳng của anh lúc này. Việc tài khoản sụt giảm nhanh trong vài ngày qua quả thực rất khó chịu. Anh hãy hít một hơi thật sâu nhé, chúng ta sẽ cùng ngồi lại giải quyết từng bước một. Em ở đây để đồng hành cùng anh, anh yên tâm.", type: "broker" },
+                    { speaker: "Anh Hùng", text: "Giờ giải quyết thế nào hả em? Tiền mất thật rồi kia kìa! Con CEO có nên bán cắt lỗ hết luôn không? Còn con HPG có nên bán nốt để rút tiền mặt về không?", type: "client" },
+                    { speaker: "Broker NextGen", text: "Dạ anh Hùng, trước hết, em giải thích nhanh về tin nhắn cảnh báo RTT 32% của hệ thống. Tỷ lệ RTT (tỷ lệ tài sản ròng) của anh đang ở mức cận kề ngưỡng Call Margin (30%). Nếu anh bán sạch HPG bây giờ để rút tiền mặt, anh sẽ vô tình hiện thực hóa khoản lỗ của CEO và làm giảm đi sức chống đỡ của tài khoản, bởi vì HPG là tài sản cơ bản rất tốt và đang giúp giữ nhịp cho tài khoản của anh. Hành động khẩn cấp và đúng đắn nhất bây giờ là chúng ta phải hạ bớt tỷ lệ nợ Margin của mã CEO để đưa tài khoản về vùng an toàn trước đã.", type: "broker" },
+                    { speaker: "Anh Hùng", text: "Thế giờ bán CEO à? Bán giá sàn này xót lắm em ơi!", type: "client" },
+                    { speaker: "Broker NextGen", text: "Em hiểu anh đang rất xót. Nhưng nếu chúng ta gồng nợ Margin của một mã đầu cơ như CEO trong nhịp thị trường giảm này, rủi ro hệ thống tự động bán giải chấp (Force Sell) khi RTT dưới 30% là rất cao. Lúc đó anh sẽ bị bán thụ động ở mức giá bất lợi nhất. Em đề xuất anh bán chủ động 1/2 số lượng cổ phiếu CEO hiện có để đưa tài khoản về vùng an toàn RTT > 38%.", type: "broker" }
+                ];
+            }
+            if (roleplay.principles.length === 0) {
+                roleplay.principles = [
+                    "Tuyệt đối nghiêm cấm việc hứa hẹn bù lỗ, chia sẻ khoản lỗ hoặc cam kết chắc chắn cổ phiếu sẽ tăng giá trở lại dưới mọi hình thức (Vi phạm Điều 89 Luật Chứng khoán 2019).",
+                    "Tuyệt đối không sử dụng từ ngữ mang tính chất kích động, xúi giục khách hàng vay mượn tín dụng đen hoặc cầm cố tài sản bên ngoài để nạp tiền.",
+                    "Mọi thông tin tư vấn phải dựa trên số liệu tính toán RTT thực tế của hệ thống KBSV, giải thích rõ ràng rủi ro giải chấp cho khách hàng."
+                ];
+            }
+            
+            return roleplay;
+        }
+
+        function parseQuizFromMarkdown(md) {
+            const lines = md.split(/\r?\n/);
+            let quizQuestions = [];
+            let currentQuestion = null;
+            let inQuizSection = false;
+            let inAnswerKeySection = false;
+            const answersMap = {};
+            
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                
+                if (line.includes('IV. BÀI TEST ĐÁNH GIÁ') || line.includes('IV. BÀI TẬP TRẮC NGHIỆM') || line.includes('COMPETENCY ASSESSMENT')) {
+                    inQuizSection = true;
+                    inAnswerKeySection = false;
+                    continue;
+                }
+                if (line.includes('ĐÁP ÁN & GIẢI THÍCH') || line.includes('ANSWER KEY')) {
+                    inQuizSection = false;
+                    inAnswerKeySection = true;
+                    continue;
+                }
+                if (line.startsWith('## ') && !line.includes('IV. BÀI TEST') && !line.includes('ĐÁP ÁN')) {
+                    inQuizSection = false;
+                    inAnswerKeySection = false;
+                }
+                
+                if (inQuizSection) {
+                    const qMatch = line.match(/^###\s*Câu\s*(\d+)[\s:]+(.+)$/i);
+                    if (qMatch) {
+                        if (currentQuestion) {
+                            quizQuestions.push(currentQuestion);
+                        }
+                        currentQuestion = {
+                            num: parseInt(qMatch[1]),
+                            question: qMatch[2].trim(),
+                            options: [],
+                            correct: null,
+                            explain: ''
+                        };
+                        continue;
+                    }
+                    
+                    const optMatch = line.match(/^([A-D])\.\s*(.+)$/i);
+                    if (optMatch && currentQuestion) {
+                        currentQuestion.options.push(optMatch[2].trim());
+                        continue;
+                    }
+                }
+                
+                if (inAnswerKeySection) {
+                    const ansMatch = line.match(/^\*\s*\*\*Câu\s*(\d+)[\s:]*Chọn\s*([A-D])\s*\.?\*\*/i);
+                    if (ansMatch) {
+                        const qNum = parseInt(ansMatch[1]);
+                        const choice = ansMatch[2].toUpperCase();
+                        const correctIdx = choice.charCodeAt(0) - 65;
+                        answersMap[qNum] = {
+                            correct: correctIdx,
+                            explain: ''
+                        };
+                        continue;
+                    }
+                    
+                    if (line.startsWith('*') || line.startsWith('-')) {
+                        const keys = Object.keys(answersMap);
+                        if (keys.length > 0) {
+                            const lastKey = keys[keys.length - 1];
+                            let cleanLine = line.replace(/^\*\s*/, '').replace(/^-\s*/, '').trim();
+                            if (cleanLine.startsWith('*Giải thích:*')) {
+                                cleanLine = cleanLine.replace(/^\*Giải thích:\*\s*/, '').trim();
+                            } else if (cleanLine.startsWith('_Giải thích:_')) {
+                                cleanLine = cleanLine.replace(/^\_Giải thích:\_\s*/, '').trim();
+                            }
+                            answersMap[lastKey].explain += (answersMap[lastKey].explain ? ' ' : '') + cleanLine;
+                        }
+                    }
+                }
+            }
+            
+            if (currentQuestion) {
+                quizQuestions.push(currentQuestion);
+            }
+            
+            quizQuestions.forEach(q => {
+                if (answersMap[q.num]) {
+                    q.correct = answersMap[q.num].correct;
+                    q.explain = answersMap[q.num].explain;
+                }
             });
             
+            return quizQuestions;
+        }
+
+        let activeQuizQuestions = [];
+        let selectedQuizAnswers = {};
+        let gradedQuizzes = false;
+
+        function renderInteractiveQuizTab(container) {
+            const mdText = activeLessonMarkdownText || '';
+            activeQuizQuestions = parseQuizFromMarkdown(mdText);
+            
+            if (activeQuizQuestions.length === 0) {
+                const defaultQuiz = quizDb[activeLesson.code] || {
+                    question: "Sau khi học xong bài học này, bước tiếp theo học viên cần cập nhật thông tin gì lên hệ thống CRM chi nhánh?",
+                    options: [
+                        "Cập nhật thông tin số dư nợ vay và trạng thái tư vấn eKYC mới.",
+                        "Lập tức gửi kịch bản all-in mua mã đầu cơ nóng.",
+                        "Xóa bỏ thông tin danh bạ khách hàng cũ.",
+                        "Đợi đến cuối tuần mới cập nhật dồn một lúc."
+                    ],
+                    correct: 0,
+                    explain: "Đúng! Quy trình nghiệp vụ HO3 yêu cầu học viên cập nhật thông tin tư vấn lên hệ thống CRM mỗi ngày sau Midday Check-in."
+                };
+                activeQuizQuestions = [{
+                    num: 1,
+                    question: defaultQuiz.question,
+                    options: defaultQuiz.options,
+                    correct: defaultQuiz.correct,
+                    explain: defaultQuiz.explain
+                }];
+            }
+            
+            selectedQuizAnswers = {};
+            gradedQuizzes = false;
+            
+            const totalQ = activeQuizQuestions.length;
+            
+            let html = `
+                <div style="padding:10px 0;">
+                    <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid #f1f5f9;">
+                        <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#F5A623,#e09000);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 12px rgba(245,166,35,0.3);">📝</div>
+                        <div>
+                            <h3 style="font-size:18px;color:#1e293b;font-weight:800;margin:0;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.3px;">Bài Test Đánh Giá Năng Lực</h3>
+                            <p style="font-size:14px;color:#64748b;margin:4px 0 0 0;">${activeLesson.code} · ${totalQ} câu hỏi · Trả lời đúng tất cả để hoàn thành</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display:flex;flex-direction:column;gap:32px;" id="quizListBlock">
+            `;
+            
+            activeQuizQuestions.forEach((q) => {
+                html += `
+                    <div id="qCard_${q.num}" style="border:1px solid #e2e8f0;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.05);transition:all 0.25s;">
+                        <!-- Question Header — Dark prominent area -->
+                        <div style="background:linear-gradient(135deg,#f8fafc,#f1f5f9);padding:20px 24px;border-bottom:2px solid #e2e8f0;display:flex;align-items:flex-start;gap:16px;">
+                            <div style="min-width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#334155,#1e293b);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,0.15);letter-spacing:0.5px;">Q${q.num}</div>
+                            <div style="font-size:16px;font-weight:700;color:#1e293b;line-height:1.65;padding-top:8px;">${q.question}</div>
+                        </div>
+                        <!-- Answer Options — Lighter indented area -->
+                        <div style="padding:20px 24px 24px 24px;">
+                            <div style="font-size:11px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;padding-left:4px;">Chọn đáp án</div>
+                            <div style="display:flex;flex-direction:column;gap:10px;">
+                                ${q.options.map((opt, idx) => `
+                                    <button class="quiz-option" id="qOpt_${q.num}_${idx}" onclick="selectQuizTabOption(${q.num}, ${idx})" style="width:100%;text-align:left;padding:14px 18px;font-size:14.5px;line-height:1.6;border-radius:12px;border:1.5px solid #e2e8f0;background:#fff;cursor:pointer;color:#475569;font-weight:500;transition:all 0.2s ease;display:flex;align-items:flex-start;gap:12px;">
+                                        <span style="min-width:30px;height:30px;border-radius:50%;background:#f1f5f9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#64748b;flex-shrink:0;border:1.5px solid #e2e8f0;">${String.fromCharCode(65 + idx)}</span>
+                                        <span style="padding-top:3px;">${opt}</span>
+                                    </button>
+                                `).join('')}
+                            </div>
+                        </div>
+                        <div class="quiz-explanation-box" id="qExplain_${q.num}" style="display:none;background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border-top:2px solid #bbf7d0;border-left:none;border-radius:0 0 18px 18px;padding:18px 24px;margin-top:0;font-size:14px;line-height:1.65;color:#166534;">
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    <button class="btn-primary" id="tabQuizSubmitBtn" onclick="evaluateAllQuizzes()" style="width:100%;justify-content:center;padding:16px 0;font-size:16px;border-radius:14px;margin-top:28px;font-weight:700;letter-spacing:0.3px;box-shadow:0 4px 14px rgba(245,166,35,0.3);">
+                        Gửi bài làm (+50 XP)
+                    </button>
+                    <div id="quizSummaryAlert" style="display:none;text-align:center;font-size:15px;font-weight:800;margin-top:18px;padding:16px;border-radius:14px;"></div>
+                </div>
+            `;
+            
+            container.innerHTML = html;
             updateMascotWidgetState('tim kiem');
         }
 
-        function selectQuizOption(idx, btn) {
-            selectedQuizOption = idx;
-            document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
-            btn.classList.add('selected');
+        function selectQuizTabOption(qNum, idx) {
+            if (gradedQuizzes) return;
+            if (selectedQuizAnswers[qNum] !== undefined) return; // Prevent double selecting
+            
+            selectedQuizAnswers[qNum] = idx;
+            const q = activeQuizQuestions.find(x => x.num === qNum);
+            if (!q) return;
+            
+            q.options.forEach((opt, optIdx) => {
+                const btn = document.getElementById(`qOpt_${qNum}_${optIdx}`);
+                if (btn) {
+                    btn.disabled = true; // Lock option buttons for this question
+                    btn.style.cursor = 'not-allowed';
+                    btn.style.transform = 'none';
+                    btn.style.boxShadow = 'none';
+                    
+                    if (optIdx === idx) {
+                        if (idx === q.correct) {
+                            btn.style.setProperty('background', '#f0fdf4', 'important');
+                            btn.style.setProperty('border-color', '#22c55e', 'important');
+                            btn.style.setProperty('color', '#166534', 'important');
+                            btn.style.setProperty('border-width', '2px', 'important');
+                        } else {
+                            btn.style.setProperty('background', '#fef2f2', 'important');
+                            btn.style.setProperty('border-color', '#ef4444', 'important');
+                            btn.style.setProperty('color', '#991b1b', 'important');
+                            btn.style.setProperty('border-width', '2px', 'important');
+                        }
+                    } else if (optIdx === q.correct) {
+                        // Reveal correct answer in green if student chose the wrong option
+                        if (idx !== q.correct) {
+                            btn.style.setProperty('background', '#f0fdf4', 'important');
+                            btn.style.setProperty('border-color', '#22c55e', 'important');
+                            btn.style.setProperty('color', '#166534', 'important');
+                            btn.style.setProperty('border-width', '2px', 'important');
+                        }
+                    } else {
+                        btn.style.opacity = '0.5';
+                    }
+                }
+            });
+            
+            // Show explanation immediately
+            const expBox = document.getElementById(`qExplain_${qNum}`);
+            if (expBox) {
+                expBox.style.display = 'block';
+                if (idx === q.correct) {
+                    expBox.style.background = 'linear-gradient(135deg, #f0fdf4, #ecfdf5)';
+                    expBox.style.borderColor = '#bbf7d0';
+                    expBox.style.borderLeftColor = '#22c55e';
+                    expBox.style.color = '#166534';
+                    expBox.innerHTML = `<span style="color:#22c55e;font-weight:800;font-size:14px;display:block;margin-bottom:6px;">✅ CHÍNH XÁC! (Đáp án ${String.fromCharCode(65 + q.correct)})</span>${q.explain || 'Chúc mừng bạn đã trả lời đúng.'}`;
+                } else {
+                    expBox.style.background = 'linear-gradient(135deg, #fef2f2, #fff1f2)';
+                    expBox.style.borderColor = '#fecaca';
+                    expBox.style.borderLeftColor = '#ef4444';
+                    expBox.style.color = '#991b1b';
+                    expBox.innerHTML = `<span style="color:#ef4444;font-weight:800;font-size:14px;display:block;margin-bottom:6px;">❌ CHƯA CHÍNH XÁC (Bạn chọn ${String.fromCharCode(65 + idx)} — Đáp án đúng: ${String.fromCharCode(65 + q.correct)})</span><strong>Giải thích:</strong> ${q.explain || 'Vui lòng đọc lại lý thuyết để hiểu rõ hơn.'}`;
+                }
+            }
+            
+            // Check if all questions are now answered. If so, pulse the submit button!
+            let allAnswered = true;
+            activeQuizQuestions.forEach(qItem => {
+                if (selectedQuizAnswers[qItem.num] === undefined) {
+                    allAnswered = false;
+                }
+            });
+            if (allAnswered) {
+                const submitBtn = document.getElementById('tabQuizSubmitBtn');
+                if (submitBtn) {
+                    submitBtn.style.animation = 'activeGlow 1.5s infinite';
+                }
+            }
         }
 
-        function evaluateQuiz() {
-            if (selectedQuizOption === null) {
-                alert('Vui lòng chọn 1 đáp án!');
+        function evaluateAllQuizzes() {
+            let unanswered = false;
+            activeQuizQuestions.forEach(q => {
+                if (selectedQuizAnswers[q.num] === undefined) {
+                    unanswered = true;
+                }
+            });
+            
+            if (unanswered) {
+                alert('Vui lòng hoàn thành tất cả các câu hỏi trước khi nộp bài!');
                 return;
             }
             
-            const quiz = quizDb[activeLesson.code] || {
-                question: "Sau khi học xong bài học này, bước tiếp theo học viên cần cập nhật thông tin gì lên hệ thống CRM chi nhánh?",
-                options: [
-                    "Cập nhật thông tin số dư nợ vay và trạng thái tư vấn eKYC mới.",
-                    "Lập tức gửi kịch bản all-in mua mã đầu cơ nóng.",
-                    "Xóa bỏ thông tin danh bạ khách hàng cũ.",
-                    "Đợi đến cuối tuần mới cập nhật dồn một lúc."
-                ],
-                correct: 0,
-                explain: "Đúng! Quy trình nghiệp vụ HO3 yêu cầu học viên cập nhật thông tin tư vấn lên hệ thống CRM mỗi ngày sau Midday Check-in."
-            };
-            
-            const exp = document.getElementById('quizExplanation');
-            exp.style.display = 'block';
-            
-            if (selectedQuizOption === quiz.correct) {
-                exp.innerHTML = `<span style="color:var(--success-color); font-weight:700;">CHÚC MỪNG! BẠN ĐÃ TRẢ LỜI ĐÚNG (+50 XP)</span><br>${quiz.explain}`;
-                updateMascotWidgetState('vui ve');
-                
-                currentXP = Math.min(500, currentXP + 50);
-                localStorage.setItem('nextgen_xp', currentXP);
-                
-                document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
-                document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
-                
-                if (currentXP >= 500) {
-                    document.getElementById('userLevelText').innerText = "Mầm Xanh Level 2 (Đột Phá)";
+            let correctCount = 0;
+            activeQuizQuestions.forEach(q => {
+                if (selectedQuizAnswers[q.num] === q.correct) {
+                    correctCount++;
                 }
-            } else {
-                exp.innerHTML = `<span style="color:var(--danger-color); font-weight:700;">RẤT TIẾC, BẠN CHỌN SAI RỒI</span><br>Hãy thử lại hoặc xem lại lý thuyết ở tab bên cạnh.`;
-                updateMascotWidgetState('ban khoan');
+            });
+            
+            const allCorrect = (correctCount === activeQuizQuestions.length);
+            const summary = document.getElementById('quizSummaryAlert');
+            summary.style.display = 'block';
+            
+            const submitBtn = document.getElementById('tabQuizSubmitBtn');
+            if (submitBtn) {
+                submitBtn.style.animation = 'none';
             }
             
-            document.getElementById('quizSubmitBtn').disabled = true;
-            document.getElementById('quizSubmitBtn').style.opacity = '0.5';
+            if (allCorrect) {
+                summary.style.backgroundColor = 'rgba(76, 175, 80, 0.08)';
+                summary.style.color = 'var(--success-color)';
+                summary.style.border = '1px solid rgba(76, 175, 80, 0.3)';
+                summary.innerText = `Chúc mừng! Bạn đã đạt tổng điểm ${correctCount}/${activeQuizQuestions.length} câu đúng (100%). Nhận ngay +50 XP!`;
+                updateMascotWidgetState('vui ve');
+                
+                gradedQuizzes = true;
+                viewedQuiz = true;
+                updateChecklistUI();
+                checkCompletionStatus();
+                
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = '0.5';
+                }
+                
+                // Award XP on first correct submission
+                if (!completedDays[activeLesson.id]) {
+                    currentXP = Math.min(500, currentXP + 50);
+                    localStorage.setItem('nextgen_xp', currentXP);
+                    document.getElementById('xpText').innerText = `${currentXP} / 500 XP`;
+                    document.getElementById('xpBar').style.width = `${(currentXP/500)*100}%`;
+                    
+                    if (currentXP >= 500) {
+                        document.getElementById('userLevelText').innerText = "Mầm Xanh Level 2 (Đột Phá)";
+                    }
+                }
+            } else {
+                summary.style.backgroundColor = 'rgba(224, 80, 80, 0.08)';
+                summary.style.color = 'var(--danger-color)';
+                summary.style.border = '1px solid rgba(224, 80, 80, 0.3)';
+                summary.innerText = `Tổng điểm của bạn: ${correctCount}/${activeQuizQuestions.length} câu đúng. Vui lòng bấm 'Làm lại bài test' bên dưới để thực hiện lại!`;
+                updateMascotWidgetState('ban khoan');
+                
+                if (submitBtn) {
+                    submitBtn.innerText = 'Làm lại bài test';
+                    submitBtn.onclick = resetQuizTab;
+                    submitBtn.style.backgroundColor = 'var(--kb-brown)';
+                    submitBtn.style.color = '#fff';
+                }
+            }
+            
+            // Summarize key test takeaways in the right panel widget
+            updateMentorSpeechWithTakeaways();
+        }
+
+        function updateMentorSpeechWithTakeaways() {
+            const speechEl = document.getElementById('modalMascotSpeech');
+            if (speechEl && activeQuizQuestions.length > 0) {
+                let takeawaysHtml = `<div style="font-weight: 800; color: var(--kb-brown-dark); margin-bottom: 10px; font-size: 10pt;">💡 Ý CHÍNH CẦN NHỚ TỪ BÀI TEST:</div>`;
+                activeQuizQuestions.forEach((q, idx) => {
+                    // Use q.explain (correct field name from quiz data model)
+                    let exp = q.explain || q.explanation || '';
+                    // Show full explanation, not just first sentence
+                    exp = exp.replace(/^Giải thích:\s*/i, '').replace(/^Đúng!\s*/i, '').trim();
+                    if (!exp) exp = q.question ? q.question.split(/[.!?]/)[0] + '.' : '';
+                    
+                    const isAnswered = selectedQuizAnswers[q.num] !== undefined;
+                    const isCorrect = isAnswered && selectedQuizAnswers[q.num] === q.correct;
+                    const icon = isAnswered ? (isCorrect ? '✅' : '❌') : '📌';
+                    
+                    takeawaysHtml += `
+                        <div style="margin-bottom: 10px; font-size: 9pt; line-height: 1.5; color: var(--text-primary); padding-left: 4px; border-left: 2px solid ${isCorrect ? '#22c55e' : isAnswered ? '#ef4444' : '#F5A623'}; padding: 4px 0 4px 10px;">
+                            <strong style="color: var(--kb-yellow-dark);">${icon} Câu ${idx + 1}:</strong> ${formatMarkdownInline(exp)}
+                        </div>
+                    `;
+                });
+                takeawaysHtml += `<div style="margin-top: 12px; font-size: 8.5pt; color: var(--text-secondary); font-style: italic;">👉 Xem lại đáp án chi tiết ở từng câu hỏi để nắm rõ bản chất.</div>`;
+                speechEl.innerHTML = takeawaysHtml;
+            }
+        }
+
+        function formatMarkdownInline(str) {
+            if (!str) return '';
+            return str
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/`(.*?)`/g, '<code>$1</code>');
+        }
+
+        function resetQuizTab() {
+            selectedQuizAnswers = {};
+            gradedQuizzes = false;
+            const area = document.getElementById('lessonBodyArea');
+            renderInteractiveQuizTab(area);
         }
 
         function updateMascotWidgetState(stateName) {

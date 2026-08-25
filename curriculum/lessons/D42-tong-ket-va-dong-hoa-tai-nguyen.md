@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Graduation Wrap-up $\rightarrow$ 90-Day Action Plan Development $\rightarrow$ Closing Ceremony).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Graduation Wrap-up → 90-Day Action Plan Development → Closing Ceremony).
 *   **Vị trí trong lộ trình:** Ngày thứ bốn mươi hai của Lộ trình (Ngày cuối cùng của Chương trình 42 ngày).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy kiên trì, bản lĩnh bền bỉ và tinh thần cam kết trọn đời với nghề cố vấn tài sản. Giữ vững triết lý đầu tư bình an, bảo vệ khách hàng trước các cám dỗ ngắn hạn của thị trường. Nhìn nhận sự kết thúc khóa học là điểm khởi đầu cho hành trình thực chiến vinh quang phía trước.
@@ -46,7 +46,7 @@ Sau khi tốt nghiệp và được bổ nhiệm làm Broker chính thức, họ
 *   **Specific (Cụ thể):** Đạt quy mô NAV quản lý (AUM) tăng thêm tối thiểu **1.5 tỷ đồng**.
 *   **Measurable (Đo lường được):** Kích hoạt thành công ít nhất **30 tài khoản active Standard** mới.
 *   **Achievable (Khả thi):** Tuyển dụng và duy trì đội ngũ **3 CTV sinh viên** nòng cốt để phát triển phễu.
-*   **Relevant (Phù hợp):** Tạo Doanh thu thuần DTT dương cho HO3 để bắt đầu nhận hoa hồng chia sẻ $50\%$.
+*   **Relevant (Phù hợp):** Tạo Doanh thu thuần DTT dương cho HO3 để bắt đầu nhận hoa hồng chia sẻ 50%.
 *   **Time-bound (Thời hạn):** Hoàn thành chính xác sau 90 ngày kể từ ngày ký quyết định bổ nhiệm.
 
 #### B. Thời gian biểu Daily Routine mở rộng của Broker chính thức:
@@ -83,7 +83,7 @@ Việc duy trì viết bản tin sáng lúc 8h15, làm video Content Lab lúc 11
 ### 📝 Bài Tập: Thiết Kế Kế Hoạch Hành Động 90 Ngày Bứt Phá & Định Lượng Phễu Chuyển Đổi
 
 **Yêu cầu đối với học viên:**
-Thiết lập kế hoạch hành động định lượng chi tiết cho 90 ngày sau tốt nghiệp của bản thân nhằm đạt mục tiêu: **Tích lũy AUM (NAV quản lý) đạt 2.400.000.000 VNĐ** và **mở mới 30 tài khoản active Standard (nạp $\ge$ 5 triệu/tài khoản)**. Hãy thực hiện tính toán định lượng ngược (Reverse Engineering) để xác định:
+Thiết lập kế hoạch hành động định lượng chi tiết cho 90 ngày sau tốt nghiệp của bản thân nhằm đạt mục tiêu: **Tích lũy AUM (NAV quản lý) đạt 2.400.000.000 VNĐ** và **mở mới 30 tài khoản active Standard (nạp ≥ 5 triệu/tài khoản)**. Hãy thực hiện tính toán định lượng ngược (Reverse Engineering) để xác định:
 1.  Tổng số tài khoản active Standard Lâm cần chốt trung bình mỗi tháng.
 2.  Giả sử tỷ lệ chuyển đổi trung bình của 1 buổi Webinar/Livestream là **5 tài khoản active Standard**. Lâm cần tổ chức bao nhiêu buổi Webinar/Livestream trong 90 ngày để đạt mục tiêu?
 3.  Lâm muốn tuyển dụng **2 bạn CTV sinh viên** hỗ trợ phát triển phễu (mỗi CTV cam kết mang về trung bình 3 tài khoản active Standard/tháng). Hãy tính số lượng tài khoản active Standard Lâm tự mình phải chốt trực tiếp sau khi đã có sự hỗ trợ của CTV.
@@ -136,7 +136,7 @@ D. Chỉ gửi vào ngày cuối tuần.
 ### Câu 3: Kỷ luật lớn nhất quyết định sự sống sót và thành công dài hạn của một Wealth Advisor trên thị trường chứng khoán là gì?
 A. Sự may mắn trúng được các mã cổ phiếu tăng trần liên tục.
 B. Tính kiên trì đều đặn hàng ngày duy trì Daily Routine, bám sát triết lý đầu tư bình an và nghiêm ngặt tuân thủ quy tắc quản trị rủi ro bảo vệ vốn khách hàng.
-C. Khả năng dự báo chính xác $100\%$ điểm số của chỉ số VN-Index.
+C. Khả năng dự báo chính xác 100% điểm số của chỉ số VN-Index.
 D. Việc khách hàng nộp toàn bộ tài sản cho Broker tự ý đặt lệnh hộ.
 
 ### Câu 4: Việc tuyển dụng và quản lý đội ngũ Cộng tác viên (CTV) sinh viên mang lại lợi ích cốt lõi gì cho Broker?
@@ -167,6 +167,34 @@ D. Khuyên khách hàng nộp thêm tiền Margin kịch khung để gồng lỗ
     *   *Giải thích:* Downtrend là lúc khách hàng cần người cố vấn thấu cảm và điềm tĩnh đồng hành nhất. Việc bọc lót bảo vệ tài sản bằng Tháp tài sản và Hedging phái sinh giúp giữ vững niềm tin và sự bình an cho khách hàng.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Chia sẻ bài học lớn nhất và cam kết hành động trong buổi Retrospective tổng kết chương trình
+*   **Nhân vật:**
+    *   **Học viên NextGen (Chia sẻ trước nhóm):** Chia sẻ chân thành, truyền cảm hứng cho đồng đội.
+    *   **MC/Mentor (Điều phối):** Dẫn dắt buổi retrospective, đặt câu hỏi gợi mở.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **MC Mentor (giọng ấm áp, gợi mở):** *42 ngày đã qua, chúng ta từ những bạn trẻ chưa biết gì về chứng khoán, giờ đã thành Broker NextGen. Mỗi người hãy chia sẻ: 1 bài học lớn nhất và 1 cam kết hành động cho 90 ngày tới. Vy đi đầu nhé!*
+*   **Học viên Vy (giọng xúc động, chân thành):** *Dạ cảm ơn anh. Bài học lớn nhất của em là: THÁI ĐỘ QUYẾT ĐỊNH TẤT CẢ. Tuần 3, em bị 15 khách từ chối liên tiếp, em khóc, em muốn bỏ. Nhưng Mentor Quân nói: "Vy ơi, em bị từ chối 15 lần nghĩa là em đã dũng cảm gọi 15 cuộc. 85% người khác không dám gọi cuộc nào". Câu nói đó thay đổi em. Em hiểu rằng kiến thức có thể học, kỹ năng có thể luyện, nhưng thái độ không bỏ cuộc — đó là thứ không ai dạy được nếu mình không tự chọn.*
+*   **MC Mentor (động viên):** *Tuyệt vời Vy! Và cam kết 90 ngày tới?*
+*   **Học viên Vy (dứt khoát):** *Cam kết của em: 90 ngày tới em sẽ đạt AUM 5 tỷ, mở 30 tài khoản active, quay 90 video TikTok — mỗi ngày 1 video. Và em cam kết: khi em thành công, em sẽ quay lại mentor cho lứa NextGen tiếp theo, truyền lại ngọn lửa mà các anh chị đã trao cho em.*
+*   **MC Mentor (kết thúc chương trình):** *Hội trường vỗ tay cho Vy! Đó chính là tinh thần NextGen — không phải tìm kiếm sự bình an bằng tiền, mà bằng THÁI ĐỘ SỐNG. Chúc mừng tất cả Broker NextGen Khóa 2026! Con đường phía trước dài và đẹp, luôn có FinPeace và KBSV đồng hành cùng các em!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Chia sẻ chân thành, truyền cảm hứng** | **40%** | Kể câu chuyện thật, có cảm xúc; bài học cụ thể; không nói chung chung. | / 40 |
+| **Cam kết hành động SMART** | **35%** | AUM/TK/Video cụ thể; timeline 90 ngày; mentor thế hệ sau. | / 35 |
+| **Tinh thần đội nhóm (Team Spirit)** | **25%** | Tri ân Mentor; truyền động lực cho đồng đội; cam kết quay lại đóng góp. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ mười của Lộ trình (Kết thúc Tuần 2, hoàn thành Phase 1 - Đào tạo Nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập tâm thế phục vụ tận tụy, chân thành của một Wealth Advisor. Coi việc giải quyết khó khăn và rào cản trì hoãn của khách hàng là trách nhiệm hàng đầu. Tôn trọng tuyệt đối tính bảo mật thông tin và tính cá nhân hóa trong lập kế hoạch tài chính.
@@ -48,7 +48,7 @@ Việc bán một sản phẩm tích sản cổ phiếu (SIP) không giống nh�
 *   **Bước 1: Phân tích hiện trạng tài chính (Financial Audit):** Broker sử dụng các câu hỏi khai thác để làm rõ thu nhập thực tế, chi phí sinh hoạt cố định và các khoản nợ của khách hàng. Mục tiêu là tính ra con số **Dòng tiền thặng dư thực tế hàng tháng** một cách chính xác.
 *   **Bước 2: Xác định mục tiêu và khẩu vị rủi ro:** Xác định mục tiêu tài chính của khách hàng là ngắn hạn hay dài hạn (mua nhà sau 5 năm, chuẩn bị quỹ giáo dục cho con, hay hưu trí bình an). Đồng thời nhận diện nhóm tính cách DISC để điều chỉnh cách nói chuyện và mức độ cam kết an toàn.
 *   **Bước 3: Thiết lập cấu trúc Tháp tài sản:** Tính toán quy mô Quỹ dự phòng khẩn cấp T1 (3 - 6 tháng chi phí) và cô lập số tiền này trước khi phân bổ dòng thặng dư hàng tháng vào Tầng Tích lũy T2.
-*   **Bước 4: Thiết kế danh mục cổ phiếu tích sản chi tiết:** Lựa chọn 2 - 3 mã cổ phiếu trong rổ InvestWise (như FPT, ACB, HPG) và phân bổ tỷ trọng phần trăm cụ thể (ví dụ $40\%$ FPT, $60\%$ ACB) dựa trên tính tương thích ngành và chu kỳ vĩ mô.
+*   **Bước 4: Thiết kế danh mục cổ phiếu tích sản chi tiết:** Lựa chọn 2 - 3 mã cổ phiếu trong rổ InvestWise (như FPT, ACB, HPG) và phân bổ tỷ trọng phần trăm cụ thể (ví dụ 40% FPT, 60% ACB) dựa trên tính tương thích ngành và chu kỳ vĩ mô.
 
 ---
 
@@ -121,7 +121,7 @@ Chiều hôm đó, Vy nhận được tin nhắn báo có 100.000 VNĐ cộng v�
 *   Chương trình ưu đãi áp dụng: Nhận thưởng **100.000 VNĐ** ở tháng đầu tiên khi active tài khoản Standard giải ngân ban đầu từ 5 triệu trở lên.
 
 **Yêu cầu đối với Broker NextGen:**
-1.  Tính số tiền trích nộp tích sản hàng tháng của anh An (áp dụng nguyên tắc trích $50\%$ dòng tiền thặng dư).
+1.  Tính số tiền trích nộp tích sản hàng tháng của anh An (áp dụng nguyên tắc trích 50% dòng tiền thặng dư).
 2.  Xác định số vốn ban đầu (15 triệu) sẽ được phân bổ cụ thể như thế nào vào T1 (Quỹ khẩn cấp) và T2 (Tích sản ban đầu).
 3.  Lập bảng Excel theo dõi kế hoạch tích sản 12 tháng của anh An:
     *   Tháng 1: Giải ngân số vốn tích sản ban đầu + tiền tích sản định kỳ tháng 1 + tiền thưởng 100.000 VNĐ từ chương trình.
@@ -133,7 +133,7 @@ Chiều hôm đó, Vy nhận được tin nhắn báo có 100.000 VNĐ cộng v�
 
 1.  **Bước 1: Tính toán thặng dư và tiền tích sản hàng tháng:**
     *   $\text{Thặng dư hàng tháng} = 24.000.000 - 14.000.000 = 10.000.000\text{ VNĐ}$.
-    *   $\text{Tiền trích tích sản định kỳ hàng tháng (50\% thặng dư)} = 10.000.000 \times 50\% = 5.000.000\text{ VNĐ}$.
+    *   $\text{Tiền trích tích sản định kỳ hàng tháng (50% thặng dư)} = 10.000.000 \times 50% = 5.000.000\text{ VNĐ}$.
 
 2.  **Bước 2: Phân bổ số vốn khởi đầu 15.000.000 VNĐ:**
     *   Vì anh An là người nhóm S cực kỳ an tâm khi có móng bảo vệ, Broker thiết lập Quỹ dự phòng khẩn cấp T1 ban đầu tối thiểu là 10.000.000 VNĐ.
@@ -156,7 +156,7 @@ Chiều hôm đó, Vy nhận được tin nhắn báo có 100.000 VNĐ cộng v�
     *   Giá trị tài sản ròng cuối năm nếu ACB phục hồi về giá trị định giá thực 30.000 VNĐ/cp:
         $$\text{Giá trị tài sản ròng} = 3.255\text{ cổ phiếu} \times 30.000\text{ VNĐ/cp} = 97.650.000\text{ VNĐ}$$
     *   Tỷ suất tăng trưởng tài sản thực tế so với vốn gốc bỏ ra:
-        $$\text{Tỷ suất lợi nhuận} = \frac{97.650.000 - 65.000.000}{65.000.000} \times 100\% \approx 50.2\%$$
+        $$\text{Tỷ suất lợi nhuận} = \frac{97.650.000 - 65.000.000}{65.000.000} \times 100% ≈ 50.2%$$
 
 ---
 
@@ -239,7 +239,7 @@ D. Tự động thay đổi danh mục đầu tư khi giá cổ phiếu biến �
 | **Hỗ trợ công nghệ nhiệt tình** | **30%** | Chủ động đề xuất giải pháp gọi video call hướng dẫn trực tiếp 3 phút để giảm thiểu cảm giác "ngại thủ tục" của khách hàng nhóm S. | / 30 |
 | **Thái độ chuyên nghiệp, tôn trọng** | **30%** | Giọng nói vui vẻ, đầy năng lượng tích cực, tạo thiện cảm lớn cho khách hàng, không mang tính chất chèo kéo, ép buộc. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 
@@ -248,4 +248,4 @@ D. Tự động thay đổi danh mục đầu tư khi giá cổ phiếu biến �
 > [!IMPORTANT]
 > **QUY TẮC PHÁT NGÔN VỀ CHƯƠNG TRÌNH KHUYẾN MẠI & TÀI KHOẢN:**
 > 1.  **Tuyệt đối nghiêm cấm** Broker tự ý thu thập thông tin cá nhân (ảnh căn cước công dân, mật khẩu OTP) của khách hàng để tự đặt lệnh mở tài khoản hộ khi chưa có sự đồng ý hoặc thực hiện các hành vi gian lận hồ sơ mở tài khoản.
-> 2.  Mọi thông tin về chương trình tặng tiền thưởng phải được giải thích rõ ràng điều kiện giải ngân tối thiểu (NAV $\ge 5$ triệu đồng) để tránh hiểu lầm cho khách hàng, đảm bảo tính trung thực và minh bạch tối đa của thương hiệu KBSV.
+> 2.  Mọi thông tin về chương trình tặng tiền thưởng phải được giải thích rõ ràng điều kiện giải ngân tối thiểu (NAV ≥ 5 triệu đồng) để tránh hiểu lầm cho khách hàng, đảm bảo tính trung thực và minh bạch tối đa của thương hiệu KBSV.

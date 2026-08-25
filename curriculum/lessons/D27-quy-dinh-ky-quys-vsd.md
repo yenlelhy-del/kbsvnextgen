@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ VSD Compliance & Risk Audit).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → VSD Compliance & Risk Audit).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi bảy của Lộ trình (Tuần 4 - Quy chế phái sinh và VSD).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đề cao tính tuân thủ quy chế, trung thực và minh bạch tài chính. Nhìn nhận các quy định ký quỹ nghiêm ngặt của Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC) là bộ lọc bảo vệ an toàn cho hệ thống và tài sản của nhà đầu tư. Không có thái độ lách luật hay hứa hẹn phi pháp.
@@ -31,8 +31,8 @@ Trong mô hình CCP, VSDC đóng vai trò là người mua của mọi người 
 ### 2. Các Quy Định Ký Quỹ Cốt Lõi Trên Thị Trường Phái Sinh
 
 Khách hàng muốn giao dịch phái sinh phải thực hiện nộp tiền ký quỹ vào tài khoản chuyên biệt được kết nối trực tiếp với VSDC:
-*   **Tỷ lệ ký quỹ ban đầu (Initial Margin - IM):** Tỷ lệ ký quỹ tối thiểu do VSDC quy định để khách hàng được phép mở vị thế mới. Hiện tại, VSDC quy định tỷ lệ ký quỹ ban đầu tối thiểu là **$15.6\%$** giá trị hợp đồng. Tuy nhiên, để đảm bảo an toàn trước các biến động giá cực đoan trong phiên, KBSV HO3 thường áp dụng tỷ lệ ký quỹ an toàn khoảng **$18.5\% - 22\%$**.
-*   **Tỷ lệ ký quỹ duy trì (Maintenance Margin - MM):** Mức ký quỹ tối thiểu khách hàng phải duy trì trong suốt quá trình nắm giữ vị thế (thường bằng $80\%$ của IM). Nếu tài sản ròng trên tài khoản phái sinh sụt giảm dưới mốc MM, khách hàng sẽ bị Call Margin yêu cầu nộp thêm tiền bổ sung.
+*   **Tỷ lệ ký quỹ ban đầu (Initial Margin - IM):** Tỷ lệ ký quỹ tối thiểu do VSDC quy định để khách hàng được phép mở vị thế mới. Hiện tại, VSDC quy định tỷ lệ ký quỹ ban đầu tối thiểu là **15.6%** giá trị hợp đồng. Tuy nhiên, để đảm bảo an toàn trước các biến động giá cực đoan trong phiên, KBSV HO3 thường áp dụng tỷ lệ ký quỹ an toàn khoảng **18.5% - 22%**.
+*   **Tỷ lệ ký quỹ duy trì (Maintenance Margin - MM):** Mức ký quỹ tối thiểu khách hàng phải duy trì trong suốt quá trình nắm giữ vị thế (thường bằng 80% của IM). Nếu tài sản ròng trên tài khoản phái sinh sụt giảm dưới mốc MM, khách hàng sẽ bị Call Margin yêu cầu nộp thêm tiền bổ sung.
 *   **Tài sản ký quỹ hợp lệ:** Chủ yếu là Tiền mặt (VND) và Cổ phiếu cơ sở nằm trong danh sách chấp nhận thế chấp của VSDC (với tỷ lệ chiết khấu định trước).
 
 ---
@@ -55,20 +55,20 @@ Rất nhiều khách hàng F0 bị sốc khi thấy số dư tài khoản phái 
 2.  **Phí dịch vụ của Sở Giao dịch VSDC (Thu hộ):**
     *   Phí quản lý vị thế qua đêm: **2.000 VNĐ/hợp đồng/ngày**.
     *   Phí giao dịch phái sinh: **3.000 VNĐ/hợp đồng/lượt** (áp dụng khi mở hoặc đóng vị thế).
-3.  **Thuế thu nhập cá nhân (Thu hộ Nhà nước):** Áp dụng mức thuế suất **$0.1\%$** trên giá trị chuyển nhượng hợp đồng mỗi khi thực hiện đóng vị thế.
+3.  **Thuế thu nhập cá nhân (Thu hộ Nhà nước):** Áp dụng mức thuế suất **0.1%** trên giá trị chuyển nhượng hợp đồng mỗi khi thực hiện đóng vị thế.
 
 ---
 
 ### 5. Câu Chuyện Thực Tế: Broker Lâm Cứu Tài Khoản Phái Sinh Quên Đóng Vị Thế Qua Đêm Của Anh Hùng
 
-Anh Hùng (38 tuổi, chủ cửa hàng vật liệu xây dựng, nhóm tính cách **D-I**) tự giao dịch phái sinh tại KBSV HO3. Vào ngày thứ Tư của tuần đáo hạn hợp đồng tương lai tháng 8/2026, anh Hùng mở vị thế **Long 20 hợp đồng VN30F1M** ở mức giá $1.220$ điểm để ăn sóng hồi phục cuối phiên.
+Anh Hùng (38 tuổi, chủ cửa hàng vật liệu xây dựng, nhóm tính cách **D-I**) tự giao dịch phái sinh tại KBSV HO3. Vào ngày thứ Tư của tuần đáo hạn hợp đồng tương lai tháng 8/2026, anh Hùng mở vị thế **Long 20 hợp đồng VN30F1M** ở mức giá 1.220 điểm để ăn sóng hồi phục cuối phiên.
 
 Đến 14h30, do bận tiếp khách hàng mua thép tại cửa hàng, anh Hùng quên đặt lệnh đóng vị thế và để mặc vị thế 20 hợp đồng qua đêm. Tối hôm đó, thị trường chứng khoán Mỹ (Dow Jones) đột ngột sụp đổ giảm hơn 800 điểm do chỉ số lạm phát Mỹ tăng vượt dự báo.
 
 1.  **Cuộc gọi khẩn cấp từ Broker Lâm lúc 8h05 sáng hôm sau:** Lâm rà soát hệ thống CRM phát hiện vị thế qua đêm của anh Hùng. Anh lập tức gọi điện cảnh báo: *"Anh Hùng ơi, Dow Jones đêm qua giảm mạnh nên phiên sáng nay chỉ số VN30 Futures của mình dự kiến sẽ mở gap giảm ít nhất 15 - 20 điểm. Tài khoản của anh đang Long 20 hợp đồng qua đêm sẽ bị trích nợ lỗ MTM khoảng 30 - 40 triệu đồng ngay đầu phiên, đưa tỷ lệ ký quỹ khả dụng về mức cảnh báo nguy hiểm.*
     *   *Em đề xuất anh nộp gấp 40 triệu tiền mặt vào tài khoản phái sinh trước 8h45 để hệ thống đồng bộ lên VSDC, tránh việc tài khoản bị đình chỉ giao dịch hoặc bị hệ thống tự động bán đóng vị thế bắt buộc ở mức giá mở cửa ATO xấu nhất"*.
 2.  **Thực thi quyết liệt:** Anh Hùng nghe Lâm phân tích số liệu rõ ràng và dự báo gap giảm chuẩn xác nên đã lập tức chuyển 40 triệu đồng nộp ký quỹ bổ sung qua app ngân hàng liên kết.
-3.  **Kết quả:** Đúng 9h00, VN30 Futures mở cửa giảm 18 điểm về $1.002$ điểm. Nhờ có số tiền nộp ký quỹ 40 triệu bổ sung kịp thời của Lâm hướng dẫn, tài khoản của anh Hùng không bị dính lỗi vi phạm tỷ lệ ký quỹ của VSDC. Phiên chiều, thị trường hồi phục tốt về $1.015$ điểm, anh Hùng chủ động đóng vị thế chỉ chịu khoản lỗ nhẹ, bảo vệ nguyên vẹn sức mua tài khoản. Anh vô cùng khâm phục sự theo sát cảnh báo rủi ro chuyên nghiệp của Lâm.
+3.  **Kết quả:** Đúng 9h00, VN30 Futures mở cửa giảm 18 điểm về 1.002 điểm. Nhờ có số tiền nộp ký quỹ 40 triệu bổ sung kịp thời của Lâm hướng dẫn, tài khoản của anh Hùng không bị dính lỗi vi phạm tỷ lệ ký quỹ của VSDC. Phiên chiều, thị trường hồi phục tốt về 1.015 điểm, anh Hùng chủ động đóng vị thế chỉ chịu khoản lỗ nhẹ, bảo vệ nguyên vẹn sức mua tài khoản. Anh vô cùng khâm phục sự theo sát cảnh báo rủi ro chuyên nghiệp của Lâm.
 
 ---
 
@@ -78,7 +78,7 @@ Anh Hùng (38 tuổi, chủ cửa hàng vật liệu xây dựng, nhóm tính c�
 
 **Thông số giao dịch của khách hàng:**
 *   Khách hàng muốn mở vị thế **Long 15 hợp đồng tương lai VN30F1M** ở mức giá **1.250 điểm**.
-*   Tỷ lệ ký quỹ ban đầu IM an toàn quy định tại KBSV: **$19\%$**.
+*   Tỷ lệ ký quỹ ban đầu IM an toàn quy định tại KBSV: **19%**.
 *   Giá đóng cửa (Settlement Price) của hợp đồng VN30F1M cuối ngày giao dịch do VSDC công bố: **1.265 điểm**.
 
 **Yêu cầu đối với học viên:**
@@ -92,7 +92,7 @@ Anh Hùng (38 tuổi, chủ cửa hàng vật liệu xây dựng, nhóm tính c�
     $$\text{Giá trị vị thế} = 15\text{ hđ} \times 1.250\text{ điểm} \times 100.000\text{ VNĐ (Hệ số nhân)} = 1.875.000.000\text{ VNĐ}$$
 
 2.  **Bước 2: Tính số tiền ký quỹ ban đầu (IM) yêu cầu tối thiểu:**
-    $$\text{Tiền ký quỹ IM} = \text{Giá trị vị thế} \times \text{Tỷ lệ ký quỹ IM} = 1.875.000.000 \times 19\% = 356.250.000\text{ VNĐ}$$
+    $$\text{Tiền ký quỹ IM} = \text{Giá trị vị thế} \times \text{Tỷ lệ ký quỹ IM} = 1.875.000.000 \times 19% = 356.250.000\text{ VNĐ}$$
     *Kết luận:* Khách hàng phải nộp tối thiểu **356.250.000 VNĐ** tiền mặt vào tài khoản ký quỹ phái sinh trước khi đặt lệnh.
 
 3.  **Bước 3: Tính lãi/lỗ thực tế thanh toán Mark-to-Market hàng ngày:**
@@ -151,9 +151,38 @@ D. Thuế suất 5% tính trên tổng nợ vay Margin của tài khoản.
 *   **Câu 4: Chọn B.**
     *   *Giải thích:* Quy chế Sudden Death tuần 4 quy định mốc an toàn tối thiểu lũy tiến là 5 tài khoản active Standard. Mốc này tăng dần qua các tuần để sàng lọc ra những Broker NextGen thực sự năng động và có hiệu suất sales bền bỉ.
 *   **Câu 5: Chọn B.**
-    *   *Giải thích:* Theo Luật Thuế thu nhập cá nhân hiện hành, giao dịch phái sinh chịu thuế suất $0.1\%$ trên giá trị chuyển nhượng hợp đồng mỗi khi thực hiện lệnh đóng vị thế (bán đóng Long hoặc mua đóng Short), tự động khấu trừ tại nguồn.
+    *   *Giải thích:* Theo Luật Thuế thu nhập cá nhân hiện hành, giao dịch phái sinh chịu thuế suất 0.1% trên giá trị chuyển nhượng hợp đồng mỗi khi thực hiện lệnh đóng vị thế (bán đóng Long hoặc mua đóng Short), tự động khấu trừ tại nguồn.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Giải thích cơ chế Mark-to-Market phái sinh cho khách hàng phàn nàn "sao ký quỹ cao thế"
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Am hiểu quy định ký quỹ VSD, biết giải thích MTM đơn giản.
+    *   **Anh Bình (Khách hàng phái sinh mới):** 30 tuổi, đã paper-trade 2 tháng. Vừa nộp 150 triệu ký quỹ, bị trừ bù trừ lỗ hàng ngày (MTM), thắc mắc "sao tiền mình bị trừ hàng ngày".
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Anh Bình (giọng bực bội):** *Em ơi, anh nộp 150 triệu ký quỹ mà sáng nay vào tài khoản thấy còn 143 triệu. Tiền anh đâu rồi? Ai trừ của anh 7 triệu?*
+*   **Broker NextGen (giọng bình tĩnh, giải thích):** *Dạ anh Bình, tiền không mất đâu ạ. Đây là cơ chế bù trừ lãi lỗ hàng ngày — tiếng chuyên môn gọi là Mark-to-Market (MTM). Phái sinh khác cổ phiếu cơ sở ở chỗ: cuối mỗi ngày giao dịch, VSD (Trung tâm Lưu ký) sẽ tính lãi/lỗ của vị thế anh so với giá thanh toán cuối ngày, rồi trừ/cộng trực tiếp vào tiền ký quỹ. Hôm qua VN30 giảm 7 điểm, anh đang giữ Long 1 hợp đồng, nên bị trừ 7 × 100.000 = 700.000 đồng mỗi HĐ. Anh giữ 10 HĐ nên bị trừ 7 triệu.*
+*   **Anh Bình (hiểu hơn nhưng vẫn lo):** *À ra vậy. Thế nếu giảm tiếp thì nó trừ tiếp à? Trừ hết tiền anh luôn à?*
+*   **Broker NextGen (rõ ràng):** *Dạ đúng, MTM trừ hàng ngày. Nhưng nếu VN30 tăng, nó cũng cộng tiền vào cho anh hàng ngày luôn ạ. Vấn đề là khi tiền ký quỹ giảm dưới mức ký quỹ duy trì (khoảng 80% ký quỹ ban đầu), VSD sẽ yêu cầu anh nộp thêm. Nếu không nộp, vị thế anh bị đóng cưỡng bức. Vì vậy, quy tắc vàng phái sinh: luôn giữ dư ký quỹ ít nhất 150% mức bắt buộc để có đệm an toàn ạ.*
+*   **Anh Bình (bình tĩnh hơn):** *Oke em, giờ anh hiểu rồi. Vậy anh nộp thêm 30 triệu nữa cho dư ký quỹ nhé.*
+*   **Broker NextGen (chuyên nghiệp):** *Dạ vâng anh, đó là quyết định khôn ngoan. Dư ký quỹ 180 triệu giúp anh có đệm an toàn. Em sẽ theo dõi tài khoản anh hàng ngày và cảnh báo sớm nếu MTM biến động lớn ạ.*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Giải thích MTM & Ký quỹ (Technical)** | **45%** | Giải thích đúng MTM, ký quỹ ban đầu/duy trì, cách tính lãi lỗ hàng ngày bằng số. | / 45 |
+| **Trấn an & Giáo dục KH (Empathy)** | **30%** | Không để KH hoảng; chuyển từ "tiền mất" → "cơ chế thanh toán"; dạy quy tắc dư ký quỹ 150%. | / 30 |
+| **Theo dõi proactive (Service)** | **25%** | Cam kết theo dõi MTM hàng ngày; cảnh báo sớm cho KH. | / 25 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

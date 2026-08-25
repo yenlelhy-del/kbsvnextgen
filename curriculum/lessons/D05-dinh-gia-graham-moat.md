@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ năm của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tôn trọng tính khách quan của các mô hình định giá toán học. Kiên quyết tránh xa tâm lý đầu cơ "mua mù quáng" các cổ phiếu rác không có nền tảng. Nhận thức sâu sắc rằng giá rẻ không đồng nghĩa với an toàn nếu doanh nghiệp thiếu lợi thế cạnh tranh cốt lõi.
@@ -40,9 +40,9 @@ $$V^* = \text{EPS} \times (8.5 + 2g) \times \frac{4.4}{Y}$$
 Trong đó các tham số được định nghĩa cụ thể như sau:
 *   **$V^*$:** Giá trị hợp lý (Fair Value) của cổ phiếu được tính toán ra.
 *   **$\text{EPS}$:** Lợi nhuận ròng trên mỗi cổ phiếu của 12 tháng gần nhất (Trailing 12-month EPS) của doanh nghiệp.
-*   **$8.5$:** Tỷ số P/E không đổi đối với một doanh nghiệp có tốc độ tăng trưởng bằng $0\%$. Đây là mức định giá nền tảng mà Graham giả định cho một doanh nghiệp duy trì dòng tiền ổn định nhưng không mở rộng.
-*   **$g$:** Tốc độ tăng trưởng lợi nhuận kỳ vọng dài hạn của doanh nghiệp trong 7 đến 10 năm tới (đơn vị: %). Ví dụ, nếu kỳ vọng tăng trưởng $8\%$/năm thì $g = 8$.
-*   **$4.4$:** Lãi suất trái phiếu doanh nghiệp hạng AAA tối thiểu tại Mỹ năm 1962 (thời điểm Graham xuất bản cuốn sách). Con số này được giữ nguyên như một mốc hằng số tham chiếu chuẩn mực vĩnh viễn toàn cầu.
+*   **8.5:** Tỷ số P/E không đổi đối với một doanh nghiệp có tốc độ tăng trưởng bằng 0%. Đây là mức định giá nền tảng mà Graham giả định cho một doanh nghiệp duy trì dòng tiền ổn định nhưng không mở rộng.
+*   **$g$:** Tốc độ tăng trưởng lợi nhuận kỳ vọng dài hạn của doanh nghiệp trong 7 đến 10 năm tới (đơn vị: %). Ví dụ, nếu kỳ vọng tăng trưởng 8%/năm thì $g = 8$.
+*   **4.4:** Lãi suất trái phiếu doanh nghiệp hạng AAA tối thiểu tại Mỹ năm 1962 (thời điểm Graham xuất bản cuốn sách). Con số này được giữ nguyên như một mốc hằng số tham chiếu chuẩn mực vĩnh viễn toàn cầu.
 *   **$Y$:** Lãi suất trái phiếu chính phủ kỳ hạn 10 năm hiện hành tại Việt Nam (đơn vị: %). Đây đóng vai trò là lợi suất phi rủi ro (Risk-free rate) – chi phí cơ hội của dòng vốn đầu tư tại quốc gia đó.
 
 #### ⚠️ Phân tích mối quan hệ nghịch chiều giữa Lãi suất ($Y$) và Định giá cổ phiếu ($V^*$):
@@ -92,9 +92,9 @@ Một doanh nghiệp có định giá P/E rất thấp nhưng thiếu con hào k
 
 ### 4. Câu Chuyện Thực Tế: Cách Anh Tuấn Thoát Khỏi Bẫy Giá Trị Của Cổ Phiếu Rác
 
-Anh Tuấn (29 tuổi, Kỹ sư phần mềm tự do, thuộc nhóm tính cách **D-I** – quyết liệt, thích tự làm theo ý mình) là một nhà đầu tư có tư duy thích mua "cổ phiếu giá rẻ". Vào giữa năm 2024, thấy cổ phiếu của một công ty xây dựng Sông Đà X đang giao dịch ở mức giá $4.000$ VNĐ/cp (trong khi giá trị sổ sách P/B chỉ có $0.3$ lần và P/E lịch sử chỉ đạt 4 lần), anh Tuấn hào hứng gom mua 100.000 cổ phiếu (trị giá 400 triệu đồng). Anh nghĩ đơn giản: *"Cổ phiếu rẻ thế này, tài sản công ty nhiều thế này thì không thể giảm thêm được nữa, kiểu gì chả hồi lên mệnh giá 10.000 VNĐ"*.
+Anh Tuấn (29 tuổi, Kỹ sư phần mềm tự do, thuộc nhóm tính cách **D-I** – quyết liệt, thích tự làm theo ý mình) là một nhà đầu tư có tư duy thích mua "cổ phiếu giá rẻ". Vào giữa năm 2024, thấy cổ phiếu của một công ty xây dựng Sông Đà X đang giao dịch ở mức giá 4.000 VNĐ/cp (trong khi giá trị sổ sách P/B chỉ có 0.3 lần và P/E lịch sử chỉ đạt 4 lần), anh Tuấn hào hứng gom mua 100.000 cổ phiếu (trị giá 400 triệu đồng). Anh nghĩ đơn giản: *"Cổ phiếu rẻ thế này, tài sản công ty nhiều thế này thì không thể giảm thêm được nữa, kiểu gì chả hồi lên mệnh giá 10.000 VNĐ"*.
 
-Tuy nhiên, điều anh Tuấn không ngờ tới là công ty xây dựng này hoàn toàn không có bất kỳ con hào kinh tế nào. Các dự án đầu tư công của họ liên tục bị chậm tiến độ, đối thủ cạnh tranh mới phá giá thầu cướp hết hợp đồng, nợ vay ngân hàng tăng vọt khiến chi phí tài chính bào mòn toàn bộ lợi nhuận. Chỉ sau 6 tháng nắm giữ, giá cổ phiếu Sông Đà X tiếp tục rơi từ $4.000$ VNĐ xuống còn $1.500$ VNĐ/cp do doanh nghiệp đứng trước nguy cơ hủy niêm yết bắt buộc vì lỗ lũy kế vượt vốn điều lệ. Khoản vốn 400 triệu của anh Tuấn chỉ còn lại chưa đầy 150 triệu đồng. Anh Tuấn rơi vào trạng thái bế tắc và giận dữ.
+Tuy nhiên, điều anh Tuấn không ngờ tới là công ty xây dựng này hoàn toàn không có bất kỳ con hào kinh tế nào. Các dự án đầu tư công của họ liên tục bị chậm tiến độ, đối thủ cạnh tranh mới phá giá thầu cướp hết hợp đồng, nợ vay ngân hàng tăng vọt khiến chi phí tài chính bào mòn toàn bộ lợi nhuận. Chỉ sau 6 tháng nắm giữ, giá cổ phiếu Sông Đà X tiếp tục rơi từ 4.000 VNĐ xuống còn 1.500 VNĐ/cp do doanh nghiệp đứng trước nguy cơ hủy niêm yết bắt buộc vì lỗ lũy kế vượt vốn điều lệ. Khoản vốn 400 triệu của anh Tuấn chỉ còn lại chưa đầy 150 triệu đồng. Anh Tuấn rơi vào trạng thái bế tắc và giận dữ.
 
 ```
 HÀNH TRÌNH TUẤN RƠI VÀO BẪY GIÁ TRỊ:
@@ -110,8 +110,8 @@ HÀNH TRÌNH TUẤN RƠI VÀO BẪY GIÁ TRỊ:
 Broker NextGen của chi nhánh HO3 sau khi bóc tách danh mục tài khoản của anh Tuấn đã chủ động hẹn gặp anh tại quán cà phê để chia sẻ về triết lý định giá Graham và con hào kinh tế:
 
 1.  **Chỉ ra lỗi sai bẫy giá trị:** Broker giải thích cho Tuấn hiểu P/E hay P/B thấp của một doanh nghiệp đang bên bờ vực phá sản chỉ là cái bẫy. Nếu doanh nghiệp không có năng lực cạnh tranh cốt lõi (con hào kinh tế), tài sản trên giấy tờ (máy móc cũ, khoản phải thu khó đòi) sẽ nhanh chóng biến thành rác.
-2.  **Áp dụng công thức định giá Graham cải tiến cho Hòa Phát (HPG):** Broker mở máy tính, lấy các tham số thực tế định giá HPG cho Tuấn xem. Với EPS dự phóng 3.200 VNĐ, tốc độ tăng trưởng kỳ vọng dài hạn an toàn $g = 8\%$ và lãi suất trái phiếu chính phủ 10 năm hiện tại $Y = 3.5\%$, giá trị hợp lý của HPG đạt hơn 35.000 VNĐ/cp. Mức giá thị trường khi đó đang điều chỉnh về 26.000 VNĐ/cp, tạo ra Biên An Toàn rất dày ($&gt; 25\%$).
-3.  **Chứng minh con hào kinh tế của HPG:** Giải thích về **Lợi thế chi phí thấp nhờ quy mô** của HPG. HPG sở hữu khu liên hợp gang thép Dung Quất với công nghệ lò cao khép kín, tự động hóa cao, giúp sản xuất ra 1 tấn thép thành phẩm với giá vốn rẻ hơn $15\% - 20\%$ so với các doanh nghiệp thép dùng lò điện nhỏ lẻ khác tại Việt Nam. Đây là con hào kinh tế bọc thép giúp HPG luôn sống sót và chiếm thêm thị phần ngay cả trong giai đoạn ngành thép gặp khủng hoảng sâu.
+2.  **Áp dụng công thức định giá Graham cải tiến cho Hòa Phát (HPG):** Broker mở máy tính, lấy các tham số thực tế định giá HPG cho Tuấn xem. Với EPS dự phóng 3.200 VNĐ, tốc độ tăng trưởng kỳ vọng dài hạn an toàn $g = 8%$ và lãi suất trái phiếu chính phủ 10 năm hiện tại $Y = 3.5%$, giá trị hợp lý của HPG đạt hơn 35.000 VNĐ/cp. Mức giá thị trường khi đó đang điều chỉnh về 26.000 VNĐ/cp, tạo ra Biên An Toàn rất dày (> 25%).
+3.  **Chứng minh con hào kinh tế của HPG:** Giải thích về **Lợi thế chi phí thấp nhờ quy mô** của HPG. HPG sở hữu khu liên hợp gang thép Dung Quất với công nghệ lò cao khép kín, tự động hóa cao, giúp sản xuất ra 1 tấn thép thành phẩm với giá vốn rẻ hơn 15% - 20% so với các doanh nghiệp thép dùng lò điện nhỏ lẻ khác tại Việt Nam. Đây là con hào kinh tế bọc thép giúp HPG luôn sống sót và chiếm thêm thị phần ngay cả trong giai đoạn ngành thép gặp khủng hoảng sâu.
 
 Thuyết phục bởi các luận điểm số liệu khoa học và logic, anh Tuấn đã chấp nhận đau đớn cắt bỏ toàn bộ cổ phiếu rác Sông Đà X để thu hồi 150 triệu tiền mặt còn lại, dồn toàn bộ số vốn này mua tích lũy cổ phiếu HPG ở vùng giá 26.000 VNĐ/cp. 
 
@@ -125,15 +125,15 @@ Thuyết phục bởi các luận điểm số liệu khoa học và logic, anh 
 
 **Thông tin số liệu giả lập đầu vào của Ngân hàng ACB:**
 *   **Trailing EPS (Lợi nhuận ròng trên mỗi cổ phiếu 4 quý gần nhất):** 4.200 VNĐ/cp.
-*   **Tốc độ tăng trưởng dài hạn dự kiến ($g$):** $7\%$/năm (giả định thận trọng bám sát kế hoạch kinh doanh của ACB).
-*   **Lãi suất trái phiếu chính phủ Việt Nam kỳ hạn 10 năm ($Y$):** $3.2\%$/năm.
+*   **Tốc độ tăng trưởng dài hạn dự kiến ($g$):** 7%/năm (giả định thận trọng bám sát kế hoạch kinh doanh của ACB).
+*   **Lãi suất trái phiếu chính phủ Việt Nam kỳ hạn 10 năm ($Y$):** 3.2%/năm.
 *   **Giá thị trường hiện tại của ACB ($P_{mkt}$):** 24.500 VNĐ/cp.
-*   **Yêu cầu Biên An Toàn tối thiểu của nhà đầu tư ($MOS_{req}$):** $30\%$.
+*   **Yêu cầu Biên An Toàn tối thiểu của nhà đầu tư ($MOS_{req}$):** 30%.
 
 **Yêu cầu đối với học viên:**
 1.  Tính toán Giá trị hợp lý ($V^*$) của cổ phiếu ACB bằng công thức Graham cải tiến.
-2.  Xác định mức giá mua tối đa đáp ứng yêu cầu Biên An Toàn $30\%$. Khách hàng có nên mua ACB ở mức giá thị trường hiện tại (24.500 VNĐ) không?
-3.  **Kịch bản stress test vĩ mô:** Giả sử lạm phát thế giới tăng nhiệt buộc Ngân hàng Nhà nước phải thắt chặt tiền tệ, lãi suất trái phiếu chính phủ 10 năm ($Y$) tăng mạnh từ $3.2\%$ lên $4.5\%$/năm. Hãy tính lại giá trị hợp lý mới của ACB và xác định xem mức giá 24.500 VNĐ lúc này có còn an toàn để mua tích sản nữa hay không?
+2.  Xác định mức giá mua tối đa đáp ứng yêu cầu Biên An Toàn 30%. Khách hàng có nên mua ACB ở mức giá thị trường hiện tại (24.500 VNĐ) không?
+3.  **Kịch bản stress test vĩ mô:** Giả sử lạm phát thế giới tăng nhiệt buộc Ngân hàng Nhà nước phải thắt chặt tiền tệ, lãi suất trái phiếu chính phủ 10 năm ($Y$) tăng mạnh từ 3.2% lên 4.5%/năm. Hãy tính lại giá trị hợp lý mới của ACB và xác định xem mức giá 24.500 VNĐ lúc này có còn an toàn để mua tích sản nữa hay không?
 
 #### 💡 Lời Giải Chi Tiết Của Bài Tập:
 
@@ -142,26 +142,26 @@ Thuyết phục bởi các luận điểm số liệu khoa học và logic, anh 
         $$V^* = \text{EPS} \times (8.5 + 2g) \times \frac{4.4}{Y}$$
         Thế các số liệu vào công thức:
         $$V^* = 4.200 \times (8.5 + 2 \times 7) \times \frac{4.4}{3.2} = 4.200 \times 22.5 \times 1.375 = 129.937\text{ VNĐ}$$
-    *   *Lưu ý quan trọng:* Công thức Graham gốc được thiết lập tại thị trường Mỹ với các thông số quy chuẩn khác biệt. Đối với các thị trường đang phát triển như Việt Nam, việc nhân trực tiếp thường tạo ra giá trị định giá cao vô lý. Do đó, các công ty phân tích lớn thường áp dụng thêm **Hệ số chiết khấu quốc gia (Country Discount Factor)** hoặc giới hạn hằng số P/E trần ở mức $15$ lần để đảm bảo an toàn. 
-    *   Nếu áp dụng mức giới hạn P/E an toàn tối đa cho ngân hàng ACB là $10$ lần (do đặc thù ngành ngân hàng có đòn bẩy cao):
+    *   *Lưu ý quan trọng:* Công thức Graham gốc được thiết lập tại thị trường Mỹ với các thông số quy chuẩn khác biệt. Đối với các thị trường đang phát triển như Việt Nam, việc nhân trực tiếp thường tạo ra giá trị định giá cao vô lý. Do đó, các công ty phân tích lớn thường áp dụng thêm **Hệ số chiết khấu quốc gia (Country Discount Factor)** hoặc giới hạn hằng số P/E trần ở mức 15 lần để đảm bảo an toàn. 
+    *   Nếu áp dụng mức giới hạn P/E an toàn tối đa cho ngân hàng ACB là 10 lần (do đặc thù ngành ngân hàng có đòn bẩy cao):
         $$\text{Giá trị hợp lý chiết khấu } V^*_{adj} = \text{EPS} \times 10 = 42.000\text{ VNĐ/cp}$$
-        Chúng ta sẽ sử dụng con số $42.000$ VNĐ/cp làm Giá trị hợp lý để tính Biên An Toàn thực tế.
+        Chúng ta sẽ sử dụng con số 42.000 VNĐ/cp làm Giá trị hợp lý để tính Biên An Toàn thực tế.
 
 2.  **Bước 2: Xác định Vùng giá mua an toàn ở kịch bản cơ sở:**
     *   Biên An Toàn thực tế ở mức giá 24.500 VNĐ/cp:
-        $$MOS_{act} = \frac{42.000 - 24.500}{42.000} \times 100\% \approx 41.6\%$$
-    *   Mức giá mua tối đa đáp ứng yêu cầu Biên An Toàn $30\%$:
+        $$MOS_{act} = \frac{42.000 - 24.500}{42.000} \times 100% ≈ 41.6%$$
+    *   Mức giá mua tối đa đáp ứng yêu cầu Biên An Toàn 30%:
         $$\text{Price}_{max} = 42.000 \times (1 - 0.3) = 29.400\text{ VNĐ/cp}$$
-    *   *Khuyến nghị:* Vì giá thị trường hiện tại (24.500 VNĐ) thấp hơn nhiều so với giá mua tối đa (29.400 VNĐ) và tạo ra Biên An Toàn thực tế lên tới $41.6\%$ ($&gt; 30\%$). Broker **nên** tư vấn khách hàng giải ngân mua mạnh ACB ở vùng giá hiện tại.
+    *   *Khuyến nghị:* Vì giá thị trường hiện tại (24.500 VNĐ) thấp hơn nhiều so với giá mua tối đa (29.400 VNĐ) và tạo ra Biên An Toàn thực tế lên tới 41.6% (> 30%). Broker **nên** tư vấn khách hàng giải ngân mua mạnh ACB ở vùng giá hiện tại.
 
 3.  **Bước 3: Tính toán kịch bản Stress Test vĩ mô (lãi suất Y tăng lên 4.5%):**
-    *   Khi lãi suất $Y$ tăng lên $4.5\%$, chiết khấu định giá của toàn bộ tài sản tài chính bị co hẹp:
-        $$\text{Hệ số điều chỉnh lãi suất mới} = \frac{4.4}{4.5} \approx 0.977$$
+    *   Khi lãi suất $Y$ tăng lên 4.5%, chiết khấu định giá của toàn bộ tài sản tài chính bị co hẹp:
+        $$\text{Hệ số điều chỉnh lãi suất mới} = \frac{4.4}{4.5} ≈ 0.977$$
     *   Giá trị hợp lý chiết khấu mới của ACB sẽ là:
-        $$V^*_{new} = 42.000\text{ VNĐ} \times \frac{0.977}{1.375} \approx 29.800\text{ VNĐ/cp}$$
+        $$V^*_{new} = 42.000\text{ VNĐ} \times \frac{0.977}{1.375} ≈ 29.800\text{ VNĐ/cp}$$
     *   Biên An An toàn thực tế mới ở mức giá 24.500 VNĐ/cp:
-        $$MOS_{new} = \frac{29.800 - 24.500}{29.800} \times 100\% \approx 17.7\%$$
-    *   *Nhận xét:* Ở kịch bản lãi suất tăng mạnh, Biên An Toàn thực tế chỉ còn $17.7\%$, thấp hơn yêu cầu tối thiểu $30\%$. 
+        $$MOS_{new} = \frac{29.800 - 24.500}{29.800} \times 100% ≈ 17.7%$$
+    *   *Nhận xét:* Ở kịch bản lãi suất tăng mạnh, Biên An Toàn thực tế chỉ còn 17.7%, thấp hơn yêu cầu tối thiểu 30%. 
     *   *Khuyến nghị:* Mức giá 24.500 VNĐ lúc này **không còn phù hợp** để mua tích sản cho khách hàng nhóm S yêu cầu an toàn cao. Vùng giá mua an toàn mới phải điều chỉnh về:
         $$\text{Giá mua tối đa mới} = 29.800 \times (1 - 0.3) = 20.860\text{ VNĐ/cp}$$
 
@@ -223,7 +223,7 @@ D. Khuyên khách hàng dồn toàn bộ tài sản mua phái sinh Long/Short.
 ### 🎭 Tình huống: Thuyết phục khách hàng từ bỏ cổ phiếu Penny "giá rẻ trà đá" để mua cổ phiếu Bluechip có con hào kinh tế tốt
 *   **Nhân vật:**
     *   **Broker NextGen HO3 (Học viên):** Sử dụng các lập luận khoa học về định giá Graham và 5 nguồn con hào kinh tế để phản biện thuyết phục, tôn trọng tư duy của khách hàng nhưng chỉ ra lỗ hổng bẫy giá trị.
-    *   **Chị Vy (Khách hàng):** 30 tuổi, nhóm tính cách **I (Influence)**. Chị đang có ý định rút 100 triệu tiền tiết kiệm để mua cổ phiếu đầu cơ **HQC** ở mức giá $2.500$ VNĐ/cp vì nghĩ: *"Giá 2.500 đồng quá rẻ rồi em, bằng ly trà đá chứ mấy. Có giảm nữa cũng chả đáng bao nhiêu, nhưng nếu nó đánh lên mệnh giá 10.000 đồng là chị ăn gấp 4 lần ngay!"*. Chị không quan tâm đến việc doanh nghiệp này đang nợ đầm đìa và dự án nhà xã hội liên tục bị bế tắc pháp lý.
+    *   **Chị Vy (Khách hàng):** 30 tuổi, nhóm tính cách **I (Influence)**. Chị đang có ý định rút 100 triệu tiền tiết kiệm để mua cổ phiếu đầu cơ **HQC** ở mức giá 2.500 VNĐ/cp vì nghĩ: *"Giá 2.500 đồng quá rẻ rồi em, bằng ly trà đá chứ mấy. Có giảm nữa cũng chả đáng bao nhiêu, nhưng nếu nó đánh lên mệnh giá 10.000 đồng là chị ăn gấp 4 lần ngay!"*. Chị không quan tâm đến việc doanh nghiệp này đang nợ đầm đìa và dự án nhà xã hội liên tục bị bế tắc pháp lý.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -234,8 +234,8 @@ D. Khuyên khách hàng dồn toàn bộ tài sản mua phái sinh Long/Short.
     *   *Hiện tại, HQC đang giao dịch ở giá 2.500 VNĐ vì doanh nghiệp đang gặp khó khăn rất lớn về dòng tiền: các dự án nhà ở xã hội bị nghẽn pháp lý, nợ thuế nhà nước hàng trăm tỷ đồng và hoàn toàn không có "con hào kinh tế" nào để bảo vệ mình trước các đối thủ lớn. Nếu tình hình xấu đi, cổ phiếu bị đưa vào diện hạn chế giao dịch hoặc đình chỉ giao dịch, giá trị của nó có thể rơi về 0 đồng. Lúc đó khoản đầu tư của chị sẽ gần như mất trắng.*
 *   **Chị Vy (hơi chần chừ):** *Nhưng mà FPT hay ACB giá toàn mấy chục nghìn, thậm chí cả trăm nghìn. Chị có 100 triệu mua được có vài trăm cổ thì bao giờ mới giàu được em? Nhìn số lượng cổ phiếu ít chị không thích.*
 *   **Broker NextGen:** *Dạ, em rất hiểu sở thích sở hữu số lượng lớn cổ phiếu của chị Vy. Đây là tâm lý chung của rất nhiều anh chị F0 mới tham gia thị trường. Tuy nhiên, chúng ta hãy cùng làm một phép toán logic nhé:*
-    *   *Nếu chị sở hữu 40.000 cổ phiếu HQC giá 2.500 VNĐ, khi doanh nghiệp tiếp tục suy thoái, giá giảm về 1.250 VNĐ, tài sản của chị sẽ lập tức bốc hơi $50\%$ (mất 50 triệu đồng).*
-    *   *Nhưng nếu chị dùng 100 triệu mua khoảng 1.000 cổ phiếu FPT ở mức giá 100.000 VNĐ. FPT là tập đoàn công nghệ số 1 Việt Nam, sở hữu "con hào kinh tế" cực sâu là đội ngũ kỹ sư chất lượng cao và chi phí chuyển đổi hệ thống lõi vô cùng đắt đỏ của khách hàng. Doanh nghiệp tăng trưởng đều đặn $20\%$ mỗi năm. Chỉ sau 3 năm, nhờ sức mạnh lãi suất kép và chia tách cổ tức, giá trị khoản đầu tư của chị có thể tăng lên 160 - 180 triệu một cách cực kỳ an tâm.*
+    *   *Nếu chị sở hữu 40.000 cổ phiếu HQC giá 2.500 VNĐ, khi doanh nghiệp tiếp tục suy thoái, giá giảm về 1.250 VNĐ, tài sản của chị sẽ lập tức bốc hơi 50% (mất 50 triệu đồng).*
+    *   *Nhưng nếu chị dùng 100 triệu mua khoảng 1.000 cổ phiếu FPT ở mức giá 100.000 VNĐ. FPT là tập đoàn công nghệ số 1 Việt Nam, sở hữu "con hào kinh tế" cực sâu là đội ngũ kỹ sư chất lượng cao và chi phí chuyển đổi hệ thống lõi vô cùng đắt đỏ của khách hàng. Doanh nghiệp tăng trưởng đều đặn 20% mỗi năm. Chỉ sau 3 năm, nhờ sức mạnh lãi suất kép và chia tách cổ tức, giá trị khoản đầu tư của chị có thể tăng lên 160 - 180 triệu một cách cực kỳ an tâm.*
     *   *Sở hữu 1.000 mảnh đất vàng tăng giá bền vững luôn tốt hơn sở hữu 40.000 mảnh đất đầm lầy không thể xây dựng được gì đúng không chị Vy?*
 *   **Chị Vy (gật gù, cười trừ):** *Nghe em ví dụ đất vàng với đất đầm lầy thì chị hiểu rồi. Đúng là mua mấy con rẻ kia cứ lo ngay ngáy ngày nào cũng mở bảng điện xem có bị hủy niêm yết không thì mệt lắm. Được rồi, thế em tư vấn chị mua FPT đi. Ít cổ phiếu chút nhưng tối ngủ ngon.*
 *   **Broker NextGen:** *Dạ vâng chị Vy. Đầu tư bình an và thảnh thơi mới là mục tiêu lớn nhất của em dành cho chị. Em sẽ hỗ trợ chị đặt lệnh mua tích lũy cổ phiếu FPT ngay bây giờ và gửi báo cáo phân bổ tài sản chi tiết qua Zalo cho chị theo dõi nhé ạ.*
@@ -248,7 +248,7 @@ D. Khuyên khách hàng dồn toàn bộ tài sản mua phái sinh Long/Short.
 | **Thấu thấu cảm tâm lý khách hàng** | **30%** | Lắng nghe chủ động, thấu hiểu sở thích sở hữu số lượng lớn cổ phiếu của khách hàng nhóm I để đưa ra so sánh định lượng trực quan. | / 30 |
 | **Định hướng dịch chuyển dòng vốn** | **30%** | Thuyết phục thành công khách hàng chuyển đổi vốn từ mã đầu cơ trà đá sang mã cổ phiếu Bluechip chất lượng cao có con hào bảo vệ bền vững. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

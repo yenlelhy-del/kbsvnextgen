@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Campus Networking).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Campus Networking).
 *   **Vị trí trong lộ trình:** Ngày thứ hai mươi mốt của Lộ trình (Tuần 3 - Kỹ năng phát triển mạng lưới).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Tư duy chủ động kiến tạo mối quan hệ (Proactive Networking). Xem networking là sự trao đổi giá trị song phương và hỗ trợ thế hệ trẻ, tuyệt đối không mang tính chất lợi dụng thương mại thô thiển. Thể hiện sự tôn trọng, chuyên nghiệp khi làm việc với môi trường sư phạm trường Đại học.
@@ -96,12 +96,12 @@ Kết quả vô cùng ấn tượng: Ngay tại buổi Workshop Trang đã chố
 **Thông số giả lập:**
 Broker tổ chức một buổi Workshop offline phối hợp với CLB Chứng khoán của trường Đại học Ngoại thương (FTU) quy mô 100 sinh viên tham dự.
 *   **Chi phí tổ chức cố định (In ấn standee, thuê máy chiếu, nước uống):** 2.000.000 VNĐ.
-*   **Quà tặng gieo hạt tài chính:** Tặng 100.000 VNĐ/tài khoản Standard active thành công (NAV nạp $\ge$ 5 triệu).
+*   **Quà tặng gieo hạt tài chính:** Tặng 100.000 VNĐ/tài khoản Standard active thành công (NAV nạp ≥ 5 triệu).
 *   **Tỷ lệ chuyển đổi dự kiến:**
-    *   Tỷ lệ sinh viên tham dự quét eKYC mở tài khoản: $40\%$.
-    *   Tỷ lệ tài khoản eKYC chuyển đổi thành active Standard (nạp tiền mua ACB): $50\%$ (trên số eKYC).
+    *   Tỷ lệ sinh viên tham dự quét eKYC mở tài khoản: 40%.
+    *   Tỷ lệ tài khoản eKYC chuyển đổi thành active Standard (nạp tiền mua ACB): 50% (trên số eKYC).
 *   **NAV trung bình nạp mỗi tài khoản active:** 5.000.000 VNĐ.
-*   **Doanh thu phí giao dịch dự kiến từ tệp này trong năm đầu:** $0.15\%$ NAV giao dịch/vòng quay (dự kiến quay vòng 6 lần/năm).
+*   **Doanh thu phí giao dịch dự kiến từ tệp này trong năm đầu:** 0.15% NAV giao dịch/vòng quay (dự kiến quay vòng 6 lần/năm).
 
 **Yêu cầu đối với học viên:**
 1.  Tính tổng số tài khoản eKYC mở mới dự kiến và số tài khoản active Standard dự kiến từ Workshop.
@@ -113,9 +113,9 @@ Broker tổ chức một buổi Workshop offline phối hợp với CLB Chứng 
 
 1.  **Bước 1: Tính số lượng tài khoản chuyển đổi:**
     *   Số tài khoản eKYC dự kiến:
-        $$\text{Số eKYC} = 100 \times 40\% = 40\text{ tài khoản}$$
+        $$\text{Số eKYC} = 100 \times 40% = 40\text{ tài khoản}$$
     *   Số tài khoản active Standard dự kiến:
-        $$\text{Số Active} = 40 \times 50\% = 20\text{ tài khoản active Standard}$$
+        $$\text{Số Active} = 40 \times 50% = 20\text{ tài khoản active Standard}$$
 
 2.  **Bước 2: Tính tổng chi phí đầu tư cho sự kiện:**
     *   Chi phí quà tặng gieo hạt (chỉ tặng cho tài khoản active Standard thực tế):
@@ -126,15 +126,15 @@ Broker tổ chức một buổi Workshop offline phối hợp với CLB Chứng 
 3.  **Bước 3: Tính quy mô NAV và dự phóng doanh thu phí giao dịch năm đầu:**
     *   Tổng NAV huy động mới:
         $$\text{Tổng NAV} = 20 \times 5.000.000 = 100.000.000\text{ VNĐ}$$
-    *   Doanh thu phí giao dịch dự kiến (quay vòng 6 lần/năm với mức phí $0.15\%$):
-        $$\text{Doanh thu phí} = 100.000.000 \times 0.15\% \times 6 = 900.000\text{ VNĐ/năm}$$
+    *   Doanh thu phí giao dịch dự kiến (quay vòng 6 lần/năm với mức phí 0.15%):
+        $$\text{Doanh thu phí} = 100.000.000 \times 0.15% \times 6 = 900.000\text{ VNĐ/năm}$$
 
 4.  **Bước 4: Đánh giá hiệu quả chiến dịch:**
     *   Nếu chỉ nhìn vào doanh thu phí giao dịch năm đầu (900k) so với chi phí đầu tư ban đầu (4 triệu), chiến dịch có vẻ bị âm dòng tiền tạm thời trong ngắn hạn.
     *   **Tuy nhiên, xét về mặt dài hạn và phễu marketing, chiến dịch này cực kỳ hiệu quả vì:**
         *   Trang sở hữu được tệp **20 khách hàng Standard thực tế** có tiềm năng gia tăng quy mô NAV khi họ ra trường đi làm có thu nhập cao hơn.
         *   Trang có cơ hội tuyển dụng được ít nhất 2 - 3 bạn CTV nhiệt huyết từ CLB Ngoại thương để mở rộng mạng lưới bán hàng gián tiếp, mang lại hàng chục lead chất lượng cao khác mà không tốn thêm chi phí sự kiện.
-        *   Chi phí sở hữu một khách hàng active (CAC - Customer Acquisition Cost) trong trường hợp này chỉ là $200.000\text{ VNĐ/khách}$ ($4.000.000 / 20$), đây là mức chi phí CAC vô cùng rẻ so với các kênh quảng cáo trả phí truyền thống trên thị trường.
+        *   Chi phí sở hữu một khách hàng active (CAC - Customer Acquisition Cost) trong trường hợp này chỉ là $200.000\text{ VNĐ/khách}$ (4.000.000 / 20), đây là mức chi phí CAC vô cùng rẻ so với các kênh quảng cáo trả phí truyền thống trên thị trường.
 
 ---
 
@@ -152,7 +152,7 @@ D. Họ chỉ thích chơi phái sinh lướt sóng ngắn hạn T+0.
 A. Đề xuất tài trợ 20 triệu tiền mặt trực tiếp cho CLB làm quỹ hoạt động.
 B. Đề xuất gói tài trợ phi tiền mặt bao gồm cử diễn giả chuyên môn chia sẻ miễn phí, cung cấp tài liệu phân tích của KBSV và trao học bổng thực tập ưu tiên tại Sở giao dịch HO3.
 C. Yêu cầu BCN ép buộc tất cả thành viên CLB phải mở tài khoản nạp tiền.
-D. Hứa hẹn chia sẻ $50\%$ phí giao dịch cá nhân của Broker cho Chủ tịch CLB.
+D. Hứa hẹn chia sẻ 50% phí giao dịch cá nhân của Broker cho Chủ tịch CLB.
 
 ### Câu 3: Để tổ chức một buổi Workshop tài chính sinh viên thành công, chủ đề chia sẻ nào sau đây phù hợp nhất với triết lý của FinPeace × KBSV?
 A. "Bí quyết nhân 3 tài khoản trong vòng 1 tuần nhờ bắt sóng penny".
@@ -166,7 +166,7 @@ B. Chi phí trung bình để thu hút và kích hoạt thành công một khác
 C. Tỷ lệ phần trăm hoa hồng trích trả cho Sở giao dịch.
 D. Mức phạt tiền của UBCKNN khi vi phạm tuân thủ pháp luật.
 
-### Câu 5: Khi một sinh viên tham gia Workshop chê sản phẩm tích sản ACB sinh lời chậm ($15\%$/năm) và đòi hướng dẫn chơi phái sinh đòn bẩy cao gỡ nợ thẻ tín dụng, Broker cần xử lý thế nào?
+### Câu 5: Khi một sinh viên tham gia Workshop chê sản phẩm tích sản ACB sinh lời chậm (15%/năm) và đòi hướng dẫn chơi phái sinh đòn bẩy cao gỡ nợ thẻ tín dụng, Broker cần xử lý thế nào?
 A. Đồng ý mở ngay tài khoản phái sinh đuôi 8 để chiều lòng khách hàng.
 B. Từ chối phục vụ và quát mắng sinh viên đó thiếu kiến thức.
 C. Cảnh báo nghiêm khắc về rủi ro cháy tài khoản của phái sinh khi chưa có kiến thức; phân tích điểm nghẽn nợ thẻ tín dụng lãi suất cao cần trả dứt điểm trước, sau đó mới dùng dòng thặng dư nhỏ để tích lũy an toàn ACB tạo móng tài sản vững chắc.
@@ -188,6 +188,36 @@ D. Khuyên sinh viên đó vay mượn thêm bạn bè để mua cổ phiếu đ
     *   *Giải thích:* Broker NextGen phải giữ vững vai trò người cố vấn tài sản bình an. Người đang nợ thẻ tín dụng tuyệt đối không được tham gia giao dịch phái sinh hay đòn bẩy Margin vì rủi ro cực kỳ cao. Phải hướng dẫn họ chấn chỉnh dòng tiền từ gốc.
 
 ---
+
+
+---
+
+## 📌 V. KỊCH BẢN ĐỐI LUYỆN (ROLE-PLAY & SCRIPT)
+
+### 🎭 Tình huống: Pitching đại diện CLB Đầu tư Sinh viên để tổ chức workshop tài chính tại trường đại học
+*   **Nhân vật:**
+    *   **Broker NextGen HO3 (Học viên):** Năng động, gần gũi Gen Z, biết cách trình bày giá trị hợp tác win-win.
+    *   **Bạn Linh (Chủ nhiệm CLB Đầu tư, SV năm 3 ĐH Kinh tế):** 22 tuổi, nhiệt huyết nhưng cảnh giác với các bên muốn bán hàng núp bóng workshop.
+
+#### 📞 Đoạn Đối Thoại Mẫu (Script)
+
+*   **Broker NextGen (giọng thân thiện, gọi bằng mình-bạn):** *Chào Linh! Mình là [Tên], đang làm Broker tại KB Securities Vietnam. Mình biết CLB Đầu tư các bạn đang rất hot trên Facebook, mình muốn đề xuất phối hợp tổ chức một workshop "Bản đồ Tài sản Bình an cho Gen Z" miễn phí cho các bạn thành viên CLB. Bạn có vài phút nghe mình chia sẻ không?*
+*   **Bạn Linh (giọng cảnh giác, thẳng thắn):** *Cảm ơn bạn. Nhưng thú thật CLB mình từng bị mấy bên môi giới liên hệ rồi, vào toàn quảng cáo mở tài khoản thôi. Mình hơi ngại kiểu đó.*
+*   **Broker NextGen (giọng chân thành):** *Mình hiểu luôn, mình cũng là Gen Z như Linh nên biết nỗi sợ đó. Workshop này mình cam kết 90% thời lượng là kiến thức thuần — dạy cách đọc BCTC, tính định giá Graham, hiểu Tháp tài sản. Không ép mở tài khoản đâu. Nếu bạn nào muốn thực hành thì mình hỗ trợ, không thì cứ thoải mái. Quan trọng là CLB Linh có thêm event chất lượng, thu hút thành viên mới. Win-win mà!*
+*   **Bạn Linh (dịu giọng, quan tâm):** *Nghe hợp lý đấy. Nhưng mà phí tổ chức thì sao? CLB mình không có nhiều ngân sách.*
+*   **Broker NextGen (tự tin):** *Phí tổ chức bằng 0 cho CLB nhé! KBSV tài trợ toàn bộ: banner, tài liệu in, quà tặng cho top 3 bạn đạt điểm quiz cao nhất. Linh chỉ cần hỗ trợ book phòng và PR trên fanpage CLB là đủ. Mình cũng chuẩn bị sẵn poster đồng thương hiệu CLB × KBSV luôn cho đẹp.*
+*   **Bạn Linh (hào hứng):** *Oke nghe hay đấy! Vậy bạn gửi mình proposal qua Zalo để mình trình ban cố vấn CLB nhé. Nếu được duyệt thì mình chốt lịch tuần sau luôn!*
+*   **Broker NextGen (chốt deal):** *Tuyệt vời! Mình sẽ gửi proposal + agenda chi tiết workshop qua Zalo Linh trong tối nay. Kèm theo link khảo sát nho nhỏ để mình customize nội dung theo đúng những gì thành viên CLB quan tâm nhất. Cảm ơn Linh nhiều!*
+
+#### 📊 Bảng Tiêu Chí Đánh Giá Năng Lực Sắm Vai (Grading Rubric dành cho Mentor)
+
+| Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
+| :--- | :---: | :--- | :---: |
+| **Kỹ năng tiếp cận & phá băng (Approach)** | **35%** | Mở đầu thân thiện Gen Z, xưng hô mình-bạn; nêu rõ giá trị cho CLB; không bán hàng trực diện. | / 35 |
+| **Xử lý phản đối (Objection Handling)** | **35%** | Xử lý nỗi sợ "núp bóng workshop bán hàng"; đề xuất win-win; giải quyết vấn đề ngân sách. | / 35 |
+| **Chốt hành động cụ thể** | **30%** | Chốt bước tiếp theo rõ ràng (gửi proposal Zalo); có khảo sát customize nội dung. | / 30 |
+
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản đối luyện.*
 
 ## 📌 VI. QUY CHUẨN TUÂN THỦ PHÁT NGÔN (COMPLIANCE WARNINGS)
 

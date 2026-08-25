@@ -9,11 +9,11 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update $\rightarrow$ Daily Wrap-up).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update → Daily Wrap-up).
 *   **Vị trí trong lộ trình:** Ngày thứ mười lăm của Lộ trình (Bắt đầu Tuần 3 - Giai đoạn thực chiến bán hàng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Thấu hiểu sâu sắc rằng kỷ luật là nền tảng cốt lõi tạo nên sự chuyên nghiệp và danh tiếng lâu dài của một Broker 4.0. Tự giác tuân thủ mọi quy chế nội bộ của HO3 với tinh thần tự hào và trách nhiệm cao nhất. Coi trọng tính toàn vẹn của tập thể hơn cái tôi cá nhân.
-    *   **Skills (Kỹ năng):** Quản lý thời gian cá nhân đồng bộ $100\%$ với Daily Routine thực chiến của HO3; soạn thảo báo cáo Daily Wrap-up đúng quy chuẩn định lượng; phân tích lỗi sai và đóng góp giải pháp vào kho tri thức chung của team.
+    *   **Skills (Kỹ năng):** Quản lý thời gian cá nhân đồng bộ 100% với Daily Routine thực chiến của HO3; soạn thảo báo cáo Daily Wrap-up đúng quy chuẩn định lượng; phân tích lỗi sai và đóng góp giải pháp vào kho tri thức chung của team.
     *   **Knowledge (Kiến thức):** Nắm rõ cấu trúc, thời gian, người dẫn và mục tiêu của 3 mốc Daily Routine bắt buộc hàng ngày (Morning Briefing, Midday Check-in, Daily Wrap-up) theo thông báo nội bộ của HO3. Thấu hiểu cơ chế hoạt động của Quy tắc Sudden Death và các quy định tuân thủ pháp lý của Luật Chứng khoán Việt Nam.
 
 ---
@@ -22,7 +22,7 @@
 
 ### 1. Kỷ Luật Sắt Tạo Nên Sự Khác Biệt Của Chiến Binh HO3
 
-Trong nghề môi giới chứng khoán truyền thống, hầu hết nhân sự đều làm việc theo mô hình tự do (freelancer). Họ không có giờ giấc cố định, thích thì lên sàn, không thích thì ở nhà. Khi thị trường uptrend hưng phấn, họ hoạt động rất tích cực để kiếm hoa hồng. Nhưng khi thị trường bước vào downtrend ảm đạm, họ nhanh chóng chán nản, bỏ bê khách hàng và rời bỏ thị trường. Sự thiếu kỷ luật tự giác này là nguyên nhân chính khiến hơn $80\%$ môi giới chứng khoán phải bỏ nghề sau 2 năm đầu tiên.
+Trong nghề môi giới chứng khoán truyền thống, hầu hết nhân sự đều làm việc theo mô hình tự do (freelancer). Họ không có giờ giấc cố định, thích thì lên sàn, không thích thì ở nhà. Khi thị trường uptrend hưng phấn, họ hoạt động rất tích cực để kiếm hoa hồng. Nhưng khi thị trường bước vào downtrend ảm đạm, họ nhanh chóng chán nản, bỏ bê khách hàng và rời bỏ thị trường. Sự thiếu kỷ luật tự giác này là nguyên nhân chính khiến hơn 80% môi giới chứng khoán phải bỏ nghề sau 2 năm đầu tiên.
 
 Sở Giao Dịch 3 (HO3) hoạt động dựa trên tinh thần cốt lõi:
 > **KỶ LUẬT – NHIỆT HUYẾT – NIỀM VUI – PHÁT TRIỂN**
@@ -92,7 +92,7 @@ Quy chế làm việc hàng ngày của HO3 phân bổ thời gian làm việc t
 NextGen 2026 không phải là một chương trình đào tạo lý thuyết suông. Đây là chương trình **tuyển dụng – đào tạo – thực chiến môi giới thế hệ mới**. Để đảm bảo chất lượng đầu ra xuất sắc và tinh thần chiến đấu cao nhất của đội ngũ, Ban lãnh đạo HO3 áp dụng **Quy tắc Sudden Death (Loại trực tiếp)** bắt đầu từ Tuần thứ 3 của chương trình:
 
 #### ⚠️ Nội dung quy tắc:
-*   Các học viên thực tập sinh liên tiếp trong 2 tuần không đạt chỉ tiêu KPI tối thiểu hàng tuần về mặt hiệu suất công việc (ví dụ: thực hiện dưới 150 cuộc gọi/tuần, tỷ lệ kết bạn Zalo dưới $15\%$, hoặc không active được tối thiểu **2 tài khoản Standard** có NAV $\ge 5$ triệu đồng/tuần).
+*   Các học viên thực tập sinh liên tiếp trong 2 tuần không đạt chỉ tiêu KPI tối thiểu hàng tuần về mặt hiệu suất công việc (ví dụ: thực hiện dưới 150 cuộc gọi/tuần, tỷ lệ kết bạn Zalo dưới 15%, hoặc không active được tối thiểu **2 tài khoản Standard** có NAV ≥ 5 triệu đồng/tuần).
 *   Học viên vi phạm nghiêm trọng quy chế giờ giấc Daily Routine (đi trễ Morning Briefing quá 3 lần/tuần mà không có lý do chính đáng được phê duyệt trước) hoặc vi phạm quy tắc tuân thủ pháp lý.
 *   **Hành động:** Hệ thống sẽ lập tức áp dụng Sudden Death – loại trực tiếp học viên ra khỏi dự án NextGen 2026, chấm dứt hỗ trợ phụ cấp thực tập và không xem xét tuyển dụng làm Broker chính thức tại HO3.
 
@@ -129,7 +129,7 @@ Vy vô cùng sốc và khóc rất nhiều. Nhưng chính cái tát kỷ luật 
 ### 📝 Bài Tập: Thiết Kế Lịch Trình Quản Lý Thời Gian & Báo Cáo Daily Wrap-up
 
 **Tình huống giả lập công việc của học viên trong ngày làm việc thực chiến:**
-*   **08:30 - 09:00:** Tham gia Morning Briefing do anh Minh Quang dẫn. Thống nhất cổ phiếu khuyến nghị tích sản duy nhất trong ngày là **FPT** (vùng giá mua an toàn $< 96.000$ VNĐ/cp).
+*   **08:30 - 09:00:** Tham gia Morning Briefing do anh Minh Quang dẫn. Thống nhất cổ phiếu khuyến nghị tích sản duy nhất trong ngày là **FPT** (vùng giá mua an toàn < 96.000 VNĐ/cp).
 *   **09:00 - 11:30:** Thực hiện 40 cuộc gọi telesales từ CRM. Kết quả: 30 cuộc thuê bao hoặc khách dập máy ngay; 8 cuộc khách nghe giới thiệu và từ chối bận; 2 cuộc khách đồng ý kết bạn Zalo để nhận báo cáo F-Score của FPT (Anh Hùng và Chị Mai).
 *   **13:15 - 13:30:** Tham gia Midday Check-in. Thị trường phiên sáng ACB tăng nhẹ, FPT bị khối ngoại bán ròng giảm về 94.500 VNĐ. Toàn team thống nhất đây là cơ hội kích hoạt mua chiến thuật FPT dưới MA200.
 *   **13:30 - 15:00:** Chat Zalo chăm sóc và gửi báo cáo FPT cho Anh Hùng và Chị Mai. Hướng dẫn chị Mai eKYC mở tài khoản online thành công, chị Mai nộp 10 triệu mua tích sản 100 cổ FPT (Tài khoản Standard). Anh Hùng hẹn tối nhắn tin lại.
@@ -148,10 +148,10 @@ Vy vô cùng sốc và khóc rất nhiều. Nhưng chính cái tát kỷ luật 
 >
 > **I. CÁC CHỈ SỐ ĐỊNH LƯỢNG (KPIs):**
 > *   **Tổng số cuộc gọi telesales thực hiện:** 40 cuộc gọi.
-> *   **Số cuộc gọi kết nối thành công (khách nghe máy):** 10 cuộc gọi (Tỷ lệ kết nối: $25\%$).
-> *   **Số lead đồng ý kết bạn Zalo nhận tài liệu:** 2 lead (Anh Hùng và Chị Mai — Tỷ lệ chuyển đổi: $20\%$).
+> *   **Số cuộc gọi kết nối thành công (khách nghe máy):** 10 cuộc gọi (Tỷ lệ kết nối: 25%).
+> *   **Số lead đồng ý kết bạn Zalo nhận tài liệu:** 2 lead (Anh Hùng và Chị Mai — Tỷ lệ chuyển đổi: 20%).
 > *   **Số tài khoản mở mới eKYC thành công:** 1 tài khoản (Chị Mai).
-> *   **Số tài khoản active Standard thành công (giải ngân $\ge$ 5 triệu):** 1 tài khoản (Chị Mai — giải ngân 10.000.000 VNĐ mua cổ phiếu FPT ở giá 94.500 VNĐ/cp).
+> *   **Số tài khoản active Standard thành công (giải ngân ≥ 5 triệu):** 1 tài khoản (Chị Mai — giải ngân 10.000.000 VNĐ mua cổ phiếu FPT ở giá 94.500 VNĐ/cp).
 > *   **Tổng số tiền giải ngân tích sản trong ngày:** 10.000.000 VNĐ.
 >
 > **II. CHIẾN THUẬT TƯ VẤN ĐÃ ÁP DỤNG:**
@@ -243,7 +243,7 @@ D. Hướng dẫn khách hàng quét mã eKYC mở tài khoản online.
 | **Ứng dụng quy chế Sudden Death** | **30%** | Áp dụng chính xác quy định Thẻ vàng cảnh cáo Sudden Death của Tuần 3 để tạo tính răn đe thực tế cho học viên. | / 30 |
 | **Tính hướng dẫn và giáo dục** | **30%** | Sau khi kỷ luật, đưa ra chỉ dẫn sửa sai rõ ràng (gọi điện xin lỗi khách, cơ cấu tài sản) và thể hiện sự đồng hành nâng đỡ học viên tiến bộ. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

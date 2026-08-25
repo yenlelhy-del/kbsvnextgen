@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ tám của Tuần 2 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập tính khắt khe, cẩn trọng tối đa trong khâu chọn lọc cổ phiếu đồng hành dài hạn. Kiên quyết nói không với các cổ phiếu đầu cơ, doanh nghiệp nợ nần chồng chất hoặc có ban lãnh đạo thiếu minh bạch. Đề cao sự an toàn của nguồn vốn khách hàng lên trên hết.
@@ -67,11 +67,11 @@ Ban lãnh đạo là người chèo lái con thuyền doanh nghiệp. Broker c�
 
 #### Tiêu chí 3: Sức khỏe tài chính lành mạnh (Financial Health)
 Khi lãi suất nền kinh tế tăng cao, các doanh nghiệp sử dụng nhiều nợ vay sẽ bị chi phí lãi vay bào mòn sạch lợi nhuận, thậm chí đối mặt với rủi ro vỡ nợ. Đối với rổ cổ phiếu tích sản của doanh nghiệp sản xuất, chúng ta yêu cầu:
-*   Tỷ lệ **Nợ vay tài chính / Vốn chủ sở hữu (D/E) phải dưới $0.8$ lần** (an toàn nhất là dưới $0.5$ lần).
+*   Tỷ lệ **Nợ vay tài chính / Vốn chủ sở hữu (D/E) phải dưới 0.8 lần** (an toàn nhất là dưới 0.5 lần).
 *   Hệ số thanh toán lãi vay ($\text{EBIT} / \text{Chi phí lãi vay}$) phải **lớn hơn 3 lần**.
 
 #### Tiêu chí 4: Dòng tiền kinh doanh dồi dào, thực chất (Cash Flow Quality)
-Lợi nhuận kế toán có thể bị bóp méo, nhưng dòng tiền mặt thì không. Doanh nghiệp tích sản phải có **Dòng tiền hoạt động kinh doanh (CFO) dương liên tục trong 3 năm gần nhất** và tỷ lệ $\text{CFO} / \text{Lợi nhuận sau thuế} \ge 1$. Điều này đảm bảo doanh nghiệp không bị chôn vốn ở các khoản phải thu khó đòi hay hàng tồn kho ứ đọng.
+Lợi nhuận kế toán có thể bị bóp méo, nhưng dòng tiền mặt thì không. Doanh nghiệp tích sản phải có **Dòng tiền hoạt động kinh doanh (CFO) dương liên tục trong 3 năm gần nhất** và tỷ lệ $\text{CFO} / \text{Lợi nhuận sau thuế} ≥ 1. Điều này đảm bảo doanh nghiệp không bị chôn vốn ở các khoản phải thu khó đòi hay hàng tồn kho ứ đọng.
 
 ---
 
@@ -80,11 +80,11 @@ Lợi nhuận kế toán có thể bị bóp méo, nhưng dòng tiền mặt th�
 Để thấy rõ sức mạnh của bộ lọc InvestWise, hãy cùng so sánh hai doanh nghiệp trong ngành thép: **Tập đoàn Hòa Phát (HPG)** và **Công ty Cổ phần Đầu tư Thương mại SMC (SMC)** vào giai đoạn chu kỳ ngành thép đi xuống năm 2022 - 2023:
 
 *   **Về Vị thế đầu ngành (Tiêu chí 1):**
-    *   *HPG:* Chiếm $35\%$ thị phần thép xây dựng Việt Nam, sở hữu con hào chi phí sản xuất thấp nhờ quy mô lò cao khép kín Dung Quất. Đạt **5/5 điểm**.
-    *   *SMC:* Chỉ là doanh nghiệp thương mại phân phối thép trung gian, không tự chủ được nguồn cung, biên lợi nhuận gộp cực kỳ mỏng ($< 3\%$). Đạt **2/5 điểm**.
+    *   *HPG:* Chiếm 35% thị phần thép xây dựng Việt Nam, sở hữu con hào chi phí sản xuất thấp nhờ quy mô lò cao khép kín Dung Quất. Đạt **5/5 điểm**.
+    *   *SMC:* Chỉ là doanh nghiệp thương mại phân phối thép trung gian, không tự chủ được nguồn cung, biên lợi nhuận gộp cực kỳ mỏng (< 3%). Đạt **2/5 điểm**.
 *   **Về Sức khỏe tài chính (Tiêu chí 3):**
-    *   *HPG:* Tỷ lệ Nợ vay/VCSH luôn duy trì dưới mốc an toàn $0.6$ lần. Lượng tiền mặt gửi tiết kiệm trong két sắt luôn duy trì trên 20.000 tỷ đồng. Đạt **5/5 điểm**.
-    *   *SMC:* Sử dụng đòn bẩy tài chính cực cao để ôm hàng tồn kho đầu cơ. Tỷ lệ Nợ vay/VCSH vượt quá $2.5$ lần vào năm 2022. Đạt **1/5 điểm**.
+    *   *HPG:* Tỷ lệ Nợ vay/VCSH luôn duy trì dưới mốc an toàn 0.6 lần. Lượng tiền mặt gửi tiết kiệm trong két sắt luôn duy trì trên 20.000 tỷ đồng. Đạt **5/5 điểm**.
+    *   *SMC:* Sử dụng đòn bẩy tài chính cực cao để ôm hàng tồn kho đầu cơ. Tỷ lệ Nợ vay/VCSH vượt quá 2.5 lần vào năm 2022. Đạt **1/5 điểm**.
 *   **Kết quả thực tế khi chu kỳ ngành thép đi xuống:**
     *   *HPG:* Dù lợi nhuận giảm ngắn hạn, nhưng nhờ nợ vay thấp và tiền mặt dồi dào, HPG vẫn sống sót khỏe mạnh, tiếp tục đầu tư xây dựng Dung Quất 2 để đón chu kỳ mới và thậm chí chiếm thêm thị phần của các đối thủ suy yếu.
     *   *SMC:* Chi phí lãi vay khổng lồ cộng với việc khách hàng nợ tiền không trả (phát sinh nợ xấu lớn từ các công ty bất động sản gặp khó khăn như Novaland) đã khiến SMC bị lỗ ròng hàng trăm tỷ đồng, vốn chủ sở hữu bị bào mòn gần hết, cổ phiếu bị đưa vào diện cảnh báo nghiêm trọng.
@@ -105,7 +105,7 @@ Chị Mai (33 tuổi, Trưởng phòng hành chính tại Bình Dương) là ng�
 
 Năm 2023, nghe theo lời tư vấn của một người quen, chị Mai đều đặn trích 10 triệu/tháng để mua tích sản cổ phiếu **LDG** (một doanh nghiệp bất động sản nhỏ) vì nghĩ doanh nghiệp này có nhiều dự án đất nền giá rẻ. 
 
-Tuy nhiên, chị Mai không hề biết rằng LDG có điểm sức khỏe nợ vay cực kỳ nguy hiểm, dòng tiền kinh doanh CFO liên tục bị âm nặng suốt 4 năm liền. Cuối năm 2023, khi ban lãnh đạo LDG vướng vào các bê bối pháp lý về việc xây dựng dự án trái phép và bị khởi tố, cổ phiếu LDG rơi vào trạng thái mất thanh khoản, giá giảm sâu $70\%$. Khoản tiền 120 triệu tích lũy của chị Mai bị bốc hơi gần hết. Chị Mai khủng hoảng tâm lý, khóc lóc và định rút sạch số tiền còn lại chấp nhận mất trắng.
+Tuy nhiên, chị Mai không hề biết rằng LDG có điểm sức khỏe nợ vay cực kỳ nguy hiểm, dòng tiền kinh doanh CFO liên tục bị âm nặng suốt 4 năm liền. Cuối năm 2023, khi ban lãnh đạo LDG vướng vào các bê bối pháp lý về việc xây dựng dự án trái phép và bị khởi tố, cổ phiếu LDG rơi vào trạng thái mất thanh khoản, giá giảm sâu 70%. Khoản tiền 120 triệu tích lũy của chị Mai bị bốc hơi gần hết. Chị Mai khủng hoảng tâm lý, khóc lóc và định rút sạch số tiền còn lại chấp nhận mất trắng.
 
 **Broker NextGen HO3 đã hỗ trợ chị Mai như thế nào?**
 Broker NextGen của HO3 sau khi tiếp cận đã áp dụng bộ lọc **4 tiêu chí InvestWise** để giúp chị Mai bình tâm lại và cơ cấu lại danh mục tài sản:
@@ -129,7 +129,7 @@ Broker NextGen của HO3 sau khi tiếp cận đã áp dụng bộ lọc **4 ti�
 *   **Lợi nhuận trước thuế và lãi vay (EBIT):** 500.000.000 VNĐ.
 *   **Chi phí lãi vay trong năm:** 200.000.000 VNĐ.
 *   **Dòng tiền từ hoạt động kinh doanh (CFO):** -50.000.000 VNĐ (Lợi nhuận sau thuế kế toán là 240.000.000 VNĐ).
-*   **Vị thế ngành:** Nằm trong Top 5 thị phần ngành dệt may, biên lợi nhuận gộp duy trì ở mức $12\%$ (trung bình ngành là $15\%$).
+*   **Vị thế ngành:** Nằm trong Top 5 thị phần ngành dệt may, biên lợi nhuận gộp duy trì ở mức 12% (trung bình ngành là 15%).
 *   **Ban lãnh đạo:** Lịch sử chi trả cổ tức bằng cổ phiếu, không chia cổ tức tiền mặt trong 3 năm qua. Chủ tịch HĐQT thường xuyên lướt sóng giao dịch cổ phiếu cá nhân.
 
 **Yêu cầu đối với học viên:**
@@ -142,9 +142,9 @@ Broker NextGen của HO3 sau khi tiếp cận đã áp dụng bộ lọc **4 ti�
 1.  **Bước 1: Tính toán các chỉ số sức khỏe tài chính:**
     *   *Tổng nợ vay tài chính* = $\text{Nợ ngắn hạn} + \text{Nợ dài hạn} = 800.000.000 + 1.200.000.000 = 2.000.000.000\text{ VNĐ}$.
     *   *Tỷ lệ Nợ vay / VCSH* = $\frac{\text{Tổng nợ vay}}{\text{VCSH}} = \frac{2.000.000.000}{2.000.000.000} = 1.0\text{ lần}$.
-        *(Nhận xét: Tỷ lệ nợ vay ở mức $1.0$, vượt quá ngưỡng an toàn tiêu chuẩn $0.8$ đối với doanh nghiệp tích sản).*
+        *(Nhận xét: Tỷ lệ nợ vay ở mức 1.0, vượt quá ngưỡng an toàn tiêu chuẩn 0.8 đối với doanh nghiệp tích sản).*
     *   *Hệ số thanh toán lãi vay* = $\frac{\text{EBIT}}{\text{Chi phí lãi vay}} = \frac{500.000.000}{200.000.000} = 2.5\text{ lần}$.
-        *(Nhận xét: Khả năng trả lãi chỉ đạt $2.5$ lần, thấp hơn mức tối thiểu yêu cầu là 3 lần, cho thấy doanh nghiệp đang chịu áp lực chi phí tài chính khá lớn).*
+        *(Nhận xét: Khả năng trả lãi chỉ đạt 2.5 lần, thấp hơn mức tối thiểu yêu cầu là 3 lần, cho thấy doanh nghiệp đang chịu áp lực chi phí tài chính khá lớn).*
 
 2.  **Bước 2: Chấm điểm theo Rubric 4 tiêu chí InvestWise:**
     *   **Tiêu chí 1: Vị thế đầu ngành (Top 5, biên gộp dưới trung bình ngành):** Chấm **2/5 điểm**.
@@ -154,7 +154,7 @@ Broker NextGen của HO3 sau khi tiếp cận đã áp dụng bộ lọc **4 ti�
     *   **Tổng điểm InvestWise:** $2 + 1 + 2 + 1 = 6 / 20\text{ điểm}$.
 
 3.  **Bước 3: Kết luận và đề xuất hành động:**
-    *   *Kết luận:* Cổ phiếu T chỉ đạt **6/20 điểm**, dưới xa ngưỡng tiêu chuẩn tối thiểu là $16/20$ điểm. Cổ phiếu này **hoàn toàn không đủ điều kiện** lọt vào rổ tích sản NextGen.
+    *   *Kết luận:* Cổ phiếu T chỉ đạt **6/20 điểm**, dưới xa ngưỡng tiêu chuẩn tối thiểu là 16/20 điểm. Cổ phiếu này **hoàn toàn không đủ điều kiện** lọt vào rổ tích sản NextGen.
     *   *Đề xuất:* Broker cần tư vấn khách hàng ngưng tích sản mã này ngay lập tức, lên kế hoạch bán cơ cấu thu hồi vốn khi có các nhịp hồi kỹ thuật để chuyển dịch sang các mã Bluechip bọc thép đạt điểm tối ưu.
 
 ---
@@ -198,13 +198,13 @@ D. Đặt lịch tự động chuyển tiền tích sản hàng tháng qua app n
 ### 💡 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT (ANSWER KEY)
 
 *   **Câu 1: Chọn B.**
-    *   *Giải thích:* Đây là hai chỉ số định lượng cốt lõi để sàng lọc sức khỏe tài chính của doanh nghiệp sản xuất. Nợ vay/VCSH dưới $0.8$ đảm bảo doanh nghiệp không bị quá tải nợ, khả năng trả lãi vay lớn hơn 3 lần đảm bảo lợi nhuận tạo ra thừa sức bù đắp chi phí tài chính kể cả khi lãi suất tăng.
+    *   *Giải thích:* Đây là hai chỉ số định lượng cốt lõi để sàng lọc sức khỏe tài chính của doanh nghiệp sản xuất. Nợ vay/VCSH dưới 0.8 đảm bảo doanh nghiệp không bị quá tải nợ, khả năng trả lãi vay lớn hơn 3 lần đảm bảo lợi nhuận tạo ra thừa sức bù đắp chi phí tài chính kể cả khi lãi suất tăng.
 *   **Câu 2: Chọn B.**
     *   *Giải thích:* Lợi nhuận sau thuế có thể làm giả bằng thủ thuật kế toán, nhưng két sắt tiền mặt để chi trả cổ tức cho cổ đông thì không thể làm giả được. Lịch sử trả cổ tức tiền mặt bền vững là chứng chỉ uy tín nhất cho một doanh nghiệp làm ăn thực chất.
 *   **Câu 3: Chọn C.**
     *   *Giải thích:* Đây là chân dung của ban lãnh đạo đầu cơ, coi sàn chứng khoán là nơi huy động vốn rẻ mạt và làm giá cổ phiếu cá nhân thay vì tập trung phát triển giá trị nội tại doanh nghiệp. Tích sản vào những mã này là rủi ro mất trắng cực lớn cho khách hàng.
 *   **Câu 4: Chọn B.**
-    *   *Giải thích:* Rubric InvestWise được xây dựng để lọc ra những doanh nghiệp xuất sắc nhất. Mốc $\ge 16/20$ điểm là chứng chỉ bọc thép cho thấy doanh nghiệp hội tụ đầy đủ yếu tố an toàn để đi dài hạn cùng kế hoạch tích lũy tài sản của khách hàng.
+    *   *Giải thích:* Rubric InvestWise được xây dựng để lọc ra những doanh nghiệp xuất sắc nhất. Mốc ≥ 16/20 điểm là chứng chỉ bọc thép cho thấy doanh nghiệp hội tụ đầy đủ yếu tố an toàn để đi dài hạn cùng kế hoạch tích lũy tài sản của khách hàng.
 *   **Câu 5: Chọn C.**
     *   *Giải thích:* Sai lầm của chị Mai là coi mọi cổ phiếu trên sàn đều giống nhau và tiến hành tích sản vào một mã đầu cơ có chất lượng tài chính cực kém mà không qua bất kỳ bộ lọc sàng lọc chuyên nghiệp nào.
 
@@ -215,7 +215,7 @@ D. Đặt lịch tự động chuyển tiền tích sản hàng tháng qua app n
 ### 🎭 Tình huống: Thuyết phục khách hàng từ bỏ cổ phiếu bất động sản nợ vay cao để chuyển sang tích sản cổ phiếu an toàn
 *   **Nhân vật:**
     *   **Broker NextGen HO3 (Học viên):** Sử dụng các số liệu tài chính nợ vay và Rubric InvestWise để thuyết phục khách hàng hạ nhiệt hưng phấn, không mua đuổi rủi ro.
-    *   **Anh Nam (Khách hàng F0):** 35 tuổi, nhóm tính cách **I (Influence)**. Anh đang rất hào hứng đòi nạp tiền tích sản mã cổ phiếu bất động sản đầu cơ **DXG** vì thấy room chat bảo đất đai sắp sốt lại. Anh lờ đi việc tỷ lệ Nợ vay/VCSH của DXG đang vượt ngưỡng $1.5$ lần và dòng tiền kinh doanh CFO bị âm liên tục do hàng tồn kho dự án bị tắc nghẽn.
+    *   **Anh Nam (Khách hàng F0):** 35 tuổi, nhóm tính cách **I (Influence)**. Anh đang rất hào hứng đòi nạp tiền tích sản mã cổ phiếu bất động sản đầu cơ **DXG** vì thấy room chat bảo đất đai sắp sốt lại. Anh lờ đi việc tỷ lệ Nợ vay/VCSH của DXG đang vượt ngưỡng 1.5 lần và dòng tiền kinh doanh CFO bị âm liên tục do hàng tồn kho dự án bị tắc nghẽn.
 
 #### 📞 Đoạn Đối Thoại Mẫu (Script)
 
@@ -223,9 +223,9 @@ D. Đặt lịch tự động chuyển tiền tích sản hàng tháng qua app n
 *   **Broker NextGen (điềm tĩnh, giọng chuyên nghiệp):** *Dạ anh Nam, em rất hiểu sự nhạy bén vĩ mô của anh đối với chu kỳ phục hồi của ngành bất động sản ạ. DXG quả thực là một doanh nghiệp sở hữu quỹ đất dự án khá lớn tại khu vực phía Nam. Tuy nhiên, dưới vai trò là người thiết kế cây cầu tài sản lâu dài cho gia đình anh Nam, em có chạy điểm số định lượng của DXG qua **Bộ lọc tích sản bọc thép InvestWise** sáng nay và phát hiện ra một số con số báo động đỏ rất quan trọng. Em xin phép chia sẻ nhanh với anh Nam được không ạ?*
 *   **Anh Nam (giọng hơi khó chịu):** *Bộ lọc gì em ơi, bất động sản thì con nào chả nợ nần, khi sóng lên thì nợ lại thành đòn bẩy ăn bằng lần chứ sao.*
 *   **Broker NextGen:** *Dạ đúng là khi thị trường bất động sản sốt nóng, đòn bẩy nợ vay cao sẽ giúp giá cổ phiếu tăng vọt rất nhanh. Nhưng đó là câu chuyện của đầu cơ lướt sóng ngắn hạn đuôi 6. Còn ở đây, anh Nam đang thiết lập kế hoạch **tích sản dài hạn 5 năm** để tích lũy tài sản cho gia đình. Trong 5 năm đó, chúng ta bắt buộc phải ưu tiên sự sống sót của doanh nghiệp trước các cơn bão lãi suất.*
-    *   *Hiện tại, **tỷ lệ Nợ vay / VCSH của DXG đang ở mức 1.5 lần**, vượt gấp đôi ngưỡng an toàn quy chuẩn là 0.8 lần. Đặc biệt, hệ số thanh toán lãi vay của doanh nghiệp chỉ đạt $1.2$ lần, nghĩa là lợi nhuận trước thuế tạo ra chỉ vừa đủ trả lãi vay cho ngân hàng, doanh nghiệp không có thặng dư tiền mặt thật.*
+    *   *Hiện tại, **tỷ lệ Nợ vay / VCSH của DXG đang ở mức 1.5 lần**, vượt gấp đôi ngưỡng an toàn quy chuẩn là 0.8 lần. Đặc biệt, hệ số thanh toán lãi vay của doanh nghiệp chỉ đạt 1.2 lần, nghĩa là lợi nhuận trước thuế tạo ra chỉ vừa đủ trả lãi vay cho ngân hàng, doanh nghiệp không có thặng dư tiền mặt thật.*
 *   **Anh Nam:** *Nhưng đất của họ vẫn có giá trị mà em?*
-*   **Broker NextGen:** *Dạ đất của họ là hàng tồn kho dự án đang bị tắc nghẽn pháp lý chưa thể mở bán được, nên không thể chuyển đổi thành tiền mặt ngay để trả nợ. Nếu mặt bằng lãi suất ngân hàng tăng thêm $1\% - 2\%$, chi phí tài chính sẽ ngay lập tức nhấn chìm lợi nhuận của doanh nghiệp, đẩy tài khoản tích sản của anh Nam vào rủi ro sụt giảm nghiêm trọng.*
+*   **Broker NextGen:** *Dạ đất của họ là hàng tồn kho dự án đang bị tắc nghẽn pháp lý chưa thể mở bán được, nên không thể chuyển đổi thành tiền mặt ngay để trả nợ. Nếu mặt bằng lãi suất ngân hàng tăng thêm 1% - 2%, chi phí tài chính sẽ ngay lập tức nhấn chìm lợi nhuận của doanh nghiệp, đẩy tài khoản tích sản của anh Nam vào rủi ro sụt giảm nghiêm trọng.*
     *   *Chính vì thế, trên Rubric InvestWise, DXG chỉ đạt **7 trên tổng số 20 điểm**.*
     *   *Em đề xuất phương án an toàn hơn cho anh Nam như thế này: Chúng ta dành 10 triệu trong số 15 triệu hàng tháng của anh để tích sản vào **ACB** hoặc **FPT** – những doanh nghiệp đạt điểm số tối đa **18/20**, nợ vay gần như bằng 0 và có két tiền mặt hàng chục nghìn tỷ. 5 triệu còn lại, anh có thể dùng để mua tích lũy DXG ở tài khoản lướt sóng nếu anh thực sự muốn đón sóng bất động sản. Như vậy, chúng ta vừa có móng nhà vững chãi, vừa có cơ hội bứt tốc ngắn hạn. Anh thấy phương án này có an tâm và hợp lý hơn không ạ?*
 *   **Anh Nam (suy nghĩ một chút rồi dịu giọng down):** *Ừ, nghe em phân tích con số cụ thể nợ vay gấp đôi ngưỡng an toàn thì anh cũng thấy ghê răng thật. Thôi được rồi, nghe em. Đợt này cứ phân bổ phần lớn vào ACB và FPT đi cho chắc ăn, còn lại chút đỉnh anh tự lướt sóng sau.*
@@ -239,7 +239,7 @@ D. Đặt lịch tự động chuyển tiền tích sản hàng tháng qua app n
 | **Bản lĩnh dẫn dắt và giữ vững nguyên tắc** | **30%** | Không bị cuốn theo tâm lý hưng phấn bất động sản của khách hàng; kiên trì hướng khách hàng đến sự an toàn của Tháp tài sản. | / 30 |
 | **Định hướng giải pháp phân bổ (Allocation)** | **30%** | Khéo léo đưa ra giải pháp phân bổ tỷ lệ hợp lý (tích sản 70% Bluechip, lướt sóng 30% penny/midcap) để làm hài lòng nhu cầu của khách. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

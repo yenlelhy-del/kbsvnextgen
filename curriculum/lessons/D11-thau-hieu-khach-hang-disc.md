@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ mười một của Lộ trình (Bắt đầu Tuần 2 - Phân tích tính cách và tiếp cận khách hàng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Đặt sự tôn trọng và thấu cảm cá nhân lên hàng đầu khi tiếp xúc với các nhóm khách hàng có cá tính khác nhau. Không phán xét hay định kiến về hành vi đầu tư của khách. Kiên nhẫn, điềm đạm thích nghi với mọi phong cách giao tiếp.
@@ -163,7 +163,7 @@ Sự trung thực, rõ ràng và tôn trọng số liệu của Broker đã phá
         > *"Chào chị Hồng xinh đẹp ạ! Rất vui được kết nối với một người làm nghệ thuật như chị. Dạ đúng rồi chị ơi, tuần này KBSV HO3 đang có chương trình 'Tích Sản Tặng Tiền' tặng ngay 100k vào tài khoản làm hạt giống may mắn cho các tài khoản Standard active đó ạ. Em có chuẩn bị một bảng lộ trình tích sản được thiết kế infographic rất xinh xắn dành riêng cho chị. Tối nay khoảng 20h00 em gọi video call 3 phút hướng dẫn chị eKYC nhận quà và gửi hình lộ trình cho chị xem luôn nha. Chúc chị một ngày tràn ngập cảm hứng ạ! 🌸"*
 
     *   **Tin nhắn gửi Anh Tiến (Nhóm D):**
-        > *"Chào anh Tiến, em là chuyên viên tư vấn tài sản tại KBSV HO3. Em có xem qua lịch sử giao dịch của anh và thấy anh rất quyết liệt trong việc ra quyết định. Tuy nhiên nhịp điều chỉnh vừa qua của mã CEO đã ảnh hưởng khá nhiều đến hiệu suất vốn của anh. Bộ phận phân tích bên em vừa hoàn thành báo cáo định giá cổ phiếu HPG và ACB có Biên An Toàn rất tốt ($> 25\%$) để làm bệ đỡ cho tài khoản. Em xin phép gọi điện 3 phút lúc 14h30 chiều nay để chia sẻ nhanh với anh phương án cơ cấu nợ Margin và tối ưu hóa sức mua tài khoản hiện tại. Cảm ơn anh."*
+        > *"Chào anh Tiến, em là chuyên viên tư vấn tài sản tại KBSV HO3. Em có xem qua lịch sử giao dịch của anh và thấy anh rất quyết liệt trong việc ra quyết định. Tuy nhiên nhịp điều chỉnh vừa qua của mã CEO đã ảnh hưởng khá nhiều đến hiệu suất vốn của anh. Bộ phận phân tích bên em vừa hoàn thành báo cáo định giá cổ phiếu HPG và ACB có Biên An Toàn rất tốt (> 25%) để làm bệ đỡ cho tài khoản. Em xin phép gọi điện 3 phút lúc 14h30 chiều nay để chia sẻ nhanh với anh phương án cơ cấu nợ Margin và tối ưu hóa sức mua tài khoản hiện tại. Cảm ơn anh."*
 
     *   **Tin nhắn gửi Cô Tâm (Nhóm S):**
         > *"Kính chào cô Tâm ạ. Con là chuyên viên tư vấn tài chính bình an của chương trình KBSV NextGen. Con rất hiểu khoản tiền hưu trí của cô là tài sản tích lũy cả đời vô cùng quý giá và sự an toàn phải được đặt lên hàng đầu. Trong kế hoạch tư vấn của con dành cho cô, con luôn thiết lập tầng móng bảo vệ tiền mặt gửi ngân hàng đầy đủ trước khi trích một phần nhỏ thặng dư mua tích sản cổ phiếu Bluechip quốc gia có chia cổ tức đều đặn hàng năm. Con xin phép được gọi điện hỏi thăm và trò chuyện cùng cô vào lúc 9h30 sáng mai để lắng nghe kỹ hơn các mong muốn của cô được không ạ? Con chúc cô nhiều sức khỏe ạ."*
@@ -232,10 +232,10 @@ D. Cung cấp số liệu định giá chi tiết của Research KB.
 
 *   **Anh Khánh (giọng nghiêm nghị, lạnh lùng):** *Chào em, tôi có xem qua bản báo cáo định giá ACB em gửi, lập luận khá tốt. Nhưng trước khi mở tài khoản, tôi cần em làm rõ cho tôi một số chi tiết về biểu phí tại KBSV. Phí giao dịch tài khoản thường đuôi 1 là bao nhiêu phần trăm? Có phát sinh thêm chi phí ẩn nào không? Cơ chế tính thuế thu nhập cá nhân khi tôi nhận cổ tức tiền mặt của ACB được hệ thống tự động khấu trừ thế nào?*
 *   **Broker NextGen (điềm tĩnh, tự tin):** *Dạ em chào anh Khánh. Em rất vui vì anh đã nghiên cứu kỹ bản báo cáo định giá ACB và đặt ra những câu hỏi vô cùng thực tế về mặt chi phí vận hành tài khoản. Đối với một chuyên gia kiểm toán như anh, sự rõ ràng đến từng con số luôn là ưu tiên hàng đầu, và em xin phép trả lời chi tiết cho anh như sau:*
-    *   *Thứ nhất: Phí giao dịch áp dụng cho tài khoản thường đuôi 1 mở mới qua eKYC tại KBSV hiện nay là **$0.15\%$ trên giá trị giao dịch**. Mức phí này đã bao gồm $0.027\%$ phí trả cho Sở Giao dịch Chứng khoán theo quy định của Bộ Tài chính, hoàn toàn không phát sinh thêm bất kỳ chi phí ẩn nào khác.*
+    *   *Thứ nhất: Phí giao dịch áp dụng cho tài khoản thường đuôi 1 mở mới qua eKYC tại KBSV hiện nay là **0.15% trên giá trị giao dịch**. Mức phí này đã bao gồm 0.027% phí trả cho Sở Giao dịch Chứng khoán theo quy định của Bộ Tài chính, hoàn toàn không phát sinh thêm bất kỳ chi phí ẩn nào khác.*
     *   *Thứ hai: Về phí lưu ký chứng khoán, hệ thống sẽ thu hộ Trung tâm Lưu ký VSD là **$0.27\text{ VNĐ}$/cổ phiếu/tháng**. Khoản này được tự động tính toán và khấu trừ vào tài khoản tiền mặt của anh vào ngày cuối cùng của tháng.*
 *   **Anh Khánh:** *Thế còn thuế cổ tức tiền mặt? Tôi thấy một số công ty chứng khoán khấu trừ thuế rất lộn xộn làm ảnh hưởng đến giá vốn của tôi.*
-*   **Broker NextGen:** *Dạ em xin phép làm rõ cơ chế này để anh Khánh hoàn toàn an tâm ạ. Theo Nghị định 126 của Chính phủ, khi doanh nghiệp trả cổ tức bằng tiền mặt (ví dụ ACB trả 1.000 VNĐ/cp), hệ thống KBSV sẽ tự động khấu trừ thuế TNCN **$5\%$** ngay tại nguồn trước khi phân bổ tiền mặt thực nhận về tài khoản của anh. Tức là anh sẽ nhận về thực tế 950 VNĐ/cp tiền mặt sạch.*
+*   **Broker NextGen:** *Dạ em xin phép làm rõ cơ chế này để anh Khánh hoàn toàn an tâm ạ. Theo Nghị định 126 của Chính phủ, khi doanh nghiệp trả cổ tức bằng tiền mặt (ví dụ ACB trả 1.000 VNĐ/cp), hệ thống KBSV sẽ tự động khấu trừ thuế TNCN **5%** ngay tại nguồn trước khi phân bổ tiền mặt thực nhận về tài khoản của anh. Tức là anh sẽ nhận về thực tế 950 VNĐ/cp tiền mặt sạch.*
     *   *Giá vốn bình quân trên hệ thống KBSV được tính toán theo phương pháp **Bình quân gia quyền di động** sau mỗi lệnh khớp mua, hoàn toàn không bị ảnh hưởng bởi việc nhận cổ tức tiền mặt, giúp anh dễ dàng đối chiếu số liệu kiểm toán tài sản của mình hàng ngày.*
 *   **Anh Khánh (giọng bớt lạnh lùng hơn):** *Ừm, cơ chế tính toán thế là rõ ràng. Thế còn việc bảo mật thông tin tài khoản? Bên các cậu có cam kết không chia sẻ dữ liệu giao dịch của tôi cho bên thứ ba không? Tôi rất ghét việc bị các bên telesales khác gọi điện làm phiền.*
 *   **Broker NextGen:** *Dạ anh Khánh hoàn toàn an tâm ạ. KBSV là công ty chứng khoán thuộc tập đoàn tài chính KB Financial Group của Hàn Quốc, áp dụng tiêu chuẩn bảo mật thông tin quốc tế. Mọi dữ liệu cá nhân và số dư tài sản của anh được mã hóa đầu cuối và cam kết bảo mật 100% theo điều khoản hợp đồng mở tài khoản và Luật An ninh mạng Việt Nam. Em là Broker chịu trách nhiệm duy nhất quản lý thông tin của anh trên hệ thống chi nhánh HO3.*
@@ -247,11 +247,11 @@ D. Cung cấp số liệu định giá chi tiết của Research KB.
 
 | Tiêu Chí Đánh Giá | Điểm Tối Đa | Yêu Cầu Đạt Được (KPI) | Chấm Điểm Thực Tế |
 | :--- | :---: | :--- | :---: |
-| **Độ chính xác thông tin biểu phí** | **40%** | Trả lời chính xác $0.15\%$ phí giao dịch, $0.27$ VNĐ phí lưu ký và thuế cổ tức $5\%$; giải thích rõ phương pháp tính giá vốn. | / 40 |
+| **Độ chính xác thông tin biểu phí** | **40%** | Trả lời chính xác 0.15% phí giao dịch, 0.27 VNĐ phí lưu ký và thuế cổ tức 5%; giải thích rõ phương pháp tính giá vốn. | / 40 |
 | **Bản lĩnh điềm tĩnh trước nhóm C** | **30%** | Giữ vững tông giọng chuyên nghiệp, nghiêm túc và tôn trọng; không tỏ ra lúng túng hoặc né tránh các câu hỏi khó của kiểm toán viên. | / 30 |
 | **Minh bạch pháp lý & bảo mật** | **30%** | Viện dẫn chính xác các văn bản pháp luật (Nghị định 126, tiêu chuẩn bảo mật KB) để thuyết phục khách hàng nhóm C tin cậy. | / 30 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 

@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày đầu tiên của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập Growth Mindset (Tư duy tăng trưởng). Chuyển hóa tâm thế từ một người "chèo kéo khách hàng" (Sales) sang một người "đồng hành và bảo vệ tài sản" (Wealth Advisor). Thấu cảm sâu sắc nỗi sợ hãi và lòng tham của khách hàng cá nhân.
@@ -145,18 +145,18 @@ Một học viên NextGen của HO3 sau khi phân tích hành vi của Nam trên
 Để giúp các Broker NextGen định vị nhanh trạng thái của khách hàng một cách khoa học thay vì phán đoán cảm tính, hãy xây dựng một mô hình tính điểm (Scoring Model) dựa trên các chỉ số tài chính hành vi sau:
 
 1.  **Tỷ lệ đa dạng hóa danh mục (Diver_Ratio):** Số lượng mã cổ phiếu nắm giữ chia cho quy mô NAV.
-    *   $N \ge 15$ mã với NAV dưới 100 triệu: 1 điểm (Rất tệ - Vùng Đất Hoang).
+    *   $N ≥ 15 mã với NAV dưới 100 triệu: 1 điểm (Rất tệ - Vùng Đất Hoang).
     *   $N = 3 - 5$ mã tập trung: 5 điểm (Tốt - Vùng Kiểm Soát).
 2.  **Thời gian nắm giữ trung bình (Holding_Period):**
     *   Dưới 5 ngày (đánh T+ liên tục): 1 điểm (Vùng Đất Hoang).
     *   Dưới 1 tháng: 2 điểm.
     *   Trên 6 tháng: 5 điểm (Vùng Kiểm Soát).
 3.  **Tỷ lệ đòn bẩy bình quân (Margin_Ratio):** $\text{Nợ vay Margin} / \text{Tổng NAV}$.
-    *   Margin_Ratio $> 1.5$ (đòn bẩy cực cao): 1 điểm (Nguy hiểm).
-    *   Margin_Ratio từ $0 - 0.5$: 5 điểm (An toàn).
+    *   Margin_Ratio > 1.5 (đòn bẩy cực cao): 1 điểm (Nguy hiểm).
+    *   Margin_Ratio từ 0 - 0.5: 5 điểm (An toàn).
 4.  **Tỷ lệ dự phòng khẩn cấp (Emergency_Ratio):** $\text{Quỹ tiền mặt dự phòng} / \text{Chi phí thiết yếu hàng tháng}$.
-    *   Emergency_Ratio $< 1$ tháng: 1 điểm (Vùng Đất Hoang).
-    *   Emergency_Ratio $\ge 3$ tháng: 5 điểm (Vùng Kiểm Soát).
+    *   Emergency_Ratio < 1 tháng: 1 điểm (Vùng Đất Hoang).
+    *   Emergency_Ratio ≥ 3 tháng: 5 điểm (Vùng Kiểm Soát).
 
 #### 💡 Bảng Tính Điểm Phân Loại Khách Hàng (Customer Classification Rubric)
 
@@ -179,7 +179,7 @@ Một học viên NextGen của HO3 sau khi phân tích hành vi của Nam trên
     3.  Mã HPG: Giá trị hiện tại 35.000.000 VNĐ (Cổ phiếu cơ bản, lỗ -5%).
     4.  Mã CEO: Giá trị hiện tại 20.000.000 VNĐ (Thua lỗ -40%).
     5.  Mã DXG: Giá trị hiện tại 50.000.000 VNĐ (Thua lỗ -15%).
-*   **Hành vi giao dịch:** Tần suất quay vòng danh mục (tỷ lệ mua bán) đạt $400\%$/tháng. Khách hàng thường xuyên gọi điện cho tổng đài hỏi han tin đồn về các dự án của ITA và CEO.
+*   **Hành vi giao dịch:** Tần suất quay vòng danh mục (tỷ lệ mua bán) đạt 400%/tháng. Khách hàng thường xuyên gọi điện cho tổng đài hỏi han tin đồn về các dự án của ITA và CEO.
 *   **Tình trạng tài chính cá nhân bên ngoài:** Không có quỹ dự phòng khẩn cấp, đang chịu áp lực trả nợ vay tiêu dùng bên ngoài 5.000.000 VNĐ/tháng.
 
 **Yêu cầu:** 
@@ -191,18 +191,18 @@ Một học viên NextGen của HO3 sau khi phân tích hành vi của Nam trên
 
 1.  **Bước 1: Tính toán Tỷ lệ đòn bẩy Margin thực tế:**
     $$\text{Tỷ lệ đòn bẩy} = \frac{\text{Dư nợ Margin}}{\text{NAV thực tế}} = \frac{70.000.000}{50.000.000} = 1.4$$
-    *Nhận xét:* Tỷ lệ đòn bẩy thực tế là $1.4$ (rất cao và cực kỳ rủi ro đối với một danh mục có tỷ trọng lớn là cổ phiếu đầu cơ đang thua lỗ). Tài khoản này đang nằm ở trạng thái cận kề ngưỡng bị Call Margin nếu thị trường chỉ cần giảm thêm $3\% - 5\%$.
+    *Nhận xét:* Tỷ lệ đòn bẩy thực tế là 1.4 (rất cao và cực kỳ rủi ro đối với một danh mục có tỷ trọng lớn là cổ phiếu đầu cơ đang thua lỗ). Tài khoản này đang nằm ở trạng thái cận kề ngưỡng bị Call Margin nếu thị trường chỉ cần giảm thêm 3% - 5%.
 
 2.  **Bước 2: Chấm điểm định vị Vùng đất tài chính:**
     *   *Số lượng mã:* Nắm giữ 5 mã, trong đó có tới 3 mã đầu cơ biến động mạnh (ITA, FLC, CEO). Điểm: **1/5 điểm**.
-    *   *Thời gian nắm giữ trung bình:* Tần suất quay vòng danh mục $400\%$/tháng chứng tỏ trung bình cứ 7 ngày khách hàng lại đảo danh mục một lần. Điểm: **1/5 điểm**.
+    *   *Thời gian nắm giữ trung bình:* Tần suất quay vòng danh mục 400%/tháng chứng tỏ trung bình cứ 7 ngày khách hàng lại đảo danh mục một lần. Điểm: **1/5 điểm**.
     *   *Tỷ lệ đòn bẩy:* Margin_Ratio = 1.4. Điểm: **1/5 điểm**.
     *   *Tỷ lệ dự phòng khẩn cấp:* Không có quỹ dự phòng, dòng tiền thặng dư bên ngoài bị âm do áp lực nợ tiêu dùng. Điểm: **1/5 điểm**.
-    *   **Tổng điểm:** $1 + 1 + 1 + 1 = 4 / 20$ điểm.
+    *   **Tổng điểm:** 1 + 1 + 1 + 1 = 4 / 20 điểm.
     *   **Kết luận:** Anh Lâm đang sống ở sâu trong **VÙNG ĐẤT HOANG**, tài khoản đang ở trạng thái báo động đỏ (Critical Danger).
 
 3.  **Bước 3: Đề xuất 3 bước hành động khẩn cấp cho Broker:**
-    *   **Bước 1: Giảm thiểu áp lực Margin ngay lập tức.** Tư vấn khách hàng bán chủ động toàn bộ cổ phiếu rác/không có thanh khoản và đang thua lỗ nặng (bán dứt điểm FLC và ITA) để hạ dư nợ Margin từ 70 triệu xuống dưới 55 triệu, đưa tỷ lệ RTT của tài khoản về vùng an toàn tạm thời ($&gt; 38\%$), tránh bị giải chấp cưỡng bức.
+    *   **Bước 1: Giảm thiểu áp lực Margin ngay lập tức.** Tư vấn khách hàng bán chủ động toàn bộ cổ phiếu rác/không có thanh khoản và đang thua lỗ nặng (bán dứt điểm FLC và ITA) để hạ dư nợ Margin từ 70 triệu xuống dưới 55 triệu, đưa tỷ lệ RTT của tài khoản về vùng an toàn tạm thời (> 38%), tránh bị giải chấp cưỡng bức.
     *   **Bước 2: Cơ cấu danh mục tập trung.** Giữ lại HPG (cổ phiếu cơ bản tốt có khả năng phục hồi), bán cơ cấu dần CEO và DXG khi có các nhịp hồi kỹ thuật của thị trường để thu hồi tiền mặt.
     *   **Bước 3: Ngắt kết nối nguồn tin đồn.** Yêu cầu khách hàng rời khỏi các room phím hàng rác, ngưng giao dịch mua đuổi T+. Hướng dẫn khách hàng lập kế hoạch trả nợ tiêu dùng bên ngoài trước khi nghĩ đến việc tiếp tục đầu tư.
 
@@ -288,7 +288,7 @@ D. Khuyên khách hàng vay mượn người thân để nộp tiền gấp cứ
 | **Giải quyết kỹ thuật (Technical)** | **40%** | Giải thích chính xác chỉ số RTT; đưa ra phương án xử lý Margin tối ưu (bán chủ động một phần cổ phiếu đầu cơ rác để đưa tài khoản về vùng an toàn; kiên quyết giữ lại cổ phiếu cơ bản tốt). | / 40 |
 | **Định hướng tư duy dài hạn (Long-term)** | **20%** | Khéo léo lồng ghép triết lý Tháp tài sản, hướng dẫn khách thiết lập quỹ dự phòng khẩn cấp bên ngoài thị trường để tạo sự bình an bền vững. | / 20 |
 
-*Ngưỡng đạt yêu cầu: $\ge 80/100$ điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản sắm vai.*
+*Ngưỡng đạt yêu cầu: ≥ 80/100 điểm. Học viên dưới 80 điểm bắt buộc phải thực hành lại kịch bản sắm vai.*
 
 ---
 

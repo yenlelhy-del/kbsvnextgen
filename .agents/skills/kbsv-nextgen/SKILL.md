@@ -38,7 +38,7 @@ Tài liệu hướng dẫn và kho kiến thức toàn diện cho Chương trìn
 | Folder | Nội dung | Files |
 |--------|----------|-------|
 | `01-chien-luoc/` | Đề án BOD, Hợp tác ĐH, Project Master | 3 |
-| `02-tuyen-dung/` | **2 PDF phỏng vấn** + HTML source + content | 6 |
+| `02-tuyen-dung/` | **4 PDF tuyển dụng/phỏng vấn** + HTML source + content | 6 |
 | `03-dao-tao/` | Syllabus tổng (DT-00) + 14 Module (DT-01 đến DT-14) + Thư mục bài học 42 ngày (lessons/) + 42 Cheatsheets | 99 |
 | `04-van-hanh/` | Lịch trình 42 ngày & Quy chế + Lộ trình 42 khóa học nhỏ (DT-42) | 5 |
 | `05-thuong-hieu/` | Brand Guidelines "Sống trên Sàn" | 1 |

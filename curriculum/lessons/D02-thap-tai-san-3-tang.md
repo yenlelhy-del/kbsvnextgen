@@ -9,7 +9,7 @@
 
 ## 📌 I. THÔNG TIN BÀI HỌC & MỤC TIÊU (LESSON OVERVIEW & OBJECTIVES)
 
-*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing $\rightarrow$ Content Lab $\rightarrow$ CRM Update).
+*   **Thời lượng học:** Cả ngày (bám sát Daily Routine: Morning Briefing → Content Lab → CRM Update).
 *   **Vị trí trong lộ trình:** Ngày thứ hai của Tuần 1 (Giai đoạn đào tạo nền tảng).
 *   **Mục tiêu bài học theo khung ASK:**
     *   **Attitude (Thái độ):** Xác lập tư duy "Phòng thủ trước, Tấn công sau" trong quản lý tài sản. Tôn trọng tính kỷ luật thép của cấu trúc phân bổ tài sản. Sẵn sàng bảo vệ khách hàng khỏi những quyết định đầu tư mạo hiểm vượt quá khả năng chịu đựng rủi ro của họ.
@@ -147,18 +147,18 @@ Broker NextGen của HO3 sau khi trò chuyện và nhận diện chị Lan thu�
 3.  **Bước 3: Thiết kế phân bổ tài sản cho số vốn nhàn rỗi hiện có (150.000.000 VNĐ):**
     *   Tổng số vốn nhàn rỗi sau khi trích quỹ khẩn cấp T1:
         $$\text{Vốn nhàn rỗi còn lại} = 150.000.000 - 60.000.000 = 90.000.000\text{ VNĐ}$$
-    *   Phân bổ vào **Tầng 2 (Tích lũy - Đầu tư dài hạn)** chiếm tỷ lệ $80\%$ số vốn còn lại:
-        $$\text{Vốn phân bổ T2} = 90.000.000\text{ VNĐ} \times 80\% = 72.000.000\text{ VNĐ}$$
+    *   Phân bổ vào **Tầng 2 (Tích lũy - Đầu tư dài hạn)** chiếm tỷ lệ 80% số vốn còn lại:
+        $$\text{Vốn phân bổ T2} = 90.000.000\text{ VNĐ} \times 80% = 72.000.000\text{ VNĐ}$$
         *(Số tiền này sẽ được dùng để mua ngay danh mục tích sản cơ sở gồm các cổ phiếu rổ InvestWise tại KBSV).*
-    *   Phân bổ vào **Tầng 3 (Bứt tốc - Trading cơ hội)** chiếm tỷ lệ tối đa $20\%$ số vốn còn lại:
-        $$\text{Vốn phân bổ T3} = 90.000.000\text{ VNĐ} \times 20\% = 18.000.000\text{ VNĐ}$$
+    *   Phân bổ vào **Tầng 3 (Bứt tốc - Trading cơ hội)** chiếm tỷ lệ tối đa 20% số vốn còn lại:
+        $$\text{Vốn phân bổ T3} = 90.000.000\text{ VNĐ} \times 20% = 18.000.000\text{ VNĐ}$$
         *(Số tiền này được chuyển vào tài khoản phụ đuôi 6 để giao dịch ngắn hạn theo xu hướng thị trường VTA).*
 
 4.  **Bước 4: Thiết kế kế hoạch phân bổ dòng tiền thặng dư hàng tháng (15.000.000 VNĐ):**
     *   Trích **60% thặng dư** hàng tháng để tự động đầu tư mua tích sản cổ phiếu (T2) định kỳ:
-        $$\text{Tiền tích sản hàng tháng} = 15.000.000\text{ VNĐ} \times 60\% = 9.000.000\text{ VNĐ}$$
+        $$\text{Tiền tích sản hàng tháng} = 15.000.000\text{ VNĐ} \times 60% = 9.000.000\text{ VNĐ}$$
     *   Trích **20% thặng dư** hàng tháng để bổ sung vào nguồn vốn giao dịch cơ hội T3 (hoặc giữ làm sức mua tiền mặt):
-        $$\text{Tiền trading bổ sung hàng tháng} = 15.000.000\text{ VNĐ} \times 20\% = 3.000.000\text{ VNĐ}$$
+        $$\text{Tiền trading bổ sung hàng tháng} = 15.000.000\text{ VNĐ} \times 20% = 3.000.000\text{ VNĐ}$$
     *   Dành **20% thặng dư còn lại** (3.000.000 VNĐ) để gửi tiết kiệm tích lũy bên ngoài ngân hàng nhằm tiếp tục gia tăng tầng bảo vệ T1 hoặc dùng cho các nhu cầu cá nhân đột xuất khác.
 
 ---
@@ -247,7 +247,7 @@ D. Hệ thống công ty chứng khoán sẽ tự động từ chối lệnh đ�
 | **Độ kiên định với nguyên tắc rủi ro** | **35%** | Giữ vững lập trường quản trị rủi ro (giới hạn T3 tối đa 20% NAV đầu tư), không chiều theo yêu cầu mạo hiểm bừa bãi của khách. | / 35 |
 | **Thuyết phục và giải pháp (Solution)** | **35%** | Trình bày cấu trúc tháp tài sản rõ ràng, chỉ ra lợi ích về mặt tâm lý bình an khi có tầng bảo vệ giúp nâng cao hiệu quả giao dịch ngắn hạn. | / 35 |
 
-*Ngưỡng đạt yêu cầu: $\ge 85/100$ điểm.*
+*Ngưỡng đạt yêu cầu: ≥ 85/100 điểm.*
 
 ---
 
