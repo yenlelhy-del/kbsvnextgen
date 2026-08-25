@@ -2279,7 +2279,7 @@
 
         <ul class="npv-nav-links">
             <li><a href="https://nextgen.finpeace.cloud/" class="npv-nav-link active" id="navHomeLink">Trang chủ</a></li>
-            <li><a href="javascript:void(0)" class="npv-nav-link" id="navRoadmapLink" onclick="triggerDashboardView()">Lộ trình 42 ngày</a></li>
+            <li><a href="javascript:void(0)" class="npv-nav-link" id="navRoadmapLink" onclick="accessRoadmap()">Lộ trình 42 ngày</a></li>
         </ul>
 
         <div style="display: flex; align-items: center; gap: 14px;">
@@ -2339,7 +2339,7 @@
                 </div>
 
                 <div class="hero-actions">
-                    <button class="btn-primary" style="padding: 14px 38px; font-size: 15px; font-weight:700; border-radius:12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);" onclick="toggleAuthFlow()">Bắt đầu học ngay →</button>
+                    <button class="btn-primary" style="padding: 14px 38px; font-size: 15px; font-weight:700; border-radius:12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);" onclick="accessRoadmap()">Bắt đầu học ngay →</button>
                     <button class="btn-secondary" style="padding: 14px 32px; font-size: 15px; font-weight:600; border-radius:12px;" onclick="window.open('../pages/poster.html', '_blank')">Xem Poster & Thể Lệ</button>
                 </div>
             </div>
@@ -2532,17 +2532,40 @@
     </div>
 
     <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
-    <section class="login-section" id="loginSection">
-        <h2 style="font-family:var(--font-display); font-size:17px; text-align:center; margin-bottom:6px;">ĐĂNG NHẬP</h2>
-        <p style="font-size:13px; color:var(--text-secondary); text-align:center; margin-bottom:20px;">Hệ thống sử dụng email nhận Magic Link truy cập cá nhân.</p>
+    <section class="login-section" id="loginSection" style="max-width: 580px; margin: 100px auto 60px; background: #ffffff; border: 1px solid var(--border-light); border-radius: 24px; padding: 36px 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+        <div style="text-align: center; margin-bottom: 24px;">
+            <div class="landing-badge" style="margin: 0 auto 10px; font-size: 11px; padding: 4px 14px;">
+                KBSV NEXTGEN 2026 AUTHENTICATION
+            </div>
+            <h2 style="font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">ĐĂNG NHẬP HỌC VIÊN</h2>
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; max-width: 440px; margin: 0 auto;">
+                Vui lòng nhập <strong>Email Học Viên</strong> để nhận Magic Link xác thực & kích hoạt <strong>Lộ Trình Thực Chiến 42 Ngày</strong>.
+            </p>
+        </div>
         
-        <div class="form-group">
-            <label for="studentEmail">Email Học Viên</label>
-            <input type="email" id="studentEmail" class="form-control" placeholder="fresher.ho3@kbsv.com.vn" required>
+        <div class="form-group" style="margin-bottom: 22px;">
+            <label for="studentEmail" style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+                <span>Email Học Viên / Thực Tập Sinh</span>
+                <span style="font-size: 11.5px; font-weight: 500; color: var(--kb-yellow-dark);">*Nhận Magic Token</span>
+            </label>
+            <input type="email" id="studentEmail" class="form-control" placeholder="nhap.email.hocvien@kbsv.com.vn" style="padding: 13px 16px; font-size: 14.5px; border-radius: 12px; border: 1px solid var(--border); transition: all 0.2s;" required>
+            
+            <!-- Quick Fill Chips -->
+            <div style="margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Gợi ý đăng nhập nhanh:</span>
+                <button type="button" onclick="fillQuickEmail('fresher.ho3@kbsv.com.vn')" style="background: var(--kb-yellow-light); border: 1px solid rgba(245, 166, 35, 0.4); color: var(--kb-brown-dark); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                    ⚡ fresher.ho3@kbsv.com.vn
+                </button>
+                <button type="button" onclick="fillQuickEmail('koc.nextgen@finpeace.cloud')" style="background: #EBF5FF; border: 1px solid #BEE3F8; color: #2B6CB0; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                    ✨ koc.nextgen@finpeace.cloud
+                </button>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label>Lựa Chọn Mascot Đồng Hành (Advisory Track)</label>
+        <div class="form-group" style="margin-bottom: 24px;">
+            <label style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 10px; display: block;">
+                Lựa Chọn Mascot Đồng Hành (Advisory Track)
+            </label>
             <div class="mascot-select-grid">
                 <div class="mascot-select-card active" onclick="selectMascot('flexi', this)">
                     <img src="../assets/mascot/flexi/light/Mascot app Flexi_flexi original 1.png" alt="Flexi Mascot" class="mascot-select-avatar">
@@ -2568,7 +2591,14 @@
             </div>
         </div>
 
-        <button class="btn-primary" style="width:100%; justify-content:center; padding:12px 0; font-size:14px;" onclick="simulateMagicLinkLogin()">Nhận Magic Link & Đăng Nhập →</button>
+        <button class="btn-primary" style="width:100%; justify-content:center; padding: 14px 0; font-size: 15px; font-weight: 700; border-radius: 12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);" onclick="simulateMagicLinkLogin()">
+            🚀 Nhận Magic Link & Vào Học Ngay →
+        </button>
+        <div style="text-align: center; margin-top: 14px;">
+            <button type="button" onclick="goHome()" style="background: none; border: none; font-size: 13px; color: var(--text-secondary); text-decoration: underline; cursor: pointer;">
+                ← Quay lại Trang Chủ
+            </button>
+        </div>
     </section>
 
     <!-- ── 3. LEARNER DASHBOARD SECTION ── -->
@@ -3053,10 +3083,36 @@
             document.getElementById('navRoadmapLink').classList.remove('active');
         }
 
+        function accessRoadmap() {
+            const user = currentUser || localStorage.getItem('nextgen_user');
+            if (user) {
+                triggerDashboardView();
+            } else {
+                toggleAuthFlow();
+                const loginEl = document.getElementById('loginSection');
+                if (loginEl) {
+                    loginEl.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
         function toggleAuthFlow() {
+            if (currentUser || localStorage.getItem('nextgen_user')) {
+                triggerDashboardView();
+                return;
+            }
             document.getElementById('homepageSection').style.display = 'none';
             document.getElementById('loginSection').style.display = 'block';
             document.getElementById('dashboardSection').style.display = 'none';
+            document.getElementById('navHomeLink').classList.remove('active');
+            document.getElementById('navRoadmapLink').classList.remove('active');
+        }
+
+        function fillQuickEmail(email) {
+            const input = document.getElementById('studentEmail');
+            if (input) {
+                input.value = email;
+            }
         }
 
         function selectMascot(type, element) {
@@ -3064,13 +3120,16 @@
             document.querySelectorAll('.mascot-select-card').forEach(card => {
                 card.classList.remove('active');
             });
-            element.classList.add('active');
+            if (element) {
+                element.classList.add('active');
+            }
         }
 
         function simulateMagicLinkLogin() {
-            const email = document.getElementById('studentEmail').value.trim();
+            const emailInput = document.getElementById('studentEmail');
+            const email = emailInput ? emailInput.value.trim() : '';
             if (!email || !email.includes('@')) {
-                alert('Vui lòng nhập email hợp lệ để nhận Magic Link!');
+                alert('Vui lòng nhập Email học viên hợp lệ (ví dụ: fresher.ho3@kbsv.com.vn) để nhận Magic Link!');
                 return;
             }
             
@@ -3078,26 +3137,48 @@
             localStorage.setItem('nextgen_user', currentUser);
             localStorage.setItem('nextgen_mascot', selectedMascotType);
             
-            // A new user entering the system always starts from Day 1 with 0 XP
-            currentSimulatedDay = 1;
-            currentXP = 0;
-            completedDays = {};
-            
-            localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
-            localStorage.setItem('nextgen_xp', currentXP);
-            localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+            const savedDay = localStorage.getItem('nextgen_sim_day');
+            if (!savedDay) {
+                currentSimulatedDay = 1;
+                currentXP = 0;
+                completedDays = {};
+                localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
+                localStorage.setItem('nextgen_xp', currentXP);
+                localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+            } else {
+                currentSimulatedDay = parseInt(savedDay);
+            }
             
             triggerDashboardView();
         }
 
+        function logout() {
+            currentUser = null;
+            localStorage.removeItem('nextgen_user');
+            goHome();
+        }
+
         function triggerDashboardView() {
+            if (!currentUser && !localStorage.getItem('nextgen_user')) {
+                toggleAuthFlow();
+                return;
+            }
+            
             document.getElementById('homepageSection').style.display = 'none';
             document.getElementById('loginSection').style.display = 'none';
             document.getElementById('dashboardSection').style.display = 'block';
             
-            document.getElementById('magicTokenBadge').style.display = 'block';
-            document.getElementById('navbarActionBtn').innerText = "Đăng xuất";
-            document.getElementById('navbarActionBtn').setAttribute('onclick', 'logout()');
+            const badge = document.getElementById('magicTokenBadge');
+            if (badge) {
+                badge.style.display = 'block';
+                badge.innerHTML = `✨ <strong>${currentUser}</strong>`;
+            }
+            
+            const btn = document.getElementById('navbarActionBtn');
+            if (btn) {
+                btn.innerText = "Đăng xuất";
+                btn.setAttribute('onclick', 'logout()');
+            }
             
             document.getElementById('navHomeLink').classList.remove('active');
             document.getElementById('navRoadmapLink').classList.add('active');
