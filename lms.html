@@ -2532,72 +2532,125 @@
     </div>
 
     <!-- ── 2. LOGIN & MASCOT SELECTOR SECTION ── -->
-    <section class="login-section" id="loginSection" style="max-width: 580px; margin: 100px auto 60px; background: #ffffff; border: 1px solid var(--border-light); border-radius: 24px; padding: 36px 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
-        <div style="text-align: center; margin-bottom: 24px;">
-            <div class="landing-badge" style="margin: 0 auto 10px; font-size: 11px; padding: 4px 14px;">
-                KBSV NEXTGEN 2026 AUTHENTICATION
-            </div>
-            <h2 style="font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">ĐĂNG NHẬP HỌC VIÊN</h2>
-            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; max-width: 440px; margin: 0 auto;">
-                Vui lòng nhập <strong>Email Học Viên</strong> để nhận Magic Link xác thực & kích hoạt <strong>Lộ Trình Thực Chiến 42 Ngày</strong>.
-            </p>
-        </div>
+    <section class="login-section" id="loginSection" style="max-width: 600px; margin: 90px auto 60px; background: #ffffff; border: 1px solid var(--border-light); border-radius: 24px; padding: 36px 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
         
-        <div class="form-group" style="margin-bottom: 22px;">
-            <label for="studentEmail" style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
-                <span>Email Học Viên / Thực Tập Sinh</span>
-                <span style="font-size: 11.5px; font-weight: 500; color: var(--kb-yellow-dark);">*Nhận Magic Token</span>
-            </label>
-            <input type="email" id="studentEmail" class="form-control" placeholder="nhap.email.hocvien@kbsv.com.vn" style="padding: 13px 16px; font-size: 14.5px; border-radius: 12px; border: 1px solid var(--border); transition: all 0.2s;" required>
+        <!-- STEP 1: FORM INPUT -->
+        <div id="loginFormBox">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div class="landing-badge" style="margin: 0 auto 10px; font-size: 11px; padding: 4px 14px;">
+                    KBSV NEXTGEN 2026 AUTHENTICATION
+                </div>
+                <h2 style="font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">ĐĂNG NHẬP HỌC VIÊN</h2>
+                <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; max-width: 440px; margin: 0 auto;">
+                    Nhập <strong>Email Học Viên</strong> để hệ thống gửi <strong>Link Đăng Nhập (Magic Link)</strong> trực tiếp vào hộp thư email của bạn.
+                </p>
+            </div>
             
-            <!-- Quick Fill Chips -->
-            <div style="margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Gợi ý đăng nhập nhanh:</span>
-                <button type="button" onclick="fillQuickEmail('fresher.ho3@kbsv.com.vn')" style="background: var(--kb-yellow-light); border: 1px solid rgba(245, 166, 35, 0.4); color: var(--kb-brown-dark); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
-                    ⚡ fresher.ho3@kbsv.com.vn
-                </button>
-                <button type="button" onclick="fillQuickEmail('koc.nextgen@finpeace.cloud')" style="background: #EBF5FF; border: 1px solid #BEE3F8; color: #2B6CB0; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
-                    ✨ koc.nextgen@finpeace.cloud
-                </button>
-            </div>
-        </div>
-
-        <div class="form-group" style="margin-bottom: 24px;">
-            <label style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 10px; display: block;">
-                Lựa Chọn Mascot Đồng Hành (Advisory Track)
-            </label>
-            <div class="mascot-select-grid">
-                <div class="mascot-select-card active" onclick="selectMascot('flexi', this)">
-                    <img src="../assets/mascot/flexi/light/Mascot app Flexi_flexi original 1.png" alt="Flexi Mascot" class="mascot-select-avatar">
-                    <div class="mascot-select-info">
-                        <div class="mascot-select-name">Flexi</div>
-                        <div class="mascot-select-track">Content KOC</div>
-                    </div>
-                </div>
-                <div class="mascot-select-card" onclick="selectMascot('investor', this)">
-                    <img src="../assets/mascot/investor/light/Mascot app Investor_investor original-01.png" alt="Investor Mascot" class="mascot-select-avatar">
-                    <div class="mascot-select-info">
-                        <div class="mascot-select-name">Investor</div>
-                        <div class="mascot-select-track">Tích Sản SIP</div>
-                    </div>
-                </div>
-                <div class="mascot-select-card" onclick="selectMascot('trader', this)">
-                    <img src="../assets/mascot/trader/light/Mascot app Trader_trader original-01.png" alt="Trader Mascot" class="mascot-select-avatar">
-                    <div class="mascot-select-info">
-                        <div class="mascot-select-name">Trader</div>
-                        <div class="mascot-select-track">Lướt Sóng & Phái Sinh</div>
-                    </div>
+            <div class="form-group" style="margin-bottom: 22px;">
+                <label for="studentEmail" style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+                    <span>Email Học Viên / Thực Tập Sinh</span>
+                    <span style="font-size: 11.5px; font-weight: 500; color: var(--kb-yellow-dark);">*Gửi qua Email</span>
+                </label>
+                <input type="email" id="studentEmail" class="form-control" placeholder="nhap.email.hocvien@kbsv.com.vn" style="padding: 13px 16px; font-size: 14.5px; border-radius: 12px; border: 1px solid var(--border); transition: all 0.2s;" required>
+                
+                <!-- Quick Fill Chips -->
+                <div style="margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Gợi ý nhập nhanh:</span>
+                    <button type="button" onclick="fillQuickEmail('fresher.ho3@kbsv.com.vn')" style="background: var(--kb-yellow-light); border: 1px solid rgba(245, 166, 35, 0.4); color: var(--kb-brown-dark); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                        ⚡ fresher.ho3@kbsv.com.vn
+                    </button>
+                    <button type="button" onclick="fillQuickEmail('koc.nextgen@finpeace.cloud')" style="background: #EBF5FF; border: 1px solid #BEE3F8; color: #2B6CB0; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                        ✨ koc.nextgen@finpeace.cloud
+                    </button>
                 </div>
             </div>
-        </div>
 
-        <button class="btn-primary" style="width:100%; justify-content:center; padding: 14px 0; font-size: 15px; font-weight: 700; border-radius: 12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);" onclick="simulateMagicLinkLogin()">
-            🚀 Nhận Magic Link & Vào Học Ngay →
-        </button>
-        <div style="text-align: center; margin-top: 14px;">
-            <button type="button" onclick="goHome()" style="background: none; border: none; font-size: 13px; color: var(--text-secondary); text-decoration: underline; cursor: pointer;">
-                ← Quay lại Trang Chủ
+            <div class="form-group" style="margin-bottom: 24px;">
+                <label style="font-weight: 700; font-size: 13.5px; color: var(--text-primary); margin-bottom: 10px; display: block;">
+                    Lựa Chọn Mascot Đồng Hành (Advisory Track)
+                </label>
+                <div class="mascot-select-grid">
+                    <div class="mascot-select-card active" onclick="selectMascot('flexi', this)">
+                        <img src="../assets/mascot/flexi/light/Mascot app Flexi_flexi original 1.png" alt="Flexi Mascot" class="mascot-select-avatar">
+                        <div class="mascot-select-info">
+                            <div class="mascot-select-name">Flexi</div>
+                            <div class="mascot-select-track">Content KOC</div>
+                        </div>
+                    </div>
+                    <div class="mascot-select-card" onclick="selectMascot('investor', this)">
+                        <img src="../assets/mascot/investor/light/Mascot app Investor_investor original-01.png" alt="Investor Mascot" class="mascot-select-avatar">
+                        <div class="mascot-select-info">
+                            <div class="mascot-select-name">Investor</div>
+                            <div class="mascot-select-track">Tích Sản SIP</div>
+                        </div>
+                    </div>
+                    <div class="mascot-select-card" onclick="selectMascot('trader', this)">
+                        <img src="../assets/mascot/trader/light/Mascot app Trader_trader original-01.png" alt="Trader Mascot" class="mascot-select-avatar">
+                        <div class="mascot-select-info">
+                            <div class="mascot-select-name">Trader</div>
+                            <div class="mascot-select-track">Lướt Sóng & Phái Sinh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="width:100%; justify-content:center; padding: 14px 0; font-size: 15px; font-weight: 700; border-radius: 12px; box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);" onclick="sendMagicLinkEmail()">
+                ✉️ Gửi Link Đăng Nhập Magic Link Qua Email →
             </button>
+            <div style="text-align: center; margin-top: 14px;">
+                <button type="button" onclick="goHome()" style="background: none; border: none; font-size: 13px; color: var(--text-secondary); text-decoration: underline; cursor: pointer;">
+                    ← Quay lại Trang Chủ
+                </button>
+            </div>
+        </div>
+
+        <!-- STEP 2: MAGIC LINK SENT CONFIRMATION & SIMULATED INBOX -->
+        <div id="magicSentBox" style="display: none; text-align: center;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: #FEF3C7; border: 2px solid #F5A623; color: #D97706; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 28px;">
+                ✉️
+            </div>
+            
+            <div class="landing-badge" style="margin: 0 auto 10px; font-size: 11px; padding: 4px 14px; background: #ECFDF5; color: #059669; border-color: #A7F3D0;">
+                MAGIC LINK SENT TO EMAIL
+            </div>
+            
+            <h2 style="font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">ĐÃ GỬI LINK ĐĂNG NHẬP VÀO HỘP THƯ!</h2>
+            
+            <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 20px;">
+                Hệ thống đã gửi 1 email chứa <strong>Magic Link xác thực</strong> đến địa chỉ:<br>
+                <span id="targetSentEmail" style="font-weight: 800; color: var(--kb-brown-dark); background: var(--kb-yellow-light); padding: 3px 12px; border-radius: 6px; display: inline-block; margin-top: 4px;">fresher.ho3@kbsv.com.vn</span>
+            </p>
+
+            <!-- SIMULATED EMAIL INBOX PREVIEW BOX -->
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; text-align: left; margin-bottom: 22px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);">
+                <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E2E8F0; padding-bottom: 10px; margin-bottom: 12px;">
+                    <div style="font-size: 12.5px; font-weight: 700; color: #475569; display: flex; align-items: center; gap: 6px;">
+                        <span>📨 Hộp thư Email của bạn (Simulated Inbox):</span>
+                    </div>
+                    <span style="font-size: 11px; background: #E2E8F0; color: #475569; padding: 2px 8px; border-radius: 10px; font-weight: 600;">Vừa xong</span>
+                </div>
+
+                <div style="font-size: 13.5px; font-weight: 800; color: #1E293B; margin-bottom: 4px;">
+                    [KBSV NextGen 2026] Magic Link Đăng Nhập Cổng Học Tập LMS
+                </div>
+                <div style="font-size: 12px; color: #64748B; margin-bottom: 12px;">
+                    Từ: <strong>no-reply@nextgen.finpeace.cloud</strong>
+                </div>
+
+                <div style="font-size: 13px; color: #334155; line-height: 1.5; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 10px; padding: 14px;">
+                    Chào bạn! Nhấn vào nút bên dưới để xác thực và truy cập trực tiếp vào Lộ trình Thực chiến 42 Ngày của KBSV NextGen:<br><br>
+                    
+                    <a id="simulatedMagicUrlBtn" href="#" onclick="consumeSimulatedMagicLink(event)" style="display: block; width: 100%; text-align: center; background: linear-gradient(135deg, #F5A623 0%, #E09000 100%); color: #ffffff; font-weight: 800; font-size: 14px; padding: 13px 0; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 14px rgba(245, 166, 35, 0.4);">
+                        👉 CLICK ĐỂ ĐĂNG NHẬP VÀO LỘ TRÌNH 42 NGÀY
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+                <button type="button" onclick="resetLoginForm()" style="background: none; border: none; font-size: 13px; color: var(--text-secondary); text-decoration: underline; cursor: pointer;">
+                    ← Nhập lại Email khác
+                </button>
+            </div>
         </div>
     </section>
 
@@ -3036,7 +3089,42 @@
             const interval = setInterval(update, 1000);
         }
 
+        let activeGeneratedToken = null;
+        let activeGeneratedEmail = null;
+        let activeGeneratedMascot = null;
+
         function checkSavedUser() {
+            // Check for magic_token in URL query parameters (e.g. from actual email link click)
+            const urlParams = new URLSearchParams(window.location.search);
+            const tokenParam = urlParams.get('magic_token') || urlParams.get('token');
+            const emailParam = urlParams.get('email');
+            const mascotParam = urlParams.get('mascot');
+            
+            if (tokenParam && emailParam) {
+                currentUser = emailParam;
+                selectedMascotType = mascotParam || "flexi";
+                
+                localStorage.setItem('nextgen_user', currentUser);
+                localStorage.setItem('nextgen_mascot', selectedMascotType);
+                
+                const savedDay = localStorage.getItem('nextgen_sim_day');
+                if (!savedDay) {
+                    currentSimulatedDay = 1;
+                    currentXP = 0;
+                    completedDays = {};
+                    localStorage.setItem('nextgen_sim_day', currentSimulatedDay);
+                    localStorage.setItem('nextgen_xp', currentXP);
+                    localStorage.setItem('nextgen_completed_days', JSON.stringify(completedDays));
+                }
+                
+                try {
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                } catch(e) {}
+                
+                triggerDashboardView();
+                return;
+            }
+
             const savedUser = localStorage.getItem('nextgen_user');
             const savedMascot = localStorage.getItem('nextgen_mascot');
             const savedDay = localStorage.getItem('nextgen_sim_day');
@@ -3063,7 +3151,8 @@
                     card.classList.remove('active');
                 });
                 const cardIndex = selectedMascotType === 'flexi' ? 0 : (selectedMascotType === 'investor' ? 1 : 2);
-                document.querySelectorAll('.mascot-select-card')[cardIndex].classList.add('active');
+                const cards = document.querySelectorAll('.mascot-select-card');
+                if (cards[cardIndex]) cards[cardIndex].classList.add('active');
 
                 triggerDashboardView();
             } else {
@@ -3125,7 +3214,7 @@
             }
         }
 
-        function simulateMagicLinkLogin() {
+        function sendMagicLinkEmail() {
             const emailInput = document.getElementById('studentEmail');
             const email = emailInput ? emailInput.value.trim() : '';
             if (!email || !email.includes('@')) {
@@ -3133,7 +3222,31 @@
                 return;
             }
             
-            currentUser = email;
+            activeGeneratedEmail = email;
+            activeGeneratedMascot = selectedMascotType;
+            activeGeneratedToken = `magic_jwt_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
+            
+            const magicUrl = `${window.location.origin}${window.location.pathname}?magic_token=${activeGeneratedToken}&email=${encodeURIComponent(email)}&mascot=${selectedMascotType}`;
+            
+            const targetEl = document.getElementById('targetSentEmail');
+            if (targetEl) targetEl.innerText = email;
+            
+            const btn = document.getElementById('simulatedMagicUrlBtn');
+            if (btn) {
+                btn.href = magicUrl;
+            }
+            
+            document.getElementById('loginFormBox').style.display = 'none';
+            document.getElementById('magicSentBox').style.display = 'block';
+        }
+
+        function consumeSimulatedMagicLink(event) {
+            if (event) event.preventDefault();
+            if (!activeGeneratedEmail) return;
+            
+            currentUser = activeGeneratedEmail;
+            selectedMascotType = activeGeneratedMascot || 'flexi';
+            
             localStorage.setItem('nextgen_user', currentUser);
             localStorage.setItem('nextgen_mascot', selectedMascotType);
             
@@ -3149,7 +3262,13 @@
                 currentSimulatedDay = parseInt(savedDay);
             }
             
+            resetLoginForm();
             triggerDashboardView();
+        }
+
+        function resetLoginForm() {
+            document.getElementById('loginFormBox').style.display = 'block';
+            document.getElementById('magicSentBox').style.display = 'none';
         }
 
         function logout() {
