@@ -301,14 +301,15 @@ ul {
 /* ── Scroll Reveal ── */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
 
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* ── Section Shared ── */
 .section {
@@ -803,6 +804,19 @@ ul {
     top: -8%;
     left: 12%;
     animation-delay: 2.2s;
+}
+
+.stat-bubble-5 {
+    top: 38%;
+    right: -8%;
+    animation-delay: 0.8s;
+}
+
+.stat-number-income {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--kb-yellow-dark);
 }
 
 .stat-bubble.highlight {
@@ -2312,12 +2326,13 @@ ul {
 
     .nav-menu {
         display: none;
+        /* Dùng position:absolute để tránh iOS Safari stacking bug với backdrop-filter trên .navbar */
         position: absolute;
         top: 72px;
         left: 0;
         right: 0;
         height: calc(100vh - 72px);
-        background: rgba(255, 255, 255, 0.98); /* Light backdrop matching landing page */
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
@@ -2325,8 +2340,9 @@ ul {
         justify-content: flex-start;
         gap: 0;
         padding: 30px 24px;
-        z-index: 1000;
+        z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.05);
+        overflow-y: auto;
     }
 
     .nav-menu li {
