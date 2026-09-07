@@ -2280,6 +2280,7 @@
         <ul class="npv-nav-links">
             <li><a href="https://nextgen.finpeace.cloud/" class="npv-nav-link active" id="navHomeLink">Trang chủ</a></li>
             <li><a href="javascript:void(0)" class="npv-nav-link" id="navRoadmapLink" onclick="accessRoadmap()">Lộ trình 42 ngày</a></li>
+            <li><a href="/dashboard" class="npv-nav-link" id="navDashboardLink" style="color:var(--kb-yellow-dark, #F5A623); font-weight:700;">📊 Dashboard Quản Trị</a></li>
         </ul>
 
         <div style="display: flex; align-items: center; gap: 14px;">
@@ -4681,6 +4682,22 @@
             const fn = getMascotFilename(selectedMascotType, stateName);
             widgetImg.src = `../assets/mascot/${selectedMascotType}/light/${fn}`;
         }
+
+        // Live Activity Tracking Helper for Dashboard
+        function trackNextGenActivity(actionText, typeText = "access") {
+            try {
+                const user = (typeof currentUser !== 'undefined' && currentUser) || localStorage.getItem('nextgen_user') || 'Phan Thanh Tùng (Học Viên)';
+                const now = new Date();
+                const timeStr = now.toTimeString().split(' ')[0];
+                const logs = JSON.parse(localStorage.getItem('nextgen_activity_logs')) || [];
+                logs.unshift({ time: timeStr, user: user, action: actionText, type: typeText });
+                if (logs.length > 50) logs.pop();
+                localStorage.setItem('nextgen_activity_logs', JSON.stringify(logs));
+            } catch(e) {
+                console.error("Tracking error", e);
+            }
+        }
+        trackNextGenActivity("Truy cập hệ thống LMS (Session Active)", "access");
     </script>
 </body>
 </html>

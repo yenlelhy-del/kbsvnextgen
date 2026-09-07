@@ -8,8 +8,17 @@
 ## Brand Rules
 - **Bảng màu chính:** Yellow `#F5A623`, Brown `#8B7355`, Warm Background `#FAFAF7`
 - **Typography:** `Space Grotesk` (Display), `Inter` (Body)
-- **Logo format:** "KBSV NextGen 2026 · FinPeace × KB Securities Vietnam"
+- **Logo format:** "KBSV NextGen 2026 · FinPeace × KB Securities Vietnam" (Logo FinPeace bên TRÁI, KBSV bên PHẢI)
 - **Tone of voice:** Chuyên nghiệp nhưng gần gũi Gen Z, truyền cảm hứng, thực chiến
+
+## Poster & Banner Design Rules (Quy chuẩn Thiết kế Ấn phẩm)
+- **Logo Header:** Logo FinPeace ở bên trái ➔ Vạch phân cách ➔ Logo KB Securities Vietnam ở bên phải.
+- **Mascot:** Sử dụng Mascot Flexi chính thức (`assets/mascot/flexi-official-ok.png`, `assets/mascot/flexi-official-haohuc.png`), kích thước phóng to nổi bật (`280px-290px`), nhúng trực tiếp **Base64 Data URI** vào HTML để chống hỏng ảnh.
+- **Graphic Icons:** KHÔNG DÙNG emoji AI/hệ thống. Thay thế 100% bằng bộ SVG Vector Motion Graphic Icons đồng bộ.
+- **Địa điểm chuẩn:** `Sở Giao dịch 3 — Tầng 16, Tháp 2, Capital Place, 29 Liễu Giai, Hà Nội`.
+- **Dress Code chuẩn:** Trang phục lịch sự (Ưu tiên **Trắng & Vàng**).
+- **Thông tin liên hệ chân trang:** Link/QR Zalo Group (`https://zalo.me/g/bgdg5wdypeno2kcefxoh`) + Website (`nextgen.finpeace.cloud`).
+- **Slogan cố định:** *"Chủ động gia nhập Thế hệ Tư vấn - Môi giới Không Giới Hạn"*.
 
 ## Content Rules
 - Tất cả nội dung đào tạo phải theo framework 42 ngày (2 tuần học + 4 tuần thực chiến)
@@ -27,5 +36,5 @@
 
 ## File Conventions
 - Tài liệu in PDF: file HTML print-only (không JS interactive, không localhost link)
-- Web pages: match branding `nextgen.finpeace.cloud`
+- Web pages / Posters: match branding `nextgen.finpeace.cloud`
 - Mã mẫu tài liệu: `NTD-SV-XX` (tuyển dụng), `PV-SV-XX` (phỏng vấn), `DT-XX` (đào tạo)

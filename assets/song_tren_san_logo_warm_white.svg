@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="2000" height="2000">
+  <!-- Background: Warm White #FAFAF7 -->
+  <rect width="1000" height="1000" fill="#FAFAF7"/>
+  
+  <g transform="translate(500, 500)" text-anchor="middle" dominant-baseline="central">
+    <!-- Solid Green Candlestick Body Block above 'ố' -->
+    <!-- Candlestick Wick Top & Bottom -->
+    <line x1="-215" y1="-140" x2="-215" y2="-45" stroke="#00E676" stroke-width="12" stroke-linecap="round"/>
+    <!-- Candlestick Body Solid Block -->
+    <rect x="-238" y="-120" width="46" height="70" fill="#00E676" rx="6"/>
+
+    <!-- Typo Text 'sốngtrênsàn' -->
+    <text y="40" font-family="'Space Grotesk', 'Inter', 'Helvetica Neue', sans-serif">
+      <tspan font-weight="900" font-size="120" fill="#0D1B2A" letter-spacing="-3">sống</tspan>
+      <tspan font-weight="300" font-size="120" fill="#0D1B2A" letter-spacing="-1">trênsàn</tspan>
+    </text>
+  </g>
+</svg>

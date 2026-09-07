@@ -1,6 +1,8 @@
 {
   "cleanUrls": true,
   "rewrites": [
+    { "source": "/dashboard", "destination": "/dashboard.html" },
+    { "source": "/dashboard/(.*)", "destination": "/dashboard.html" },
     { "source": "/lms", "destination": "/web/pages/learning_hub.html" },
     { "source": "/lms/(.*)", "destination": "/web/pages/learning_hub.html" },
     { "source": "/learning_hub", "destination": "/web/pages/learning_hub.html" },

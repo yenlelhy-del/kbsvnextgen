@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="2000" height="700">
+  <!-- Master Logo Dark Transparent Background -->
+  <g transform="translate(500, 175)" text-anchor="middle" dominant-baseline="central">
+    <line x1="-215" y1="-120" x2="-215" y2="-35" stroke="#00E676" stroke-width="12" stroke-linecap="round"/>
+    <rect x="-238" y="-102" width="46" height="62" fill="#00E676" rx="6"/>
+    <text y="30" font-family="'Space Grotesk', 'Inter', 'Arial', sans-serif">
+      <tspan font-weight="900" font-size="120" fill="#0D1B2A" letter-spacing="-3">sống</tspan>
+      <tspan font-weight="300" font-size="120" fill="#0D1B2A" letter-spacing="-1">trênsàn</tspan>
+    </text>
+  </g>
+</svg>
