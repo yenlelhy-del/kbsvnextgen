@@ -1,55 +1,35 @@
 /**
- * KBSV NextGen 2026 — Lead Registration Apps Script
+ * KBSV NextGen 2026 — Lead Registration
+ * Script này GẮN với Sheet → dùng getActiveSpreadsheet() → ít quyền hơn
  * 
- * Sheet ID: 109OqvACskjNnSTP98aGbCJg-JInBLzLEue-r7JyYlwI
- * Sheet GID: 56723235
- * 
- * HƯỚNG DẪN DEPLOY:
- * 1. Mở Google Sheet: https://docs.google.com/spreadsheets/d/109OqvACskjNnSTP98aGbCJg-JInBLzLEue-r7JyYlwI/edit
- * 2. Vào Extensions → Apps Script
- * 3. Xóa code mặc định, paste toàn bộ code này vào
- * 4. Bấm Deploy → New deployment
- *    - Type: Web app
- *    - Execute as: Me
- *    - Who has access: Anyone
- * 5. Bấm Deploy → Copy URL mới
- * 6. Gửi URL đó cho mình để cập nhật vào script.js
+ * CHỈ CẦN LÀM 1 BƯỚC:
+ * → Bấm nút ▶️ Run (chọn function doGet) → Accept permissions → XONG
  */
-
-const SHEET_ID = '109OqvACskjNnSTP98aGbCJg-JInBLzLEue-r7JyYlwI';
-const SHEET_GID = 56723235;
-
-function getTargetSheet() {
-  const ss = SpreadsheetApp.openById(SHEET_ID);
-  const sheets = ss.getSheets();
-  for (let i = 0; i < sheets.length; i++) {
-    if (sheets[i].getSheetId() === SHEET_GID) {
-      return sheets[i];
-    }
-  }
-  return ss.getSheets()[0];
-}
 
 function doPost(e) {
   try {
-    const sheet = getTargetSheet();
-    const params = e.parameter;
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sheets = ss.getSheets();
+    var sheet = null;
+    
+    for (var i = 0; i < sheets.length; i++) {
+      if (sheets[i].getSheetId() === 56723235) {
+        sheet = sheets[i];
+        break;
+      }
+    }
+    if (!sheet) sheet = sheets[0];
+    
+    var params = e.parameter;
 
     if (sheet.getLastRow() === 0) {
       sheet.appendRow([
-        'Timestamp',
-        'Họ và tên',
-        'Số điện thoại',
-        'Email',
-        'Trường Đại học',
-        'Năm học',
-        'Link Social',
-        'Lý do tham gia',
-        'Nguồn'
+        'Timestamp', 'Họ và tên', 'Số điện thoại', 'Email',
+        'Trường Đại học', 'Năm học', 'Link Social', 'Lý do tham gia', 'Nguồn'
       ]);
     }
 
-    let yearLabel = params.year || '';
+    var yearLabel = params.year || '';
     if (yearLabel === '3') yearLabel = 'Năm 3';
     else if (yearLabel === '4') yearLabel = 'Năm 4';
     else if (yearLabel === 'graduated') yearLabel = 'Đã tốt nghiệp';
@@ -67,18 +47,17 @@ function doPost(e) {
     ]);
 
     return ContentService
-      .createTextOutput(JSON.stringify({ status: 'ok', message: 'Lead saved' }))
+      .createTextOutput(JSON.stringify({status:'ok'}))
       .setMimeType(ContentService.MimeType.JSON);
-
   } catch (err) {
     return ContentService
-      .createTextOutput(JSON.stringify({ status: 'error', message: err.toString() }))
+      .createTextOutput(JSON.stringify({status:'error', msg: err.toString()}))
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
 
 function doGet(e) {
   return ContentService
-    .createTextOutput(JSON.stringify({ status: 'ok', message: 'KBSV NextGen Lead API is running' }))
+    .createTextOutput(JSON.stringify({status:'ok', message:'KBSV NextGen Lead API running'}))
     .setMimeType(ContentService.MimeType.JSON);
 }

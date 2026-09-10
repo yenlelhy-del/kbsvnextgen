@@ -4,7 +4,7 @@
    ============================================ */
 
 // Cấu hình URL Web App Google Apps Script nhận Leads (Để trống nếu chạy mô phỏng local)
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwLRpHB4Gzi78BWY434oGP-loDcdQMimARZcL5Sho5dKBAiDSBtNiTuKh70CaFdz2mYA/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyUs2YcmzOwJdw3vBwX0GEAbYBPSGxUvOqJC7irbAYPp6OmHq5_xj-NhUuzlxLJY4Fp-g/exec';
 
 
 document.addEventListener('DOMContentLoaded', () => {
