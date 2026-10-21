@@ -37,5 +37,12 @@
       "source": "/interview",
       "destination": "/web/pages/interview_evaluation.html"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/leaderboard",
+      "permanent": false
+    }
   ]
 }
