@@ -41,10 +41,24 @@ export default async function handler(req, res) {
       headers: { Accept: 'application/json' },
       signal: AbortSignal.timeout(12000)
     });
-    if (!response.ok) throw new Error('Apps Script returned HTTP ' + response.status);
+    if (!response.ok) {
+      const status = response.status;
+      const authPage = [401, 403].includes(status);
+      const error = new Error('Apps Script returned HTTP ' + status);
+      error.code = authPage ? 'SCRIPT_ACCESS_DENIED' : 'SCRIPT_HTTP_' + status;
+      throw error;
+    }
+    const mime = (response.headers.get('content-type') || '').toLowerCase();
+    if (!mime.includes('json')) {
+      const error = new Error('Apps Script returned a non-JSON response');
+      error.code = mime.includes('html') ? 'SCRIPT_RETURNED_HTML' : 'SCRIPT_INVALID_CONTENT_TYPE';
+      throw error;
+    }
     const data = await response.json();
     if (data.success !== true || !Array.isArray(data.leaderboard)) {
-      throw new Error('Apps Script output is not a valid leaderboard');
+      const error = new Error('Apps Script returned invalid data');
+      error.code = data.success === false ? 'SCRIPT_EXECUTION_ERROR' : 'SCRIPT_INVALID_FORMAT';
+      throw error;
     }
     const leaderboard = data.leaderboard
       .map(publicMember)
@@ -64,9 +78,11 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('NextGen Apps Script bridge:', error.message);
     res.setHeader('Cache-Control', 'no-store');
+    const code = error.code || (error.name === 'TimeoutError' ? 'SCRIPT_TIMEOUT' : 'SCRIPT_FETCH_ERROR');
     res.status(503).json({
       success: false,
-      error: 'Nguồn dữ liệu NextGen chưa sẵn sàng. Kiểm tra quyền triển khai Apps Script.'
+      code,
+      error: 'Không tải được dữ liệu từ Apps Script. Kiểm tra quyền Web app và quyền truy cập Google Sheets.'
     });
   }
 }
