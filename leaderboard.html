@@ -80,9 +80,19 @@ function mobileRender(){
 }
 function openSheet(p){
  focusBefore=document.activeElement;activeMember=p.name;
- const hist=p.history||[],mx=Math.max(1,...hist.map(x=>Number(x.points)||0));
+ const hist=Array.isArray(p.history)?p.history:[], active=hist.filter(h=>Number(h.points)>0);
+ const best=active.reduce((a,b)=>Number(b.points)>Number(a.points||0)?b:a,{date:'',points:0});
+ const mx=Math.max(1,...hist.map(x=>Number(x.points)||0));
  const bars=hist.length?hist.slice(-30).map(x=>'<span class="sheet-chart-bar" title="'+safe(x.date)+': '+fmt(x.points)+' điểm" style="height:'+Math.max(4,Math.round((Number(x.points)||0)/mx*110))+'px"></span>').join(''):'<span class="sheet-chart-empty">Chưa có dữ liệu tiến độ</span>';
- sheet.innerHTML='<div class="sheet-handle"></div><div class="sheet-actions"><h2>'+safe(p.name)+'</h2><button type="button" class="sheet-close" id="sheet-close" aria-label="Đóng hồ sơ">✕</button></div><span class="sheet-rank">THỨ HẠNG #'+p.rank+'</span><div class="sheet-summary"><strong>'+fmt(p.points)+'</strong><span>điểm tích lũy</span></div><div class="detailgrid">'+[['Điểm hôm nay',p.todayPoints||0],['Livestream',p.live],['Views live',p.liveViews],['Clip TikTok',p.clips],['Views clip',p.clipViews],['Follow mới',p.followers]].map(v=>'<div><small>'+v[0]+'</small><strong>'+fmt(v[1])+'</strong></div>').join('')+'</div><h3>Tiến độ 30 ngày gần nhất có dữ liệu</h3><div class="sheet-chart" role="img" aria-label="Biểu đồ điểm từng ngày">'+bars+'</div><p class="note">Chạm vào cột để xem ngày và điểm.</p>';
+ const metrics=[['Điểm hôm nay',p.todayPoints||0],['Số ngày ghi điểm',active.length],['Livestream',p.live],['Views live',p.liveViews],['Clip TikTok',p.clips],['Views clip',p.clipViews],['Follow mới',p.followers]];
+ if(p.liveLikes!=null)metrics.push(['Likes livestream',p.liveLikes]);
+ if(p.clipLikes!=null)metrics.push(['Likes TikTok',p.clipLikes]);
+ if(p.viralClips!=null)metrics.push(['Clip viral',p.viralClips]);
+ if(p.liveMinutes!=null)metrics.push(['Thời lượng live (phút)',p.liveMinutes]);
+ if(p.accountsOpened!=null)metrics.push(['Tài khoản mở mới',p.accountsOpened]);
+ const bestText=best.date?'<p class="note">Ngày ghi điểm cao nhất: <strong>'+safe(best.date)+'</strong> · <strong>'+fmt(best.points)+' điểm</strong></p>':'';
+ const breakdown=p.scoreBreakdown?'<p class="note">Điểm từ Livestream: <strong>'+fmt(p.scoreBreakdown.livestream)+'</strong> · Điểm từ TikTok: <strong>'+fmt(p.scoreBreakdown.tiktok)+'</strong></p>':'';
+ sheet.innerHTML='<div class="sheet-handle"></div><div class="sheet-actions"><h2>'+safe(p.name)+'</h2><button type="button" class="sheet-close" id="sheet-close" aria-label="Đóng hồ sơ">✕</button></div><span class="sheet-rank">THỨ HẠNG #'+p.rank+'</span><div class="sheet-summary"><strong>'+fmt(p.points)+'</strong><span>điểm tích lũy</span></div><div class="detailgrid">'+metrics.map(v=>'<div><small>'+v[0]+'</small><strong>'+fmt(v[1])+'</strong></div>').join('')+'</div><h3>Tiến độ 30 ngày gần nhất có dữ liệu</h3><div class="sheet-chart" role="img" aria-label="Biểu đồ điểm từng ngày">'+bars+'</div>'+bestText+breakdown+'<p class="note">Chạm vào cột để xem ngày và điểm. Chỉ hiển thị các chỉ số được nguồn dữ liệu cung cấp.</p>';
  sheet.classList.add('open');backdrop.classList.add('open');document.body.style.overflow='hidden';sheet.focus();
  document.getElementById('sheet-close').onclick=closeSheet;
 }
