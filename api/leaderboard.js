@@ -23,6 +23,15 @@ function publicMember(member) {
     clips: numeric(member.clips),
     clipViews: numeric(member.clipViews),
     followers: numeric(member.followers),
+    // Optional metrics: available after the Apps Script source is upgraded.
+    liveLikes: member.liveLikes == null ? null : numeric(member.liveLikes),
+    clipLikes: member.clipLikes == null ? null : numeric(member.clipLikes),
+    viralClips: member.viralClips == null ? null : numeric(member.viralClips),
+    liveMinutes: member.liveMinutes == null ? null : numeric(member.liveMinutes),
+    accountsOpened: member.accountsOpened == null ? null : numeric(member.accountsOpened),
+    scoreBreakdown: member.scoreBreakdown && typeof member.scoreBreakdown === 'object'
+      ? { livestream: numeric(member.scoreBreakdown.livestream), tiktok: numeric(member.scoreBreakdown.tiktok) }
+      : null,
     history: history.slice(-120).filter(item => /^\d{4}-\d{2}-\d{2}$/.test(String(item.date || '')))
       .map(item => ({ date: String(item.date), points: numeric(item.points) }))
   };
