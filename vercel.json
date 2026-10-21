@@ -1,13 +1,48 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/dashboard", "destination": "/dashboard.html" },
-    { "source": "/dashboard/(.*)", "destination": "/dashboard.html" },
-    { "source": "/lms", "destination": "/web/pages/learning_hub.html" },
-    { "source": "/lms/(.*)", "destination": "/web/pages/learning_hub.html" },
-    { "source": "/learning_hub", "destination": "/web/pages/learning_hub.html" },
-    { "source": "/poster", "destination": "/web/pages/poster.html" },
-    { "source": "/mobile_post", "destination": "/web/pages/mobile_post.html" },
-    { "source": "/interview", "destination": "/web/pages/interview_evaluation.html" }
+    {
+      "source": "/leaderboard",
+      "destination": "/leaderboard.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/dashboard/(.*)",
+      "destination": "/dashboard.html"
+    },
+    {
+      "source": "/lms",
+      "destination": "/web/pages/learning_hub.html"
+    },
+    {
+      "source": "/lms/(.*)",
+      "destination": "/web/pages/learning_hub.html"
+    },
+    {
+      "source": "/learning_hub",
+      "destination": "/web/pages/learning_hub.html"
+    },
+    {
+      "source": "/poster",
+      "destination": "/web/pages/poster.html"
+    },
+    {
+      "source": "/mobile_post",
+      "destination": "/web/pages/mobile_post.html"
+    },
+    {
+      "source": "/interview",
+      "destination": "/web/pages/interview_evaluation.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/leaderboard",
+      "permanent": false
+    }
   ]
 }
