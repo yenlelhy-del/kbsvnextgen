@@ -37,6 +37,24 @@ html{scroll-behavior:smooth}button,input{font:inherit}button{min-height:44px}
 }
 @media(min-width:701px){.sheet-backdrop,.member-sheet{display:none!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mobile-card:active{transform:none}}
+
+/* v3: scan-first compact leaderboard. One participant per line. */
+@media(max-width:700px){
+ .panel{margin-bottom:12px}
+ .mobile-list{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+ .mobile-card{display:flex;align-items:center;gap:10px;min-height:61px;padding:10px 11px;margin:0;border:0;border-bottom:1px solid #eeeae3;border-radius:0;box-shadow:none}
+ .mobile-card:last-child{border-bottom:0}
+ .mobile-card:nth-child(even){background:#fcfbf8}
+ .mobile-rank{width:36px;height:36px;flex:0 0 36px;border-radius:10px;font-size:13px}
+ .mobile-person{flex:1;min-width:0;text-align:left}
+ .mobile-person strong{font-size:13px;line-height:1.3;overflow-wrap:break-word}
+ .mobile-score{flex:0 0 auto;min-width:44px;text-align:right}
+ .mobile-score strong{font-size:18px;line-height:1.15}
+ .mobile-score small{font-size:9px;line-height:1.2}
+ .mobile-chevron{font-size:22px;line-height:1;color:#a8a093;padding:0 1px}
+ .section-title h2{font-size:21px}
+ .stats{margin:12px 0 16px}
+}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="/"><img src="/assets/KBSVNextGen-2026.png" alt="KBSV NextGen">NEXTGEN <span style="color:#cb890f">/ RISING STARS</span></a><a href="/" class="back">← Về trang chủ</a></div></header>
 <main class="wrap"><div class="hero"><div class="eyebrow">KBSV NEXTGEN 2026 · PERFORMANCE HUB</div><h1>THE <span>LEADERBOARD.</span></h1><p>Hành trình của mỗi ngôi sao được ghi nhận qua hành động. Theo dõi thứ hạng, điểm tích lũy và những dấu mốc tăng trưởng của bạn.</p><div class="status" id="status"><span class="dot"></span>Đang tải dữ liệu</div></div>
@@ -50,7 +68,15 @@ let activeMember=null,focusBefore=null;
 function mobileRender(){
  const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');
  const list=people.filter(p=>p.name.toLocaleLowerCase('vi').includes(q));
- mobileList.innerHTML=list.map(p=>'<button class="mobile-card" type="button" data-member="'+safe(p.name)+'" aria-label="Xem thành tích '+safe(p.name)+'"><div class="mobile-card-top"><span class="mobile-rank '+(p.rank===1?'gold':p.rank===2?'silver':p.rank===3?'bronze':'')+'">'+(p.rank===1?'🥇':p.rank===2?'🥈':p.rank===3?'🥉':'#'+p.rank)+'</span><span class="mobile-person"><strong>'+safe(p.name)+'</strong><small>Hạng #'+p.rank+' · Xem chi tiết ›</small></span><span class="mobile-score"><strong>'+fmt(p.points)+'</strong><small>điểm</small></span></div><div class="mobile-metrics"><div><span>Livestream</span><strong>'+fmt(p.live)+'</strong></div><div><span>Clip TikTok</span><strong>'+fmt(p.clips)+'</strong></div><div><span>Follow mới</span><strong>'+fmt(p.followers)+'</strong></div></div></button>').join('')||'<p class="skeleton">Không có thành viên phù hợp</p>';
+ mobileList.innerHTML=list.map(p=>
+  '<button class="mobile-card" type="button" data-member="'+safe(p.name)+'" aria-label="Xem chi tiết thành tích '+safe(p.name)+'">'+
+   '<span class="mobile-rank '+(p.rank===1?'gold':p.rank===2?'silver':p.rank===3?'bronze':'')+'">'+
+   (p.rank===1?'🥇':p.rank===2?'🥈':p.rank===3?'🥉':'#'+p.rank)+'</span>'+
+   '<span class="mobile-person"><strong>'+safe(p.name)+'</strong></span>'+
+   '<span class="mobile-score"><strong>'+fmt(p.points)+'</strong><small>điểm</small></span>'+
+   '<span class="mobile-chevron" aria-hidden="true">›</span>'+
+  '</button>'
+ ).join('')||'<p class="skeleton">Không có thành viên phù hợp</p>';
 }
 function openSheet(p){
  focusBefore=document.activeElement;activeMember=p.name;
