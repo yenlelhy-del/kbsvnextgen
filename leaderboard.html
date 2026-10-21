@@ -56,10 +56,31 @@ html{scroll-behavior:smooth}button,input{font:inherit}button{min-height:44px}
  .stats{margin:12px 0 16px}
 }
 @media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats .tile:last-child{grid-column:1/-1}}
+
+/* Category champions: compact and accessible on small screens */
+.category-panel{margin-bottom:20px}.category-panel .section-title{margin-bottom:12px}
+.category-tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 10px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.category-tab{flex:none;min-height:38px;border:1px solid var(--line);background:#f8f6f0;color:#4d493f;border-radius:999px;font-size:12px;font-weight:700;padding:8px 13px;white-space:nowrap;scroll-snap-align:start}
+.category-tab[aria-selected="true"]{color:#382400;background:#ffe6a9;border-color:#f1c56e}
+.category-results{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.category-row{width:100%;min-height:58px;display:flex;align-items:center;gap:11px;text-align:left;padding:11px 14px;border:0;border-bottom:1px solid #f0ece4;border-radius:0;background:#fff;color:var(--ink)}
+.category-row:last-child{border-bottom:0}.category-row:hover{background:#fffaf0}.category-row:focus-visible,.category-tab:focus-visible{outline:3px solid var(--yellow);outline-offset:-3px}
+.category-medal{width:29px;flex:0 0 29px;text-align:center;font-size:20px}
+.category-name{font-size:13px;font-weight:700;flex:1;min-width:0;line-height:1.35}
+.category-value{font:700 19px 'Space Grotesk',sans-serif;color:#9b6907;white-space:nowrap;text-align:right}
+.category-value small{font:500 10px Inter,sans-serif;color:var(--muted);display:block;margin-top:2px}
+.category-empty{padding:22px 15px;font-size:13px;color:var(--muted);text-align:center}
+@media(max-width:700px){.category-panel{margin-bottom:17px}.category-panel h2{font-size:21px}.category-row{min-height:55px;padding:10px 12px}.category-name{font-size:12.5px}.category-value{font-size:17px}.category-tab{font-size:12px}}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="/"><img src="/assets/KBSVNextGen-2026.png" alt="KBSV NextGen">NEXTGEN <span style="color:#cb890f">/ RISING STARS</span></a><a href="/" class="back">← Về trang chủ</a></div></header>
 <main class="wrap"><div class="hero"><div class="eyebrow">KBSV NEXTGEN 2026 · PERFORMANCE HUB</div><h1>THE <span>LEADERBOARD.</span></h1><p>Hành trình của mỗi ngôi sao được ghi nhận qua hành động. Theo dõi thứ hạng, điểm tích lũy và những dấu mốc tăng trưởng của bạn.</p><div class="status" id="status"><span class="dot"></span>Đang tải dữ liệu</div></div>
 <div class="stats"><div class="tile"><small>Thành viên tham gia</small><strong id="total">—</strong></div><div class="tile"><small>Tổng điểm cộng đồng</small><strong id="sum">—</strong></div><div class="tile"><small>Tài khoản mở mới</small><strong id="accounts-total">—</strong></div><div class="tile"><small>Thời điểm đồng bộ</small><strong id="stamp" style="font-size:18px">—</strong></div></div>
+<section class="panel category-panel" aria-label="Top 3 theo hạng mục">
+ <div class="section-title"><h2>🌟 Top 3 theo hạng mục</h2></div>
+ <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Chọn hạng mục xếp hạng"></div>
+ <div class="category-results" id="category-results" role="tabpanel" aria-live="polite"><div class="category-empty">Đang tải thành tích…</div></div>
+ <p class="note" style="margin:9px 2px 0">Xếp hạng theo số liệu cộng dồn từ Google Sheets. Chạm tên để xem thành tích cá nhân.</p>
+ </section>
 <section class="panel"><div class="section-title"><h2>🏆 Bảng xếp hạng tổng</h2><input id="search" aria-label="Tìm thành viên" placeholder="Tìm tên thành viên…"></div><div id="mobile-list" class="mobile-list" aria-label="Danh sách xếp hạng học viên"></div><div class="tablewrap"><table><thead><tr><th>Hạng</th><th>Thành viên</th><th>Điểm</th><th>Livestream</th><th>Views live</th><th>Clip</th><th>Views clip</th><th>Follower mới</th><th>TK mở mới</th></tr></thead><tbody id="tbody"><tr><td colspan="9" class="skeleton">Đang kết nối dữ liệu Google Sheets…</td></tr></tbody></table></div><div id="detail" class="detail" aria-live="polite"></div></section>
 <p class="note">Thứ hạng được tính từ điểm quy đổi của các hoạt động livestream và clip TikTok trong bảng theo dõi. Dữ liệu cập nhật định kỳ; không công khai NAV, tiền nạp hoặc thông tin tài khoản khách hàng. Nếu một chỉ tiêu đang trống trong Google Sheets, dashboard hiển thị 0 thay vì suy đoán.</p></main><div id="sheet-backdrop" class="sheet-backdrop"></div><aside id="member-sheet" class="member-sheet" role="dialog" aria-modal="true" aria-label="Thành tích học viên" tabindex="-1"></aside><footer class="wrap">KBSV NEXTGEN 2026 · Powered by FinPeace</footer>
 <script>
@@ -102,9 +123,44 @@ mobileList.addEventListener('click',e=>{const button=e.target.closest('[data-mem
 backdrop.addEventListener('click',closeSheet);
 document.addEventListener('keydown',e=>{if(sheet.classList.contains('open')&&e.key==='Escape')closeSheet();});
 
+
+const categories=[
+ {key:'points',label:'Tổng điểm',unit:'điểm'},
+ {key:'live',label:'Số livestream',unit:'live'},
+ {key:'liveViews',label:'Views livestream',unit:'views'},
+ {key:'clips',label:'Số clip TikTok',unit:'clip'},
+ {key:'clipViews',label:'Views TikTok',unit:'views'},
+ {key:'followers',label:'Follower mới',unit:'follow'},
+ {key:'accountsOpened',label:'TK mở mới',unit:'TK'},
+ {key:'liveLikes',label:'Likes live',unit:'likes'},
+ {key:'clipLikes',label:'Likes TikTok',unit:'likes'},
+ {key:'viralClips',label:'Clip viral',unit:'clip'}
+];
+let chosenCategory='points';
+const catTabs=document.getElementById('category-tabs'),catResults=document.getElementById('category-results');
+catTabs.innerHTML=categories.map(c=>'<button type="button" class="category-tab" role="tab" aria-selected="'+(c.key===chosenCategory)+'" data-category="'+c.key+'">'+c.label+'</button>').join('');
+catTabs.addEventListener('click',e=>{const el=e.target.closest('[data-category]');if(!el)return;chosenCategory=el.dataset.category;renderCategories();});
+function renderCategories(){
+ catTabs.querySelectorAll('[data-category]').forEach(t=>t.setAttribute('aria-selected',String(t.dataset.category===chosenCategory)));
+ const c=categories.find(x=>x.key===chosenCategory)||categories[0];
+ // Missing fields are unavailable; do not turn missing data into zero.
+ const eligible=people.filter(p=>p[c.key]!=null&&Number.isFinite(Number(p[c.key])));
+ if(!eligible.length){
+   catResults.innerHTML='<div class="category-empty">Chỉ số này chưa được đồng bộ từ Apps Script. Sẽ hiển thị khi có dữ liệu chính thức.</div>';
+   return;
+ }
+ const top=eligible.slice().sort((a,b)=>Number(b[c.key])-Number(a[c.key])||Number(b.points)-Number(a.points)||a.name.localeCompare(b.name,'vi')).slice(0,3);
+ catResults.innerHTML=top.map((p,i)=>'<button type="button" class="category-row" data-top-member="'+safe(p.name)+'" aria-label="Xem thành tích '+safe(p.name)+'"><span class="category-medal">'+['🥇','🥈','🥉'][i]+'</span><span class="category-name">'+safe(p.name)+'</span><span class="category-value">'+fmt(p[c.key])+'<small>'+c.unit+'</small></span><span aria-hidden="true" style="color:#aaa">›</span></button>').join('');
+}
+catResults.addEventListener('click',e=>{
+ const btn=e.target.closest('[data-top-member]');if(!btn)return;
+ const p=people.find(p=>p.name===btn.dataset.topMember);if(!p)return;
+ if(window.matchMedia('(max-width:700px)').matches)openSheet(p);else show(p);
+});
+
 const fmt=n=>new Intl.NumberFormat('vi-VN').format(n||0);let people=[];
 const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function render(){mobileRender();const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');const rows=people.filter(x=>x.name.toLocaleLowerCase('vi').includes(q));document.getElementById('tbody').innerHTML=rows.map((p)=>'<tr data-name="'+safe(p.name)+'"><td class="rank">'+(p.rank===1?'🥇 ':p.rank===2?'🥈 ':p.rank===3?'🥉 ':'')+'#'+p.rank+'</td><td class="name">'+safe(p.name)+'</td><td class="points">'+fmt(p.points)+'</td><td>'+fmt(p.live)+'</td><td>'+fmt(p.liveViews)+'</td><td>'+fmt(p.clips)+'</td><td>'+fmt(p.clipViews)+'</td><td>'+fmt(p.followers)+'</td><td class="points">'+(p.accountsOpened==null?'—':fmt(p.accountsOpened))+'</td></tr>').join('')||'<tr><td colspan="9" class="skeleton">Không có thành viên phù hợp</td></tr>';}
+function render(){mobileRender();renderCategories();const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');const rows=people.filter(x=>x.name.toLocaleLowerCase('vi').includes(q));document.getElementById('tbody').innerHTML=rows.map((p)=>'<tr data-name="'+safe(p.name)+'"><td class="rank">'+(p.rank===1?'🥇 ':p.rank===2?'🥈 ':p.rank===3?'🥉 ':'')+'#'+p.rank+'</td><td class="name">'+safe(p.name)+'</td><td class="points">'+fmt(p.points)+'</td><td>'+fmt(p.live)+'</td><td>'+fmt(p.liveViews)+'</td><td>'+fmt(p.clips)+'</td><td>'+fmt(p.clipViews)+'</td><td>'+fmt(p.followers)+'</td><td class="points">'+(p.accountsOpened==null?'—':fmt(p.accountsOpened))+'</td></tr>').join('')||'<tr><td colspan="9" class="skeleton">Không có thành viên phù hợp</td></tr>';}
 function show(p){const h=p.history||[],mx=Math.max(1,...h.map(x=>x.points));const d=document.getElementById('detail');d.classList.add('open');d.innerHTML='<div class="section-title"><h2>'+safe(p.name)+' · Hạng #'+p.rank+'</h2><button id="close">Đóng</button></div><div class="detailgrid">'+[['Tổng điểm',p.points],['Livestream',p.live],['Clip TikTok',p.clips],['Follow mới',p.followers],['TK mở mới',p.accountsOpened == null ? '—' : p.accountsOpened]].map(([a,b])=>'<div><small>'+a+'</small><strong>'+fmt(b)+'</strong></div>').join('')+'</div><h3>Điểm theo ngày</h3><div class="hist">'+h.map(x=>'<div class="bar" title="'+safe(x.date)+': '+fmt(x.points)+' điểm" style="height:'+Math.max(4,Math.round(x.points/mx*85))+'px"></div>').join('')+'</div>'+(p.link?'<p><a target="_blank" rel="noopener noreferrer" href="'+safe(p.link)+'">Xem kênh chính thức ↗</a></p>':'');d.querySelector('#close').onclick=()=>d.classList.remove('open');d.scrollIntoView({behavior:'smooth',block:'nearest'});}
 document.getElementById('tbody').addEventListener('click',e=>{const tr=e.target.closest('tr[data-name]');if(tr){let p=people.find(x=>x.name===tr.dataset.name);if(p)show(p)}});
 document.getElementById('search').addEventListener('input',render);
