@@ -109,6 +109,8 @@ function collectNextGen() {
         p.clipViews+=number(r[3]);
         p.clipLikes+=number(r[4]);
         p.viralClips+=number(r[5]);
+        // TikTok column G also tracks newly opened accounts.
+        p.accountsOpened+=number(r[6]);
         p.scoreBreakdown.tiktok+=score;
       }
       p.points+=score;
