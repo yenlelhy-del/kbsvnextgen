@@ -173,7 +173,9 @@ document.getElementById('stamp').textContent=Number.isNaN(syncDate.getTime())?'�
 document.getElementById('stamp-time').textContent=Number.isNaN(syncDate.getTime())?'Chưa có thời điểm cập nhật':vnTime.format(syncDate)+' (GMT+7)';
 const historyDates=people.flatMap(p=>(p.history||[]).map(h=>h.date)).filter(d=>/^\\d{4}-\\d{2}-\\d{2}$/.test(d)).sort();
 const firstDay=historyDates[0];
-const endDay=Number.isNaN(syncDate.getTime())?null:new Intl.DateTimeFormat('en-CA',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).format(syncDate);
+const syncParts=Number.isNaN(syncDate.getTime())?[]:new Intl.DateTimeFormat('en-US',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).formatToParts(syncDate);
+const part=t=>syncParts.find(x=>x.type===t)?.value;
+const endDay=syncParts.length?part('year')+'-'+part('month')+'-'+part('day'):null;
 const asUTC=d=>Date.parse(d+'T00:00:00Z');
 const days=firstDay&&endDay?Math.floor((asUTC(endDay)-asUTC(firstDay))/86400000)+1:0;
 const displayDay=d=>d?d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(0,4):'—';
