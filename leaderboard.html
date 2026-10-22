@@ -231,15 +231,16 @@ const vnDate=new Intl.DateTimeFormat('vi-VN',{day:'2-digit',month:'2-digit',year
 const vnTime=new Intl.DateTimeFormat('vi-VN',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Ho_Chi_Minh'});
 document.getElementById('stamp').textContent=Number.isNaN(syncDate.getTime())?'—':vnDate.format(syncDate);
 document.getElementById('stamp-time').textContent=Number.isNaN(syncDate.getTime())?'Chưa có thời điểm cập nhật':vnTime.format(syncDate)+' (GMT+7)';
-const historyDates=people.flatMap(p=>(p.history||[]).map(h=>h.date)).filter(d=>/^\\d{4}-\\d{2}-\\d{2}$/.test(d)).sort();
-const firstDay=historyDates[0];
+// Tracking period is officially anchored to the programme start, not to non-zero points.
+const firstDay='2026-09-28';
 const syncParts=Number.isNaN(syncDate.getTime())?[]:new Intl.DateTimeFormat('en-US',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Ho_Chi_Minh'}).formatToParts(syncDate);
 const part=t=>syncParts.find(x=>x.type===t)?.value;
 const endDay=syncParts.length?part('year')+'-'+part('month')+'-'+part('day'):null;
 const asUTC=d=>Date.parse(d+'T00:00:00Z');
-const days=firstDay&&endDay?Math.floor((asUTC(endDay)-asUTC(firstDay))/86400000)+1:0;
+const days=endDay?Math.max(0,Math.floor((asUTC(endDay)-asUTC(firstDay))/86400000)+1):0;
 const displayDay=d=>d?d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(0,4):'—';
 document.getElementById('duration').textContent=days>0?fmt(days)+' ngày':'—';
-document.getElementById('tracking-range').textContent=days>0?displayDay(firstDay)+' – '+displayDay(endDay):'Chưa có dữ liệu thời gian theo dõi';document.getElementById('status').innerHTML='<span class="dot"></span> Đã kết nối · Tự làm mới mỗi 60 giây';render();}catch(e){document.getElementById('status').textContent='Chưa kết nối nguồn dữ liệu ('+String(e.message||'UNKNOWN')+')';if(!people.length){mobileList.innerHTML='<p class="skeleton error">Không thể tải dữ liệu. Vui lòng thử lại.</p>';document.getElementById('tbody').innerHTML='<tr><td colspan="9" class="skeleton error">Không thể tải điểm trực tiếp. Kiểm tra URL Apps Script và quyền triển khai Web app (Anyone).</td></tr>';}}}
+document.getElementById('tracking-range').textContent=endDay?'28/09/2026 – '+displayDay(endDay):'Từ 28/09/2026';
+document.getElementById('status').innerHTML='<span class="dot"></span> Đã kết nối · Tự làm mới mỗi 60 giây';render();}catch(e){document.getElementById('status').textContent='Chưa kết nối nguồn dữ liệu ('+String(e.message||'UNKNOWN')+')';if(!people.length){mobileList.innerHTML='<p class="skeleton error">Không thể tải dữ liệu. Vui lòng thử lại.</p>';document.getElementById('tbody').innerHTML='<tr><td colspan="9" class="skeleton error">Không thể tải điểm trực tiếp. Kiểm tra URL Apps Script và quyền triển khai Web app (Anyone).</td></tr>';}}}
 refresh();setInterval(refresh,60000);
 </script></body></html>
