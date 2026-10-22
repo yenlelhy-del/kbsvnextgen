@@ -4,7 +4,7 @@
  * CORS issues and deliberately exposes only public competition metrics.
  */
 const APPS_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbyr5Z8MMVZmEY_DBTrcEejaqAiozP1NOTA6OfABWgVe2iFdeWHKetMjqgnj9swJAFZRbA/exec';
+  'https://script.google.com/macros/s/AKfycbw7kdldaPBMFMWaB-kWiWYt96WRjrSQeiW8_Ui9kOhoG9fowIKFtNMsHoEdOA5O9DE63w/exec';
 
 const numeric = value => {
   const n = Number(value);
