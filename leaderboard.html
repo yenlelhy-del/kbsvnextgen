@@ -73,6 +73,16 @@ html{scroll-behavior:smooth}button,input{font:inherit}button{min-height:44px}
 @media(max-width:700px){.category-panel{margin-bottom:17px}.category-panel h2{font-size:21px}.category-row{min-height:55px;padding:10px 12px}.category-name{font-size:12.5px}.category-value{font-size:17px}.category-tab{font-size:12px}}
 .stat-date{font-size:19px!important;letter-spacing:-.03em}.stat-secondary{font-size:11px;color:var(--muted);display:block;margin-top:5px;line-height:1.5}
 @media(max-width:700px){.stats .tile:last-child{grid-column:auto;display:block}.stats .tile:last-child strong{font-size:19px!important;margin-top:5px}.stat-date{font-size:19px!important}.stats .tile:nth-last-child(2),.stats .tile:last-child{min-width:0}.stat-secondary{font-size:10px;overflow-wrap:anywhere}}
+
+/* Show category-leading metrics without changing leaderboard density */
+.metric-leader{background:#fff6dd;color:#855500;font-weight:900}
+.metric-leader .metric-number{font-weight:900}
+.top1-label{display:inline-block;margin-left:5px;padding:3px 5px;border:1px solid #eed19b;border-radius:5px;background:#fff0bf;color:#9b6200;font:800 9px/1 Inter,sans-serif;vertical-align:middle;letter-spacing:.035em;animation:topPulse 2.5s ease-in-out infinite}
+@keyframes topPulse{0%,100%{opacity:1}50%{opacity:.48}}
+.mobile-top-tag{display:flex!important;align-items:center;gap:3px;margin-top:3px;color:#9b6200!important;font-size:10px!important}
+.mobile-top-tag .top1-label{margin-left:0;padding:2px 4px;font-size:8px}
+@media(max-width:700px){.mobile-card:has(.mobile-top-tag){min-height:64px}}
+@media(prefers-reduced-motion:reduce){.top1-label{animation:none}}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="/"><img src="/assets/KBSVNextGen-2026.png" alt="KBSV NextGen">NEXTGEN <span style="color:#cb890f">/ RISING STARS</span></a><a href="/" class="back">← Về trang chủ</a></div></header>
 <main class="wrap"><div class="hero"><div class="eyebrow">KBSV NEXTGEN 2026 · PERFORMANCE HUB</div><h1>THE <span>LEADERBOARD.</span></h1><p>Hành trình của mỗi ngôi sao được ghi nhận qua hành động. Theo dõi thứ hạng, điểm tích lũy và những dấu mốc tăng trưởng của bạn.</p><div class="status" id="status"><span class="dot"></span>Đang tải dữ liệu</div></div>
@@ -89,18 +99,52 @@ html{scroll-behavior:smooth}button,input{font:inherit}button{min-height:44px}
 
 const mobileList=document.getElementById('mobile-list'),sheet=document.getElementById('member-sheet'),backdrop=document.getElementById('sheet-backdrop');
 let activeMember=null,focusBefore=null;
+// Category leaders are computed from the full roster, not filtered search results.
+// Tied positive leaders all receive the distinction; missing and zero data never do.
+const visibleMetrics=[
+ {key:'points',short:'Điểm'},
+ {key:'live',short:'Live'},
+ {key:'liveViews',short:'Views live'},
+ {key:'clips',short:'Clip'},
+ {key:'clipViews',short:'Views clip'},
+ {key:'followers',short:'Follower'},
+ {key:'accountsOpened',short:'TK mở mới'}
+];
+function topValues(){
+ const maxima={};
+ visibleMetrics.forEach(m=>{
+  const values=people.map(p=>p[m.key]).filter(v=>v!=null&&Number.isFinite(Number(v))).map(Number);
+  maxima[m.key]=values.length?Math.max(...values):null;
+ });
+ return maxima;
+}
+function topOf(p,key,maxima){
+ const value=p[key],top=maxima[key];
+ return top!=null&&top>0&&value!=null&&Number.isFinite(Number(value))&&Number(value)===top;
+}
+function topBadge(key){return '<span class="top1-label" aria-label="Dẫn đầu hạng mục '+safe(key)+'">TOP 1</span>';}
+function metricCell(p,key,maxima){
+ const v=p[key],leader=topOf(p,key,maxima);
+ return '<td class="'+(leader?'metric-leader':'')+'"><span class="metric-number">'+(v==null?'—':fmt(v))+'</span>'+(leader?topBadge(visibleMetrics.find(x=>x.key===key)?.short||key):'')+'</td>';
+}
+
 function mobileRender(){
  const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');
- const list=people.filter(p=>p.name.toLocaleLowerCase('vi').includes(q));
- mobileList.innerHTML=list.map(p=>
-  '<button class="mobile-card" type="button" data-member="'+safe(p.name)+'" aria-label="Xem chi tiết thành tích '+safe(p.name)+'">'+
+ const list=people.filter(p=>p.name.toLocaleLowerCase('vi').includes(q)),maxima=topValues();
+ mobileList.innerHTML=list.map(p=>{
+  const wins=visibleMetrics.filter(m=>topOf(p,m.key,maxima));
+  const winsText=wins.map(m=>m.short).join(', ');
+  const compact=wins.filter(m=>m.key!=='points').slice(0,1);
+  return '<button class="mobile-card" type="button" data-member="'+safe(p.name)+'" aria-label="Xem chi tiết thành tích '+safe(p.name)+'">'+
    '<span class="mobile-rank '+(p.rank===1?'gold':p.rank===2?'silver':p.rank===3?'bronze':'')+'">'+
    (p.rank===1?'🥇':p.rank===2?'🥈':p.rank===3?'🥉':'#'+p.rank)+'</span>'+
-   '<span class="mobile-person"><strong>'+safe(p.name)+'</strong></span>'+
+   '<span class="mobile-person"><strong>'+safe(p.name)+'</strong>'+
+   (compact.length?'<small class="mobile-top-tag" title="'+safe('Dẫn đầu: '+winsText)+'">'+topBadge(compact[0].short)+' <span>'+safe(compact[0].short)+(wins.filter(m=>m.key!=='points').length>1?' +'+(wins.filter(m=>m.key!=='points').length-1):'')+'</span></small>':'')+
+   '</span>'+
    '<span class="mobile-score"><strong>'+fmt(p.points)+'</strong><small>điểm</small></span>'+
    '<span class="mobile-chevron" aria-hidden="true">›</span>'+
-  '</button>'
- ).join('')||'<p class="skeleton">Không có thành viên phù hợp</p>';
+  '</button>';
+ }).join('')||'<p class="skeleton">Không có thành viên phù hợp</p>';
 }
 function openSheet(p){
  focusBefore=document.activeElement;activeMember=p.name;
@@ -162,7 +206,23 @@ catResults.addEventListener('click',e=>{
 
 const fmt=n=>new Intl.NumberFormat('vi-VN').format(n||0);let people=[];
 const safe=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function render(){mobileRender();renderCategories();const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');const rows=people.filter(x=>x.name.toLocaleLowerCase('vi').includes(q));document.getElementById('tbody').innerHTML=rows.map((p)=>'<tr data-name="'+safe(p.name)+'"><td class="rank">'+(p.rank===1?'🥇 ':p.rank===2?'🥈 ':p.rank===3?'🥉 ':'')+'#'+p.rank+'</td><td class="name">'+safe(p.name)+'</td><td class="points">'+fmt(p.points)+'</td><td>'+fmt(p.live)+'</td><td>'+fmt(p.liveViews)+'</td><td>'+fmt(p.clips)+'</td><td>'+fmt(p.clipViews)+'</td><td>'+fmt(p.followers)+'</td><td class="points">'+(p.accountsOpened==null?'—':fmt(p.accountsOpened))+'</td></tr>').join('')||'<tr><td colspan="9" class="skeleton">Không có thành viên phù hợp</td></tr>';}
+function render(){
+ mobileRender();renderCategories();
+ const q=document.getElementById('search').value.trim().toLocaleLowerCase('vi');
+ const rows=people.filter(x=>x.name.toLocaleLowerCase('vi').includes(q));
+ const maxima=topValues();
+ document.getElementById('tbody').innerHTML=rows.map(p=>'<tr data-name="'+safe(p.name)+'">'+
+  '<td class="rank">'+(p.rank===1?'🥇 ':p.rank===2?'🥈 ':p.rank===3?'🥉 ':'')+'#'+p.rank+'</td>'+
+  '<td class="name">'+safe(p.name)+'</td>'+
+  metricCell(p,'points',maxima)+
+  metricCell(p,'live',maxima)+
+  metricCell(p,'liveViews',maxima)+
+  metricCell(p,'clips',maxima)+
+  metricCell(p,'clipViews',maxima)+
+  metricCell(p,'followers',maxima)+
+  metricCell(p,'accountsOpened',maxima)+
+  '</tr>').join('')||'<tr><td colspan="9" class="skeleton">Không có thành viên phù hợp</td></tr>';
+}
 function show(p){const h=p.history||[],mx=Math.max(1,...h.map(x=>x.points));const d=document.getElementById('detail');d.classList.add('open');d.innerHTML='<div class="section-title"><h2>'+safe(p.name)+' · Hạng #'+p.rank+'</h2><button id="close">Đóng</button></div><div class="detailgrid">'+[['Tổng điểm',p.points],['Livestream',p.live],['Clip TikTok',p.clips],['Follow mới',p.followers],['TK mở mới',p.accountsOpened == null ? '—' : p.accountsOpened]].map(([a,b])=>'<div><small>'+a+'</small><strong>'+fmt(b)+'</strong></div>').join('')+'</div><h3>Điểm theo ngày</h3><div class="hist">'+h.map(x=>'<div class="bar" title="'+safe(x.date)+': '+fmt(x.points)+' điểm" style="height:'+Math.max(4,Math.round(x.points/mx*85))+'px"></div>').join('')+'</div>'+(p.link?'<p><a target="_blank" rel="noopener noreferrer" href="'+safe(p.link)+'">Xem kênh chính thức ↗</a></p>':'');d.querySelector('#close').onclick=()=>d.classList.remove('open');d.scrollIntoView({behavior:'smooth',block:'nearest'});}
 document.getElementById('tbody').addEventListener('click',e=>{const tr=e.target.closest('tr[data-name]');if(tr){let p=people.find(x=>x.name===tr.dataset.name);if(p)show(p)}});
 document.getElementById('search').addEventListener('input',render);
