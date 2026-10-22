@@ -79,10 +79,10 @@ html{scroll-behavior:smooth}button,input{font:inherit}button{min-height:44px}
  <div class="section-title"><h2>🌟 Top 3 theo hạng mục</h2></div>
  <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Chọn hạng mục xếp hạng"></div>
  <div class="category-results" id="category-results" role="tabpanel" aria-live="polite"><div class="category-empty">Đang tải thành tích…</div></div>
- <p class="note" style="margin:9px 2px 0">Xếp hạng theo số liệu cộng dồn từ Google Sheets. Chạm tên để xem thành tích cá nhân.</p>
+ 
  </section>
 <section class="panel"><div class="section-title"><h2>🏆 Bảng xếp hạng tổng</h2><input id="search" aria-label="Tìm thành viên" placeholder="Tìm tên thành viên…"></div><div id="mobile-list" class="mobile-list" aria-label="Danh sách xếp hạng học viên"></div><div class="tablewrap"><table><thead><tr><th>Hạng</th><th>Thành viên</th><th>Điểm</th><th>Livestream</th><th>Views live</th><th>Clip</th><th>Views clip</th><th>Follower mới</th><th>TK mở mới</th></tr></thead><tbody id="tbody"><tr><td colspan="9" class="skeleton">Đang kết nối dữ liệu Google Sheets…</td></tr></tbody></table></div><div id="detail" class="detail" aria-live="polite"></div></section>
-<p class="note">Thứ hạng được tính từ điểm quy đổi của các hoạt động livestream và clip TikTok trong bảng theo dõi. Dữ liệu cập nhật định kỳ; không công khai NAV, tiền nạp hoặc thông tin tài khoản khách hàng. Nếu một chỉ tiêu đang trống trong Google Sheets, dashboard hiển thị 0 thay vì suy đoán.</p></main><div id="sheet-backdrop" class="sheet-backdrop"></div><aside id="member-sheet" class="member-sheet" role="dialog" aria-modal="true" aria-label="Thành tích học viên" tabindex="-1"></aside><footer class="wrap">KBSV NEXTGEN 2026 · Powered by FinPeace</footer>
+</main><div id="sheet-backdrop" class="sheet-backdrop"></div><aside id="member-sheet" class="member-sheet" role="dialog" aria-modal="true" aria-label="Thành tích học viên" tabindex="-1"></aside><footer class="wrap">KBSV NEXTGEN 2026 · Powered by FinPeace</footer>
 <script>
 
 const mobileList=document.getElementById('mobile-list'),sheet=document.getElementById('member-sheet'),backdrop=document.getElementById('sheet-backdrop');
